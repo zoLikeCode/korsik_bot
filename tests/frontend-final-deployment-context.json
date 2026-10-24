@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "observed_at": "2026-10-24T03:10:01.468973+00:00",
+  "backend_unchanged": true,
+  "performance_start_web_image": "sha256:6209b9d85cc44cff9613bf9fc7196f5877de8b10e650e00f457b4b9b7412df4b",
+  "final_web_image": "sha256:16438bcef011b1373c6dcd0fe0740c8322546b9796bd366a0b951d76ef505a88",
+  "entry": "index-CVW-IeYL.js",
+  "delta": "WEB17→WEB18: pending MAX account identity review, explicit HR verification and ETag-bound approval; frontend only",
+  "frontend_tests": 23,
+  "HTTPS_smoke_checks": 18,
+  "native_proof": "qa/server-hr-dashboard-native-final.json",
+  "performance_context_preserved": "tests/api-latency-full-context.json",
+  "MAX_bindings_mutated": 0,
+  "model_calls": 0
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "fault": "REAL_TMPFS_INODE_ENOSPC",
+  "network": "none",
+  "attempt_statuses": [
+    507,
+    507
+  ],
+  "successful_parse_after_freeing_storage": true,
+  "admission_released": true,
+  "event_types": [
+    "checkpoint",
+    "complete"
+  ],
+  "seconds": 0.029,
+  "image_basic": "korsik-parser:local9",
+  "image_structure": "korsik-parser:structure9",
+  "fault_scope": "Actual isolated runtime tmpfs inode exhaustion; direct ASGI handler returns FastAPI507 twice, then successful NDJSON text parse after freeing space. No production mount or model used."
+}

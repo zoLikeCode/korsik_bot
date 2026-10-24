@@ -1,0 +1,260 @@
+{
+  "schema": "korsik-release22-max-webhook-repair-v1",
+  "status": "PASS",
+  "started_at": "2026-10-24T18:13:12.981770+00:00",
+  "MAX_messages_sent_by_helper": 0,
+  "processable_events_injected": 0,
+  "personnel_mutations_by_helper": false,
+  "profile_mutations_by_helper": false,
+  "images_rebuilt": false,
+  "old_bot_token_used": false,
+  "scope": "Only MAX_PUBLIC_URL and max-connector recreation; current new bot token",
+  "actions": [
+    "read_only_preflight_current_new_bot_own_single_webhook_and_private_backup_verified",
+    "only_MAX_PUBLIC_URL_atomically_replaced",
+    "same_connector_image_healthy_and_single_primary_domain_webhook_registered",
+    "HTTPS_invalid_json_400_and_all_preservation_checks_passed"
+  ],
+  "before_containers": {
+    "answer-worker": {
+      "container_id": "f9dfdfb7fae51a93678edaac75755c5c7a14567fe568cbdc14f49b95e5146cb0",
+      "image_id": "sha256:4c231ca0d21559fc949ab0b81c6141dadf87776d10d0b0816df385ea924c3410",
+      "state": "running",
+      "health": "healthy"
+    },
+    "api": {
+      "container_id": "d46ad27d633cf10172a18549834e045e076ff08c25a50db607f0be361cad3afe",
+      "image_id": "sha256:4c231ca0d21559fc949ab0b81c6141dadf87776d10d0b0816df385ea924c3410",
+      "state": "running",
+      "health": "healthy"
+    },
+    "encoder": {
+      "container_id": "29295c4cc4e5d35b091f28f568ee8ab4bc4b97ecc28a4583d2e5c786064aa62d",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "generator": {
+      "container_id": "7901be4dd2334a58ccc78de6ccb6254b8be606576dd5eb2d9e149376f2cd8a15",
+      "image_id": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079",
+      "state": "running",
+      "health": "healthy"
+    },
+    "ingest-worker": {
+      "container_id": "21fdaad5682acc1f15d22bcff1a99c11903092d2c170fdb464741c5595b13f62",
+      "image_id": "sha256:4c231ca0d21559fc949ab0b81c6141dadf87776d10d0b0816df385ea924c3410",
+      "state": "running",
+      "health": "healthy"
+    },
+    "max-connector": {
+      "container_id": "7323daf4d5cb5cb957eaaeeca911625d21b603b5f6934bfaf84b3b4dfd567930",
+      "image_id": "sha256:4c231ca0d21559fc949ab0b81c6141dadf87776d10d0b0816df385ea924c3410",
+      "state": "running",
+      "health": "healthy"
+    },
+    "parser": {
+      "container_id": "5077617400f76cbe892430a7bc98d64e7d8780c0b014d6d2f9159b4f6463dd38",
+      "image_id": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf",
+      "state": "running",
+      "health": "healthy"
+    },
+    "postgres": {
+      "container_id": "0bdf25853214b0a4eac4111203925e2cad9252ec3b1b2d5176be246921e06837",
+      "image_id": "sha256:ab20e934b27ba3ff927c1b4c9ff8cf6c32f315f743efe68dd3441182a87fb085",
+      "state": "running",
+      "health": "healthy"
+    },
+    "qdrant": {
+      "container_id": "608fbee402829552a126bad7162c2e85c0640b82768352e02d5f584e2859b9a4",
+      "image_id": "sha256:8a80c5500151ab2b08eb5874698b81b6b8addbc53ef4fb0c47f516680cf413d2",
+      "state": "running",
+      "health": null
+    },
+    "reranker": {
+      "container_id": "6cd03e9c0704439c4ff6f8105b45fd21eb62f7445fc930daf4f5627a81f706c6",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "scheduler": {
+      "container_id": "2f16e23c99593347255f0f30aa62d272493b15e05076614585612713424b5680",
+      "image_id": "sha256:4c231ca0d21559fc949ab0b81c6141dadf87776d10d0b0816df385ea924c3410",
+      "state": "running",
+      "health": "healthy"
+    },
+    "tunnel": {
+      "container_id": "f2fb32eacab97913ca6af7785ba0ff8e30e07a916ef44cc3e9f095f349b2f3ea",
+      "image_id": "sha256:b74b8bf3c660f98df9ed51099c79d1b2eafdb4922b8cf6fd593a3eb87b056723",
+      "state": "running",
+      "health": "healthy"
+    },
+    "web": {
+      "container_id": "8e60cf8de542c081f58aaa8e3f257207e37e2e07d779b2c839add4dbaba35f37",
+      "image_id": "sha256:144245af17b89da21cdbe4f8c0512042a747f37d2efa75ae1a14c28eb4d710e4",
+      "state": "running",
+      "health": "healthy"
+    },
+    "worker": {
+      "container_id": "691734c96d533d9dac0abec791564567734f4d0c6ad9c5a9e5c8638abe947cb7",
+      "image_id": "sha256:4c231ca0d21559fc949ab0b81c6141dadf87776d10d0b0816df385ea924c3410",
+      "state": "running",
+      "health": "healthy"
+    }
+  },
+  "webhook_before": {
+    "bot_user_id": 226563270,
+    "is_bot": true,
+    "subscriptions": [
+      {
+        "url": "https://systematic-working-authorities-glenn.trycloudflare.com/hooks/max",
+        "update_types": [
+          "bot_stopped",
+          "message_callback",
+          "dialog_removed",
+          "message_created",
+          "bot_started"
+        ]
+      }
+    ],
+    "mode": "webhook",
+    "configured_public_url": "https://systematic-working-authorities-glenn.trycloudflare.com",
+    "cursor": {
+      "url": "https://systematic-working-authorities-glenn.trycloudflare.com/hooks/max",
+      "registered_at": "2026-10-24T18:11:14.121206+00:00",
+      "status": "REGISTERED"
+    },
+    "control_enabled": true
+  },
+  "public_url_before": "https://systematic-working-authorities-glenn.trycloudflare.com",
+  "public_url_after": "https://app.korsik-demo.ru",
+  "image": "sha256:4c231ca0d21559fc949ab0b81c6141dadf87776d10d0b0816df385ea924c3410",
+  "private_backup": "/opt/korsik/runtime/release22-webhook-primary/environment-before.env",
+  "previous_env_owner_mode": {
+    "uid": 0,
+    "gid": 0,
+    "mode": "0o600"
+  },
+  "observed_at": "2026-10-24T18:13:41.172146+00:00",
+  "after_containers": {
+    "answer-worker": {
+      "container_id": "f9dfdfb7fae51a93678edaac75755c5c7a14567fe568cbdc14f49b95e5146cb0",
+      "image_id": "sha256:4c231ca0d21559fc949ab0b81c6141dadf87776d10d0b0816df385ea924c3410",
+      "state": "running",
+      "health": "healthy"
+    },
+    "api": {
+      "container_id": "d46ad27d633cf10172a18549834e045e076ff08c25a50db607f0be361cad3afe",
+      "image_id": "sha256:4c231ca0d21559fc949ab0b81c6141dadf87776d10d0b0816df385ea924c3410",
+      "state": "running",
+      "health": "healthy"
+    },
+    "encoder": {
+      "container_id": "29295c4cc4e5d35b091f28f568ee8ab4bc4b97ecc28a4583d2e5c786064aa62d",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "generator": {
+      "container_id": "7901be4dd2334a58ccc78de6ccb6254b8be606576dd5eb2d9e149376f2cd8a15",
+      "image_id": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079",
+      "state": "running",
+      "health": "healthy"
+    },
+    "ingest-worker": {
+      "container_id": "21fdaad5682acc1f15d22bcff1a99c11903092d2c170fdb464741c5595b13f62",
+      "image_id": "sha256:4c231ca0d21559fc949ab0b81c6141dadf87776d10d0b0816df385ea924c3410",
+      "state": "running",
+      "health": "healthy"
+    },
+    "max-connector": {
+      "container_id": "2a3872e5468a2707c5b589540024451fa35ee2eb3ac75f87ebfc7bc22269544f",
+      "image_id": "sha256:4c231ca0d21559fc949ab0b81c6141dadf87776d10d0b0816df385ea924c3410",
+      "state": "running",
+      "health": "healthy"
+    },
+    "parser": {
+      "container_id": "5077617400f76cbe892430a7bc98d64e7d8780c0b014d6d2f9159b4f6463dd38",
+      "image_id": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf",
+      "state": "running",
+      "health": "healthy"
+    },
+    "postgres": {
+      "container_id": "0bdf25853214b0a4eac4111203925e2cad9252ec3b1b2d5176be246921e06837",
+      "image_id": "sha256:ab20e934b27ba3ff927c1b4c9ff8cf6c32f315f743efe68dd3441182a87fb085",
+      "state": "running",
+      "health": "healthy"
+    },
+    "qdrant": {
+      "container_id": "608fbee402829552a126bad7162c2e85c0640b82768352e02d5f584e2859b9a4",
+      "image_id": "sha256:8a80c5500151ab2b08eb5874698b81b6b8addbc53ef4fb0c47f516680cf413d2",
+      "state": "running",
+      "health": null
+    },
+    "reranker": {
+      "container_id": "6cd03e9c0704439c4ff6f8105b45fd21eb62f7445fc930daf4f5627a81f706c6",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "scheduler": {
+      "container_id": "2f16e23c99593347255f0f30aa62d272493b15e05076614585612713424b5680",
+      "image_id": "sha256:4c231ca0d21559fc949ab0b81c6141dadf87776d10d0b0816df385ea924c3410",
+      "state": "running",
+      "health": "healthy"
+    },
+    "tunnel": {
+      "container_id": "f2fb32eacab97913ca6af7785ba0ff8e30e07a916ef44cc3e9f095f349b2f3ea",
+      "image_id": "sha256:b74b8bf3c660f98df9ed51099c79d1b2eafdb4922b8cf6fd593a3eb87b056723",
+      "state": "running",
+      "health": "healthy"
+    },
+    "web": {
+      "container_id": "8e60cf8de542c081f58aaa8e3f257207e37e2e07d779b2c839add4dbaba35f37",
+      "image_id": "sha256:144245af17b89da21cdbe4f8c0512042a747f37d2efa75ae1a14c28eb4d710e4",
+      "state": "running",
+      "health": "healthy"
+    },
+    "worker": {
+      "container_id": "691734c96d533d9dac0abec791564567734f4d0c6ad9c5a9e5c8638abe947cb7",
+      "image_id": "sha256:4c231ca0d21559fc949ab0b81c6141dadf87776d10d0b0816df385ea924c3410",
+      "state": "running",
+      "health": "healthy"
+    }
+  },
+  "webhook_after": {
+    "bot_user_id": 226563270,
+    "is_bot": true,
+    "subscriptions": [
+      {
+        "url": "https://app.korsik-demo.ru/hooks/max",
+        "update_types": [
+          "bot_stopped",
+          "message_callback",
+          "dialog_removed",
+          "bot_started",
+          "message_created"
+        ]
+      }
+    ],
+    "mode": "webhook",
+    "configured_public_url": "https://app.korsik-demo.ru",
+    "cursor": {
+      "url": "https://app.korsik-demo.ru/hooks/max",
+      "registered_at": "2026-10-24T18:13:24.607949+00:00",
+      "status": "REGISTERED"
+    },
+    "control_enabled": true
+  },
+  "ingress_validation": {
+    "status": 400,
+    "invalid_json_rejected": true,
+    "normal_tls_validation": true
+  },
+  "only_one_connector_recreated": true,
+  "all_13_other_container_ids_and_images_unchanged": true,
+  "secret_file_metadata_unchanged": true,
+  "environment_symlink_owner_mode_preserved": true,
+  "other_environment_bytes_unchanged": true,
+  "profile_retrieval_compose_nginx_and_connector_sources_unchanged": true,
+  "maintenance_marker_remaining": false
+}

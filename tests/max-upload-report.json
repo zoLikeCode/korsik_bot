@@ -1,0 +1,27 @@
+{
+  "schema": "korsik-real-max-upload-v1",
+  "status": "PASS",
+  "messages_sent": 0,
+  "recipient_ids_used": 0,
+  "scope": "Actual allocation/upload transport only; not chat rendering or employee E2E",
+  "checks": [
+    {
+      "kind": "image",
+      "synthetic_fixture": true,
+      "allocation_http": 200,
+      "cdn_allowed": true,
+      "upload_http": 200,
+      "adapter_payload_available": true,
+      "status": "PASS"
+    },
+    {
+      "kind": "file",
+      "synthetic_fixture": true,
+      "allocation_http": 200,
+      "cdn_allowed": true,
+      "upload_http": 200,
+      "adapter_payload_available": true,
+      "status": "PASS"
+    }
+  ]
+}

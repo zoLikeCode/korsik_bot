@@ -1,0 +1,599 @@
+{
+  "date": "2026-10-24",
+  "frontend_build": "PASS",
+  "frontend_tests": {
+    "files": 5,
+    "passed": 23
+  },
+  "npm_audit_production": {
+    "vulnerabilities": 0,
+    "registry": "https://registry.npmjs.org"
+  },
+  "local_browser_workflows": [
+    "HR login, real session and role shell",
+    "Clone source scenario, insert message, edit both address forms, save/reload/validate/review/publish",
+    "Create employee, assign program, issue MAX invitation, confirm start",
+    "Clone quick prompt menu, edit query, save/review/publish",
+    "Knowledge TXT upload, worker parsing, immutable correction, page review, candidate, QA, approval, publication",
+    "Employee plain question and quick-prompt question: real CORE retrieval with source citations",
+    "CSV validation: one valid and one invalid row; explicit partial import creates one card without invitations",
+    "Control question creation/versioning; replacement source fails old revision pin; new expectation passes actual search; manual semantic review required before publication",
+    "Gap instruction draft created with explicit anonymization and exact source block/extraction SHA256 pins; scope plural mismatch found and fixed in backend",
+    "Lifecycle OFFBOARD, REHIRE, CHANGE_ANCHOR: fresh episode/journey, future dates recomputed, cancelled previous history cannot be reactivated in UI",
+    "Async knowledge QA: pending operation survives reload, worker result appears by polling, failed answer pins block publication",
+    "LocalAI native settings: no installed bundle disables create/activation truthfully; fixed server limits displayed",
+    "HR self-contact form: actual GET NOT_CONFIGURED, explicit verification and reason required; no unverified URL presented to employee",
+    "Authored instruction preview displays text and opens exact immutable source revision read-only without broken original-file link",
+    "Feedback review: original source answer, human MIXED/topics/reason, immutable history; small-group risk topics suppressed",
+    "Authored GENERAL article: create without file, page review, durable candidate and QA workers, manual answer evaluation, approval, publication",
+    "Batch upload partial failure: valid TXT queued while malformed PDF rejected independently; both cards persist",
+    "Joint FILE+ARTICLE: draft exact source-block dependency, two-member durable candidate, shared QA, separate manual reviews/approvals, atomic publication of both members",
+    "Case lifecycle: create, claim, internal note, result, reopen with reason, administrative close with separate acknowledgement",
+    "MANAGER delegated task: HR assignment, manager sees exact task, acknowledges and completes; employee roster remains empty",
+    "HEAD_TALENT native overview/analytics: aggregate navigation, no raw feedback or employee cards, small-group suppression",
+    "Source baseline protection: changed mandatory step triggers native diff, explicit acknowledgement and reason before review/publish",
+    "Journey required_signal persisted; published-version plan preview/hash/confirmation/apply updates current journey",
+    "Document description update with private audit reason preserves publication when scope/category unchanged",
+    "Analytics date window and Asia/Yekaterinburg timezone: real metric_details table with numerators/denominators/missing answers",
+    "Targeted TXT page retry queued, real worker returns REVIEW_REQUIRED; second queued retry cancelled through native durable operation panel and explicit retry remains available",
+    "Ingest cancel/retry then close detail: common knowledge list automatically receives real worker REVIEW_REQUIRED result without page reload",
+    "Revision comparison: native older/current selection uses real bounded API, physical-page text before/after, history-unavailable notice, numeric/negation warning, repeated exact extraction pins; a single review panel remains mounted after updates",
+    "Responsible HR: enabled scoped specialist selected, reason and conditional save persist owner after closing/reopening; existing publication and audience preserved"
+  ],
+  "backend_module_tests": {
+    "knowledge_admin": 16
+  },
+  "limits": [
+    "Local desktop browser QA uses CORE extractive mode; real server Qwen3.5-4B generation is verified separately with the active artifact fingerprint.",
+    "No real employee identity or MAX binding was created by frontend QA. Server employee account is linked only to an explicitly synthetic card.",
+    "The three original company PPTX are published by the root deployment workflow; frontend QA did not approve them.",
+    "The synthetic OCR image remains REVIEW_REQUIRED and is not published. One short QA marker was misrecognized by OCR; HR can correct the extracted text.",
+    "Current SOURCE17 has a fresh 39-case manual semantic review, 10 native activation checks and a four-request durable HTTP smoke. The 100-request benchmark remains explicitly historical SOURCE15 evidence.",
+    "Current WEB18 is correct at the VM origin and through the VM public HTTPS path. A fresh operator-local public asset download stalled; cached dashboard success does not prove a cold-client load. The root cause is not established.",
+    "No screenshot containing the current real person name was published from the final cached dashboard observation."
+  ],
+  "server_smoke": "server-frontend-smoke.json",
+  "server_screenshot": "server-knowledge-preview.png",
+  "local_screenshot": "local-instruction-review.png",
+  "server_employee_generation": {
+    "status": "PASS",
+    "mode": "LOCAL_GENERATED",
+    "answer_id": "edd591d3-7854-47a6-9433-62e4fe6e5c69",
+    "generator_repository": "Qwen/Qwen3.5-4B",
+    "active_profile_id": "9f53ccae-0e30-474d-9efb-aefc37eccebb",
+    "active_configuration_fingerprint": "6424ca5cf3e2f935f745c3378902e52c35f294f39e4045c789386e427a7f9121",
+    "active_artifact_fingerprint_matches": true,
+    "current_pipeline_matches": true,
+    "runtime_renderer_matches_deployment": true,
+    "request_payload_matches_runtime": true,
+    "answer_after_profile_activation": true,
+    "pipeline_seconds": 19.102412,
+    "citations": 3,
+    "source_http_200": 3,
+    "evidence": "server-employee-answer.json",
+    "screenshot": "server-employee-local-answer-current.png",
+    "evidence_scope": "Historical successful source10 generation; not acceptance proof for source12/13 after pipeline changes."
+  },
+  "screenshots": [
+    "local-joint-publication.png",
+    "local-feedback-review.png",
+    "server-local-ai-active.png",
+    "server-employee-local-answer.png",
+    "local-ingest-cancellation.png",
+    "server-demo-menu-published.png",
+    "server-employee-local-answer-4b.png",
+    "server-ocr-rotation-web10.png",
+    "server-employee-menu-web10.png",
+    "server-employee-citation-visual-api9.png",
+    "local-revision-comparison.png",
+    "local-document-owner.png",
+    "server-revision-comparison-web11.png",
+    "server-document-owner-web11.png",
+    "server-revision-comparison-web12.png",
+    "server-employee-local-answer-current.png",
+    "server-hr-dashboard-final.png",
+    "local-stage-scheduled-web13.png",
+    "local-stage-applied-web13.png"
+  ],
+  "release_build": {
+    "entry": "index-CVW-IeYL.js",
+    "entry_bytes": 408059,
+    "entry_sha256": "5a0e166313afaf9c7635d591970615f5c900e7165c5dc11d018dcf611240187d",
+    "knowledge_chunk": "Knowledge-3Ux6ll15.js",
+    "settings_chunk": "Settings-C1CvKKNK.js",
+    "scenarios_chunk": "Scenarios-B5DUmEVS.js",
+    "all_tests_passed": true,
+    "build_checked_at": "2026-10-24T03:04:33.303111+00:00",
+    "release": "web18",
+    "deployment_status": "DEPLOYED_WEB18_ORIGIN_AND_VM_PUBLIC_BYTES_VERIFIED_LOCAL_COLD_PUBLIC_CLIENT_DEGRADED",
+    "change": "Pending MAX identity name/ID visible before approval, explicit checked identity and reason, reviewed ETag pinned; frontend-only delta from measured WEB17/SOURCE15.",
+    "image_id": "sha256:16438bcef011b1373c6dcd0fe0740c8322546b9796bd366a0b951d76ef505a88",
+    "code_unchanged_in_incident17": true
+  },
+  "parser_server_evidence": {
+    "status": "PASS_REPORTED_BY_RAG_AGENT",
+    "artifact": "tests/parser-rotation-report.json",
+    "scenario": "Two-page raster PDF: targeted rotation plus force OCR; unselected physical page retained; times 12:00 and 13:00 read locally"
+  },
+  "transport_regression": {
+    "status": "PASS",
+    "case": "HTTPS compression proxy adds W/ to the exact entity-version ETag; GET then conditional PATCH retains the original opaque version token, backend CAS still rejects stale versions"
+  },
+  "server_demo_menu": {
+    "status": "PUBLISHED",
+    "native_hr_workflow": true,
+    "existing_food_preserved": true,
+    "basic_topics": [
+      "Коммерческая тайна",
+      "Антикоррупционные правила",
+      "Качество и экология"
+    ],
+    "screenshot": "server-demo-menu-published.png",
+    "employee_buttons_verified": true
+  },
+  "server_web10_smoke": {
+    "status": "PASS",
+    "checks": 9,
+    "evidence": "server-frontend-patch8-smoke.json",
+    "entry": "index-DKVleCOf.js",
+    "nginx_syntax": "PASS_REPORTED_BY_ROOT",
+    "runtime_docker_dns": true
+  },
+  "native_server_ocr": {
+    "status": "PASS",
+    "document_id": "5715a6be-1545-4cb5-b1b9-a5b6566e2590",
+    "revision_id": "8a3c4e70-f310-4901-ae6a-f7c347a4e169",
+    "operation_id": "5a4a6090-91c8-4123-a94d-53bb917b7991",
+    "page_numbers": [
+      1
+    ],
+    "rotation": 270,
+    "force_ocr": true,
+    "preview_natural_width": 1500,
+    "preview_natural_height": 650,
+    "extraction_cache_token": "b978873a-3bd3-466a-a0b3-29aabfae17e9",
+    "recognized_times": [
+      "12:00",
+      "13:00"
+    ],
+    "document_status": "REVIEW_REQUIRED",
+    "published": false,
+    "screenshot": "server-ocr-rotation-web10.png"
+  },
+  "server_release11_smoke": {
+    "status": "SUPERSEDED_BY_RELEASE12_PASS",
+    "native_revision_comparison": "server-revision-comparison.json",
+    "owner_read": "PASS",
+    "entry": "index-BVnlBa6-.js"
+  },
+  "canonical_table_display": {
+    "status": "BUILD_VERIFIED",
+    "detail": "Read view and editor both use canonical grid with legacy cells fallback; null cells render as empty strings."
+  },
+  "server_release12_smoke": {
+    "status": "PASS",
+    "checks": 11,
+    "evidence": "server-frontend-release12-smoke.json",
+    "entry": "index-DuXgx5e7.js",
+    "native_comparison": "PASS",
+    "native_human_metadata": "PASS",
+    "screenshot": "server-revision-comparison-web12.png",
+    "profile": "CURRENT_FULL_LOCAL_4B_ACTIVE",
+    "employee_generation": "CURRENT_TRACE_PASS"
+  },
+  "primary_server_screenshot": "server-employee-local-answer-current.png",
+  "final_status": "SOURCE17_MANUAL39_PASS_NATIVE10_ACTIVE_DURABLE_HTTP4_PASS; MAX_SUBSCRIPTION_AND14_SERVICES_PASS; WEB18_DEPLOYED_CACHED_DASHBOARD_PASS; FRESH_OPERATOR_LOCAL_PUBLIC_ASSET_DOWNLOAD_DEGRADED; SOURCE15_HTTP100_HISTORICAL_ONLY",
+  "server_hr_dashboard_screenshot": "server-hr-dashboard-final.png",
+  "employment_stage_scheduling": {
+    "api_flow": "PASS",
+    "evidence": "local-stage-api.json",
+    "native_flow": {
+      "status": "PASS",
+      "performed_by": "Root agent through CUA on the actual local frontend and backend",
+      "schedule_preview": {
+        "device_zone": "Europe/Moscow",
+        "device_time": "04:00",
+        "employee_zone": "Asia/Yekaterinburg",
+        "employee_time": "06:00",
+        "utc_time": "01:00"
+      },
+      "close_reload_reopen_persisted_scheduled": true,
+      "conditional_cancel_preserved_preboarding": true,
+      "immediate_stage_active": true,
+      "due_operation_id": "00ee2e5b-7247-4424-bfc7-0b1e4650dc0e",
+      "due_effective_at": "2026-10-24T00:55:00+00:00",
+      "due_status": "SUCCEEDED",
+      "screenshot": "local-stage-scheduled-web13.png",
+      "evidence": "local-stage-native.json",
+      "due_applied_at": "2026-10-24T00:55:39.742992+00:00",
+      "due_current_stage": "PREBOARDING",
+      "real_clock_without_mocking": true,
+      "due_screenshot": "local-stage-applied-web13.png",
+      "due_ui_history_status": "Выполнено",
+      "due_ui_applied_time": "05:55 GMT+5",
+      "due_ui_current_stage": "До выхода"
+    },
+    "time_zone_regressions": 4,
+    "cases": [
+      "Explicit device-zone input and employee-zone preview",
+      "Moscow and Yekaterinburg map to different exact UTC moments",
+      "DST gap rejected instead of normalized",
+      "DST repeated hour requires explicit offset selection",
+      "Schedule persists without early stage mutation",
+      "New schedule replaces older schedule",
+      "Versioned cancellation preserves current stage",
+      "Immediate stage applies",
+      "Real due business worker applies stage without advancing the clock"
+    ],
+    "schedule_notice": "Расписание сохранено. Проверяйте результат выполнения в истории.",
+    "notice_regression": "Time-independent notice remains consistent after the durable operation succeeds."
+  },
+  "server_release13_smoke": {
+    "status": "PASS",
+    "checks": 13,
+    "evidence": "server-frontend-release13-smoke.json",
+    "entry": "index-D77lgp6c.js",
+    "durable_stage_history_route": "PASS",
+    "stage_form_in_deployed_bundle": "PASS",
+    "current_full_local_profile": "PASS",
+    "native_https_dashboard": "PASS_REPORTED_BY_ROOT",
+    "screenshot": "server-hr-dashboard-final.png"
+  },
+  "server_release14_smoke": {
+    "status": "PASS",
+    "checks": 14,
+    "evidence": "server-frontend-release14-smoke.json",
+    "entry": "index-UowQMqXs.js",
+    "durable_stage_history_route": "PASS",
+    "stage_form_in_deployed_bundle": "PASS",
+    "time_independent_schedule_notice": "PASS",
+    "current_full_local_profile": "PASS",
+    "nginx_syntax": "PASS_REPORTED_BY_ROOT",
+    "inference_requests_performed": 0
+  },
+  "scenario_publication_reason": {
+    "status": "SOURCE_BUILD_VERIFIED",
+    "explicit_separate_reason": true,
+    "min_length": 3,
+    "max_length": 2000,
+    "canonical_payload": "reason",
+    "no_approval_reason_reuse": true,
+    "native_deployed_check": "SOURCE_BUNDLE_DEPLOYED_BACKEND_PUBLICATION_WITH_EXPLICIT_REASON_RECORDED",
+    "current_evidence": "tests/incident17-program-publication-report.json",
+    "native_ui_publish_click_claimed_for_incident17": false
+  },
+  "timing_output_semantic_review": {
+    "status": "FAIL_RELEASE_BLOCKING",
+    "generated_reviewed_including_warmup": 26,
+    "generated_timed_reviewed": 25,
+    "fail": 7,
+    "source_supported_in_this_review": 19,
+    "evidence": "timing-semantic-review-failed-run.json",
+    "company_accepted": false,
+    "model_calls_from_review": 0
+  },
+  "local_ai_activation_conflicts": {
+    "status": "TRANSPORT_REGRESSION_PASS",
+    "localized_codes": [
+      "drain_required",
+      "pipeline_identity_changed",
+      "invalid_generation_policy",
+      "full_requires_local_generation",
+      "generation_disabled",
+      "deployment_model_mismatch",
+      "current_semantic_review_required",
+      "live_runtime_unavailable",
+      "live_runtime_identity_mismatch"
+    ],
+    "preserves_http_409_failure": true,
+    "does_not_imply_activation_succeeded": true
+  },
+  "source12_manual_semantic_review": {
+    "status": "FAIL",
+    "reviewed": 29,
+    "passed": 23,
+    "failed": 6,
+    "evidence": "source12-semantic-review.json",
+    "full_gold_content_read": true,
+    "prior_pass_reused": false,
+    "company_hr_acceptance": false,
+    "cases": [
+      "secret_types",
+      "confidential_list",
+      "electronic_protection",
+      "gift_conditions",
+      "conflict_action",
+      "all_policy_audience"
+    ],
+    "initial_review_preserved": "source12-semantic-review-initial.json",
+    "review_revision": 3,
+    "full_corpus_audit": "source-corpus-intent-audit.json"
+  },
+  "server_release16_smoke": {
+    "status": "PASS",
+    "checks": 16,
+    "evidence": "server-frontend-release16-smoke.json",
+    "entry": "index-DuA_WO9D.js",
+    "scope": "Frontend HTTPS/UI/transport only; fresh generative activation is not asserted.",
+    "model_calls": 0,
+    "native_hr_dashboard": "PASS_REPORTED_BY_ROOT",
+    "screenshot": "server-hr-dashboard-final.png"
+  },
+  "source14_semantic_review": {
+    "status": "FAIL",
+    "reviewed": 29,
+    "passed": 28,
+    "failed": 1,
+    "case": "electronic_protection",
+    "evidence": "source14-semantic-review.json",
+    "expected_full_parent_missing": "p10 encryptedANDsigned open channel",
+    "old_pass_reused": false,
+    "casepack_sha256": "a96dafb813d05c86e2a7cd81fd89ecf3d1a17e36850b9697ee2c305d0cbb0a22"
+  },
+  "source13_semantic_review": {
+    "status": "INCOMPLETE_STOPPED_NOT_ACCEPTABLE",
+    "cases_produced": 6,
+    "evidence": "source13-semantic-review.json",
+    "full29review_completed": false
+  },
+  "source15_semantic_review": {
+    "status": "PASS",
+    "reviewed": 29,
+    "passed": 29,
+    "failed": 0,
+    "evidence": "source15-semantic-review.json",
+    "actual_evaluation_sha256": "a7bd129165fe3bb15e3ff5f0785e9c9e60b3aa11e34fba69da5e8480d0a1238d",
+    "retrieval_source_sha256": "0da5d26824b6c3da6b00fcab116a3b34034c9b54edf5905d1d8a279ac2d6e869",
+    "casepack_byte_identical_to_source14": true,
+    "modes": {
+      "EXTRACT": 24,
+      "LOCAL_GENERATED": 2,
+      "HANDOFF": 3
+    },
+    "old_pass_reused": false,
+    "company_hr_acceptance": false
+  },
+  "dashboard_current_roster_filter": {
+    "stage_excluded": "ENDED",
+    "name_or_id_filter": false,
+    "other_stages_retained": true,
+    "native_deployed_check": "DEPLOYED_BUNDLE_VERIFIED_CACHED_LIVE_DASHBOARD_REFRESH_CONFIRMED",
+    "fresh_cold_client_load_claimed": false
+  },
+  "server_release17_smoke": {
+    "status": "PASS",
+    "checks": 17,
+    "evidence": "server-frontend-release17-smoke.json",
+    "entry": "index-D8OZiddh.js",
+    "scope": "Read-only frontend transport/UI; no fresh activation asserted.",
+    "model_calls": 0,
+    "ended_filter_bundled": true
+  },
+  "final_http_semantic_review": {
+    "status": "PASS",
+    "criteria_prepared_before_outputs": true,
+    "expected_total_including_warmup": 101,
+    "expected_timed": 100,
+    "expected_including_warmup": 101,
+    "observed_including_warmup": 101,
+    "observed_timed": 100,
+    "reviewed_including_warmup": 101,
+    "reviewed_timed": 100,
+    "passed": 101,
+    "failed": 0,
+    "pending": 0,
+    "unique_manual_groups": 20,
+    "modes_including_warmup": {
+      "EXTRACT": 91,
+      "LOCAL_GENERATED": 10
+    },
+    "modes_timed": {
+      "EXTRACT": 90,
+      "LOCAL_GENERATED": 10
+    },
+    "company_accepted": false,
+    "evidence": "final-http-semantic-review.json",
+    "reviewed_at": "2026-10-24T02:58:43.790856+00:00",
+    "actual_snapshot_sha256": "f695a71f72dce82a5c5252fadb4bd766bfe062596b31f980b69e233f84ead7d3",
+    "retrieval_source_sha256": "0da5d26824b6c3da6b00fcab116a3b34034c9b54edf5905d1d8a279ac2d6e869",
+    "active_profile_id": "0a2e815c-80ce-46b5-ac97-bb1612f0a859",
+    "configuration_fingerprint": "5f1567cb62b0206f010c14733a3b9a9d96530b7ad1d36d9d9547492cd2d8c13d",
+    "all_citation_source_pins_valid": true,
+    "cleanup_employee_ended_and_acl_empty": true,
+    "immutable_sources_match_in_run_full_corpus": true,
+    "model_calls_by_reviewer": 0
+  },
+  "current_source15_profile": {
+    "status": "HISTORICAL_SOURCE15_PROFILE_REPLACED",
+    "id": "0a2e815c-80ce-46b5-ac97-bb1612f0a859",
+    "configuration_fingerprint": "5f1567cb62b0206f010c14733a3b9a9d96530b7ad1d36d9d9547492cd2d8c13d",
+    "current_pipeline_matches": false,
+    "evidence": "final-http-semantic-review.json",
+    "evidence_scope": "Historical SOURCE15 HTTP100 context only. SOURCE17 now has a different active profile; this record is retained as predecessor evidence.",
+    "pipeline_matched_at_original_measurement": true
+  },
+  "max_employee_identity_review": {
+    "status": "DEPLOYED_WEB18_SOURCE_IDENTITY_AND_LOCAL23_TESTS_VERIFIED",
+    "evidence": "web18-binding-review.json",
+    "reviewed_fields": [
+      "display_name",
+      "max_user_id"
+    ],
+    "explicit_identity_checked_required": true,
+    "reason_min_length": 3,
+    "exact_displayed_binding_etag_used": true,
+    "account_or_version_change_invalidates_confirmation": true,
+    "server_error_clears_check_and_reloads_current_binding": true,
+    "active_exact_binding_response_required_for_success": true,
+    "real_max_binding_or_message_created": false,
+    "tests_added": 7,
+    "prepared_server_smoke": "work/implementation/server_frontend_patch8_smoke.py",
+    "deployed_image_id": "sha256:16438bcef011b1373c6dcd0fe0740c8322546b9796bd366a0b951d76ef505a88",
+    "incident17_real_pending_binding_approval_exercised": false,
+    "evidence_scope": "The exact tested WEB18 bundle is deployed. No new real pending-account identity approval was executed in incident17; this is not an outstanding deployment gate."
+  },
+  "server_release18_smoke": {
+    "status": "PASS",
+    "expected_entry": "index-CVW-IeYL.js",
+    "expected_active_profile_id": "0a2e815c-80ce-46b5-ac97-bb1612f0a859",
+    "expected_configuration_fingerprint": "5f1567cb62b0206f010c14733a3b9a9d96530b7ad1d36d9d9547492cd2d8c13d",
+    "evidence": "server-frontend-release18-smoke.json",
+    "prepared_command": "python3 work/implementation/server_frontend_patch8_smoke.py",
+    "model_calls": 0,
+    "binding_mutations": 0,
+    "checks": 18,
+    "observed_at": "2026-10-24T03:09:14.511500+00:00",
+    "native_hr_dashboard": "PASS",
+    "screenshot": "server-hr-dashboard-final.png",
+    "image_id": "sha256:16438bcef011b1373c6dcd0fe0740c8322546b9796bd366a0b951d76ef505a88",
+    "evidence_scope": "Historical WEB18 18-check HTTPS/source smoke at 03:09 UTC with SOURCE15 profile. Retained; current SOURCE17 backend/native proof and current public-path degradation are recorded separately.",
+    "historical_profile_not_current_source17": true
+  },
+  "source16_semantic_review": {
+    "status": "FAIL",
+    "positive_reviewed": 29,
+    "positive_passed": 29,
+    "negative_reviewed": 10,
+    "negative_passed": 9,
+    "negative_failed": 1,
+    "total_reviewed": 39,
+    "total_failed": 1,
+    "evidence": "source16-semantic-review.json",
+    "actual_evaluation_sha256": "71b1ca8003ce6077231bfdcfbfddcd662263ee02c33c1413015f26da388d9dfe",
+    "retrieval_source_sha256": "9ba325326d894988e38278b2e51340ae2cd43f00a0518c5ff8888c6fb244aa05",
+    "criteria_prepared_before_outputs": true,
+    "old_pass_reused": false,
+    "company_hr_acceptance": false
+  },
+  "source17_semantic_review": {
+    "status": "PASS",
+    "positive_reviewed": 29,
+    "positive_passed": 29,
+    "negative_reviewed": 10,
+    "negative_passed": 10,
+    "negative_failed": 0,
+    "total_reviewed": 39,
+    "total_failed": 0,
+    "evidence": "source17-semantic-review.json",
+    "actual_evaluation_sha256": "d2def699d543ac4eb7eca318da826a75b21c6edbf8277a7087e31e49181f39c5",
+    "retrieval_source_sha256": "8ecf325b6fa1bd392f4edabe9b3666ae2a9bd84a0b33d32cdaf421570476ca35",
+    "criteria_prepared_before_outputs": true,
+    "old_pass_reused": false,
+    "company_hr_acceptance": false
+  },
+  "latest_source17_quality_gate": "FRESH_MANUAL39_PASS_NATIVE10_PASS_TARGETED_DURABLE_HTTP4_PASS",
+  "final_verification_updated_at": "2026-10-24T08:41:55.710367+00:00",
+  "current_source17_profile": {
+    "status": "ACTIVE_NATIVE10_CHECKS_PASS",
+    "id": "4953d2c8-52cc-4aed-80b7-66c6d0a941f2",
+    "configuration_fingerprint": "73febd1a0de367354efd8632dd4e3e7c775cec04dd2e7882bcfd5f27349a715a",
+    "validation_id": "1785e986-4411-4794-8d5f-be62d18247f8",
+    "native_checks_passed": 10,
+    "native_completed_at": "2026-10-24T08:27:13.420450+00:00",
+    "retrieval_source_sha256": "8ecf325b6fa1bd392f4edabe9b3666ae2a9bd84a0b33d32cdaf421570476ca35",
+    "renderer_source_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b",
+    "evidence": "tests/incident17-native-activation-report.json",
+    "company_hr_acceptance": false
+  },
+  "incident17_runtime": {
+    "status": "PASS",
+    "observed_at": "2026-10-24T08:33:11.140651+00:00",
+    "services_running": 14,
+    "services_with_configured_healthchecks_healthy": true,
+    "api_image_id": "sha256:9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e",
+    "web_image_id": "sha256:16438bcef011b1373c6dcd0fe0740c8322546b9796bd366a0b951d76ef505a88",
+    "max_me_http": 200,
+    "max_subscriptions_http": 200,
+    "current_max_webhooks": 1,
+    "max_event_types": [
+      "bot_started",
+      "bot_stopped",
+      "dialog_removed",
+      "message_callback",
+      "message_created"
+    ],
+    "backup_timer": "active",
+    "evidence": "tests/incident17-runtime-report.json",
+    "test_messages_sent_to_actual_max_users": 0
+  },
+  "incident17_deployed_http": {
+    "status": "PASS_TARGETED_SMOKE",
+    "evidence": "tests/incident17-http-smoke-report.json",
+    "questions": 4,
+    "modes": {
+      "HANDOFF": 2,
+      "EXTRACT": 1,
+      "LOCAL_GENERATED": 1
+    },
+    "all_response_text_hashes_match_independently_read_source17_cases": true,
+    "review_evidence": "source17-semantic-review.json",
+    "http_max_seconds": 23.1268,
+    "http_p95_seconds_for_four_requests_only": 23.1268,
+    "fresh_source17_http100_performed": false,
+    "quality_scope": "Four targeted durable HTTP/worker prompts plus separate warmup; not a 100-request latency benchmark or company acceptance."
+  },
+  "incident17_program_publication": {
+    "status": "PUBLISHED",
+    "version_id": "2be76a49-75a9-4663-bc03-07b643bc95c3",
+    "semantic_hash": "2c32fcda9a2ab8afd7454e257c7fdd0cc29ead5b119d915209b5443de3057622",
+    "migration_policy": "NEW_ENROLLMENTS_ONLY",
+    "active_journeys_changed": 0,
+    "serial_intro": "xls-r3 → accepted +1min → xls-r4 → accepted +1min → xls-r5 → explicit answer or Skip → xls-r7",
+    "complete_original_source_rows_retained": true,
+    "evidence": "tests/incident17-program-publication-report.json"
+  },
+  "incident17_cached_dashboard": {
+    "status": "PASS_REPORTED_BY_ROOT_FOR_EXISTING_CACHED_IAB_SESSION",
+    "observed_time_as_reported_by_root": "11:36:59",
+    "evidence_source": "Root refreshed the actual existing IAB dashboard; current backend data loaded. No fresh cold-cache asset transfer is established.",
+    "new_screenshot_published": false,
+    "personal_name_or_screenshot_included": false,
+    "cold_cache_load_claimed": false,
+    "observed_at": "2026-10-24T11:36:59+03:00",
+    "fresh_login_claimed": false,
+    "aggregate_evidence": "tests/incident17-deployment-report.json"
+  },
+  "incident17_asset_delivery": {
+    "status": "SERVER_ASSET_OK_CLIENT_PATH_DEGRADED",
+    "evidence": "tests/incident17-asset-path-report.json",
+    "public_base_url": "https://systematic-working-authorities-glenn.trycloudflare.com",
+    "asset_path": "/assets/index-CVW-IeYL.js",
+    "expected_decoded_bytes": 408059,
+    "expected_decoded_sha256": "5a0e166313afaf9c7635d591970615f5c900e7165c5dc11d018dcf611240187d",
+    "origin_full_body_verified": true,
+    "vm_public_https_full_body_verified": true,
+    "operator_local_public_https_full_body_verified": false,
+    "operator_local_observation": "Application reads returned 16384 bytes before a subsequent read timed out via the ARN edge; this is not a proven exact network-packet cutoff.",
+    "root_cause_established": false,
+    "dpi_proven": false,
+    "cached_browser_success_is_not_cold_client_proof": true,
+    "full_fresh_public_ui_acceptance_claimed": false
+  },
+  "incident17_backend_local_tests": {
+    "status": "PASS",
+    "passed": 369,
+    "subtests_passed": 18,
+    "seconds": 24.62,
+    "scope": "Local tests; actual deployed model regression/native activation remain separate",
+    "postgres_invariant_suite_included": false,
+    "evidence": "tests/incident17-local-tests.json"
+  },
+  "incident17_proof_sha256": {
+    "incident17-native-activation-report.json": "ea0589d47e85390e14fa0f93967f2d97dd808cab19c2417e6dce280e4a62d545",
+    "incident17-runtime-report.json": "9c1bc1f8536a92d60bbd6ff493e6b74ae03a35edb2b87f76cec9d2ab4e9518ad",
+    "incident17-http-smoke-report.json": "c3a1bf18e6aad96386b4ecdb362ec5dd1155699f90b20990b05ed331d22e1c28",
+    "incident17-program-publication-report.json": "d89497266944feb7f759a34c32f5052ccfe2be91630a7122ea0b421fcc211bc0",
+    "incident17-asset-path-report.json": "7db6b236c0e5575f9b437a1ac3004b97c7814c3b1bfa31c735242be6a41a1741",
+    "incident17-local-tests.json": "99286ee3dffda9516cca03ae8139f3fd8597bdaceac2b4d1a84343c006924363"
+  },
+  "server_hr_dashboard_screenshot_scope": "Historical synthetic dashboard screenshot; no new screenshot containing the current real person name is published.",
+  "incident17_deployment_conclusion": {
+    "status": "PASS_BACKEND_MAX_FIX_WITH_CLIENT_WEB_PATH_LIMITATION",
+    "evidence": "tests/incident17-deployment-report.json",
+    "sha256": "d721781feb1091f210ae67c6dd79d499d334a947a2f5255b147e7aa4c57741f8",
+    "fresh_login_claimed": false,
+    "fresh_cold_public_client_load_pass_claimed": false,
+    "fresh_source17_http100_performed": false,
+    "company_hr_acceptance": false
+  }
+}

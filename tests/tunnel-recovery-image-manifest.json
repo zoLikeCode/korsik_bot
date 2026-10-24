@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "observed_at": "2026-10-24T07:44:38.157732+00:00",
+  "image_tag": "korsik-tunnel:local",
+  "image_id": "sha256:b74b8bf3c660f98df9ed51099c79d1b2eafdb4922b8cf6fd593a3eb87b056723",
+  "archive": {
+    "file": "tunnel-image.tar.gz",
+    "bytes": 68113247,
+    "sha256": "d73b7bd7895d8c2e0cadf38875a4130d2630a5c6d313368951f55998a72271fa"
+  },
+  "base_bundle_manifest_sha256": "a7f9c38cdd38e03ba0cfe4c3e4b72678a867e7f2e648560ddc37081d4b7442d2",
+  "docker_load_exit_code": 0,
+  "post_load_image_matches": true,
+  "runtime_scope": "DEMO_TUNNEL_ONLY",
+  "backend_models_images_changed": false,
+  "install": "Load original images.tar.gz, then docker load < tunnel-image.tar.gz before running current demo compose; onprem mode disables demo tunnel."
+}

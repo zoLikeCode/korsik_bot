@@ -1,0 +1,38 @@
+{
+  "observed_at": "2026-10-24T02:35:05.998515+00:00",
+  "images": {
+    "api": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+    "web": "sha256:6209b9d85cc44cff9613bf9fc7196f5877de8b10e650e00f457b4b9b7412df4b",
+    "encoder": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+    "reranker": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+    "generator": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079",
+    "parser": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf",
+    "worker": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+    "answer-worker": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+    "ingest-worker": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+    "scheduler": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8"
+  },
+  "active_local_ai_profile": {
+    "id": "0a2e815c-80ce-46b5-ac97-bb1612f0a859",
+    "status": "ACTIVE",
+    "configuration_fingerprint": "5f1567cb62b0206f010c14733a3b9a9d96530b7ad1d36d9d9547492cd2d8c13d",
+    "current_pipeline_matches": true,
+    "generation_policy": "LOCAL_GENERATION"
+  },
+  "generator_model": "Qwen/Qwen3.5-4B",
+  "generator_fingerprint": "1fe278d9e50f5fe426c80efe3845911a3bbcc057d1f975c660a8c2f39c6d21d0",
+  "source_sha256": {
+    "backend/korsik/retrieval.py": "0da5d26824b6c3da6b00fcab116a3b34034c9b54edf5905d1d8a279ac2d6e869",
+    "backend/korsik/worker.py": "e71b3f7a0b13f0bfb8d63a2af1dd979d500533120b9cc5f828771ff0c51b7302",
+    "backend/korsik/chat.py": "d430b9e67ff6427534bf30da46941ad212c17c4a5cf09b3079cea77bfe921902",
+    "backend/korsik/auth.py": "5086440b46178ce40a3114071d49b32d7da6acfb7eadf83f3fdd0e9864f4e6f7",
+    "backend/korsik/settings.py": "0bc2254de93fad6795489a210566e16b3b10b1a6d2dcdef7baaf21b7e7ba394a",
+    "backend/korsik/employment_stages.py": "8f76e847f25b6415eaf8312328e2f215eeab32e611a1091ee0aea5859abe7244",
+    "backend/korsik/local_ai.py": "d1c86b92501837fe18bc917f16fd5724af85066928e4b76bd11cf1b83c476609",
+    "services/model_server/app.py": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b",
+    "tests/api_latency.py": "99df63d9584b61a152f2cf9ed1fa2ebab3386c71694b87b989ab01312a01db8a"
+  },
+  "workload": "100 distinct timing prompts from10topics\u00d710prefixes; actual authenticated HTTP\u2192durableworker, one concurrent synthetic unbound employee; not100independent semanticgolden cases",
+  "MAX_sends": 0,
+  "backup_timer_paused_for_measurement": "inactive"
+}

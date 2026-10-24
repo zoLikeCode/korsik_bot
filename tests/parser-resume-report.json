@@ -1,0 +1,1 @@
+{"status": "PASS", "network": "none", "physical_pages": 2, "retained_page_numbers": [1], "processed_page_numbers": [2], "blocks": 1, "checkpoint_events": 3, "parse_seconds": 2.742, "total_seconds": 2.791, "retained_preview_regenerated": false, "source_kind": "SYNTHETIC_TWO_SLIDE_PPTX"}

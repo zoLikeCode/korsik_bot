@@ -1,0 +1,76 @@
+{
+  "schema": "korsik-release21-browser-v1",
+  "observed_at": "2026-10-24T17:33:47.830Z",
+  "status": "PASS",
+  "local": {
+    "origin": "http://127.0.0.1:5173",
+    "data": "synthetic fixtures only",
+    "MAX_mode": "disabled",
+    "created_scenario": true,
+    "created_simple_draft": true,
+    "palette": [
+      "Сообщение",
+      "Ответ",
+      "Опрос",
+      "Завершение"
+    ],
+    "readonly_generated_ID": true,
+    "mandatory_audience_and_complex_transition_fields_absent": true,
+    "scheduled_start_date_and_time_conditional": true,
+    "after_previous_day_and_time_disabled": true,
+    "custom_formulation_saved": true,
+    "created_answer_nodes": 2,
+    "real_handle_drag_connections": 4,
+    "chosen_branch_simulation_server_valid": true,
+    "local_publication_passed": true,
+    "MAX_messages_sent": 0,
+    "published_survey_selected_and_persisted": true,
+    "survey_question_count_displayed": 4,
+    "temporary_survey_node_removed": true,
+    "basic_formulations_tab_saved_and_reopened": true,
+    "draft_survived_page_reload": true,
+    "node_drag_and_both_themes_checked": true
+  },
+  "public": {
+    "origin": "https://systematic-working-authorities-glenn.trycloudflare.com",
+    "entry": "/assets/index-6usodJLn.js",
+    "authenticated_existing_session": true,
+    "scenario_cards_rendered": true,
+    "legacy_graph_view_and_simple_draft_action_present": true,
+    "knowledge_tabs": [
+      "Документы",
+      "Контрольные вопросы",
+      "Основные формулировки"
+    ],
+    "basic_formulations_loaded": true,
+    "graph_edits": 0,
+    "basic_formulation_writes": 0,
+    "employee_or_invitation_changes": 0,
+    "simulation_or_publication_calls": 0,
+    "MAX_test_messages": 0
+  },
+  "validation": {
+    "pytest_tests": 511,
+    "pytest_subtests": 18,
+    "frontend_tests": 89,
+    "typescript_and_build": "PASS",
+    "exact_candidate_PostgreSQL_tests": 18,
+    "git_diff_check": "PASS"
+  },
+  "screenshots": [
+    "release21-editor-branches-local.png",
+    "release21-editor-inspector-local.png",
+    "release21-editor-dark-local.png",
+    "release21-settings-local.png",
+    "release21-survey-selection-local.png",
+    "release21-scenarios-public.png",
+    "release21-basic-formulations-public.png"
+  ],
+  "limits": [
+    "Native MAX device/webview flow was not exercised.",
+    "Runtime scenario receipts and callbacks used synthetic PostgreSQL integration data.",
+    "Browser observations do not measure every animation frame.",
+    "Existing employee assignments remain pinned to their original versions."
+  ],
+  "company_accepted": false
+}

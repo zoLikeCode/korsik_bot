@@ -1,0 +1,255 @@
+{
+  "schema": "korsik-offline-restore-v1",
+  "mode": "FULL",
+  "database": "korsik_offline_check",
+  "external_MAX_sends": 0,
+  "checks": [
+    {
+      "name": "egress_dns_huggingface.co",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "egress_dns_api.openai.com",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "egress_tcp_1.1.1.1",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "egress_tcp_8.8.8.8",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "encoder_cold_start",
+      "status": "PASS",
+      "detail": {
+        "status": "READY",
+        "fingerprint": "afc4aa45cd8d95d538404fd463d881c1cd522f3f92bfd42a6b2f6abde0a5b5d8",
+        "artifact_fingerprint": null,
+        "runtime": "onnxruntime-fp32-cpu",
+        "profile": null
+      }
+    },
+    {
+      "name": "reranker_cold_start",
+      "status": "PASS",
+      "detail": {
+        "status": "READY",
+        "fingerprint": "30f61c1e0d16deb1d0f43ddaa49f5457bfbaf69f1b6ee27d0475a2b676f8f8ea",
+        "artifact_fingerprint": null,
+        "runtime": "onnxruntime-fp32-cpu",
+        "profile": null
+      }
+    },
+    {
+      "name": "parser_cold_start",
+      "status": "PASS",
+      "detail": {
+        "status": "READY",
+        "fingerprint": null,
+        "artifact_fingerprint": null,
+        "runtime": null,
+        "profile": "cpu_structure"
+      }
+    },
+    {
+      "name": "generator_cold_start",
+      "status": "PASS",
+      "detail": {
+        "status": "READY",
+        "fingerprint": "1fe278d9e50f5fe426c80efe3845911a3bbcc057d1f975c660a8c2f39c6d21d0",
+        "artifact_fingerprint": null,
+        "runtime": "torch-bf16-cuda",
+        "profile": null
+      }
+    },
+    {
+      "name": "offline_russian_image_only_pdf_ocr",
+      "status": "PASS",
+      "detail": {
+        "seconds": 7.511,
+        "errors": 0,
+        "fixture": "SYNTHETIC_NOT_COMPANY_OCR_ACCEPTANCE"
+      }
+    },
+    {
+      "name": "cold_local_profile_runtime_test_and_activation",
+      "status": "PASS",
+      "detail": {
+        "validation_status": "PASSED",
+        "profile_status": "ACTIVE",
+        "model_roles": [
+          "embedder",
+          "generator",
+          "reranker"
+        ],
+        "checks": [
+          {
+            "name": "pipeline_code_identity",
+            "status": "PASS",
+            "seconds": 0.0,
+            "detail": {
+              "chunker_version": "korsik-physical-parent-chunker-v1",
+              "chunker_fingerprint": "64fcb0516ed01fb9f0a89ed6d2a0d8b6fb387500bc0640b4435c5f6a4cb02b2b",
+              "retrieval_policy_version": "korsik-hybrid-retrieval-guards-v1",
+              "retrieval_policy_fingerprint": "1b35a1c04237038646383f9603e69d6087bd3b5f9a6641d4ba9dccfcd61677b7",
+              "retrieval_module_source_fingerprint": "0da5d26824b6c3da6b00fcab116a3b34034c9b54edf5905d1d8a279ac2d6e869",
+              "generation_request_schema_version": "korsik-local-generation-request-v1",
+              "generation_runtime_source_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+            }
+          },
+          {
+            "name": "embedder_identity",
+            "status": "PASS",
+            "seconds": 0.034,
+            "detail": {
+              "fingerprint": "afc4aa45cd8d95d538404fd463d881c1cd522f3f92bfd42a6b2f6abde0a5b5d8",
+              "runtime": "onnxruntime-fp32-cpu"
+            }
+          },
+          {
+            "name": "reranker_identity",
+            "status": "PASS",
+            "seconds": 0.029,
+            "detail": {
+              "fingerprint": "30f61c1e0d16deb1d0f43ddaa49f5457bfbaf69f1b6ee27d0475a2b676f8f8ea",
+              "runtime": "onnxruntime-fp32-cpu"
+            }
+          },
+          {
+            "name": "generator_identity",
+            "status": "PASS",
+            "seconds": 0.029,
+            "detail": {
+              "fingerprint": "1fe278d9e50f5fe426c80efe3845911a3bbcc057d1f975c660a8c2f39c6d21d0",
+              "runtime": "torch-bf16-cuda",
+              "renderer_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+            }
+          },
+          {
+            "name": "russian_embedding",
+            "status": "PASS",
+            "seconds": 0.088,
+            "detail": {
+              "dimensions": 384,
+              "norm": 1.000000007651774
+            }
+          },
+          {
+            "name": "russian_reranking",
+            "status": "PASS",
+            "seconds": 0.161,
+            "detail": {
+              "ordering": "relevant_first"
+            }
+          },
+          {
+            "name": "semantic_evaluation_report",
+            "status": "PASS",
+            "seconds": 0.002,
+            "detail": {
+              "status": "PASS",
+              "report_status": "PASS",
+              "pipeline_review_current": true,
+              "cases": 29,
+              "reviewer": "IMPLEMENTATION_REVIEW_WITH_INDEPENDENT_MANUAL_OUTPUT_REVIEW_NOT_COMPANY_HR",
+              "report_sha256": "4af930a7267848ead4b9d6797815df459580ad621faba58f5cc5d8b2b64886fb",
+              "scope": "IMPLEMENTATION_REVIEW_NOT_COMPANY_ACCEPTANCE"
+            }
+          },
+          {
+            "name": "grounded_generation_1",
+            "status": "PASS",
+            "seconds": 5.205,
+            "detail": {
+              "output": "Обед проходит с 12:00 до 13:00 [1].",
+              "output_tokens": 23,
+              "seconds": 5.011
+            }
+          },
+          {
+            "name": "grounded_generation_2",
+            "status": "PASS",
+            "seconds": 1.972,
+            "detail": {
+              "output": "Обратиться в отдел кадров [1].",
+              "output_tokens": 12,
+              "seconds": 1.946
+            }
+          },
+          {
+            "name": "grounded_generation_3",
+            "status": "PASS",
+            "seconds": 3.715,
+            "detail": {
+              "output": "Нужно уведомить HR в течение 2 дней, если изменился номер телефона [1].",
+              "output_tokens": 23,
+              "seconds": 3.675
+            }
+          }
+        ],
+        "orchestration": "NATIVE_ENDPOINT_FUNCTIONS_AND_ACTUAL_WORKER_RUN_ONCE",
+        "worker_partition": "ingest",
+        "validation_job_status": "COMPLETED",
+        "validation_job_attempts": 1,
+        "scope": "SYNTHETIC_RUNTIME_SMOKE_NOT_COMPANY_ACCEPTANCE"
+      }
+    },
+    {
+      "name": "restore_vector_projection_from_sql",
+      "status": "PASS",
+      "detail": {
+        "status": "OK",
+        "snapshot_id": "d85136e1-6aae-4dc6-889f-8f673451d2d0",
+        "revisions": 3,
+        "mode": "DENSE_SPARSE",
+        "indexed": 81,
+        "encoder_fingerprint": "afc4aa45cd8d95d538404fd463d881c1cd522f3f92bfd42a6b2f6abde0a5b5d8",
+        "collection": "korsik_granite97_r2_v1"
+      }
+    },
+    {
+      "name": "actual_restored_qdrant_point_count",
+      "status": "PASS",
+      "detail": {
+        "points": 81,
+        "indexed_source_chunks": 81,
+        "fresh_isolated_qdrant_volume": true
+      }
+    },
+    {
+      "name": "offline_full_answer_from_restored_corpus",
+      "status": "PASS",
+      "detail": {
+        "mode": "EXTRACT",
+        "citations": 3,
+        "reason": "LITERAL_NORMATIVE_POLICY",
+        "scope": "RESTORED_SOURCE_ANSWER_NOT_FREE_GENERATION_QUALITY_ACCEPTANCE",
+        "generation_policy": "Normative source may require literal EXTRACT; actual decoder execution is checked separately by native runtime validation"
+      }
+    },
+    {
+      "name": "offline_feedback_analysis",
+      "status": "PASS",
+      "detail": {
+        "status": "PENDING_HR_REVIEW",
+        "training_data_kind": null,
+        "quality": "Synthetic baseline; HR decision required"
+      }
+    },
+    {
+      "name": "offline_dashboard_from_restored_sql",
+      "status": "PASS",
+      "detail": {
+        "computed": true
+      }
+    }
+  ],
+  "max_transport": "NOT_STARTED_NO_OUTGOING_MESSAGES",
+  "status": "PASS"
+}

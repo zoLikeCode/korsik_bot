@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "certbot_renew_dry_run_exit_code": 0,
+  "domain": "app.korsik-demo.ru",
+  "staging_ACME_test": true,
+  "run_deploy_hooks": true,
+  "actual_production_certificate_replaced": false,
+  "recorded_at": "2026-10-24T12:09:32.796236+00:00"
+}

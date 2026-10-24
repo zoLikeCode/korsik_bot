@@ -1,0 +1,51 @@
+{
+  "observed_at": "2026-10-24T02:23:07.636030+00:00",
+  "backend_pytest": {
+    "passed": 310,
+    "failed": 0,
+    "seconds": 24.42,
+    "subtests_passed": 6,
+    "warnings": [
+      "Upstream Starlette BlockingPortal deprecation"
+    ],
+    "scope": "Full source15 frozen suite including FULL SQL same-section companion recall, current ACL/frozen extraction gates, six corpus-completeness classes, cited facts, universal cap, activation gates and offline API catalogue"
+  },
+  "frontend_tests": {
+    "passed": 23,
+    "failed": 0,
+    "files": 5
+  },
+  "frontend_build": "PASS",
+  "entry": "index-CVW-IeYL.js",
+  "ruff_F_E9": "PASS",
+  "core_dependency_audit": {
+    "packages": 57,
+    "known_vulnerabilities": 0
+  },
+  "company_acceptance": false,
+  "openapi": {
+    "paths": 195,
+    "operations": 232,
+    "schemas": 31,
+    "stage_scheduled_202_documented": true
+  },
+  "frontend_final_change": "WEB18: pending MAX name/user ID are visible before HR approval; explicit identity check and reason pin the displayed ETag. Backend SOURCE15 and measured WEB17 HTTP100 context remain unchanged.",
+  "frontend_release_delta": {
+    "from": "WEB17 index-D8OZiddh.js",
+    "to": "WEB18 index-CVW-IeYL.js",
+    "scope": "Frontend-only MAX identity review plus accurate DEMO.md first-run instructions",
+    "local_verified_at": "2026-10-24T03:05:25.944306+00:00",
+    "deployment_status": "DEPLOYED_WEB18_HTTPS_VERIFIED",
+    "backend_suite_preserved": 310,
+    "backend_runtime_source": "SOURCE15",
+    "measured_full_http100_frontend": "WEB17",
+    "tests_added": 7,
+    "evidence": "qa/web18-binding-review.json",
+    "deployment_context": "tests/frontend-final-deployment-context.json"
+  },
+  "offline_operator_tests": {
+    "passed": 23,
+    "failed": 0,
+    "scope": "Archive path safety, exact model/source report inventory, current-quality/source/image identity binding; separate from frozen backend310 suite"
+  }
+}

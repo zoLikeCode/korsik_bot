@@ -1,0 +1,38 @@
+{
+  "schema": "korsik-release26-local-browser-v1",
+  "status": "PASS",
+  "observed_at": "2026-10-24T21:07:58.863297+00:00",
+  "environment": "127.0.0.1:5173 with local SQLite API and MAX disabled",
+  "synthetic_records_only": true,
+  "production_messages_sent": 0,
+  "checks": {
+    "dialog_employee_left_green_bot_right_blue": true,
+    "original_unanswered_employee_questions_red": true,
+    "HR_composer_enabled_without_prior_connect": true,
+    "selected_question_quote_visible": true,
+    "targeted_problem_counts": [
+      2,
+      1,
+      0
+    ],
+    "global_problem_dialog_count": [
+      2,
+      1
+    ],
+    "survey_removed_fields_absent": true,
+    "survey_arrows_up_down_preserve_question_text": true,
+    "survey_boundary_arrows_disabled": true,
+    "survey_Save_creates_draft": true,
+    "analytics_current_load_stage_bars_empty_state_visible": true,
+    "analytics_details_collapsed_CSV_visible": true,
+    "scenario_free_answer_checkbox_visible_and_toggleable": true,
+    "simulation_free_choice_waits_for_text_then_continues": true
+  },
+  "screenshots": [
+    "qa/release26-dialog-local.png",
+    "qa/release26-survey-local.png",
+    "qa/release26-analytics-local.png",
+    "qa/release26-free-answer-local.png"
+  ],
+  "transport_note": "Signed MAX free-answer/replay coverage is in automated backend and isolated PostgreSQL tests; no real MAX sends used for browser QA."
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "korsik-scheduler-due-v1",
+  "database": "korsik_offline_check",
+  "fixture": "SYNTHETIC_NO_ACTUAL_MAX_BINDING",
+  "due_at": "2026-10-23T23:31:07.541370+00:00",
+  "outbox_created_at": "2026-10-23T23:31:10.722308+00:00",
+  "queue_delay_seconds": 3.180938,
+  "scheduler_tick_interval_seconds": 5.0,
+  "actual_ticks": 2,
+  "outbox_status": "WAITING_BINDING",
+  "external_MAX_sends": 0,
+  "fixture_deliveries": 0,
+  "limit_seconds": 60,
+  "status": "PASS",
+  "limitation": "One actual normal-cadence synthetic sample in the restored database, not a peak-capacity or MAX-delivery latency proof"
+}

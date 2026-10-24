@@ -1,0 +1,130 @@
+{
+  "schema": "korsik-release26-rag-diagnosis-v1",
+  "status": "DIAGNOSED",
+  "observed_at": "2026-10-24T20:58:14.547183+00:00",
+  "production_database_read_only": true,
+  "MAX_messages_sent": 0,
+  "persistent_AI_profile_or_settings_changed": false,
+  "retrieval_source_sha256": "0f3d0ae22e1fa10f18cba7881d3c017a8034af581c3a0789a6dc482e1734d2c6",
+  "profile_id": "052c5a64-ac05-4286-a4c0-18e3fb1e77dc",
+  "latest_relevant_failures": [
+    {
+      "question": "Расскажи мне о коммерческой тайне",
+      "reason": "NO_PUBLISHED_APPLICABLE_SOURCES",
+      "current_employment_stage": "PREBOARDING"
+    },
+    {
+      "question": "Как передавать пароли к конфиденциальной информации?",
+      "reason": "NO_PUBLISHED_APPLICABLE_SOURCES",
+      "current_employment_stage": "PREBOARDING"
+    }
+  ],
+  "document_audience": {
+    "document": "Положение о коммерческой тайне",
+    "published": true,
+    "employment_stages": [
+      "ACTIVE"
+    ],
+    "current_chunks": 34
+  },
+  "access_expansion_authorized": false,
+  "access_expansion_applied": false,
+  "authorization_question_pending": false,
+  "active_employee_actual_probes": [
+    {
+      "question": "Расскажи мне о коммерческой тайне",
+      "mode": "EXTRACT",
+      "reason": "GENERATION_BUDGET_EXCEEDED",
+      "seconds": 23.611,
+      "characters": 2424,
+      "cited_pages": [
+        5,
+        9,
+        8
+      ],
+      "generation_attempted": true,
+      "timings": {
+        "embedding_seconds": 0.095171,
+        "vector_query_seconds": 0.068542,
+        "rerank_preparation_seconds": 0.33038,
+        "rerank_seconds": 5.294881,
+        "lexical_seconds": 0.110754,
+        "retrieval_seconds": 6.165686,
+        "generation_request_seconds": 17.401984,
+        "generation_queue_seconds": 0.0,
+        "generation_inference_seconds": 17.1091,
+        "generation_runtime_request_seconds": 17.3612,
+        "pipeline_seconds": 23.610964
+      }
+    },
+    {
+      "question": "Что относится к коммерческой тайне компании?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_DEFINITION_CONTEXT",
+      "seconds": 6.073,
+      "characters": 1554,
+      "cited_pages": [
+        3,
+        5
+      ],
+      "generation_attempted": false,
+      "timings": {
+        "embedding_seconds": 0.080967,
+        "vector_query_seconds": 0.060308,
+        "rerank_preparation_seconds": 0.346092,
+        "rerank_seconds": 5.485565,
+        "lexical_seconds": 0.013325,
+        "retrieval_seconds": 6.049747,
+        "generation_request_seconds": 0.0,
+        "generation_queue_seconds": null,
+        "generation_inference_seconds": null,
+        "pipeline_seconds": 6.07254
+      }
+    },
+    {
+      "question": "Как передавать пароли к конфиденциальной информации?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "seconds": 7.339,
+      "characters": 3370,
+      "cited_pages": [
+        11,
+        10,
+        12
+      ],
+      "generation_attempted": false,
+      "timings": {
+        "embedding_seconds": 0.089391,
+        "vector_query_seconds": 0.057014,
+        "rerank_preparation_seconds": 0.385094,
+        "rerank_seconds": 6.668002,
+        "lexical_seconds": 0.005248,
+        "retrieval_seconds": 7.316026,
+        "generation_request_seconds": 0.0,
+        "generation_queue_seconds": null,
+        "generation_inference_seconds": null,
+        "pipeline_seconds": 7.338916
+      }
+    }
+  ],
+  "default_button_change": {
+    "label": "Коммерческая тайна",
+    "before_query": "Как передавать пароли к конфиденциальной информации?",
+    "after_query": "Что относится к коммерческой тайне компании?",
+    "new_default_revision": "defaults-v2",
+    "persisted_HR_formulations_unchanged": true
+  },
+  "findings": [
+    "Recent refusals occur before retrieval because the employee is PREBOARDING but the published document allows ACTIVE only.",
+    "For a permitted ACTIVE employee the definition query returns literal sources on pages3 and5 in6.073seconds.",
+    "A broad overview attempted generation, exceeded17second inference budget, and returned a source-preserving extract in23.611seconds.",
+    "Source correctness, relevance, concision and latency need separate acceptance criteria; previous engineering source review is not evidence of fluent generation."
+  ],
+  "next_quality_experiment": "Compare bounded relevant context and a shorter, explicitly scoped response against the unchanged baseline using source-reviewed practical questions; keep ACL, citations, missing-appendix and numerical/conditional guards. No production model/runtime changes performed.",
+  "company_accepted": false,
+  "private_evidence_sha256": {
+    "actual-rag-issues-context-private.json": "275f92ef452e05fcce3e664a8df01ca0736da2bc90b7c1e0b2b2829ef28c5f66",
+    "actual-rag-probe-private.json": "60ab5960d5b5af172beeb4e8cb4d5ef1e4a5b9ec2c74076432ce7280bd4b4921"
+  },
+  "user_audience_decision": "ACTIVE_ONLY_KEEP_UNCHANGED"
+}

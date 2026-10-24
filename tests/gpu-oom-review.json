@@ -1,0 +1,42 @@
+{
+  "schema": "korsik-cuda-oom-scope-review-v1",
+  "reviewed_at_utc": "2026-10-24T01:00:40.235349+00:00",
+  "status": "READ_ONLY_REVIEW_COMPLETE_BOUNDED_FAULT_PREPARED_NOT_EXECUTED",
+  "actual_cuda_oom_observed": false,
+  "physical_vram_exhaustion_tested": false,
+  "source_sha256": {
+    "services/model_server/app.py": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b",
+    "backend/korsik/retrieval.py": "f6e104349570579c0d6d80804482a7b4b3fae406639903244cf04c18ce804340",
+    "backend/korsik/worker.py": "e71b3f7a0b13f0bfb8d63a2af1dd979d500533120b9cc5f828771ff0c51b7302"
+  },
+  "findings": [
+    "CUDA OOM in generate is not separately caught; FastAPI returns generic500.",
+    "generation_slot finally releases inference lock and admission even if the handler raises.",
+    "Backend500 becomes LOCAL_GENERATOR_UNAVAILABLE with complete evidence extract or explicit handoff.",
+    "Survey and HR work run independently of answer/model work; real generator-down mixed11check evidence does not establish actualCUDA OOM behavior.",
+    "Health reports loaded modelREADY and has no OOM/recovery counter; recovery after CUDA OOM is not yet measured."
+  ],
+  "existing_local_tests": {
+    "passed": 4,
+    "seconds": 0.49,
+    "paths": [
+      "tests/test_generation_budget.py",
+      "tests/test_retrieval.py::test_generator_queue_is_bounded_and_releases_slots_after_timeout"
+    ],
+    "scope": "Tiny model double and semaphore/timeout tests, not actualCUDA OOM"
+  },
+  "existing_actual_fault": "mixed-ai-failure-report.json verifies generator unavailable, not OOM",
+  "prepared_fault_classification": "CONTROLLED_CUDA_ALLOCATOR_CAP_OOM_NOT_PHYSICAL_VRAM_EXHAUSTION",
+  "prepared_guardrails": [
+    "Separate isolatedGPU0UUID-only container/project/network/database, noMAX",
+    "Real post-load PyTorchallocator cap; observe actual OutOfMemoryError, never fabricate it",
+    "Concurrent business commits plus explicitRAGfallback and postdisarmrealgeneration recovery required",
+    "ProductionGPU1 and frozen app/image/model/quality artifacts untouched",
+    "Root total10minutechain deadline;360shook,120sstartup,180sprobe; timed out or missinggenuinewitness remainsINCONCLUSIVE and isolatedcleanup required"
+  ],
+  "runtime_actions_performed": false,
+  "company_acceptance": false,
+  "optional_restore_hook_prepared": true,
+  "preparation_scope": "Work-onlyexternalwrapper/businessprobe/hosthook; domain added opt-in restorehook, defaultgenerator-down path unchanged. No actual execution.",
+  "source_app_or_model_changed": false
+}

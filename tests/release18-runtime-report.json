@@ -1,0 +1,718 @@
+{
+  "schema_version": 1,
+  "status": "PASS_DEPLOYED_RUNTIME_AND_BOUNDED_WATCHDOG_NO_REBOOT_TEST",
+  "scope": "RELEASE18_DEPLOYED_RUNTIME_AND_HOST_UNITS_NOT_PHYSICAL_REBOOT_PROOF",
+  "observed_at": "2026-10-24T10:36:57.554575+00:00",
+  "services_before": {
+    "web": {
+      "container_id": "251da531bfe4ec6da0ac80295be4dcc3946ad986f7894b7d9dc55fbf1adf1017",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:32e0c2e2855473a3a02a876aacc73413873d621196a7ff27513ccf9d566bf0b9",
+      "started_at": "2026-10-24T10:27:25.229104655Z",
+      "restart_count": 0
+    },
+    "max-connector": {
+      "container_id": "c247b86c11e2a3880b1a068f52e081a7c3572662af82d7a689b569c138927728",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:13072bcb1297f977beaa88557042af58a6c643c12767b16e4955264507ea76a9",
+      "started_at": "2026-10-24T10:27:13.275633361Z",
+      "restart_count": 0
+    },
+    "worker": {
+      "container_id": "3568512d6ab0d59c5e685f524dc6174ca5c5f1e8546c663bbc3d2e3a0cec3ace",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:13072bcb1297f977beaa88557042af58a6c643c12767b16e4955264507ea76a9",
+      "started_at": "2026-10-24T10:27:13.264280454Z",
+      "restart_count": 0
+    },
+    "api": {
+      "container_id": "2dee10d05917148554b8e01ab62958354b7466c0f0d7983cf8dae5b479a7b735",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:13072bcb1297f977beaa88557042af58a6c643c12767b16e4955264507ea76a9",
+      "started_at": "2026-10-24T10:27:13.282851499Z",
+      "restart_count": 0
+    },
+    "answer-worker": {
+      "container_id": "391f11236312abfcb1d40b17390e3489569c3ff9e298ef74bec4a8aead14e05f",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:13072bcb1297f977beaa88557042af58a6c643c12767b16e4955264507ea76a9",
+      "started_at": "2026-10-24T10:27:13.24110296Z",
+      "restart_count": 0
+    },
+    "ingest-worker": {
+      "container_id": "246062a4e2f995b0e916aa189e9a07ed8a97c0c53e7d804c4607898596629fac",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:13072bcb1297f977beaa88557042af58a6c643c12767b16e4955264507ea76a9",
+      "started_at": "2026-10-24T10:27:13.256423687Z",
+      "restart_count": 0
+    },
+    "scheduler": {
+      "container_id": "d63bdb40b38b183c83394a0572d79f507710aa83f95ebeed3f605b2260eebf3d",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:13072bcb1297f977beaa88557042af58a6c643c12767b16e4955264507ea76a9",
+      "started_at": "2026-10-24T10:27:13.22222801Z",
+      "restart_count": 0
+    },
+    "tunnel": {
+      "container_id": "f2fb32eacab97913ca6af7785ba0ff8e30e07a916ef44cc3e9f095f349b2f3ea",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:b74b8bf3c660f98df9ed51099c79d1b2eafdb4922b8cf6fd593a3eb87b056723",
+      "started_at": "2026-10-24T07:36:58.464643329Z",
+      "restart_count": 0
+    },
+    "reranker": {
+      "container_id": "6cd03e9c0704439c4ff6f8105b45fd21eb62f7445fc930daf4f5627a81f706c6",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "started_at": "2026-10-24T00:14:39.995072851Z",
+      "restart_count": 0
+    },
+    "encoder": {
+      "container_id": "29295c4cc4e5d35b091f28f568ee8ab4bc4b97ecc28a4583d2e5c786064aa62d",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "started_at": "2026-10-24T00:14:39.972062312Z",
+      "restart_count": 0
+    },
+    "generator": {
+      "container_id": "7901be4dd2334a58ccc78de6ccb6254b8be606576dd5eb2d9e149376f2cd8a15",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079",
+      "started_at": "2026-10-24T00:14:39.983921786Z",
+      "restart_count": 0
+    },
+    "parser": {
+      "container_id": "5077617400f76cbe892430a7bc98d64e7d8780c0b014d6d2f9159b4f6463dd38",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf",
+      "started_at": "2026-10-23T23:38:44.812086583Z",
+      "restart_count": 0
+    },
+    "qdrant": {
+      "container_id": "608fbee402829552a126bad7162c2e85c0640b82768352e02d5f584e2859b9a4",
+      "state": "running",
+      "health": null,
+      "image_id": "sha256:8a80c5500151ab2b08eb5874698b81b6b8addbc53ef4fb0c47f516680cf413d2",
+      "started_at": "2026-10-23T20:50:33.790997974Z",
+      "restart_count": 0
+    },
+    "postgres": {
+      "container_id": "0bdf25853214b0a4eac4111203925e2cad9252ec3b1b2d5176be246921e06837",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:ab20e934b27ba3ff927c1b4c9ff8cf6c32f315f743efe68dd3441182a87fb085",
+      "started_at": "2026-10-23T20:50:33.746911679Z",
+      "restart_count": 0
+    }
+  },
+  "current_app_image_id": "sha256:13072bcb1297f977beaa88557042af58a6c643c12767b16e4955264507ea76a9",
+  "current_web_image_id": "sha256:32e0c2e2855473a3a02a876aacc73413873d621196a7ff27513ccf9d566bf0b9",
+  "all_six_app_services_match": true,
+  "web": {
+    "entry": "/assets/index-CezcR7j7.js",
+    "bytes": 294881,
+    "sha256": "5536dac8574454812674dccc2f3631a10c77b91e3bad3e77e2f7fc8013a08c94",
+    "origin_headers": {
+      "Content-Type": "text/html",
+      "Cache-Control": "no-cache",
+      "Content-Security-Policy": "default-src 'self'; script-src 'self' https://st.max.ru; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self' https://max.ru https://*.max.ru https://oneme.ru https://*.oneme.ru"
+    },
+    "public_client_path_retested": false
+  },
+  "native_runtime_before": {
+    "api_uid": 10001,
+    "max_token_read_access": true,
+    "profile_id": "4953d2c8-52cc-4aed-80b7-66c6d0a941f2",
+    "profile_status": "ACTIVE",
+    "configuration_fingerprint": "73febd1a0de367354efd8632dd4e3e7c775cec04dd2e7882bcfd5f27349a715a",
+    "generation_policy": "LOCAL_GENERATION",
+    "pipeline_matches_profile": true,
+    "retrieval_source_sha256": "8ecf325b6fa1bd392f4edabe9b3666ae2a9bd84a0b33d32cdaf421570476ca35",
+    "control": [
+      {
+        "id": "608ed062-46db-4fc4-8612-edab07e9ba68",
+        "active_profile_id": "4953d2c8-52cc-4aed-80b7-66c6d0a941f2",
+        "version": 6
+      }
+    ]
+  },
+  "source_scripts_sha256": {
+    "scripts/runtime-watchdog.py": "c4c4cea5ae7cfba874839c95d158c9bf89c561bb8063945c6c516419b1bf8d4f",
+    "scripts/install-runtime-services.sh": "e7c9d19ac7130aeaaa3256b5d548781db5fa99111fb617fc85d27c80db970384"
+  },
+  "backup_timer_before": {
+    "enabled": "enabled",
+    "active": "active"
+  },
+  "runtime_units_before": {
+    "korsik-runtime.service": {
+      "enabled": "",
+      "active": "inactive"
+    },
+    "korsik-watchdog.service": {
+      "enabled": "",
+      "active": "inactive"
+    },
+    "korsik-watchdog.timer": {
+      "enabled": "",
+      "active": "inactive"
+    }
+  },
+  "physical_host_reboot_tested": false,
+  "real_max_messages_sent": 0,
+  "profile_activation_performed": false,
+  "preflight_harness_retry": {
+    "initial_readonly_exec_failed": "Nested SSH quoting discarded inner Python quotes; no state mutation or installation occurred.",
+    "corrected_invocation": "Literal quoted heredoc to ssh stdin"
+  },
+  "unit_install": {
+    "exit_code": 0,
+    "enable_or_start_requested_by_installer": false
+  },
+  "systemd_analyze_verify": {
+    "exit_code": 0,
+    "stderr_lines": 1
+  },
+  "installed_files_sha256": {
+    "/etc/systemd/system/korsik-runtime.service": "65df68d399c5526e721193c4d8ea4a386d526c7c53f7f98433f35279a7df70f3",
+    "/etc/systemd/system/korsik-watchdog.service": "1dd50f7c426a3bd083ee2504206adf4c5303e2523af0519eecc5e69484779dd1",
+    "/etc/systemd/system/korsik-watchdog.timer": "dd52e72c50b703c6dd0a59e1249a80b2925b2bafc99538976347d802344a5de0",
+    "/opt/korsik/runtime/runtime-watchdog.py": "c4c4cea5ae7cfba874839c95d158c9bf89c561bb8063945c6c516419b1bf8d4f",
+    "/etc/systemd/journald@korsik-runtime.conf.d/limits.conf": "93310e1f2186cb39421487901bf8397d936c3b94049be92e72d815ba6972a911"
+  },
+  "enabled_units": [
+    "korsik-runtime.service",
+    "korsik-watchdog.timer"
+  ],
+  "explicitly_started_units": [
+    "korsik-watchdog.timer"
+  ],
+  "boot_unit_explicitly_started": false,
+  "timer_started_at": "2026-10-24T10:38:05.246946+00:00",
+  "watchdog_observations": [
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    }
+  ],
+  "runtime_units_observed": {
+    "korsik-runtime.service": {
+      "enabled": "enabled",
+      "active": "inactive",
+      "properties": [
+        "Result=success",
+        "ExecMainStartTimestamp=n/a",
+        "ExecMainStatus=0",
+        "ActiveState=inactive",
+        "SubState=dead",
+        "UnitFileState=enabled"
+      ]
+    },
+    "korsik-watchdog.service": {
+      "enabled": "static",
+      "active": "inactive",
+      "properties": [
+        "Result=success",
+        "ExecMainStartTimestamp=Sat 2026-10-24 10:48:15 UTC",
+        "ExecMainStatus=0",
+        "ActiveState=inactive",
+        "SubState=dead",
+        "UnitFileState=static"
+      ]
+    },
+    "korsik-watchdog.timer": {
+      "enabled": "enabled",
+      "active": "active",
+      "properties": [
+        "Result=success",
+        "ActiveState=active",
+        "SubState=waiting",
+        "UnitFileState=enabled"
+      ]
+    }
+  },
+  "backup_timer_observed": {
+    "enabled": "enabled",
+    "active": "active"
+  },
+  "watchdog_docker_changes_observed": 0,
+  "blocker": "Watchdog host unit cannot execute Docker inventory under its current service environment; no automatic restart actions were taken.",
+  "last_observed_at": "2026-10-24T10:41:06.989529+00:00",
+  "hardening_readonly_diagnostic": {
+    "transient_unit": "korsik-watchdog-readonly-diag-32bbde29",
+    "exit_code": 0,
+    "observation": {
+      "returncode": 0,
+      "stderr_category": "OK",
+      "raw_stderr_logged": false,
+      "inventory_rows": 16,
+      "daemon_socket_exists": true,
+      "home_accessible": true,
+      "docker_binary_accessible": true
+    },
+    "mutation_commands_executed": false
+  },
+  "readonly_inspect_diagnostic": {
+    "inspect_exit_code": 1,
+    "stderr_category": "MISSING_HEALTH_TEMPLATE_KEY",
+    "raw_stderr_logged": false,
+    "successfully_formatted_rows": 13,
+    "inventory_ids": 16
+  },
+  "initial_watchdog_docker_unavailable_observations": [
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    },
+    {
+      "status": "DOCKER_UNAVAILABLE",
+      "actions": []
+    }
+  ],
+  "watchdog_optional_health_correction": {
+    "previous_source_sha256": "5170e4ce023bf2890ff330e4a9ae01f1b5b8965495424af03ee8da459a872a12",
+    "corrected_source_sha256": "c4c4cea5ae7cfba874839c95d158c9bf89c561bb8063945c6c516419b1bf8d4f",
+    "root_cause": "Docker Go template accessed absent State.Health on oneshot containers and qdrant.",
+    "policy_allowlist_hardening_changed": false,
+    "real_engine_rows_verified": 16,
+    "rows_without_optional_health": 3,
+    "unit_tests_passed": 19,
+    "raw_docker_stderr_logged": false
+  },
+  "corrected_installed_files_sha256": {
+    "/etc/systemd/system/korsik-runtime.service": "65df68d399c5526e721193c4d8ea4a386d526c7c53f7f98433f35279a7df70f3",
+    "/etc/systemd/system/korsik-watchdog.service": "1dd50f7c426a3bd083ee2504206adf4c5303e2523af0519eecc5e69484779dd1",
+    "/etc/systemd/system/korsik-watchdog.timer": "dd52e72c50b703c6dd0a59e1249a80b2925b2bafc99538976347d802344a5de0",
+    "/opt/korsik/runtime/runtime-watchdog.py": "c4c4cea5ae7cfba874839c95d158c9bf89c561bb8063945c6c516419b1bf8d4f",
+    "/etc/systemd/journald@korsik-runtime.conf.d/limits.conf": "93310e1f2186cb39421487901bf8397d936c3b94049be92e72d815ba6972a911"
+  },
+  "corrected_systemd_analyze_verify": {
+    "exit_code": 0,
+    "stderr_lines": 1
+  },
+  "corrected_timer_started_at": "2026-10-24T10:46:10.649230+00:00",
+  "corrected_watchdog_observations": [
+    {
+      "status": "OBSERVED",
+      "services": [
+        {
+          "service": "postgres",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "qdrant",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "api",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "worker",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "answer-worker",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "ingest-worker",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "scheduler",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "encoder",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "reranker",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "generator",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "parser",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "web",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "max-connector",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "tunnel",
+          "status": "HEALTHY"
+        }
+      ],
+      "actions": []
+    },
+    {
+      "status": "OBSERVED",
+      "services": [
+        {
+          "service": "postgres",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "qdrant",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "api",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "worker",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "answer-worker",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "ingest-worker",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "scheduler",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "encoder",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "reranker",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "generator",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "parser",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "web",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "max-connector",
+          "status": "HEALTHY"
+        },
+        {
+          "service": "tunnel",
+          "status": "HEALTHY"
+        }
+      ],
+      "actions": []
+    }
+  ],
+  "corrected_observation_window_seconds": 24.15,
+  "corrected_normal_ticks": 2,
+  "services_after": {
+    "web": {
+      "container_id": "251da531bfe4ec6da0ac80295be4dcc3946ad986f7894b7d9dc55fbf1adf1017",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:32e0c2e2855473a3a02a876aacc73413873d621196a7ff27513ccf9d566bf0b9",
+      "started_at": "2026-10-24T10:27:25.229104655Z",
+      "restart_count": 0
+    },
+    "max-connector": {
+      "container_id": "c247b86c11e2a3880b1a068f52e081a7c3572662af82d7a689b569c138927728",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:13072bcb1297f977beaa88557042af58a6c643c12767b16e4955264507ea76a9",
+      "started_at": "2026-10-24T10:27:13.275633361Z",
+      "restart_count": 0
+    },
+    "worker": {
+      "container_id": "3568512d6ab0d59c5e685f524dc6174ca5c5f1e8546c663bbc3d2e3a0cec3ace",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:13072bcb1297f977beaa88557042af58a6c643c12767b16e4955264507ea76a9",
+      "started_at": "2026-10-24T10:27:13.264280454Z",
+      "restart_count": 0
+    },
+    "api": {
+      "container_id": "2dee10d05917148554b8e01ab62958354b7466c0f0d7983cf8dae5b479a7b735",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:13072bcb1297f977beaa88557042af58a6c643c12767b16e4955264507ea76a9",
+      "started_at": "2026-10-24T10:27:13.282851499Z",
+      "restart_count": 0
+    },
+    "answer-worker": {
+      "container_id": "391f11236312abfcb1d40b17390e3489569c3ff9e298ef74bec4a8aead14e05f",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:13072bcb1297f977beaa88557042af58a6c643c12767b16e4955264507ea76a9",
+      "started_at": "2026-10-24T10:27:13.24110296Z",
+      "restart_count": 0
+    },
+    "ingest-worker": {
+      "container_id": "246062a4e2f995b0e916aa189e9a07ed8a97c0c53e7d804c4607898596629fac",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:13072bcb1297f977beaa88557042af58a6c643c12767b16e4955264507ea76a9",
+      "started_at": "2026-10-24T10:27:13.256423687Z",
+      "restart_count": 0
+    },
+    "scheduler": {
+      "container_id": "d63bdb40b38b183c83394a0572d79f507710aa83f95ebeed3f605b2260eebf3d",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:13072bcb1297f977beaa88557042af58a6c643c12767b16e4955264507ea76a9",
+      "started_at": "2026-10-24T10:27:13.22222801Z",
+      "restart_count": 0
+    },
+    "tunnel": {
+      "container_id": "f2fb32eacab97913ca6af7785ba0ff8e30e07a916ef44cc3e9f095f349b2f3ea",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:b74b8bf3c660f98df9ed51099c79d1b2eafdb4922b8cf6fd593a3eb87b056723",
+      "started_at": "2026-10-24T07:36:58.464643329Z",
+      "restart_count": 0
+    },
+    "reranker": {
+      "container_id": "6cd03e9c0704439c4ff6f8105b45fd21eb62f7445fc930daf4f5627a81f706c6",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "started_at": "2026-10-24T00:14:39.995072851Z",
+      "restart_count": 0
+    },
+    "encoder": {
+      "container_id": "29295c4cc4e5d35b091f28f568ee8ab4bc4b97ecc28a4583d2e5c786064aa62d",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "started_at": "2026-10-24T00:14:39.972062312Z",
+      "restart_count": 0
+    },
+    "generator": {
+      "container_id": "7901be4dd2334a58ccc78de6ccb6254b8be606576dd5eb2d9e149376f2cd8a15",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079",
+      "started_at": "2026-10-24T00:14:39.983921786Z",
+      "restart_count": 0
+    },
+    "parser": {
+      "container_id": "5077617400f76cbe892430a7bc98d64e7d8780c0b014d6d2f9159b4f6463dd38",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf",
+      "started_at": "2026-10-23T23:38:44.812086583Z",
+      "restart_count": 0
+    },
+    "qdrant": {
+      "container_id": "608fbee402829552a126bad7162c2e85c0640b82768352e02d5f584e2859b9a4",
+      "state": "running",
+      "health": null,
+      "image_id": "sha256:8a80c5500151ab2b08eb5874698b81b6b8addbc53ef4fb0c47f516680cf413d2",
+      "started_at": "2026-10-23T20:50:33.790997974Z",
+      "restart_count": 0
+    },
+    "postgres": {
+      "container_id": "0bdf25853214b0a4eac4111203925e2cad9252ec3b1b2d5176be246921e06837",
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:ab20e934b27ba3ff927c1b4c9ff8cf6c32f315f743efe68dd3441182a87fb085",
+      "started_at": "2026-10-23T20:50:33.746911679Z",
+      "restart_count": 0
+    }
+  },
+  "native_runtime_after": {
+    "profile_id": "4953d2c8-52cc-4aed-80b7-66c6d0a941f2",
+    "profile_status": "ACTIVE",
+    "configuration_fingerprint": "73febd1a0de367354efd8632dd4e3e7c775cec04dd2e7882bcfd5f27349a715a",
+    "generation_policy": "LOCAL_GENERATION",
+    "pipeline_matches_profile": true,
+    "retrieval_source_sha256": "8ecf325b6fa1bd392f4edabe9b3666ae2a9bd84a0b33d32cdaf421570476ca35",
+    "control": [
+      {
+        "id": "608ed062-46db-4fc4-8612-edab07e9ba68",
+        "active_profile_id": "4953d2c8-52cc-4aed-80b7-66c6d0a941f2",
+        "version": 6
+      }
+    ]
+  },
+  "backup_timer_after": {
+    "enabled": "enabled",
+    "active": "active",
+    "properties": [
+      "Result=success",
+      "ActiveState=active",
+      "SubState=waiting",
+      "UnitFileState=enabled"
+    ]
+  },
+  "containers_unchanged_during_unit_install_and_observation": true,
+  "completed_at": "2026-10-24T10:48:17.110431+00:00",
+  "host_runtime_permissions": {
+    "runtime_directory_octal": "0o700",
+    "state_octal": "0o600",
+    "report_octal": "0o600"
+  },
+  "claim_limits": [
+    "Physical host reboot was not performed.",
+    "Only the watchdog timer was started; boot Compose unit remains enabled and inactive.",
+    "Named domain/TLS and real MAX MiniApp launch are outside this report; bot owner registration was deferred.",
+    "Public client network path was not revalidated by these loopback asset checks.",
+    "Initial DOCKER_UNAVAILABLE observations and the confirmed optional Health template failure are retained in this report."
+  ],
+  "initial_source_scripts_sha256": {
+    "scripts/runtime-watchdog.py": "5170e4ce023bf2890ff330e4a9ae01f1b5b8965495424af03ee8da459a872a12",
+    "scripts/install-runtime-services.sh": "e7c9d19ac7130aeaaa3256b5d548781db5fa99111fb617fc85d27c80db970384"
+  },
+  "initial_installed_files_sha256": {
+    "/etc/systemd/system/korsik-runtime.service": "65df68d399c5526e721193c4d8ea4a386d526c7c53f7f98433f35279a7df70f3",
+    "/etc/systemd/system/korsik-watchdog.service": "1dd50f7c426a3bd083ee2504206adf4c5303e2523af0519eecc5e69484779dd1",
+    "/etc/systemd/system/korsik-watchdog.timer": "dd52e72c50b703c6dd0a59e1249a80b2925b2bafc99538976347d802344a5de0",
+    "/opt/korsik/runtime/runtime-watchdog.py": "5170e4ce023bf2890ff330e4a9ae01f1b5b8965495424af03ee8da459a872a12",
+    "/etc/systemd/journald@korsik-runtime.conf.d/limits.conf": "93310e1f2186cb39421487901bf8397d936c3b94049be92e72d815ba6972a911"
+  }
+}

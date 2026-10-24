@@ -1,0 +1,32 @@
+{
+  "schema": "korsik-release24-public-browser-v1",
+  "status": "PASS",
+  "observed_at": "2026-10-24T19:58:44.386246+00:00",
+  "url": "https://app.korsik-demo.ru",
+  "method": "CUA existing authenticated browser; read-only navigation and empty modals",
+  "checks": {
+    "employee_create_only_requested_fields": true,
+    "russian_timezone_dropdown_options": 26,
+    "removed_employee_create_fields_absent": true,
+    "employee_pagination_max_10": true,
+    "existing_employee_only_org_MAX_and_access_dates": true,
+    "knowledge_single_upload_no_batch": true,
+    "upload_removed_dates_and_change_reason": true,
+    "audience_all_disables_department_picker": true,
+    "clearing_all_enables_picker": true,
+    "survey_top_notice_removed": true,
+    "survey_one_refresh_button": true
+  },
+  "production_department_picker_observation": "No available departments in the current production organization; populated selection and descendant access verified on the isolated local/PostgreSQL fixtures.",
+  "proofs": [
+    "qa/release24-employee-create-public.png",
+    "qa/release24-document-upload-public.png",
+    "qa/release24-surveys-public.png"
+  ],
+  "production_business_mutations": false,
+  "production_employee_status_or_dates_changed": false,
+  "documents_created_replaced_or_published": false,
+  "MAX_invitations_created_or_messages_sent": 0,
+  "native_MAX_device_launch_tested": false,
+  "functional_local_report": "tests/release24-local-browser-report.json"
+}

@@ -1,0 +1,307 @@
+{
+  "status": "PASS",
+  "started_at": "2026-10-24T12:04:55.741383+00:00",
+  "actions": [
+    "maintenance_enabled_and_env_backup_verified",
+    "only_three_canonical_env_inputs_changed",
+    "six_app_services_recreated_without_build",
+    "healthy_same_images_profile_and_single_custom_webhook_verified_maintenance_removed"
+  ],
+  "images_rebuilt": false,
+  "messages_sent_by_helper": false,
+  "canonical_before": {
+    "SECURE_COOKIES": "true",
+    "PUBLIC_URL": "https://systematic-working-authorities-glenn.trycloudflare.com"
+  },
+  "canonical_after": {
+    "PUBLIC_URL": "https://app.korsik-demo.ru",
+    "SECURE_COOKIES": "true",
+    "MAX_PUBLIC_URL": "https://app.korsik-demo.ru"
+  },
+  "profile_before": {
+    "profile_id": "4953d2c8-52cc-4aed-80b7-66c6d0a941f2",
+    "status": "ACTIVE",
+    "configuration_fingerprint": "73febd1a0de367354efd8632dd4e3e7c775cec04dd2e7882bcfd5f27349a715a",
+    "retrieval_module_sha256": "8ecf325b6fa1bd392f4edabe9b3666ae2a9bd84a0b33d32cdaf421570476ca35",
+    "public_url": "https://systematic-working-authorities-glenn.trycloudflare.com",
+    "secure_cookies": true
+  },
+  "subscriptions_before": {
+    "http_status": 200,
+    "total": 1,
+    "target_count": 0,
+    "target_update_types": [],
+    "registered_cursor_url": "https://systematic-working-authorities-glenn.trycloudflare.com/hooks/max",
+    "registered_cursor_sha256": "219cb0510c5708181b56cdcd77e014915c08ff0d1cae0210c48e91a9ea8b8b65",
+    "url_fingerprints": [
+      "219cb0510c5708181b56cdcd77e014915c08ff0d1cae0210c48e91a9ea8b8b65"
+    ],
+    "allowed_update_types": [
+      "bot_started",
+      "bot_stopped",
+      "dialog_removed",
+      "message_callback",
+      "message_created"
+    ],
+    "mode": "webhook",
+    "control_enabled": true
+  },
+  "app_image_id": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+  "before_containers": {
+    "answer-worker": {
+      "container_id": "6f9dcf8f294560e452a1954b395fd6ecffad4bee65afff6215cf77ea489d01c8",
+      "image_id": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "api": {
+      "container_id": "30902e8d8b7f86f8df8c9d3073dc36690dad37a74603c1e2bff4d488d4145c9c",
+      "image_id": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "encoder": {
+      "container_id": "29295c4cc4e5d35b091f28f568ee8ab4bc4b97ecc28a4583d2e5c786064aa62d",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "generator": {
+      "container_id": "7901be4dd2334a58ccc78de6ccb6254b8be606576dd5eb2d9e149376f2cd8a15",
+      "image_id": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079",
+      "state": "running",
+      "health": "healthy"
+    },
+    "ingest-worker": {
+      "container_id": "ccc720b2634986c522d0432285555889a1d1829dd29d0c26045f4f6e8b64f7c3",
+      "image_id": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "max-connector": {
+      "container_id": "09d4ff3900aa909869efd4414bab2a61c23a41a634ed5ec5332b11c02b74012f",
+      "image_id": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "parser": {
+      "container_id": "5077617400f76cbe892430a7bc98d64e7d8780c0b014d6d2f9159b4f6463dd38",
+      "image_id": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf",
+      "state": "running",
+      "health": "healthy"
+    },
+    "postgres": {
+      "container_id": "0bdf25853214b0a4eac4111203925e2cad9252ec3b1b2d5176be246921e06837",
+      "image_id": "sha256:ab20e934b27ba3ff927c1b4c9ff8cf6c32f315f743efe68dd3441182a87fb085",
+      "state": "running",
+      "health": "healthy"
+    },
+    "qdrant": {
+      "container_id": "608fbee402829552a126bad7162c2e85c0640b82768352e02d5f584e2859b9a4",
+      "image_id": "sha256:8a80c5500151ab2b08eb5874698b81b6b8addbc53ef4fb0c47f516680cf413d2",
+      "state": "running",
+      "health": null
+    },
+    "reranker": {
+      "container_id": "6cd03e9c0704439c4ff6f8105b45fd21eb62f7445fc930daf4f5627a81f706c6",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "scheduler": {
+      "container_id": "037453c6486127aecc2aebc6ce9316921e0bdc5097e70b9971f80fa7632eb794",
+      "image_id": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "tunnel": {
+      "container_id": "f2fb32eacab97913ca6af7785ba0ff8e30e07a916ef44cc3e9f095f349b2f3ea",
+      "image_id": "sha256:b74b8bf3c660f98df9ed51099c79d1b2eafdb4922b8cf6fd593a3eb87b056723",
+      "state": "running",
+      "health": "healthy"
+    },
+    "web": {
+      "container_id": "dc0c4cb7df6eecef34904bdbce5a7f14db97ba8168d5fb716f3249a817967311",
+      "image_id": "sha256:2c507d5b14b1f4a81462d7c69a459d05fa3496c596beaf2226ceb92909038e59",
+      "state": "running",
+      "health": "healthy"
+    },
+    "worker": {
+      "container_id": "0a986015cc1d4953f7576eb07ad03a8e58546d48a8b994e0b56a73f945487fe9",
+      "image_id": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+      "state": "running",
+      "health": "healthy"
+    }
+  },
+  "maintenance_marker_remaining": false,
+  "intermediate_validation": {
+    "array_order_check": "MAX API reordered update_types; identical exact five-event set independently verified. No restart or subscription rewrite performed to resolve order-only mismatch."
+  },
+  "finished_at": "2026-10-24T12:06:57.779957+00:00",
+  "profile_after": {
+    "profile_id": "4953d2c8-52cc-4aed-80b7-66c6d0a941f2",
+    "status": "ACTIVE",
+    "configuration_fingerprint": "73febd1a0de367354efd8632dd4e3e7c775cec04dd2e7882bcfd5f27349a715a",
+    "retrieval_module_sha256": "8ecf325b6fa1bd392f4edabe9b3666ae2a9bd84a0b33d32cdaf421570476ca35",
+    "public_url": "https://app.korsik-demo.ru",
+    "secure_cookies": true
+  },
+  "subscriptions_after": {
+    "http_status": 200,
+    "total": 1,
+    "target_count": 1,
+    "target_update_types": [
+      [
+        "bot_stopped",
+        "message_callback",
+        "dialog_removed",
+        "message_created",
+        "bot_started"
+      ]
+    ],
+    "registered_cursor_url": "https://app.korsik-demo.ru/hooks/max",
+    "registered_cursor_sha256": "474d1001c2209bf72d01f53c4b9aef1467853f81cf18f6260100b0cb5fc99c5f",
+    "url_fingerprints": [
+      "474d1001c2209bf72d01f53c4b9aef1467853f81cf18f6260100b0cb5fc99c5f"
+    ],
+    "allowed_update_types": [
+      "bot_started",
+      "bot_stopped",
+      "dialog_removed",
+      "message_callback",
+      "message_created"
+    ],
+    "mode": "webhook",
+    "control_enabled": true
+  },
+  "old_owned_subscription_removed": true,
+  "unowned_subscriptions_preserved": true,
+  "all_images_unchanged": true,
+  "non_app_container_ids_unchanged": true,
+  "noncanonical_env_lines_unchanged": true,
+  "after_containers": {
+    "answer-worker": {
+      "container_id": "db080bf00e11ba97a453ca48dc3dd1beab3d007365d7c44a8bac1a9154c44dd2",
+      "image_id": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "api": {
+      "container_id": "1834d7d854062307558a09f76d237e583680ddfba4eeafe27980662f5b35e8fb",
+      "image_id": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "encoder": {
+      "container_id": "29295c4cc4e5d35b091f28f568ee8ab4bc4b97ecc28a4583d2e5c786064aa62d",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "generator": {
+      "container_id": "7901be4dd2334a58ccc78de6ccb6254b8be606576dd5eb2d9e149376f2cd8a15",
+      "image_id": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079",
+      "state": "running",
+      "health": "healthy"
+    },
+    "ingest-worker": {
+      "container_id": "7a7fe5011ca365584b9a5433238629b3409edaf9811aa166ac18cc19620fb2b4",
+      "image_id": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "max-connector": {
+      "container_id": "ab9e53b6548be408162df471b965fb420646ea355c8ae793b6b9900f1b98f149",
+      "image_id": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "parser": {
+      "container_id": "5077617400f76cbe892430a7bc98d64e7d8780c0b014d6d2f9159b4f6463dd38",
+      "image_id": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf",
+      "state": "running",
+      "health": "healthy"
+    },
+    "postgres": {
+      "container_id": "0bdf25853214b0a4eac4111203925e2cad9252ec3b1b2d5176be246921e06837",
+      "image_id": "sha256:ab20e934b27ba3ff927c1b4c9ff8cf6c32f315f743efe68dd3441182a87fb085",
+      "state": "running",
+      "health": "healthy"
+    },
+    "qdrant": {
+      "container_id": "608fbee402829552a126bad7162c2e85c0640b82768352e02d5f584e2859b9a4",
+      "image_id": "sha256:8a80c5500151ab2b08eb5874698b81b6b8addbc53ef4fb0c47f516680cf413d2",
+      "state": "running",
+      "health": null
+    },
+    "reranker": {
+      "container_id": "6cd03e9c0704439c4ff6f8105b45fd21eb62f7445fc930daf4f5627a81f706c6",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "scheduler": {
+      "container_id": "40f26847606a6a20addc1a48b657b2c365f273ccb06b38d1ce178f1b8feba7bf",
+      "image_id": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "tunnel": {
+      "container_id": "f2fb32eacab97913ca6af7785ba0ff8e30e07a916ef44cc3e9f095f349b2f3ea",
+      "image_id": "sha256:b74b8bf3c660f98df9ed51099c79d1b2eafdb4922b8cf6fd593a3eb87b056723",
+      "state": "running",
+      "health": "healthy"
+    },
+    "web": {
+      "container_id": "dc0c4cb7df6eecef34904bdbce5a7f14db97ba8168d5fb716f3249a817967311",
+      "image_id": "sha256:2c507d5b14b1f4a81462d7c69a459d05fa3496c596beaf2226ceb92909038e59",
+      "state": "running",
+      "health": "healthy"
+    },
+    "worker": {
+      "container_id": "5b8fb58f7cff1c31bf1c3a4ef9b45c526a30289fe234b8ba6d2da2aadaaefebb",
+      "image_id": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+      "state": "running",
+      "health": "healthy"
+    }
+  },
+  "canonical_scheme": "https",
+  "canonical_host": "app.korsik-demo.ru",
+  "env_backup_verified_0600": true,
+  "public_https_readonly": {
+    "status": "NOT_PASSED_CURRENT_CLIENT_TLS_FAILURE",
+    "observed_at": "2026-10-24T12:08:55.070767+00:00",
+    "failure_stage": "TLS_HANDSHAKE_BEFORE_HTTP",
+    "error": "UNEXPECTED_EOF_WHILE_READING",
+    "login_cookie_flow": "ROOT_NATIVE_QA_SEPARATE",
+    "forwarded_scheme_header": "NOT_MODIFIED_OR_CLAIMED_BY_THIS_CHANGE"
+  },
+  "scope": "CANONICAL_SERVER_ENV_SIX_SERVICES_AND_MAX_WEBHOOK_ONLY",
+  "network_followup": {
+    "observed_at": "2026-10-24T12:11:23.184229+00:00",
+    "vps_admin_ssh_from_mac": {
+      "status": "PASS",
+      "strict_host_key": true,
+      "tunnel_service": "active"
+    },
+    "vast_to_public_https": {
+      "status": "PASS",
+      "ca_and_sni_verified": true,
+      "resolved_ip": "212.57.127.220",
+      "html_bytes": 644,
+      "html_sha256": "894847a87d234eb9ddaa31ece9455727b7850fbb9102ae061bdba01a53b12f8c",
+      "duration_seconds": 2.117
+    },
+    "mac_to_public_https_direct": {
+      "status": "TLS_HANDSHAKE_TIMEOUT",
+      "dns_addresses": [
+        "212.57.127.220"
+      ],
+      "proxy_bypassed": true,
+      "explicit_ip_resolve": true,
+      "duration_seconds": 8.017,
+      "html_bytes": 0
+    },
+    "no_auto_rollback_or_tls_config_mutation": true
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "project": "korsik_offline_1792810563",
+  "mode": "FULL",
+  "started_at": "2026-10-24T02:56:04.094883+00:00",
+  "images": {
+    "app": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+    "encoder_reranker": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+    "generator": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079",
+    "parser": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf"
+  },
+  "prebuilt_images_only": true,
+  "build_or_pull_during_check": false,
+  "production_mutations": false,
+  "external_MAX_sends": 0
+}

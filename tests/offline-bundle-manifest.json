@@ -1,0 +1,105 @@
+{
+  "format": 2,
+  "files": [
+    {
+      "file": "images.tar.gz",
+      "bytes": 5968542233,
+      "sha256": "8e6d24dd98f453ea2d557fe94e3648ec8b51cbb418dcc79606e0a01dd042f08e"
+    },
+    {
+      "file": "models.tar.gz",
+      "bytes": 13554612719,
+      "sha256": "e4dd519ab160baf09a32e4a9125756c597958bd6e96053d89acd28fe3377d491"
+    },
+    {
+      "file": "source.tar.gz",
+      "bytes": 38636646,
+      "sha256": "c90a4ba01f0884cebc5b580c4dcb6a3cd5f0e8fe25029d5b478f7f365213f309"
+    }
+  ],
+  "images": [
+    {
+      "requested_tag": "korsik-app:local",
+      "id": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+      "tags": [
+        "korsik-app:local"
+      ],
+      "digests": []
+    },
+    {
+      "requested_tag": "korsik-web:local",
+      "id": "sha256:16438bcef011b1373c6dcd0fe0740c8322546b9796bd366a0b951d76ef505a88",
+      "tags": [
+        "korsik-web:local"
+      ],
+      "digests": []
+    },
+    {
+      "requested_tag": "korsik-tunnel:local",
+      "id": "sha256:dda27e9f3345ea6e9e67a0d5cc792d8c05baaa893712549c1bff321973c7b534",
+      "tags": [
+        "korsik-tunnel:local"
+      ],
+      "digests": []
+    },
+    {
+      "requested_tag": "korsik-models:cpu",
+      "id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "tags": [
+        "korsik-models:cpu"
+      ],
+      "digests": []
+    },
+    {
+      "requested_tag": "korsik-generator:local",
+      "id": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079",
+      "tags": [
+        "korsik-generator:local"
+      ],
+      "digests": []
+    },
+    {
+      "requested_tag": "korsik-parser:local",
+      "id": "sha256:edbd38b7ef991b1b4cf7610138371a8153499ace353a563571d0a6916ef2be14",
+      "tags": [
+        "korsik-parser:local",
+        "korsik-parser:local9"
+      ],
+      "digests": []
+    },
+    {
+      "requested_tag": "korsik-parser:structure",
+      "id": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf",
+      "tags": [
+        "korsik-parser:structure",
+        "korsik-parser:structure9"
+      ],
+      "digests": []
+    },
+    {
+      "requested_tag": "postgres:17-alpine",
+      "id": "sha256:ab20e934b27ba3ff927c1b4c9ff8cf6c32f315f743efe68dd3441182a87fb085",
+      "tags": [
+        "postgres:17-alpine"
+      ],
+      "digests": [
+        "postgres@sha256:eee6c6e1b0894fa4fe0075eb054af9fd1cf39a35321c2d4110626cfe506411fb"
+      ]
+    },
+    {
+      "requested_tag": "qdrant/qdrant:v1.20.0",
+      "id": "sha256:8a80c5500151ab2b08eb5874698b81b6b8addbc53ef4fb0c47f516680cf413d2",
+      "tags": [
+        "qdrant/qdrant:v1.20.0"
+      ],
+      "digests": [
+        "qdrant/qdrant@sha256:9bfc89f9914fc14876a88c05270685921a55b8877b254a98bcc1cc2f0a424cd2"
+      ]
+    }
+  ],
+  "secrets_included": false,
+  "model_licenses": "Full texts and pinned repository/revision declarations inside model directories and licenses/ sidecars; see license inventory",
+  "runtime_downloads_required": false,
+  "delivery_metadata_revision": 2,
+  "source_metadata_correction": "Historical model QA JSON requires exact bundled source-report hash and size; runtime images, weights and selected current quality report unchanged"
+}

@@ -1,0 +1,23 @@
+{
+  "observed_at": "2026-10-24T13:01:09.272Z",
+  "origin": "https://app.korsik-demo.ru",
+  "browser": "in-app browser",
+  "public_login": "PASS",
+  "authenticated_knowledge_navigation": "PASS",
+  "document_and_control_question_tabs": "PASS",
+  "dark_theme": "PASS",
+  "logout": "PASS",
+  "login_center": {
+    "centerOffset": 0,
+    "height": 454.3984375,
+    "left": 420,
+    "parentLeft": 0,
+    "parentWidth": 1280,
+    "top": 132.796875,
+    "viewportWidth": 1280,
+    "width": 440
+  },
+  "screenshot": "qa/release19-login-centered.png",
+  "native_MAX_launch_performed": false,
+  "earlier_TLS_failures_not_reclassified": true
+}

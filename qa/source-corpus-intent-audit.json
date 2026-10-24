@@ -1,0 +1,388 @@
+{
+  "schema": "korsik-full-corpus-question-intent-audit-v1",
+  "reviewed_at": "2026-10-24T01:55:44.395116+00:00",
+  "status": "SOURCE_SCOPE_GAPS_REPORTED_BEFORE_NEXT_FREEZE",
+  "scope": "All29 unchanged questions compared manually with the entire included textual content and approved FIGURE descriptions of all3 current published provided documents, not merely assigned gold blocks. No TABLE gold/claims in this sample.",
+  "company_hr_acceptance": false,
+  "source_snapshot_sha256": "8d45c8d5eb77c10e250da6865a3a5aa6aeb53770394992c33b69a957197e66c6",
+  "documents": [
+    {
+      "title": "Антикоррупционная политика",
+      "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+      "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+      "physical_block_count": 47
+    },
+    {
+      "title": "Политика в области качества и экологии",
+      "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+      "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+      "physical_block_count": 12
+    },
+    {
+      "title": "Положение о коммерческой тайне",
+      "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "physical_block_count": 58
+    }
+  ],
+  "included_characters_read": 22801,
+  "question_count": 29,
+  "gold_or_application_changes_by_reviewer": 0,
+  "principle": "Do not demand the entire policy book for every narrow question. Preserve direct requested intent plus adjacent conditions that change a stated permission/procedure; when source coverage is partial, make the limitation explicit.",
+  "additional_exact_source_pins": [
+    {
+      "document_title": "Антикоррупционная политика",
+      "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+      "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+      "block_id": "fbe3b7a1-d950-43ba-9148-114c9bdcdbed",
+      "page_no": 1,
+      "kind": "TEXT",
+      "text": "Антикоррупционная политика Общества с ограниченной ответственностью «Группа ПОЛИПЛАСТИК» (далее - Общество) определяет основные задачи, принципы и направления антикоррупционной деятельности в компании. Целью ее принятия  является организация и координация деятельности Общества, членов его органов управления, работников и иных лиц, действующих от имени Общества, направленной на предупреждение, выявление, пресечение и минимизацию последствий коррупции в Обществе.",
+      "text_sha256": "4b27c924c2e13c37ee419c636e117ee26113a8967fbde7cd692f84e237be65bb",
+      "image_sha256": null
+    },
+    {
+      "document_title": "Антикоррупционная политика",
+      "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+      "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+      "block_id": "bf5a1942-c69c-460c-9e05-8349208c7350",
+      "page_no": 9,
+      "kind": "TEXT",
+      "text": "Не допускаются подарки от имени Общества, его работников и представителей третьим лицам в виде денежных средств в любой валюте, наличных или безналичных, ценных бумаг и драгоценных металлов.\nПри получении делового подарка работник обязан принять меры по недопущению возможности возникновения конфликта интересов.\nВ случае возникновения конфликта интересов или возможности его возникновения при получении делового подарка, работник в установленном порядке должен уведомить об этом Общество и сдать полученный деловой подарок ответственному за  профилактику коррупционных правонарушений (за исключением  канцелярских принадлежностей).\nРаботнику категорически запрещается просить, требовать, вынуждать третьих лиц дарить ему либо лицам, с которыми он состоит в близком родстве или свойстве, деловые подарки и (или) оказывать в их пользу знаки делового гостеприимства, а также принимать подарки в форме наличных, безналичных денежных средств, ценных бумаг, драгоценных металлов.",
+      "text_sha256": "b5ce47109f79d1e0eddec52921f82139917f09793eaeaed7d047451f975cfaaf",
+      "image_sha256": null
+    },
+    {
+      "document_title": "Положение о коммерческой тайне",
+      "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "block_id": "63170d7d-23d6-4787-be24-8898e4d9db00",
+      "page_no": 10,
+      "kind": "TEXT",
+      "text": "При передаче КИ на носителях в виде физических объектов, меры по ее безопасности должны обеспечивать адекватную защиту от доступа третьих лиц: доставка лично, курьером, использование соответствующих служб, необходимой упаковки и т.п.\nПри передаче КИ в электронной форме (электронные документы) необходимо применение адекватных средств защиты передаваемой информации - авторизация, шифрование, электронная цифровая подпись и т.п.\nПередача КИ по открытым каналам связи (в т.ч. глобальной сети Интернет) допускается только в зашифрованном и подписанном виде, обеспечивающем ее безопасность - авторизация, шифрование, ЭЦП и т.п.",
+      "text_sha256": "ca093bfc9fa6a01e087be57b4fff6615469202709cba651e02944c12ee2961b2",
+      "image_sha256": null
+    },
+    {
+      "document_title": "Положение о коммерческой тайне",
+      "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "block_id": "aeb78496-8bb7-4f1f-aa4b-2bbae825b02f",
+      "page_no": 3,
+      "kind": "FIGURE",
+      "text": "Точная текстовая расшифровка подписей схемы на слайде 3:\nКоммерческая тайна \n– это защищенная законодательством Российской Федерации конфиденциальная информация, перечень которой определен Обществом.\nИнформация для служебного пользования \n– это не подлежащая публичному распространению внутренняя информация Общества, которая не содержит сведений конфиденциального характера.\nКонфиденциальная информация \n– сведения любого характера, которые имеют для Общества действительную или потенциальную ценность в силу неизвестности их третьим лицам и к которым у третьих лиц нет свободного доступа на законном основании.",
+      "text_sha256": "14ed4fde762f0145208e521ebc774407d42c28d05630df4fcc8de3a799e5119c",
+      "image_sha256": "d88333bd19ccc80948c7013d2b062b8667cbe6197a06ad0c590800551068a2ae"
+    }
+  ],
+  "cases": [
+    {
+      "id": "password",
+      "question": "Как передавать пароли к конфиденциальной информации?",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "e1ab123b-792f-4aab-88aa-6d0aeeebaf25"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "termination",
+      "question": "Нужно ли соблюдать коммерческую тайну после увольнения?",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "b82d5a1b-127b-4fb0-80c2-d246fc56dd67"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "visitor",
+      "question": "Кто разрешает посетителю фотографировать конфиденциальные документы?",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "ebe63cca-b2d8-4dd3-893c-af7bdc78eebd"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "commitment",
+      "question": "Когда сотрудник подписывает антикоррупционное обязательство?",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "6d99e944-bdce-4768-9a0e-ff2bc5575bf4",
+        "f90c9547-a2ae-48fc-a030-54f5982fbf32"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "money_gift",
+      "question": "Можно ли дарить деловому партнёру денежный подарок?",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "bf5a1942-c69c-460c-9e05-8349208c7350"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "mission",
+      "question": "Какова миссия компании ПОЛИПЛАСТИК?",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "0d4dda11-cf8e-4f71-bfb2-bf3ef99afc7e"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "definition",
+      "question": "Что относится к коммерческой тайне компании?",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "7df926b4-2286-4cee-a91c-4817173c5783"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "missing_appendix",
+      "question": "Приведи полный перечень сведений, составляющих коммерческую тайну, из Приложения №2.",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "7df926b4-2286-4cee-a91c-4817173c5783"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "secret_types",
+      "question": "Что считается коммерческой тайной?",
+      "status": "FORMAL_DEFINITION_SHOULD_COMPLEMENT_EXAMPLES",
+      "current_gold_block_ids": [
+        "7df926b4-2286-4cee-a91c-4817173c5783"
+      ],
+      "additional_source_block_ids": [
+        "aeb78496-8bb7-4f1f-aa4b-2bbae825b02f"
+      ],
+      "finding": "Question asks what counts as a trade secret. p3 supplies the formal definition, p5 examples and Appendix2. A complete definitional answer should preserve both; a p5-only excerpt must remain clearly a non-exhaustive list of examples."
+    },
+    {
+      "id": "confidential_types",
+      "question": "Расскажи, что входит в конфиденциальную информацию",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "0d55ac35-903f-41d6-824c-d7769ccc31d5"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "confidential_list",
+      "question": "Где посмотреть полный перечень конфиденциальных сведений?",
+      "status": "GOLD_SUFFICIENT_OUTPUT_LOCATION_MISSING",
+      "current_gold_block_ids": [
+        "0d55ac35-903f-41d6-824c-d7769ccc31d5"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "The current p4 gold already has exact document and Appendix1. The output must state that available location while honestly declining to fabricate the absent full list."
+    },
+    {
+      "id": "contractor_conditions",
+      "question": "При каких условиях передают коммерческую тайну контрагенту?",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "8cf2130e-79fe-4e45-8e32-df91f2222308"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "transfer_act",
+      "question": "Нужен ли акт, когда передаю информацию, составляющую коммерческую тайну?",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "8cf2130e-79fe-4e45-8e32-df91f2222308"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "send_agreement",
+      "question": "Куда направляются копии соглашения о конфиденциальности?",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "8cf2130e-79fe-4e45-8e32-df91f2222308"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "electronic_protection",
+      "question": "Как защитить электронный файл с конфиденциальными сведениями перед отправкой?",
+      "status": "CONDITIONAL_CHANNEL_RULES_REQUIRE_COVERAGE",
+      "current_gold_block_ids": [
+        "e1ab123b-792f-4aab-88aa-6d0aeeebaf25"
+      ],
+      "additional_source_block_ids": [
+        "63170d7d-23d6-4787-be24-8898e4d9db00"
+      ],
+      "finding": "p11 gives cryptographic preparation/password channels; p10 adds adequate electronic safeguards and, for open channels, encrypted AND signed transmission. Complete general sending guidance needs these conditional requirements or explicit narrow file-preparation scope."
+    },
+    {
+      "id": "unlisted_position",
+      "question": "Как оформляют доступ к КТ, если должности сотрудника нет в перечне?",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "b82d5a1b-127b-4fb0-80c2-d246fc56dd67"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "gift_conditions",
+      "question": "Какие условия у допустимых деловых подарков?",
+      "status": "ADJACENT_ABSOLUTE_PROHIBITION_REQUIRES_COVERAGE",
+      "current_gold_block_ids": [
+        "6fb22f8e-bbe8-476f-9d3d-44a3cb2af9a5"
+      ],
+      "additional_source_block_ids": [
+        "bf5a1942-c69c-460c-9e05-8349208c7350"
+      ],
+      "finding": "p8 provides six criteria, p9 independently bans money/securities/metals. For a complete permissibility answer preserve that absolute prohibition, so the3000ruble criterion cannot imply cash gifts are allowed. Alternatively explicitly bound any excerpt instead of presenting a full permission procedure."
+    },
+    {
+      "id": "conflict_action",
+      "question": "Как поступить при возникновении конфликта интересов?",
+      "status": "GENERAL_QUESTION_REQUIRES_EXPLICIT_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "bf5a1942-c69c-460c-9e05-8349208c7350"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Only the business-gift conflict procedure is available. Explicitly identify that limitation and offer clarification/HR for other conflicts; do not present the gift case as the full general procedure."
+    },
+    {
+      "id": "commitment_hire",
+      "question": "Когда нужно подписать обязательство соблюдать антикоррупционную политику?",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "6d99e944-bdce-4768-9a0e-ff2bc5575bf4",
+        "f90c9547-a2ae-48fc-a030-54f5982fbf32"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "mission_purpose",
+      "question": "Зачем компания развивает трубопроводные системы?",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "0d4dda11-cf8e-4f71-bfb2-bf3ef99afc7e"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "failed_2e0d19d0",
+      "question": "Какие основные цели политики в области качества и экологии?",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "5dcb2c21-6c98-47bc-ba21-7f4188112809"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "failed_cd25f649",
+      "question": "Какие обязанности сотрудника по сохранению коммерческой тайны?",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "b82d5a1b-127b-4fb0-80c2-d246fc56dd67"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "failed_4afff528",
+      "question": "Подскажи, пожалуйста: Кто разрешает посетителю фотографировать конфиденциальные документы?",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "ebe63cca-b2d8-4dd3-893c-af7bdc78eebd"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "failed_bd10400a",
+      "question": "Подскажи, пожалуйста: Какие основные цели политики в области качества и экологии?",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "5dcb2c21-6c98-47bc-ba21-7f4188112809"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "failed_e5a04cc5",
+      "question": "Хочу уточнить: Какие основные цели политики в области качества и экологии?",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "5dcb2c21-6c98-47bc-ba21-7f4188112809"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "failed_388d2a36",
+      "question": "Хочу уточнить: Какие обязанности сотрудника по сохранению коммерческой тайны?",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "b82d5a1b-127b-4fb0-80c2-d246fc56dd67"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "failed_7c059874",
+      "question": "Объясни правило: Какие основные цели политики в области качества и экологии?",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "5dcb2c21-6c98-47bc-ba21-7f4188112809"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "corruption_report",
+      "question": "Как поступать при выявлении коррупционного нарушения?",
+      "status": "DIRECT_RELEVANT_GOLD_SUFFICIENT_WITH_SOURCE_SCOPE",
+      "current_gold_block_ids": [
+        "6d9ca199-92aa-4231-a6b3-29c59aff9d8c",
+        "d5152cc6-4534-4622-a8db-aa1d463bc3d9"
+      ],
+      "additional_source_block_ids": [],
+      "finding": "Direct pinned parent covers the requested intent; preserve complete applicable conditions/lists and avoid claiming the entire company policy is reproduced."
+    },
+    {
+      "id": "all_policy_audience",
+      "question": "Кто должен соблюдать антикоррупционную политику компании?",
+      "status": "INSUFFICIENT_AUDIENCE_GOLD",
+      "current_gold_block_ids": [
+        "6d99e944-bdce-4768-9a0e-ff2bc5575bf4",
+        "f90c9547-a2ae-48fc-a030-54f5982fbf32"
+      ],
+      "additional_source_block_ids": [
+        "fbe3b7a1-d950-43ba-9148-114c9bdcdbed"
+      ],
+      "finding": "Add company, governing-body members and other persons acting on company behalf from p1. Employee undertaking p11 is supplementary, not the audience answer."
+    }
+  ],
+  "root_decision": "ALL_SIX_GAPS_REQUIRE_FIX_OR_EXPLICIT_SOURCE_BOUNDARY_BEFORE_SOURCE14",
+  "original_case_packs_identical": true,
+  "original_case_pack_sha256": {
+    "12": "ae2beeb8ef12f7f71aa3f3e7b5111f51e5465423caa1835ce0be769e09b01078",
+    "13": "ae2beeb8ef12f7f71aa3f3e7b5111f51e5465423caa1835ce0be769e09b01078"
+  }
+}

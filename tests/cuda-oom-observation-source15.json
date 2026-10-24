@@ -1,0 +1,35 @@
+{
+  "probe": "CONTROLLED_CUDA_ALLOCATOR_OOM",
+  "actual_oom_count": 6,
+  "fake_exception_injection": false,
+  "physical_vram_exhaustion": false,
+  "production_gpu1_access": false,
+  "external_MAX_sends": 0,
+  "instrumentation": "EXTERNAL_ISOLATED_LIFESPAN_AND_EXCEPTION_OBSERVER",
+  "status": "REAL_ALLOCATOR_OOM_OBSERVED_BUSINESS_CHECKS_STILL_REQUIRED",
+  "gpu_uuid": "11059f0c-31df-13af-91f6-b3cca8d1c642",
+  "baseline_memory": {
+    "allocated_bytes": 9180272640,
+    "reserved_bytes": 9219080192
+  },
+  "allocator_limit_bytes": 9220128768,
+  "allocator_fraction": 0.7382987767439664,
+  "free_headroom_bytes": 1048576,
+  "synthetic_evidence_tokens": 2625,
+  "artifact_fingerprint": "1fe278d9e50f5fe426c80efe3845911a3bbcc057d1f975c660a8c2f39c6d21d0",
+  "generation_runtime_source_sha256": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b",
+  "wrapper_source_sha256": "dc95cc58c58df613cd4d370e05bd6d4b1b2bc6a4ad502481e7b022908ef84d8d",
+  "first_oom_at_monotonic": 42316.899196112,
+  "last_oom_at_monotonic": 42333.525483029,
+  "last_observed_exception": "torch.cuda.OutOfMemoryError",
+  "after_oom_memory": {
+    "allocated_bytes": 9180281856,
+    "reserved_bytes": 9219080192
+  },
+  "allocator_cap_disarmed": true,
+  "after_disarm_memory": {
+    "allocated_bytes": 9180281856,
+    "reserved_bytes": 9219080192
+  },
+  "disarmed_at_monotonic": 42340.342829898
+}

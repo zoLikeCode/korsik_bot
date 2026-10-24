@@ -1,0 +1,404 @@
+{
+  "schema": "korsik-release24-public-readonly-v1",
+  "status": "PASS",
+  "observed_at": "2026-10-24T19:55:18.255189+00:00",
+  "origin": "https://app.korsik-demo.ru",
+  "normal_CA_and_hostname_verification": true,
+  "insecure_TLS_options": false,
+  "all_requests_GET": true,
+  "MAX_messages_sent": 0,
+  "business_data_edited": false,
+  "sessions_created_or_revoked": 0,
+  "requests": [
+    {
+      "path": "/THIRD_PARTY_NOTICES.txt",
+      "status": 200,
+      "bytes": 1073,
+      "seconds": 0.826
+    },
+    {
+      "path": "/assets/Chat-DPwBeN-5.js",
+      "status": 200,
+      "bytes": 18854,
+      "seconds": 0.543
+    },
+    {
+      "path": "/assets/Dashboard-BhORD1js.js",
+      "status": 200,
+      "bytes": 10857,
+      "seconds": 0.372
+    },
+    {
+      "path": "/assets/EmployeeAvatar-xy3IX-tE.js",
+      "status": 200,
+      "bytes": 369,
+      "seconds": 0.378
+    },
+    {
+      "path": "/assets/Employees-BZMX_Nml.css",
+      "status": 200,
+      "bytes": 3413,
+      "seconds": 0.371
+    },
+    {
+      "path": "/assets/Employees-DUIacmlD.js",
+      "status": 200,
+      "bytes": 19800,
+      "seconds": 0.393
+    },
+    {
+      "path": "/assets/FeedbackReview-DYE9kIx5.js",
+      "status": 200,
+      "bytes": 6264,
+      "seconds": 0.464
+    },
+    {
+      "path": "/assets/Knowledge-C8W9gJne.css",
+      "status": 200,
+      "bytes": 1238,
+      "seconds": 0.373
+    },
+    {
+      "path": "/assets/Knowledge-HzeFCy_b.js",
+      "status": 200,
+      "bytes": 34419,
+      "seconds": 0.395
+    },
+    {
+      "path": "/assets/Organization-DD_X4g1v.css",
+      "status": 200,
+      "bytes": 4717,
+      "seconds": 0.38
+    },
+    {
+      "path": "/assets/Organization-Dfs9sZv-.js",
+      "status": 200,
+      "bytes": 15746,
+      "seconds": 0.373
+    },
+    {
+      "path": "/assets/PrincipalBindings-BSdjy7Fm.js",
+      "status": 200,
+      "bytes": 4841,
+      "seconds": 0.371
+    },
+    {
+      "path": "/assets/Reports-Dng9we1Q.js",
+      "status": 200,
+      "bytes": 9178,
+      "seconds": 0.368
+    },
+    {
+      "path": "/assets/Scenarios-BnuhLJ6X.css",
+      "status": 200,
+      "bytes": 15869,
+      "seconds": 0.597
+    },
+    {
+      "path": "/assets/Scenarios-EjzWSCYz.js",
+      "status": 200,
+      "bytes": 242421,
+      "seconds": 0.543
+    },
+    {
+      "path": "/assets/Surveys-BoPpbK95.js",
+      "status": 200,
+      "bytes": 25579,
+      "seconds": 0.395
+    },
+    {
+      "path": "/assets/check-check-Dx9l14WB.js",
+      "status": 200,
+      "bytes": 175,
+      "seconds": 0.383
+    },
+    {
+      "path": "/assets/chevron-left-mkJY5WNx.js",
+      "status": 200,
+      "bytes": 126,
+      "seconds": 0.379
+    },
+    {
+      "path": "/assets/copy-Dp-kyz84.js",
+      "status": 200,
+      "bytes": 228,
+      "seconds": 0.369
+    },
+    {
+      "path": "/assets/download-C98vq5ty.js",
+      "status": 200,
+      "bytes": 259,
+      "seconds": 0.384
+    },
+    {
+      "path": "/assets/index-BQv_dsYK.css",
+      "status": 200,
+      "bytes": 90489,
+      "seconds": 0.399
+    },
+    {
+      "path": "/assets/index-DmWW3DbD.js",
+      "status": 200,
+      "bytes": 299448,
+      "seconds": 0.541
+    },
+    {
+      "path": "/assets/plus-DlycHxwE.js",
+      "status": 200,
+      "bytes": 150,
+      "seconds": 0.372
+    },
+    {
+      "path": "/assets/refresh-ccw-Cy2dv9iv.js",
+      "status": 200,
+      "bytes": 317,
+      "seconds": 0.365
+    },
+    {
+      "path": "/assets/send-DgNW86Yi.js",
+      "status": 200,
+      "bytes": 369,
+      "seconds": 0.38
+    },
+    {
+      "path": "/assets/trash-2-A1d8wtDj.js",
+      "status": 200,
+      "bytes": 354,
+      "seconds": 0.378
+    },
+    {
+      "path": "/assets/upload-BgFTN7jy.js",
+      "status": 200,
+      "bytes": 254,
+      "seconds": 0.445
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 644,
+      "seconds": 0.38
+    },
+    {
+      "path": "/api/v1/auth/config",
+      "status": 200,
+      "bytes": 113,
+      "seconds": 0.397
+    },
+    {
+      "path": "/api/openapi.json",
+      "status": 200,
+      "bytes": 163262,
+      "seconds": 1.497
+    },
+    {
+      "path": "/api/v1/organization",
+      "status": 401,
+      "bytes": 90,
+      "seconds": 0.395
+    },
+    {
+      "path": "/internal/release24-readonly-probe",
+      "status": 404,
+      "bytes": 146,
+      "seconds": 0.375
+    },
+    {
+      "path": "/organization",
+      "status": 200,
+      "bytes": 644,
+      "seconds": 0.379
+    }
+  ],
+  "native_MAX_launch_tested": false,
+  "expected_native_profile_from_successful_deployment": {
+    "profile_id": "052c5a64-ac05-4286-a4c0-18e3fb1e77dc",
+    "status": "ACTIVE",
+    "configuration_fingerprint": "b922edb3703a1bfab392b1abf6c6e818b67720474daa022462e7796bd8a6d183",
+    "retrieval_module_sha256": "0f3d0ae22e1fa10f18cba7881d3c017a8034af581c3a0789a6dc482e1734d2c6",
+    "canonical_url": "https://app.korsik-demo.ru",
+    "secure_cookies": true,
+    "max_bot_url": "https://max.ru/id7725738542_2_bot"
+  },
+  "installed_quality_report_expected_sha256": "df11daefc64ec6cb71d8876694294a64c2391573acbe3494f07cd63eeee81795",
+  "profile_activation_not_repeated_by_public_probe": true,
+  "runtime_profile_independently_checked_by_final_runtime_report": false,
+  "auth_config_available": true,
+  "files": [
+    {
+      "path": "/THIRD_PARTY_NOTICES.txt",
+      "sha256": "023119ac20fb1c8c9930abe0bcd196989a1960388529a96fc43cebf96f07c9ff",
+      "bytes": 1073,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Chat-DPwBeN-5.js",
+      "sha256": "2d63e488795ca2a60775c649717139b0387cab1042209442caa5dc244883c561",
+      "bytes": 18854,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Dashboard-BhORD1js.js",
+      "sha256": "a1b543b7e5b8867e54512b272ef57c8eaff43ab6e5edae987678213ecc34bea1",
+      "bytes": 10857,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/EmployeeAvatar-xy3IX-tE.js",
+      "sha256": "446a489a8284bcffc60e26b627e7b5512f6de555d6636f0c6d7b13ef522b2de0",
+      "bytes": 369,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Employees-BZMX_Nml.css",
+      "sha256": "73096576f8f8ed979401377aa76b5346ccd247a18a675a011a8f11502651dd8f",
+      "bytes": 3413,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Employees-DUIacmlD.js",
+      "sha256": "43624ee5c1c6548d83fe65aea9307a6eb7c7176a93c8dc0f29a6827343470d77",
+      "bytes": 19800,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/FeedbackReview-DYE9kIx5.js",
+      "sha256": "d361eae46b5b8db44d5172aadc7a00df4e93e49706c2e082e0cc7050a9d601af",
+      "bytes": 6264,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Knowledge-C8W9gJne.css",
+      "sha256": "4df05d0a518e9e3453d715d014617e832feaf4dfe1bfac4711d4a69a75e10c70",
+      "bytes": 1238,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Knowledge-HzeFCy_b.js",
+      "sha256": "95bed9d289d53b0268aa336796330ca807399c5731e3f1c09844971a816729a0",
+      "bytes": 34419,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Organization-DD_X4g1v.css",
+      "sha256": "3a5d6ee5d060e12e0fd65e5b30e465024a1fc9aeffb76d5e23fefafb1289afba",
+      "bytes": 4717,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Organization-Dfs9sZv-.js",
+      "sha256": "70fc955c64f9835a37e59813e7fd419455399423a22be8204d79bfe0390d37d7",
+      "bytes": 15746,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/PrincipalBindings-BSdjy7Fm.js",
+      "sha256": "97a286205980089f5d5c5a74dcf6d8d2cf7d8b1b2eb628acda0b39f3403bf287",
+      "bytes": 4841,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Reports-Dng9we1Q.js",
+      "sha256": "2a98dad89b2edbca44e7c471d3680247286382b1ea8201bc99594332a97b6276",
+      "bytes": 9178,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Scenarios-BnuhLJ6X.css",
+      "sha256": "1243b61a71923367ce620fb944427c80c9b03e863e18374fcf4f74d6d06f63fc",
+      "bytes": 15869,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Scenarios-EjzWSCYz.js",
+      "sha256": "5d55f661b5893cccc25d3abe5122c383accc2a5c93174fade8aa0e80749fb9cb",
+      "bytes": 242421,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Surveys-BoPpbK95.js",
+      "sha256": "ce3299ee7b4126e1294e9cda0a41a1b684a9755fca5b4890dd5d0e974a92ed08",
+      "bytes": 25579,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/check-check-Dx9l14WB.js",
+      "sha256": "9004d639b75b3907081b7372fb2cfee03e286773af0b4ba63b5d6efe84216200",
+      "bytes": 175,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/chevron-left-mkJY5WNx.js",
+      "sha256": "2fd0daa0a3b51023d7d793238806772ec2a6b2e4fef7ceed62f95c32624b35ca",
+      "bytes": 126,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/copy-Dp-kyz84.js",
+      "sha256": "1a2a6359c398c047601bf6653a51016dd58990118a63e01901c0fe65a0305cc8",
+      "bytes": 228,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/download-C98vq5ty.js",
+      "sha256": "377c1c2026d32ff3e97b3127be2517063533c0951b53e0526de945e40b79c1a5",
+      "bytes": 259,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/index-BQv_dsYK.css",
+      "sha256": "d5183a98ab186135020d2db44d954801871a04fd6b60fcd94cb4db02cafc1a5a",
+      "bytes": 90489,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/index-DmWW3DbD.js",
+      "sha256": "20816bb9686f2f3da493c34924b9770c3897372745aaa1f76fd5fc0bc6d0adc1",
+      "bytes": 299448,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/plus-DlycHxwE.js",
+      "sha256": "870eff6d181adb795f5c171e8ca3d1ead76af1cec47d81a70e3b603c3e440bfe",
+      "bytes": 150,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/refresh-ccw-Cy2dv9iv.js",
+      "sha256": "9236e0ceab3daab8496dc646d2291caf7a492e6056b62764f4193792bb5af863",
+      "bytes": 317,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/send-DgNW86Yi.js",
+      "sha256": "2b791c657d6bd2a74e08fb97da99d4b16f58418419698ca8bcc1d63fc8d1e2b8",
+      "bytes": 369,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/trash-2-A1d8wtDj.js",
+      "sha256": "486ab79272ff8c8d814580ff813b178bb4d2af7c08b71ec80548a95608a343c9",
+      "bytes": 354,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/upload-BgFTN7jy.js",
+      "sha256": "7d3a973924497fb020d1df6fe8a6f5ebc244c5af60d83fe8ccc369113023e616",
+      "bytes": 254,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/index.html",
+      "sha256": "ace25a6d0e616e764c695a0063d817e0ea94ce32892d4530940a54863d27208d",
+      "bytes": 644,
+      "matches_frozen_dist": true
+    }
+  ],
+  "files_count": 28,
+  "third_party_notices_verified": true,
+  "openapi_paths": 223,
+  "openapi_operations": 270,
+  "organization_anonymous_status": 401,
+  "internal_route_status": 404,
+  "MAX_frame_embedding_headers_preserved": true,
+  "entry": "/assets/index-DmWW3DbD.js"
+}

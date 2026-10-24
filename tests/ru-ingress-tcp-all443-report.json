@@ -1,0 +1,21 @@
+{
+  "status": "INCONCLUSIVE_NO_MATCHED_PACKETS",
+  "observed_at": "2026-10-24T12:35:35.766509+00:00",
+  "duration_seconds": 60,
+  "tool": "Ubuntu tcpdump",
+  "snapshot_bytes": 54,
+  "application_payload_bytes_captured": 0,
+  "scope": "All source addresses, TCP443 on ens3; headers only",
+  "endpoint_IPs_redacted": true,
+  "tcpdump_exit_code": 124,
+  "headers": [],
+  "packet_summary": {
+    "captured": 0,
+    "received_by_filter": 0,
+    "dropped_by_kernel": 0
+  },
+  "interpretation": "A synchronized curl timestamp and positive instrument control were not established for this window. Zero matched packets cannot establish the cause or location of the intermittent external TLS handshake failure.",
+  "public_route_stable": false,
+  "nginx_or_certificate_mutations_performed_for_diagnosis": false,
+  "company_accepted": false
+}

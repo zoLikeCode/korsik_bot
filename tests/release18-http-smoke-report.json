@@ -1,0 +1,185 @@
+{
+  "schema": "korsik-release18-targeted-http-smoke-v1",
+  "status": "PASS",
+  "runtime": "Real HTTP session/CSRF/idempotency -> durable ANSWER job -> deployed answer-worker -> local published-corpus pipeline -> stored answer",
+  "questions": 3,
+  "expected_questions": 3,
+  "scope": "Two known positive questions plus one absent-topic negative; not a quality benchmark/company acceptance",
+  "execution_error": null,
+  "rows": [
+    {
+      "key": "password",
+      "question": "Как передавать пароли к конфиденциальной информации?",
+      "status": "COMPLETED",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "seconds": 9.4829,
+      "citations": [
+        {
+          "document_title": "Положение о коммерческой тайне",
+          "page_no": 11,
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290"
+        },
+        {
+          "document_title": "Положение о коммерческой тайне",
+          "page_no": 10,
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290"
+        },
+        {
+          "document_title": "Положение о коммерческой тайне",
+          "page_no": 12,
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290"
+        }
+      ],
+      "answer_text_sha256": "0435997eea8e5ca860e9f69cd23846de4cd1d8511cb3edf910f3e580a11623d5",
+      "pipeline_timings": {
+        "embedding_seconds": 0.190875,
+        "vector_query_seconds": 0.050558,
+        "rerank_preparation_seconds": 0.456643,
+        "rerank_seconds": 7.045069,
+        "lexical_seconds": 0.120713,
+        "retrieval_seconds": 8.6133,
+        "generation_request_seconds": 0.0,
+        "generation_queue_seconds": null,
+        "generation_inference_seconds": null,
+        "pipeline_seconds": 8.646084
+      },
+      "checks": {
+        "positive_answer": true,
+        "source_citations_present": true,
+        "separate_password_channel_literal": true
+      },
+      "status_check": "PASS",
+      "own_fake_hr_notifications": 0
+    },
+    {
+      "key": "mission",
+      "question": "Какова миссия компании ПОЛИПЛАСТИК?",
+      "status": "COMPLETED",
+      "mode": "LOCAL_GENERATED",
+      "reason": "MECHANICAL_CHECKS_PASSED",
+      "seconds": 22.8021,
+      "citations": [
+        {
+          "document_title": "Политика в области качества и экологии",
+          "page_no": 2,
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc"
+        },
+        {
+          "document_title": "Антикоррупционная политика",
+          "page_no": 1,
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b"
+        },
+        {
+          "document_title": "Положение о коммерческой тайне",
+          "page_no": 2,
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290"
+        }
+      ],
+      "answer_text_sha256": "2c7c8ce302b0bace8f3f5c72695728afddef35626d921c05fdd72bf56c8ae656",
+      "pipeline_timings": {
+        "embedding_seconds": 0.063403,
+        "vector_query_seconds": 0.043899,
+        "rerank_preparation_seconds": 0.351138,
+        "rerank_seconds": 6.648871,
+        "lexical_seconds": 0.010335,
+        "retrieval_seconds": 7.181481,
+        "generation_request_seconds": 14.862965,
+        "generation_queue_seconds": 0.0,
+        "generation_inference_seconds": 14.801,
+        "generation_runtime_request_seconds": 14.8193,
+        "pipeline_seconds": 22.069527
+      },
+      "checks": {
+        "positive_answer": true,
+        "source_citations_present": true,
+        "quality_of_life_and_economy": true,
+        "infrastructure_and_materials": true
+      },
+      "status_check": "PASS",
+      "own_fake_hr_notifications": 0
+    },
+    {
+      "key": "missing_food",
+      "question": "Где можно пообедать?",
+      "status": "ABSTAINED",
+      "mode": "HANDOFF",
+      "reason": "INSUFFICIENT_TOPIC_EVIDENCE",
+      "seconds": 7.7862,
+      "citations": [],
+      "answer_text_sha256": "abe392581628ae2853722fc9aeabfbc91409b0fedfc545160a1a9adf226fbc23",
+      "pipeline_timings": {
+        "embedding_seconds": 0.085736,
+        "vector_query_seconds": 0.07088,
+        "rerank_preparation_seconds": 0.395563,
+        "rerank_seconds": 6.328395,
+        "lexical_seconds": 0.008252,
+        "retrieval_seconds": 6.99488,
+        "generation_request_seconds": 0.0,
+        "generation_queue_seconds": null,
+        "generation_inference_seconds": null,
+        "pipeline_seconds": 7.010207
+      },
+      "checks": {
+        "negative_abstained": true,
+        "neutral_pending_notice": true,
+        "no_irrelevant_citations": true,
+        "support_case_created": true,
+        "pending_support_keeps_bot": true
+      },
+      "status_check": "PASS",
+      "own_fake_hr_notifications": 1
+    }
+  ],
+  "raw_answer_text_in_public_report": false,
+  "MAX_bindings_issued": 0,
+  "MAX_sends": 0,
+  "dedicated_fake_HR_assigned_before_questions": true,
+  "identity_before": {
+    "profile_id": "4953d2c8-52cc-4aed-80b7-66c6d0a941f2",
+    "configuration_fingerprint": null,
+    "retrieval_module_sha256": "8ecf325b6fa1bd392f4edabe9b3666ae2a9bd84a0b33d32cdaf421570476ca35",
+    "published_revision_ids": [
+      "5c5d7f53-7389-446b-ab26-abc11f42851b",
+      "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+      "c32d41b9-c41b-4095-a707-7226ea965290"
+    ]
+  },
+  "identity_after": {
+    "profile_id": "4953d2c8-52cc-4aed-80b7-66c6d0a941f2",
+    "configuration_fingerprint": null,
+    "retrieval_module_sha256": "8ecf325b6fa1bd392f4edabe9b3666ae2a9bd84a0b33d32cdaf421570476ca35",
+    "published_revision_ids": [
+      "5c5d7f53-7389-446b-ab26-abc11f42851b",
+      "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+      "c32d41b9-c41b-4095-a707-7226ea965290"
+    ]
+  },
+  "source_or_profile_mutations": false,
+  "cleanup": {
+    "status": "PASS",
+    "employee_ended": true,
+    "api_offboard_confirmed": true,
+    "api_resolved_cases": 1,
+    "guarded_fallback_needed": false,
+    "own_unsent_outboxes_remaining": 0,
+    "outside_HR_notifications": 0,
+    "accepted_MAX_sends": 0,
+    "enabled_own_users_remaining": 0,
+    "quarantined_outboxes": 4,
+    "own_cases_terminal": true,
+    "own_synthetic_gap_cleanup": {
+      "status": "PASS",
+      "guarded_gap_rows": 1,
+      "cancelled_gap_rows": 1,
+      "own_open_gaps_remaining": 0,
+      "own_unsent_or_accepted_outboxes": 0,
+      "reason_code": "QA_FIXTURE_COMPLETED",
+      "exact_run_marker_employee_answer_ids_guard": true,
+      "exact_episode_guard": "gap.answer_id -> owned conversation.episode_id == ended owned card.episode_id; optional gap episode also checked",
+      "hard_deletes": 0,
+      "published_KB_or_index_changes": 0
+    }
+  },
+  "company_accepted": false
+}

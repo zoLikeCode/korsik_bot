@@ -1,0 +1,380 @@
+{
+  "schema": "korsik-release22-public-readonly-v1",
+  "status": "PASS",
+  "observed_at": "2026-10-24T18:07:27.369696+00:00",
+  "origin": "https://app.korsik-demo.ru",
+  "normal_CA_and_hostname_verification": true,
+  "insecure_TLS_options": false,
+  "all_requests_GET": true,
+  "MAX_messages_sent": 0,
+  "business_data_edited": false,
+  "sessions_created_or_revoked": 0,
+  "requests": [
+    {
+      "path": "/THIRD_PARTY_NOTICES.txt",
+      "status": 200,
+      "bytes": 1073,
+      "seconds": 0.507
+    },
+    {
+      "path": "/assets/Chat-EpD0vX4s.js",
+      "status": 200,
+      "bytes": 18854,
+      "seconds": 0.541
+    },
+    {
+      "path": "/assets/Dashboard-C-i0A8FN.js",
+      "status": 200,
+      "bytes": 10857,
+      "seconds": 0.393
+    },
+    {
+      "path": "/assets/EmployeeAvatar-C4hz2Lvv.js",
+      "status": 200,
+      "bytes": 369,
+      "seconds": 0.383
+    },
+    {
+      "path": "/assets/Employees-D7Htbdwp.js",
+      "status": 200,
+      "bytes": 50809,
+      "seconds": 0.549
+    },
+    {
+      "path": "/assets/FeedbackReview-Bwc2saap.js",
+      "status": 200,
+      "bytes": 6264,
+      "seconds": 0.377
+    },
+    {
+      "path": "/assets/Knowledge-BU4IuA7a.js",
+      "status": 200,
+      "bytes": 94896,
+      "seconds": 0.569
+    },
+    {
+      "path": "/assets/Organization-DD_X4g1v.css",
+      "status": 200,
+      "bytes": 4717,
+      "seconds": 0.387
+    },
+    {
+      "path": "/assets/Organization-Dq7UDx11.js",
+      "status": 200,
+      "bytes": 15746,
+      "seconds": 0.388
+    },
+    {
+      "path": "/assets/PrincipalBindings-CgfppHXa.js",
+      "status": 200,
+      "bytes": 4841,
+      "seconds": 0.375
+    },
+    {
+      "path": "/assets/Reports-SdHvwRA0.js",
+      "status": 200,
+      "bytes": 9178,
+      "seconds": 0.375
+    },
+    {
+      "path": "/assets/Scenarios-BRRHVGpv.js",
+      "status": 200,
+      "bytes": 213050,
+      "seconds": 0.7
+    },
+    {
+      "path": "/assets/Scenarios-BnuhLJ6X.css",
+      "status": 200,
+      "bytes": 15869,
+      "seconds": 0.38
+    },
+    {
+      "path": "/assets/Surveys-CHh6amrO.js",
+      "status": 200,
+      "bytes": 24397,
+      "seconds": 0.39
+    },
+    {
+      "path": "/assets/check-check-C6DzDiCr.js",
+      "status": 200,
+      "bytes": 175,
+      "seconds": 0.383
+    },
+    {
+      "path": "/assets/copy-CShZ9gqd.js",
+      "status": 200,
+      "bytes": 228,
+      "seconds": 0.373
+    },
+    {
+      "path": "/assets/download-DnVEqEvE.js",
+      "status": 200,
+      "bytes": 259,
+      "seconds": 0.388
+    },
+    {
+      "path": "/assets/employmentTime-CW1iF-fK.js",
+      "status": 200,
+      "bytes": 1284,
+      "seconds": 0.504
+    },
+    {
+      "path": "/assets/index-BDnvis-2.js",
+      "status": 200,
+      "bytes": 299437,
+      "seconds": 0.87
+    },
+    {
+      "path": "/assets/index-ByNQK5YN.css",
+      "status": 200,
+      "bytes": 88912,
+      "seconds": 0.545
+    },
+    {
+      "path": "/assets/plus-CTOwdKSk.js",
+      "status": 200,
+      "bytes": 150,
+      "seconds": 0.398
+    },
+    {
+      "path": "/assets/refresh-ccw-BZkQ1KyO.js",
+      "status": 200,
+      "bytes": 317,
+      "seconds": 0.402
+    },
+    {
+      "path": "/assets/scenario-Ym864zxo.js",
+      "status": 200,
+      "bytes": 6520,
+      "seconds": 0.38
+    },
+    {
+      "path": "/assets/send-D-UJUtT1.js",
+      "status": 200,
+      "bytes": 369,
+      "seconds": 0.396
+    },
+    {
+      "path": "/assets/trash-2-CkuQveis.js",
+      "status": 200,
+      "bytes": 431,
+      "seconds": 0.376
+    },
+    {
+      "path": "/assets/upload-DBEsNpgB.js",
+      "status": 200,
+      "bytes": 254,
+      "seconds": 0.373
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 644,
+      "seconds": 0.381
+    },
+    {
+      "path": "/api/v1/auth/config",
+      "status": 200,
+      "bytes": 113,
+      "seconds": 0.454
+    },
+    {
+      "path": "/api/openapi.json",
+      "status": 200,
+      "bytes": 156517,
+      "seconds": 1.021
+    },
+    {
+      "path": "/api/v1/organization",
+      "status": 401,
+      "bytes": 90,
+      "seconds": 0.543
+    },
+    {
+      "path": "/internal/release22-readonly-probe",
+      "status": 404,
+      "bytes": 146,
+      "seconds": 0.38
+    },
+    {
+      "path": "/organization",
+      "status": 200,
+      "bytes": 644,
+      "seconds": 0.38
+    }
+  ],
+  "native_MAX_launch_tested": false,
+  "auth_config_available": true,
+  "files": [
+    {
+      "path": "/THIRD_PARTY_NOTICES.txt",
+      "sha256": "023119ac20fb1c8c9930abe0bcd196989a1960388529a96fc43cebf96f07c9ff",
+      "bytes": 1073,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Chat-EpD0vX4s.js",
+      "sha256": "529fbf7415d5d0ff72c934bb01222bd6f9a872ae5a69f0f13be33aa82114d708",
+      "bytes": 18854,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Dashboard-C-i0A8FN.js",
+      "sha256": "2173d2a442f43ee7bc22d7b97179f0d07ca2e34b6672a55b86b52b1c6cf37109",
+      "bytes": 10857,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/EmployeeAvatar-C4hz2Lvv.js",
+      "sha256": "545566ab2f6f6dabe289e7479f0b698f3a8b278fd84afcfe29b2bc73f954771d",
+      "bytes": 369,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Employees-D7Htbdwp.js",
+      "sha256": "986deec2657bc6e82f0c1e923ce5cb7442fbcb3b38c0fe7e51d24fce3f70fbf1",
+      "bytes": 50809,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/FeedbackReview-Bwc2saap.js",
+      "sha256": "963b10a6cbf3bdd65b8c00e5810f967427ec3d572d970ee0c832b1ba1f22932d",
+      "bytes": 6264,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Knowledge-BU4IuA7a.js",
+      "sha256": "7bed7905637ac42b9e0e8a28e70e77a368f3f7c5b882419428094fd2f3bfedc3",
+      "bytes": 94896,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Organization-DD_X4g1v.css",
+      "sha256": "3a5d6ee5d060e12e0fd65e5b30e465024a1fc9aeffb76d5e23fefafb1289afba",
+      "bytes": 4717,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Organization-Dq7UDx11.js",
+      "sha256": "93374d6460b4a53afd1155a71be027e29af93f724cc52ee320e7f6e8e74b044b",
+      "bytes": 15746,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/PrincipalBindings-CgfppHXa.js",
+      "sha256": "ba36a88aa4c8bcca39e6ce9b5d198eb5462120d40952d7000f287a82df005bf2",
+      "bytes": 4841,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Reports-SdHvwRA0.js",
+      "sha256": "947875ae7e18f6b6319721d930d56f847fab064edbb32f9d16d544e2f4667f36",
+      "bytes": 9178,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Scenarios-BRRHVGpv.js",
+      "sha256": "2bbbd74db9c2e05c002081722e9e38dd34d1fe32b9aac2d102e322bbe1377baf",
+      "bytes": 213050,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Scenarios-BnuhLJ6X.css",
+      "sha256": "1243b61a71923367ce620fb944427c80c9b03e863e18374fcf4f74d6d06f63fc",
+      "bytes": 15869,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Surveys-CHh6amrO.js",
+      "sha256": "ba04ce34d8b14ccdc8807e4b6873473aaba8143669c036c0ecedb2a214eeadb7",
+      "bytes": 24397,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/check-check-C6DzDiCr.js",
+      "sha256": "c0821d78744f7898eca9ef1555184707680453717a44dd5e35e7738a5172e3fd",
+      "bytes": 175,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/copy-CShZ9gqd.js",
+      "sha256": "784c11c8db499d7f7063aa0aae244c15654794ebea367493fb8ca42201d6e922",
+      "bytes": 228,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/download-DnVEqEvE.js",
+      "sha256": "407392baff5afa5b6bc9248156011066e068ea1769ee26d39d912adcfb686c7f",
+      "bytes": 259,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/employmentTime-CW1iF-fK.js",
+      "sha256": "9d54b1a08027d9979977f0aa39277ac916cf631c89eeef805666b7f84b1c517e",
+      "bytes": 1284,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/index-BDnvis-2.js",
+      "sha256": "fc91eebbf79f91e024aaa8b28719c58764f580b2dddb2f9559a30f96baa44ab6",
+      "bytes": 299437,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/index-ByNQK5YN.css",
+      "sha256": "bb12a5fc6ee97362ecdaa2885d679d60d47f689ecfc4dd51e256d102a1f0a56b",
+      "bytes": 88912,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/plus-CTOwdKSk.js",
+      "sha256": "74c0bd76255734a887d5219421e8c2342802512f0c1e1700dd05e0a0309d197f",
+      "bytes": 150,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/refresh-ccw-BZkQ1KyO.js",
+      "sha256": "2186f6b4161b0fe935f7ead9a7cf0fd7e5ad804b7bb71f5b40560ca410e8bf70",
+      "bytes": 317,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/scenario-Ym864zxo.js",
+      "sha256": "3b44889c70afd9cf316c0557625db27323ba9f06be3a31e4cf192755d79625a4",
+      "bytes": 6520,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/send-D-UJUtT1.js",
+      "sha256": "7a5908f71e5482c28a9007733a67a9193389bcc0a24dd4143a53f7d0c179c600",
+      "bytes": 369,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/trash-2-CkuQveis.js",
+      "sha256": "559ed13acb75aeda9e9e780d93e3403e9e5ada302c45ab31b64366d1aee7b4fb",
+      "bytes": 431,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/upload-DBEsNpgB.js",
+      "sha256": "985f5507147f8196928d062242bb645c7496d9bf4805871bc217a755e7eb6f93",
+      "bytes": 254,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/index.html",
+      "sha256": "ff03d5a46e4cc0b77291b44520fba28c67b43cd22b030da325a4946603e44657",
+      "bytes": 644,
+      "matches_frozen_dist": true
+    }
+  ],
+  "files_count": 27,
+  "third_party_notices_verified": true,
+  "openapi_paths": 217,
+  "openapi_operations": 260,
+  "organization_anonymous_status": 401,
+  "internal_route_status": 404,
+  "MAX_frame_embedding_headers_preserved": true,
+  "entry": "/assets/index-BDnvis-2.js"
+}

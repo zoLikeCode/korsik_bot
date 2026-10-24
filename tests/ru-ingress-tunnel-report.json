@@ -1,0 +1,104 @@
+{
+  "started_at": "2026-10-24T11:49:43.559056+00:00",
+  "status": "PASS",
+  "scope": "DEDICATED_SSH_UPSTREAM_ONLY",
+  "edge_ip": "212.57.127.220",
+  "origin": "103.119.82.252:28902",
+  "local_forward": "127.0.0.1:18080",
+  "remote_target": "127.0.0.1:8080",
+  "private_keys_copied": false,
+  "existing_root_auth_modified": false,
+  "steps": [
+    {
+      "step": "trusted_origin_host_key",
+      "fingerprint": "SHA256:/C2/CgZ6l3AWEMjaB6ucwiZxvSXQRZFAV6qy4jsUmcM",
+      "obtained_via": "EXISTING_TRUSTED_ROOT_SSH"
+    },
+    {
+      "step": "dedicated_edge_key_created",
+      "fingerprint": "SHA256:rmZmfXm/FhUrj2UUk9TdnRGs9CE7kDynS6VDybsps0I",
+      "private_key_retained_on_vps": true,
+      "ispmanager": {
+        "mgrctl_present": true,
+        "ispmgr_config_present": true
+      }
+    },
+    {
+      "step": "origin_forward_only_account",
+      "root_effective_config_unchanged": true,
+      "root_effective_config_sha256": "93aaefbb550123396d0fc2398fbc15c0af814f74ac51688a9908bcd26461768a",
+      "sshd_listener_pid": "209556",
+      "reload_not_restart": true,
+      "effective_restrictions": {
+        "authenticationmethods": "publickey",
+        "passwordauthentication": "no",
+        "kbdinteractiveauthentication": "no",
+        "permittty": "no",
+        "allowagentforwarding": "no",
+        "allowtcpforwarding": "local",
+        "allowstreamlocalforwarding": "no",
+        "permitopen": "127.0.0.1:8080",
+        "permitlisten": "none",
+        "maxsessions": "0",
+        "forcecommand": "/bin/false",
+        "disableforwarding": "no"
+      },
+      "authorized_key_options": "from=212.57.127.220,restrict,port-forwarding,permitopen=127.0.0.1:8080",
+      "dropin_path": "/etc/ssh/sshd_config.d/70-korsik-edge.conf"
+    },
+    {
+      "step": "tunnel_enabled_full_origin_get",
+      "unit_path": "/etc/systemd/system/korsik-vast-tunnel.service",
+      "unit_sha256": "aca8403d5b64e924f90de7a93b72c8153c44339d0af5a367a2ecd013c069d86a",
+      "systemd_verify": "PASS",
+      "service_active": "active",
+      "service_enabled": "enabled",
+      "listener": [
+        "127.0.0.1:18080"
+      ],
+      "html_bytes": 644,
+      "html_sha256": "894847a87d234eb9ddaa31ece9455727b7850fbb9102ae061bdba01a53b12f8c",
+      "entry_path": "/assets/index-DGrQkgKW.js",
+      "asset_bytes": 295702,
+      "asset_sha256": "f4adf5be3b680b9184c37debb3d9d3848c7292b377e560dbed6e86e90c1d7d9f",
+      "anonymous_session_http_status": 401,
+      "anonymous_session_response": {
+        "detail": {
+          "code": "authentication_required",
+          "message": "Войдите в кабинет"
+        }
+      },
+      "ispmanager_untouched": true
+    }
+  ],
+  "finished_at": "2026-10-24T11:49:55.837502+00:00",
+  "limitations": [
+    "Private upstream proof only; domain DNS, public TLS and browser cookie flow belong to separate ingress checks.",
+    "Single Vast node and a single SSH tunnel provide no high availability.",
+    "Original root credentials and existing application containers were not changed."
+  ],
+  "negative_security_probes": {
+    "observed_at": "2026-10-24T11:52:24.617592+00:00",
+    "authenticated_key_same_as_active_tunnel": true,
+    "shell_session": {
+      "allowed": false,
+      "exit_code": 255,
+      "server_message": "channel 0: open failed: connect failed: open failed",
+      "interpretation": "MaxSessions 0 rejected the session channel; no remote command executed."
+    },
+    "other_destination_127_0_0_1_8000": {
+      "allowed": false,
+      "exit_code": 255,
+      "server_message": "administratively prohibited"
+    },
+    "remote_listener_18082": {
+      "allowed": false,
+      "exit_code": 255,
+      "server_message": "remote port forwarding failed"
+    },
+    "tunnel_remained_active": true,
+    "key_directory_mode": "0700",
+    "private_key_mode": "0600",
+    "known_hosts_mode": "0644"
+  }
+}

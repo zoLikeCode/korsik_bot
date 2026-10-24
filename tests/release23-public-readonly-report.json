@@ -1,0 +1,380 @@
+{
+  "schema": "korsik-release23-public-readonly-v1",
+  "status": "PASS",
+  "observed_at": "2026-10-24T18:43:06.741950+00:00",
+  "origin": "https://app.korsik-demo.ru",
+  "normal_CA_and_hostname_verification": true,
+  "insecure_TLS_options": false,
+  "all_requests_GET": true,
+  "MAX_messages_sent": 0,
+  "business_data_edited": false,
+  "sessions_created_or_revoked": 0,
+  "requests": [
+    {
+      "path": "/THIRD_PARTY_NOTICES.txt",
+      "status": 200,
+      "bytes": 1073,
+      "seconds": 0.551
+    },
+    {
+      "path": "/assets/Chat-DA7F1eJf.js",
+      "status": 200,
+      "bytes": 18854,
+      "seconds": 0.56
+    },
+    {
+      "path": "/assets/Dashboard-BYHu1YXK.js",
+      "status": 200,
+      "bytes": 10857,
+      "seconds": 0.545
+    },
+    {
+      "path": "/assets/EmployeeAvatar-oXW88Gzk.js",
+      "status": 200,
+      "bytes": 369,
+      "seconds": 0.385
+    },
+    {
+      "path": "/assets/Employees-BH0Lv__f.js",
+      "status": 200,
+      "bytes": 50809,
+      "seconds": 1.016
+    },
+    {
+      "path": "/assets/FeedbackReview-ywRnrvku.js",
+      "status": 200,
+      "bytes": 6264,
+      "seconds": 0.408
+    },
+    {
+      "path": "/assets/Knowledge-xFWoCTJv.js",
+      "status": 200,
+      "bytes": 94896,
+      "seconds": 1.259
+    },
+    {
+      "path": "/assets/Organization-DD_X4g1v.css",
+      "status": 200,
+      "bytes": 4717,
+      "seconds": 0.475
+    },
+    {
+      "path": "/assets/Organization-mXWe5G1t.js",
+      "status": 200,
+      "bytes": 15746,
+      "seconds": 0.559
+    },
+    {
+      "path": "/assets/PrincipalBindings-BAIFNXNB.js",
+      "status": 200,
+      "bytes": 4841,
+      "seconds": 0.4
+    },
+    {
+      "path": "/assets/Reports-DiSTPQiU.js",
+      "status": 200,
+      "bytes": 9178,
+      "seconds": 0.393
+    },
+    {
+      "path": "/assets/Scenarios-BnuhLJ6X.css",
+      "status": 200,
+      "bytes": 15869,
+      "seconds": 0.561
+    },
+    {
+      "path": "/assets/Scenarios-DNNTnLAq.js",
+      "status": 200,
+      "bytes": 235761,
+      "seconds": 1.977
+    },
+    {
+      "path": "/assets/Surveys-BkesNzYf.js",
+      "status": 200,
+      "bytes": 24397,
+      "seconds": 0.545
+    },
+    {
+      "path": "/assets/check-check-4qEV_vyt.js",
+      "status": 200,
+      "bytes": 175,
+      "seconds": 0.374
+    },
+    {
+      "path": "/assets/copy-DONydAIX.js",
+      "status": 200,
+      "bytes": 228,
+      "seconds": 0.38
+    },
+    {
+      "path": "/assets/download-CRwV0f-5.js",
+      "status": 200,
+      "bytes": 259,
+      "seconds": 0.397
+    },
+    {
+      "path": "/assets/employmentTime-CW1iF-fK.js",
+      "status": 200,
+      "bytes": 1284,
+      "seconds": 0.392
+    },
+    {
+      "path": "/assets/index-BQv_dsYK.css",
+      "status": 200,
+      "bytes": 90489,
+      "seconds": 0.876
+    },
+    {
+      "path": "/assets/index-yJW0Zp1Y.js",
+      "status": 200,
+      "bytes": 299468,
+      "seconds": 1.844
+    },
+    {
+      "path": "/assets/plus-B70tr-W5.js",
+      "status": 200,
+      "bytes": 150,
+      "seconds": 0.382
+    },
+    {
+      "path": "/assets/refresh-ccw-H6ppn_XW.js",
+      "status": 200,
+      "bytes": 317,
+      "seconds": 0.391
+    },
+    {
+      "path": "/assets/scenario-D08WjVaE.js",
+      "status": 200,
+      "bytes": 6797,
+      "seconds": 0.392
+    },
+    {
+      "path": "/assets/send-DntWV0ry.js",
+      "status": 200,
+      "bytes": 369,
+      "seconds": 0.383
+    },
+    {
+      "path": "/assets/trash-2-DwuSQCY5.js",
+      "status": 200,
+      "bytes": 431,
+      "seconds": 0.391
+    },
+    {
+      "path": "/assets/upload-U9szJn6m.js",
+      "status": 200,
+      "bytes": 254,
+      "seconds": 0.401
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 644,
+      "seconds": 0.498
+    },
+    {
+      "path": "/api/v1/auth/config",
+      "status": 200,
+      "bytes": 113,
+      "seconds": 0.82
+    },
+    {
+      "path": "/api/openapi.json",
+      "status": 200,
+      "bytes": 160139,
+      "seconds": 1.779
+    },
+    {
+      "path": "/api/v1/organization",
+      "status": 401,
+      "bytes": 90,
+      "seconds": 0.392
+    },
+    {
+      "path": "/internal/release23-readonly-probe",
+      "status": 404,
+      "bytes": 146,
+      "seconds": 0.383
+    },
+    {
+      "path": "/organization",
+      "status": 200,
+      "bytes": 644,
+      "seconds": 0.391
+    }
+  ],
+  "native_MAX_launch_tested": false,
+  "auth_config_available": true,
+  "files": [
+    {
+      "path": "/THIRD_PARTY_NOTICES.txt",
+      "sha256": "023119ac20fb1c8c9930abe0bcd196989a1960388529a96fc43cebf96f07c9ff",
+      "bytes": 1073,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Chat-DA7F1eJf.js",
+      "sha256": "2c2f850b533c825eca4c95320994fced30934dda3e48f11eee4460e8b3df410c",
+      "bytes": 18854,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Dashboard-BYHu1YXK.js",
+      "sha256": "eaf460ecf38e41d68b7686817fd57a8b7ac5be743866ac14fd3973d451147dd3",
+      "bytes": 10857,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/EmployeeAvatar-oXW88Gzk.js",
+      "sha256": "d3d7473751353dace902cc7de0f8f3d1bc3a0adf936917ff613d67ec1ff7ab70",
+      "bytes": 369,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Employees-BH0Lv__f.js",
+      "sha256": "7c56eb876ab44e0c48e85506cc4b884e101d89955c11fe3f335d1fcd82a35ec1",
+      "bytes": 50809,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/FeedbackReview-ywRnrvku.js",
+      "sha256": "06be59e78a98d59dd6f917400ebf939950bec13cde6927513a39d0062f207ed2",
+      "bytes": 6264,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Knowledge-xFWoCTJv.js",
+      "sha256": "7eab7ecc726e09b37d1db35dffcd707c86bacf7f85e81d3848f2ef676a95462c",
+      "bytes": 94896,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Organization-DD_X4g1v.css",
+      "sha256": "3a5d6ee5d060e12e0fd65e5b30e465024a1fc9aeffb76d5e23fefafb1289afba",
+      "bytes": 4717,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Organization-mXWe5G1t.js",
+      "sha256": "8ab1db8a24d3b5c73aa588de619dc75c52430221dc89b42c341b11e7e9a81bdd",
+      "bytes": 15746,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/PrincipalBindings-BAIFNXNB.js",
+      "sha256": "964862751356fbc8afa27dbeb423d24cda565f8dc11e2a05f3045e32c163ecbe",
+      "bytes": 4841,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Reports-DiSTPQiU.js",
+      "sha256": "60a632373ebbb95247bc5530325e22ec77da5cee3216ce3c7fda42deb8378a97",
+      "bytes": 9178,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Scenarios-BnuhLJ6X.css",
+      "sha256": "1243b61a71923367ce620fb944427c80c9b03e863e18374fcf4f74d6d06f63fc",
+      "bytes": 15869,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Scenarios-DNNTnLAq.js",
+      "sha256": "6b59eff05d07015c089cf7efbfef8f9116fba0596bd7796e9244fa57e71eb711",
+      "bytes": 235761,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Surveys-BkesNzYf.js",
+      "sha256": "833b10a4eca3e924cba2d9e0d8ae243362e0542c99bb78c8cc1ae101975bd97d",
+      "bytes": 24397,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/check-check-4qEV_vyt.js",
+      "sha256": "464a5bf005db68e9f5292cf5871bd739250636dcb72e1650b441fbe95c713146",
+      "bytes": 175,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/copy-DONydAIX.js",
+      "sha256": "8ef5b864a0f4bfc63d45c1c491ce6125c7dd0c4a98de73fcee490b98354be627",
+      "bytes": 228,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/download-CRwV0f-5.js",
+      "sha256": "047f901f29394ea84dd73282c5f85409d30f108225712604b290653786062e9a",
+      "bytes": 259,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/employmentTime-CW1iF-fK.js",
+      "sha256": "9d54b1a08027d9979977f0aa39277ac916cf631c89eeef805666b7f84b1c517e",
+      "bytes": 1284,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/index-BQv_dsYK.css",
+      "sha256": "d5183a98ab186135020d2db44d954801871a04fd6b60fcd94cb4db02cafc1a5a",
+      "bytes": 90489,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/index-yJW0Zp1Y.js",
+      "sha256": "e93ebea2e1896940e53163772ac7f86f51304b707e7c53f91661e969c8823aa6",
+      "bytes": 299468,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/plus-B70tr-W5.js",
+      "sha256": "b413835c68ceb06a27f2b728e6d574cee47c831be438f8e9e1b82da23e245aa1",
+      "bytes": 150,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/refresh-ccw-H6ppn_XW.js",
+      "sha256": "29d6af3c31c24dfcc6bdf8b716c6f6fe72228ab7c853a0da5e6c8a6e870ac935",
+      "bytes": 317,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/scenario-D08WjVaE.js",
+      "sha256": "96d3e5fc64bc6f86e83a9ff0f82de5bc8848effd530a506c258b36be79a50f0b",
+      "bytes": 6797,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/send-DntWV0ry.js",
+      "sha256": "689d07a9a4d92300253e6e6df6ab80761996fc88237ae65b2221c506563f9ccb",
+      "bytes": 369,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/trash-2-DwuSQCY5.js",
+      "sha256": "148b3373d9239a8cc4793c2360c0bf559f42b91ebe4dc601124b16c962908899",
+      "bytes": 431,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/upload-U9szJn6m.js",
+      "sha256": "ef4c4fa6eaf1e80972c894af1e68b7c61d314ce58d8c524ec641358f49aba452",
+      "bytes": 254,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/index.html",
+      "sha256": "b884a9479ee356e034f4b045e2866ccd821c71b68b59e078285dc277973fdecc",
+      "bytes": 644,
+      "matches_frozen_dist": true
+    }
+  ],
+  "files_count": 27,
+  "third_party_notices_verified": true,
+  "openapi_paths": 219,
+  "openapi_operations": 266,
+  "organization_anonymous_status": 401,
+  "internal_route_status": 404,
+  "MAX_frame_embedding_headers_preserved": true,
+  "entry": "/assets/index-yJW0Zp1Y.js"
+}

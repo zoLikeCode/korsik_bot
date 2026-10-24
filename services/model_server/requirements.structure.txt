@@ -1,0 +1,4 @@
+docling-slim[convert-core,format-pdf-pypdfium2,models-local]==2.142.1
+docling-core==2.104.0
+docling-ibm-models[opencv-python-headless]==4.0.4
+transformers==5.20.2

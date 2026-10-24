@@ -1,0 +1,69 @@
+.metric-explanation {
+  padding: 20px 24px;
+}
+.metric-explanation > summary {
+  color: #285a4c;
+  font-weight: 650;
+  font-size: 16px;
+}
+.metric-explanation > p {
+  margin-block: 14px;
+}
+.dashboard-roster {
+  grid-column: 1 / -1;
+  min-width: 0;
+}
+.employee-avatar {
+  flex-shrink: 0;
+  overflow: hidden;
+  font-weight: 650;
+  color: #285a4c;
+  background: #e7efde;
+}
+.employee-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.message-scroll .message.assistant {
+  background: #f2f5ed;
+  border-color: #cfdac5;
+}
+.message-scroll .message.mine {
+  background: #e6f0fd;
+  border-color: #adc8ec;
+}
+.message-scroll .message.mine .message-author {
+  color: #335f91;
+}
+.message-scroll .message.mine .message-text {
+  color: #203e61;
+}
+.message-scroll .message.mine .message-author time {
+  color: #4b6b90;
+}
+html[data-theme="dark"] .metric-explanation > summary {
+  color: #b7d68f;
+}
+html[data-theme="dark"] .employee-avatar {
+  color: #d3e8bb;
+  background: #304735;
+}
+html[data-theme="dark"] .message-scroll .message.assistant {
+  background: #233329;
+  border-color: #526b51;
+}
+html[data-theme="dark"] .message-scroll .message.mine {
+  background: #20354e;
+  border-color: #577ea8;
+}
+html[data-theme="dark"] .message-scroll .message.mine .message-text {
+  color: #e0edfc;
+}
+html[data-theme="dark"] .message-scroll .message.mine .message-author,
+html[data-theme="dark"] .message-scroll .message.mine .message-author time {
+  color: #b8d3f2;
+}
+@media (max-width: 600px) {
+  .metric-explanation { padding: 16px; }
+}

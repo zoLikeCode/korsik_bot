@@ -1,0 +1,99 @@
+{
+  "status": "PASS_POSITIVE_CONTROLS_OBSERVED_IN_THIS_WINDOW",
+  "observed_at": "2026-10-24T12:41:57.561293+00:00",
+  "duration_seconds": 60,
+  "tool": "Ubuntu tcpdump",
+  "snapshot_bytes": 54,
+  "application_payload_bytes_captured": 0,
+  "scope": "All source addresses, TCP443 onens3; snaplen54 retains Ethernet/IP/TCP headers only, no application payload",
+  "endpoint_IPs_redacted": true,
+  "tcpdump_exit_code": 124,
+  "headers": [
+    "1792845710.450862 IP PEER1.57659 > VPS.443: Flags [SEW], seq 315768285, win 65535, options [ [|tcp]",
+    "1792845710.450940 IP VPS.443 > PEER1.57659: Flags [S.E], seq 290834287, ack 315768286, win 65160, options [ [|tcp]",
+    "1792845710.457238 IP PEER1.57659 > VPS.443: Flags [.], ack 1, win 2059, options [ [|tcp]",
+    "1792845710.459448 IP PEER1.57659 > VPS.443: Flags [P.], seq 1:329, ack 1, win 2059, options [ [|tcp]",
+    "1792845710.459502 IP VPS.443 > PEER1.57659: Flags [.], ack 329, win 507, options [ [|tcp]",
+    "1792845710.461266 IP VPS.443 > PEER1.57659: Flags [P.], seq 1:3789, ack 329, win 507, options [ [|tcp]",
+    "1792845710.467139 IP PEER1.57659 > VPS.443: Flags [.], ack 3789, win 2000, options [ [|tcp]",
+    "1792845710.467876 IP PEER1.57659 > VPS.443: Flags [.], ack 3789, win 2048, options [ [|tcp]",
+    "1792845710.470758 IP PEER1.57659 > VPS.443: Flags [P.], seq 329:393, ack 3789, win 2048, options [ [|tcp]",
+    "1792845710.471127 IP VPS.443 > PEER1.57659: Flags [P.], seq 3789:3868, ack 393, win 507, options [ [|tcp]",
+    "1792845710.471243 IP VPS.443 > PEER1.57659: Flags [P.], seq 3868:3947, ack 393, win 507, options [ [|tcp]",
+    "1792845710.471935 IP PEER1.57659 > VPS.443: Flags [P.], seq 393:496, ack 3789, win 2048, options [ [|tcp]",
+    "1792845710.480349 IP PEER1.57659 > VPS.443: Flags [.], ack 3947, win 2046, options [ [|tcp]",
+    "1792845710.512882 IP VPS.443 > PEER1.57659: Flags [.], ack 496, win 507, options [ [|tcp]",
+    "1792845710.801197 IP VPS.443 > PEER1.57659: Flags [P.], seq 3947:5361, ack 496, win 507, options [ [|tcp]",
+    "1792845710.807302 IP PEER1.57659 > VPS.443: Flags [.], ack 5361, win 2026, options [ [|tcp]",
+    "1792845710.808384 IP PEER1.57659 > VPS.443: Flags [P.], seq 496:520, ack 5361, win 2048, options [ [|tcp]",
+    "1792845710.808419 IP VPS.443 > PEER1.57659: Flags [.], ack 520, win 507, options [ [|tcp]",
+    "1792845710.808627 IP VPS.443 > PEER1.57659: Flags [F.], seq 5361, ack 520, win 507, options [ [|tcp]",
+    "1792845710.814227 IP PEER1.57659 > VPS.443: Flags [.], ack 5362, win 2048, options [ [|tcp]",
+    "1792845710.814679 IP PEER1.57659 > VPS.443: Flags [F.], seq 520, ack 5362, win 2048, options [ [|tcp]",
+    "1792845710.814704 IP VPS.443 > PEER1.57659: Flags [.], ack 521, win 507, options [ [|tcp]",
+    "1792845713.402124 IP PEER2.43978 > VPS.443: Flags [S], seq 3165015251, win 64240, options [ [|tcp]",
+    "1792845713.402198 IP VPS.443 > PEER2.43978: Flags [S.], seq 511595840, ack 3165015252, win 65160, options [ [|tcp]",
+    "1792845713.564476 IP PEER2.43978 > VPS.443: Flags [.], ack 1, win 502, options [ [|tcp]",
+    "1792845713.664800 IP PEER2.43978 > VPS.443: Flags [P.], seq 1:518, ack 1, win 502, options [ [|tcp]",
+    "1792845713.664877 IP VPS.443 > PEER2.43978: Flags [.], ack 518, win 506, options [ [|tcp]",
+    "1792845713.665710 IP VPS.443 > PEER2.43978: Flags [P.], seq 1:2801, ack 518, win 506, options [ [|tcp]",
+    "1792845713.665730 IP VPS.443 > PEER2.43978: Flags [P.], seq 2801:3804, ack 518, win 506, options [ [|tcp]",
+    "1792845713.828497 IP PEER2.43978 > VPS.443: Flags [.], ack 1401, win 501, options [ [|tcp]",
+    "1792845713.828499 IP PEER2.43978 > VPS.443: Flags [.], ack 2801, win 495, options [ [|tcp]",
+    "1792845713.828499 IP PEER2.43978 > VPS.443: Flags [.], ack 3804, win 488, options [ [|tcp]",
+    "1792845713.837872 IP PEER2.43978 > VPS.443: Flags [P.], seq 518:598, ack 3804, win 501, options [ [|tcp]",
+    "1792845713.838023 IP PEER2.43978 > VPS.443: Flags [P.], seq 598:702, ack 3804, win 501, options [ [|tcp]",
+    "1792845713.838311 IP VPS.443 > PEER2.43978: Flags [P.], seq 3804:3883, ack 702, win 505, options [ [|tcp]",
+    "1792845713.838386 IP VPS.443 > PEER2.43978: Flags [P.], seq 3883:3962, ack 702, win 505, options [ [|tcp]",
+    "1792845714.000745 IP PEER2.43978 > VPS.443: Flags [.], ack 3962, win 501, options [ [|tcp]",
+    "1792845714.159660 IP VPS.443 > PEER2.43978: Flags [P.], seq 3962:5376, ack 702, win 505, options [ [|tcp]",
+    "1792845714.321988 IP PEER2.43978 > VPS.443: Flags [.], ack 5376, win 501, options [ [|tcp]",
+    "1792845714.322889 IP PEER2.43978 > VPS.443: Flags [P.], seq 702:726, ack 5376, win 501, options [ [|tcp]",
+    "1792845714.323040 IP VPS.443 > PEER2.43978: Flags [F.], seq 5376, ack 726, win 505, options [ [|tcp]",
+    "1792845714.325066 IP PEER2.43978 > VPS.443: Flags [F.], seq 726, ack 5376, win 501, options [ [|tcp]",
+    "1792845714.325080 IP VPS.443 > PEER2.43978: Flags [.], ack 727, win 505, options [ [|tcp]",
+    "1792845714.485699 IP PEER2.43978 > VPS.443: Flags [.], ack 5377, win 501, options [ [|tcp]"
+  ],
+  "packet_summary": [
+    "44 packets captured",
+    "44 packets received by filter",
+    "0 packets dropped by kernel"
+  ],
+  "capture_status": "OBSERVED",
+  "peer_connections": [
+    {
+      "peer_label": "PEER1",
+      "header_packets": 22,
+      "first_UTC": "2026-10-24T12:41:50.450862+00:00",
+      "last_UTC": "2026-10-24T12:41:50.814704+00:00",
+      "SYN_count": 2,
+      "FIN_count": 2,
+      "RST_count": 0,
+      "application_payload_bytes_copied": 0
+    },
+    {
+      "peer_label": "PEER2",
+      "header_packets": 22,
+      "first_UTC": "2026-10-24T12:41:53.402124+00:00",
+      "last_UTC": "2026-10-24T12:41:54.485699+00:00",
+      "SYN_count": 2,
+      "FIN_count": 2,
+      "RST_count": 0,
+      "application_payload_bytes_copied": 0
+    }
+  ],
+  "interpretation": "44 header packets from two distinct peers include TCP setup, bidirectional acknowledged byte sequences and orderly FIN closures. This is consistent with root synchronized Mac and Vast curls both returning200. Endpoint labels alone do not identify clients; no claim is made about the cause of previous failures or continuous availability.",
+  "root_observed_HTTP_controls": {
+    "source": "Root actual simultaneous orchestration",
+    "approximate_UTC": "2026-10-24T12:41:51Z",
+    "Mac": {
+      "HTTP": 200,
+      "seconds": 0.468
+    },
+    "Vast": {
+      "HTTP": 200,
+      "seconds": 0.922
+    }
+  },
+  "all_networks_stability_claimed": false
+}

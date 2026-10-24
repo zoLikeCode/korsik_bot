@@ -1,0 +1,112 @@
+{
+  "schema": "korsik-model-quality-v1",
+  "artifact_fingerprint": "4031f689e8d58b2624f09a2c44aa6f29c473412ba516e7cf3f3b342492ca2e97",
+  "status": "FAIL",
+  "reviewer": "IMPLEMENTATION_REVIEW_NOT_COMPANY_HR",
+  "evaluation_scope": "Four independent short supplied-excerpt generation cases; not whole-corpus RAG acceptance or employer HR sign-off",
+  "cases": [
+    {
+      "id": "lunch",
+      "seconds": 5.009,
+      "status": "PASS",
+      "response": {
+        "text": "В соответствии с проверочным регламентом [1], обеденный перерыв установлен с 12:00 до 13:00.",
+        "artifact_fingerprint": "4031f689e8d58b2624f09a2c44aa6f29c473412ba516e7cf3f3b342492ca2e97",
+        "input_tokens": 144,
+        "output_tokens": 36,
+        "seconds": 4.553,
+        "thinking": false
+      },
+      "question": "Когда обеденный перерыв?",
+      "evidence": [
+        {
+          "title": "Проверочный регламент",
+          "text": "Обеденный перерыв установлен с 12:00 до 13:00."
+        }
+      ],
+      "mechanical_status": "PASS",
+      "semantic_status": "PASS"
+    },
+    {
+      "id": "password",
+      "seconds": 5.046,
+      "status": "PASS",
+      "response": {
+        "text": "В соответствии с проверочным регламентом [1], пароли к конфиденциальной информации должны передаваться иным способом, чем сама конфиденциальная информация.",
+        "artifact_fingerprint": "4031f689e8d58b2624f09a2c44aa6f29c473412ba516e7cf3f3b342492ca2e97",
+        "input_tokens": 146,
+        "output_tokens": 34,
+        "seconds": 4.754,
+        "thinking": false
+      },
+      "question": "Как передавать пароли к конфиденциальной информации?",
+      "evidence": [
+        {
+          "title": "Проверочный регламент",
+          "text": "Пароли к конфиденциальной информации должны передаваться иным способом, чем сама конфиденциальная информация."
+        }
+      ],
+      "mechanical_status": "PASS",
+      "semantic_status": "PASS"
+    },
+    {
+      "id": "commitment",
+      "seconds": 3.445,
+      "status": "PASS",
+      "response": {
+        "text": "Работник подписывает антикоррупционное обязательство, как правило, при заключении трудового договора [1].",
+        "artifact_fingerprint": "4031f689e8d58b2624f09a2c44aa6f29c473412ba516e7cf3f3b342492ca2e97",
+        "input_tokens": 147,
+        "output_tokens": 26,
+        "seconds": 3.129,
+        "thinking": false
+      },
+      "question": "Когда работник подписывает антикоррупционное обязательство?",
+      "evidence": [
+        {
+          "title": "Проверочный регламент",
+          "text": "Каждый работник при заключении трудового договора подписывает обязательство о соблюдении требований антикоррупционной политики."
+        }
+      ],
+      "mechanical_status": "PASS",
+      "semantic_status": "FAIL"
+    },
+    {
+      "id": "visitor_permission",
+      "seconds": 5.489,
+      "status": "PASS",
+      "response": {
+        "text": "Нет, не требуется разрешение на фото и видеосъёмку посетителями, так как допускается только с разрешения генерального директора или уполномоченного им лица.\n[1]",
+        "artifact_fingerprint": "4031f689e8d58b2624f09a2c44aa6f29c473412ba516e7cf3f3b342492ca2e97",
+        "input_tokens": 160,
+        "output_tokens": 44,
+        "seconds": 5.166,
+        "thinking": false
+      },
+      "question": "Нужно ли посетителю разрешение на фото и видеосъёмку?",
+      "evidence": [
+        {
+          "title": "Проверочный регламент",
+          "text": "Фото- и видеосъёмка посетителями допускается только с разрешения генерального директора или уполномоченного им лица."
+        }
+      ],
+      "mechanical_status": "PASS",
+      "semantic_status": "FAIL"
+    }
+  ],
+  "semantic_findings": [
+    {
+      "case_id": "commitment",
+      "finding": "Adds an unsupported qualifier to a mandatory requirement"
+    },
+    {
+      "case_id": "visitor_permission",
+      "finding": "Begins with a direct denial of required permission, then contradicts that denial in the same response"
+    }
+  ],
+  "runtime_network_required": false,
+  "limitations": [
+    "Mechanical citation checks cannot prove semantic faithfulness",
+    "Full published-corpus retrieval, ACL, injection and negative cases require separate integration evaluation"
+  ]
+}

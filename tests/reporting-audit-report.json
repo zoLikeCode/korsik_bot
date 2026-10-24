@@ -1,0 +1,121 @@
+{
+  "schema": "korsik-reporting-audit-engineering-v1",
+  "source_target": "SOURCE15_DEPLOYED_CODE_LOCAL_REGRESSIONS_AND_NATIVE_PROFILE_PROOF_NOT_COMPANY_ACCEPTANCE",
+  "company_accepted": false,
+  "functional_checks": [
+    "IANA-local inclusive date-only end translated to exclusive boundary",
+    "AC10 accepted opened surveys: 4/10 completion,6/10 participation,1 decline,3 missing",
+    "numeric average includes only valid integer1..10 (excludes bool and invalid99)",
+    "zero denominator produces no_data:true and rate:null",
+    "frozen period/timezone context appended to actual CSV/XLSX/PDF exports",
+    "wall-clock-only dashboard refresh produces no duplicate snapshot",
+    "manual role changes preserve supplied reason in private business Entity",
+    "PLATFORM does not read reason/data; HEAD,AUDITOR,scopedHR cannot read global audit",
+    "CSV numeric averages include question text, current scoped cohort, formula-safe cells and HEAD n<5 suppression",
+    "Seven previously dropped supplied-reason paths now preserve immutable private audit_reason records: digest create/update, retention update, scenario publish, MAX binding approval, localAI profile create/activate",
+    "Scenario publication enforces its required independent 3..2000-character reason before changing the published head; approval and publication reasons remain distinct",
+    "Suspended local AI control with null active_profile_id returns SETUP_REQUIRED without querying a null primary key"
+  ],
+  "evidence": {
+    "full_suite_before_final_small_reporting_refinement": {
+      "passed": 178,
+      "failed": 0,
+      "seconds": 20.09
+    },
+    "domain_max_report_suite_after_refinement": {
+      "passed": 101,
+      "failed": 0
+    },
+    "report_focused_after_shared_window_refinement": {
+      "passed": 16,
+      "failed": 0,
+      "deselected": 70
+    },
+    "ruff_F_E9": "PASS",
+    "full_suite_after_reporting_and_root_menu_refinements": {
+      "passed": 180,
+      "failed": 0,
+      "warnings": 2,
+      "seconds": 20.3
+    },
+    "final_full_source10": {
+      "passed": 211,
+      "failed": 0,
+      "seconds": 21.49,
+      "warnings": 1,
+      "record_type": "Retained historical local suite summary; current suite has separate entry"
+    },
+    "reporting_context_tests_source10": {
+      "passed": 6,
+      "failed": 0
+    },
+    "source12_reason_domain_regressions": {
+      "passed": 87,
+      "failed": 0,
+      "seconds": 14.08,
+      "command": "PYTHONPATH=backend .venv/bin/pytest -q backend/tests/test_audit_reasons.py backend/tests/test_domain.py",
+      "new_tests": "backend/tests/test_audit_reasons.py",
+      "scope": "Synthetic SQLite business/audit wiring and current domain regressions; not model quality or production acceptance"
+    },
+    "source12_reason_patch_style": {
+      "black": "PASS; source4 unchanged, tests formatted",
+      "ruff_F_E9": "PASS"
+    },
+    "source12_reason_reporting_regressions": {
+      "passed": 12,
+      "failed": 0,
+      "seconds": 1.08,
+      "command": "PYTHONPATH=backend .venv/bin/pytest -q backend/tests/test_audit_reasons.py backend/tests/test_reporting_context.py"
+    },
+    "source12_optional_reason_validation_and_activation_gate": {
+      "passed": 31,
+      "failed": 0,
+      "seconds": 1.37,
+      "scope": "backend/tests/test_local_ai_activation.py; backend/tests/test_audit_reasons.py; tests/test_pipeline_profile.py; tests/test_rag_identity.py",
+      "model_calls": "STUBBED_HEALTH_ONLY_FOR_ACTIVATION_FIXTURES; NOT_MODEL_QUALITY",
+      "deployment": "Code deployed in source15; negative activation/reason cases remain local regression fixtures, not production security mutations"
+    },
+    "full_local_source12": {
+      "passed": 288,
+      "failed": 0,
+      "subtests_passed": 6,
+      "seconds": 24.43,
+      "scope": "Full local source12 suite; deployed current-image/final quality evidence remains separate",
+      "record_type": "Retained historical local suite summary; current suite has separate entry"
+    },
+    "full_local_source14": {
+      "passed": 305,
+      "failed": 0,
+      "subtests_passed": 6,
+      "seconds": 23.93,
+      "scope": "Frozen local source14; runtime/model quality remains separate",
+      "record_type": "Retained historical local suite summary; current suite has separate entry"
+    },
+    "full_local_source15": {
+      "passed": 310,
+      "failed": 0,
+      "seconds": 24.42,
+      "subtests_passed": 6,
+      "warnings": [
+        "Upstream Starlette BlockingPortal deprecation"
+      ],
+      "scope": "Full source15 frozen suite including FULL SQL same-section companion recall, current ACL/frozen extraction gates, six corpus-completeness classes, cited facts, universal cap, activation gates and offline API catalogue",
+      "report": "tests/local-verification-report.json"
+    },
+    "native_activation_source15": {
+      "status": "PASS",
+      "checks": 10,
+      "report": "tests/local-ai-activation-report.json"
+    },
+    "current_pg_concurrency": {
+      "passed": 19,
+      "failed": 0,
+      "report": "tests/postgres-check-report-source15.json",
+      "cleanup": "tests/postgres-check-cleanup-source15.json"
+    }
+  },
+  "limits": [
+    "Current-state counters and adaptation progress are explicitly as_of; selected survey period filters accepted opening cohort, topics filter feedback occurrence. No historical state reconstruction claimed.",
+    "Reason storage preserves supplied human reasons; explicit standard action reason_codes remain distinct from human explanations. No blanket every-form acceptance claim."
+  ]
+}

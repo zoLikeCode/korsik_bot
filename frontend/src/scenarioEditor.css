@@ -1,0 +1,423 @@
+/* The canvas keeps its full width while the optional inspector floats above it. */
+.scenario-page .page-title {
+  margin-bottom: 16px;
+}
+.scenario-page .program-tabs {
+  margin-bottom: 12px;
+}
+.scenario-page .section-tabs {
+  margin-bottom: 12px;
+}
+.scenario-page .version-bar {
+  margin: 8px 0 12px;
+}
+.scenario-page .editor-toolbar {
+  padding: 10px 12px;
+}
+
+.scenario-editor {
+  --scenario-surface: #ffffff;
+  --scenario-canvas: #f4f7f1;
+  --scenario-dot: #bdcbb8;
+  --scenario-node-border: #72916d;
+  --scenario-node-selected: #306443;
+  --scenario-node-shadow: 0 5px 16px #23402d1c;
+  --scenario-text: #173b2b;
+  --scenario-muted: #526b52;
+  --scenario-edge: #567a61;
+  --scenario-edge-selected: #276343;
+  --scenario-edge-label-bg: #ffffff;
+  --scenario-edge-label: #35523c;
+  --scenario-time-bg: #e2eddc;
+  --scenario-time-text: #214d2d;
+  position: relative;
+  display: block;
+  grid-template-columns: minmax(0, 1fr);
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  isolation: isolate;
+}
+.scenario-editor .editor-stage {
+  width: 100%;
+  max-height: none;
+  overflow: hidden;
+  background: var(--scenario-canvas);
+}
+.scenario-editor .flow-canvas {
+  width: 100%;
+  height: clamp(620px, 82dvh, 1100px);
+  min-width: 0;
+  background: var(--scenario-canvas);
+}
+.scenario-editor .react-flow {
+  --xy-background-color: var(--scenario-canvas);
+  --xy-background-pattern-color: var(--scenario-dot);
+  --xy-edge-stroke: var(--scenario-edge);
+  --xy-edge-stroke-width: 2.25;
+}
+.scenario-editor .scenario-flow-node,
+html[data-theme="dark"] .scenario-editor .scenario-flow-node {
+  width: 260px !important;
+  padding: 0 !important;
+  min-height: 154px;
+  border: 2px solid var(--scenario-node-border) !important;
+  border-radius: 12px !important;
+  background: var(--scenario-surface) !important;
+  box-shadow: var(--scenario-node-shadow) !important;
+  color: var(--scenario-text);
+}
+.scenario-editor .scenario-flow-node.selected,
+html[data-theme="dark"] .scenario-editor .scenario-flow-node.selected {
+  border-color: var(--scenario-node-selected) !important;
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--scenario-node-selected) 24%, transparent),
+    var(--scenario-node-shadow) !important;
+}
+.scenario-editor .flow-node-content {
+  padding: 13px 14px;
+}
+.scenario-editor .flow-node-kind {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--scenario-muted);
+}
+.scenario-editor .flow-node-content > strong {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin: 8px 0 0;
+  font-size: 14px;
+  line-height: 1.45;
+  font-weight: 650;
+  color: var(--scenario-text);
+  overflow-wrap: anywhere;
+}
+.scenario-editor .flow-node-schedule {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 12px;
+}
+.scenario-editor .flow-node-offset {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 1.45;
+  letter-spacing: 0;
+  text-transform: none;
+  text-align: left;
+  color: var(--scenario-muted);
+  overflow-wrap: anywhere;
+}
+.scenario-editor .flow-node-time,
+html[data-theme="dark"] .scenario-editor .flow-node-time {
+  flex: 0 0 auto;
+  display: inline-block;
+  margin-left: auto;
+  padding: 3px 7px;
+  border-radius: 6px;
+  background: var(--scenario-time-bg);
+  color: var(--scenario-time-text);
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+.scenario-editor .react-flow__edge-path {
+  stroke: var(--scenario-edge);
+  stroke-width: 2.25;
+}
+.scenario-editor .react-flow__edge.selected .react-flow__edge-path {
+  stroke: var(--scenario-edge-selected);
+  stroke-width: 3.25;
+}
+.scenario-editor .react-flow__edge-text {
+  fill: var(--scenario-edge-label);
+}
+.scenario-editor .react-flow__edge-textbg {
+  fill: var(--scenario-edge-label-bg);
+}
+.scenario-editor .react-flow__handle {
+  width: 14px;
+  height: 14px;
+  background: var(--scenario-edge-selected);
+  border-color: var(--scenario-surface);
+}
+.scenario-inspector-toggle {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 9;
+  min-height: 44px;
+  box-shadow: 0 4px 14px #163b2920;
+}
+.scenario-editor .scenario-inspector-panel {
+  position: absolute;
+  top: 68px;
+  right: 14px;
+  bottom: 14px;
+  z-index: 10;
+  width: min(370px, calc(100% - 28px));
+  max-width: none;
+  max-height: none;
+  padding: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  background: var(--scenario-surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px #122d2733;
+}
+.scenario-editor .scenario-inspector-panel[hidden] {
+  display: none;
+}
+.scenario-inspector-heading {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px 10px 16px;
+  background: var(--scenario-surface);
+  border-bottom: 1px solid var(--line);
+}
+.scenario-inspector-heading > strong {
+  font-size: 15px;
+}
+.scenario-inspector-heading .icon-button {
+  width: 40px;
+  height: 40px;
+}
+.scenario-inspector-body {
+  padding: 16px;
+}
+.scenario-inspector-body .node-palette {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.scenario-inspector-body .node-palette button {
+  min-height: 44px;
+  font-size: 14px;
+}
+
+html[data-theme="dark"] .scenario-editor {
+  --scenario-surface: #213428;
+  --scenario-canvas: #111e16;
+  --scenario-dot: #486452;
+  --scenario-node-border: #7da48a;
+  --scenario-node-selected: #c1e496;
+  --scenario-node-shadow: 0 6px 20px #0006;
+  --scenario-text: #f0f7ed;
+  --scenario-muted: #bacebc;
+  --scenario-edge: #9dc2a6;
+  --scenario-edge-selected: #c1e496;
+  --scenario-edge-label-bg: #1c2e22;
+  --scenario-edge-label: #e1efde;
+  --scenario-time-bg: #3b5839;
+  --scenario-time-text: #e4f6c9;
+}
+html[data-theme="dark"] .scenario-editor .react-flow {
+  --xy-background-color: var(--scenario-canvas);
+  --xy-background-pattern-color: var(--scenario-dot);
+}
+@media (max-width: 900px) {
+  .scenario-editor .flow-canvas {
+    height: max(500px, calc(var(--max-viewport-height, 100dvh) - 180px));
+  }
+  .scenario-inspector-toggle {
+    top: 12px;
+    right: 12px;
+  }
+  .scenario-editor .scenario-inspector-panel {
+    right: 12px;
+    bottom: 12px;
+  }
+}
+
+.scenario-list-back {
+  margin: 0 0 12px;
+}
+.scenario-program-name {
+  margin: 0 0 12px;
+  font-size: 21px;
+}
+.scenario-version-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.scenario-card-grid {
+  margin-top: 16px;
+}
+.scenario-card {
+  text-align: left;
+}
+.scenario-settings-fields {
+  padding: 0;
+  border: 0;
+}
+.scenario-settings-fields .form-grid {
+  grid-template-columns: 1fr 1fr;
+}
+.scenario-inspector-body .code-key {
+  display: block;
+  user-select: all;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+  color: var(--scenario-muted);
+}
+.scenario-inspector-body .inspector-title {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 4px;
+}
+.scenario-inspector-body .step-properties > fieldset {
+  margin-top: 16px;
+}
+.custom-formulations {
+  margin: 20px 0;
+}
+.custom-formulation {
+  border: 1px solid var(--line);
+  padding: 12px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+.custom-formulation .field {
+  margin-bottom: 10px;
+}
+.step-schedule-fields {
+  margin: 20px 0;
+}
+.step-schedule-fields input:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+.scenario-editor .scenario-flow-node.kind-ANSWER,
+.scenario-editor .scenario-flow-node.kind-END {
+  min-height: 92px;
+}
+@media (max-width: 600px) {
+  .scenario-version-controls {
+    width: 100%;
+  }
+  .scenario-version-controls select {
+    width: 100%;
+  }
+  .scenario-settings-fields .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.scenario-card {
+  position: relative;
+  padding: 0 !important;
+  overflow: visible;
+}
+.scenario-card-main {
+  width: 100%;
+  min-height: 260px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  border-radius: inherit;
+  color: inherit;
+}
+.scenario-card-main > p {
+  font-size: 15px;
+  color: var(--muted);
+  margin: 4px 0 18px;
+}
+.scenario-card-main > h3 {
+  padding-right: 12px;
+}
+.scenario-card-main .document-bottom {
+  margin-top: auto;
+}
+.scenario-card-actions {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+}
+.scenario-card-actions > .icon-button {
+  background: var(--paper);
+  border: 1px solid var(--line);
+}
+.scenario-card-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  min-width: 180px;
+  display: grid;
+  padding: 6px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--paper);
+  box-shadow: 0 6px 22px #1232;
+  z-index: 3;
+}
+.scenario-card-menu > button {
+  padding: 10px;
+  text-align: left;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  border-radius: 6px;
+}
+.scenario-card-menu > button:hover {
+  background: color-mix(in srgb, var(--green) 10%, transparent);
+}
+.scenario-card-menu > button.danger {
+  color: #a23328;
+}
+.scenario-version-settings {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+.scenario-version-settings > .button {
+  justify-self: start;
+}
+.scenario-delete-confirm {
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+.scenario-delete-confirm p {
+  margin-bottom: 12px;
+}
+.scenario-delete-confirm .button-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+html[data-theme="dark"] .scenario-card-menu > button.danger {
+  color: var(--theme-danger);
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "korsik-actual-enospc-v1",
+  "database": "korsik_offline_check",
+  "filesystem": "1MiB disposable tmpfs /fault",
+  "verified_tmpfs_capacity_bytes": 1048576,
+  "filled_bytes_before_real_ENOSPC": 1048576,
+  "controlled_http_status": 507,
+  "published_snapshot_preserved": true,
+  "partial_revision_not_persisted": true,
+  "retry_after_space_release_succeeds": true,
+  "external_MAX_sends": 0,
+  "status": "PASS"
+}

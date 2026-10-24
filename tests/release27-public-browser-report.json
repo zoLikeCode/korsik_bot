@@ -1,0 +1,31 @@
+{
+  "schema": "korsik-release27-public-browser-v1",
+  "status": "PASS",
+  "observed_at": "2026-10-24T21:57:33.278009+00:00",
+  "url": "https://app.korsik-demo.ru",
+  "role": "HR_ADMIN",
+  "browser": "Codex in-app browser",
+  "existing_session_reused": true,
+  "checks": {
+    "hard_reload_new_navigation_broadcasts_and_hr_accounts": "PASS",
+    "analytics_no_detailed_disclosure_tables_or_detail_buttons": "PASS",
+    "analytics_scoped_dashboards_and_csv_retained": "PASS",
+    "broadcast_list_empty_and_create_button_visible": "PASS",
+    "broadcast_form_employee_and_unit_pickers_text_mentions_date_time_timezone": "PASS",
+    "broadcast_submit_disabled_without_recipients_text_schedule": "PASS",
+    "broadcast_form_closed_without_submit": "PASS",
+    "hr_accounts_scoped_list_and_invitations_loaded": "PASS",
+    "hr_invite_form_name_email_fixed_hr_role_and_scope": "PASS",
+    "hr_invite_submit_disabled_without_name_email": "PASS",
+    "hr_invite_form_closed_without_submit": "PASS",
+    "broadcast_list_still_empty_after_checks": "PASS"
+  },
+  "screenshot": "qa/release27-broadcast-public.png",
+  "production_records_created": 0,
+  "MAX_messages_sent": 0,
+  "production_identity_impersonation": false,
+  "limits": [
+    "Read-only production checks used existing HR_ADMIN session. Employee, manager and HEAD_TALENT profiles and functional create flows were verified with synthetic local data and automated PostgreSQL contracts.",
+    "No live MAX native-device launch or delivery to a real person is claimed."
+  ]
+}

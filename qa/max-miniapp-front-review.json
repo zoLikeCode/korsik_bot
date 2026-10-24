@@ -1,0 +1,45 @@
+{
+  "status": "READ_ONLY_REVIEW_COMPLETE",
+  "reviewed_at": "2026-10-24T10:25:05.964538+00:00",
+  "candidate_source_manifest_sha256": "a1784beca90110b84a5f5c704b399c3d9b7a803c2b23791d7210faade276d5d5",
+  "review_scope": [
+    "Authenticated actor to allowed route matrix; no URL, localStorage or unsigned MAX user claim grants business roles",
+    "MAX signed bootstrap precedes cookie session; invalid signed bootstrap remains in MAX login view",
+    "EMPLOYEE view cannot render HR conversation list, handoff/claim/resume controls, or conversation mode badge",
+    "Support human replies use Команда поддержки; automatic case remains visible to HR in BOT mode",
+    "Stored transport action arrays are not rendered as web buttons",
+    "Survey question revision uses backend state_seq alias correctly; explicit finish remains required",
+    "Canvas connections update executable graph, first-match fallback order and timed dependencies are distinct",
+    "Source changes/review/publication and stale ETag errors remain enforced",
+    "Visible page titles and tab title match navigation labels; removed pages have no Routes/imports in the public shell",
+    "React text rendering escapes supplied names/text; evidence links are restricted to local authorized API"
+  ],
+  "blocking_findings": [],
+  "intentional_limits": [
+    "Mandatory identified-survey privacy notice names HR as the actual recipient of personal answers; it must remain accurate.",
+    "Previously persisted source/history text is rendered faithfully and is not rewritten by the frontend.",
+    "No new VM deployment, actual MAX launch or company acceptance is claimed."
+  ],
+  "copy_advisories_resolved": [
+    {
+      "file": "frontend/src/pages/Chat.tsx",
+      "context": "Employee survey banner",
+      "text": "Ответы помогают команде вовремя поддержать вас.",
+      "proposed": "Есть незавершённая анкета."
+    },
+    {
+      "file": "frontend/src/pages/Chat.tsx",
+      "context": "Expired employee survey",
+      "text": "Срок ответа истёк. Для повторного открытия обратитесь к HR.",
+      "proposed": "Срок ответа истёк. Повторное открытие согласуется с командой поддержки."
+    }
+  ],
+  "copy_advisories": [],
+  "resolution": "Both copy advisories were changed with explicit root authorization; final tests and production build repeated successfully.",
+  "subsequent_native_finding": {
+    "source": "root actual local browser",
+    "severity": "P1",
+    "issue": "Simulation result hidden by validation early return",
+    "resolution": "Fixed with 2 meaningful SSR regressions and fresh 41-test production build. Native rerun by root remains separate evidence."
+  }
+}

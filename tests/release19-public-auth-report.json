@@ -1,0 +1,185 @@
+{
+  "schema": "korsik-release19-public-auth-v1",
+  "status": "PASS_PUBLIC_AUTH_FROM_VAST_WITH_MAC_TLS_LIMITATION",
+  "observed_at": "2026-10-24T12:33:06.574098+00:00",
+  "origin": "https://app.korsik-demo.ru",
+  "normal_CA_and_hostname_validation": true,
+  "insecure_TLS_options": false,
+  "public_auth": {
+    "schema": "korsik-release19-public-auth-v1",
+    "status": "PASS",
+    "observed_at": "2026-10-24T12:32:21.531613+00:00",
+    "origin": "https://app.korsik-demo.ru",
+    "normal_CA_and_hostname_validation": true,
+    "insecure_TLS_options": false,
+    "native_MAX_launch_performed": false,
+    "MAX_messages_sent": 0,
+    "business_data_edited": false,
+    "restarts_performed": false,
+    "execution_source": "VAST_HOST_PUBLIC_HTTPS",
+    "requests": [
+      {
+        "path": "/",
+        "method": "GET",
+        "status": 200,
+        "elapsed_seconds": 1.1229,
+        "bytes": 644,
+        "scheme": "https",
+        "host": "app.korsik-demo.ru",
+        "csrf_header_sent": false,
+        "idempotency_key_sent": false
+      },
+      {
+        "path": "/api/v1/auth/login",
+        "method": "POST",
+        "status": 200,
+        "elapsed_seconds": 1.0486,
+        "bytes": 541,
+        "scheme": "https",
+        "host": "app.korsik-demo.ru",
+        "csrf_header_sent": false,
+        "idempotency_key_sent": true
+      },
+      {
+        "path": "/api/v1/auth/session",
+        "method": "GET",
+        "status": 200,
+        "elapsed_seconds": 5.8244,
+        "bytes": 541,
+        "scheme": "https",
+        "host": "app.korsik-demo.ru",
+        "csrf_header_sent": false,
+        "idempotency_key_sent": false
+      },
+      {
+        "path": "/api/v1/auth/logout",
+        "method": "POST",
+        "status": 200,
+        "elapsed_seconds": 0.854,
+        "bytes": 11,
+        "scheme": "https",
+        "host": "app.korsik-demo.ru",
+        "csrf_header_sent": true,
+        "idempotency_key_sent": true
+      },
+      {
+        "path": "/api/v1/auth/session",
+        "method": "GET",
+        "status": 401,
+        "elapsed_seconds": 0.8134,
+        "bytes": 90,
+        "scheme": "https",
+        "host": "app.korsik-demo.ru",
+        "csrf_header_sent": false,
+        "idempotency_key_sent": false
+      }
+    ],
+    "fetch_boundary": {
+      "page_https": true,
+      "page_hostname": "app.korsik-demo.ru",
+      "page_declared_connect_src": "connect-src 'self'",
+      "self_connect_allowed": true,
+      "insecure_HTTP_script_or_style_references": 0,
+      "current_frontend_API_fetch": "relative /api/v1 paths with credentials include",
+      "source_observation": "frontend/src/api.ts",
+      "browser_CSP_enforcement_not_executed_by_urllib": true,
+      "entry_path": "/assets/index-Dw2_D4BP.js"
+    },
+    "login": {
+      "status": 200,
+      "role": "HR_ADMIN",
+      "set_cookie_flags": [
+        {
+          "name": "korsik_session",
+          "secure": true,
+          "http_only": true,
+          "same_site": "lax",
+          "path": "/",
+          "max_age_present": true,
+          "host_only": true
+        },
+        {
+          "name": "korsik_csrf",
+          "secure": true,
+          "http_only": false,
+          "same_site": "lax",
+          "path": "/",
+          "max_age_present": true,
+          "host_only": true
+        }
+      ],
+      "cookie_values_recorded": false,
+      "CSRF_response_matches_cookie": true
+    },
+    "session": {
+      "status": 200,
+      "role": "HR_ADMIN",
+      "same_actor_as_login": true,
+      "CSRF_preserved": true,
+      "identity_values_recorded": false
+    },
+    "logout": {
+      "status": 200,
+      "CSRF_header_sent": true,
+      "idempotency_key_sent": true,
+      "cookie_values_recorded": false
+    },
+    "session_after_logout": {
+      "status": 401,
+      "own_session_revoked": true
+    },
+    "finished_at": "2026-10-24T12:32:31.200148+00:00",
+    "classification": "PUBLIC_HTTPS_SAME_ORIGIN_API_AUTH_AND_SECURE_COOKIES_PASS",
+    "browser_failed_to_fetch_scope": "This run observed no HTTP/TLS failure. Current page HTTPS, relative API paths and connect-src self are compatible; this urllib probe does not reproduce browser CSP enforcement, stale-tab state or a native MAX webview.",
+    "all_requests_same_origin": true
+  },
+  "mac_attempt": {
+    "schema": "korsik-release19-public-auth-v1",
+    "status": "FAIL",
+    "observed_at": "2026-10-24T12:30:49.709654+00:00",
+    "origin": "https://app.korsik-demo.ru",
+    "normal_CA_and_hostname_validation": true,
+    "insecure_TLS_options": false,
+    "native_MAX_launch_performed": false,
+    "MAX_messages_sent": 0,
+    "business_data_edited": false,
+    "restarts_performed": false,
+    "requests": [],
+    "failure_stage": "public_homepage",
+    "error_type": "URLError",
+    "network_error_type": "TimeoutError",
+    "classification": "NETWORK_OR_TLS_FAILURE_BEFORE_HTTP_NOT_A_BROWSER_CSP_RESULT"
+  },
+  "mac_curl_reference": {
+    "http_status": null,
+    "dns_seconds": 0.002676,
+    "tcp_seconds": 0.00365,
+    "tls_established": false,
+    "total_seconds": 8.006211,
+    "exit_code": 28,
+    "error": "SSL connection timeout",
+    "certificate_verification_reached": false,
+    "configured_proxy_schemes": []
+  },
+  "diagnosis": {
+    "public_API_auth_and_Secure_cookie_flow": "PASS_FROM_VAST_PUBLIC_NETWORK",
+    "same_origin_headers": "HTTPS Origin and Referer accepted; public page uses relative API paths and connect-src self.",
+    "mixed_origin_references_observed": 0,
+    "Mac_browser_CSP_as_cause_of_curl_failure": "EXCLUDED_FOR_THE_RECORDED_CURL_FAILURE_BEFORE_HTTP",
+    "current_browser_failed_to_fetch_root_cause": "NOT_ESTABLISHED; stale tab/browser CSP state and intermittent network need separate browser inspection.",
+    "source_or_path_difference": "Public TLS/auth completed from Vast while the Mac direct TCP connection failed to finish TLS.",
+    "fresh_Mac_login": "NOT_COMPLETED",
+    "native_MAX_webview": "NOT_PERFORMED"
+  },
+  "credential_handling": {
+    "local_private_credential_reference_used": true,
+    "values_printed_or_written_to_report": false,
+    "remote_probe_credentials_transferred_only_over_existing_trusted_encrypted_SSH_stdin": true,
+    "remote_credential_file_created": false,
+    "own_authenticated_session_logged_out": true
+  },
+  "MAX_messages_sent": 0,
+  "business_data_edited": false,
+  "restarts_performed": false,
+  "company_accepted": false
+}

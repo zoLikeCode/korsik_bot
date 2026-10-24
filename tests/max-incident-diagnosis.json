@@ -1,0 +1,56 @@
+{
+  "schema": "korsik-human-max-incident-diagnosis-v1",
+  "observed_at": "2026-10-24T08:11:30.138727+00:00",
+  "source": "User screenshots and read-only PostgreSQL inbox/outbox/answer inspection; no synthetic messages to actual MAX account",
+  "window_utc": [
+    "2026-10-24T07:43:00Z",
+    "2026-10-24T07:54:00Z"
+  ],
+  "findings": [
+    {
+      "issue": "Initial message burst",
+      "cause": "Independent binding confirmation and four source-mapped due introductory actions with identical anchor and send_once_on_join",
+      "distinct_scenario_actions": 4,
+      "transport_retries_not_cause": true
+    },
+    {
+      "issue": "Two misleading local-search outage notices",
+      "cause": "Two separate SCENARIO_ANSWER callbacks returned serialized question definition dict; generic callback result handler incorrectly forwarded it as TEXT to RAG. QUERY_TOO_LONG was then displayed as unavailability.",
+      "answer_reason_codes": [
+        "QUERY_TOO_LONG",
+        "QUERY_TOO_LONG"
+      ],
+      "answer_job_attempts": [
+        1,
+        1
+      ],
+      "all_outbound_accepted_once": true
+    },
+    {
+      "issue": "Repeated original PPTX",
+      "cause": "Two distinct REQUEST_SOURCE callback events 29 seconds apart; each created a separate requested source delivery",
+      "first_callback_utc": "2026-10-24T07:46:11.867890Z",
+      "second_callback_utc": "2026-10-24T07:46:40.750998Z",
+      "distinct_platform_message_ids": true,
+      "automatic_unrequested_duplicate_proven": false
+    },
+    {
+      "issue": "Lunch free-text query returned unrelated training slides",
+      "question": "Где можно пообедать>",
+      "answer_id": "f2ba7fc3-a8a1-4a59-bccc-276757c52507",
+      "mode": "EXTRACT",
+      "reason": "INVALID_OR_MISSING_CITATION",
+      "selected_reranker_scores": [
+        -3.31919,
+        -2.75928,
+        -3.52978
+      ],
+      "cause": "Weak irrelevant neighbours were accepted and an invalid/missing-citation generation fell back to all retrieved parents; source presence was confused with topic support."
+    }
+  ],
+  "free_text_support": "Verified user message_created produced a durable answer without selecting a quick-prompt button; explicit survey input capture is a separate opt-in mode.",
+  "real_user_identifiers_and_token_included": false,
+  "fix_deployed": true,
+  "company_hr_acceptance": false,
+  "deployment_proof": "incident17-deployment-report.json"
+}

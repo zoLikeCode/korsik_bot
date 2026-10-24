@@ -1,0 +1,1056 @@
+{
+  "status": "ABORTED_KNOWN_CORPUS_COMPLETENESS_FAILURE",
+  "observed_at": "2026-10-24T01:57:58.964037+00:00",
+  "completed_cases": 6,
+  "intended_cases": 29,
+  "full_evaluation_completed": false,
+  "native_activation_performed": false,
+  "quality_import_performed": false,
+  "reason": "Independent full-corpus audit showed incomplete audience context and additional complementary source clauses. Probe stopped before completion; existing source13 fixes do not imply semantic release PASS.",
+  "actual_partial_evaluation": {
+    "schema": "korsik-local-rag-source13-extended-regression-review",
+    "status": "PENDING_SEMANTIC_REVIEW",
+    "mode_override": "PROCESS_LOCAL_PROFILE_VIEW_NOT_NATIVE_ACTIVATION",
+    "profile_code_and_live_renderer_identity_verified": true,
+    "persistent_profile_changed": false,
+    "external_messages_sent": false,
+    "company_hr_acceptance": false,
+    "reviewer": "IMPLEMENTATION_REVIEW_NOT_COMPANY_HR",
+    "runtime_before": {
+      "encoder": {
+        "fingerprint": "afc4aa45cd8d95d538404fd463d881c1cd522f3f92bfd42a6b2f6abde0a5b5d8",
+        "renderer_fingerprint": null
+      },
+      "reranker": {
+        "fingerprint": "30f61c1e0d16deb1d0f43ddaa49f5457bfbaf69f1b6ee27d0475a2b676f8f8ea",
+        "renderer_fingerprint": null
+      },
+      "generator": {
+        "fingerprint": "1fe278d9e50f5fe426c80efe3845911a3bbcc057d1f975c660a8c2f39c6d21d0",
+        "renderer_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+      }
+    },
+    "pipeline_identities": {
+      "chunker_version": "korsik-physical-parent-chunker-v1",
+      "chunker_fingerprint": "64fcb0516ed01fb9f0a89ed6d2a0d8b6fb387500bc0640b4435c5f6a4cb02b2b",
+      "retrieval_policy_version": "korsik-hybrid-retrieval-guards-v1",
+      "retrieval_policy_fingerprint": "fd8ad205b141517446ed7c2424ef12a65fb2b17233001ea35b2a93e668bc0a82",
+      "retrieval_module_source_fingerprint": "c6bf96c52dccee364ac16aaa9ab75c4ec35f5c3e378e9579bc858841db7af4b1",
+      "generation_request_schema_version": "korsik-local-generation-request-v1",
+      "generation_runtime_source_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+    },
+    "pipeline_source_sha256": "c6bf96c52dccee364ac16aaa9ab75c4ec35f5c3e378e9579bc858841db7af4b1",
+    "generation_runtime_source_sha256": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b",
+    "evaluation_configuration": {
+      "models": {
+        "generator": "86d5168b-48a6-566c-9b4f-24351f589dad",
+        "embedder": "b287f057-f008-5f2a-8ba2-c4e86e9c4ee6",
+        "reranker": "2cf7d0c8-b4b1-5083-855a-d354248a2182"
+      },
+      "generation_policy": "LOCAL_GENERATION",
+      "retrieval_profile": "cpu",
+      "max_context_tokens": 4096,
+      "max_input_tokens": 3840,
+      "max_new_tokens": 256,
+      "thinking": false,
+      "runtime_egress": false,
+      "pipeline_identities": {
+        "chunker_version": "korsik-physical-parent-chunker-v1",
+        "chunker_fingerprint": "64fcb0516ed01fb9f0a89ed6d2a0d8b6fb387500bc0640b4435c5f6a4cb02b2b",
+        "retrieval_policy_version": "korsik-hybrid-retrieval-guards-v1",
+        "retrieval_policy_fingerprint": "fd8ad205b141517446ed7c2424ef12a65fb2b17233001ea35b2a93e668bc0a82",
+        "retrieval_module_source_fingerprint": "c6bf96c52dccee364ac16aaa9ab75c4ec35f5c3e378e9579bc858841db7af4b1",
+        "generation_request_schema_version": "korsik-local-generation-request-v1",
+        "generation_runtime_source_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+      }
+    },
+    "configuration_fingerprint": "691609180ca931651aa06c805571b3ec578c8dd970d7a99a55e71747d5f5fc42",
+    "cases": [
+      {
+        "id": "password",
+        "question": "Как передавать пароли к конфиденциальной информации?",
+        "title": "коммерческой тайне",
+        "page": 11,
+        "gold_revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+        "gold_extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+        "gold_source_blocks": [
+          {
+            "block_id": "e1ab123b-792f-4aab-88aa-6d0aeeebaf25",
+            "kind": "TEXT",
+            "text_sha256": "c3d92d4db6efcfd93ff02387d50e67053a12530481dd905cdeee3f69cc0b0e1e",
+            "text": "Передача КИ может осуществляться в форме предоставления доступа к информационному ресурсу (к месту хранения, размещения и пр.)\nПеред отправкой в электронном виде, КИ должна быть обработана специальными крипто-программами, ограничивающими доступ к информации без соответствующего пароля.\nПередача паролей и информации об иных средствах защиты электронных документов должна осуществляться способом, отличным от способа передачи КИ.",
+            "image_sha256": null
+          }
+        ],
+        "expected_semantic_scope": "Complete relevant source conditions/lists, correct intent; citation presence alone is insufficient",
+        "expected_modes": [
+          "LOCAL_GENERATED",
+          "EXTRACT",
+          "APPROVED_CARD"
+        ],
+        "seconds": 7.994,
+        "mechanical_status": "PASS",
+        "checks": {
+          "gold_source_page": true,
+          "current_published_scope": true,
+          "expected_mode": true,
+          "gold_content_block_present": true
+        },
+        "semantic_review": "PENDING",
+        "answer": {
+          "mode": "EXTRACT",
+          "text": "Точная формулировка действующего документа:\n\n[1] Передача конфиденциальной информации\n\nПередача КИ может осуществляться в форме предоставления доступа к информационному ресурсу (к месту хранения, размещения и пр.)\nПеред отправкой в электронном виде, КИ должна быть обработана специальными крипто-программами, ограничивающими доступ к информации без соответствующего пароля.\nПередача паролей и информации об иных средствах защиты электронных документов должна осуществляться способом, отличным от способа передачи КИ.\n\nИсточники: [1] Положение о коммерческой тайне, стр. 11",
+          "citations": [
+            {
+              "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+              "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+              "document_title": "Положение о коммерческой тайне",
+              "page_no": 11,
+              "block_id": "d6ca5adf-b31a-45b6-9c2f-42eda3f3d992",
+              "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+              "chunker_version": "LEGACY_UNVERSIONED",
+              "chunker_fingerprint": "LEGACY_UNVERSIONED",
+              "bbox": [
+                0.2578471128608924,
+                0.04442009332166812,
+                0.8130269028871391,
+                0.12261679790026246
+              ],
+              "source_sha256": "a2a16c967e82c868b95d54e7df5f6791cd2ab683b1841956b9b19926ed973923",
+              "kind": "TEXT",
+              "evidence_text": "Передача конфиденциальной информации\n\nПередача КИ может осуществляться в форме предоставления доступа к информационному ресурсу (к месту хранения, размещения и пр.)\nПеред отправкой в электронном виде, КИ должна быть обработана специальными крипто-программами, ограничивающими доступ к информации без соответствующего пароля.\nПередача паролей и информации об иных средствах защиты электронных документов должна осуществляться способом, отличным от способа передачи КИ.",
+              "text_sha256": "d2d78328ec015f5d84d157b0fa6e2207a3954bab6db89f808f7a7c1fa89efda4",
+              "evidence_text_sha256": "57d79ed5484e957beff1d62b2b04ccb76768f550a9c02943eb703944dc1e0374",
+              "evidence_ranges": [
+                {
+                  "block_id": "d6ca5adf-b31a-45b6-9c2f-42eda3f3d992",
+                  "char_start": 0,
+                  "char_end": 36,
+                  "text": "Передача конфиденциальной информации",
+                  "sha256": "d2d78328ec015f5d84d157b0fa6e2207a3954bab6db89f808f7a7c1fa89efda4"
+                },
+                {
+                  "block_id": "e1ab123b-792f-4aab-88aa-6d0aeeebaf25",
+                  "char_start": 0,
+                  "char_end": 429,
+                  "text": "Передача КИ может осуществляться в форме предоставления доступа к информационному ресурсу (к месту хранения, размещения и пр.)\nПеред отправкой в электронном виде, КИ должна быть обработана специальными крипто-программами, ограничивающими доступ к информации без соответствующего пароля.\nПередача паролей и информации об иных средствах защиты электронных документов должна осуществляться способом, отличным от способа передачи КИ.",
+                  "sha256": "c3d92d4db6efcfd93ff02387d50e67053a12530481dd905cdeee3f69cc0b0e1e"
+                }
+              ],
+              "text_origin": "SOURCE_TEXT",
+              "image_sha256": null,
+              "source_url": "/api/v1/knowledge/revisions/c32d41b9-c41b-4095-a707-7226ea965290/source"
+            }
+          ],
+          "evidence": [
+            {
+              "text": "Передача конфиденциальной информации\n\nПередача КИ может осуществляться в форме предоставления доступа к информационному ресурсу (к месту хранения, размещения и пр.)\nПеред отправкой в электронном виде, КИ должна быть обработана специальными крипто-программами, ограничивающими доступ к информации без соответствующего пароля.\nПередача паролей и информации об иных средствах защиты электронных документов должна осуществляться способом, отличным от способа передачи КИ.",
+              "title": "Положение о коммерческой тайне",
+              "score": 3.44731
+            }
+          ],
+          "provenance": {
+            "mode": "FULL",
+            "retrieval": "DENSE_BM25_RRF_RERANK",
+            "kb_revision_ids": [
+              "5c5d7f53-7389-446b-ab26-abc11f42851b",
+              "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+              "c32d41b9-c41b-4095-a707-7226ea965290"
+            ],
+            "query_equivalents": [],
+            "timings": {
+              "embedding_seconds": 0.19397,
+              "vector_query_seconds": 0.065183,
+              "rerank_preparation_seconds": 0.436478,
+              "rerank_seconds": 7.134364,
+              "lexical_seconds": 0.093456,
+              "retrieval_seconds": 7.975598,
+              "generation_request_seconds": 0.0,
+              "generation_queue_seconds": null,
+              "generation_inference_seconds": null,
+              "pipeline_seconds": 7.994336
+            },
+            "pipeline_identities": {
+              "chunker_version": "korsik-physical-parent-chunker-v1",
+              "chunker_fingerprint": "64fcb0516ed01fb9f0a89ed6d2a0d8b6fb387500bc0640b4435c5f6a4cb02b2b",
+              "retrieval_policy_version": "korsik-hybrid-retrieval-guards-v1",
+              "retrieval_policy_fingerprint": "fd8ad205b141517446ed7c2424ef12a65fb2b17233001ea35b2a93e668bc0a82",
+              "retrieval_module_source_fingerprint": "c6bf96c52dccee364ac16aaa9ab75c4ec35f5c3e378e9579bc858841db7af4b1",
+              "generation_request_schema_version": "korsik-local-generation-request-v1",
+              "generation_runtime_source_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+            },
+            "observed_chunker_identities": [
+              {
+                "version": "LEGACY_UNVERSIONED",
+                "fingerprint": "LEGACY_UNVERSIONED"
+              }
+            ],
+            "published_snapshot_id": "d85136e1-6aae-4dc6-889f-8f673451d2d0",
+            "snapshot_identity_status": "EXACT_PUBLISHED_MEMBERSHIP",
+            "encoder_fingerprint": "afc4aa45cd8d95d538404fd463d881c1cd522f3f92bfd42a6b2f6abde0a5b5d8",
+            "reranker_fingerprint": "30f61c1e0d16deb1d0f43ddaa49f5457bfbaf69f1b6ee27d0475a2b676f8f8ea",
+            "reranking_pairs": 16,
+            "structural_context": "CANONICAL_PAGE_PARENT",
+            "final_rank_fusion": "INITIAL_RRF_RERANK_LEXICAL_RRF",
+            "lexical_normalization": "SNOWBALL_RUSSIAN_3_1_1",
+            "candidate_diversification": "ONE_CANONICAL_PARENT_PER_PAGE",
+            "recall_branches": 3,
+            "heading_topic_signal": true,
+            "lexical_final_rank_weight": 2,
+            "history_messages": 0,
+            "generation_history_policy": "QUESTION_RESOLUTION_ONLY_NO_PREVIOUS_ANSWERS",
+            "query_resolution": "CURRENT_QUESTION",
+            "generation_guard": "LITERAL_PERMISSION_PROHIBITION_OBLIGATION",
+            "selected_parent_rank": 1,
+            "publication": "PUBLISHED",
+            "candidate_snapshot_id": null
+          },
+          "delivery_context": "EMPLOYEE",
+          "reason": "LITERAL_NORMATIVE_POLICY"
+        }
+      },
+      {
+        "id": "termination",
+        "question": "Нужно ли соблюдать коммерческую тайну после увольнения?",
+        "title": "коммерческой тайне",
+        "page": 7,
+        "gold_revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+        "gold_extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+        "gold_source_blocks": [
+          {
+            "block_id": "b82d5a1b-127b-4fb0-80c2-d246fc56dd67",
+            "kind": "TEXT",
+            "text_sha256": "86b88dfb398ec34cbc9c2f8eb612ac22f4104f483bca243b6383c1bbdbf745ac",
+            "text": "Обществом принимаются меры, направленные на охрану КИ и КТ.\nРаботники, имеющие доступ к КИ и КТ, в обязательном порядке знакомятся с Порядком обращения с информацией каждого типа под подпись.\nДоступ к КТ работников, должность и подразделения которых не соответствуют перечню, указанному в Порядке,  производится на основании аргументированной служебной записки владельца информации и только по приказу генерального директора или уполномоченного лица Общества, путем внесения изменений в данный Порядок. \n\nРаботник, имеющий доступ к информации, составляющей КТ, обязан:\n- не разглашать и не использовать информацию в личных целях в течение всего строка действия режима КТ, в том числе после прекращения действия трудового договора;\n- возместить причиненные Обществу убытки, причиненных ему разглашением информации, составляющих КТ;\n передать при прекращении или расторжении трудового договора носители информации, составляющую КТ.",
+            "image_sha256": null
+          }
+        ],
+        "expected_semantic_scope": "Complete relevant source conditions/lists, correct intent; citation presence alone is insufficient",
+        "expected_modes": [
+          "LOCAL_GENERATED",
+          "EXTRACT",
+          "APPROVED_CARD"
+        ],
+        "seconds": 6.974,
+        "mechanical_status": "PASS",
+        "checks": {
+          "gold_source_page": true,
+          "current_published_scope": true,
+          "expected_mode": true,
+          "gold_content_block_present": true
+        },
+        "semantic_review": "PENDING",
+        "answer": {
+          "mode": "EXTRACT",
+          "text": "Точная формулировка действующего документа:\n\n[1] Охрана конфиденциальности информации\n\nОбществом принимаются меры, направленные на охрану КИ и КТ.\nРаботники, имеющие доступ к КИ и КТ, в обязательном порядке знакомятся с Порядком обращения с информацией каждого типа под подпись.\nДоступ к КТ работников, должность и подразделения которых не соответствуют перечню, указанному в Порядке,  производится на основании аргументированной служебной записки владельца информации и только по приказу генерального директора или уполномоченного лица Общества, путем внесения изменений в данный Порядок. \n\nРаботник, имеющий доступ к информации, составляющей КТ, обязан:\n- не разглашать и не использовать информацию в личных целях в течение всего строка действия режима КТ, в том числе после прекращения действия трудового договора;\n- возместить причиненные Обществу убытки, причиненных ему разглашением информации, составляющих КТ;\n передать при прекращении или расторжении трудового договора носители информации, составляющую КТ.\n\nИсточники: [1] Положение о коммерческой тайне, стр. 7",
+          "citations": [
+            {
+              "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+              "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+              "document_title": "Положение о коммерческой тайне",
+              "page_no": 7,
+              "block_id": "b82d5a1b-127b-4fb0-80c2-d246fc56dd67",
+              "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+              "chunker_version": "LEGACY_UNVERSIONED",
+              "chunker_fingerprint": "LEGACY_UNVERSIONED",
+              "bbox": [
+                0.08656824146981627,
+                0.15619466316710412,
+                0.97249343832021,
+                0.9328690580344123
+              ],
+              "source_sha256": "a2a16c967e82c868b95d54e7df5f6791cd2ab683b1841956b9b19926ed973923",
+              "kind": "TEXT",
+              "evidence_text": "Охрана конфиденциальности информации\n\nОбществом принимаются меры, направленные на охрану КИ и КТ.\nРаботники, имеющие доступ к КИ и КТ, в обязательном порядке знакомятся с Порядком обращения с информацией каждого типа под подпись.\nДоступ к КТ работников, должность и подразделения которых не соответствуют перечню, указанному в Порядке,  производится на основании аргументированной служебной записки владельца информации и только по приказу генерального директора или уполномоченного лица Общества, путем внесения изменений в данный Порядок. \n\nРаботник, имеющий доступ к информации, составляющей КТ, обязан:\n- не разглашать и не использовать информацию в личных целях в течение всего строка действия режима КТ, в том числе после прекращения действия трудового договора;\n- возместить причиненные Обществу убытки, причиненных ему разглашением информации, составляющих КТ;\n передать при прекращении или расторжении трудового договора носители информации, составляющую КТ.",
+              "text_sha256": "86b88dfb398ec34cbc9c2f8eb612ac22f4104f483bca243b6383c1bbdbf745ac",
+              "evidence_text_sha256": "bc8418751de93df6ce323eceaf51c451d0a46b99624cf55bf9accb57a35db25f",
+              "evidence_ranges": [
+                {
+                  "block_id": "d975f503-5e33-43d2-b03b-471e4614c51e",
+                  "char_start": 0,
+                  "char_end": 36,
+                  "text": "Охрана конфиденциальности информации",
+                  "sha256": "91561444dfe6d8aae2a17d2a76dd3ebfa311afff5d30cfdc8b4c334ed9602edc"
+                },
+                {
+                  "block_id": "b82d5a1b-127b-4fb0-80c2-d246fc56dd67",
+                  "char_start": 0,
+                  "char_end": 929,
+                  "text": "Обществом принимаются меры, направленные на охрану КИ и КТ.\nРаботники, имеющие доступ к КИ и КТ, в обязательном порядке знакомятся с Порядком обращения с информацией каждого типа под подпись.\nДоступ к КТ работников, должность и подразделения которых не соответствуют перечню, указанному в Порядке,  производится на основании аргументированной служебной записки владельца информации и только по приказу генерального директора или уполномоченного лица Общества, путем внесения изменений в данный Порядок. \n\nРаботник, имеющий доступ к информации, составляющей КТ, обязан:\n- не разглашать и не использовать информацию в личных целях в течение всего строка действия режима КТ, в том числе после прекращения действия трудового договора;\n- возместить причиненные Обществу убытки, причиненных ему разглашением информации, составляющих КТ;\n передать при прекращении или расторжении трудового договора носители информации, составляющую КТ.",
+                  "sha256": "86b88dfb398ec34cbc9c2f8eb612ac22f4104f483bca243b6383c1bbdbf745ac"
+                }
+              ],
+              "text_origin": "SOURCE_TEXT",
+              "image_sha256": null,
+              "source_url": "/api/v1/knowledge/revisions/c32d41b9-c41b-4095-a707-7226ea965290/source"
+            }
+          ],
+          "evidence": [
+            {
+              "text": "Охрана конфиденциальности информации\n\nОбществом принимаются меры, направленные на охрану КИ и КТ.\nРаботники, имеющие доступ к КИ и КТ, в обязательном порядке знакомятся с Порядком обращения с информацией каждого типа под подпись.\nДоступ к КТ работников, должность и подразделения которых не соответствуют перечню, указанному в Порядке,  производится на основании аргументированной служебной записки владельца информации и только по приказу генерального директора или уполномоченного лица Общества, путем внесения изменений в данный Порядок. \n\nРаботник, имеющий доступ к информации, составляющей КТ, обязан:\n- не разглашать и не использовать информацию в личных целях в течение всего строка действия режима КТ, в том числе после прекращения действия трудового договора;\n- возместить причиненные Обществу убытки, причиненных ему разглашением информации, составляющих КТ;\n передать при прекращении или расторжении трудового договора носители информации, составляющую КТ.",
+              "title": "Положение о коммерческой тайне",
+              "score": 1.43269
+            }
+          ],
+          "provenance": {
+            "mode": "FULL",
+            "retrieval": "DENSE_BM25_RRF_RERANK",
+            "kb_revision_ids": [
+              "5c5d7f53-7389-446b-ab26-abc11f42851b",
+              "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+              "c32d41b9-c41b-4095-a707-7226ea965290"
+            ],
+            "query_equivalents": [
+              "EMPLOYMENT_TERMINATION",
+              "VERBAL_NOMINAL_COMPLIANCE",
+              "CONFIDENTIALITY_ABBREVIATION"
+            ],
+            "timings": {
+              "embedding_seconds": 0.105611,
+              "vector_query_seconds": 0.062176,
+              "rerank_preparation_seconds": 0.371161,
+              "rerank_seconds": 6.357839,
+              "lexical_seconds": 0.004364,
+              "retrieval_seconds": 6.948148,
+              "generation_request_seconds": 0.0,
+              "generation_queue_seconds": null,
+              "generation_inference_seconds": null,
+              "pipeline_seconds": 6.974194
+            },
+            "pipeline_identities": {
+              "chunker_version": "korsik-physical-parent-chunker-v1",
+              "chunker_fingerprint": "64fcb0516ed01fb9f0a89ed6d2a0d8b6fb387500bc0640b4435c5f6a4cb02b2b",
+              "retrieval_policy_version": "korsik-hybrid-retrieval-guards-v1",
+              "retrieval_policy_fingerprint": "fd8ad205b141517446ed7c2424ef12a65fb2b17233001ea35b2a93e668bc0a82",
+              "retrieval_module_source_fingerprint": "c6bf96c52dccee364ac16aaa9ab75c4ec35f5c3e378e9579bc858841db7af4b1",
+              "generation_request_schema_version": "korsik-local-generation-request-v1",
+              "generation_runtime_source_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+            },
+            "observed_chunker_identities": [
+              {
+                "version": "LEGACY_UNVERSIONED",
+                "fingerprint": "LEGACY_UNVERSIONED"
+              }
+            ],
+            "published_snapshot_id": "d85136e1-6aae-4dc6-889f-8f673451d2d0",
+            "snapshot_identity_status": "EXACT_PUBLISHED_MEMBERSHIP",
+            "encoder_fingerprint": "afc4aa45cd8d95d538404fd463d881c1cd522f3f92bfd42a6b2f6abde0a5b5d8",
+            "reranker_fingerprint": "30f61c1e0d16deb1d0f43ddaa49f5457bfbaf69f1b6ee27d0475a2b676f8f8ea",
+            "reranking_pairs": 14,
+            "structural_context": "CANONICAL_PAGE_PARENT",
+            "final_rank_fusion": "INITIAL_RRF_RERANK_LEXICAL_RRF",
+            "lexical_normalization": "SNOWBALL_RUSSIAN_3_1_1",
+            "candidate_diversification": "ONE_CANONICAL_PARENT_PER_PAGE",
+            "recall_branches": 3,
+            "heading_topic_signal": true,
+            "lexical_final_rank_weight": 2,
+            "history_messages": 0,
+            "generation_history_policy": "QUESTION_RESOLUTION_ONLY_NO_PREVIOUS_ANSWERS",
+            "query_resolution": "CURRENT_QUESTION",
+            "generation_guard": "LITERAL_PERMISSION_PROHIBITION_OBLIGATION",
+            "selected_parent_rank": 1,
+            "publication": "PUBLISHED",
+            "candidate_snapshot_id": null
+          },
+          "delivery_context": "EMPLOYEE",
+          "reason": "LITERAL_NORMATIVE_POLICY"
+        }
+      },
+      {
+        "id": "visitor",
+        "question": "Кто разрешает посетителю фотографировать конфиденциальные документы?",
+        "title": "коммерческой тайне",
+        "page": 8,
+        "gold_revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+        "gold_extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+        "gold_source_blocks": [
+          {
+            "block_id": "ebe63cca-b2d8-4dd3-893c-af7bdc78eebd",
+            "kind": "TEXT",
+            "text_sha256": "6bddefe58e1cef7a9584ff6b12bb1684aa570a52eb54ecf63f4eabfdfb2c62c0",
+            "text": "В случае посещения объектов Общества представителями сторонних организаций ответственное лицо может знакомить посетителей только с конкретной информацией и объектами, которые определены генеральным директором или уполномоченным лицом Общества.\n\nОзнакомление с информацией, проведение осмотров, фото-, видеосъемок документов, объектов (процессов), отнесенных к КТ, возможно только после получения разрешения генерального директора или уполномоченного лица Общества и подписания «Обязательства о соблюдении КТ посетителями объектов». \nФорма Обязательства размещена в Положении о коммерческой тайне и конфиденциальной информации \n(Приложение № 4)",
+            "image_sha256": null
+          }
+        ],
+        "expected_semantic_scope": "Complete relevant source conditions/lists, correct intent; citation presence alone is insufficient",
+        "expected_modes": [
+          "LOCAL_GENERATED",
+          "EXTRACT",
+          "APPROVED_CARD"
+        ],
+        "seconds": 6.969,
+        "mechanical_status": "PASS",
+        "checks": {
+          "gold_source_page": true,
+          "current_published_scope": true,
+          "expected_mode": true,
+          "gold_content_block_present": true
+        },
+        "semantic_review": "PENDING",
+        "answer": {
+          "mode": "EXTRACT",
+          "text": "Точная формулировка действующего документа:\n\n[1] Защита конфиденциальности информации\n\nВ случае посещения объектов Общества представителями сторонних организаций ответственное лицо может знакомить посетителей только с конкретной информацией и объектами, которые определены генеральным директором или уполномоченным лицом Общества.\n\nОзнакомление с информацией, проведение осмотров, фото-, видеосъемок документов, объектов (процессов), отнесенных к КТ, возможно только после получения разрешения генерального директора или уполномоченного лица Общества и подписания «Обязательства о соблюдении КТ посетителями объектов». \nФорма Обязательства размещена в Положении о коммерческой тайне и конфиденциальной информации \n(Приложение № 4)\n\nИсточники: [1] Положение о коммерческой тайне, стр. 8",
+          "citations": [
+            {
+              "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+              "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+              "document_title": "Положение о коммерческой тайне",
+              "page_no": 8,
+              "block_id": "ebe63cca-b2d8-4dd3-893c-af7bdc78eebd",
+              "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+              "chunker_version": "LEGACY_UNVERSIONED",
+              "chunker_fingerprint": "LEGACY_UNVERSIONED",
+              "bbox": [
+                0.08656824146981627,
+                0.15692446777486146,
+                0.97249343832021,
+                0.7423735783027121
+              ],
+              "source_sha256": "a2a16c967e82c868b95d54e7df5f6791cd2ab683b1841956b9b19926ed973923",
+              "kind": "TEXT",
+              "evidence_text": "Защита конфиденциальности информации\n\nВ случае посещения объектов Общества представителями сторонних организаций ответственное лицо может знакомить посетителей только с конкретной информацией и объектами, которые определены генеральным директором или уполномоченным лицом Общества.\n\nОзнакомление с информацией, проведение осмотров, фото-, видеосъемок документов, объектов (процессов), отнесенных к КТ, возможно только после получения разрешения генерального директора или уполномоченного лица Общества и подписания «Обязательства о соблюдении КТ посетителями объектов». \nФорма Обязательства размещена в Положении о коммерческой тайне и конфиденциальной информации \n(Приложение № 4)",
+              "text_sha256": "6bddefe58e1cef7a9584ff6b12bb1684aa570a52eb54ecf63f4eabfdfb2c62c0",
+              "evidence_text_sha256": "74d06a53efc317f850e97f4037cac00203396d9fb8476d8514b12d0498973c1b",
+              "evidence_ranges": [
+                {
+                  "block_id": "9b69f9ee-3e01-461e-8b2f-0bbe4215e21f",
+                  "char_start": 0,
+                  "char_end": 36,
+                  "text": "Защита конфиденциальности информации",
+                  "sha256": "a90971de8447504d8270e316eae349dc05360d79173dcb87aa576a172c69a731"
+                },
+                {
+                  "block_id": "ebe63cca-b2d8-4dd3-893c-af7bdc78eebd",
+                  "char_start": 0,
+                  "char_end": 643,
+                  "text": "В случае посещения объектов Общества представителями сторонних организаций ответственное лицо может знакомить посетителей только с конкретной информацией и объектами, которые определены генеральным директором или уполномоченным лицом Общества.\n\nОзнакомление с информацией, проведение осмотров, фото-, видеосъемок документов, объектов (процессов), отнесенных к КТ, возможно только после получения разрешения генерального директора или уполномоченного лица Общества и подписания «Обязательства о соблюдении КТ посетителями объектов». \nФорма Обязательства размещена в Положении о коммерческой тайне и конфиденциальной информации \n(Приложение № 4)",
+                  "sha256": "6bddefe58e1cef7a9584ff6b12bb1684aa570a52eb54ecf63f4eabfdfb2c62c0"
+                }
+              ],
+              "text_origin": "SOURCE_TEXT",
+              "image_sha256": null,
+              "source_url": "/api/v1/knowledge/revisions/c32d41b9-c41b-4095-a707-7226ea965290/source"
+            }
+          ],
+          "evidence": [
+            {
+              "text": "Защита конфиденциальности информации\n\nВ случае посещения объектов Общества представителями сторонних организаций ответственное лицо может знакомить посетителей только с конкретной информацией и объектами, которые определены генеральным директором или уполномоченным лицом Общества.\n\nОзнакомление с информацией, проведение осмотров, фото-, видеосъемок документов, объектов (процессов), отнесенных к КТ, возможно только после получения разрешения генерального директора или уполномоченного лица Общества и подписания «Обязательства о соблюдении КТ посетителями объектов». \nФорма Обязательства размещена в Положении о коммерческой тайне и конфиденциальной информации \n(Приложение № 4)",
+              "title": "Положение о коммерческой тайне",
+              "score": 1.58971
+            }
+          ],
+          "provenance": {
+            "mode": "FULL",
+            "retrieval": "DENSE_BM25_RRF_RERANK",
+            "kb_revision_ids": [
+              "5c5d7f53-7389-446b-ab26-abc11f42851b",
+              "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+              "c32d41b9-c41b-4095-a707-7226ea965290"
+            ],
+            "query_equivalents": [],
+            "timings": {
+              "embedding_seconds": 0.115967,
+              "vector_query_seconds": 0.041825,
+              "rerank_preparation_seconds": 0.361261,
+              "rerank_seconds": 6.351763,
+              "lexical_seconds": 0.010065,
+              "retrieval_seconds": 6.949261,
+              "generation_request_seconds": 0.0,
+              "generation_queue_seconds": null,
+              "generation_inference_seconds": null,
+              "pipeline_seconds": 6.968461
+            },
+            "pipeline_identities": {
+              "chunker_version": "korsik-physical-parent-chunker-v1",
+              "chunker_fingerprint": "64fcb0516ed01fb9f0a89ed6d2a0d8b6fb387500bc0640b4435c5f6a4cb02b2b",
+              "retrieval_policy_version": "korsik-hybrid-retrieval-guards-v1",
+              "retrieval_policy_fingerprint": "fd8ad205b141517446ed7c2424ef12a65fb2b17233001ea35b2a93e668bc0a82",
+              "retrieval_module_source_fingerprint": "c6bf96c52dccee364ac16aaa9ab75c4ec35f5c3e378e9579bc858841db7af4b1",
+              "generation_request_schema_version": "korsik-local-generation-request-v1",
+              "generation_runtime_source_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+            },
+            "observed_chunker_identities": [
+              {
+                "version": "LEGACY_UNVERSIONED",
+                "fingerprint": "LEGACY_UNVERSIONED"
+              }
+            ],
+            "published_snapshot_id": "d85136e1-6aae-4dc6-889f-8f673451d2d0",
+            "snapshot_identity_status": "EXACT_PUBLISHED_MEMBERSHIP",
+            "encoder_fingerprint": "afc4aa45cd8d95d538404fd463d881c1cd522f3f92bfd42a6b2f6abde0a5b5d8",
+            "reranker_fingerprint": "30f61c1e0d16deb1d0f43ddaa49f5457bfbaf69f1b6ee27d0475a2b676f8f8ea",
+            "reranking_pairs": 15,
+            "structural_context": "CANONICAL_PAGE_PARENT",
+            "final_rank_fusion": "INITIAL_RRF_RERANK_LEXICAL_RRF",
+            "lexical_normalization": "SNOWBALL_RUSSIAN_3_1_1",
+            "candidate_diversification": "ONE_CANONICAL_PARENT_PER_PAGE",
+            "recall_branches": 3,
+            "heading_topic_signal": true,
+            "lexical_final_rank_weight": 2,
+            "history_messages": 0,
+            "generation_history_policy": "QUESTION_RESOLUTION_ONLY_NO_PREVIOUS_ANSWERS",
+            "query_resolution": "CURRENT_QUESTION",
+            "generation_guard": "LITERAL_PERMISSION_PROHIBITION_OBLIGATION",
+            "selected_parent_rank": 1,
+            "publication": "PUBLISHED",
+            "candidate_snapshot_id": null
+          },
+          "delivery_context": "EMPLOYEE",
+          "reason": "LITERAL_NORMATIVE_POLICY"
+        }
+      },
+      {
+        "id": "commitment",
+        "question": "Когда сотрудник подписывает антикоррупционное обязательство?",
+        "title": "Антикоррупционная",
+        "page": 11,
+        "gold_revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+        "gold_extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+        "gold_source_blocks": [
+          {
+            "block_id": "6d99e944-bdce-4768-9a0e-ff2bc5575bf4",
+            "kind": "TEXT",
+            "text_sha256": "5036f7fb94bdcccf8c401625e720674664c1423da79dad7d4995ea91a34455e0",
+            "text": "В целях соблюдения антикоррупционного законодательства, реализации мер, направленных на борьбу с коррупцией и формирования у работников нетерпимости к противозаконным действиям, Общество осуществляет включение антикоррупционных условий (оговорок) в трудовые договоры с работниками.",
+            "image_sha256": null
+          },
+          {
+            "block_id": "f90c9547-a2ae-48fc-a030-54f5982fbf32",
+            "kind": "TEXT",
+            "text_sha256": "7fe807b95f70beed1b958672c58ec7f2f557552453258f30dcdf955559971287",
+            "text": "С каждым работником Общества в обязательном порядке подписывается Обязательство соблюдения норм антикоррупционного законодательства при заключении трудового договора.",
+            "image_sha256": null
+          }
+        ],
+        "expected_semantic_scope": "Complete relevant source conditions/lists, correct intent; citation presence alone is insufficient",
+        "expected_modes": [
+          "LOCAL_GENERATED",
+          "EXTRACT",
+          "APPROVED_CARD"
+        ],
+        "seconds": 8.31,
+        "mechanical_status": "PASS",
+        "checks": {
+          "gold_source_page": true,
+          "current_published_scope": true,
+          "expected_mode": true,
+          "gold_content_block_present": true
+        },
+        "semantic_review": "PENDING",
+        "answer": {
+          "mode": "EXTRACT",
+          "text": "Точная формулировка действующего документа:\n\n[1] Обязательство соблюдения норм \u000bантикоррупционного законодательства\n\nВ целях соблюдения антикоррупционного законодательства, реализации мер, направленных на борьбу с коррупцией и формирования у работников нетерпимости к противозаконным действиям, Общество осуществляет включение антикоррупционных условий (оговорок) в трудовые договоры с работниками.\n\nС каждым работником Общества в обязательном порядке подписывается Обязательство соблюдения норм антикоррупционного законодательства при заключении трудового договора.\n\nИсточники: [1] Антикоррупционная политика, стр. 11",
+          "citations": [
+            {
+              "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+              "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+              "document_title": "Антикоррупционная политика",
+              "page_no": 11,
+              "block_id": "f90c9547-a2ae-48fc-a030-54f5982fbf32",
+              "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+              "chunker_version": "LEGACY_UNVERSIONED",
+              "chunker_fingerprint": "LEGACY_UNVERSIONED",
+              "bbox": [
+                0.5118123359580052,
+                0.22399241761446487,
+                0.9744066601049869,
+                0.3810670749489647
+              ],
+              "source_sha256": "727c370a8a8b3dcce218ec873564cc8ea0fb93e9ae9d8ddf50ac536a85ecd034",
+              "kind": "TEXT",
+              "evidence_text": "Обязательство соблюдения норм \u000bантикоррупционного законодательства\n\nВ целях соблюдения антикоррупционного законодательства, реализации мер, направленных на борьбу с коррупцией и формирования у работников нетерпимости к противозаконным действиям, Общество осуществляет включение антикоррупционных условий (оговорок) в трудовые договоры с работниками.\n\nС каждым работником Общества в обязательном порядке подписывается Обязательство соблюдения норм антикоррупционного законодательства при заключении трудового договора.",
+              "text_sha256": "7fe807b95f70beed1b958672c58ec7f2f557552453258f30dcdf955559971287",
+              "evidence_text_sha256": "3c59a793eb21701fa4bdd05c012b152e19e73d70c40ecb3821d7e7da713b5326",
+              "evidence_ranges": [
+                {
+                  "block_id": "c73788ab-245c-4ac8-a633-a6a235554f6d",
+                  "char_start": 0,
+                  "char_end": 66,
+                  "text": "Обязательство соблюдения норм \u000bантикоррупционного законодательства",
+                  "sha256": "a3c18b319bae7e8491d1c9ff860605b07afefbcd3ac2f275b59f84a23bd67534"
+                },
+                {
+                  "block_id": "6d99e944-bdce-4768-9a0e-ff2bc5575bf4",
+                  "char_start": 0,
+                  "char_end": 281,
+                  "text": "В целях соблюдения антикоррупционного законодательства, реализации мер, направленных на борьбу с коррупцией и формирования у работников нетерпимости к противозаконным действиям, Общество осуществляет включение антикоррупционных условий (оговорок) в трудовые договоры с работниками.",
+                  "sha256": "5036f7fb94bdcccf8c401625e720674664c1423da79dad7d4995ea91a34455e0"
+                },
+                {
+                  "block_id": "f90c9547-a2ae-48fc-a030-54f5982fbf32",
+                  "char_start": 0,
+                  "char_end": 166,
+                  "text": "С каждым работником Общества в обязательном порядке подписывается Обязательство соблюдения норм антикоррупционного законодательства при заключении трудового договора.",
+                  "sha256": "7fe807b95f70beed1b958672c58ec7f2f557552453258f30dcdf955559971287"
+                }
+              ],
+              "text_origin": "SOURCE_TEXT",
+              "image_sha256": null,
+              "source_url": "/api/v1/knowledge/revisions/5c5d7f53-7389-446b-ab26-abc11f42851b/source"
+            }
+          ],
+          "evidence": [
+            {
+              "text": "Обязательство соблюдения норм \u000bантикоррупционного законодательства\n\nВ целях соблюдения антикоррупционного законодательства, реализации мер, направленных на борьбу с коррупцией и формирования у работников нетерпимости к противозаконным действиям, Общество осуществляет включение антикоррупционных условий (оговорок) в трудовые договоры с работниками.\n\nС каждым работником Общества в обязательном порядке подписывается Обязательство соблюдения норм антикоррупционного законодательства при заключении трудового договора.",
+              "title": "Антикоррупционная политика",
+              "score": 3.66677
+            }
+          ],
+          "provenance": {
+            "mode": "FULL",
+            "retrieval": "DENSE_BM25_RRF_RERANK",
+            "kb_revision_ids": [
+              "5c5d7f53-7389-446b-ab26-abc11f42851b",
+              "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+              "c32d41b9-c41b-4095-a707-7226ea965290"
+            ],
+            "query_equivalents": [
+              "EMPLOYEE_VOCABULARY"
+            ],
+            "timings": {
+              "embedding_seconds": 0.122363,
+              "vector_query_seconds": 0.040495,
+              "rerank_preparation_seconds": 0.448019,
+              "rerank_seconds": 7.618045,
+              "lexical_seconds": 0.00574,
+              "retrieval_seconds": 8.29478,
+              "generation_request_seconds": 0.0,
+              "generation_queue_seconds": null,
+              "generation_inference_seconds": null,
+              "pipeline_seconds": 8.309788
+            },
+            "pipeline_identities": {
+              "chunker_version": "korsik-physical-parent-chunker-v1",
+              "chunker_fingerprint": "64fcb0516ed01fb9f0a89ed6d2a0d8b6fb387500bc0640b4435c5f6a4cb02b2b",
+              "retrieval_policy_version": "korsik-hybrid-retrieval-guards-v1",
+              "retrieval_policy_fingerprint": "fd8ad205b141517446ed7c2424ef12a65fb2b17233001ea35b2a93e668bc0a82",
+              "retrieval_module_source_fingerprint": "c6bf96c52dccee364ac16aaa9ab75c4ec35f5c3e378e9579bc858841db7af4b1",
+              "generation_request_schema_version": "korsik-local-generation-request-v1",
+              "generation_runtime_source_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+            },
+            "observed_chunker_identities": [
+              {
+                "version": "LEGACY_UNVERSIONED",
+                "fingerprint": "LEGACY_UNVERSIONED"
+              }
+            ],
+            "published_snapshot_id": "d85136e1-6aae-4dc6-889f-8f673451d2d0",
+            "snapshot_identity_status": "EXACT_PUBLISHED_MEMBERSHIP",
+            "encoder_fingerprint": "afc4aa45cd8d95d538404fd463d881c1cd522f3f92bfd42a6b2f6abde0a5b5d8",
+            "reranker_fingerprint": "30f61c1e0d16deb1d0f43ddaa49f5457bfbaf69f1b6ee27d0475a2b676f8f8ea",
+            "reranking_pairs": 18,
+            "structural_context": "CANONICAL_PAGE_PARENT",
+            "final_rank_fusion": "INITIAL_RRF_RERANK_LEXICAL_RRF",
+            "lexical_normalization": "SNOWBALL_RUSSIAN_3_1_1",
+            "candidate_diversification": "ONE_CANONICAL_PARENT_PER_PAGE",
+            "recall_branches": 3,
+            "heading_topic_signal": true,
+            "lexical_final_rank_weight": 2,
+            "history_messages": 0,
+            "generation_history_policy": "QUESTION_RESOLUTION_ONLY_NO_PREVIOUS_ANSWERS",
+            "query_resolution": "CURRENT_QUESTION",
+            "generation_guard": "LITERAL_PERMISSION_PROHIBITION_OBLIGATION",
+            "selected_parent_rank": 1,
+            "publication": "PUBLISHED",
+            "candidate_snapshot_id": null
+          },
+          "delivery_context": "EMPLOYEE",
+          "reason": "LITERAL_NORMATIVE_POLICY"
+        }
+      },
+      {
+        "id": "money_gift",
+        "question": "Можно ли дарить деловому партнёру денежный подарок?",
+        "title": "Антикоррупционная",
+        "page": 9,
+        "gold_revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+        "gold_extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+        "gold_source_blocks": [
+          {
+            "block_id": "bf5a1942-c69c-460c-9e05-8349208c7350",
+            "kind": "TEXT",
+            "text_sha256": "b5ce47109f79d1e0eddec52921f82139917f09793eaeaed7d047451f975cfaaf",
+            "text": "Не допускаются подарки от имени Общества, его работников и представителей третьим лицам в виде денежных средств в любой валюте, наличных или безналичных, ценных бумаг и драгоценных металлов.\nПри получении делового подарка работник обязан принять меры по недопущению возможности возникновения конфликта интересов.\nВ случае возникновения конфликта интересов или возможности его возникновения при получении делового подарка, работник в установленном порядке должен уведомить об этом Общество и сдать полученный деловой подарок ответственному за  профилактику коррупционных правонарушений (за исключением  канцелярских принадлежностей).\nРаботнику категорически запрещается просить, требовать, вынуждать третьих лиц дарить ему либо лицам, с которыми он состоит в близком родстве или свойстве, деловые подарки и (или) оказывать в их пользу знаки делового гостеприимства, а также принимать подарки в форме наличных, безналичных денежных средств, ценных бумаг, драгоценных металлов.",
+            "image_sha256": null
+          }
+        ],
+        "expected_semantic_scope": "Complete relevant source conditions/lists, correct intent; citation presence alone is insufficient",
+        "expected_modes": [
+          "LOCAL_GENERATED",
+          "EXTRACT",
+          "APPROVED_CARD"
+        ],
+        "seconds": 8.295,
+        "mechanical_status": "PASS",
+        "checks": {
+          "gold_source_page": true,
+          "current_published_scope": true,
+          "expected_mode": true,
+          "gold_content_block_present": true
+        },
+        "semantic_review": "PENDING",
+        "answer": {
+          "mode": "EXTRACT",
+          "text": "Точная формулировка действующего документа:\n\n[1] ПОДАРКИ И ПРЕДСТАВИТЕЛЬСКИЕ РАСХОДЫ\n\nНе допускаются подарки от имени Общества, его работников и представителей третьим лицам в виде денежных средств в любой валюте, наличных или безналичных, ценных бумаг и драгоценных металлов.\nПри получении делового подарка работник обязан принять меры по недопущению возможности возникновения конфликта интересов.\nВ случае возникновения конфликта интересов или возможности его возникновения при получении делового подарка, работник в установленном порядке должен уведомить об этом Общество и сдать полученный деловой подарок ответственному за  профилактику коррупционных правонарушений (за исключением  канцелярских принадлежностей).\nРаботнику категорически запрещается просить, требовать, вынуждать третьих лиц дарить ему либо лицам, с которыми он состоит в близком родстве или свойстве, деловые подарки и (или) оказывать в их пользу знаки делового гостеприимства, а также принимать подарки в форме наличных, безналичных денежных средств, ценных бумаг, драгоценных металлов.\n\nИсточники: [1] Антикоррупционная политика, стр. 9",
+          "citations": [
+            {
+              "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+              "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+              "document_title": "Антикоррупционная политика",
+              "page_no": 9,
+              "block_id": "bf5a1942-c69c-460c-9e05-8349208c7350",
+              "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+              "chunker_version": "LEGACY_UNVERSIONED",
+              "chunker_fingerprint": "LEGACY_UNVERSIONED",
+              "bbox": [
+                0.08656824146981627,
+                0.25850335374744826,
+                0.97249343832021,
+                0.8044957713619131
+              ],
+              "source_sha256": "727c370a8a8b3dcce218ec873564cc8ea0fb93e9ae9d8ddf50ac536a85ecd034",
+              "kind": "TEXT",
+              "evidence_text": "ПОДАРКИ И ПРЕДСТАВИТЕЛЬСКИЕ РАСХОДЫ\n\nНе допускаются подарки от имени Общества, его работников и представителей третьим лицам в виде денежных средств в любой валюте, наличных или безналичных, ценных бумаг и драгоценных металлов.\nПри получении делового подарка работник обязан принять меры по недопущению возможности возникновения конфликта интересов.\nВ случае возникновения конфликта интересов или возможности его возникновения при получении делового подарка, работник в установленном порядке должен уведомить об этом Общество и сдать полученный деловой подарок ответственному за  профилактику коррупционных правонарушений (за исключением  канцелярских принадлежностей).\nРаботнику категорически запрещается просить, требовать, вынуждать третьих лиц дарить ему либо лицам, с которыми он состоит в близком родстве или свойстве, деловые подарки и (или) оказывать в их пользу знаки делового гостеприимства, а также принимать подарки в форме наличных, безналичных денежных средств, ценных бумаг, драгоценных металлов.",
+              "text_sha256": "b5ce47109f79d1e0eddec52921f82139917f09793eaeaed7d047451f975cfaaf",
+              "evidence_text_sha256": "5c13c5946f57e5b6817ec81821ebaaa54c34154d1c51fd4c07a6c7d829af67ab",
+              "evidence_ranges": [
+                {
+                  "block_id": "894365f9-4b00-46d2-877b-a5f8ba1cd76e",
+                  "char_start": 0,
+                  "char_end": 35,
+                  "text": "ПОДАРКИ И ПРЕДСТАВИТЕЛЬСКИЕ РАСХОДЫ",
+                  "sha256": "e2044e572e6f6385af6f8d1930bb40d63153e18712e6a40de8bc133662648f06"
+                },
+                {
+                  "block_id": "bf5a1942-c69c-460c-9e05-8349208c7350",
+                  "char_start": 0,
+                  "char_end": 974,
+                  "text": "Не допускаются подарки от имени Общества, его работников и представителей третьим лицам в виде денежных средств в любой валюте, наличных или безналичных, ценных бумаг и драгоценных металлов.\nПри получении делового подарка работник обязан принять меры по недопущению возможности возникновения конфликта интересов.\nВ случае возникновения конфликта интересов или возможности его возникновения при получении делового подарка, работник в установленном порядке должен уведомить об этом Общество и сдать полученный деловой подарок ответственному за  профилактику коррупционных правонарушений (за исключением  канцелярских принадлежностей).\nРаботнику категорически запрещается просить, требовать, вынуждать третьих лиц дарить ему либо лицам, с которыми он состоит в близком родстве или свойстве, деловые подарки и (или) оказывать в их пользу знаки делового гостеприимства, а также принимать подарки в форме наличных, безналичных денежных средств, ценных бумаг, драгоценных металлов.",
+                  "sha256": "b5ce47109f79d1e0eddec52921f82139917f09793eaeaed7d047451f975cfaaf"
+                }
+              ],
+              "text_origin": "SOURCE_TEXT",
+              "image_sha256": null,
+              "source_url": "/api/v1/knowledge/revisions/5c5d7f53-7389-446b-ab26-abc11f42851b/source"
+            }
+          ],
+          "evidence": [
+            {
+              "text": "ПОДАРКИ И ПРЕДСТАВИТЕЛЬСКИЕ РАСХОДЫ\n\nНе допускаются подарки от имени Общества, его работников и представителей третьим лицам в виде денежных средств в любой валюте, наличных или безналичных, ценных бумаг и драгоценных металлов.\nПри получении делового подарка работник обязан принять меры по недопущению возможности возникновения конфликта интересов.\nВ случае возникновения конфликта интересов или возможности его возникновения при получении делового подарка, работник в установленном порядке должен уведомить об этом Общество и сдать полученный деловой подарок ответственному за  профилактику коррупционных правонарушений (за исключением  канцелярских принадлежностей).\nРаботнику категорически запрещается просить, требовать, вынуждать третьих лиц дарить ему либо лицам, с которыми он состоит в близком родстве или свойстве, деловые подарки и (или) оказывать в их пользу знаки делового гостеприимства, а также принимать подарки в форме наличных, безналичных денежных средств, ценных бумаг, драгоценных металлов.",
+              "title": "Антикоррупционная политика",
+              "score": 3.10059
+            }
+          ],
+          "provenance": {
+            "mode": "FULL",
+            "retrieval": "DENSE_BM25_RRF_RERANK",
+            "kb_revision_ids": [
+              "5c5d7f53-7389-446b-ab26-abc11f42851b",
+              "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+              "c32d41b9-c41b-4095-a707-7226ea965290"
+            ],
+            "query_equivalents": [],
+            "timings": {
+              "embedding_seconds": 0.081233,
+              "vector_query_seconds": 0.040523,
+              "rerank_preparation_seconds": 0.494718,
+              "rerank_seconds": 7.613171,
+              "lexical_seconds": 0.005316,
+              "retrieval_seconds": 8.27504,
+              "generation_request_seconds": 0.0,
+              "generation_queue_seconds": null,
+              "generation_inference_seconds": null,
+              "pipeline_seconds": 8.294502
+            },
+            "pipeline_identities": {
+              "chunker_version": "korsik-physical-parent-chunker-v1",
+              "chunker_fingerprint": "64fcb0516ed01fb9f0a89ed6d2a0d8b6fb387500bc0640b4435c5f6a4cb02b2b",
+              "retrieval_policy_version": "korsik-hybrid-retrieval-guards-v1",
+              "retrieval_policy_fingerprint": "fd8ad205b141517446ed7c2424ef12a65fb2b17233001ea35b2a93e668bc0a82",
+              "retrieval_module_source_fingerprint": "c6bf96c52dccee364ac16aaa9ab75c4ec35f5c3e378e9579bc858841db7af4b1",
+              "generation_request_schema_version": "korsik-local-generation-request-v1",
+              "generation_runtime_source_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+            },
+            "observed_chunker_identities": [
+              {
+                "version": "LEGACY_UNVERSIONED",
+                "fingerprint": "LEGACY_UNVERSIONED"
+              }
+            ],
+            "published_snapshot_id": "d85136e1-6aae-4dc6-889f-8f673451d2d0",
+            "snapshot_identity_status": "EXACT_PUBLISHED_MEMBERSHIP",
+            "encoder_fingerprint": "afc4aa45cd8d95d538404fd463d881c1cd522f3f92bfd42a6b2f6abde0a5b5d8",
+            "reranker_fingerprint": "30f61c1e0d16deb1d0f43ddaa49f5457bfbaf69f1b6ee27d0475a2b676f8f8ea",
+            "reranking_pairs": 17,
+            "structural_context": "CANONICAL_PAGE_PARENT",
+            "final_rank_fusion": "INITIAL_RRF_RERANK_LEXICAL_RRF",
+            "lexical_normalization": "SNOWBALL_RUSSIAN_3_1_1",
+            "candidate_diversification": "ONE_CANONICAL_PARENT_PER_PAGE",
+            "recall_branches": 3,
+            "heading_topic_signal": true,
+            "lexical_final_rank_weight": 2,
+            "history_messages": 0,
+            "generation_history_policy": "QUESTION_RESOLUTION_ONLY_NO_PREVIOUS_ANSWERS",
+            "query_resolution": "CURRENT_QUESTION",
+            "generation_guard": "LITERAL_PERMISSION_PROHIBITION_OBLIGATION",
+            "selected_parent_rank": 1,
+            "publication": "PUBLISHED",
+            "candidate_snapshot_id": null
+          },
+          "delivery_context": "EMPLOYEE",
+          "reason": "LITERAL_NORMATIVE_POLICY"
+        }
+      },
+      {
+        "id": "mission",
+        "question": "Какова миссия компании ПОЛИПЛАСТИК?",
+        "title": "качества",
+        "page": 2,
+        "gold_revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+        "gold_extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+        "gold_source_blocks": [
+          {
+            "block_id": "0d4dda11-cf8e-4f71-bfb2-bf3ef99afc7e",
+            "kind": "TEXT",
+            "text_sha256": "08a314c93fde49d85250aef72909a6c1e9b4c07a4b4661b3b9ab618cac6b0b37",
+            "text": "Повышение качества жизни людей и эффективности экономики путем создания надежной и безопасной коммунальной, промышленной и аграрной инфраструктуры за счет разработки и применения прогрессивных технологий в области трубопроводных систем и решений для очистки сточных вод, а также обеспечение потребностей различных отраслей производства в высококачественных композиционных материалах, соответствующих современным тенденциям мирового рынка термопластов.",
+            "image_sha256": null
+          }
+        ],
+        "expected_semantic_scope": "Complete relevant source conditions/lists, correct intent; citation presence alone is insufficient",
+        "expected_modes": [
+          "LOCAL_GENERATED",
+          "EXTRACT",
+          "APPROVED_CARD"
+        ],
+        "seconds": 22.109,
+        "mechanical_status": "PASS",
+        "checks": {
+          "gold_source_page": true,
+          "current_published_scope": true,
+          "expected_mode": true,
+          "gold_content_block_present": true
+        },
+        "semantic_review": "PENDING",
+        "answer": {
+          "mode": "LOCAL_GENERATED",
+          "text": "Повышение качества жизни людей и эффективности экономики путем создания надежной и безопасной коммунальной, промышленной и аграрной инфраструктуры за счет разработки и применения прогрессивных технологий в области трубопроводных систем и решений для очистки сточных вод, а также обеспечение потребностей различных отраслей производства в высококачественных композиционных материалах, соответствующих современным тенденциям мирового рынка термопластов [1].\n\nИсточники: [1] Политика в области качества и экологии, стр. 2; [2] Антикоррупционная политика, стр. 1; [3] Положение о коммерческой тайне, стр. 2",
+          "citations": [
+            {
+              "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+              "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+              "document_title": "Политика в области качества и экологии",
+              "page_no": 2,
+              "block_id": "b1bfac41-553e-4518-a08d-61b30b4fa3f4",
+              "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+              "chunker_version": "LEGACY_UNVERSIONED",
+              "chunker_fingerprint": "LEGACY_UNVERSIONED",
+              "bbox": [
+                0.05,
+                0.04850627004957714,
+                0.95,
+                0.2151729367162438
+              ],
+              "source_sha256": "3a61a609bcc15aafa79a9b8d3ac6a69903769b1e97d953855eb4f93ec4161afc",
+              "kind": "TEXT",
+              "evidence_text": "Миссия Общества \u000bв области качества и экологии\n\nПовышение качества жизни людей и эффективности экономики путем создания надежной и безопасной коммунальной, промышленной и аграрной инфраструктуры за счет разработки и применения прогрессивных технологий в области трубопроводных систем и решений для очистки сточных вод, а также обеспечение потребностей различных отраслей производства в высококачественных композиционных материалах, соответствующих современным тенденциям мирового рынка термопластов.",
+              "text_sha256": "85621dcc43441b320fa4c3052b977e2bf170c5481a66b918990bd04c96b7f356",
+              "evidence_text_sha256": "f56544a1dc49de2b2422297624833315be4a4cc51722e05b2fafe0e1abc109e5",
+              "evidence_ranges": [
+                {
+                  "block_id": "b1bfac41-553e-4518-a08d-61b30b4fa3f4",
+                  "char_start": 0,
+                  "char_end": 46,
+                  "text": "Миссия Общества \u000bв области качества и экологии",
+                  "sha256": "85621dcc43441b320fa4c3052b977e2bf170c5481a66b918990bd04c96b7f356"
+                },
+                {
+                  "block_id": "0d4dda11-cf8e-4f71-bfb2-bf3ef99afc7e",
+                  "char_start": 0,
+                  "char_end": 451,
+                  "text": "Повышение качества жизни людей и эффективности экономики путем создания надежной и безопасной коммунальной, промышленной и аграрной инфраструктуры за счет разработки и применения прогрессивных технологий в области трубопроводных систем и решений для очистки сточных вод, а также обеспечение потребностей различных отраслей производства в высококачественных композиционных материалах, соответствующих современным тенденциям мирового рынка термопластов.",
+                  "sha256": "08a314c93fde49d85250aef72909a6c1e9b4c07a4b4661b3b9ab618cac6b0b37"
+                }
+              ],
+              "text_origin": "SOURCE_TEXT",
+              "image_sha256": null,
+              "source_url": "/api/v1/knowledge/revisions/5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc/source"
+            },
+            {
+              "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+              "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+              "document_title": "Антикоррупционная политика",
+              "page_no": 1,
+              "block_id": "fbe3b7a1-d950-43ba-9148-114c9bdcdbed",
+              "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+              "chunker_version": "LEGACY_UNVERSIONED",
+              "chunker_fingerprint": "LEGACY_UNVERSIONED",
+              "bbox": [
+                0.4468444881889764,
+                0.23750364537766114,
+                0.9468444881889764,
+                0.5740921551472733
+              ],
+              "source_sha256": "727c370a8a8b3dcce218ec873564cc8ea0fb93e9ae9d8ddf50ac536a85ecd034",
+              "kind": "TEXT",
+              "evidence_text": "АНТИКОРРУПЦИОННАЯ ПОЛИТИКА ОБЩЕСТВА\n\nПолитика отражает приверженность Общества и его руководства высоким этическим стандартам ведения открытого и честного бизнеса для совершенствования корпоративной культуры, следования лучшим практикам корпоративного управления и поддержания деловой репутации Общества на должном уровне.\n\nАнтикоррупционная политика Общества с ограниченной ответственностью «Группа ПОЛИПЛАСТИК» (далее - Общество) определяет основные задачи, принципы и направления антикоррупционной деятельности в компании. Целью ее принятия  является организация и координация деятельности Общества, членов его органов управления, работников и иных лиц, действующих от имени Общества, направленной на предупреждение, выявление, пресечение и минимизацию последствий коррупции в Обществе.",
+              "text_sha256": "4b27c924c2e13c37ee419c636e117ee26113a8967fbde7cd692f84e237be65bb",
+              "evidence_text_sha256": "d553a3a5122469982f33de94e2425c8cdac9abee7c3c872b0b277c1bc61e1945",
+              "evidence_ranges": [
+                {
+                  "block_id": "fe447f9c-c387-40d6-bd7c-043d5bb33099",
+                  "char_start": 0,
+                  "char_end": 35,
+                  "text": "АНТИКОРРУПЦИОННАЯ ПОЛИТИКА ОБЩЕСТВА",
+                  "sha256": "555447cdc8529e2fd5f7aed820d9331e83751a1489de866c28f54907cb7fffa1"
+                },
+                {
+                  "block_id": "960d1663-a4bd-499b-b44c-b95929ded31e",
+                  "char_start": 0,
+                  "char_end": 285,
+                  "text": "Политика отражает приверженность Общества и его руководства высоким этическим стандартам ведения открытого и честного бизнеса для совершенствования корпоративной культуры, следования лучшим практикам корпоративного управления и поддержания деловой репутации Общества на должном уровне.",
+                  "sha256": "51da39ad53d2ab8b4dd6a2ca1a40722d2dfcdaa72ee360f20e6f0da4d6eec9e3"
+                },
+                {
+                  "block_id": "fbe3b7a1-d950-43ba-9148-114c9bdcdbed",
+                  "char_start": 0,
+                  "char_end": 465,
+                  "text": "Антикоррупционная политика Общества с ограниченной ответственностью «Группа ПОЛИПЛАСТИК» (далее - Общество) определяет основные задачи, принципы и направления антикоррупционной деятельности в компании. Целью ее принятия  является организация и координация деятельности Общества, членов его органов управления, работников и иных лиц, действующих от имени Общества, направленной на предупреждение, выявление, пресечение и минимизацию последствий коррупции в Обществе.",
+                  "sha256": "4b27c924c2e13c37ee419c636e117ee26113a8967fbde7cd692f84e237be65bb"
+                }
+              ],
+              "text_origin": "SOURCE_TEXT",
+              "image_sha256": null,
+              "source_url": "/api/v1/knowledge/revisions/5c5d7f53-7389-446b-ab26-abc11f42851b/source"
+            },
+            {
+              "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+              "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+              "document_title": "Положение о коммерческой тайне",
+              "page_no": 2,
+              "block_id": "800147d0-9ba3-46b5-9566-b504e18456d4",
+              "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+              "chunker_version": "LEGACY_UNVERSIONED",
+              "chunker_fingerprint": "LEGACY_UNVERSIONED",
+              "bbox": [
+                0.4586568241469816,
+                0.930111402741324,
+                0.9535936679790026,
+                0.9826496062992126
+              ],
+              "source_sha256": "a2a16c967e82c868b95d54e7df5f6791cd2ab683b1841956b9b19926ed973923",
+              "kind": "TEXT",
+              "evidence_text": "Действие Положения о коммерческой тайне и конфиденциальной информации распространяется на информацию Общества, имеющую ограниченный доступ, независимо от носителя, на котором находится, и независимо от вида, в котором представлена.\n\nОбщество – ООО «Группа ПОЛИПЛАСТИК», а также дочерние и зависимые общества",
+              "text_sha256": "1c801c234599e76734cf19920b356cdb05f1826ff0373ee47e7455639050fc30",
+              "evidence_text_sha256": "053c8a63f8c973340558999d0f89ab1f662ab6f36993ec018ba9fc0f23e2c0b9",
+              "evidence_ranges": [
+                {
+                  "block_id": "6016d715-083c-4b28-9168-756e9ca214d5",
+                  "char_start": 0,
+                  "char_end": 231,
+                  "text": "Действие Положения о коммерческой тайне и конфиденциальной информации распространяется на информацию Общества, имеющую ограниченный доступ, независимо от носителя, на котором находится, и независимо от вида, в котором представлена.",
+                  "sha256": "4b23f536185b62ec006574833e458fa07de8b63da304ba6e16d99bc7935c764a"
+                },
+                {
+                  "block_id": "800147d0-9ba3-46b5-9566-b504e18456d4",
+                  "char_start": 0,
+                  "char_end": 74,
+                  "text": "Общество – ООО «Группа ПОЛИПЛАСТИК», а также дочерние и зависимые общества",
+                  "sha256": "1c801c234599e76734cf19920b356cdb05f1826ff0373ee47e7455639050fc30"
+                }
+              ],
+              "text_origin": "SOURCE_TEXT",
+              "image_sha256": null,
+              "source_url": "/api/v1/knowledge/revisions/c32d41b9-c41b-4095-a707-7226ea965290/source"
+            }
+          ],
+          "evidence": [
+            {
+              "text": "Миссия Общества \u000bв области качества и экологии\n\nПовышение качества жизни людей и эффективности экономики путем создания надежной и безопасной коммунальной, промышленной и аграрной инфраструктуры за счет разработки и применения прогрессивных технологий в области трубопроводных систем и решений для очистки сточных вод, а также обеспечение потребностей различных отраслей производства в высококачественных композиционных материалах, соответствующих современным тенденциям мирового рынка термопластов.",
+              "title": "Политика в области качества и экологии",
+              "score": -1.83672
+            },
+            {
+              "text": "АНТИКОРРУПЦИОННАЯ ПОЛИТИКА ОБЩЕСТВА\n\nПолитика отражает приверженность Общества и его руководства высоким этическим стандартам ведения открытого и честного бизнеса для совершенствования корпоративной культуры, следования лучшим практикам корпоративного управления и поддержания деловой репутации Общества на должном уровне.\n\nАнтикоррупционная политика Общества с ограниченной ответственностью «Группа ПОЛИПЛАСТИК» (далее - Общество) определяет основные задачи, принципы и направления антикоррупционной деятельности в компании. Целью ее принятия  является организация и координация деятельности Общества, членов его органов управления, работников и иных лиц, действующих от имени Общества, направленной на предупреждение, выявление, пресечение и минимизацию последствий коррупции в Обществе.",
+              "title": "Антикоррупционная политика",
+              "score": 2.0689
+            },
+            {
+              "text": "Действие Положения о коммерческой тайне и конфиденциальной информации распространяется на информацию Общества, имеющую ограниченный доступ, независимо от носителя, на котором находится, и независимо от вида, в котором представлена.\n\nОбщество – ООО «Группа ПОЛИПЛАСТИК», а также дочерние и зависимые общества",
+              "title": "Положение о коммерческой тайне",
+              "score": 0.61291
+            }
+          ],
+          "provenance": {
+            "mode": "FULL",
+            "retrieval": "DENSE_BM25_RRF_RERANK",
+            "kb_revision_ids": [
+              "5c5d7f53-7389-446b-ab26-abc11f42851b",
+              "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+              "c32d41b9-c41b-4095-a707-7226ea965290"
+            ],
+            "query_equivalents": [],
+            "timings": {
+              "embedding_seconds": 0.121355,
+              "vector_query_seconds": 0.063221,
+              "rerank_preparation_seconds": 0.400146,
+              "rerank_seconds": 6.778432,
+              "lexical_seconds": 0.00412,
+              "retrieval_seconds": 7.402929,
+              "generation_request_seconds": 14.6795,
+              "generation_queue_seconds": 0.0,
+              "generation_inference_seconds": 14.583,
+              "generation_runtime_request_seconds": 14.6143,
+              "pipeline_seconds": 22.106224
+            },
+            "pipeline_identities": {
+              "chunker_version": "korsik-physical-parent-chunker-v1",
+              "chunker_fingerprint": "64fcb0516ed01fb9f0a89ed6d2a0d8b6fb387500bc0640b4435c5f6a4cb02b2b",
+              "retrieval_policy_version": "korsik-hybrid-retrieval-guards-v1",
+              "retrieval_policy_fingerprint": "fd8ad205b141517446ed7c2424ef12a65fb2b17233001ea35b2a93e668bc0a82",
+              "retrieval_module_source_fingerprint": "c6bf96c52dccee364ac16aaa9ab75c4ec35f5c3e378e9579bc858841db7af4b1",
+              "generation_request_schema_version": "korsik-local-generation-request-v1",
+              "generation_runtime_source_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+            },
+            "observed_chunker_identities": [
+              {
+                "version": "LEGACY_UNVERSIONED",
+                "fingerprint": "LEGACY_UNVERSIONED"
+              }
+            ],
+            "published_snapshot_id": "d85136e1-6aae-4dc6-889f-8f673451d2d0",
+            "snapshot_identity_status": "EXACT_PUBLISHED_MEMBERSHIP",
+            "encoder_fingerprint": "afc4aa45cd8d95d538404fd463d881c1cd522f3f92bfd42a6b2f6abde0a5b5d8",
+            "reranker_fingerprint": "30f61c1e0d16deb1d0f43ddaa49f5457bfbaf69f1b6ee27d0475a2b676f8f8ea",
+            "reranking_pairs": 16,
+            "structural_context": "CANONICAL_PAGE_PARENT",
+            "final_rank_fusion": "INITIAL_RRF_RERANK_LEXICAL_RRF",
+            "lexical_normalization": "SNOWBALL_RUSSIAN_3_1_1",
+            "candidate_diversification": "ONE_CANONICAL_PARENT_PER_PAGE",
+            "recall_branches": 3,
+            "heading_topic_signal": true,
+            "lexical_final_rank_weight": 2,
+            "history_messages": 0,
+            "generation_history_policy": "QUESTION_RESOLUTION_ONLY_NO_PREVIOUS_ANSWERS",
+            "query_resolution": "CURRENT_QUESTION",
+            "generation_request_schema_version": "korsik-local-generation-request-v1",
+            "generation_request_payload_fingerprint": "0e9af8d66e0b6c2bbd601412e5a17ebce330be58cb46258d4ce628cd6b268695",
+            "generation_request_budget_seconds": 19.09,
+            "generator_fingerprint": "1fe278d9e50f5fe426c80efe3845911a3bbcc057d1f975c660a8c2f39c6d21d0",
+            "output_tokens": 88,
+            "input_tokens": 501,
+            "verification": "MECHANICAL_CHECKS_PASSED",
+            "renderer_version": "korsik-qwen-cited-russian-v1",
+            "renderer_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b",
+            "rendered_prompt_fingerprint": "745cc1608c99ef7dfd7f95ce558d72f5d5c6404ccf2e6cbb9e4a2ea4fb1748f1",
+            "runtime_request_payload_fingerprint": "0e9af8d66e0b6c2bbd601412e5a17ebce330be58cb46258d4ce628cd6b268695",
+            "publication": "PUBLISHED",
+            "candidate_snapshot_id": null
+          },
+          "delivery_context": "EMPLOYEE",
+          "reason": "MECHANICAL_CHECKS_PASSED"
+        }
+      }
+    ]
+  }
+}

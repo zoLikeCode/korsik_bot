@@ -1,0 +1,353 @@
+{
+  "review": "TARGETED_ROLE_SCOPE_EPISODE_TRANSACTION_CODE_REVIEW",
+  "date": "2026-10-24",
+  "scope": [
+    "generic operations and report export ownership/current permissions",
+    "PLATFORM_ADMIN and HEAD_TALENT visibility",
+    "current employment episode private reads and outbound sends",
+    "HR account scope/reset and confirmed contacts",
+    "journey migration draft/publication boundary",
+    "PostgreSQL retry/claim and reverse multi-member publication atomicity",
+    "Activation rechecks revoked semantic quality, whole retrieval module identity, selected deployment and live runtime before reusing an old PASSED validation"
+  ],
+  "findings": [
+    {
+      "id": "SEC-01",
+      "priority": "P1",
+      "problem": "Prepared export inherited former HR role permissions",
+      "implementation": "domain.report_export_content; domain.process_report_export",
+      "status": "FIXED_IN_DEPLOYED_SOURCE11_REGRESSION_PASS",
+      "regression_evidence": [
+        "backend/tests/test_domain.py::test_prepared_exports_recheck_current_dataset_privileges",
+        "backend/tests/test_domain.py::test_export_pins_materialized_cohort_and_head_lost_drilldown"
+      ]
+    },
+    {
+      "id": "SEC-02",
+      "priority": "P1",
+      "problem": "Scoped HR export could include installation-wide audit identifiers",
+      "implementation": "domain.validate_export_request",
+      "status": "FIXED_IN_DEPLOYED_SOURCE11_REGRESSION_PASS",
+      "regression_evidence": [
+        "backend/tests/test_domain.py::test_prepared_exports_recheck_current_dataset_privileges"
+      ]
+    },
+    {
+      "id": "SEC-03",
+      "priority": "P1",
+      "problem": "HEAD_TALENT task list exposed individual summaries without drilldown",
+      "implementation": "domain.manager_tasks",
+      "status": "FIXED_IN_DEPLOYED_SOURCE11_REGRESSION_PASS",
+      "regression_evidence": [
+        "backend/tests/test_domain.py::test_head_never_reads_manager_task_summaries"
+      ]
+    },
+    {
+      "id": "SEC-04",
+      "priority": "P1",
+      "problem": "New employment account could read former episode private domain records",
+      "implementation": "domain.current_employee_record; domain.survey_get; domain.get_input_capture; domain.employment_episode_detail",
+      "status": "FIXED_IN_DEPLOYED_SOURCE11_REGRESSION_PASS",
+      "regression_evidence": [
+        "backend/tests/test_domain.py::test_employee_new_episode_cannot_read_former_private_domain_records",
+        "backend/tests/test_domain.py::test_rehire_handoff_uses_current_conversation_and_old_capture_is_private",
+        "backend/tests/test_domain.py::test_episode_views_hide_hr_reasons_and_former_episode_from_new_employee"
+      ]
+    },
+    {
+      "id": "SEC-05",
+      "priority": "P1",
+      "problem": "Journey migration could deploy unpublished mutable scenario graph",
+      "implementation": "domain.journey_plan; domain.journey_plan_apply",
+      "status": "FIXED_IN_DEPLOYED_SOURCE11_REGRESSION_PASS",
+      "regression_evidence": [
+        "backend/tests/test_domain.py::test_journey_migration_requires_published_frozen_preview_and_cancels_removed_future_steps"
+      ]
+    },
+    {
+      "id": "SEC-06",
+      "priority": "P1",
+      "problem": "Administrative job retry could overwrite concurrent active claim",
+      "implementation": "main.retry_job",
+      "status": "FIXED_IN_DEPLOYED_SOURCE11_REGRESSION_PASS",
+      "regression_evidence": [
+        "tests/postgres_checks.py::administrative_retry_cannot_overwrite_claim"
+      ]
+    },
+    {
+      "id": "SEC-07",
+      "priority": "P1",
+      "problem": "User roster ignored complete site and legal grant conjunction",
+      "implementation": "auth.users; auth_admin.accessible",
+      "status": "FIXED_IN_DEPLOYED_SOURCE11_REGRESSION_PASS",
+      "regression_evidence": [
+        "backend/tests/test_domain.py::test_scoped_user_roster_conjoins_legal_and_site_and_redacts_specialist_email"
+      ]
+    },
+    {
+      "id": "SEC-08",
+      "priority": "P1",
+      "problem": "Handoff selection or claim could reconnect a former employment conversation",
+      "implementation": "chat.handoff; domain.claim_case",
+      "status": "FIXED_IN_DEPLOYED_SOURCE11_REGRESSION_PASS",
+      "regression_evidence": [
+        "backend/tests/test_domain.py::test_rehire_handoff_uses_current_conversation_and_old_capture_is_private"
+      ]
+    },
+    {
+      "id": "SEC-09",
+      "priority": "P1",
+      "problem": "Technical audit view could disclose free business reasons quoting private sources",
+      "implementation": "auth.audit_events; domain.journey_command",
+      "status": "FIXED_IN_DEPLOYED_SOURCE11_REGRESSION_PASS",
+      "regression_evidence": [
+        "backend/tests/test_domain.py::test_platform_audit_metadata_does_not_expose_business_reason"
+      ]
+    },
+    {
+      "id": "SEC-10",
+      "priority": "P2",
+      "problem": "Local HR could mutate deployment-wide AI configuration",
+      "implementation": "local_ai.require_global_operator",
+      "status": "FIXED_IN_DEPLOYED_SOURCE11_REGRESSION_PASS",
+      "regression_evidence": [
+        "backend/tests/test_domain.py::test_local_ai_mutations_require_deployment_wide_administration"
+      ]
+    },
+    {
+      "id": "SEC-11",
+      "priority": "P1",
+      "problem": "Presend did not fence explicit old conversation against a new current MAX binding",
+      "implementation": "transport_api.valid_outbox; domain.emit; chat.handoff",
+      "status": "FIXED_IN_DEPLOYED_SOURCE11_REGRESSION_PASS",
+      "regression_evidence": [
+        "backend/tests/test_max.py::test_presend_rejects_old_episode_context_even_with_new_current_binding"
+      ]
+    },
+    {
+      "id": "SEC-12",
+      "priority": "P1",
+      "problem": "Matching site labels could let local HR reset a global technical operator account",
+      "implementation": "auth_admin.accessible",
+      "status": "FIXED_IN_DEPLOYED_SOURCE11_REGRESSION_PASS",
+      "regression_evidence": [
+        "backend/tests/test_domain.py::test_scoped_hr_cannot_reset_technical_operator_with_matching_site_labels"
+      ]
+    },
+    {
+      "id": "WF-01",
+      "priority": "P1_WORKFLOW",
+      "problem": "A substitute manager received a reassigned task but could not access or complete it",
+      "implementation": "domain.task_authorize; domain.task_view; domain.dashboard_data; domain.scan_deadlines; transport_api.valid_outbox",
+      "status": "FIXED_IN_DEPLOYED_SOURCE11_REGRESSION_PASS",
+      "regression_evidence": [
+        "backend/tests/test_domain.py::test_manager_reassignment_resets_ack_and_revokes_old",
+        "backend/tests/test_max.py::test_delegated_task_reminder_rechecks_exact_assignment"
+      ]
+    },
+    {
+      "id": "SEC-13",
+      "priority": "P1",
+      "problem": "Regional HR could edit legacy global scenario/menu or programs outside its complete grant",
+      "implementation": "domain._scenario_access; domain._menu_access; employee applicability and transport_api.valid_outbox",
+      "status": "FIXED_IN_DEPLOYED_SOURCE11_REGRESSION_PASS",
+      "regression_evidence": [
+        "backend/tests/test_domain.py::test_regional_hr_program_menu_scope_and_employee_applicability"
+      ]
+    },
+    {
+      "id": "SEC-14",
+      "priority": "P1",
+      "problem": "A scenario attachment reference could widen source material scope or survive employee transfer",
+      "implementation": "assets.can_employee_access_asset; scenario employee material guards; transport_api.valid_outbox",
+      "status": "FIXED_IN_DEPLOYED_SOURCE11_REGRESSION_PASS",
+      "regression_evidence": [
+        "tests/test_citation_delivery.py::test_scenario_reference_cannot_widen_material_employee_scope",
+        "tests/test_citation_delivery.py::test_max_presend_rechecks_attachment_scope_after_employee_transfer"
+      ]
+    },
+    {
+      "id": "AUDIT-01",
+      "priority": "P1_PRIVACY",
+      "problem": "Human review reasons need durable business audit without raw source text in technical events",
+      "implementation": "common.audit; auth.audit_events; critical existing reason callsites",
+      "status": "FIXED_IN_DEPLOYED_SOURCE11_REGRESSION_PASS",
+      "regression_evidence": [
+        "backend/tests/test_reporting_context.py::test_manual_account_change_private_audit_reason",
+        "backend/tests/test_domain.py::test_platform_audit_metadata_does_not_expose_business_reason"
+      ]
+    },
+    {
+      "id": "WF-02",
+      "priority": "P1_WORKFLOW",
+      "problem": "Responsible HR needed explicit atomic reassignment and eligibility checks on scope changes",
+      "implementation": "knowledge_ownership; knowledge document create/PATCH/GET",
+      "status": "IMPLEMENTED_DEPLOYED_SOURCE11_REGRESSION_PASS",
+      "regression_evidence": [
+        "tests/test_knowledge_ownership.py (4 tests)"
+      ]
+    },
+    {
+      "id": "SEC-15",
+      "priority": "P1_GOVERNANCE",
+      "problem": "A prior semantic PASS report could authorize changed generation/pipeline source without new review",
+      "implementation": "local_ai.register_models; rag_identity; pipeline/profile/QA identities",
+      "status": "FIXED_IN_DEPLOYED_SOURCE11_REGRESSION_PASS",
+      "regression_evidence": [
+        "backend/tests/test_domain.py::test_local_ai_registry_selects_deployed_generator_and_validates_input",
+        "tests/test_pipeline_profile.py",
+        "tests/test_rag_identity.py"
+      ]
+    },
+    {
+      "id": "WF-03",
+      "priority": "P1_WORKFLOW",
+      "problem": "Planned trusted PREBOARDING/ACTIVE stage from final OpenAPI lacked durable due-time execution",
+      "implementation": "employment_stages; domain stage/operation/lifecycle hooks",
+      "status": "IMPLEMENTED_DEPLOYED_SOURCE11_REGRESSION_PASS",
+      "regression_evidence": [
+        "backend/tests/test_employment_stages.py (11 tests)",
+        "tests/postgres-check-report.json::scheduled_employment_stage_actual_worker"
+      ]
+    },
+    {
+      "id": "SEC-16",
+      "priority": "P1",
+      "problem": "A previously PASSED local AI validation could reactivate a suspended profile after current semantic review was revoked or deployment changed",
+      "implementation": "local_ai.assert_current_activation_target; local_ai.profile_identity_matches; rag_identity.pipeline_identities",
+      "status": "FIXED_IN_DEPLOYED_SOURCE15_REGRESSION_PASS",
+      "regression_evidence": [
+        "backend/tests/test_local_ai_activation.py (19 parameterized cases)",
+        "tests/test_rag_identity.py::test_module_constant_change_invalidates_deployment_identity"
+      ],
+      "limits": "Manifest/quality reports and HTTP health are explicit synthetic fixtures in these negative/activation tests, not evidence of real model quality or a live-service acceptance test."
+    },
+    {
+      "id": "SEC-17",
+      "priority": "P1",
+      "problem": "Answer messenger cap excluded footer in approved/generated modes, and footer display labels were unbounded",
+      "implementation": "retrieval.citation_footer; retrieval.answer_question",
+      "status": "FIXED_IN_DEPLOYED_SOURCE15_REGRESSION_PASS",
+      "regression_evidence": [
+        "tests/test_retrieval.py::test_approved_card_combined_body_footer_cap_preserves_canonical_content",
+        "tests/test_retrieval.py::test_citation_display_footer_is_bounded_without_mutating_canonical_titles",
+        "qa/retrieval-source14-code-review.json"
+      ]
+    },
+    {
+      "id": "SEC-18",
+      "priority": "P1",
+      "problem": "Numeric/contact literals could be attributed to the wrong cited source or accepted as a substring of a different value",
+      "implementation": "retrieval.validate_generated",
+      "status": "FIXED_IN_DEPLOYED_SOURCE15_REGRESSION_PASS",
+      "regression_evidence": [
+        "tests/test_retrieval.py::test_numbers_and_contacts_must_match_the_actually_cited_claim_source",
+        "qa/retrieval-source14-code-review.json"
+      ],
+      "limits": "Exact cited literals are a conservative mechanical guard, not semantic entailment or model-quality acceptance"
+    }
+  ],
+  "additional_verified_boundaries": [
+    "Jobs API returns metadata only, not Job.payload; worker.error is an exception class name.",
+    "Health/model registry expose local runtime/artifact metadata; no employee conversations, feedback or source excerpts found in inspected fields.",
+    "Generic operation owner access still requires current business role/scope; non-owner knowledge operations use current revision ACL.",
+    "Confirmed recruiter links require current assigned HR role/scope plus admin verification and presend revision guard."
+  ],
+  "related_root_owned_work": [
+    {
+      "component": "operations MAX integration changes",
+      "status": "DEPLOYED_SOURCE11_REGRESSIONS_IN_FULL236_PASS",
+      "requirement": "Global operator gate for deployment-wide mutation"
+    },
+    {
+      "component": "assets HR source ACL",
+      "status": "DEPLOYED_SOURCE11_REGRESSIONS_IN_FULL236_PASS",
+      "requirement": "Current site AND legal grant; owner does not preserve revoked scope"
+    },
+    {
+      "component": "regional program/menu and current employee material ACL",
+      "status": "DEPLOYED_SOURCE11_REGRESSIONS_IN_FULL236_PASS",
+      "requirement": "Conjunctive site+legal program scope, no implicit scopedHR access to legacy global programs, employee applicability and presend source ACL"
+    }
+  ],
+  "limitations": [
+    "This is a targeted engineering review, not an independent penetration test or proof of every API path.",
+    "Synthetic PostgreSQL checks use a schema-only isolated database and no external MAX sends.",
+    "Multi-member publication concurrency runs CORE at an explicit disabled model-HTTP boundary; no model-quality claim.",
+    "Company security/quality acceptance and human MAX end-to-end acceptance remain separate."
+  ],
+  "concurrency_evidence": "tests/postgres-check-report.json",
+  "local_verification": {
+    "full_suite": {
+      "passed": 310,
+      "failed": 0,
+      "seconds": 24.42,
+      "subtests_passed": 6,
+      "warnings": [
+        "Upstream Starlette BlockingPortal deprecation"
+      ],
+      "scope": "Full frozen local source15; actual bounded model quality and current-image PG proof recorded separately",
+      "evidence": "tests/local-verification-report.json"
+    },
+    "ruff_F_E9_owned_and_authorized_files": "PASS",
+    "postgres_concurrency_fault_checks": "19 PASS against actual deployed15 image sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8; PostgreSQL 17.11 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit; isolated schema-only/synthetic database removed cleanup0;0MAX/modelHTTP",
+    "company_accepted": false,
+    "post_reporting_refinement_target_suite": "101 PASS, then16 reporting focus PASS",
+    "new_functional_targets": "Owner4, reporting6, identity4 PASS; diff/provenance/fallback targets11 PASS (overlapping identity4), not independent company acceptance",
+    "source12_activation_identity_audit_targeted": {
+      "passed": 31,
+      "failed": 0,
+      "seconds": 1.37,
+      "scope": "activation19 + audit6 + profile1 + identity5; local source, not deployed; preceding domain target111 PASS before one added malformed-health case"
+    },
+    "historical_source11_full_suite": {
+      "passed": 236,
+      "failed": 0,
+      "warnings": 1,
+      "seconds": 21.84,
+      "subtests_passed": 6,
+      "warning": "Upstream Starlette BlockingPortal deprecation",
+      "record_type": "Retained historical summary; current local-verification-report.json supersedes this suite"
+    },
+    "historical_source12_full_suite": {
+      "passed": 288,
+      "failed": 0,
+      "subtests_passed": 6,
+      "seconds": 24.43,
+      "scope": "Full local source12 suite; deployed current-image/final quality evidence remains separate",
+      "record_type": "Retained historical summary; current local-verification-report.json supersedes this suite"
+    },
+    "historical_source14_full_suite": {
+      "passed": 305,
+      "failed": 0,
+      "subtests_passed": 6,
+      "seconds": 23.93,
+      "scope": "Full frozen local source14; actual current-image/corpus quality proofs separate",
+      "record_type": "Retained historical summary; current local-verification-report.json supersedes this suite"
+    },
+    "postgres_current_evidence": "tests/postgres-check-report-source15.json; tests/postgres-check-cleanup-source15.json",
+    "native_current_profile_validation_activation": {
+      "status": "PASS",
+      "validation_checks": 10,
+      "evidence": "tests/local-ai-activation-report.json",
+      "scope": "Actual durable local-service validation and live activation after exact source15 quality import; not corporate semantic acceptance"
+    }
+  },
+  "current_regression_context": {
+    "release": "source15",
+    "app_image": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+    "full_local_pytest_passed": 310,
+    "subtests_passed": 6,
+    "current_pg_checks_passed": 19,
+    "company_accepted": false,
+    "limits": "Narrow regression paths; not an independent penetration test or general semantic guarantee."
+  },
+  "final_deployed_checks": {
+    "status": "PASS",
+    "checks": 24,
+    "report": "tests/deployment-check-report.json",
+    "frontend": "WEB18 frontend-only identity confirmation;23tests/18HTTPSsmokes",
+    "frontend_context": "tests/frontend-final-deployment-context.json",
+    "limits": "Targeted engineering checks; not an independent penetration test or company security acceptance."
+  }
+}

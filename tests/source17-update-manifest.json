@@ -1,0 +1,63 @@
+{
+  "schema": "korsik-source17-offline-update-v1",
+  "observed_at": "2026-10-24T08:45:56.203630+00:00",
+  "scope": "Incremental update to the original historical SOURCE15 offline bundle; not a fresh full offline restore proof",
+  "source_archive": {
+    "file": "korsik-source.tar.gz",
+    "bytes": 38487982,
+    "sha256": "b858bdbd4a7c7b466a333c804ad6f8c1f33297076b3c85b74d6aa3606ef9c35b",
+    "git_commit": "f33e88bba61cb02d09553817fa4b451192cc9c9b"
+  },
+  "source_members_verified": 394,
+  "image_patch_proof": {
+    "schema_version": 1,
+    "scope": "SINGLE_APP_IMAGE_INCIDENT17_PATCH_NOT_FULL_OFFLINE_BUNDLE_VERIFICATION",
+    "status": "PASS",
+    "created_at": "2026-10-24T08:26:10.673559+00:00",
+    "canonical_tag": "korsik-app:local",
+    "expected_image_id": "sha256:9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e",
+    "image_id_before_export": "sha256:9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e",
+    "archive": {
+      "file": "app-image.tar.gz",
+      "server_path": "/opt/korsik/offline-incident17/app-image.tar.gz",
+      "bytes": 245929667,
+      "sha256": "51ee0678c1baf5a0ef1930d7466ac072d1cffa0d6e2afeb83fa2a94f655f1c38",
+      "compression": "gzip_level_1"
+    },
+    "docker_save": {
+      "manifest_images": 1,
+      "tar_entries": 32,
+      "config_path": "blobs/sha256/9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e",
+      "config_sha256": "9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e",
+      "repo_tags": [
+        "korsik-app:local"
+      ],
+      "os": "linux",
+      "architecture": "amd64"
+    },
+    "docker_load": {
+      "performed": true,
+      "exit_code": 0,
+      "image_id_after_load": "sha256:9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e",
+      "canonical_tag_identity_verified": true
+    },
+    "operation_scope": {
+      "exported_tags": [
+        "korsik-app:local"
+      ],
+      "services_recreated": false,
+      "source_model_compose_mutations_requested": false,
+      "original_offline_bundle_touched": false
+    },
+    "elapsed_seconds": 45.76
+  },
+  "selected_quality_report": {
+    "path": "korsik-app/tests/model-quality/qwen-4b-release17.json",
+    "sha256": "c17acb211de19e3c150cedb0a41877434dd1891358684320247fa26abb555b51"
+  },
+  "model_weights_changed": false,
+  "runtime_secrets_included": false,
+  "company_hr_acceptance": false,
+  "client_cold_web_path": "DEGRADED; see included incident17-asset-path-report.json",
+  "instructions": "See korsik-app/RECOVERY-2026-10-24.md. Load original images, then current tunnel patch if using demo, then current app image patch; extract current source, import exact current review, and perform native profile validation/activation."
+}

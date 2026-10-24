@@ -1,0 +1,195 @@
+{
+  "database": "korsik_integration_check",
+  "source_data_copied": false,
+  "synthetic_fixtures_only": true,
+  "external_model_requests": 0,
+  "postgresql_server_version": "PostgreSQL 17.11 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit",
+  "checks": [
+    {
+      "name": "concurrent_episode_conversation_creation",
+      "status": "PASS",
+      "duration_seconds": 0.265,
+      "conversation_count": 1
+    },
+    {
+      "name": "concurrent_duplicate_typed_turn",
+      "status": "PASS",
+      "duration_seconds": 0.174,
+      "turns": 1,
+      "messages": 1
+    },
+    {
+      "name": "concurrent_distinct_turn_message_sequence",
+      "status": "PASS",
+      "duration_seconds": 0.186,
+      "messages": 3,
+      "contiguous_sequence": true
+    },
+    {
+      "name": "concurrent_duplicate_MAX_update",
+      "status": "PASS",
+      "duration_seconds": 0.182,
+      "turns": 1,
+      "messages": 1
+    },
+    {
+      "name": "single_capture_for_employee_across_legacy_conversations",
+      "status": "PASS",
+      "duration_seconds": 0.175,
+      "active_captures": 1,
+      "statuses": [
+        201,
+        409
+      ]
+    },
+    {
+      "name": "stale_capture_callback_after_HUMAN_and_resume",
+      "status": "PASS",
+      "duration_seconds": 0.229,
+      "old_capture_rejected": true
+    },
+    {
+      "name": "two_scheduler_leaders_no_duplicate_outbox",
+      "status": "PASS",
+      "duration_seconds": 0.527,
+      "outbox_count": 10,
+      "unique_keys": 10
+    },
+    {
+      "name": "worker_lease_fencing_rolls_back_stale_side_effect",
+      "status": "PASS",
+      "duration_seconds": 0.048,
+      "stale_side_effects_rolled_back": true,
+      "new_lease_preserved": true
+    },
+    {
+      "name": "UNKNOWN_delivery_is_not_retried",
+      "status": "PASS",
+      "duration_seconds": 0.475,
+      "manual_resolution_required": true
+    },
+    {
+      "name": "concurrent_local_AI_profile_activation",
+      "status": "PASS",
+      "duration_seconds": 0.454,
+      "switches_committed": 2,
+      "active_profiles": 1,
+      "synthetic_quality_rows_only": true,
+      "runtime_health_fixture": "EXPLICIT_CURRENT_MANIFESTS_AND_STUBBED_HEALTH_NO_HTTP"
+    },
+    {
+      "name": "concurrent_unique_job_and_outbox_helpers",
+      "status": "PASS",
+      "duration_seconds": 0.05,
+      "logical_jobs": 1,
+      "logical_outboxes": 1,
+      "both_transactions_committed": true
+    },
+    {
+      "name": "worker_process_SIGKILL_and_scheduler_reclaim",
+      "status": "PASS",
+      "duration_seconds": 0.618,
+      "worker_signal": "SIGKILL",
+      "uncommitted_side_effect_rolled_back": true,
+      "scheduler_reclaimed_lease": true,
+      "worker_attempts": 2,
+      "committed_effects": 1,
+      "external_MAX_sends": 0
+    },
+    {
+      "name": "concurrent_operation_cancel_and_checkpoint_lock_order",
+      "status": "PASS",
+      "duration_seconds": 0.223,
+      "initial_cancel_status": 412,
+      "safe_stale_retry": true,
+      "job_lock_precedes_operation": true,
+      "processing_claim_preserved": true
+    },
+    {
+      "name": "administrative_retry_cannot_overwrite_concurrent_worker_claim",
+      "status": "PASS",
+      "duration_seconds": 0.44,
+      "retry_status": 409,
+      "fresh_worker_claim_preserved": true
+    },
+    {
+      "name": "reverse_multi_member_publication_serializes_without_partial_visibility",
+      "status": "PASS",
+      "duration_seconds": 0.96,
+      "publish_statuses": [
+        412,
+        202
+      ],
+      "committed_publications": 1,
+      "member_count": 2,
+      "observer_saw_only_atomic_states": true,
+      "synthetic_CORE_boundary_no_model_HTTP": true
+    },
+    {
+      "name": "scheduled_publish_worker_success",
+      "status": "PASS",
+      "duration_seconds": 0.986,
+      "mode": "success",
+      "operation_status": "SUCCEEDED",
+      "worker_job_status": "COMPLETED",
+      "worker_attempts": 1,
+      "head_changed": true,
+      "snapshot_count_delta": 1,
+      "actual_worker_claim_handler_commit": true,
+      "synthetic_CORE_boundary_no_model_HTTP": true
+    },
+    {
+      "name": "scheduled_publish_worker_revoked_actor",
+      "status": "PASS",
+      "duration_seconds": 0.722,
+      "mode": "revoked_actor",
+      "operation_status": "FAILED",
+      "worker_job_status": "COMPLETED",
+      "worker_attempts": 1,
+      "head_changed": false,
+      "snapshot_count_delta": 0,
+      "actual_worker_claim_handler_commit": true,
+      "synthetic_CORE_boundary_no_model_HTTP": true
+    },
+    {
+      "name": "scheduled_publish_worker_postwrite_fault",
+      "status": "PASS",
+      "duration_seconds": 0.696,
+      "mode": "postwrite_fault",
+      "operation_status": "FAILED",
+      "worker_job_status": "COMPLETED",
+      "worker_attempts": 1,
+      "head_changed": false,
+      "snapshot_count_delta": 0,
+      "actual_worker_claim_handler_commit": true,
+      "synthetic_CORE_boundary_no_model_HTTP": true
+    },
+    {
+      "name": "scheduled_employment_stage_actual_worker",
+      "status": "PASS",
+      "duration_seconds": 2.533,
+      "operation_status": "SUCCEEDED",
+      "worker_job_status": "COMPLETED",
+      "worker_attempts": 1,
+      "stage": "ACTIVE",
+      "committed_stage_events": 1,
+      "actual_business_worker_claim_handler_commit": true,
+      "external_model_requests": 0,
+      "external_MAX_sends": 0
+    }
+  ],
+  "passed": 19,
+  "failed": 0,
+  "status": "PASS",
+  "execution_context": {
+    "execution_context": "one-off-api-container-current-deployed-image",
+    "app_image": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+    "source_database_read": "schema-only pg_dump; no personnel data copied",
+    "isolated_database": "korsik_integration_check",
+    "check_exit_code": 0,
+    "cleanup_exit_code": 0,
+    "isolated_database_removed": true,
+    "production_business_mutations": false,
+    "external_MAX_sends": 0
+  }
+}

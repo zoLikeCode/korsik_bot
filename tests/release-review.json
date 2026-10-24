@@ -1,0 +1,222 @@
+{
+  "schema": "korsik-targeted-release-review-v1",
+  "reviewed_at_utc": "2026-10-24T00:33:20.521754+00:00",
+  "review_status": "SOURCE_REVIEW_COMPLETE_RUNTIME_ACCEPTANCE_PENDING",
+  "scope": [
+    "Functional TODO/NotImplemented/fake-success/dead-end search in RAG/parser/knowledge/chat worker boundaries",
+    "Local model/CPU work isolation and source/privacy boundaries",
+    "Three native product feature paths and the relevant architecture/operations statements"
+  ],
+  "excluded": [
+    "Blanket penetration test, independent security certification or company HR acceptance",
+    "A new quality or load benchmark as part of this code review",
+    "Audit of every route, OS package, arbitrary input parser or external MAX platform behavior"
+  ],
+  "reviewer": "IMPLEMENTATION_REVIEW_NOT_COMPANY_HR",
+  "source_sha256": {
+    "backend/korsik/knowledge.py": "389979a75d58d1b4eb95754caaf65d9031a66b51ce5cf9d342167a8d53fcd1e4",
+    "backend/korsik/knowledge_admin.py": "240162cf758c01a6161bd9771654b79ac7bce586d993d3c7deac09fded002b54",
+    "backend/korsik/knowledge_ownership.py": "d822d7b68708e8e5351bd5d0b11dba44ec1f4e154c5b2514ebcc55b392763d36",
+    "backend/korsik/knowledge_warnings.py": "dc9eda9fb3aa57c695837a0e6169700f29fb255866ecb8c7ea2f3b48f6ec9bc4",
+    "backend/korsik/retrieval.py": "f6e104349570579c0d6d80804482a7b4b3fae406639903244cf04c18ce804340",
+    "backend/korsik/rag_identity.py": "d1ff5a242bc14b4aced2f8925f806647e302ee2832cef7b02f7560fe7f876760",
+    "backend/korsik/parsing.py": "26a61c7bf7ec76b7c74f559f81ec2d30d84919e3e46f418905a47858cb1e3dfd",
+    "backend/korsik/analysis.py": "cb3c6b6b372928a6af15ae28b72d1a5717cbc6243c9ec548557e16c0dd74ca78",
+    "backend/korsik/worker.py": "e71b3f7a0b13f0bfb8d63a2af1dd979d500533120b9cc5f828771ff0c51b7302",
+    "backend/korsik/chat.py": "5c51f29fcfce73e57a9bebdd61a62a795caea58c14b23b5ad65f28b5a1892995",
+    "backend/korsik/assets.py": "b2b727541ef5bd513bb00c7e5be7b6cc54a58ebba4b851f8b6175010db4eff74",
+    "backend/korsik/local_ai.py": "a86dd0cfb065524970841ccc7ee632a14f89826e43abb20280b4e1880cb5cfbf",
+    "backend/korsik/domain.py": "3a7fe42edaf356c919b98819996e84ad490ca3788bae413808365e36a442ebe6",
+    "services/model_server/app.py": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b",
+    "services/model_server/parser_app.py": "d9f6f5c6c31959ac31bc9abb1f16fe2df4dfe3a76f7bddae2103bd112eb149a5",
+    "frontend/src/pages/Knowledge.tsx": "6c24965ed7aa2347504508af0d2d4d56a5a9ee0e53254c18674eae58ff5eabcd",
+    "frontend/src/pages/KnowledgeMaintenance.tsx": "c36029cef425af1123d5c0577f95ef9101ac506c1c460eca520ca94c2108feac",
+    "frontend/src/pages/GapInstruction.tsx": "a226392a6e7caef850eadbd6760594c6f0d0ea15eda44bd084354f6339c2d0d7",
+    "ARCHITECTURE.md": "7c99e04e23fe5e2379fe8f07f00bf165c63343073a9e63266d952d12ca9f00ec",
+    "OPERATIONS.md": "03e8f97d6f4f6d976d4e29907d85b33b34e2805f258be555c9aa27fc529b94aa"
+  },
+  "findings": [
+    {
+      "id": "RR-01",
+      "priority": "P1",
+      "title": "Parser temporary-directory failure leaked its admission semaphore",
+      "status": "RESOLVED_AND_ISOLATED_RUNTIME_VERIFIED",
+      "source": "services/model_server/parser_app.py",
+      "resolution": "Release admission on directory setup failure; explicit tmpfs directory; ENOSPC/EDQUOT507. Two failures cannot brick parser into permanent429.",
+      "evidence": [
+        "tests/test_knowledge.py::test_parser_storage_failure_releases_admission_for_two_attempts",
+        "tests/parser-storage-report.json"
+      ],
+      "runtime_scope": "Actual network-none read-only parser image with real tmpfs inode ENOSPC:507,507, successful text parse after freeing storage;0.029s. Production parser9 restart is coordinated by root."
+    },
+    {
+      "id": "RR-02",
+      "priority": "P1",
+      "title": "Scheduled publication had no terminal operation and skipped current publisher authorization",
+      "status": "RESOLVED_AND_REGRESSION_VERIFIED",
+      "source": "backend/korsik/knowledge.py",
+      "resolution": "Persist operation/actor/review pins; fresh worker fence and scope/role checks; terminal success/failure; duplicate scheduling reuses one operation; nested transaction rolls back late publication failures.",
+      "evidence": [
+        "tests/test_knowledge.py::test_scheduled_publish_has_terminal_operation_and_fresh_authority",
+        "tests/test_knowledge.py::test_replayed_scheduled_publish_keeps_published_revision"
+      ]
+    },
+    {
+      "id": "RR-03",
+      "priority": "P1",
+      "title": "An employee could authorize a VISUAL citation but its source handler required HR edit permission",
+      "status": "RESOLVED_AND_HTTP_REGRESSION_VERIFIED",
+      "source": "backend/korsik/assets.py",
+      "resolution": "After citation owner/current-source authorization, serve its exact immutable extraction page through a private file-only helper. General HR review preview remains HR-only.",
+      "evidence": [
+        "tests/test_citation_delivery.py::test_employee_visual_citation_source_http_uses_exact_authorized_extraction"
+      ],
+      "negative_checks": [
+        "Wrong employee404",
+        "Employee scope changed410",
+        "Source revoked410"
+      ]
+    },
+    {
+      "id": "RR-04",
+      "priority": "P1",
+      "title": "Operator model validation could occupy the MAX business worker",
+      "status": "RESOLVED_BY_ROOT_AND_PARTITION_TEST_VERIFIED",
+      "source": "backend/korsik/worker.py",
+      "resolution": "LOCAL_AI_VALIDATE belongs to ingest partition with250-second lease. Answer jobs remain in their own worker; MAX_UPDATE stays in business partition.",
+      "evidence": [
+        "tests/test_worker_partition.py"
+      ]
+    },
+    {
+      "id": "RR-05",
+      "priority": "P1",
+      "title": "Fresh connected deployment lacked the semantic review artifact required to activate FULL",
+      "status": "RESOLVED_BY_ROOT_SOURCE_AND_RUNBOOK",
+      "source": "scripts/install-quality-report.py",
+      "resolution": "Explicit operator import verifies exact manifest/files and retrieval/renderer identities before copying the separately scoped review. Missing/stale report remains a blocked activation.",
+      "evidence": [
+        "scripts/install-quality-report.py",
+        "OPERATIONS.md",
+        "backend/korsik/local_ai.py"
+      ],
+      "runtime_acceptance": "Release10 scoped20-case semantic review PASS, strict report import completed, native selected profile validation10/10PASS and activation completed. HTTP100 remains a separate gate; old report is not current proof."
+    },
+    {
+      "id": "RR-06",
+      "priority": "P1",
+      "title": "FR-KB-012 had dependency invalidation but no native structural revision comparison",
+      "status": "IMPLEMENTED_SOURCE_AND_TARGETED_TESTS_NATIVE_DEPLOYMENT_PROOF_PENDING",
+      "source": "backend/korsik/knowledge.py",
+      "resolution": "Bounded read-only same-document comparison with exact extraction pins, physical-page/kind/reading-order alignment, metadata/text/table/image-hash changes, honest truncation and unavailable-history labels.",
+      "evidence": [
+        "tests/test_knowledge.py::test_revision_comparison_preserves_pins_and_compares_physical_structure",
+        "tests/test_knowledge.py::test_revision_comparison_limits_scope_and_unavailable_history"
+      ],
+      "limits": "60physicalpages,1000blocks/extraction,4000textchars/page-side,512KiB response. No semantic page movement or legal impact inference."
+    },
+    {
+      "id": "RR-07",
+      "priority": "P1",
+      "title": "A failed generation could quote only two parents while its only relevant evidence was third",
+      "status": "RESOLVED_AND_REGRESSION_VERIFIED",
+      "source": "backend/korsik/retrieval.py",
+      "resolution": "After generation failure return every complete retrieved parent only if complete rendered text plus actual source footer fits3500characters; otherwise explicit EVIDENCE_TOO_LONG_FOR_SAFE_EXTRACT handoff. No source conditions are cut.",
+      "evidence": [
+        "tests/test_retrieval.py::test_failed_generation_preserves_third_parent_or_handoffs_without_cutting"
+      ]
+    }
+  ],
+  "functional_stub_scan": {
+    "result": "NO_UNIMPLEMENTED_PRODUCTION_STUB_FOUND_IN_REVIEWED_PATHS",
+    "notes": [
+      "Exception marker classes use pass legitimately; parser exception cleanup paths are not placeholder success.",
+      "Worker fallbacks produce explicit HANDOFF/EXTRACT states and preserve failure reason; unknown job types raise and enter durable retry/failure, rather than reporting success.",
+      "CORE lexical extraction is explicitly limited; FULL model failure does not silently manufacture embeddings or call an external model.",
+      "Synthetic classifier fixtures and demonstration source review remain labeled and are not company-domain quality claims."
+    ]
+  },
+  "native_feature_paths": [
+    {
+      "feature": "Question→HR→knowledge instruction",
+      "source_path": "ensure_knowledge_gap→owner/triage→anonymization-confirmed ARTICLE draft with exact dependencies→candidate/QA/review/publish→gap_resolve current active instruction",
+      "boundaries": [
+        "No private chat automatically enters search index",
+        "Gap resolution and employee case resolution are independent",
+        "Owner assignment does not grant document access"
+      ],
+      "status": "IMPLEMENTED_REVIEWED_SCOPE"
+    },
+    {
+      "feature": "Work blocker→verified resolution",
+      "source_path": "BLOCKER case→authorized HR owner/deadline→resolution attempt/confirmation token→employee CONFIRMED or REOPENED",
+      "boundaries": [
+        "Current episode and attempt token checked",
+        "Silence marks overdue rather than success",
+        "Administrative closure has distinct CLOSED_WITHOUT_CONFIRMATION result"
+      ],
+      "status": "IMPLEMENTED_REVIEWED_SCOPE"
+    },
+    {
+      "feature": "Regulation replacement→impact review/regression→atomic publication",
+      "source_path": "New revision→bounded structural comparison→exact dependencies/impact withdraw-or-joint replacement→frozen control suite→manual rubric/review→snapshot CAS publication",
+      "boundaries": [
+        "No semantic impact guarantee from a hash match",
+        "Old golden source expectations are not silently rewritten",
+        "New revision and replacement instruction may publish together; failed/cancelled candidate leaves old snapshot"
+      ],
+      "status": "SOURCE_COMPLETE_NATIVE_RELEASE10_PROOF_PENDING"
+    }
+  ],
+  "runtime_and_privacy_boundaries": {
+    "reviewed": [
+      "OCR, embeddings, reranking and generation execute outside the API request event loop in isolated workers/local services.",
+      "Candidate and QA routes enqueue durable jobs; checkpoints do not retain KG/job locks across model requests.",
+      "Generator admission, inference time and request budget are bounded; controlled503 failure timings are retained.",
+      "Current source/employee scope is rechecked; private citations and MAX source assets do not expose a public unauthenticated document URL.",
+      "Models cannot execute tools, credentials, shell commands or domain actions. Health exposes artifact identity, not document text."
+    ],
+    "residual_limits": [
+      "Upload async handlers still perform bounded synchronous SQL/filesystem/hash work; slow storage or unusually high concurrent uploads require a separate operational load assessment.",
+      "Local lexical recall scans permitted SQL chunks. Large-corpus CPU scale is not established by the small demonstration corpus.",
+      "Mechanical citation/number checks cannot prove semantic truth; known raw-model failures remain recorded and guarded."
+    ]
+  },
+  "validation": {
+    "targeted_owned_suite": {
+      "passed": 93,
+      "seconds": 6.96,
+      "scope": "knowledge/retrieval/admin/citations/identity/ownership; no real model network in unit fixtures"
+    },
+    "ruff": "PASS_F_E9",
+    "new_model_calls_during_static_review": 0,
+    "release10_scoped_semantic_review": {
+      "status": "PASS",
+      "report": "model-quality/qwen-4b-release10.json",
+      "cases": 20,
+      "modes": {
+        "LOCAL_GENERATED": 7,
+        "EXTRACT": 11,
+        "HANDOFF": 2
+      },
+      "scope": "Implementation regression set with source-limited conflict response; not company HR acceptance or HTTP100",
+      "pipeline_seconds_p50": 7.919,
+      "pipeline_seconds_p95_nearest_rank": 23.662,
+      "pipeline_seconds_max": 24.093,
+      "strict_report_import": "IMPORTED_ROOT_VERIFIED",
+      "native_profile_validation_and_activation": {
+        "status": "PASS",
+        "profile_id": "9f53ccae-0e30-474d-9efb-aefc37eccebb",
+        "validation_id": "d4698726-a58f-4a77-9b9a-888f0936fa83",
+        "checks_passed": 10,
+        "report": "local-ai-activation-report.json"
+      }
+    },
+    "isolated_fault_probe": "tests/parser-storage-report.json",
+    "runtime_gates_pending": [
+      "Complete final100-question HTTP workload and offline restore/fault proofs; source9 preliminary run is explicitly a diagnostic NFR miss, not100-query acceptance"
+    ]
+  },
+  "remaining_reviewed_source_blockers": 0,
+  "blanket_security_or_company_acceptance_claim": false
+}

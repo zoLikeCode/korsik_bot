@@ -1,0 +1,475 @@
+{
+  "schema": "korsik-release26-app-web-image-patch-v1",
+  "status": "PASS",
+  "observed_at": "2026-10-24T21:10:48.381833+00:00",
+  "archive": "/opt/korsik/offline-release26/app-web-images.tar.gz",
+  "archive_bytes": 273845065,
+  "archive_sha256": "6a028f0f3219e7336ab1030b113f493a0eb77c70cd68e374832c6faa1153dec2",
+  "directory_mode": "0o700",
+  "archive_mode": "0o600",
+  "images": [
+    {
+      "tag": "korsik-app:local",
+      "config_sha256": "sha256:062abf9c159001182f602d2d36a115d37d51bb4948a8bd968d99433e03451da2",
+      "matches_running_image": true
+    },
+    {
+      "tag": "korsik-web:local",
+      "config_sha256": "sha256:379dd6d34c7ff15f0241442f7aac5e9d4ebbbb575770f097693b5cf84ad1906c",
+      "matches_running_image": true
+    }
+  ],
+  "only_current_two_images": true,
+  "docker_load_exit_code": 0,
+  "canonical_tags_before": {
+    "korsik-app:local": "sha256:062abf9c159001182f602d2d36a115d37d51bb4948a8bd968d99433e03451da2",
+    "korsik-web:local": "sha256:379dd6d34c7ff15f0241442f7aac5e9d4ebbbb575770f097693b5cf84ad1906c"
+  },
+  "canonical_tags_after": {
+    "korsik-app:local": "sha256:062abf9c159001182f602d2d36a115d37d51bb4948a8bd968d99433e03451da2",
+    "korsik-web:local": "sha256:379dd6d34c7ff15f0241442f7aac5e9d4ebbbb575770f097693b5cf84ad1906c"
+  },
+  "all_tagged_images_before": {
+    "korsik-web:local": "sha256:379dd6d34c7ff15f0241442f7aac5e9d4ebbbb575770f097693b5cf84ad1906c",
+    "korsik-web:release26-candidate": "sha256:379dd6d34c7ff15f0241442f7aac5e9d4ebbbb575770f097693b5cf84ad1906c",
+    "korsik-app:local": "sha256:062abf9c159001182f602d2d36a115d37d51bb4948a8bd968d99433e03451da2",
+    "korsik-app:release26-candidate": "sha256:062abf9c159001182f602d2d36a115d37d51bb4948a8bd968d99433e03451da2",
+    "korsik-web:release25-candidate": "sha256:e9c324b2ddf5fd19cb9a9858e45efb8ce6aa874f2fd4bd3562a8d4121f0cbf16",
+    "korsik-web:release26-rollback-20261024T210823Z": "sha256:e9c324b2ddf5fd19cb9a9858e45efb8ce6aa874f2fd4bd3562a8d4121f0cbf16",
+    "korsik-app:release25-candidate": "sha256:cfffe35fc7dbf514ff1f8cbf3cc7a82c7e466a1d3065fefa2ad22eea455086bd",
+    "korsik-app:release26-rollback-20261024T210823Z": "sha256:cfffe35fc7dbf514ff1f8cbf3cc7a82c7e466a1d3065fefa2ad22eea455086bd",
+    "korsik-web:release24-candidate": "sha256:a4268e24d4a9e3fb4ab61aecb237e28b9df5620ed2ac9ddae57cefe0ef6af67b",
+    "korsik-web:release25-rollback-20261024T202120Z": "sha256:a4268e24d4a9e3fb4ab61aecb237e28b9df5620ed2ac9ddae57cefe0ef6af67b",
+    "korsik-app:release24-candidate": "sha256:ce57b035cbb96aaad488e2b30e08bcdb7130f31168049f838e35e00986af2adc",
+    "korsik-app:release25-rollback-20261024T202120Z": "sha256:ce57b035cbb96aaad488e2b30e08bcdb7130f31168049f838e35e00986af2adc",
+    "korsik-web:release23-candidate": "sha256:8cfb7554230cc1517133ddd20bed074cc509c3c33b6be388c7f0334af81e35ad",
+    "korsik-web:release24-rollback-20261024T195252Z": "sha256:8cfb7554230cc1517133ddd20bed074cc509c3c33b6be388c7f0334af81e35ad",
+    "korsik-app:release23-candidate": "sha256:db2d49d4bb9c4cd7ce4ad8b8188a7b106f725de88a67be20cc867a646edd1129",
+    "korsik-app:release24-rollback-20261024T195252Z": "sha256:db2d49d4bb9c4cd7ce4ad8b8188a7b106f725de88a67be20cc867a646edd1129",
+    "korsik-web:release22-candidate": "sha256:144245af17b89da21cdbe4f8c0512042a747f37d2efa75ae1a14c28eb4d710e4",
+    "korsik-web:release23-rollback-20261024T184207Z": "sha256:144245af17b89da21cdbe4f8c0512042a747f37d2efa75ae1a14c28eb4d710e4",
+    "korsik-app:release22-candidate": "sha256:4c231ca0d21559fc949ab0b81c6141dadf87776d10d0b0816df385ea924c3410",
+    "korsik-app:release23-rollback-20261024T184207Z": "sha256:4c231ca0d21559fc949ab0b81c6141dadf87776d10d0b0816df385ea924c3410",
+    "korsik-web:release22-rollback-20261024T180603Z": "sha256:e683d5c40bf94ac589314dbe874e1066c1adf8702f89821d575eab87c1df19d0",
+    "korsik-app:release22-rollback-20261024T180603Z": "sha256:58b04354205f5c67d98930a9a5129d6fc0f57c6213942fe067aae8a594cb4afe",
+    "korsik-web:release21-rollback-20261024T172700Z": "sha256:85fd5765b1812eabcd9d166a69e78c80b5120ec15049eb76ef3009df5e38197f",
+    "korsik-web:release20-rollback-20261024T162356Z": "sha256:e323f9808e11143d4038d7e2d5934a4039b5ad18b2d19b092cfbca3d0b702547",
+    "korsik-web:release19-login-rollback-20261024T124846Z": "sha256:a72c107faa4bc6ff8b16d95dcccac0957b933c7bcb36dcd14d798edae5950be0",
+    "korsik-app:release21-rollback-20261024T172700Z": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+    "korsik-web:release19-rollback-20261024T122715Z": "sha256:2c507d5b14b1f4a81462d7c69a459d05fa3496c596beaf2226ceb92909038e59",
+    "korsik-web:release18-pre-ui-smoke": "sha256:32e0c2e2855473a3a02a876aacc73413873d621196a7ff27513ccf9d566bf0b9",
+    "korsik-app:release18-pre-rehire": "sha256:13072bcb1297f977beaa88557042af58a6c643c12767b16e4955264507ea76a9",
+    "korsik-app:rollback17": "sha256:9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e",
+    "korsik-app:incident16-rejected": "sha256:3b4cc55cb942581efe56a859310779f0e332131b0784d36ac129f498ed9623d3",
+    "korsik-tunnel:local": "sha256:b74b8bf3c660f98df9ed51099c79d1b2eafdb4922b8cf6fd593a3eb87b056723",
+    "korsik-web:rollback18": "sha256:16438bcef011b1373c6dcd0fe0740c8322546b9796bd366a0b951d76ef505a88",
+    "korsik-app:source15-rollback": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+    "korsik-generator:local": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079",
+    "korsik-models:cpu": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+    "korsik-parser:structure": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf",
+    "korsik-parser:structure9": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf",
+    "korsik-parser:local": "sha256:edbd38b7ef991b1b4cf7610138371a8153499ace353a563571d0a6916ef2be14",
+    "korsik-parser:local9": "sha256:edbd38b7ef991b1b4cf7610138371a8153499ace353a563571d0a6916ef2be14",
+    "nginx:stable-alpine": "sha256:88f52f3d58a505b7e1ad96ca6969478517bcccb58418e75a54223271a64da7df",
+    "node:24-alpine": "sha256:fecf2188af16d8979528abb79909513c78971103c52f677d69584e93c3a0ffcf",
+    "postgres:17-alpine": "sha256:ab20e934b27ba3ff927c1b4c9ff8cf6c32f315f743efe68dd3441182a87fb085",
+    "caddy:2-alpine": "sha256:3067cc4e02c091399edbd5d65f85a3ff4d511574aecadb47f280c3761e68852e",
+    "qdrant/qdrant:v1.20.0": "sha256:8a80c5500151ab2b08eb5874698b81b6b8addbc53ef4fb0c47f516680cf413d2",
+    "python:3.12-slim": "sha256:a33c10a97f11005523814c6eee013986119fe41f3122f444518117536675c8e1",
+    "ubuntu:22.04": "sha256:cee13550f97b8a595506e8e4ca74263ba44924248779a4ba4f942e197652acff",
+    "cloudflare/cloudflared:2026.9.0": "sha256:74a25005583550adb080f07893aba535d2d91742e54dea5900e4712355a42347",
+    "pytorch/pytorch:2.9.1-cuda12.8-cudnn9-runtime": "sha256:9a925cca9d307c87d9ee4deef94aad763d9ee0717670d8e29dd0ed2c9d1edc3d"
+  },
+  "all_tagged_images_after": {
+    "korsik-web:local": "sha256:379dd6d34c7ff15f0241442f7aac5e9d4ebbbb575770f097693b5cf84ad1906c",
+    "korsik-web:release26-candidate": "sha256:379dd6d34c7ff15f0241442f7aac5e9d4ebbbb575770f097693b5cf84ad1906c",
+    "korsik-app:local": "sha256:062abf9c159001182f602d2d36a115d37d51bb4948a8bd968d99433e03451da2",
+    "korsik-app:release26-candidate": "sha256:062abf9c159001182f602d2d36a115d37d51bb4948a8bd968d99433e03451da2",
+    "korsik-web:release25-candidate": "sha256:e9c324b2ddf5fd19cb9a9858e45efb8ce6aa874f2fd4bd3562a8d4121f0cbf16",
+    "korsik-web:release26-rollback-20261024T210823Z": "sha256:e9c324b2ddf5fd19cb9a9858e45efb8ce6aa874f2fd4bd3562a8d4121f0cbf16",
+    "korsik-app:release25-candidate": "sha256:cfffe35fc7dbf514ff1f8cbf3cc7a82c7e466a1d3065fefa2ad22eea455086bd",
+    "korsik-app:release26-rollback-20261024T210823Z": "sha256:cfffe35fc7dbf514ff1f8cbf3cc7a82c7e466a1d3065fefa2ad22eea455086bd",
+    "korsik-web:release24-candidate": "sha256:a4268e24d4a9e3fb4ab61aecb237e28b9df5620ed2ac9ddae57cefe0ef6af67b",
+    "korsik-web:release25-rollback-20261024T202120Z": "sha256:a4268e24d4a9e3fb4ab61aecb237e28b9df5620ed2ac9ddae57cefe0ef6af67b",
+    "korsik-app:release24-candidate": "sha256:ce57b035cbb96aaad488e2b30e08bcdb7130f31168049f838e35e00986af2adc",
+    "korsik-app:release25-rollback-20261024T202120Z": "sha256:ce57b035cbb96aaad488e2b30e08bcdb7130f31168049f838e35e00986af2adc",
+    "korsik-web:release23-candidate": "sha256:8cfb7554230cc1517133ddd20bed074cc509c3c33b6be388c7f0334af81e35ad",
+    "korsik-web:release24-rollback-20261024T195252Z": "sha256:8cfb7554230cc1517133ddd20bed074cc509c3c33b6be388c7f0334af81e35ad",
+    "korsik-app:release23-candidate": "sha256:db2d49d4bb9c4cd7ce4ad8b8188a7b106f725de88a67be20cc867a646edd1129",
+    "korsik-app:release24-rollback-20261024T195252Z": "sha256:db2d49d4bb9c4cd7ce4ad8b8188a7b106f725de88a67be20cc867a646edd1129",
+    "korsik-web:release22-candidate": "sha256:144245af17b89da21cdbe4f8c0512042a747f37d2efa75ae1a14c28eb4d710e4",
+    "korsik-web:release23-rollback-20261024T184207Z": "sha256:144245af17b89da21cdbe4f8c0512042a747f37d2efa75ae1a14c28eb4d710e4",
+    "korsik-app:release22-candidate": "sha256:4c231ca0d21559fc949ab0b81c6141dadf87776d10d0b0816df385ea924c3410",
+    "korsik-app:release23-rollback-20261024T184207Z": "sha256:4c231ca0d21559fc949ab0b81c6141dadf87776d10d0b0816df385ea924c3410",
+    "korsik-web:release22-rollback-20261024T180603Z": "sha256:e683d5c40bf94ac589314dbe874e1066c1adf8702f89821d575eab87c1df19d0",
+    "korsik-app:release22-rollback-20261024T180603Z": "sha256:58b04354205f5c67d98930a9a5129d6fc0f57c6213942fe067aae8a594cb4afe",
+    "korsik-web:release21-rollback-20261024T172700Z": "sha256:85fd5765b1812eabcd9d166a69e78c80b5120ec15049eb76ef3009df5e38197f",
+    "korsik-web:release20-rollback-20261024T162356Z": "sha256:e323f9808e11143d4038d7e2d5934a4039b5ad18b2d19b092cfbca3d0b702547",
+    "korsik-web:release19-login-rollback-20261024T124846Z": "sha256:a72c107faa4bc6ff8b16d95dcccac0957b933c7bcb36dcd14d798edae5950be0",
+    "korsik-app:release21-rollback-20261024T172700Z": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+    "korsik-web:release19-rollback-20261024T122715Z": "sha256:2c507d5b14b1f4a81462d7c69a459d05fa3496c596beaf2226ceb92909038e59",
+    "korsik-web:release18-pre-ui-smoke": "sha256:32e0c2e2855473a3a02a876aacc73413873d621196a7ff27513ccf9d566bf0b9",
+    "korsik-app:release18-pre-rehire": "sha256:13072bcb1297f977beaa88557042af58a6c643c12767b16e4955264507ea76a9",
+    "korsik-app:rollback17": "sha256:9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e",
+    "korsik-app:incident16-rejected": "sha256:3b4cc55cb942581efe56a859310779f0e332131b0784d36ac129f498ed9623d3",
+    "korsik-tunnel:local": "sha256:b74b8bf3c660f98df9ed51099c79d1b2eafdb4922b8cf6fd593a3eb87b056723",
+    "korsik-web:rollback18": "sha256:16438bcef011b1373c6dcd0fe0740c8322546b9796bd366a0b951d76ef505a88",
+    "korsik-app:source15-rollback": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+    "korsik-models:cpu": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+    "korsik-generator:local": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079",
+    "korsik-parser:local": "sha256:edbd38b7ef991b1b4cf7610138371a8153499ace353a563571d0a6916ef2be14",
+    "korsik-parser:local9": "sha256:edbd38b7ef991b1b4cf7610138371a8153499ace353a563571d0a6916ef2be14",
+    "korsik-parser:structure": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf",
+    "korsik-parser:structure9": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf",
+    "nginx:stable-alpine": "sha256:88f52f3d58a505b7e1ad96ca6969478517bcccb58418e75a54223271a64da7df",
+    "node:24-alpine": "sha256:fecf2188af16d8979528abb79909513c78971103c52f677d69584e93c3a0ffcf",
+    "postgres:17-alpine": "sha256:ab20e934b27ba3ff927c1b4c9ff8cf6c32f315f743efe68dd3441182a87fb085",
+    "caddy:2-alpine": "sha256:3067cc4e02c091399edbd5d65f85a3ff4d511574aecadb47f280c3761e68852e",
+    "qdrant/qdrant:v1.20.0": "sha256:8a80c5500151ab2b08eb5874698b81b6b8addbc53ef4fb0c47f516680cf413d2",
+    "python:3.12-slim": "sha256:a33c10a97f11005523814c6eee013986119fe41f3122f444518117536675c8e1",
+    "ubuntu:22.04": "sha256:cee13550f97b8a595506e8e4ca74263ba44924248779a4ba4f942e197652acff",
+    "cloudflare/cloudflared:2026.9.0": "sha256:74a25005583550adb080f07893aba535d2d91742e54dea5900e4712355a42347",
+    "pytorch/pytorch:2.9.1-cuda12.8-cudnn9-runtime": "sha256:9a925cca9d307c87d9ee4deef94aad763d9ee0717670d8e29dd0ed2c9d1edc3d"
+  },
+  "containers_before": {
+    "answer-worker": {
+      "container_id": "bf094b88058c19613e04eb0ebd44e64ab719c4a0c7b06ebf534c8b0025f89110",
+      "image_id": "sha256:062abf9c159001182f602d2d36a115d37d51bb4948a8bd968d99433e03451da2",
+      "image_tag": "korsik-app:local",
+      "state": "running",
+      "health": "healthy"
+    },
+    "api": {
+      "container_id": "cc579b6d031ee4ed604ccac3821ae8621fc532eaef5a9da885a0248c87de0233",
+      "image_id": "sha256:062abf9c159001182f602d2d36a115d37d51bb4948a8bd968d99433e03451da2",
+      "image_tag": "korsik-app:local",
+      "state": "running",
+      "health": "healthy"
+    },
+    "encoder": {
+      "container_id": "29295c4cc4e5d35b091f28f568ee8ab4bc4b97ecc28a4583d2e5c786064aa62d",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "image_tag": "korsik-models:cpu",
+      "state": "running",
+      "health": "healthy"
+    },
+    "generator": {
+      "container_id": "7901be4dd2334a58ccc78de6ccb6254b8be606576dd5eb2d9e149376f2cd8a15",
+      "image_id": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079",
+      "image_tag": "korsik-generator:local",
+      "state": "running",
+      "health": "healthy"
+    },
+    "ingest-worker": {
+      "container_id": "b037817fd50cf185a4bd67a5a5d845a8f2f11c30259970f716d3e0fc919334f6",
+      "image_id": "sha256:062abf9c159001182f602d2d36a115d37d51bb4948a8bd968d99433e03451da2",
+      "image_tag": "korsik-app:local",
+      "state": "running",
+      "health": "healthy"
+    },
+    "max-connector": {
+      "container_id": "69422c267ee0346e761d85140541441a07aee41f48d16c6aaed6e86f4a8db0a5",
+      "image_id": "sha256:062abf9c159001182f602d2d36a115d37d51bb4948a8bd968d99433e03451da2",
+      "image_tag": "korsik-app:local",
+      "state": "running",
+      "health": "healthy"
+    },
+    "parser": {
+      "container_id": "5077617400f76cbe892430a7bc98d64e7d8780c0b014d6d2f9159b4f6463dd38",
+      "image_id": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf",
+      "image_tag": "korsik-parser:structure",
+      "state": "running",
+      "health": "healthy"
+    },
+    "postgres": {
+      "container_id": "0bdf25853214b0a4eac4111203925e2cad9252ec3b1b2d5176be246921e06837",
+      "image_id": "sha256:ab20e934b27ba3ff927c1b4c9ff8cf6c32f315f743efe68dd3441182a87fb085",
+      "image_tag": "postgres:17-alpine",
+      "state": "running",
+      "health": "healthy"
+    },
+    "qdrant": {
+      "container_id": "608fbee402829552a126bad7162c2e85c0640b82768352e02d5f584e2859b9a4",
+      "image_id": "sha256:8a80c5500151ab2b08eb5874698b81b6b8addbc53ef4fb0c47f516680cf413d2",
+      "image_tag": "qdrant/qdrant:v1.20.0",
+      "state": "running",
+      "health": null
+    },
+    "reranker": {
+      "container_id": "6cd03e9c0704439c4ff6f8105b45fd21eb62f7445fc930daf4f5627a81f706c6",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "image_tag": "korsik-models:cpu",
+      "state": "running",
+      "health": "healthy"
+    },
+    "scheduler": {
+      "container_id": "c65b9b27a214031fba0f3fc5f8438d4cef9beac6895b60e54de78bb4db40540b",
+      "image_id": "sha256:062abf9c159001182f602d2d36a115d37d51bb4948a8bd968d99433e03451da2",
+      "image_tag": "korsik-app:local",
+      "state": "running",
+      "health": "healthy"
+    },
+    "tunnel": {
+      "container_id": "f2fb32eacab97913ca6af7785ba0ff8e30e07a916ef44cc3e9f095f349b2f3ea",
+      "image_id": "sha256:b74b8bf3c660f98df9ed51099c79d1b2eafdb4922b8cf6fd593a3eb87b056723",
+      "image_tag": "korsik-tunnel:local",
+      "state": "running",
+      "health": "healthy"
+    },
+    "web": {
+      "container_id": "93c91d3dc674b73f5ea0ce9d046b8bd859802825a7d64f66088280da85d71c3c",
+      "image_id": "sha256:379dd6d34c7ff15f0241442f7aac5e9d4ebbbb575770f097693b5cf84ad1906c",
+      "image_tag": "korsik-web:local",
+      "state": "running",
+      "health": "healthy"
+    },
+    "worker": {
+      "container_id": "b27a4533ca35963194c348125e6fb460f09c910beac7cfcb75aac6d330eaf04b",
+      "image_id": "sha256:062abf9c159001182f602d2d36a115d37d51bb4948a8bd968d99433e03451da2",
+      "image_tag": "korsik-app:local",
+      "state": "running",
+      "health": "healthy"
+    }
+  },
+  "containers_after": {
+    "answer-worker": {
+      "container_id": "bf094b88058c19613e04eb0ebd44e64ab719c4a0c7b06ebf534c8b0025f89110",
+      "image_id": "sha256:062abf9c159001182f602d2d36a115d37d51bb4948a8bd968d99433e03451da2",
+      "image_tag": "korsik-app:local",
+      "state": "running",
+      "health": "healthy"
+    },
+    "api": {
+      "container_id": "cc579b6d031ee4ed604ccac3821ae8621fc532eaef5a9da885a0248c87de0233",
+      "image_id": "sha256:062abf9c159001182f602d2d36a115d37d51bb4948a8bd968d99433e03451da2",
+      "image_tag": "korsik-app:local",
+      "state": "running",
+      "health": "healthy"
+    },
+    "encoder": {
+      "container_id": "29295c4cc4e5d35b091f28f568ee8ab4bc4b97ecc28a4583d2e5c786064aa62d",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "image_tag": "korsik-models:cpu",
+      "state": "running",
+      "health": "healthy"
+    },
+    "generator": {
+      "container_id": "7901be4dd2334a58ccc78de6ccb6254b8be606576dd5eb2d9e149376f2cd8a15",
+      "image_id": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079",
+      "image_tag": "korsik-generator:local",
+      "state": "running",
+      "health": "healthy"
+    },
+    "ingest-worker": {
+      "container_id": "b037817fd50cf185a4bd67a5a5d845a8f2f11c30259970f716d3e0fc919334f6",
+      "image_id": "sha256:062abf9c159001182f602d2d36a115d37d51bb4948a8bd968d99433e03451da2",
+      "image_tag": "korsik-app:local",
+      "state": "running",
+      "health": "healthy"
+    },
+    "max-connector": {
+      "container_id": "69422c267ee0346e761d85140541441a07aee41f48d16c6aaed6e86f4a8db0a5",
+      "image_id": "sha256:062abf9c159001182f602d2d36a115d37d51bb4948a8bd968d99433e03451da2",
+      "image_tag": "korsik-app:local",
+      "state": "running",
+      "health": "healthy"
+    },
+    "parser": {
+      "container_id": "5077617400f76cbe892430a7bc98d64e7d8780c0b014d6d2f9159b4f6463dd38",
+      "image_id": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf",
+      "image_tag": "korsik-parser:structure",
+      "state": "running",
+      "health": "healthy"
+    },
+    "postgres": {
+      "container_id": "0bdf25853214b0a4eac4111203925e2cad9252ec3b1b2d5176be246921e06837",
+      "image_id": "sha256:ab20e934b27ba3ff927c1b4c9ff8cf6c32f315f743efe68dd3441182a87fb085",
+      "image_tag": "postgres:17-alpine",
+      "state": "running",
+      "health": "healthy"
+    },
+    "qdrant": {
+      "container_id": "608fbee402829552a126bad7162c2e85c0640b82768352e02d5f584e2859b9a4",
+      "image_id": "sha256:8a80c5500151ab2b08eb5874698b81b6b8addbc53ef4fb0c47f516680cf413d2",
+      "image_tag": "qdrant/qdrant:v1.20.0",
+      "state": "running",
+      "health": null
+    },
+    "reranker": {
+      "container_id": "6cd03e9c0704439c4ff6f8105b45fd21eb62f7445fc930daf4f5627a81f706c6",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "image_tag": "korsik-models:cpu",
+      "state": "running",
+      "health": "healthy"
+    },
+    "scheduler": {
+      "container_id": "c65b9b27a214031fba0f3fc5f8438d4cef9beac6895b60e54de78bb4db40540b",
+      "image_id": "sha256:062abf9c159001182f602d2d36a115d37d51bb4948a8bd968d99433e03451da2",
+      "image_tag": "korsik-app:local",
+      "state": "running",
+      "health": "healthy"
+    },
+    "tunnel": {
+      "container_id": "f2fb32eacab97913ca6af7785ba0ff8e30e07a916ef44cc3e9f095f349b2f3ea",
+      "image_id": "sha256:b74b8bf3c660f98df9ed51099c79d1b2eafdb4922b8cf6fd593a3eb87b056723",
+      "image_tag": "korsik-tunnel:local",
+      "state": "running",
+      "health": "healthy"
+    },
+    "web": {
+      "container_id": "93c91d3dc674b73f5ea0ce9d046b8bd859802825a7d64f66088280da85d71c3c",
+      "image_id": "sha256:379dd6d34c7ff15f0241442f7aac5e9d4ebbbb575770f097693b5cf84ad1906c",
+      "image_tag": "korsik-web:local",
+      "state": "running",
+      "health": "healthy"
+    },
+    "worker": {
+      "container_id": "b27a4533ca35963194c348125e6fb460f09c910beac7cfcb75aac6d330eaf04b",
+      "image_id": "sha256:062abf9c159001182f602d2d36a115d37d51bb4948a8bd968d99433e03451da2",
+      "image_tag": "korsik-app:local",
+      "state": "running",
+      "health": "healthy"
+    }
+  },
+  "all_14_container_ids_and_images_unchanged": true,
+  "containers_recreated": 0,
+  "running_containers_unchanged": true,
+  "other_image_tags_changed": 0,
+  "historical_archive_and_full15_metadata_before": {
+    "/opt/korsik/offline-release18/app-web-images.tar.gz": {
+      "inode": 1851302,
+      "bytes": 273795671,
+      "mtime_ns": 1792841557858090345,
+      "mode": "0o600"
+    },
+    "/opt/korsik/offline-release19/app-web-images.tar.gz": {
+      "inode": 1851323,
+      "bytes": 273809804,
+      "mtime_ns": 1792845133297307501,
+      "mode": "0o600"
+    },
+    "/opt/korsik/offline-release19-login/app-web-images.tar.gz": {
+      "inode": 1851334,
+      "bytes": 273810537,
+      "mtime_ns": 1792846558586353147,
+      "mode": "0o600"
+    },
+    "/opt/korsik/offline-release20/app-web-images.tar.gz": {
+      "inode": 1851351,
+      "bytes": 273804592,
+      "mtime_ns": 1792859134065585958,
+      "mode": "0o600"
+    },
+    "/opt/korsik/offline-release21/app-web-images.tar.gz": {
+      "inode": 1851375,
+      "bytes": 273812413,
+      "mtime_ns": 1792862991480968146,
+      "mode": "0o600"
+    },
+    "/opt/korsik/offline-release22/app-web-images.tar.gz": {
+      "inode": 1851703,
+      "bytes": 273826983,
+      "mtime_ns": 1792865267524727626,
+      "mode": "0o600"
+    },
+    "/opt/korsik/offline-release23/app-web-images.tar.gz": {
+      "inode": 1851778,
+      "bytes": 273854119,
+      "mtime_ns": 1792867414179937655,
+      "mode": "0o600"
+    },
+    "/opt/korsik/offline-release24/app-web-images.tar.gz": {
+      "inode": 1852754,
+      "bytes": 273831805,
+      "mtime_ns": 1792871816472468970,
+      "mode": "0o600"
+    },
+    "/opt/korsik/offline-release25/app-web-images.tar.gz": {
+      "inode": 1852728,
+      "bytes": 273837609,
+      "mtime_ns": 1792873528064860180,
+      "mode": "0o600"
+    },
+    "/opt/korsik/offline-release-source15-web18": {
+      "inode": 1851182,
+      "bytes": 4096,
+      "mtime_ns": 1792814041616377463,
+      "mode": "0o700"
+    },
+    "/opt/korsik/offline-release-source15-web18/INSTALL.txt": {
+      "inode": 1851183,
+      "bytes": 1233,
+      "mtime_ns": 1792813310508785908,
+      "mode": "0o600"
+    },
+    "/opt/korsik/offline-release-source15-web18/images.tar.gz": {
+      "inode": 1851184,
+      "bytes": 5968542233,
+      "mtime_ns": 1792812366737160731,
+      "mode": "0o600"
+    },
+    "/opt/korsik/offline-release-source15-web18/models.tar.gz": {
+      "inode": 1851187,
+      "bytes": 13554612719,
+      "mtime_ns": 1792813229980154697,
+      "mode": "0o600"
+    },
+    "/opt/korsik/offline-release-source15-web18/manifest.json": {
+      "inode": 1851188,
+      "bytes": 3205,
+      "mtime_ns": 1792814041616377463,
+      "mode": "0o600"
+    },
+    "/opt/korsik/offline-release-source15-web18/source.tar.gz": {
+      "inode": 1851198,
+      "bytes": 38636646,
+      "mtime_ns": 1792814041300378951,
+      "mode": "0o600"
+    }
+  },
+  "all_historical_archives_and_full15_stat_unchanged": true,
+  "release22_archive_stat_unchanged": true,
+  "release23_archive_stat_unchanged": true,
+  "release24_archive_stat_unchanged": true,
+  "release25_archive_stat_unchanged": true,
+  "source15_bundle_modified": false,
+  "installed_quality_report_sha256": "df11daefc64ec6cb71d8876694294a64c2391573acbe3494f07cd63eeee81795",
+  "semantic_review_reused_with_unchanged_pipeline_identity": true,
+  "quality_evidence_files": [
+    {
+      "path": "qwen-4b-release24.json",
+      "bytes": 34747,
+      "sha256": "df11daefc64ec6cb71d8876694294a64c2391573acbe3494f07cd63eeee81795"
+    },
+    {
+      "path": "quality24-actual-private.json",
+      "bytes": 596049,
+      "sha256": "e73c12e4cdd49cf1eb599a872f8c177e362a5125790aba918126e14ddc1f1fe8"
+    },
+    {
+      "path": "source24-semantic-review.json",
+      "bytes": 96617,
+      "sha256": "02b82e660d4116be9a41da78a6e220d16db84cc134049347414a3578dd184dab"
+    },
+    {
+      "path": "quality-input-manifest.json",
+      "bytes": 1915,
+      "sha256": "4d69260f79e2e804b3ddc458d22445ae588416c72d327157ef382369dbac1c38"
+    }
+  ],
+  "native_profile_id": "052c5a64-ac05-4286-a4c0-18e3fb1e77dc",
+  "metadata_manifest_sha256": "65175d50883ec1967cc38217cfe46dbc9228aad4f6ea80758b3616ebfce82988",
+  "all_patch_file_sha256": {
+    "quality-input-manifest.json": "4d69260f79e2e804b3ddc458d22445ae588416c72d327157ef382369dbac1c38",
+    "source24-semantic-review.json": "02b82e660d4116be9a41da78a6e220d16db84cc134049347414a3578dd184dab",
+    "app-web-images.tar.gz": "6a028f0f3219e7336ab1030b113f493a0eb77c70cd68e374832c6faa1153dec2",
+    "qwen-4b-release24.json": "df11daefc64ec6cb71d8876694294a64c2391573acbe3494f07cd63eeee81795",
+    "INSTALL.txt": "51e38b411831653a5a41d329567b3630ba8296b62c8a7a7da549619a478c5f54",
+    "quality24-actual-private.json": "e73c12e4cdd49cf1eb599a872f8c177e362a5125790aba918126e14ddc1f1fe8",
+    "manifest.json": "65175d50883ec1967cc38217cfe46dbc9228aad4f6ea80758b3616ebfce82988"
+  },
+  "model_weights_or_runtime_volumes_in_archive": false,
+  "cold_restore_of_this_patch_performed": false,
+  "company_accepted": false,
+  "seconds": 52.137
+}

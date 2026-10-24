@@ -1,0 +1,25 @@
+{
+  "schema": "korsik-deployed-offline-api-catalogue-proof-v1",
+  "observed_at": "2026-10-24T02:32:55.952216+00:00",
+  "status": "PASS",
+  "read_only": true,
+  "external_requests": 0,
+  "model_calls": 0,
+  "production_mutations": 0,
+  "api_image": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+  "docs_http_status": 200,
+  "json_http_status": 200,
+  "paths": 195,
+  "operations": 232,
+  "html_sha256": "c59f628606dd0c42a5cbddf5eeba5b2a32bc99e82bd68601f2f94a362c457530",
+  "scripts": 0,
+  "external_asset_references": 0,
+  "same_origin_links": [
+    "/api/openapi.json"
+  ],
+  "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'",
+  "limit": "Deployed nginx/API catalogue and schema smoke only; not API business acceptance.",
+  "api_direct_redoc_http_status": 404,
+  "frontend_redoc_spa_fallback_status": 200,
+  "initial_probe_correction": "Initial probe wrongly required frontend /redoc to return404; nginx intentionally serves SPA fallback for non-API paths. Direct API /redoc is404. Original observed report retained."
+}

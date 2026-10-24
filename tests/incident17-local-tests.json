@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "observed_at": "2026-10-24T08:19:12.835197+00:00",
+  "command": ".venv/bin/pytest -q backend/tests tests --ignore=tests/test_postgres_invariants.py",
+  "passed": 369,
+  "subtests_passed": 18,
+  "seconds": 24.62,
+  "warning": "Starlette anyio deprecated alias; no failures",
+  "scope": "Local tests; actual deployed model regression/native activation remain separate",
+  "files": {
+    "backend/korsik/chat.py": "b6b72483f63290a3768b5a7285572deeceaef854ff627a748848425613e95838",
+    "backend/korsik/max_events.py": "c4b73010cdb0608a590023bdede759cf75e228f2e94cce7ef1a9dd6fc6ff01b4",
+    "backend/korsik/seed.py": "ad237b2432412c610b0f174fe76031cf7617c34ab30b0459d90e4aef74b8e043",
+    "backend/korsik/retrieval.py": "8ecf325b6fa1bd392f4edabe9b3666ae2a9bd84a0b33d32cdaf421570476ca35",
+    "backend/tests/test_max.py": "cc0504f198961ba0cec17b4fb7cd1f40fc8e9b2d5fdac5929e35209384673e37",
+    "backend/tests/test_domain.py": "a5faf40f7e6ab00e202a2f3b6ca6899669d1a40f76433eff6d9a2c43dbdc8b94",
+    "backend/tests/test_seed_intro.py": "6126f5a0b947cc807f62f8541276ae2b039225fc1cbc7300e117916ceb29f680",
+    "tests/test_retrieval.py": "6b537a94aa07738225d0d15e96e59ca72c22abcc94583728ec6ff9603bfea05f",
+    "tests/test_knowledge_admin.py": "6d93b0363f16cd103280fe61a23f0458a990afec3aad2a1774af213f7103c3d7"
+  }
+}

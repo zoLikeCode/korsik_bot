@@ -1,0 +1,45 @@
+.hr-account-section {
+  margin-bottom: 24px;
+}
+.hr-account-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.hr-account-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 0;
+}
+.hr-account-list li + li {
+  border-top: 1px solid var(--line);
+}
+.hr-account-list li > div {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.hr-account-list p {
+  margin: 6px 0;
+}
+.hr-invite-expiry {
+  display: block;
+  margin-top: 8px;
+}
+.hr-created-invitation {
+  display: grid;
+  gap: 16px;
+}
+.hr-created-invitation p {
+  margin: 0;
+}
+.hr-create-actions {
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+@media (max-width: 600px) {
+  .hr-account-list li {
+    flex-wrap: wrap;
+  }
+}

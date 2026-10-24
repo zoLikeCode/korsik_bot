@@ -1,0 +1,46 @@
+{
+  "project": "korsik_offline_1792810989",
+  "mode": "CORE",
+  "isolated_database": "korsik_offline_check",
+  "external_MAX_sends": 0,
+  "proofs": [
+    {
+      "report": "offline-restore-report.json",
+      "status": "PASS"
+    },
+    {
+      "report": "storage-fault-report.json",
+      "status": "PASS"
+    },
+    {
+      "report": "scheduler-due-report.json",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS",
+  "release": "source15",
+  "backup": "20261024T025441Z",
+  "app_image": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+  "cleanup": {
+    "check_exit_code": 0,
+    "cleanup_exit_code": 0,
+    "isolated_resources_removed": true
+  },
+  "company_accepted": false,
+  "http100": {
+    "report": "api-latency-core-restored.json",
+    "questions": 100,
+    "completed_answers": 100,
+    "http_end_to_end": {
+      "count": 100,
+      "p50_seconds": 0.9554,
+      "p95_seconds": 1.0161,
+      "max_seconds": 1.0417
+    },
+    "modes": {
+      "EXTRACT": 100
+    },
+    "latency_target_met": true
+  },
+  "proof_scope": "Separate same-host CORE deployment with SQL lexical answers and real HTTP/durableworker benchmark; not FULL generation or company semantic acceptance."
+}

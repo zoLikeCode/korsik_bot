@@ -1,0 +1,136 @@
+{
+  "schema": "korsik-incident17-runtime-snapshot-v1",
+  "status": "PASS",
+  "observed_at": "2026-10-24T08:33:11.140651+00:00",
+  "services": {
+    "answer-worker": {
+      "state": "running",
+      "health": "",
+      "image_id": "sha256:9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e"
+    },
+    "api": {
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e"
+    },
+    "encoder": {
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e"
+    },
+    "generator": {
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079"
+    },
+    "ingest-worker": {
+      "state": "running",
+      "health": "",
+      "image_id": "sha256:9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e"
+    },
+    "max-connector": {
+      "state": "running",
+      "health": "",
+      "image_id": "sha256:9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e"
+    },
+    "parser": {
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf"
+    },
+    "postgres": {
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:ab20e934b27ba3ff927c1b4c9ff8cf6c32f315f743efe68dd3441182a87fb085"
+    },
+    "qdrant": {
+      "state": "running",
+      "health": "",
+      "image_id": "sha256:8a80c5500151ab2b08eb5874698b81b6b8addbc53ef4fb0c47f516680cf413d2"
+    },
+    "reranker": {
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e"
+    },
+    "scheduler": {
+      "state": "running",
+      "health": "",
+      "image_id": "sha256:9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e"
+    },
+    "tunnel": {
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:b74b8bf3c660f98df9ed51099c79d1b2eafdb4922b8cf6fd593a3eb87b056723"
+    },
+    "web": {
+      "state": "running",
+      "health": "healthy",
+      "image_id": "sha256:16438bcef011b1373c6dcd0fe0740c8322546b9796bd366a0b951d76ef505a88"
+    },
+    "worker": {
+      "state": "running",
+      "health": "",
+      "image_id": "sha256:9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e"
+    }
+  },
+  "native_runtime": {
+    "profile_id": "4953d2c8-52cc-4aed-80b7-66c6d0a941f2",
+    "profile_status": "ACTIVE",
+    "profile_configuration": {
+      "models": {
+        "embedder": "b287f057-f008-5f2a-8ba2-c4e86e9c4ee6",
+        "reranker": "2cf7d0c8-b4b1-5083-855a-d354248a2182",
+        "generator": "86d5168b-48a6-566c-9b4f-24351f589dad"
+      },
+      "generation_policy": "LOCAL_GENERATION",
+      "retrieval_profile": "cpu",
+      "max_context_tokens": 4096,
+      "max_input_tokens": 3840,
+      "max_new_tokens": 256,
+      "thinking": false,
+      "runtime_egress": false,
+      "pipeline_identities": {
+        "chunker_version": "korsik-physical-parent-chunker-v1",
+        "chunker_fingerprint": "64fcb0516ed01fb9f0a89ed6d2a0d8b6fb387500bc0640b4435c5f6a4cb02b2b",
+        "retrieval_policy_version": "korsik-hybrid-retrieval-guards-v1",
+        "retrieval_policy_fingerprint": "d49ea12797775b712857e149df907e0d5b552f066e1c2ff8b5e459936c298ecf",
+        "retrieval_module_source_fingerprint": "8ecf325b6fa1bd392f4edabe9b3666ae2a9bd84a0b33d32cdaf421570476ca35",
+        "generation_request_schema_version": "korsik-local-generation-request-v1",
+        "generation_runtime_source_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+      }
+    },
+    "demo_binding_status": "VERIFIED",
+    "synthetic_fixture_ended": true,
+    "synthetic_unsent": 0,
+    "sources": {
+      "chat": "b6b72483f63290a3768b5a7285572deeceaef854ff627a748848425613e95838",
+      "max_events": "c4b73010cdb0608a590023bdede759cf75e228f2e94cce7ef1a9dd6fc6ff01b4",
+      "seed": "ad237b2432412c610b0f174fe76031cf7617c34ab30b0459d90e4aef74b8e043",
+      "retrieval": "8ecf325b6fa1bd392f4edabe9b3666ae2a9bd84a0b33d32cdaf421570476ca35"
+    }
+  },
+  "max": {
+    "me_status": 200,
+    "subscriptions_status": 200,
+    "current_webhook_count": 1,
+    "event_types": [
+      "bot_started",
+      "bot_stopped",
+      "dialog_removed",
+      "message_callback",
+      "message_created"
+    ],
+    "messages_sent": 0
+  },
+  "backup_timer": "active",
+  "tunnel": {
+    "status": "READY",
+    "reason": null,
+    "generation": 1,
+    "url": "https://systematic-working-authorities-glenn.trycloudflare.com",
+    "checked_at": "2026-10-24T08:32:57.690281+00:00",
+    "failure_count": 0
+  },
+  "company_hr_acceptance": false
+}

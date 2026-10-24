@@ -1,0 +1,27 @@
+{
+  "scope": "MAX_CALLBACK_DOMAIN_RESULT_ROUTING_REGRESSION",
+  "status": "PASS",
+  "tests_passed": 27,
+  "tests_failed": 0,
+  "pytest_seconds": 1.92,
+  "new_parameterized_cases": 11,
+  "black": "PASS",
+  "ruff_F_E9": "PASS",
+  "model_calls": 0,
+  "VM_mutations": false,
+  "implementation": "Only explicit CAPTURE_TO_QUESTION nonempty string draft can dispatch TEXT from domain result; stable capture-specific client ID makes distinct callback events idempotent. Scenario/survey metadata is never a user question. Result text requires nonempty string. CAPTURE draft_type must be TEXT; attachment UUIDs are not human questions.",
+  "covered": [
+    "signed scenario answer plus repeated same/different callback event does not create turns/answers/ANSWER jobs",
+    "real survey answer/pause/resume create no RAG jobs",
+    "CAPTURE_TO_QUESTION preserves exact human question and creates one turn/answer/job across repeated callback events",
+    "missing/blank/dict/list/numeric capture draft produces no RAG",
+    "verified MAX plain TEXT still creates exactly one answer across duplicate inbox event",
+    "PHOTO capture string attachment UUID creates no RAG job"
+  ],
+  "source_sha256": {
+    "backend/korsik/max_events.py": "c4b73010cdb0608a590023bdede759cf75e228f2e94cce7ef1a9dd6fc6ff01b4",
+    "backend/tests/test_max.py": "cc0504f198961ba0cec17b4fb7cd1f40fc8e9b2d5fdac5929e35209384673e37"
+  },
+  "deployment_status": "PENDING_ROOT_DEPLOYMENT",
+  "company_acceptance": false
+}

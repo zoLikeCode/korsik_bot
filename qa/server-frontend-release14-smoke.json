@@ -1,0 +1,81 @@
+{
+  "base_url": "https://joan-charger-platform-wrapping.trycloudflare.com",
+  "checks": [
+    {
+      "name": "https_session",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen_frontend_entry",
+      "status": "PASS",
+      "scripts": [
+        "/assets/index-UowQMqXs.js"
+      ]
+    },
+    {
+      "name": "lazy_frontend_assets",
+      "status": "PASS",
+      "assets": [
+        "assets/Scenarios-BnuhLJ6X.css",
+        "assets/Scenarios-DmLCJreZ.js"
+      ]
+    },
+    {
+      "name": "reporting_timezone",
+      "status": "PASS",
+      "window": {
+        "period_from": "2026-10-23T00:00:00+05:00",
+        "period_to": "2026-10-25T00:00:00+05:00",
+        "timezone": "Asia/Yekaterinburg",
+        "as_of": "2026-10-24T06:00:22.170030+05:00",
+        "period_semantics": "FROM_INCLUSIVE_TO_EXCLUSIVE",
+        "date_only_end_is_inclusive": true,
+        "period_kind": "BOUNDED"
+      }
+    },
+    {
+      "name": "metric_context",
+      "status": "PASS"
+    },
+    {
+      "name": "scenario_edit_capability",
+      "status": "PASS"
+    },
+    {
+      "name": "scoped_knowledge_warnings",
+      "status": "PASS",
+      "published_documents": 3
+    },
+    {
+      "name": "durable_operation_lists",
+      "status": "PASS"
+    },
+    {
+      "name": "responsible_owner_read",
+      "status": "PASS",
+      "documents": 3
+    },
+    {
+      "name": "bounded_revision_comparison",
+      "status": "PASS",
+      "alignment": "PHYSICAL_PAGE_AND_KIND_READING_ORDER_POSITION"
+    },
+    {
+      "name": "full_local_active_profile",
+      "status": "PASS"
+    },
+    {
+      "name": "durable_employment_stage_history",
+      "status": "PASS"
+    },
+    {
+      "name": "native_stage_scheduling_form_bundled",
+      "status": "PASS"
+    },
+    {
+      "name": "time_independent_stage_schedule_notice",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

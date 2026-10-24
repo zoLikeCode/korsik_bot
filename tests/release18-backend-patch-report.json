@@ -1,0 +1,124 @@
+{
+  "schema": "korsik-release18-rehire-patch-v1",
+  "status": "PASS",
+  "observed_at": "2026-10-24T11:26:59.512271+00:00",
+  "old_app_image": "sha256:13072bcb1297f977beaa88557042af58a6c643c12767b16e4955264507ea76a9",
+  "rollback_tag": "korsik-app:release18-pre-rehire",
+  "source_before_sha256": "60cbcc5d3ee87637f0c4d370b6d871fc8bf7ccc8be44949d9285bac29ef10826",
+  "source_after_sha256": "337ba65007a4e9fe71e8c486b5b4a933109445d721c26524767d32dffc989522",
+  "local_verification": {
+    "pytest_passed": 460,
+    "pytest_subtests_passed": 18,
+    "seconds": 29.62,
+    "ruff_F_E9": "PASS"
+  },
+  "identity_before": {
+    "profile_id": "4953d2c8-52cc-4aed-80b7-66c6d0a941f2",
+    "status": "ACTIVE",
+    "configuration_fingerprint": "73febd1a0de367354efd8632dd4e3e7c775cec04dd2e7882bcfd5f27349a715a",
+    "retrieval_module_sha256": "8ecf325b6fa1bd392f4edabe9b3666ae2a9bd84a0b33d32cdaf421570476ca35"
+  },
+  "scope": "Only MAX MiniApp current account pointer lookup; ignore disabled history only with a trusted sole-enabled EMPLOYEE pointer",
+  "tests_or_operator_MAX_messages_sent": 0,
+  "models_RAG_web_source_changes": false,
+  "rollback_attempted": false,
+  "new_app_image": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+  "identity_after": {
+    "profile_id": "4953d2c8-52cc-4aed-80b7-66c6d0a941f2",
+    "status": "ACTIVE",
+    "configuration_fingerprint": "73febd1a0de367354efd8632dd4e3e7c775cec04dd2e7882bcfd5f27349a715a",
+    "retrieval_module_sha256": "8ecf325b6fa1bd392f4edabe9b3666ae2a9bd84a0b33d32cdaf421570476ca35"
+  },
+  "only_six_app_services_recreated": true,
+  "other_eight_containers_unchanged": true,
+  "services_after": {
+    "answer-worker": {
+      "container_id": "6f9dcf8f294560e452a1954b395fd6ecffad4bee65afff6215cf77ea489d01c8",
+      "image_id": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "api": {
+      "container_id": "30902e8d8b7f86f8df8c9d3073dc36690dad37a74603c1e2bff4d488d4145c9c",
+      "image_id": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "encoder": {
+      "container_id": "29295c4cc4e5d35b091f28f568ee8ab4bc4b97ecc28a4583d2e5c786064aa62d",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "generator": {
+      "container_id": "7901be4dd2334a58ccc78de6ccb6254b8be606576dd5eb2d9e149376f2cd8a15",
+      "image_id": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079",
+      "state": "running",
+      "health": "healthy"
+    },
+    "ingest-worker": {
+      "container_id": "ccc720b2634986c522d0432285555889a1d1829dd29d0c26045f4f6e8b64f7c3",
+      "image_id": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "max-connector": {
+      "container_id": "09d4ff3900aa909869efd4414bab2a61c23a41a634ed5ec5332b11c02b74012f",
+      "image_id": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "parser": {
+      "container_id": "5077617400f76cbe892430a7bc98d64e7d8780c0b014d6d2f9159b4f6463dd38",
+      "image_id": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf",
+      "state": "running",
+      "health": "healthy"
+    },
+    "postgres": {
+      "container_id": "0bdf25853214b0a4eac4111203925e2cad9252ec3b1b2d5176be246921e06837",
+      "image_id": "sha256:ab20e934b27ba3ff927c1b4c9ff8cf6c32f315f743efe68dd3441182a87fb085",
+      "state": "running",
+      "health": "healthy"
+    },
+    "qdrant": {
+      "container_id": "608fbee402829552a126bad7162c2e85c0640b82768352e02d5f584e2859b9a4",
+      "image_id": "sha256:8a80c5500151ab2b08eb5874698b81b6b8addbc53ef4fb0c47f516680cf413d2",
+      "state": "running",
+      "health": null
+    },
+    "reranker": {
+      "container_id": "6cd03e9c0704439c4ff6f8105b45fd21eb62f7445fc930daf4f5627a81f706c6",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "scheduler": {
+      "container_id": "037453c6486127aecc2aebc6ce9316921e0bdc5097e70b9971f80fa7632eb794",
+      "image_id": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "tunnel": {
+      "container_id": "f2fb32eacab97913ca6af7785ba0ff8e30e07a916ef44cc3e9f095f349b2f3ea",
+      "image_id": "sha256:b74b8bf3c660f98df9ed51099c79d1b2eafdb4922b8cf6fd593a3eb87b056723",
+      "state": "running",
+      "health": "healthy"
+    },
+    "web": {
+      "container_id": "dc0c4cb7df6eecef34904bdbce5a7f14db97ba8168d5fb716f3249a817967311",
+      "image_id": "sha256:2c507d5b14b1f4a81462d7c69a459d05fa3496c596beaf2226ceb92909038e59",
+      "state": "running",
+      "health": "healthy"
+    },
+    "worker": {
+      "container_id": "0a986015cc1d4953f7576eb07ad03a8e58546d48a8b994e0b56a73f945487fe9",
+      "image_id": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+      "state": "running",
+      "health": "healthy"
+    }
+  },
+  "profile_and_retrieval_unchanged": true,
+  "watchdog_timer": "active",
+  "maintenance_marker_remaining": false,
+  "company_accepted": false
+}

@@ -1,0 +1,25 @@
+{
+  "project": "korsik_offline_1792803194",
+  "mode": "FULL",
+  "isolated_database": "korsik_offline_check",
+  "external_MAX_sends": 0,
+  "proofs": [
+    {
+      "report": "offline-restore-report.json",
+      "status": "PASS"
+    },
+    {
+      "report": "storage-fault-report.json",
+      "status": "PASS"
+    },
+    {
+      "report": "scheduler-due-report.json",
+      "status": "PASS"
+    },
+    {
+      "report": "mixed-ai-failure-report.json",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

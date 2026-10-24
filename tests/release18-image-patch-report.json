@@ -1,0 +1,40 @@
+{
+  "schema": "korsik-release18-app-web-image-patch-v1",
+  "status": "PASS",
+  "observed_at": "2026-10-24T11:32:46.656811+00:00",
+  "archive": "/opt/korsik/offline-release18/app-web-images.tar.gz",
+  "archive_bytes": 273795671,
+  "archive_sha256": "44a289f14e51836cd9e59075b0b315615b1554547ff83ee3430c85d2f5a41c0a",
+  "directory_mode": "0o700",
+  "archive_mode": "0o600",
+  "images": [
+    {
+      "tag": "korsik-web:local",
+      "config_sha256": "sha256:2c507d5b14b1f4a81462d7c69a459d05fa3496c596beaf2226ceb92909038e59",
+      "matches_running_image": true
+    },
+    {
+      "tag": "korsik-app:local",
+      "config_sha256": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+      "matches_running_image": true
+    }
+  ],
+  "only_current_two_images": true,
+  "docker_load_exit_code": 0,
+  "canonical_tags_before": {
+    "korsik-app:local": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+    "korsik-web:local": "sha256:2c507d5b14b1f4a81462d7c69a459d05fa3496c596beaf2226ceb92909038e59"
+  },
+  "canonical_tags_after": {
+    "korsik-app:local": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+    "korsik-web:local": "sha256:2c507d5b14b1f4a81462d7c69a459d05fa3496c596beaf2226ceb92909038e59"
+  },
+  "running_containers_unchanged": true,
+  "containers_recreated": 0,
+  "other_image_tags_changed": 0,
+  "source15_bundle_modified": false,
+  "model_weights_or_runtime_volumes_in_archive": false,
+  "cold_restore_of_this_patch_performed": false,
+  "seconds": 52.253,
+  "company_accepted": false
+}

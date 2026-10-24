@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "status": "PASS",
+  "scope": "ACTUAL_ISOLATED_COMPOSE_PROCESS_RECOVERY_NOT_PRODUCTION_WORKER_OR_HOST_REBOOT_PROOF",
+  "project": "korsik-watchdog-probe-20261024b",
+  "image_id": "sha256:9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e",
+  "watchdog_source_sha256": "5170e4ce023bf2890ff330e4a9ae01f1b5b8965495424af03ee8da459a872a12",
+  "container_id": "01a315396429d7d3b115995468df9b3b4e05a8bbc757e688dfbb70ba822be46e",
+  "host_python": "3.10.12",
+  "initial_attempt": {
+    "status": "FAIL",
+    "cause": "TEST_HARNESS_DOCKER_NANOSECOND_TIMESTAMP_PARSE",
+    "product_recovery_attempted": false,
+    "remaining_probe_containers_after_cleanup": 0,
+    "local_preserved_report": "runtime-watchdog-server-initial-report.json"
+  },
+  "created_at": "2026-10-24T10:22:09.778705+00:00",
+  "baseline": {
+    "status": "running",
+    "health": "healthy",
+    "started_at": "2026-10-24T10:22:08.715058796Z",
+    "cli": {
+      "status": "OBSERVED",
+      "services": [
+        {
+          "service": "worker",
+          "status": "HEALTHY"
+        }
+      ],
+      "actions": []
+    },
+    "observed_epoch": 1792837336.3654082
+  },
+  "isolation": {
+    "network_mode": "none",
+    "mounts": 0,
+    "published_ports": 0,
+    "secrets_mounted": 0,
+    "restart_policy": "no",
+    "command": "python time.sleep(600)"
+  },
+  "observed_startup_grace_seconds_before_stop": 185.005,
+  "maintenance": {
+    "marker": "maintenance",
+    "cli": {
+      "status": "MAINTENANCE",
+      "actions": []
+    },
+    "container_remained": "exited",
+    "eligible_observed_startup_age_seconds": 186.577
+  },
+  "failure_ticks": [
+    {
+      "tick": 1,
+      "at": "2026-10-24T10:25:23.196335+00:00",
+      "result": {
+        "status": "OBSERVED",
+        "services": [
+          {
+            "service": "worker",
+            "status": "exited",
+            "decision": "FAILURE_STREAK"
+          }
+        ],
+        "actions": []
+      }
+    },
+    {
+      "tick": 2,
+      "at": "2026-10-24T10:25:43.468875+00:00",
+      "result": {
+        "status": "OBSERVED",
+        "services": [
+          {
+            "service": "worker",
+            "status": "exited",
+            "decision": "FAILURE_STREAK"
+          }
+        ],
+        "actions": []
+      }
+    },
+    {
+      "tick": 3,
+      "at": "2026-10-24T10:26:04.891975+00:00",
+      "result": {
+        "status": "OBSERVED",
+        "services": [
+          {
+            "service": "worker",
+            "status": "exited",
+            "decision": "ACTION_RESERVED"
+          }
+        ],
+        "actions": [
+          {
+            "service": "worker",
+            "action": "restart",
+            "result": "REQUEST_ACCEPTED"
+          }
+        ]
+      }
+    }
+  ],
+  "recovery": {
+    "status": "running",
+    "health": "healthy",
+    "started_at": "2026-10-24T10:26:03.932629804Z",
+    "same_container_id": true
+  },
+  "cleanup": {
+    "probe_container_removed": true,
+    "remaining_probe_containers": 0,
+    "production_services_changed_by_probe_commands": false,
+    "systemd_changed": false,
+    "host_reboot_tested": false,
+    "max_requests_sent": 0,
+    "dns_changed": false,
+    "probe_directory_removed": true,
+    "ssh_wait_channel_dropped_but_remote_probe_completed": true
+  },
+  "completed_at": "2026-10-24T10:26:11.667592+00:00",
+  "claim_limits": [
+    "Only an isolated network-disabled Python sleep process was recovered; this is not execution of production business jobs.",
+    "No host reboot or systemd installation was performed in this probe.",
+    "First harness timestamp-parsing failure is retained separately; the frozen watchdog source was not changed."
+  ]
+}

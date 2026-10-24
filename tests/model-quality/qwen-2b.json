@@ -1,0 +1,117 @@
+{
+  "schema": "korsik-model-quality-v1",
+  "artifact_fingerprint": "9233a400b9d78cf8d3f231bae9e65708486bf58f41717ea6fbfc5c904fe0f677",
+  "status": "PASS",
+  "reviewer": "IMPLEMENTATION_REVIEW_NOT_COMPANY_HR",
+  "evaluation_scope": "Four independent short supplied-excerpt generation cases; not whole-corpus RAG acceptance or employer HR sign-off",
+  "cases": [
+    {
+      "id": "lunch",
+      "seconds": 3.987,
+      "status": "PASS",
+      "response": {
+        "text": "Обеденный перерыв установлен с 12:00 до 13:00 [1].",
+        "artifact_fingerprint": "9233a400b9d78cf8d3f231bae9e65708486bf58f41717ea6fbfc5c904fe0f677",
+        "input_tokens": 144,
+        "output_tokens": 28,
+        "seconds": 3.613,
+        "thinking": false
+      },
+      "question": "Когда обеденный перерыв?",
+      "evidence": [
+        {
+          "title": "Проверочный регламент",
+          "text": "Обеденный перерыв установлен с 12:00 до 13:00."
+        }
+      ],
+      "mechanical_status": "PASS",
+      "semantic_status": "PASS"
+    },
+    {
+      "id": "password",
+      "seconds": 4.287,
+      "status": "PASS",
+      "response": {
+        "text": "Пароли к конфиденциальной информации должны передаваться иным способом, чем сама конфиденциальная информация. [1]",
+        "artifact_fingerprint": "9233a400b9d78cf8d3f231bae9e65708486bf58f41717ea6fbfc5c904fe0f677",
+        "input_tokens": 146,
+        "output_tokens": 28,
+        "seconds": 3.945,
+        "thinking": false
+      },
+      "question": "Как передавать пароли к конфиденциальной информации?",
+      "evidence": [
+        {
+          "title": "Проверочный регламент",
+          "text": "Пароли к конфиденциальной информации должны передаваться иным способом, чем сама конфиденциальная информация."
+        }
+      ],
+      "mechanical_status": "PASS",
+      "semantic_status": "PASS"
+    },
+    {
+      "id": "commitment",
+      "seconds": 3.852,
+      "status": "PASS",
+      "response": {
+        "text": "Каждый работник при заключении трудового договора подписывает обязательство о соблюдении требований антикоррупционной политики [1].",
+        "artifact_fingerprint": "9233a400b9d78cf8d3f231bae9e65708486bf58f41717ea6fbfc5c904fe0f677",
+        "input_tokens": 147,
+        "output_tokens": 28,
+        "seconds": 3.468,
+        "thinking": false
+      },
+      "question": "Когда работник подписывает антикоррупционное обязательство?",
+      "evidence": [
+        {
+          "title": "Проверочный регламент",
+          "text": "Каждый работник при заключении трудового договора подписывает обязательство о соблюдении требований антикоррупционной политики."
+        }
+      ],
+      "mechanical_status": "PASS",
+      "semantic_status": "PASS"
+    },
+    {
+      "id": "visitor_permission",
+      "seconds": 7.083,
+      "status": "PASS",
+      "response": {
+        "text": "Да, разрешению на фото и видеосъёмку должен быть предоставлен посетителю. Согласно проверочному регламенту, такая съёмка допускается только с разрешения генерального директора или уполномоченного им лица [1].",
+        "artifact_fingerprint": "9233a400b9d78cf8d3f231bae9e65708486bf58f41717ea6fbfc5c904fe0f677",
+        "input_tokens": 160,
+        "output_tokens": 56,
+        "seconds": 6.792,
+        "thinking": false
+      },
+      "question": "Нужно ли посетителю разрешение на фото и видеосъёмку?",
+      "evidence": [
+        {
+          "title": "Проверочный регламент",
+          "text": "Фото- и видеосъёмка посетителями допускается только с разрешения генерального директора или уполномоченного им лица."
+        }
+      ],
+      "mechanical_status": "PASS",
+      "semantic_status": "PASS"
+    }
+  ],
+  "semantic_findings": [
+    {
+      "case_id": "visitor_permission",
+      "severity": "LANGUAGE_ONLY",
+      "finding": "Awkward Russian grammar in the opening sentence; permission requirement and authority remain correct"
+    },
+    {
+      "case_id": "money_gift",
+      "severity": "SEMANTIC_CONTRADICTION",
+      "finding": "On the actual published anti-corruption parent, raw2B output began with denial but then incorrectly allowed a monetary gift. Mechanical source/keyword checks had passed; manual reading failed it. Full-corpus raw failure is preserved in policies-rag-evaluation-final.json. Runtime must return the whole literal normative parent without generation for direct permission/prohibition/duty questions."
+    }
+  ],
+  "runtime_network_required": false,
+  "limitations": [
+    "Mechanical citation checks cannot prove semantic faithfulness",
+    "Full published-corpus retrieval, ACL, injection and negative cases require separate integration evaluation",
+    "The PASS status is restricted to the four short excerpt cases listed above. Raw actual-corpus generation has a known semantic failure and requires the specified mandatory backend guard; this is not unrestricted model acceptance."
+  ],
+  "raw_full_corpus_semantic_status": "FAIL",
+  "required_runtime_guard": "LITERAL_PERMISSION_PROHIBITION_OBLIGATION"
+}

@@ -1,0 +1,18 @@
+{
+  "employee_id": "0510ff75-4dce-45d8-8971-ad71e1ae2dc2",
+  "episode_id": "3fb36015-2552-4415-893e-72500d268f4c",
+  "employee_timezone": "Asia/Vladivostok",
+  "scheduled_preserved_current_stage": true,
+  "pending_read_persisted": true,
+  "replacement_cancelled_older_schedule": true,
+  "hr_cancel_preserved_current_stage": true,
+  "immediate_stage_applied": true,
+  "due_operation_id": "b0e06567-f42f-4562-8f93-21bd2864b0b4",
+  "due_effective_at": "2026-10-24T00:49:06.140934+00:00",
+  "status": "PASS",
+  "due_operation_status": "SUCCEEDED",
+  "due_applied_at": "2026-10-24T00:49:34.021231+00:00",
+  "current_stage": "PREBOARDING",
+  "actual_worker_partition": "business",
+  "clock_was_advanced": false
+}

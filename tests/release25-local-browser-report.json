@@ -1,0 +1,28 @@
+{
+  "schema": "korsik-release25-local-browser-v1",
+  "status": "PASS",
+  "observed_at": "2026-10-24T20:15:11.405846+00:00",
+  "url": "http://127.0.0.1:5173",
+  "isolation": "SQLite synthetic fixtures; CORE mode, MAX disabled; model URLs port9",
+  "checks": {
+    "one_page_heading_no_topbar": true,
+    "theme_in_sidebar": true,
+    "theme_toggle_persists_after_reload": true,
+    "new_synthetic_card_created": true,
+    "delete_button_next_to_access": true,
+    "named_confirmation_preserves_history_description": true,
+    "cancel_keeps_card": true,
+    "confirmed_delete_closes_modal": true,
+    "list_count_15_to_14": true,
+    "deleted_record_absent_from_regular_list": true,
+    "database_status_DELETED_enabled_false_episode_retained": true
+  },
+  "proofs": [
+    "qa/release25-delete-local.png",
+    "qa/release25-menu-local.png"
+  ],
+  "production_mutations": false,
+  "MAX_messages_sent": 0,
+  "native_MAX_device_launch_tested": false,
+  "mobile_navigation": "Source and regression-test verification; no mobile device launch claimed"
+}

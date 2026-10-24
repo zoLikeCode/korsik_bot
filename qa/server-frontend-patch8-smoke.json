@@ -1,0 +1,62 @@
+{
+  "base_url": "https://joan-charger-platform-wrapping.trycloudflare.com",
+  "checks": [
+    {
+      "name": "https_session",
+      "status": "PASS"
+    },
+    {
+      "name": "frozen_frontend_entry",
+      "status": "PASS",
+      "scripts": [
+        "/assets/index-DKVleCOf.js"
+      ]
+    },
+    {
+      "name": "lazy_frontend_assets",
+      "status": "PASS",
+      "assets": [
+        "assets/Knowledge-BYh2be9N.js",
+        "assets/Reports-bXT1V71l.js",
+        "assets/Scenarios-BnuhLJ6X.css",
+        "assets/Scenarios-zIg9omOm.js",
+        "assets/refresh-ccw-PU33c1jH.js"
+      ]
+    },
+    {
+      "name": "reporting_timezone",
+      "status": "PASS",
+      "window": {
+        "period_from": "2026-10-23T00:00:00+05:00",
+        "period_to": "2026-10-25T00:00:00+05:00",
+        "timezone": "Asia/Yekaterinburg",
+        "as_of": "2026-10-24T04:50:35.854613+05:00",
+        "period_semantics": "FROM_INCLUSIVE_TO_EXCLUSIVE",
+        "date_only_end_is_inclusive": true,
+        "period_kind": "BOUNDED"
+      }
+    },
+    {
+      "name": "metric_context",
+      "status": "PASS"
+    },
+    {
+      "name": "scenario_edit_capability",
+      "status": "PASS"
+    },
+    {
+      "name": "scoped_knowledge_warnings",
+      "status": "PASS",
+      "published_documents": 3
+    },
+    {
+      "name": "durable_operation_lists",
+      "status": "PASS"
+    },
+    {
+      "name": "full_local_active_profile",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS"
+}

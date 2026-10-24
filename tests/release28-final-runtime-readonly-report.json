@@ -1,0 +1,129 @@
+{
+  "schema": "korsik-release28-final-runtime-readonly-v1",
+  "status": "PASS",
+  "observed_at": "2026-10-24T23:08:26.700042+00:00",
+  "all_14_running": true,
+  "healthchecks_healthy": 13,
+  "qdrant_has_no_healthcheck": true,
+  "maintenance_remaining": false,
+  "services": {
+    "answer-worker": {
+      "container_id": "a303f439ba541105c82795139203a237d39b83491144f336126c654a3e6a2fb5",
+      "image_id": "sha256:5d976d9f6a85262eaa99f20d4ede24fa0bcbd230949076e1e56cb9804343e8d0",
+      "state": "running",
+      "health": "healthy"
+    },
+    "api": {
+      "container_id": "67f92e894e9ec2f4540ea03b9cb6375149fe78c032cc44bd6b078b268e6d22dc",
+      "image_id": "sha256:5d976d9f6a85262eaa99f20d4ede24fa0bcbd230949076e1e56cb9804343e8d0",
+      "state": "running",
+      "health": "healthy"
+    },
+    "encoder": {
+      "container_id": "29295c4cc4e5d35b091f28f568ee8ab4bc4b97ecc28a4583d2e5c786064aa62d",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "generator": {
+      "container_id": "7901be4dd2334a58ccc78de6ccb6254b8be606576dd5eb2d9e149376f2cd8a15",
+      "image_id": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079",
+      "state": "running",
+      "health": "healthy"
+    },
+    "ingest-worker": {
+      "container_id": "fc809f500afaf3e5b70e3469311f5fa28e9e7fad7248007cf7504b74af1dda16",
+      "image_id": "sha256:5d976d9f6a85262eaa99f20d4ede24fa0bcbd230949076e1e56cb9804343e8d0",
+      "state": "running",
+      "health": "healthy"
+    },
+    "max-connector": {
+      "container_id": "6e4f040f933beae8cf5ee85eae4e1b7a297534113cb835ca785fff88a7dcd27b",
+      "image_id": "sha256:5d976d9f6a85262eaa99f20d4ede24fa0bcbd230949076e1e56cb9804343e8d0",
+      "state": "running",
+      "health": "healthy"
+    },
+    "parser": {
+      "container_id": "5077617400f76cbe892430a7bc98d64e7d8780c0b014d6d2f9159b4f6463dd38",
+      "image_id": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf",
+      "state": "running",
+      "health": "healthy"
+    },
+    "postgres": {
+      "container_id": "0bdf25853214b0a4eac4111203925e2cad9252ec3b1b2d5176be246921e06837",
+      "image_id": "sha256:ab20e934b27ba3ff927c1b4c9ff8cf6c32f315f743efe68dd3441182a87fb085",
+      "state": "running",
+      "health": "healthy"
+    },
+    "qdrant": {
+      "container_id": "608fbee402829552a126bad7162c2e85c0640b82768352e02d5f584e2859b9a4",
+      "image_id": "sha256:8a80c5500151ab2b08eb5874698b81b6b8addbc53ef4fb0c47f516680cf413d2",
+      "state": "running",
+      "health": null
+    },
+    "reranker": {
+      "container_id": "6cd03e9c0704439c4ff6f8105b45fd21eb62f7445fc930daf4f5627a81f706c6",
+      "image_id": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "state": "running",
+      "health": "healthy"
+    },
+    "scheduler": {
+      "container_id": "a03a14cc228a69871f439d4f1d25f9307eef285a1232a78be369c88e94294911",
+      "image_id": "sha256:5d976d9f6a85262eaa99f20d4ede24fa0bcbd230949076e1e56cb9804343e8d0",
+      "state": "running",
+      "health": "healthy"
+    },
+    "tunnel": {
+      "container_id": "f2fb32eacab97913ca6af7785ba0ff8e30e07a916ef44cc3e9f095f349b2f3ea",
+      "image_id": "sha256:b74b8bf3c660f98df9ed51099c79d1b2eafdb4922b8cf6fd593a3eb87b056723",
+      "state": "running",
+      "health": "healthy"
+    },
+    "web": {
+      "container_id": "d40c669a173a5148f8828898ecc7dca75e3ce61ed991446d2581a922dd8133c0",
+      "image_id": "sha256:4cd407a4ac7f0d8d1f2b1cfafbf0a2969bc7a2553ac4f0e8b58c08f6000a1b9f",
+      "state": "running",
+      "health": "healthy"
+    },
+    "worker": {
+      "container_id": "c797bc53b65c70babe53d4baf42e63aa9efd6c86925e0d58d1a32082976a41cd",
+      "image_id": "sha256:5d976d9f6a85262eaa99f20d4ede24fa0bcbd230949076e1e56cb9804343e8d0",
+      "state": "running",
+      "health": "healthy"
+    }
+  },
+  "runtime_identity": {
+    "profile_id": "052c5a64-ac05-4286-a4c0-18e3fb1e77dc",
+    "status": "ACTIVE",
+    "configuration_fingerprint": "b922edb3703a1bfab392b1abf6c6e818b67720474daa022462e7796bd8a6d183",
+    "retrieval_module_sha256": "0f3d0ae22e1fa10f18cba7881d3c017a8034af581c3a0789a6dc482e1734d2c6",
+    "canonical_url": "https://app.korsik-demo.ru",
+    "secure_cookies": true,
+    "max_bot_url": "https://max.ru/id7725738542_2_bot"
+  },
+  "product_readiness": "FULL_READY",
+  "generation_policy": "LOCAL_GENERATION",
+  "native_profile_transition_performed": false,
+  "active_profile_quality_configuration_and_validation_unchanged": true,
+  "seven_infrastructure_containers_unchanged": true,
+  "installed_quality_report_sha256": "df11daefc64ec6cb71d8876694294a64c2391573acbe3494f07cd63eeee81795",
+  "MAX_cursor_observed": {
+    "url": "https://app.korsik-demo.ru/hooks/max",
+    "status": "REGISTERED",
+    "registered_at": "2026-10-24T23:06:53.054347+00:00"
+  },
+  "registered_at_is_periodic_refresh_timestamp": true,
+  "timers": {
+    "korsik-watchdog.timer": "active",
+    "korsik-backup.timer": "active"
+  },
+  "operator_MAX_API_calls": 0,
+  "operator_MAX_messages_sent": 0,
+  "operator_processable_events_injected": 0,
+  "operator_model_requests": 0,
+  "operator_production_business_mutations": false,
+  "sessions_created_or_revoked": 0,
+  "native_MAX_end_to_end_tested": false,
+  "physical_reboot_tested": false,
+  "company_accepted": false
+}

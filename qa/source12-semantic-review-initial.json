@@ -1,0 +1,1853 @@
+{
+  "schema": "korsik-independent-manual-source12-review-v1",
+  "status": "FAIL",
+  "reviewed_at": "2026-10-24T01:46:32.792983+00:00",
+  "reviewer": "INDEPENDENT_FRONTEND_AGENT_MANUAL_OUTPUT_REVIEW",
+  "scope": "All29 actualsource12 outputs manually read against their full pinned gold text/FIGURE descriptions and actual cited parents, including7 prior failure questions with synthetic history. Implementation regression only, not company HR acceptance or an independent representative golden benchmark.",
+  "company_hr_acceptance": false,
+  "old_pass_reused": false,
+  "criteria_prepared_before_outputs": true,
+  "criteria_sha256": "ddc0fe7732db41bcdd61dfb88d8a781771bc38530e56a5c9527634d615fd453a",
+  "actual_evaluation_sha256": "c6dd21045aea59fa67b300885c6d81d85b9575e642dd760d194ae91c38ad3edd",
+  "actual_evaluation_private_path": "work/implementation/source12-actual-private.json",
+  "application_mutations": 0,
+  "model_calls_by_reviewer": 0,
+  "raw_process_scope": "PROCESS_LOCAL_PROFILE_VIEW_NOT_NATIVE_ACTIVATION",
+  "persistent_profile_changed": false,
+  "runtime_identity_stable_before_after": true,
+  "pipeline_source_sha256": "dfcc7f827642cba19c186e54c59df668f953ce57ddb235cb3cefd1427c5b692b",
+  "generation_runtime_source_sha256": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b",
+  "pipeline_identities": {
+    "chunker_version": "korsik-physical-parent-chunker-v1",
+    "chunker_fingerprint": "64fcb0516ed01fb9f0a89ed6d2a0d8b6fb387500bc0640b4435c5f6a4cb02b2b",
+    "retrieval_policy_version": "korsik-hybrid-retrieval-guards-v1",
+    "retrieval_policy_fingerprint": "de07f716adb80eca712eac622448179a2756c2a5bee720cb12bad79f64b135eb",
+    "retrieval_module_source_fingerprint": "dfcc7f827642cba19c186e54c59df668f953ce57ddb235cb3cefd1427c5b692b",
+    "generation_request_schema_version": "korsik-local-generation-request-v1",
+    "generation_runtime_source_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+  },
+  "configuration_fingerprint": "daf3bd64317ea5495224ba72b909b1864fcb76e8e714e3a71c4db3f3689c74c9",
+  "runtime_before": {
+    "encoder": {
+      "fingerprint": "afc4aa45cd8d95d538404fd463d881c1cd522f3f92bfd42a6b2f6abde0a5b5d8",
+      "renderer_fingerprint": null
+    },
+    "reranker": {
+      "fingerprint": "30f61c1e0d16deb1d0f43ddaa49f5457bfbaf69f1b6ee27d0475a2b676f8f8ea",
+      "renderer_fingerprint": null
+    },
+    "generator": {
+      "fingerprint": "1fe278d9e50f5fe426c80efe3845911a3bbcc057d1f975c660a8c2f39c6d21d0",
+      "renderer_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+    }
+  },
+  "runtime_after": {
+    "encoder": {
+      "fingerprint": "afc4aa45cd8d95d538404fd463d881c1cd522f3f92bfd42a6b2f6abde0a5b5d8",
+      "renderer_fingerprint": null
+    },
+    "reranker": {
+      "fingerprint": "30f61c1e0d16deb1d0f43ddaa49f5457bfbaf69f1b6ee27d0475a2b676f8f8ea",
+      "renderer_fingerprint": null
+    },
+    "generator": {
+      "fingerprint": "1fe278d9e50f5fe426c80efe3845911a3bbcc057d1f975c660a8c2f39c6d21d0",
+      "renderer_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+    }
+  },
+  "summary": {
+    "reviewed": 29,
+    "passed": 28,
+    "failed": 1,
+    "modes": {
+      "EXTRACT": 25,
+      "LOCAL_GENERATED": 2,
+      "HANDOFF": 2
+    }
+  },
+  "release_decision": "Do not import this run as a passing semantic quality report. Fix the missing exact location response and produce a fresh full run; preserve this failed review.",
+  "findings": [
+    {
+      "case_id": "confidential_list",
+      "severity": "COMPLETENESS_FAILURE",
+      "question": "Где посмотреть полный перечень конфиденциальных сведений?",
+      "missing": "Положение о коммерческой тайне и конфиденциальной информации, Приложение№1",
+      "actual": "Generic HANDOFF says another document or appendix and asks HR, while the exact appendix location is already in the cited available parent.",
+      "source_revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "source_extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "source_block_id": "0d55ac35-903f-41d6-824c-d7769ccc31d5",
+      "not_a_fabrication_or_permission_bypass": true,
+      "still_fails_requested_location_completeness": true
+    }
+  ],
+  "limits": [
+    "The29 cases include correlated paraphrases and7 known failures; the count is not independent subject coverage.",
+    "No TABLE gold blocks occur in this29case set; canonical table parsing/reading is outside this semantic sample and is tested separately.",
+    "FIGURE cases were checked against complete approved descriptions and image pins; no visual reasoning claim beyond those supplied descriptions.",
+    "The question about policy audience is supported for every employee by its full source; no exhaustive legal classification of other parties is claimed.",
+    "EXTRACT/manual source support does not guarantee arbitrary future retrieval coverage."
+  ],
+  "cases": [
+    {
+      "id": "password",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный нормативный родитель p11: отдельно защищается файл, пароль передаётся способом, отличным от самой КИ. Исключений/новых каналов не придумано."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Как передавать пароли к конфиденциальной информации?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "actual_answer": "Точная формулировка действующего документа:\n\n[1] Передача конфиденциальной информации\n\nПередача КИ может осуществляться в форме предоставления доступа к информационному ресурсу (к месту хранения, размещения и пр.)\nПеред отправкой в электронном виде, КИ должна быть обработана специальными крипто-программами, ограничивающими доступ к информации без соответствующего пароля.\nПередача паролей и информации об иных средствах защиты электронных документов должна осуществляться способом, отличным от способа передачи КИ.\n\nИсточники: [1] Положение о коммерческой тайне, стр. 11",
+      "output_sha256": "dc8ab0ecbe4a0f6fd32b2bc46843e93cc56e18110764f0f9ab398f380f1074b1",
+      "answer_json_sha256": "c0d66121b7c960d765fe22854b9e196763fa52c54c4d0e8479646a3baf86e368",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "gold_extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "gold_source_pins": [
+        {
+          "block_id": "e1ab123b-792f-4aab-88aa-6d0aeeebaf25",
+          "kind": "TEXT",
+          "text_sha256": "c3d92d4db6efcfd93ff02387d50e67053a12530481dd905cdeee3f69cc0b0e1e",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "page_no": 11,
+          "block_id": "d6ca5adf-b31a-45b6-9c2f-42eda3f3d992",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "57d79ed5484e957beff1d62b2b04ccb76768f550a9c02943eb703944dc1e0374",
+          "text_sha256": "d2d78328ec015f5d84d157b0fa6e2207a3954bab6db89f808f7a7c1fa89efda4",
+          "full_evidence_sha256": "57d79ed5484e957beff1d62b2b04ccb76768f550a9c02943eb703944dc1e0374",
+          "evidence_ranges": [
+            {
+              "block_id": "d6ca5adf-b31a-45b6-9c2f-42eda3f3d992",
+              "sha256": "d2d78328ec015f5d84d157b0fa6e2207a3954bab6db89f808f7a7c1fa89efda4",
+              "char_start": 0,
+              "char_end": 36
+            },
+            {
+              "block_id": "e1ab123b-792f-4aab-88aa-6d0aeeebaf25",
+              "sha256": "c3d92d4db6efcfd93ff02387d50e67053a12530481dd905cdeee3f69cc0b0e1e",
+              "char_start": 0,
+              "char_end": 429
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    },
+    {
+      "id": "termination",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный p7: не разглашать И не использовать лично весь срок режима КТ, включая после договора; смежные обязанности и условия доступа не обрезаны."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Нужно ли соблюдать коммерческую тайну после увольнения?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "actual_answer": "Точная формулировка действующего документа:\n\n[1] Охрана конфиденциальности информации\n\nОбществом принимаются меры, направленные на охрану КИ и КТ.\nРаботники, имеющие доступ к КИ и КТ, в обязательном порядке знакомятся с Порядком обращения с информацией каждого типа под подпись.\nДоступ к КТ работников, должность и подразделения которых не соответствуют перечню, указанному в Порядке,  производится на основании аргументированной служебной записки владельца информации и только по приказу генерального директора или уполномоченного лица Общества, путем внесения изменений в данный Порядок. \n\nРаботник, имеющий доступ к информации, составляющей КТ, обязан:\n- не разглашать и не использовать информацию в личных целях в течение всего строка действия режима КТ, в том числе после прекращения действия трудового договора;\n- возместить причиненные Обществу убытки, причиненных ему разглашением информации, составляющих КТ;\n передать при прекращении или расторжении трудового договора носители информации, составляющую КТ.\n\nИсточники: [1] Положение о коммерческой тайне, стр. 7",
+      "output_sha256": "810f872e53c96f09da46b9c5e8d5bd69f8f97d4a116407524a2f0690791f33d8",
+      "answer_json_sha256": "d25b0c8ba5f2d29ecdb37fe39192c12ac3b217589e1da059419279d4cbbf2c72",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "gold_extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "gold_source_pins": [
+        {
+          "block_id": "b82d5a1b-127b-4fb0-80c2-d246fc56dd67",
+          "kind": "TEXT",
+          "text_sha256": "86b88dfb398ec34cbc9c2f8eb612ac22f4104f483bca243b6383c1bbdbf745ac",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "page_no": 7,
+          "block_id": "b82d5a1b-127b-4fb0-80c2-d246fc56dd67",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "bc8418751de93df6ce323eceaf51c451d0a46b99624cf55bf9accb57a35db25f",
+          "text_sha256": "86b88dfb398ec34cbc9c2f8eb612ac22f4104f483bca243b6383c1bbdbf745ac",
+          "full_evidence_sha256": "bc8418751de93df6ce323eceaf51c451d0a46b99624cf55bf9accb57a35db25f",
+          "evidence_ranges": [
+            {
+              "block_id": "d975f503-5e33-43d2-b03b-471e4614c51e",
+              "sha256": "91561444dfe6d8aae2a17d2a76dd3ebfa311afff5d30cfdc8b4c334ed9602edc",
+              "char_start": 0,
+              "char_end": 36
+            },
+            {
+              "block_id": "b82d5a1b-127b-4fb0-80c2-d246fc56dd67",
+              "sha256": "86b88dfb398ec34cbc9c2f8eb612ac22f4104f483bca243b6383c1bbdbf745ac",
+              "char_start": 0,
+              "char_end": 929
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    },
+    {
+      "id": "visitor",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный p8 сохраняет генерального директора ИЛИ уполномоченное лицо И подписанное обязательство посетителя, форму Приложения4; прежняя потеря конъюнкта устранена в actual answer."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Кто разрешает посетителю фотографировать конфиденциальные документы?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "actual_answer": "Точная формулировка действующего документа:\n\n[1] Защита конфиденциальности информации\n\nВ случае посещения объектов Общества представителями сторонних организаций ответственное лицо может знакомить посетителей только с конкретной информацией и объектами, которые определены генеральным директором или уполномоченным лицом Общества.\n\nОзнакомление с информацией, проведение осмотров, фото-, видеосъемок документов, объектов (процессов), отнесенных к КТ, возможно только после получения разрешения генерального директора или уполномоченного лица Общества и подписания «Обязательства о соблюдении КТ посетителями объектов». \nФорма Обязательства размещена в Положении о коммерческой тайне и конфиденциальной информации \n(Приложение № 4)\n\nИсточники: [1] Положение о коммерческой тайне, стр. 8",
+      "output_sha256": "0662cef5b7e11b8bb94a2b57fb5a0cb49eb27cc490bde91b0342ebddefac8a92",
+      "answer_json_sha256": "50492a2aee3e1e5f42af66e82d67acac4249cb553b1aeb1d868e7bed7419bf24",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "gold_extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "gold_source_pins": [
+        {
+          "block_id": "ebe63cca-b2d8-4dd3-893c-af7bdc78eebd",
+          "kind": "TEXT",
+          "text_sha256": "6bddefe58e1cef7a9584ff6b12bb1684aa570a52eb54ecf63f4eabfdfb2c62c0",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "page_no": 8,
+          "block_id": "ebe63cca-b2d8-4dd3-893c-af7bdc78eebd",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "74d06a53efc317f850e97f4037cac00203396d9fb8476d8514b12d0498973c1b",
+          "text_sha256": "6bddefe58e1cef7a9584ff6b12bb1684aa570a52eb54ecf63f4eabfdfb2c62c0",
+          "full_evidence_sha256": "74d06a53efc317f850e97f4037cac00203396d9fb8476d8514b12d0498973c1b",
+          "evidence_ranges": [
+            {
+              "block_id": "9b69f9ee-3e01-461e-8b2f-0bbe4215e21f",
+              "sha256": "a90971de8447504d8270e316eae349dc05360d79173dcb87aa576a172c69a731",
+              "char_start": 0,
+              "char_end": 36
+            },
+            {
+              "block_id": "ebe63cca-b2d8-4dd3-893c-af7bdc78eebd",
+              "sha256": "6bddefe58e1cef7a9584ff6b12bb1684aa570a52eb54ecf63f4eabfdfb2c62c0",
+              "char_start": 0,
+              "char_end": 643
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    },
+    {
+      "id": "commitment",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный p11 содержит обязательство с каждым работником при заключении трудового договора; иных сроков/исключений нет."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Когда сотрудник подписывает антикоррупционное обязательство?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "actual_answer": "Точная формулировка действующего документа:\n\n[1] Обязательство соблюдения норм \u000bантикоррупционного законодательства\n\nВ целях соблюдения антикоррупционного законодательства, реализации мер, направленных на борьбу с коррупцией и формирования у работников нетерпимости к противозаконным действиям, Общество осуществляет включение антикоррупционных условий (оговорок) в трудовые договоры с работниками.\n\nС каждым работником Общества в обязательном порядке подписывается Обязательство соблюдения норм антикоррупционного законодательства при заключении трудового договора.\n\nИсточники: [1] Антикоррупционная политика, стр. 11",
+      "output_sha256": "2659812390cbe5b88e22435695b12870b133beed13de07b6f56ffb9191b56d85",
+      "answer_json_sha256": "75326ea8ea835c1d0d79f9d6c4c87846169217ca9060ab251a9458cd2e9c489c",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+      "gold_extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+      "gold_source_pins": [
+        {
+          "block_id": "6d99e944-bdce-4768-9a0e-ff2bc5575bf4",
+          "kind": "TEXT",
+          "text_sha256": "5036f7fb94bdcccf8c401625e720674664c1423da79dad7d4995ea91a34455e0",
+          "image_sha256": null
+        },
+        {
+          "block_id": "f90c9547-a2ae-48fc-a030-54f5982fbf32",
+          "kind": "TEXT",
+          "text_sha256": "7fe807b95f70beed1b958672c58ec7f2f557552453258f30dcdf955559971287",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "page_no": 11,
+          "block_id": "f90c9547-a2ae-48fc-a030-54f5982fbf32",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "3c59a793eb21701fa4bdd05c012b152e19e73d70c40ecb3821d7e7da713b5326",
+          "text_sha256": "7fe807b95f70beed1b958672c58ec7f2f557552453258f30dcdf955559971287",
+          "full_evidence_sha256": "3c59a793eb21701fa4bdd05c012b152e19e73d70c40ecb3821d7e7da713b5326",
+          "evidence_ranges": [
+            {
+              "block_id": "c73788ab-245c-4ac8-a633-a6a235554f6d",
+              "sha256": "a3c18b319bae7e8491d1c9ff860605b07afefbcd3ac2f275b59f84a23bd67534",
+              "char_start": 0,
+              "char_end": 66
+            },
+            {
+              "block_id": "6d99e944-bdce-4768-9a0e-ff2bc5575bf4",
+              "sha256": "5036f7fb94bdcccf8c401625e720674664c1423da79dad7d4995ea91a34455e0",
+              "char_start": 0,
+              "char_end": 281
+            },
+            {
+              "block_id": "f90c9547-a2ae-48fc-a030-54f5982fbf32",
+              "sha256": "7fe807b95f70beed1b958672c58ec7f2f557552453258f30dcdf955559971287",
+              "char_start": 0,
+              "char_end": 166
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    },
+    {
+      "id": "money_gift",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный p9 сохраняет денежный запрет для любой валюты/наличной/безналичной формы, ценных бумаг/металлов; общая цена подарка не превращена в разрешение."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Можно ли дарить деловому партнёру денежный подарок?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "actual_answer": "Точная формулировка действующего документа:\n\n[1] ПОДАРКИ И ПРЕДСТАВИТЕЛЬСКИЕ РАСХОДЫ\n\nНе допускаются подарки от имени Общества, его работников и представителей третьим лицам в виде денежных средств в любой валюте, наличных или безналичных, ценных бумаг и драгоценных металлов.\nПри получении делового подарка работник обязан принять меры по недопущению возможности возникновения конфликта интересов.\nВ случае возникновения конфликта интересов или возможности его возникновения при получении делового подарка, работник в установленном порядке должен уведомить об этом Общество и сдать полученный деловой подарок ответственному за  профилактику коррупционных правонарушений (за исключением  канцелярских принадлежностей).\nРаботнику категорически запрещается просить, требовать, вынуждать третьих лиц дарить ему либо лицам, с которыми он состоит в близком родстве или свойстве, деловые подарки и (или) оказывать в их пользу знаки делового гостеприимства, а также принимать подарки в форме наличных, безналичных денежных средств, ценных бумаг, драгоценных металлов.\n\nИсточники: [1] Антикоррупционная политика, стр. 9",
+      "output_sha256": "861db5f919500567c52cd9f8c487e080e11113633ce8c2d6ff02a112c484d540",
+      "answer_json_sha256": "85814f07ba71a6322cd98cfbc2956c7418cd1f1c0e9187894e7c183653b62201",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+      "gold_extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+      "gold_source_pins": [
+        {
+          "block_id": "bf5a1942-c69c-460c-9e05-8349208c7350",
+          "kind": "TEXT",
+          "text_sha256": "b5ce47109f79d1e0eddec52921f82139917f09793eaeaed7d047451f975cfaaf",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "page_no": 9,
+          "block_id": "bf5a1942-c69c-460c-9e05-8349208c7350",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "5c13c5946f57e5b6817ec81821ebaaa54c34154d1c51fd4c07a6c7d829af67ab",
+          "text_sha256": "b5ce47109f79d1e0eddec52921f82139917f09793eaeaed7d047451f975cfaaf",
+          "full_evidence_sha256": "5c13c5946f57e5b6817ec81821ebaaa54c34154d1c51fd4c07a6c7d829af67ab",
+          "evidence_ranges": [
+            {
+              "block_id": "894365f9-4b00-46d2-877b-a5f8ba1cd76e",
+              "sha256": "e2044e572e6f6385af6f8d1930bb40d63153e18712e6a40de8bc133662648f06",
+              "char_start": 0,
+              "char_end": 35
+            },
+            {
+              "block_id": "bf5a1942-c69c-460c-9e05-8349208c7350",
+              "sha256": "b5ce47109f79d1e0eddec52921f82139917f09793eaeaed7d047451f975cfaaf",
+              "char_start": 0,
+              "char_end": 974
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    },
+    {
+      "id": "mission",
+      "status": "PASS",
+      "semantic_findings": [
+        "Генеративный ответ прочитан полностью: соответствует полному p2, содержит обе части миссии (инфраструктура/технологии/стоки и композиционные материалы), cite[1] привязан к содержательному parent; посторонних утверждений нет."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Какова миссия компании ПОЛИПЛАСТИК?",
+      "mode": "LOCAL_GENERATED",
+      "reason": "MECHANICAL_CHECKS_PASSED",
+      "actual_answer": "Повышение качества жизни людей и эффективности экономики путем создания надежной и безопасной коммунальной, промышленной и аграрной инфраструктуры за счет разработки и применения прогрессивных технологий в области трубопроводных систем и решений для очистки сточных вод, а также обеспечение потребностей различных отраслей производства в высококачественных композиционных материалах, соответствующих современным тенденциям мирового рынка термопластов [1].\n\nИсточники: [1] Политика в области качества и экологии, стр. 2; [2] Антикоррупционная политика, стр. 1; [3] Положение о коммерческой тайне, стр. 2",
+      "output_sha256": "2c7c8ce302b0bace8f3f5c72695728afddef35626d921c05fdd72bf56c8ae656",
+      "answer_json_sha256": "0d69658eefba0570d9b30417e31ab32c407014c521bd83b3aa088ab7a2b59abb",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+      "gold_extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+      "gold_source_pins": [
+        {
+          "block_id": "0d4dda11-cf8e-4f71-bfb2-bf3ef99afc7e",
+          "kind": "TEXT",
+          "text_sha256": "08a314c93fde49d85250aef72909a6c1e9b4c07a4b4661b3b9ab618cac6b0b37",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "page_no": 2,
+          "block_id": "b1bfac41-553e-4518-a08d-61b30b4fa3f4",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "f56544a1dc49de2b2422297624833315be4a4cc51722e05b2fafe0e1abc109e5",
+          "text_sha256": "85621dcc43441b320fa4c3052b977e2bf170c5481a66b918990bd04c96b7f356",
+          "full_evidence_sha256": "f56544a1dc49de2b2422297624833315be4a4cc51722e05b2fafe0e1abc109e5",
+          "evidence_ranges": [
+            {
+              "block_id": "b1bfac41-553e-4518-a08d-61b30b4fa3f4",
+              "sha256": "85621dcc43441b320fa4c3052b977e2bf170c5481a66b918990bd04c96b7f356",
+              "char_start": 0,
+              "char_end": 46
+            },
+            {
+              "block_id": "0d4dda11-cf8e-4f71-bfb2-bf3ef99afc7e",
+              "sha256": "08a314c93fde49d85250aef72909a6c1e9b4c07a4b4661b3b9ab618cac6b0b37",
+              "char_start": 0,
+              "char_end": 451
+            }
+          ]
+        },
+        {
+          "number": 2,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "page_no": 1,
+          "block_id": "fbe3b7a1-d950-43ba-9148-114c9bdcdbed",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "d553a3a5122469982f33de94e2425c8cdac9abee7c3c872b0b277c1bc61e1945",
+          "text_sha256": "4b27c924c2e13c37ee419c636e117ee26113a8967fbde7cd692f84e237be65bb",
+          "full_evidence_sha256": "d553a3a5122469982f33de94e2425c8cdac9abee7c3c872b0b277c1bc61e1945",
+          "evidence_ranges": [
+            {
+              "block_id": "fe447f9c-c387-40d6-bd7c-043d5bb33099",
+              "sha256": "555447cdc8529e2fd5f7aed820d9331e83751a1489de866c28f54907cb7fffa1",
+              "char_start": 0,
+              "char_end": 35
+            },
+            {
+              "block_id": "960d1663-a4bd-499b-b44c-b95929ded31e",
+              "sha256": "51da39ad53d2ab8b4dd6a2ca1a40722d2dfcdaa72ee360f20e6f0da4d6eec9e3",
+              "char_start": 0,
+              "char_end": 285
+            },
+            {
+              "block_id": "fbe3b7a1-d950-43ba-9148-114c9bdcdbed",
+              "sha256": "4b27c924c2e13c37ee419c636e117ee26113a8967fbde7cd692f84e237be65bb",
+              "char_start": 0,
+              "char_end": 465
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "page_no": 2,
+          "block_id": "800147d0-9ba3-46b5-9566-b504e18456d4",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "053c8a63f8c973340558999d0f89ab1f662ab6f36993ec018ba9fc0f23e2c0b9",
+          "text_sha256": "1c801c234599e76734cf19920b356cdb05f1826ff0373ee47e7455639050fc30",
+          "full_evidence_sha256": "053c8a63f8c973340558999d0f89ab1f662ab6f36993ec018ba9fc0f23e2c0b9",
+          "evidence_ranges": [
+            {
+              "block_id": "6016d715-083c-4b28-9168-756e9ca214d5",
+              "sha256": "4b23f536185b62ec006574833e458fa07de8b63da304ba6e16d99bc7935c764a",
+              "char_start": 0,
+              "char_end": 231
+            },
+            {
+              "block_id": "800147d0-9ba3-46b5-9566-b504e18456d4",
+              "sha256": "1c801c234599e76734cf19920b356cdb05f1826ff0373ee47e7455639050fc30",
+              "char_start": 0,
+              "char_end": 74
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    },
+    {
+      "id": "definition",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный перечень примеров p5 сохранён без сокращений; явная ссылка на полный Перечень в Приложении2 остаётся, ответ не объявляет слайд полным приложением."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Что относится к коммерческой тайне компании?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_ENUMERATION_SOURCE",
+      "actual_answer": "В действующем документе перечислено:\n\n[1] Коммерческая тайна\n\n- сведения о структуре производства, производственных мощностях, типе и размещении оборудования, запасах сырья, материалов, комплектующих, готовой продукции, финансовых и людских ресурсах;\n- сведения о применяемых оригинальных методах управления Обществом;\n- сведения о подготовке, принятии и исполнении отдельных решений руководства Общества;\n- сведения о предполагаемом создании дочерних и зависимых организаций;\n- сведения о планах расширения или свертывания производства различных видов продукции и их технико-экономических обоснованиях;\nсведения о планах инвестиций, закупок и продаж и т.п.\nС полным Перечнем информации, составляющим КИ, Вы можете ознакомиться в Положении о коммерческой тайне и конфиденциальной информации (Приложение №2)\n\nКоммерческая тайна – далее КТ\n\nИсточники: [1] Положение о коммерческой тайне, стр. 5",
+      "output_sha256": "dd42ec7b1d6e727fa4956ebd065069b9812d4307a7d9fb5ded1a3898fbd97d54",
+      "answer_json_sha256": "ea19227d24e2ca28480723c1e5b4bf4b6a0fef66a9728c3ebacd61248cfa7b85",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "gold_extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "gold_source_pins": [
+        {
+          "block_id": "7df926b4-2286-4cee-a91c-4817173c5783",
+          "kind": "TEXT",
+          "text_sha256": "735fab96d86a4c11ed2e344629a3fbf74842be9386df90683fa9a4fb44b80c87",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "page_no": 5,
+          "block_id": "7df926b4-2286-4cee-a91c-4817173c5783",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "b1c25b30e9b46b80edf99d56f3e3d669c199c150a78d8e390fab4563395d0448",
+          "text_sha256": "735fab96d86a4c11ed2e344629a3fbf74842be9386df90683fa9a4fb44b80c87",
+          "full_evidence_sha256": "b1c25b30e9b46b80edf99d56f3e3d669c199c150a78d8e390fab4563395d0448",
+          "evidence_ranges": [
+            {
+              "block_id": "597e5ea8-0a0b-431a-af5c-f747ffa115f4",
+              "sha256": "8030923174eb2b68502c415911baaefadf0b1b3a1f75b379c489432919d2cf88",
+              "char_start": 0,
+              "char_end": 18
+            },
+            {
+              "block_id": "7df926b4-2286-4cee-a91c-4817173c5783",
+              "sha256": "735fab96d86a4c11ed2e344629a3fbf74842be9386df90683fa9a4fb44b80c87",
+              "char_start": 0,
+              "char_end": 744
+            },
+            {
+              "block_id": "129b5292-2ba5-43b5-87fc-b0e24eced780",
+              "sha256": "25f30aadb39dd0a8a740726bae9af8636be0eb7c919fbb058c433d07f841317c",
+              "char_start": 0,
+              "char_end": 29
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    },
+    {
+      "id": "missing_appendix",
+      "status": "PASS",
+      "semantic_findings": [
+        "HANDOFF не выдумывает полный список Приложения2, честно сообщает отсутствие полного текста и необходимость получить его у HR; цитируется правильная p5."
+      ],
+      "completeness": "HONEST_MISSING_FULL_SOURCE",
+      "question": "Приведи полный перечень сведений, составляющих коммерческую тайну, из Приложения №2.",
+      "mode": "HANDOFF",
+      "reason": "REFERENCED_FULL_SOURCE_REQUIRED",
+      "actual_answer": "Найденный документ отсылает к полному перечню в другом документе или приложении. Полного текста среди найденных источников нет. Для точного ответа нужен этот документ от HR.\n\nИсточники: [1] Положение о коммерческой тайне, стр. 5",
+      "output_sha256": "991ab239e8768d6f1b70916da71f017ed16009980448a5af414a8b5c14661d04",
+      "answer_json_sha256": "8efd1f629f7c68a45cd3a90e740f37439829b32b1a59be1d419c4a2f5fbb6614",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "gold_extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "gold_source_pins": [
+        {
+          "block_id": "7df926b4-2286-4cee-a91c-4817173c5783",
+          "kind": "TEXT",
+          "text_sha256": "735fab96d86a4c11ed2e344629a3fbf74842be9386df90683fa9a4fb44b80c87",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "page_no": 5,
+          "block_id": "7df926b4-2286-4cee-a91c-4817173c5783",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "b1c25b30e9b46b80edf99d56f3e3d669c199c150a78d8e390fab4563395d0448",
+          "text_sha256": "735fab96d86a4c11ed2e344629a3fbf74842be9386df90683fa9a4fb44b80c87",
+          "full_evidence_sha256": "b1c25b30e9b46b80edf99d56f3e3d669c199c150a78d8e390fab4563395d0448",
+          "evidence_ranges": [
+            {
+              "block_id": "597e5ea8-0a0b-431a-af5c-f747ffa115f4",
+              "sha256": "8030923174eb2b68502c415911baaefadf0b1b3a1f75b379c489432919d2cf88",
+              "char_start": 0,
+              "char_end": 18
+            },
+            {
+              "block_id": "7df926b4-2286-4cee-a91c-4817173c5783",
+              "sha256": "735fab96d86a4c11ed2e344629a3fbf74842be9386df90683fa9a4fb44b80c87",
+              "char_start": 0,
+              "char_end": 744
+            },
+            {
+              "block_id": "129b5292-2ba5-43b5-87fc-b0e24eced780",
+              "sha256": "25f30aadb39dd0a8a740726bae9af8636be0eb7c919fbb058c433d07f841317c",
+              "char_start": 0,
+              "char_end": 29
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    },
+    {
+      "id": "secret_types",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный релевантный p5, все группы примеров сохранены, наличие более полного Приложения2 прямо указано; определения не подменены миссией/случайными фактами."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Что считается коммерческой тайной?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_ENUMERATION_SOURCE",
+      "actual_answer": "В действующем документе перечислено:\n\n[1] Коммерческая тайна\n\n- сведения о структуре производства, производственных мощностях, типе и размещении оборудования, запасах сырья, материалов, комплектующих, готовой продукции, финансовых и людских ресурсах;\n- сведения о применяемых оригинальных методах управления Обществом;\n- сведения о подготовке, принятии и исполнении отдельных решений руководства Общества;\n- сведения о предполагаемом создании дочерних и зависимых организаций;\n- сведения о планах расширения или свертывания производства различных видов продукции и их технико-экономических обоснованиях;\nсведения о планах инвестиций, закупок и продаж и т.п.\nС полным Перечнем информации, составляющим КИ, Вы можете ознакомиться в Положении о коммерческой тайне и конфиденциальной информации (Приложение №2)\n\nКоммерческая тайна – далее КТ\n\nИсточники: [1] Положение о коммерческой тайне, стр. 5",
+      "output_sha256": "dd42ec7b1d6e727fa4956ebd065069b9812d4307a7d9fb5ded1a3898fbd97d54",
+      "answer_json_sha256": "b441e1af46f389eac4a176dcc9d0ea92062a800e5c82316cb5c408f8177f1ab6",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "gold_extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "gold_source_pins": [
+        {
+          "block_id": "7df926b4-2286-4cee-a91c-4817173c5783",
+          "kind": "TEXT",
+          "text_sha256": "735fab96d86a4c11ed2e344629a3fbf74842be9386df90683fa9a4fb44b80c87",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "page_no": 5,
+          "block_id": "7df926b4-2286-4cee-a91c-4817173c5783",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "b1c25b30e9b46b80edf99d56f3e3d669c199c150a78d8e390fab4563395d0448",
+          "text_sha256": "735fab96d86a4c11ed2e344629a3fbf74842be9386df90683fa9a4fb44b80c87",
+          "full_evidence_sha256": "b1c25b30e9b46b80edf99d56f3e3d669c199c150a78d8e390fab4563395d0448",
+          "evidence_ranges": [
+            {
+              "block_id": "597e5ea8-0a0b-431a-af5c-f747ffa115f4",
+              "sha256": "8030923174eb2b68502c415911baaefadf0b1b3a1f75b379c489432919d2cf88",
+              "char_start": 0,
+              "char_end": 18
+            },
+            {
+              "block_id": "7df926b4-2286-4cee-a91c-4817173c5783",
+              "sha256": "735fab96d86a4c11ed2e344629a3fbf74842be9386df90683fa9a4fb44b80c87",
+              "char_start": 0,
+              "char_end": 744
+            },
+            {
+              "block_id": "129b5292-2ba5-43b5-87fc-b0e24eced780",
+              "sha256": "25f30aadb39dd0a8a740726bae9af8636be0eb7c919fbb058c433d07f841317c",
+              "char_start": 0,
+              "char_end": 29
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    },
+    {
+      "id": "confidential_types",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный p4 с тремя данными группами/подгруппами и отсылкой к полному Приложению1; не объявляет примеры исчерпывающими."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Расскажи, что входит в конфиденциальную информацию",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_ENUMERATION_SOURCE",
+      "actual_answer": "В действующем документе перечислено:\n\n[1] Конфиденциальная информация\n\nсведения об экономической, финансовой и бухгалтерской деятельности Общества на внутреннем рынке;\nсведения по вопросам внешнеэкономической деятельности Общества;\nрезультаты обработки КИ (выписки, обобщения, аналитические выписки из нее, результаты исследований, схемы, графики, спецификации, статистические данные, изделия, компоненты, созданные, полученные, спроектированные, произведенные на основе или с использованием КИ) и т.п.\nС полным Перечнем информации, составляющим КИ, Вы можете ознакомиться в Положении о коммерческой тайне и конфиденциальной информации (Приложение №1)\n\nКонфиденциальная информация – далее КИ\n\nИсточники: [1] Положение о коммерческой тайне, стр. 4",
+      "output_sha256": "1178526f73b2bf87b562f2b75b5df4fd5bc2160f421687a5fd113a582175ba30",
+      "answer_json_sha256": "8ac3294a47ca4c1550e4dce511c82c9091f9b477ac49ef526664e6f4680a0844",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "gold_extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "gold_source_pins": [
+        {
+          "block_id": "0d55ac35-903f-41d6-824c-d7769ccc31d5",
+          "kind": "TEXT",
+          "text_sha256": "77fe908c291b2c2b3193fbae98a09cf9d879b346f98d784744becfdeb139c090",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "page_no": 4,
+          "block_id": "a44d44c6-49b2-4efd-8bd7-2c879446e95d",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "085126232ac3c64078a7e704ba37abd5823768a31bf5d938c590a644c15faaad",
+          "text_sha256": "385ef8cbcce038006ff373c0f42ad314c4a122d84892d8456588809c98912983",
+          "full_evidence_sha256": "085126232ac3c64078a7e704ba37abd5823768a31bf5d938c590a644c15faaad",
+          "evidence_ranges": [
+            {
+              "block_id": "a44d44c6-49b2-4efd-8bd7-2c879446e95d",
+              "sha256": "385ef8cbcce038006ff373c0f42ad314c4a122d84892d8456588809c98912983",
+              "char_start": 0,
+              "char_end": 27
+            },
+            {
+              "block_id": "0d55ac35-903f-41d6-824c-d7769ccc31d5",
+              "sha256": "77fe908c291b2c2b3193fbae98a09cf9d879b346f98d784744becfdeb139c090",
+              "char_start": 0,
+              "char_end": 580
+            },
+            {
+              "block_id": "b78b1657-195d-4595-bb9f-8b0868248c9e",
+              "sha256": "98590ad7ff55c810fa1c3df37c47d62dfba0fb840ba92c0383f498473d9ec372",
+              "char_start": 0,
+              "char_end": 38
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    },
+    {
+      "id": "confidential_list",
+      "status": "FAIL",
+      "semantic_findings": [
+        "FAIL completeness: вопрос о месте просмотра имеет конкретный ответ в доступном parent — Положение, Приложение1. Actual HANDOFF содержит лишь «другой документ или приложение», не называет Приложение1 и не воспроизводит ссылку из доступного источника. Безопасный отказ от выдуманного полного текста не заменяет ответ на where-question."
+      ],
+      "completeness": "INCOMPLETE_EXACT_SOURCE_LOCATION",
+      "question": "Где посмотреть полный перечень конфиденциальных сведений?",
+      "mode": "HANDOFF",
+      "reason": "REFERENCED_FULL_SOURCE_REQUIRED",
+      "actual_answer": "Найденный документ отсылает к полному перечню в другом документе или приложении. Полного текста среди найденных источников нет. Для точного ответа нужен этот документ от HR.\n\nИсточники: [1] Положение о коммерческой тайне, стр. 4",
+      "output_sha256": "856273ecca35b4edd91e82c1b26633a76e6c94e55dc3f0bcdb2265ed7e5582a8",
+      "answer_json_sha256": "907632ca1935fe5deab5b3cb359db0023c1df566a1b0e614781ada71af3ab2e9",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "gold_extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "gold_source_pins": [
+        {
+          "block_id": "0d55ac35-903f-41d6-824c-d7769ccc31d5",
+          "kind": "TEXT",
+          "text_sha256": "77fe908c291b2c2b3193fbae98a09cf9d879b346f98d784744becfdeb139c090",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "page_no": 4,
+          "block_id": "a44d44c6-49b2-4efd-8bd7-2c879446e95d",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "085126232ac3c64078a7e704ba37abd5823768a31bf5d938c590a644c15faaad",
+          "text_sha256": "385ef8cbcce038006ff373c0f42ad314c4a122d84892d8456588809c98912983",
+          "full_evidence_sha256": "085126232ac3c64078a7e704ba37abd5823768a31bf5d938c590a644c15faaad",
+          "evidence_ranges": [
+            {
+              "block_id": "a44d44c6-49b2-4efd-8bd7-2c879446e95d",
+              "sha256": "385ef8cbcce038006ff373c0f42ad314c4a122d84892d8456588809c98912983",
+              "char_start": 0,
+              "char_end": 27
+            },
+            {
+              "block_id": "0d55ac35-903f-41d6-824c-d7769ccc31d5",
+              "sha256": "77fe908c291b2c2b3193fbae98a09cf9d879b346f98d784744becfdeb139c090",
+              "char_start": 0,
+              "char_end": 580
+            },
+            {
+              "block_id": "b78b1657-195d-4595-bb9f-8b0868248c9e",
+              "sha256": "98590ad7ff55c810fa1c3df37c47d62dfba0fb840ba92c0383f498473d9ec372",
+              "char_start": 0,
+              "char_end": 38
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    },
+    {
+      "id": "contractor_conditions",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный p9: соглашение И решение, акт в каждом случае передачи/доступа, направление копий обоих документов в отдел внутренней безопасности; новых контактов/исключений нет."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "При каких условиях передают коммерческую тайну контрагенту?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "actual_answer": "Точная формулировка действующего документа:\n\n[1] Передача конфиденциальной информации\n\nПри участии контрагентов в совместных с Обществом проектах знакомить их представителей с КТ возможно только после подписания Соглашения о конфиденциальности и принятия решения об ее передаче в соответствии с действующими нормативными правовыми актами РФ и документами по защите информации.\nФорма Соглашения размещена в Положении о коммерческой тайне и конфиденциальной информации \n(Приложение №13)\nВ каждом случае передача информации, составляющей КТ, или предоставлении доступа к ней, должны осуществляться по Акту приема-передачи.\nКопии подписанного Соглашения о конфиденциальности и Акта приема-передачи информации, составляющей КТ, направляются на адрес электронной почты «Отдел внутренней безопасности».\n\nИсточники: [1] Положение о коммерческой тайне, стр. 9",
+      "output_sha256": "ec5aaa236c67c40f684d79582f4c54a7ed55cb4d4bcdbba958bfec1ed28634e0",
+      "answer_json_sha256": "c5aed9f33a0a164eec8e313c3a3c7d66c59b0a41da4d74b193bae14f63f60573",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "gold_extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "gold_source_pins": [
+        {
+          "block_id": "8cf2130e-79fe-4e45-8e32-df91f2222308",
+          "kind": "TEXT",
+          "text_sha256": "362e9e788daacf7bba776214e16e349b5bbebed9a6f507d2d6624deb6ae10523",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "page_no": 9,
+          "block_id": "8cf2130e-79fe-4e45-8e32-df91f2222308",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "28e3a7c2a443060aac03f1f083a30ec059d42b2e53176a591623123e759b7915",
+          "text_sha256": "362e9e788daacf7bba776214e16e349b5bbebed9a6f507d2d6624deb6ae10523",
+          "full_evidence_sha256": "28e3a7c2a443060aac03f1f083a30ec059d42b2e53176a591623123e759b7915",
+          "evidence_ranges": [
+            {
+              "block_id": "b1daaa32-cae0-4b29-92c0-734ce525100c",
+              "sha256": "d2d78328ec015f5d84d157b0fa6e2207a3954bab6db89f808f7a7c1fa89efda4",
+              "char_start": 0,
+              "char_end": 36
+            },
+            {
+              "block_id": "8cf2130e-79fe-4e45-8e32-df91f2222308",
+              "sha256": "362e9e788daacf7bba776214e16e349b5bbebed9a6f507d2d6624deb6ae10523",
+              "char_start": 0,
+              "char_end": 708
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    },
+    {
+      "id": "transfer_act",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный p9 однозначно требует акт при каждом случае передачи ИЛИ доступа, не ограничивая обязанность физическим носителем; остальные защитные условия сохранены."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Нужен ли акт, когда передаю информацию, составляющую коммерческую тайну?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "actual_answer": "Точная формулировка действующего документа:\n\n[1] Передача конфиденциальной информации\n\nПри участии контрагентов в совместных с Обществом проектах знакомить их представителей с КТ возможно только после подписания Соглашения о конфиденциальности и принятия решения об ее передаче в соответствии с действующими нормативными правовыми актами РФ и документами по защите информации.\nФорма Соглашения размещена в Положении о коммерческой тайне и конфиденциальной информации \n(Приложение №13)\nВ каждом случае передача информации, составляющей КТ, или предоставлении доступа к ней, должны осуществляться по Акту приема-передачи.\nКопии подписанного Соглашения о конфиденциальности и Акта приема-передачи информации, составляющей КТ, направляются на адрес электронной почты «Отдел внутренней безопасности».\n\nИсточники: [1] Положение о коммерческой тайне, стр. 9",
+      "output_sha256": "ec5aaa236c67c40f684d79582f4c54a7ed55cb4d4bcdbba958bfec1ed28634e0",
+      "answer_json_sha256": "f1f503427dd15b6e124d450420776e066f2acc7fb2fa1fb7e370ec2902ae17bf",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "gold_extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "gold_source_pins": [
+        {
+          "block_id": "8cf2130e-79fe-4e45-8e32-df91f2222308",
+          "kind": "TEXT",
+          "text_sha256": "362e9e788daacf7bba776214e16e349b5bbebed9a6f507d2d6624deb6ae10523",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "page_no": 9,
+          "block_id": "8cf2130e-79fe-4e45-8e32-df91f2222308",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "28e3a7c2a443060aac03f1f083a30ec059d42b2e53176a591623123e759b7915",
+          "text_sha256": "362e9e788daacf7bba776214e16e349b5bbebed9a6f507d2d6624deb6ae10523",
+          "full_evidence_sha256": "28e3a7c2a443060aac03f1f083a30ec059d42b2e53176a591623123e759b7915",
+          "evidence_ranges": [
+            {
+              "block_id": "b1daaa32-cae0-4b29-92c0-734ce525100c",
+              "sha256": "d2d78328ec015f5d84d157b0fa6e2207a3954bab6db89f808f7a7c1fa89efda4",
+              "char_start": 0,
+              "char_end": 36
+            },
+            {
+              "block_id": "8cf2130e-79fe-4e45-8e32-df91f2222308",
+              "sha256": "362e9e788daacf7bba776214e16e349b5bbebed9a6f507d2d6624deb6ae10523",
+              "char_start": 0,
+              "char_end": 708
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    },
+    {
+      "id": "send_agreement",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный p9: копии подписанного соглашения и акта направляются в «Отдел внутренней безопасности»; конкретный несуществующий email не добавлен."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Куда направляются копии соглашения о конфиденциальности?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "actual_answer": "Точная формулировка действующего документа:\n\n[1] Передача конфиденциальной информации\n\nПри участии контрагентов в совместных с Обществом проектах знакомить их представителей с КТ возможно только после подписания Соглашения о конфиденциальности и принятия решения об ее передаче в соответствии с действующими нормативными правовыми актами РФ и документами по защите информации.\nФорма Соглашения размещена в Положении о коммерческой тайне и конфиденциальной информации \n(Приложение №13)\nВ каждом случае передача информации, составляющей КТ, или предоставлении доступа к ней, должны осуществляться по Акту приема-передачи.\nКопии подписанного Соглашения о конфиденциальности и Акта приема-передачи информации, составляющей КТ, направляются на адрес электронной почты «Отдел внутренней безопасности».\n\nИсточники: [1] Положение о коммерческой тайне, стр. 9",
+      "output_sha256": "ec5aaa236c67c40f684d79582f4c54a7ed55cb4d4bcdbba958bfec1ed28634e0",
+      "answer_json_sha256": "3aad522dfaddc7efbf9c8911c5d1f8654d42ac0d1d7534ded7d48d89ea17169c",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "gold_extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "gold_source_pins": [
+        {
+          "block_id": "8cf2130e-79fe-4e45-8e32-df91f2222308",
+          "kind": "TEXT",
+          "text_sha256": "362e9e788daacf7bba776214e16e349b5bbebed9a6f507d2d6624deb6ae10523",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "page_no": 9,
+          "block_id": "8cf2130e-79fe-4e45-8e32-df91f2222308",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "28e3a7c2a443060aac03f1f083a30ec059d42b2e53176a591623123e759b7915",
+          "text_sha256": "362e9e788daacf7bba776214e16e349b5bbebed9a6f507d2d6624deb6ae10523",
+          "full_evidence_sha256": "28e3a7c2a443060aac03f1f083a30ec059d42b2e53176a591623123e759b7915",
+          "evidence_ranges": [
+            {
+              "block_id": "b1daaa32-cae0-4b29-92c0-734ce525100c",
+              "sha256": "d2d78328ec015f5d84d157b0fa6e2207a3954bab6db89f808f7a7c1fa89efda4",
+              "char_start": 0,
+              "char_end": 36
+            },
+            {
+              "block_id": "8cf2130e-79fe-4e45-8e32-df91f2222308",
+              "sha256": "362e9e788daacf7bba776214e16e349b5bbebed9a6f507d2d6624deb6ae10523",
+              "char_start": 0,
+              "char_end": 708
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    },
+    {
+      "id": "electronic_protection",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный p11 содержит крипто-программы до отправки, ограничение доступа паролем и отдельный способ передачи пароля/средств защиты; обязательные действия не сокращены."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Как защитить электронный файл с конфиденциальными сведениями перед отправкой?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "actual_answer": "Точная формулировка действующего документа:\n\n[1] Передача конфиденциальной информации\n\nПередача КИ может осуществляться в форме предоставления доступа к информационному ресурсу (к месту хранения, размещения и пр.)\nПеред отправкой в электронном виде, КИ должна быть обработана специальными крипто-программами, ограничивающими доступ к информации без соответствующего пароля.\nПередача паролей и информации об иных средствах защиты электронных документов должна осуществляться способом, отличным от способа передачи КИ.\n\nИсточники: [1] Положение о коммерческой тайне, стр. 11",
+      "output_sha256": "dc8ab0ecbe4a0f6fd32b2bc46843e93cc56e18110764f0f9ab398f380f1074b1",
+      "answer_json_sha256": "7fc0b05c767519c737279c1cec50d86bdc10c55e4620d40dc10d15dcb471bc3e",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "gold_extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "gold_source_pins": [
+        {
+          "block_id": "e1ab123b-792f-4aab-88aa-6d0aeeebaf25",
+          "kind": "TEXT",
+          "text_sha256": "c3d92d4db6efcfd93ff02387d50e67053a12530481dd905cdeee3f69cc0b0e1e",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "page_no": 11,
+          "block_id": "e1ab123b-792f-4aab-88aa-6d0aeeebaf25",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "57d79ed5484e957beff1d62b2b04ccb76768f550a9c02943eb703944dc1e0374",
+          "text_sha256": "c3d92d4db6efcfd93ff02387d50e67053a12530481dd905cdeee3f69cc0b0e1e",
+          "full_evidence_sha256": "57d79ed5484e957beff1d62b2b04ccb76768f550a9c02943eb703944dc1e0374",
+          "evidence_ranges": [
+            {
+              "block_id": "d6ca5adf-b31a-45b6-9c2f-42eda3f3d992",
+              "sha256": "d2d78328ec015f5d84d157b0fa6e2207a3954bab6db89f808f7a7c1fa89efda4",
+              "char_start": 0,
+              "char_end": 36
+            },
+            {
+              "block_id": "e1ab123b-792f-4aab-88aa-6d0aeeebaf25",
+              "sha256": "c3d92d4db6efcfd93ff02387d50e67053a12530481dd905cdeee3f69cc0b0e1e",
+              "char_start": 0,
+              "char_end": 429
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    },
+    {
+      "id": "unlisted_position",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный p7 сохраняет аргументированную записку владельца информации, приказ директора ИЛИ уполномоченного, изменение Порядка; одним согласием руководителя доступ не разрешён."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Как оформляют доступ к КТ, если должности сотрудника нет в перечне?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "actual_answer": "Точная формулировка действующего документа:\n\n[1] Охрана конфиденциальности информации\n\nОбществом принимаются меры, направленные на охрану КИ и КТ.\nРаботники, имеющие доступ к КИ и КТ, в обязательном порядке знакомятся с Порядком обращения с информацией каждого типа под подпись.\nДоступ к КТ работников, должность и подразделения которых не соответствуют перечню, указанному в Порядке,  производится на основании аргументированной служебной записки владельца информации и только по приказу генерального директора или уполномоченного лица Общества, путем внесения изменений в данный Порядок. \n\nРаботник, имеющий доступ к информации, составляющей КТ, обязан:\n- не разглашать и не использовать информацию в личных целях в течение всего строка действия режима КТ, в том числе после прекращения действия трудового договора;\n- возместить причиненные Обществу убытки, причиненных ему разглашением информации, составляющих КТ;\n передать при прекращении или расторжении трудового договора носители информации, составляющую КТ.\n\nИсточники: [1] Положение о коммерческой тайне, стр. 7",
+      "output_sha256": "810f872e53c96f09da46b9c5e8d5bd69f8f97d4a116407524a2f0690791f33d8",
+      "answer_json_sha256": "a1366740c5dc6ce5a30960390f0def3f264f31bcbdf0752954bc4c2f82b01bcc",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "gold_extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "gold_source_pins": [
+        {
+          "block_id": "b82d5a1b-127b-4fb0-80c2-d246fc56dd67",
+          "kind": "TEXT",
+          "text_sha256": "86b88dfb398ec34cbc9c2f8eb612ac22f4104f483bca243b6383c1bbdbf745ac",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "page_no": 7,
+          "block_id": "b82d5a1b-127b-4fb0-80c2-d246fc56dd67",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "bc8418751de93df6ce323eceaf51c451d0a46b99624cf55bf9accb57a35db25f",
+          "text_sha256": "86b88dfb398ec34cbc9c2f8eb612ac22f4104f483bca243b6383c1bbdbf745ac",
+          "full_evidence_sha256": "bc8418751de93df6ce323eceaf51c451d0a46b99624cf55bf9accb57a35db25f",
+          "evidence_ranges": [
+            {
+              "block_id": "d975f503-5e33-43d2-b03b-471e4614c51e",
+              "sha256": "91561444dfe6d8aae2a17d2a76dd3ebfa311afff5d30cfdc8b4c334ed9602edc",
+              "char_start": 0,
+              "char_end": 36
+            },
+            {
+              "block_id": "b82d5a1b-127b-4fb0-80c2-d246fc56dd67",
+              "sha256": "86b88dfb398ec34cbc9c2f8eb612ac22f4104f483bca243b6383c1bbdbf745ac",
+              "char_start": 0,
+              "char_end": 929
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    },
+    {
+      "id": "gift_conditions",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный p8 содержит все6 критериев, законную цель/соразмерность/отсутствие роскоши, не более3000, отсутствие скрытого вознаграждения/репутационного риска/противоречий политике и закону; смысл и число сохранены."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Какие условия у допустимых деловых подарков?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "actual_answer": "Точная формулировка действующего документа:\n\n[1] ПОДАРКИ И ПРЕДСТАВИТЕЛЬСКИЕ РАСХОДЫ\n\nПодарки и представительские расходы, которые работники могут получать или предоставлять от имени Общества, должны соответствовать следующим критериям:\nбыть прямо связаны с законными целями деятельности Общества: презентацией или завершением бизнес-проектов; успешным исполнением контрактов; общепринятыми праздниками, а также памятными датами и юбилеями;  \nбыть разумно обоснованными, соразмерными и не являться предметами роскоши;  \nне должны быть дорогостоящими (их стоимость не должна составлять более трех тысяч рублей); \nне представлять собой скрытое вознаграждение за услугу, действие, бездействие, попустительство, принятие определенного решения о сделке, соглашении, и т.п. или попытку оказать влияние на получателя с иной незаконной или неэтичной целью; \nне создавать репутационного риска для Общества, работников и  иных лиц в случае раскрытия информации о подарках или представительских расходах;\nне противоречить принципам и требованиям настоящей Политики, Кодекса корпоративной этики, другим локальным нормативным актам Общества и нормам применимого законодательства.\n\nИсточники: [1] Антикоррупционная политика, стр. 8",
+      "output_sha256": "1df5ab02f3dcf009a4faf9802fe029b54fec2d041d0c18d80d7ea4d9e56c8edd",
+      "answer_json_sha256": "5e6add197a6e10f77a1e36d58acf64fd7514b222d8753d1737ee8623a4829034",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+      "gold_extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+      "gold_source_pins": [
+        {
+          "block_id": "6fb22f8e-bbe8-476f-9d3d-44a3cb2af9a5",
+          "kind": "TEXT",
+          "text_sha256": "1bda4e31d523d3d05292e451d69680c6eb333f2242822df635bce6652c3ad885",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "page_no": 8,
+          "block_id": "6fb22f8e-bbe8-476f-9d3d-44a3cb2af9a5",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "c354ad90d34e0d933ffd7de47beb17a4e39c258aed45b03cdb878dc2103fd15e",
+          "text_sha256": "1bda4e31d523d3d05292e451d69680c6eb333f2242822df635bce6652c3ad885",
+          "full_evidence_sha256": "c354ad90d34e0d933ffd7de47beb17a4e39c258aed45b03cdb878dc2103fd15e",
+          "evidence_ranges": [
+            {
+              "block_id": "12782364-769d-4e6b-8da8-46b161945e97",
+              "sha256": "e2044e572e6f6385af6f8d1930bb40d63153e18712e6a40de8bc133662648f06",
+              "char_start": 0,
+              "char_end": 35
+            },
+            {
+              "block_id": "6fb22f8e-bbe8-476f-9d3d-44a3cb2af9a5",
+              "sha256": "1bda4e31d523d3d05292e451d69680c6eb333f2242822df635bce6652c3ad885",
+              "char_start": 0,
+              "char_end": 1080
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    },
+    {
+      "id": "conflict_action",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный p9 явно ограничен подарками: уведомить Общество И сдать подарок при конфликте/возможности, исключение канцелярских принадлежностей сохранено. Ответ не распространяет эту процедуру на все возможные виды конфликта."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Как поступить при возникновении конфликта интересов?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "actual_answer": "Точная формулировка действующего документа:\n\n[1] ПОДАРКИ И ПРЕДСТАВИТЕЛЬСКИЕ РАСХОДЫ\n\nНе допускаются подарки от имени Общества, его работников и представителей третьим лицам в виде денежных средств в любой валюте, наличных или безналичных, ценных бумаг и драгоценных металлов.\nПри получении делового подарка работник обязан принять меры по недопущению возможности возникновения конфликта интересов.\nВ случае возникновения конфликта интересов или возможности его возникновения при получении делового подарка, работник в установленном порядке должен уведомить об этом Общество и сдать полученный деловой подарок ответственному за  профилактику коррупционных правонарушений (за исключением  канцелярских принадлежностей).\nРаботнику категорически запрещается просить, требовать, вынуждать третьих лиц дарить ему либо лицам, с которыми он состоит в близком родстве или свойстве, деловые подарки и (или) оказывать в их пользу знаки делового гостеприимства, а также принимать подарки в форме наличных, безналичных денежных средств, ценных бумаг, драгоценных металлов.\n\nИсточники: [1] Антикоррупционная политика, стр. 9",
+      "output_sha256": "861db5f919500567c52cd9f8c487e080e11113633ce8c2d6ff02a112c484d540",
+      "answer_json_sha256": "abf8d92e883248ec52c25da1a7c7351ac2ce01fdfe75c3c90250b314b2771fab",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+      "gold_extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+      "gold_source_pins": [
+        {
+          "block_id": "bf5a1942-c69c-460c-9e05-8349208c7350",
+          "kind": "TEXT",
+          "text_sha256": "b5ce47109f79d1e0eddec52921f82139917f09793eaeaed7d047451f975cfaaf",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "page_no": 9,
+          "block_id": "bf5a1942-c69c-460c-9e05-8349208c7350",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "5c13c5946f57e5b6817ec81821ebaaa54c34154d1c51fd4c07a6c7d829af67ab",
+          "text_sha256": "b5ce47109f79d1e0eddec52921f82139917f09793eaeaed7d047451f975cfaaf",
+          "full_evidence_sha256": "5c13c5946f57e5b6817ec81821ebaaa54c34154d1c51fd4c07a6c7d829af67ab",
+          "evidence_ranges": [
+            {
+              "block_id": "894365f9-4b00-46d2-877b-a5f8ba1cd76e",
+              "sha256": "e2044e572e6f6385af6f8d1930bb40d63153e18712e6a40de8bc133662648f06",
+              "char_start": 0,
+              "char_end": 35
+            },
+            {
+              "block_id": "bf5a1942-c69c-460c-9e05-8349208c7350",
+              "sha256": "b5ce47109f79d1e0eddec52921f82139917f09793eaeaed7d047451f975cfaaf",
+              "char_start": 0,
+              "char_end": 974
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    },
+    {
+      "id": "commitment_hire",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный p11: обязательство с каждым работником при заключении договора, без переноса на испытательный срок."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Когда нужно подписать обязательство соблюдать антикоррупционную политику?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "actual_answer": "Точная формулировка действующего документа:\n\n[1] Обязательство соблюдения норм \u000bантикоррупционного законодательства\n\nВ целях соблюдения антикоррупционного законодательства, реализации мер, направленных на борьбу с коррупцией и формирования у работников нетерпимости к противозаконным действиям, Общество осуществляет включение антикоррупционных условий (оговорок) в трудовые договоры с работниками.\n\nС каждым работником Общества в обязательном порядке подписывается Обязательство соблюдения норм антикоррупционного законодательства при заключении трудового договора.\n\nИсточники: [1] Антикоррупционная политика, стр. 11",
+      "output_sha256": "2659812390cbe5b88e22435695b12870b133beed13de07b6f56ffb9191b56d85",
+      "answer_json_sha256": "8353af518b48dc433c8fa559c59155a219b92b89c403c6540f30e3c8c953b9a5",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+      "gold_extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+      "gold_source_pins": [
+        {
+          "block_id": "6d99e944-bdce-4768-9a0e-ff2bc5575bf4",
+          "kind": "TEXT",
+          "text_sha256": "5036f7fb94bdcccf8c401625e720674664c1423da79dad7d4995ea91a34455e0",
+          "image_sha256": null
+        },
+        {
+          "block_id": "f90c9547-a2ae-48fc-a030-54f5982fbf32",
+          "kind": "TEXT",
+          "text_sha256": "7fe807b95f70beed1b958672c58ec7f2f557552453258f30dcdf955559971287",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "page_no": 11,
+          "block_id": "c73788ab-245c-4ac8-a633-a6a235554f6d",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "3c59a793eb21701fa4bdd05c012b152e19e73d70c40ecb3821d7e7da713b5326",
+          "text_sha256": "a3c18b319bae7e8491d1c9ff860605b07afefbcd3ac2f275b59f84a23bd67534",
+          "full_evidence_sha256": "3c59a793eb21701fa4bdd05c012b152e19e73d70c40ecb3821d7e7da713b5326",
+          "evidence_ranges": [
+            {
+              "block_id": "c73788ab-245c-4ac8-a633-a6a235554f6d",
+              "sha256": "a3c18b319bae7e8491d1c9ff860605b07afefbcd3ac2f275b59f84a23bd67534",
+              "char_start": 0,
+              "char_end": 66
+            },
+            {
+              "block_id": "6d99e944-bdce-4768-9a0e-ff2bc5575bf4",
+              "sha256": "5036f7fb94bdcccf8c401625e720674664c1423da79dad7d4995ea91a34455e0",
+              "char_start": 0,
+              "char_end": 281
+            },
+            {
+              "block_id": "f90c9547-a2ae-48fc-a030-54f5982fbf32",
+              "sha256": "7fe807b95f70beed1b958672c58ec7f2f557552453258f30dcdf955559971287",
+              "char_start": 0,
+              "char_end": 166
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    },
+    {
+      "id": "mission_purpose",
+      "status": "PASS",
+      "semantic_findings": [
+        "Генеративный текст прочитан полностью: цель развития трубопроводных технологий — повышение качества жизни/эффективности экономики через безопасную коммунальную/промышленную/аграрную инфраструктуру. Cite[2] подтверждает каждое утверждение; других целей/продажных показателей нет. Другие части общей миссии не нужны для этого узкого why-вопроса."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Зачем компания развивает трубопроводные системы?",
+      "mode": "LOCAL_GENERATED",
+      "reason": "MECHANICAL_CHECKS_PASSED",
+      "actual_answer": "Компания разрабатывает и применяет прогрессивные технологии в области трубопроводных систем для повышения качества жизни людей и эффективности экономики путем создания надежной и безопасной коммунальной, промышленной и аграрной инфраструктуры [2].\n\nИсточники: [1] Политика в области качества и экологии, стр. 5; [2] Политика в области качества и экологии, стр. 2; [3] Политика в области качества и экологии, стр. 4",
+      "output_sha256": "46ca6106a13c3610863a6e800c2f6d0568b9705fc2817fbf4dfacbbad93cdd62",
+      "answer_json_sha256": "444c9b3281d1cb028b72b6a95b3cdd820e6da4e57d245eeac57e788259fc131b",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+      "gold_extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+      "gold_source_pins": [
+        {
+          "block_id": "0d4dda11-cf8e-4f71-bfb2-bf3ef99afc7e",
+          "kind": "TEXT",
+          "text_sha256": "08a314c93fde49d85250aef72909a6c1e9b4c07a4b4661b3b9ab618cac6b0b37",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "page_no": 5,
+          "block_id": "2159fb2a-8f1f-46f5-b773-125b81cb3a03",
+          "kind": "VISUAL",
+          "image_sha256": "bd96c370b91079289248604a5aa1b1a840e3ef2f6fd96b736204577f9db22658",
+          "evidence_text_sha256": "82a5cc638adbac8ac881f08abd418ab4dd94c56c9d74590f19beb57b6caec0b7",
+          "text_sha256": "82a5cc638adbac8ac881f08abd418ab4dd94c56c9d74590f19beb57b6caec0b7",
+          "full_evidence_sha256": "82a5cc638adbac8ac881f08abd418ab4dd94c56c9d74590f19beb57b6caec0b7",
+          "evidence_ranges": []
+        },
+        {
+          "number": 2,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "page_no": 2,
+          "block_id": "0d4dda11-cf8e-4f71-bfb2-bf3ef99afc7e",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "f56544a1dc49de2b2422297624833315be4a4cc51722e05b2fafe0e1abc109e5",
+          "text_sha256": "08a314c93fde49d85250aef72909a6c1e9b4c07a4b4661b3b9ab618cac6b0b37",
+          "full_evidence_sha256": "f56544a1dc49de2b2422297624833315be4a4cc51722e05b2fafe0e1abc109e5",
+          "evidence_ranges": [
+            {
+              "block_id": "b1bfac41-553e-4518-a08d-61b30b4fa3f4",
+              "sha256": "85621dcc43441b320fa4c3052b977e2bf170c5481a66b918990bd04c96b7f356",
+              "char_start": 0,
+              "char_end": 46
+            },
+            {
+              "block_id": "0d4dda11-cf8e-4f71-bfb2-bf3ef99afc7e",
+              "sha256": "08a314c93fde49d85250aef72909a6c1e9b4c07a4b4661b3b9ab618cac6b0b37",
+              "char_start": 0,
+              "char_end": 451
+            }
+          ]
+        },
+        {
+          "number": 3,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "page_no": 4,
+          "block_id": "46bf398f-429c-4c6d-b3af-b260cd70b4aa",
+          "kind": "VISUAL",
+          "image_sha256": "eda341836251f36a82b28fad89b27f275745f2fd62466bd5e09a393c587c19f5",
+          "evidence_text_sha256": "a628def5223c9ea936fa1e811de09b8c0964cceaa899f847996ecf57d0c1c5a9",
+          "text_sha256": "a628def5223c9ea936fa1e811de09b8c0964cceaa899f847996ecf57d0c1c5a9",
+          "full_evidence_sha256": "a628def5223c9ea936fa1e811de09b8c0964cceaa899f847996ecf57d0c1c5a9",
+          "evidence_ranges": []
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    },
+    {
+      "id": "failed_2e0d19d0",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный утверждённый FIGURE description p3 с точным image/source pin: все5 стратегических целей есть, миссия/задачи их не заменяют; прежняя ошибка actual исправлена."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Какие основные цели политики в области качества и экологии?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_ENUMERATION_SOURCE",
+      "actual_answer": "В действующем документе перечислено:\n\n[1] Точная текстовая расшифровка подписей схемы на слайде 3:\nПовышение операционной эффективности, улучшения производительности и снижения издержек\nРасширение бизнеса, внедрение современных технологий и инноваций в области производства, продвижения и управления\nОбеспечение экологической безопасности и поддержания безопасных условий труда\nПовышение качества продукции и индекса удовлетворенности клиентов\nПоддержания благоприятного психологического климата в коллективе\n\nИсточники: [1] Политика в области качества и экологии, стр. 3",
+      "output_sha256": "a2be40fc435b4ef3e65efa059fe9ed908168fa5e47e8d9bb4b803bb732efd2ad",
+      "answer_json_sha256": "90f034f99f6d7ad02c0a858bf6f06017d29da1059738643796688aa65d645c8b",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+      "gold_extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+      "gold_source_pins": [
+        {
+          "block_id": "5dcb2c21-6c98-47bc-ba21-7f4188112809",
+          "kind": "FIGURE",
+          "text_sha256": "f8949c45affff18935304c851197895bbee96823590ef627186da1b4c0d820b4",
+          "image_sha256": "83bcfee18282f994afe7b8cbb8c223f5a83efbcd1686c18e23ec931f4232c40f"
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "page_no": 3,
+          "block_id": "5dcb2c21-6c98-47bc-ba21-7f4188112809",
+          "kind": "VISUAL",
+          "image_sha256": "83bcfee18282f994afe7b8cbb8c223f5a83efbcd1686c18e23ec931f4232c40f",
+          "evidence_text_sha256": "f8949c45affff18935304c851197895bbee96823590ef627186da1b4c0d820b4",
+          "text_sha256": "f8949c45affff18935304c851197895bbee96823590ef627186da1b4c0d820b4",
+          "full_evidence_sha256": "f8949c45affff18935304c851197895bbee96823590ef627186da1b4c0d820b4",
+          "evidence_ranges": []
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 6
+    },
+    {
+      "id": "failed_cd25f649",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный p7 с прямым перечнем обязанностей: неразглашение И запрет личного использования весь срок режима/после увольнения; возмещение убытков; возврат носителей. Общая фраза p13 больше не заменяет список; история не добавила фактов."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Какие обязанности сотрудника по сохранению коммерческой тайны?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "actual_answer": "Точная формулировка действующего документа:\n\n[1] Охрана конфиденциальности информации\n\nОбществом принимаются меры, направленные на охрану КИ и КТ.\nРаботники, имеющие доступ к КИ и КТ, в обязательном порядке знакомятся с Порядком обращения с информацией каждого типа под подпись.\nДоступ к КТ работников, должность и подразделения которых не соответствуют перечню, указанному в Порядке,  производится на основании аргументированной служебной записки владельца информации и только по приказу генерального директора или уполномоченного лица Общества, путем внесения изменений в данный Порядок. \n\nРаботник, имеющий доступ к информации, составляющей КТ, обязан:\n- не разглашать и не использовать информацию в личных целях в течение всего строка действия режима КТ, в том числе после прекращения действия трудового договора;\n- возместить причиненные Обществу убытки, причиненных ему разглашением информации, составляющих КТ;\n передать при прекращении или расторжении трудового договора носители информации, составляющую КТ.\n\nИсточники: [1] Положение о коммерческой тайне, стр. 7",
+      "output_sha256": "810f872e53c96f09da46b9c5e8d5bd69f8f97d4a116407524a2f0690791f33d8",
+      "answer_json_sha256": "4b4edda4608876530b7aecdde402909adb8a33bcbdd6b812e349c50273f063c1",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "gold_extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "gold_source_pins": [
+        {
+          "block_id": "b82d5a1b-127b-4fb0-80c2-d246fc56dd67",
+          "kind": "TEXT",
+          "text_sha256": "86b88dfb398ec34cbc9c2f8eb612ac22f4104f483bca243b6383c1bbdbf745ac",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "page_no": 7,
+          "block_id": "b82d5a1b-127b-4fb0-80c2-d246fc56dd67",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "bc8418751de93df6ce323eceaf51c451d0a46b99624cf55bf9accb57a35db25f",
+          "text_sha256": "86b88dfb398ec34cbc9c2f8eb612ac22f4104f483bca243b6383c1bbdbf745ac",
+          "full_evidence_sha256": "bc8418751de93df6ce323eceaf51c451d0a46b99624cf55bf9accb57a35db25f",
+          "evidence_ranges": [
+            {
+              "block_id": "d975f503-5e33-43d2-b03b-471e4614c51e",
+              "sha256": "91561444dfe6d8aae2a17d2a76dd3ebfa311afff5d30cfdc8b4c334ed9602edc",
+              "char_start": 0,
+              "char_end": 36
+            },
+            {
+              "block_id": "b82d5a1b-127b-4fb0-80c2-d246fc56dd67",
+              "sha256": "86b88dfb398ec34cbc9c2f8eb612ac22f4104f483bca243b6383c1bbdbf745ac",
+              "char_start": 0,
+              "char_end": 929
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 6
+    },
+    {
+      "id": "failed_4afff528",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный p8 при том же вежливом префиксе и истории сохраняет обе части обязательного условия: разрешение директора/уполномоченного И подписанное обязательство посетителя. Старый conjunction-loss отсутствует."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Подскажи, пожалуйста: Кто разрешает посетителю фотографировать конфиденциальные документы?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "actual_answer": "Точная формулировка действующего документа:\n\n[1] Защита конфиденциальности информации\n\nВ случае посещения объектов Общества представителями сторонних организаций ответственное лицо может знакомить посетителей только с конкретной информацией и объектами, которые определены генеральным директором или уполномоченным лицом Общества.\n\nОзнакомление с информацией, проведение осмотров, фото-, видеосъемок документов, объектов (процессов), отнесенных к КТ, возможно только после получения разрешения генерального директора или уполномоченного лица Общества и подписания «Обязательства о соблюдении КТ посетителями объектов». \nФорма Обязательства размещена в Положении о коммерческой тайне и конфиденциальной информации \n(Приложение № 4)\n\nИсточники: [1] Положение о коммерческой тайне, стр. 8",
+      "output_sha256": "0662cef5b7e11b8bb94a2b57fb5a0cb49eb27cc490bde91b0342ebddefac8a92",
+      "answer_json_sha256": "cf2d70f480d3233930a78c9fe6e0f53ebd7d754817b3a2bdf061d2721c3bf067",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "gold_extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "gold_source_pins": [
+        {
+          "block_id": "ebe63cca-b2d8-4dd3-893c-af7bdc78eebd",
+          "kind": "TEXT",
+          "text_sha256": "6bddefe58e1cef7a9584ff6b12bb1684aa570a52eb54ecf63f4eabfdfb2c62c0",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "page_no": 8,
+          "block_id": "ebe63cca-b2d8-4dd3-893c-af7bdc78eebd",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "74d06a53efc317f850e97f4037cac00203396d9fb8476d8514b12d0498973c1b",
+          "text_sha256": "6bddefe58e1cef7a9584ff6b12bb1684aa570a52eb54ecf63f4eabfdfb2c62c0",
+          "full_evidence_sha256": "74d06a53efc317f850e97f4037cac00203396d9fb8476d8514b12d0498973c1b",
+          "evidence_ranges": [
+            {
+              "block_id": "9b69f9ee-3e01-461e-8b2f-0bbe4215e21f",
+              "sha256": "a90971de8447504d8270e316eae349dc05360d79173dcb87aa576a172c69a731",
+              "char_start": 0,
+              "char_end": 36
+            },
+            {
+              "block_id": "ebe63cca-b2d8-4dd3-893c-af7bdc78eebd",
+              "sha256": "6bddefe58e1cef7a9584ff6b12bb1684aa570a52eb54ecf63f4eabfdfb2c62c0",
+              "char_start": 0,
+              "char_end": 643
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 6
+    },
+    {
+      "id": "failed_bd10400a",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный FIGURE p3 со всеми5 стратегическими целями; миссия p2 и задачи p4 не выданы вместо целей, утверждения истории не использованы."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Подскажи, пожалуйста: Какие основные цели политики в области качества и экологии?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_ENUMERATION_SOURCE",
+      "actual_answer": "В действующем документе перечислено:\n\n[1] Точная текстовая расшифровка подписей схемы на слайде 3:\nПовышение операционной эффективности, улучшения производительности и снижения издержек\nРасширение бизнеса, внедрение современных технологий и инноваций в области производства, продвижения и управления\nОбеспечение экологической безопасности и поддержания безопасных условий труда\nПовышение качества продукции и индекса удовлетворенности клиентов\nПоддержания благоприятного психологического климата в коллективе\n\nИсточники: [1] Политика в области качества и экологии, стр. 3",
+      "output_sha256": "a2be40fc435b4ef3e65efa059fe9ed908168fa5e47e8d9bb4b803bb732efd2ad",
+      "answer_json_sha256": "7ca3b0e1f7796933f26e65aa9d88f5097aa96c4ba57e6806a40ce7337beb13b1",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+      "gold_extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+      "gold_source_pins": [
+        {
+          "block_id": "5dcb2c21-6c98-47bc-ba21-7f4188112809",
+          "kind": "FIGURE",
+          "text_sha256": "f8949c45affff18935304c851197895bbee96823590ef627186da1b4c0d820b4",
+          "image_sha256": "83bcfee18282f994afe7b8cbb8c223f5a83efbcd1686c18e23ec931f4232c40f"
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "page_no": 3,
+          "block_id": "5dcb2c21-6c98-47bc-ba21-7f4188112809",
+          "kind": "VISUAL",
+          "image_sha256": "83bcfee18282f994afe7b8cbb8c223f5a83efbcd1686c18e23ec931f4232c40f",
+          "evidence_text_sha256": "f8949c45affff18935304c851197895bbee96823590ef627186da1b4c0d820b4",
+          "text_sha256": "f8949c45affff18935304c851197895bbee96823590ef627186da1b4c0d820b4",
+          "full_evidence_sha256": "f8949c45affff18935304c851197895bbee96823590ef627186da1b4c0d820b4",
+          "evidence_ranges": []
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 6
+    },
+    {
+      "id": "failed_e5a04cc5",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный содержательный FIGURE p3 со всеми5 целями и точными pins; заголовки/дата больше не служат ложным подтверждением миссии. Никаких дополнительных неподтверждённых утверждений."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Хочу уточнить: Какие основные цели политики в области качества и экологии?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_ENUMERATION_SOURCE",
+      "actual_answer": "В действующем документе перечислено:\n\n[1] Точная текстовая расшифровка подписей схемы на слайде 3:\nПовышение операционной эффективности, улучшения производительности и снижения издержек\nРасширение бизнеса, внедрение современных технологий и инноваций в области производства, продвижения и управления\nОбеспечение экологической безопасности и поддержания безопасных условий труда\nПовышение качества продукции и индекса удовлетворенности клиентов\nПоддержания благоприятного психологического климата в коллективе\n\nИсточники: [1] Политика в области качества и экологии, стр. 3",
+      "output_sha256": "a2be40fc435b4ef3e65efa059fe9ed908168fa5e47e8d9bb4b803bb732efd2ad",
+      "answer_json_sha256": "6ada27ad5b6fe3d195011574e5e14143a2a78447abbaccd6af0e1eb21e544283",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+      "gold_extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+      "gold_source_pins": [
+        {
+          "block_id": "5dcb2c21-6c98-47bc-ba21-7f4188112809",
+          "kind": "FIGURE",
+          "text_sha256": "f8949c45affff18935304c851197895bbee96823590ef627186da1b4c0d820b4",
+          "image_sha256": "83bcfee18282f994afe7b8cbb8c223f5a83efbcd1686c18e23ec931f4232c40f"
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "page_no": 3,
+          "block_id": "5dcb2c21-6c98-47bc-ba21-7f4188112809",
+          "kind": "VISUAL",
+          "image_sha256": "83bcfee18282f994afe7b8cbb8c223f5a83efbcd1686c18e23ec931f4232c40f",
+          "evidence_text_sha256": "f8949c45affff18935304c851197895bbee96823590ef627186da1b4c0d820b4",
+          "text_sha256": "f8949c45affff18935304c851197895bbee96823590ef627186da1b4c0d820b4",
+          "full_evidence_sha256": "f8949c45affff18935304c851197895bbee96823590ef627186da1b4c0d820b4",
+          "evidence_ranges": []
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 6
+    },
+    {
+      "id": "failed_388d2a36",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный p7 с3 обязанностями и сохранённым И в запрете разглашения/личного использования, сроком и возвратом носителей. Вежливый префикс/история смысл не изменили."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Хочу уточнить: Какие обязанности сотрудника по сохранению коммерческой тайны?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "actual_answer": "Точная формулировка действующего документа:\n\n[1] Охрана конфиденциальности информации\n\nОбществом принимаются меры, направленные на охрану КИ и КТ.\nРаботники, имеющие доступ к КИ и КТ, в обязательном порядке знакомятся с Порядком обращения с информацией каждого типа под подпись.\nДоступ к КТ работников, должность и подразделения которых не соответствуют перечню, указанному в Порядке,  производится на основании аргументированной служебной записки владельца информации и только по приказу генерального директора или уполномоченного лица Общества, путем внесения изменений в данный Порядок. \n\nРаботник, имеющий доступ к информации, составляющей КТ, обязан:\n- не разглашать и не использовать информацию в личных целях в течение всего строка действия режима КТ, в том числе после прекращения действия трудового договора;\n- возместить причиненные Обществу убытки, причиненных ему разглашением информации, составляющих КТ;\n передать при прекращении или расторжении трудового договора носители информации, составляющую КТ.\n\nИсточники: [1] Положение о коммерческой тайне, стр. 7",
+      "output_sha256": "810f872e53c96f09da46b9c5e8d5bd69f8f97d4a116407524a2f0690791f33d8",
+      "answer_json_sha256": "df38b98e8283bf8a9297afa5f87f791eb3db14eee62ada25fad9dfe3c07bfde4",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "gold_extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "gold_source_pins": [
+        {
+          "block_id": "b82d5a1b-127b-4fb0-80c2-d246fc56dd67",
+          "kind": "TEXT",
+          "text_sha256": "86b88dfb398ec34cbc9c2f8eb612ac22f4104f483bca243b6383c1bbdbf745ac",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "page_no": 7,
+          "block_id": "b82d5a1b-127b-4fb0-80c2-d246fc56dd67",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "bc8418751de93df6ce323eceaf51c451d0a46b99624cf55bf9accb57a35db25f",
+          "text_sha256": "86b88dfb398ec34cbc9c2f8eb612ac22f4104f483bca243b6383c1bbdbf745ac",
+          "full_evidence_sha256": "bc8418751de93df6ce323eceaf51c451d0a46b99624cf55bf9accb57a35db25f",
+          "evidence_ranges": [
+            {
+              "block_id": "d975f503-5e33-43d2-b03b-471e4614c51e",
+              "sha256": "91561444dfe6d8aae2a17d2a76dd3ebfa311afff5d30cfdc8b4c334ed9602edc",
+              "char_start": 0,
+              "char_end": 36
+            },
+            {
+              "block_id": "b82d5a1b-127b-4fb0-80c2-d246fc56dd67",
+              "sha256": "86b88dfb398ec34cbc9c2f8eb612ac22f4104f483bca243b6383c1bbdbf745ac",
+              "char_start": 0,
+              "char_end": 929
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 6
+    },
+    {
+      "id": "failed_7c059874",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный утверждённый FIGURE p3 со всеми5 целями; отсутствует прежний перенос миссии с citation на заголовок p1. История не представлена доказательством."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Объясни правило: Какие основные цели политики в области качества и экологии?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_ENUMERATION_SOURCE",
+      "actual_answer": "В действующем документе перечислено:\n\n[1] Точная текстовая расшифровка подписей схемы на слайде 3:\nПовышение операционной эффективности, улучшения производительности и снижения издержек\nРасширение бизнеса, внедрение современных технологий и инноваций в области производства, продвижения и управления\nОбеспечение экологической безопасности и поддержания безопасных условий труда\nПовышение качества продукции и индекса удовлетворенности клиентов\nПоддержания благоприятного психологического климата в коллективе\n\nИсточники: [1] Политика в области качества и экологии, стр. 3",
+      "output_sha256": "a2be40fc435b4ef3e65efa059fe9ed908168fa5e47e8d9bb4b803bb732efd2ad",
+      "answer_json_sha256": "9f58da193b42bd87379d3ca589236a31ab1c09eaaceca1449be246e81adaf5eb",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+      "gold_extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+      "gold_source_pins": [
+        {
+          "block_id": "5dcb2c21-6c98-47bc-ba21-7f4188112809",
+          "kind": "FIGURE",
+          "text_sha256": "f8949c45affff18935304c851197895bbee96823590ef627186da1b4c0d820b4",
+          "image_sha256": "83bcfee18282f994afe7b8cbb8c223f5a83efbcd1686c18e23ec931f4232c40f"
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "page_no": 3,
+          "block_id": "5dcb2c21-6c98-47bc-ba21-7f4188112809",
+          "kind": "VISUAL",
+          "image_sha256": "83bcfee18282f994afe7b8cbb8c223f5a83efbcd1686c18e23ec931f4232c40f",
+          "evidence_text_sha256": "f8949c45affff18935304c851197895bbee96823590ef627186da1b4c0d820b4",
+          "text_sha256": "f8949c45affff18935304c851197895bbee96823590ef627186da1b4c0d820b4",
+          "full_evidence_sha256": "f8949c45affff18935304c851197895bbee96823590ef627186da1b4c0d820b4",
+          "evidence_ranges": []
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 6
+    },
+    {
+      "id": "corruption_report",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный p5: незамедлительно в тот же день письменно, при невозможности — на следующий; генеральный директор/непосредственный руководитель и(или) ответственный; виды событий; условный fallback с точными email4384/71-4384. Сроки, контакты и условия не искажены."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Как поступать при выявлении коррупционного нарушения?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "actual_answer": "Точная формулировка действующего документа:\n\n[1] УВЕДОМЛЕНИЕ РАБОТОДАТЕЛЯ О СТАВШИХ ИЗВЕСТНЫМИ СЛУЧАЯХ КОРРУПЦИОННЫХ ПРАВОНАРУШЕНИЙ\n\nРаботник Общества обязан незамедлительно, в тот же день в письменном виде (при невозможности уведомить в тот же день на следующий день), информировать генерального директора Общества, своего непосредственного руководителя и (или) лицо, ответственное за профилактику коррупционных правонарушений в Обществе о:\nставшей ему известной информации о случаях совершения коррупционных правонарушений,\tнепредставления сведений либо представления заведомо недостоверных или неполных сведений о доходах, имуществе, обязательствах имущественного характера другими работниками, контрагентами или иными лицами;\n - фактах обращения к нему каких-либо лиц в целях склонения его к совершению коррупционного правонарушения.\nПри невозможности направления работником уведомления (служебная командировка, отпуск, больничный и т.д.) допускается его передача посредством электронной почты на корпоративный адрес: «Предотвратим коррупцию!» (anti-corruption@polyplastic.ru) или в устном виде на «горячую линию» по внутреннему корпоративному номеру 4384, для региональных предприятий  –    71-4384.\n\nИсточники: [1] Антикоррупционная политика, стр. 5",
+      "output_sha256": "d136b810f77a062ab3935cef190f035c3a14c61af9acd7276b81f867093dc937",
+      "answer_json_sha256": "edec8db9d15e5d84c90f703e94758744c7169f3bd3270c43da221f54ef1bacd4",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+      "gold_extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+      "gold_source_pins": [
+        {
+          "block_id": "6d9ca199-92aa-4231-a6b3-29c59aff9d8c",
+          "kind": "TEXT",
+          "text_sha256": "ddda9430100efaf879083c99175323c73a767b418a8d013a0ac90d3459e7c6a0",
+          "image_sha256": null
+        },
+        {
+          "block_id": "d5152cc6-4534-4622-a8db-aa1d463bc3d9",
+          "kind": "TEXT",
+          "text_sha256": "6a37c358fa9004a570c2dc8cc67750b839f75c319fe8d714f8e2f78ffd8cb123",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "page_no": 5,
+          "block_id": "d5152cc6-4534-4622-a8db-aa1d463bc3d9",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "787d3bc8cb17f4d48fd3026145f59ff1ca57637851543c8501215b4ce7853b0c",
+          "text_sha256": "6a37c358fa9004a570c2dc8cc67750b839f75c319fe8d714f8e2f78ffd8cb123",
+          "full_evidence_sha256": "787d3bc8cb17f4d48fd3026145f59ff1ca57637851543c8501215b4ce7853b0c",
+          "evidence_ranges": [
+            {
+              "block_id": "6d9ca199-92aa-4231-a6b3-29c59aff9d8c",
+              "sha256": "ddda9430100efaf879083c99175323c73a767b418a8d013a0ac90d3459e7c6a0",
+              "char_start": 0,
+              "char_end": 82
+            },
+            {
+              "block_id": "d5152cc6-4534-4622-a8db-aa1d463bc3d9",
+              "sha256": "6a37c358fa9004a570c2dc8cc67750b839f75c319fe8d714f8e2f78ffd8cb123",
+              "char_start": 0,
+              "char_end": 1071
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    },
+    {
+      "id": "all_policy_audience",
+      "status": "PASS",
+      "semantic_findings": [
+        "Полный p11 прямо говорит с каждым работником при заключении договора; не придуманы исключения и не заявлено «только работники». Оценка ограничена подтверждённой обязанностью сотрудников, не исчерпывающей юридической классификацией иных лиц."
+      ],
+      "completeness": "COMPLETE_FOR_REQUESTED_SOURCE_SCOPE",
+      "question": "Кто должен соблюдать антикоррупционную политику компании?",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "actual_answer": "Точная формулировка действующего документа:\n\n[1] Обязательство соблюдения норм \u000bантикоррупционного законодательства\n\nВ целях соблюдения антикоррупционного законодательства, реализации мер, направленных на борьбу с коррупцией и формирования у работников нетерпимости к противозаконным действиям, Общество осуществляет включение антикоррупционных условий (оговорок) в трудовые договоры с работниками.\n\nС каждым работником Общества в обязательном порядке подписывается Обязательство соблюдения норм антикоррупционного законодательства при заключении трудового договора.\n\nИсточники: [1] Антикоррупционная политика, стр. 11",
+      "output_sha256": "2659812390cbe5b88e22435695b12870b133beed13de07b6f56ffb9191b56d85",
+      "answer_json_sha256": "7d340ea1bbef2981cc92139df6587fa028d7a251055f57d63c766081a19762cc",
+      "output_hash_definition": "SHA256 of exact UTF8 answer.text; answer_json_sha256 uses sorted keys and compact UTF8 JSON.",
+      "gold_revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+      "gold_extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+      "gold_source_pins": [
+        {
+          "block_id": "6d99e944-bdce-4768-9a0e-ff2bc5575bf4",
+          "kind": "TEXT",
+          "text_sha256": "5036f7fb94bdcccf8c401625e720674664c1423da79dad7d4995ea91a34455e0",
+          "image_sha256": null
+        },
+        {
+          "block_id": "f90c9547-a2ae-48fc-a030-54f5982fbf32",
+          "kind": "TEXT",
+          "text_sha256": "7fe807b95f70beed1b958672c58ec7f2f557552453258f30dcdf955559971287",
+          "image_sha256": null
+        }
+      ],
+      "actual_citation_pins": [
+        {
+          "number": 1,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "page_no": 11,
+          "block_id": "c73788ab-245c-4ac8-a633-a6a235554f6d",
+          "kind": "TEXT",
+          "image_sha256": null,
+          "evidence_text_sha256": "3c59a793eb21701fa4bdd05c012b152e19e73d70c40ecb3821d7e7da713b5326",
+          "text_sha256": "a3c18b319bae7e8491d1c9ff860605b07afefbcd3ac2f275b59f84a23bd67534",
+          "full_evidence_sha256": "3c59a793eb21701fa4bdd05c012b152e19e73d70c40ecb3821d7e7da713b5326",
+          "evidence_ranges": [
+            {
+              "block_id": "c73788ab-245c-4ac8-a633-a6a235554f6d",
+              "sha256": "a3c18b319bae7e8491d1c9ff860605b07afefbcd3ac2f275b59f84a23bd67534",
+              "char_start": 0,
+              "char_end": 66
+            },
+            {
+              "block_id": "6d99e944-bdce-4768-9a0e-ff2bc5575bf4",
+              "sha256": "5036f7fb94bdcccf8c401625e720674664c1423da79dad7d4995ea91a34455e0",
+              "char_start": 0,
+              "char_end": 281
+            },
+            {
+              "block_id": "f90c9547-a2ae-48fc-a030-54f5982fbf32",
+              "sha256": "7fe807b95f70beed1b958672c58ec7f2f557552453258f30dcdf955559971287",
+              "char_start": 0,
+              "char_end": 166
+            }
+          ]
+        }
+      ],
+      "reviewed_against_full_gold_content": true,
+      "mechanical_status_observed_not_used_as_semantic_verdict": "PASS",
+      "history_messages": 0
+    }
+  ]
+}

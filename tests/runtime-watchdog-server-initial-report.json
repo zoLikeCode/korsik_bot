@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "status": "FAIL",
+  "scope": "ACTUAL_ISOLATED_COMPOSE_PROCESS_RECOVERY_NOT_PRODUCTION_WORKER_OR_HOST_REBOOT_PROOF",
+  "project": "korsik-watchdog-probe-20261024b",
+  "watchdog_source_sha256": "5170e4ce023bf2890ff330e4a9ae01f1b5b8965495424af03ee8da459a872a12",
+  "image_id": "sha256:9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e",
+  "container_id": "93135aa2e5b707e3d5ce09ba06af4843d65955d7caea7f2b0fb4bbae3373720f",
+  "created_at": "2026-10-24T10:17:40.230740+00:00",
+  "baseline": {
+    "status": "running",
+    "health": "healthy",
+    "started_at": "2026-10-24T10:17:32.543629525Z",
+    "cli": {
+      "status": "OBSERVED",
+      "services": [
+        {
+          "service": "worker",
+          "status": "HEALTHY"
+        }
+      ],
+      "actions": []
+    }
+  },
+  "isolation": {
+    "network_mode": "none",
+    "mounts": 0,
+    "published_ports": 0,
+    "secrets_mounted": 0,
+    "restart_policy": "no",
+    "command": "python time.sleep(600)"
+  },
+  "error_type": "ValueError",
+  "failure_code": "probe_interrupted_or_command_failed",
+  "cleanup": {
+    "probe_container_removed": true,
+    "remaining_probe_containers": 0,
+    "production_services_changed_by_probe_commands": false,
+    "systemd_changed": false,
+    "host_reboot_tested": false,
+    "max_requests_sent": 0,
+    "dns_changed": false
+  },
+  "completed_at": "2026-10-24T10:19:11.365274+00:00"
+}

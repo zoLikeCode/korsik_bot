@@ -1,0 +1,485 @@
+{
+  "schema": "korsik-model-quality-v2",
+  "status": "FAIL",
+  "scope": "ACTUAL_DIALOGUE_COUNTEREXAMPLES_RELEASE_BLOCKING",
+  "repository": "Qwen/Qwen3.5-4B",
+  "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+  "artifact_fingerprint": "1fe278d9e50f5fe426c80efe3845911a3bbcc057d1f975c660a8c2f39c6d21d0",
+  "pipeline_source_sha256": "f6e104349570579c0d6d80804482a7b4b3fae406639903244cf04c18ce804340",
+  "generation_runtime_source_sha256": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b",
+  "reviewer": "IMPLEMENTATION_MANUAL_REVIEW_NOT_COMPANY_HR",
+  "company_hr_acceptance": false,
+  "cases": [
+    {
+      "answer_id": "2e0d19d0-43cf-40e5-b2b0-dd91fa329555",
+      "answer_ordinal_including_warmup": 9,
+      "warmup": false,
+      "question": "Какие основные цели политики в области качества и экологии?",
+      "verdict": "FAIL",
+      "review_note": "Asked for the main quality/ecology goals; answer restates the mission. The published page3 figure contains five strategic goals, while retrieved page3 evidence is only its title.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "b1177e86-7392-4281-b20e-2f939a9c522c",
+          "page_no": 3,
+          "kind": "TEXT",
+          "evidence_sha256": "a71d162f7c5820ac012109d03722fe76425deb3e31f84f98598fd315af709faa"
+        },
+        {
+          "number": 2,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "f020ed86-4687-495a-a673-b736c800af12",
+          "page_no": 1,
+          "kind": "TEXT",
+          "evidence_sha256": "26694cfa8d8d25e9ece6cf210b76dfc1f2589e86e2f0c4800d4c7ff455a76ac4"
+        },
+        {
+          "number": 3,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "b1bfac41-553e-4518-a08d-61b30b4fa3f4",
+          "page_no": 2,
+          "kind": "TEXT",
+          "evidence_sha256": "f56544a1dc49de2b2422297624833315be4a4cc51722e05b2fafe0e1abc109e5"
+        }
+      ],
+      "cause_class": "WRONG_INTENT_MISSION_INSTEAD_OF_GOALS",
+      "actual_answer": "Основной целью политики в области качества и экологии является повышение качества жизни людей и эффективности экономики путем создания надежной и безопасной коммунальной, промышленной и аграрной инфраструктуры за счет разработки и применения прогрессивных технологий в области трубопроводных систем и решений для очистки сточных вод, а также обеспечение потребностей различных отраслей производства в высококачественных композиционных материалах, соответствующих современным тенденциям мирового рынка термопластов [3].\n\nИсточники: [1] Политика в области качества и экологии, стр. 3; [2] Политика в области качества и экологии, стр. 1; [3] Политика в области качества и экологии, стр. 2",
+      "cited_source_parents": [
+        {
+          "number": 1,
+          "title": "Политика в области качества и экологии",
+          "page_no": 3,
+          "text": "Стратегические цели\u000bв области качества и экологии",
+          "block_id": "b1177e86-7392-4281-b20e-2f939a9c522c"
+        },
+        {
+          "number": 2,
+          "title": "Политика в области качества и экологии",
+          "page_no": 1,
+          "text": "Политика в области качества и экологии\n\n01.03.2024",
+          "block_id": "f020ed86-4687-495a-a673-b736c800af12"
+        },
+        {
+          "number": 3,
+          "title": "Политика в области качества и экологии",
+          "page_no": 2,
+          "text": "Миссия Общества \u000bв области качества и экологии\n\nПовышение качества жизни людей и эффективности экономики путем создания надежной и безопасной коммунальной, промышленной и аграрной инфраструктуры за счет разработки и применения прогрессивных технологий в области трубопроводных систем и решений для очистки сточных вод, а также обеспечение потребностей различных отраслей производства в высококачественных композиционных материалах, соответствующих современным тенденциям мирового рынка термопластов.",
+          "block_id": "b1bfac41-553e-4518-a08d-61b30b4fa3f4"
+        }
+      ]
+    },
+    {
+      "answer_id": "cd25f649-1cf2-4e35-b80d-f821b2b95fdd",
+      "answer_ordinal_including_warmup": 10,
+      "warmup": false,
+      "question": "Какие обязанности сотрудника по сохранению коммерческой тайны?",
+      "verdict": "FAIL",
+      "review_note": "Asked for employee trade-secret duties; answer provides only a generic duty. Published page7 expressly lists non-disclosure/non-personal-use, compensation for caused losses, and returning media when employment ends; none appears in the answer. Retrieved pages5/14/13 miss the direct duty source.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "7df926b4-2286-4cee-a91c-4817173c5783",
+          "page_no": 5,
+          "kind": "TEXT",
+          "evidence_sha256": "b1c25b30e9b46b80edf99d56f3e3d669c199c150a78d8e390fab4563395d0448"
+        },
+        {
+          "number": 2,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "34a23247-53e8-4a6e-b1e9-41bb6cc86273",
+          "page_no": 14,
+          "kind": "TEXT",
+          "evidence_sha256": "a42153aac0f61af8014c3f8c73367e46cf007a383064ffccd717061d05a77f39"
+        },
+        {
+          "number": 3,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "46f43fd1-6eb6-40b9-a145-08f182af37e7",
+          "page_no": 13,
+          "kind": "TEXT",
+          "evidence_sha256": "c0d8b5a0cebc5f0163dadec0274f16212741db97be6fb7f994523b678039a878"
+        }
+      ],
+      "cause_class": "INCOMPLETE_DUTIES_RETRIEVAL",
+      "actual_answer": "Сотрудник обязан принимать меры по охране конфиденциальности информации.\n\n[3]\n\nИсточники: [1] Положение о коммерческой тайне, стр. 5; [2] Положение о коммерческой тайне, стр. 14; [3] Положение о коммерческой тайне, стр. 13",
+      "cited_source_parents": [
+        {
+          "number": 1,
+          "title": "Положение о коммерческой тайне",
+          "page_no": 5,
+          "text": "Коммерческая тайна\n\n- сведения о структуре производства, производственных мощностях, типе и размещении оборудования, запасах сырья, материалов, комплектующих, готовой продукции, финансовых и людских ресурсах;\n- сведения о применяемых оригинальных методах управления Обществом;\n- сведения о подготовке, принятии и исполнении отдельных решений руководства Общества;\n- сведения о предполагаемом создании дочерних и зависимых организаций;\n- сведения о планах расширения или свертывания производства различных видов продукции и их технико-экономических обоснованиях;\nсведения о планах инвестиций, закупок и продаж и т.п.\nС полным Перечнем информации, составляющим КИ, Вы можете ознакомиться в Положении о коммерческой тайне и конфиденциальной информации (Приложение №2)\n\nКоммерческая тайна – далее КТ",
+          "block_id": "7df926b4-2286-4cee-a91c-4817173c5783"
+        },
+        {
+          "number": 2,
+          "title": "Положение о коммерческой тайне",
+          "page_no": 14,
+          "text": "С полным текстом Положения о коммерческой тайне \u000bи конфиденциальной информации можно ознакомиться на корпоративном портале Общества.\n\nИван Иванов",
+          "block_id": "34a23247-53e8-4a6e-b1e9-41bb6cc86273"
+        },
+        {
+          "number": 3,
+          "title": "Положение о коммерческой тайне",
+          "page_no": 13,
+          "text": "Ответственность за нарушение\n\nПомните, что нарушение требований Положения о коммерческой тайне и конфиденциальной информации влечет за собой дисциплинарную, гражданско-правовую, административную или уголовную ответственность в соответствии с законодательством Российской Федерации.\n\nОбращаем внимание, что Общество вправе требовать от работников принимать меры по охране конфиденциальности информации.",
+          "block_id": "46f43fd1-6eb6-40b9-a145-08f182af37e7"
+        }
+      ]
+    },
+    {
+      "answer_id": "4afff528-3003-4cc1-9ab3-42ba02509616",
+      "answer_ordinal_including_warmup": 14,
+      "warmup": false,
+      "question": "Подскажи, пожалуйста: Кто разрешает посетителю фотографировать конфиденциальные документы?",
+      "verdict": "FAIL",
+      "review_note": "Cited page8 permits visitor photography only after permission AND a signed visitor confidentiality undertaking. Answer retains permission but drops the signed undertaking, weakening a mandatory condition.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "ebe63cca-b2d8-4dd3-893c-af7bdc78eebd",
+          "page_no": 8,
+          "kind": "TEXT",
+          "evidence_sha256": "74d06a53efc317f850e97f4037cac00203396d9fb8476d8514b12d0498973c1b"
+        },
+        {
+          "number": 2,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "b1daaa32-cae0-4b29-92c0-734ce525100c",
+          "page_no": 9,
+          "kind": "TEXT",
+          "evidence_sha256": "28e3a7c2a443060aac03f1f083a30ec059d42b2e53176a591623123e759b7915"
+        },
+        {
+          "number": 3,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "a44d44c6-49b2-4efd-8bd7-2c879446e95d",
+          "page_no": 4,
+          "kind": "TEXT",
+          "evidence_sha256": "085126232ac3c64078a7e704ba37abd5823768a31bf5d938c590a644c15faaad"
+        }
+      ],
+      "cause_class": "LOST_CONJUNCTIVE_PERMISSION_CONDITION",
+      "actual_answer": "Фото-, видеосъемку документов, отнесенных к коммерческой тайне (КТ), возможно только после получения разрешения генерального директора или уполномоченного лица Общества [1].\n\nИсточники: [1] Положение о коммерческой тайне, стр. 8; [2] Положение о коммерческой тайне, стр. 9; [3] Положение о коммерческой тайне, стр. 4",
+      "cited_source_parents": [
+        {
+          "number": 1,
+          "title": "Положение о коммерческой тайне",
+          "page_no": 8,
+          "text": "Защита конфиденциальности информации\n\nВ случае посещения объектов Общества представителями сторонних организаций ответственное лицо может знакомить посетителей только с конкретной информацией и объектами, которые определены генеральным директором или уполномоченным лицом Общества.\n\nОзнакомление с информацией, проведение осмотров, фото-, видеосъемок документов, объектов (процессов), отнесенных к КТ, возможно только после получения разрешения генерального директора или уполномоченного лица Общества и подписания «Обязательства о соблюдении КТ посетителями объектов». \nФорма Обязательства размещена в Положении о коммерческой тайне и конфиденциальной информации \n(Приложение № 4)",
+          "block_id": "ebe63cca-b2d8-4dd3-893c-af7bdc78eebd"
+        },
+        {
+          "number": 2,
+          "title": "Положение о коммерческой тайне",
+          "page_no": 9,
+          "text": "Передача конфиденциальной информации\n\nПри участии контрагентов в совместных с Обществом проектах знакомить их представителей с КТ возможно только после подписания Соглашения о конфиденциальности и принятия решения об ее передаче в соответствии с действующими нормативными правовыми актами РФ и документами по защите информации.\nФорма Соглашения размещена в Положении о коммерческой тайне и конфиденциальной информации \n(Приложение №13)\nВ каждом случае передача информации, составляющей КТ, или предоставлении доступа к ней, должны осуществляться по Акту приема-передачи.\nКопии подписанного Соглашения о конфиденциальности и Акта приема-передачи информации, составляющей КТ, направляются на адрес электронной почты «Отдел внутренней безопасности».",
+          "block_id": "b1daaa32-cae0-4b29-92c0-734ce525100c"
+        },
+        {
+          "number": 3,
+          "title": "Положение о коммерческой тайне",
+          "page_no": 4,
+          "text": "Конфиденциальная информация\n\nсведения об экономической, финансовой и бухгалтерской деятельности Общества на внутреннем рынке;\nсведения по вопросам внешнеэкономической деятельности Общества;\nрезультаты обработки КИ (выписки, обобщения, аналитические выписки из нее, результаты исследований, схемы, графики, спецификации, статистические данные, изделия, компоненты, созданные, полученные, спроектированные, произведенные на основе или с использованием КИ) и т.п.\nС полным Перечнем информации, составляющим КИ, Вы можете ознакомиться в Положении о коммерческой тайне и конфиденциальной информации (Приложение №1)\n\nКонфиденциальная информация – далее КИ",
+          "block_id": "a44d44c6-49b2-4efd-8bd7-2c879446e95d"
+        }
+      ]
+    },
+    {
+      "answer_id": "bd10400a-1725-4036-853e-f8c42c6e724a",
+      "answer_ordinal_including_warmup": 19,
+      "warmup": false,
+      "question": "Подскажи, пожалуйста: Какие основные цели политики в области качества и экологии?",
+      "verdict": "FAIL",
+      "review_note": "Asked for the main quality/ecology goals; answer restates the mission instead of the five published strategic goals.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "b1177e86-7392-4281-b20e-2f939a9c522c",
+          "page_no": 3,
+          "kind": "TEXT",
+          "evidence_sha256": "a71d162f7c5820ac012109d03722fe76425deb3e31f84f98598fd315af709faa"
+        },
+        {
+          "number": 2,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "f020ed86-4687-495a-a673-b736c800af12",
+          "page_no": 1,
+          "kind": "TEXT",
+          "evidence_sha256": "26694cfa8d8d25e9ece6cf210b76dfc1f2589e86e2f0c4800d4c7ff455a76ac4"
+        },
+        {
+          "number": 3,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "b1bfac41-553e-4518-a08d-61b30b4fa3f4",
+          "page_no": 2,
+          "kind": "TEXT",
+          "evidence_sha256": "f56544a1dc49de2b2422297624833315be4a4cc51722e05b2fafe0e1abc109e5"
+        }
+      ],
+      "cause_class": "WRONG_INTENT_MISSION_INSTEAD_OF_GOALS",
+      "actual_answer": "Основной целью политики в области качества и экологии является повышение качества жизни людей и эффективности экономики путем создания надежной и безопасной коммунальной, промышленной и аграрной инфраструктуры за счет разработки и применения прогрессивных технологий в области трубопроводных систем и решений для очистки сточных вод, а также обеспечение потребностей различных отраслей производства в высококачественных композиционных материалах, соответствующих современным тенденциям мирового рынка термопластов [3].\n\nИсточники: [1] Политика в области качества и экологии, стр. 3; [2] Политика в области качества и экологии, стр. 1; [3] Политика в области качества и экологии, стр. 2",
+      "cited_source_parents": [
+        {
+          "number": 1,
+          "title": "Политика в области качества и экологии",
+          "page_no": 3,
+          "text": "Стратегические цели\u000bв области качества и экологии",
+          "block_id": "b1177e86-7392-4281-b20e-2f939a9c522c"
+        },
+        {
+          "number": 2,
+          "title": "Политика в области качества и экологии",
+          "page_no": 1,
+          "text": "Политика в области качества и экологии\n\n01.03.2024",
+          "block_id": "f020ed86-4687-495a-a673-b736c800af12"
+        },
+        {
+          "number": 3,
+          "title": "Политика в области качества и экологии",
+          "page_no": 2,
+          "text": "Миссия Общества \u000bв области качества и экологии\n\nПовышение качества жизни людей и эффективности экономики путем создания надежной и безопасной коммунальной, промышленной и аграрной инфраструктуры за счет разработки и применения прогрессивных технологий в области трубопроводных систем и решений для очистки сточных вод, а также обеспечение потребностей различных отраслей производства в высококачественных композиционных материалах, соответствующих современным тенденциям мирового рынка термопластов.",
+          "block_id": "b1bfac41-553e-4518-a08d-61b30b4fa3f4"
+        }
+      ]
+    },
+    {
+      "answer_id": "e5a04cc5-9082-4181-8c6b-1d5e2edc1eb9",
+      "answer_ordinal_including_warmup": 29,
+      "warmup": false,
+      "question": "Хочу уточнить: Какие основные цели политики в области качества и экологии?",
+      "verdict": "FAIL",
+      "review_note": "Answer restates the mission, but all three supplied parents are headings/date only (pages3/1/4). Citation[3] is only the page4 tasks heading and cannot support any substantive mission claim. The same mission appeared in earlier dialogue answers; history leakage is a plausible cause, not proven by output inspection alone.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "b1177e86-7392-4281-b20e-2f939a9c522c",
+          "page_no": 3,
+          "kind": "TEXT",
+          "evidence_sha256": "a71d162f7c5820ac012109d03722fe76425deb3e31f84f98598fd315af709faa"
+        },
+        {
+          "number": 2,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "f020ed86-4687-495a-a673-b736c800af12",
+          "page_no": 1,
+          "kind": "TEXT",
+          "evidence_sha256": "26694cfa8d8d25e9ece6cf210b76dfc1f2589e86e2f0c4800d4c7ff455a76ac4"
+        },
+        {
+          "number": 3,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "7186fd9a-7e50-4d6e-b254-f1236636c59c",
+          "page_no": 4,
+          "kind": "TEXT",
+          "evidence_sha256": "6799f81dee3ee547f7a8d1ba6e8d80454853f28705245e05f6fdee0461373b09"
+        }
+      ],
+      "cause_class": "UNSUPPORTED_CLAIM_WITH_HEADING_CITATION",
+      "actual_answer": "Основной целью является повышение качества жизни людей и эффективности экономики путем создания надежной и безопасной коммунальной, промышленной и аграрной инфраструктуры за счет разработки и применения прогрессивных технологий в области трубопроводных систем и решений для очистки сточных вод, а также обеспечение потребностей различных отраслей производства в высококачественных композиционных материалах [3].\n\nИсточники: [1] Политика в области качества и экологии, стр. 3; [2] Политика в области качества и экологии, стр. 1; [3] Политика в области качества и экологии, стр. 4",
+      "cited_source_parents": [
+        {
+          "number": 1,
+          "title": "Политика в области качества и экологии",
+          "page_no": 3,
+          "text": "Стратегические цели\u000bв области качества и экологии",
+          "block_id": "b1177e86-7392-4281-b20e-2f939a9c522c"
+        },
+        {
+          "number": 2,
+          "title": "Политика в области качества и экологии",
+          "page_no": 1,
+          "text": "Политика в области качества и экологии\n\n01.03.2024",
+          "block_id": "f020ed86-4687-495a-a673-b736c800af12"
+        },
+        {
+          "number": 3,
+          "title": "Политика в области качества и экологии",
+          "page_no": 4,
+          "text": "Задачи Общества\u000bв области качества и экологии",
+          "block_id": "7186fd9a-7e50-4d6e-b254-f1236636c59c"
+        }
+      ]
+    },
+    {
+      "answer_id": "388d2a36-f3e9-4a10-bcf4-70084f61c72e",
+      "answer_ordinal_including_warmup": 30,
+      "warmup": false,
+      "question": "Хочу уточнить: Какие обязанности сотрудника по сохранению коммерческой тайны?",
+      "verdict": "FAIL",
+      "review_note": "Same missing duty-list source and incomplete answer as cd25f649; the document contains explicit employee duties on page7, while the answer uses generic page13 wording.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "7df926b4-2286-4cee-a91c-4817173c5783",
+          "page_no": 5,
+          "kind": "TEXT",
+          "evidence_sha256": "b1c25b30e9b46b80edf99d56f3e3d669c199c150a78d8e390fab4563395d0448"
+        },
+        {
+          "number": 2,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "34a23247-53e8-4a6e-b1e9-41bb6cc86273",
+          "page_no": 14,
+          "kind": "TEXT",
+          "evidence_sha256": "a42153aac0f61af8014c3f8c73367e46cf007a383064ffccd717061d05a77f39"
+        },
+        {
+          "number": 3,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "46f43fd1-6eb6-40b9-a145-08f182af37e7",
+          "page_no": 13,
+          "kind": "TEXT",
+          "evidence_sha256": "c0d8b5a0cebc5f0163dadec0274f16212741db97be6fb7f994523b678039a878"
+        }
+      ],
+      "cause_class": "INCOMPLETE_DUTIES_RETRIEVAL",
+      "actual_answer": "Сотрудник обязан принимать меры по охране конфиденциальности информации.\n\n[3]\n\nИсточники: [1] Положение о коммерческой тайне, стр. 5; [2] Положение о коммерческой тайне, стр. 14; [3] Положение о коммерческой тайне, стр. 13",
+      "cited_source_parents": [
+        {
+          "number": 1,
+          "title": "Положение о коммерческой тайне",
+          "page_no": 5,
+          "text": "Коммерческая тайна\n\n- сведения о структуре производства, производственных мощностях, типе и размещении оборудования, запасах сырья, материалов, комплектующих, готовой продукции, финансовых и людских ресурсах;\n- сведения о применяемых оригинальных методах управления Обществом;\n- сведения о подготовке, принятии и исполнении отдельных решений руководства Общества;\n- сведения о предполагаемом создании дочерних и зависимых организаций;\n- сведения о планах расширения или свертывания производства различных видов продукции и их технико-экономических обоснованиях;\nсведения о планах инвестиций, закупок и продаж и т.п.\nС полным Перечнем информации, составляющим КИ, Вы можете ознакомиться в Положении о коммерческой тайне и конфиденциальной информации (Приложение №2)\n\nКоммерческая тайна – далее КТ",
+          "block_id": "7df926b4-2286-4cee-a91c-4817173c5783"
+        },
+        {
+          "number": 2,
+          "title": "Положение о коммерческой тайне",
+          "page_no": 14,
+          "text": "С полным текстом Положения о коммерческой тайне \u000bи конфиденциальной информации можно ознакомиться на корпоративном портале Общества.\n\nИван Иванов",
+          "block_id": "34a23247-53e8-4a6e-b1e9-41bb6cc86273"
+        },
+        {
+          "number": 3,
+          "title": "Положение о коммерческой тайне",
+          "page_no": 13,
+          "text": "Ответственность за нарушение\n\nПомните, что нарушение требований Положения о коммерческой тайне и конфиденциальной информации влечет за собой дисциплинарную, гражданско-правовую, административную или уголовную ответственность в соответствии с законодательством Российской Федерации.\n\nОбращаем внимание, что Общество вправе требовать от работников принимать меры по охране конфиденциальности информации.",
+          "block_id": "46f43fd1-6eb6-40b9-a145-08f182af37e7"
+        }
+      ]
+    },
+    {
+      "answer_id": "7c059874-e090-47d9-bee2-be745f9fa2bc",
+      "answer_ordinal_including_warmup": 39,
+      "warmup": false,
+      "question": "Объясни правило: Какие основные цели политики в области качества и экологии?",
+      "verdict": "FAIL",
+      "review_note": "Answer restates the mission instead of goals and cites[2], which contains only the page1 title/date. The other supplied parents are page3/page4 headings, so the substantive mission claim is unsupported by every supplied parent.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "b1177e86-7392-4281-b20e-2f939a9c522c",
+          "page_no": 3,
+          "kind": "TEXT",
+          "evidence_sha256": "a71d162f7c5820ac012109d03722fe76425deb3e31f84f98598fd315af709faa"
+        },
+        {
+          "number": 2,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "f020ed86-4687-495a-a673-b736c800af12",
+          "page_no": 1,
+          "kind": "TEXT",
+          "evidence_sha256": "26694cfa8d8d25e9ece6cf210b76dfc1f2589e86e2f0c4800d4c7ff455a76ac4"
+        },
+        {
+          "number": 3,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "7186fd9a-7e50-4d6e-b254-f1236636c59c",
+          "page_no": 4,
+          "kind": "TEXT",
+          "evidence_sha256": "6799f81dee3ee547f7a8d1ba6e8d80454853f28705245e05f6fdee0461373b09"
+        }
+      ],
+      "cause_class": "UNSUPPORTED_CLAIM_WITH_HEADING_CITATION",
+      "actual_answer": "Основная цель политики в области качества и экологии заключается в повышении качества жизни людей и эффективности экономики путем создания надежной и безопасной коммунальной, промышленной и аграрной инфраструктуры за счет разработки и применения прогрессивных технологий в области трубопроводных систем и решений для очистки сточных вод, а также обеспечения потребностей различных отраслей производства в высококачественных композиционных материалах, соответствующих современным тенденциям мирового рынка термопластов [2].\n\nИсточники: [1] Политика в области качества и экологии, стр. 3; [2] Политика в области качества и экологии, стр. 1; [3] Политика в области качества и экологии, стр. 4",
+      "cited_source_parents": [
+        {
+          "number": 1,
+          "title": "Политика в области качества и экологии",
+          "page_no": 3,
+          "text": "Стратегические цели\u000bв области качества и экологии",
+          "block_id": "b1177e86-7392-4281-b20e-2f939a9c522c"
+        },
+        {
+          "number": 2,
+          "title": "Политика в области качества и экологии",
+          "page_no": 1,
+          "text": "Политика в области качества и экологии\n\n01.03.2024",
+          "block_id": "f020ed86-4687-495a-a673-b736c800af12"
+        },
+        {
+          "number": 3,
+          "title": "Политика в области качества и экологии",
+          "page_no": 4,
+          "text": "Задачи Общества\u000bв области качества и экологии",
+          "block_id": "7186fd9a-7e50-4d6e-b254-f1236636c59c"
+        }
+      ]
+    }
+  ],
+  "semantic_findings": {
+    "lost_conjunctive_permission_condition": 1,
+    "wrong_intent_mission_instead_of_goals": 2,
+    "unsupported_claim_with_heading_citation_and_wrong_intent": 2,
+    "incomplete_duties_retrieval": 2
+  },
+  "reference_report": "qa/timing-semantic-review-failed-run.json",
+  "previous_limited20_review": "tests/model-quality/qwen-4b-release10.json",
+  "previous_review_scope_not_general_acceptance": true
+}

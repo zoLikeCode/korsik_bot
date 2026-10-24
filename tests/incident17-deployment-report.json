@@ -1,0 +1,50 @@
+{
+  "schema": "korsik-incident17-deployment-summary-v1",
+  "status": "PASS_BACKEND_MAX_FIX_WITH_CLIENT_WEB_PATH_LIMITATION",
+  "observed_at": "2026-10-24T08:41:57.106035+00:00",
+  "backend_image_id": "sha256:9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e",
+  "retrieval_source_sha256": "8ecf325b6fa1bd392f4edabe9b3666ae2a9bd84a0b33d32cdaf421570476ca35",
+  "local_tests_passed": 369,
+  "actual_model_cases_independently_read": 39,
+  "native_checks_passed": 10,
+  "targeted_http_terminal_answers": 4,
+  "source16_failed_candidate_preserved": true,
+  "current_http100_performed": false,
+  "current_full_offline_restore_performed": false,
+  "real_max_messages_sent_by_qa": 0,
+  "human_binding_preserved": true,
+  "active_journeys_migrated": 0,
+  "local_cold_web_load": "DEGRADED_CF_CLIENT_PATH",
+  "cached_iab_dashboard_refresh": "PASS observed 2026-10-24T11:36:59+03:00; no screenshot published because real employee name is visible",
+  "company_hr_acceptance": false,
+  "proofs": {
+    "incident17-local-tests.json": {
+      "status": "PASS",
+      "sha256": "99286ee3dffda9516cca03ae8139f3fd8597bdaceac2b4d1a84343c006924363"
+    },
+    "incident17-native-activation-report.json": {
+      "status": "PASS",
+      "sha256": "ea0589d47e85390e14fa0f93967f2d97dd808cab19c2417e6dce280e4a62d545"
+    },
+    "incident17-runtime-report.json": {
+      "status": "PASS",
+      "sha256": "9c1bc1f8536a92d60bbd6ff493e6b74ae03a35edb2b87f76cec9d2ab4e9518ad"
+    },
+    "incident17-http-smoke-report.json": {
+      "status": "PASS",
+      "sha256": "c3a1bf18e6aad96386b4ecdb362ec5dd1155699f90b20990b05ed331d22e1c28"
+    },
+    "incident17-image-patch-report.json": {
+      "status": "PASS",
+      "sha256": "d7d7aaa14c1fd3a2b96cbeada099e6efaf8281ba06c4a3ba0d12819fd6e2d169"
+    },
+    "incident17-program-publication-report.json": {
+      "status": "PUBLISHED",
+      "sha256": "d89497266944feb7f759a34c32f5052ccfe2be91630a7122ea0b421fcc211bc0"
+    },
+    "incident17-asset-path-report.json": {
+      "status": "SERVER_ASSET_OK_CLIENT_PATH_DEGRADED",
+      "sha256": "7db6b236c0e5575f9b437a1ac3004b97c7814c3b1bfa31c735242be6a41a1741"
+    }
+  }
+}

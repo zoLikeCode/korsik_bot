@@ -1,0 +1,276 @@
+{
+  "schema": "korsik-engineering-release-v1",
+  "status": "DEPLOYED_ENGINEERING_CHECKS_PASS_HUMAN_MAX_ACCEPTANCE_PENDING",
+  "observed_at": "2026-10-24T04:04:05.667191+00:00",
+  "public_url": "https://joan-charger-platform-wrapping.trycloudflare.com",
+  "MAX_bot_url": "https://max.ru/id9729381390_4_bot",
+  "runtime_images": {
+    "answer-worker": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+    "api": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+    "encoder": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+    "generator": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079",
+    "ingest-worker": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+    "init-data": "sha256:524a859a693acea9beaba6d5d620a2dc29dee211f8d4ccc799c2462b3a4bfa78",
+    "max-connector": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+    "migrate": "sha256:524a859a693acea9beaba6d5d620a2dc29dee211f8d4ccc799c2462b3a4bfa78",
+    "parser": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf",
+    "postgres": "sha256:ab20e934b27ba3ff927c1b4c9ff8cf6c32f315f743efe68dd3441182a87fb085",
+    "qdrant": "sha256:8a80c5500151ab2b08eb5874698b81b6b8addbc53ef4fb0c47f516680cf413d2",
+    "reranker": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+    "scheduler": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+    "tunnel": "sha256:dda27e9f3345ea6e9e67a0d5cc792d8c05baaa893712549c1bff321973c7b534",
+    "web": "sha256:16438bcef011b1373c6dcd0fe0740c8322546b9796bd366a0b951d76ef505a88",
+    "worker": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8"
+  },
+  "active_local_ai_profile": {
+    "id": "0a2e815c-80ce-46b5-ac97-bb1612f0a859",
+    "status": "ACTIVE",
+    "configuration_fingerprint": "5f1567cb62b0206f010c14733a3b9a9d96530b7ad1d36d9d9547492cd2d8c13d",
+    "current_pipeline_matches": true,
+    "generation_policy": "LOCAL_GENERATION"
+  },
+  "backend_tests": {
+    "passed": 310,
+    "failed": 0,
+    "seconds": 24.42,
+    "subtests_passed": 6,
+    "warnings": [
+      "Upstream Starlette BlockingPortal deprecation"
+    ],
+    "scope": "Full source15 frozen suite including FULL SQL same-section companion recall, current ACL/frozen extraction gates, six corpus-completeness classes, cited facts, universal cap, activation gates and offline API catalogue"
+  },
+  "frontend_tests": {
+    "passed": 23,
+    "failed": 0,
+    "files": 5
+  },
+  "postgres_checks": {
+    "passed": 19,
+    "database": "PostgreSQL 17.11 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit",
+    "isolated_database_removed": true
+  },
+  "HTTP100": {
+    "FULL": {
+      "schema": "korsik-http-durable-latency-v1",
+      "mode": "FULL",
+      "intended_questions": 100,
+      "execution_error": null,
+      "questions": 100,
+      "workload": "100 distinct Russian prompts: 10 document topics ×10 wording prefixes; warmed, one active benchmark turn",
+      "quality_limit": "Timing workload, not 100 independent golden semantic questions or company acceptance",
+      "transport": "Real HTTP session/CSRF/idempotency→PostgreSQL ANSWER job→answer-worker→local pipeline→persisted answer; MAX unbound, no messages sent",
+      "http_end_to_end": {
+        "count": 100,
+        "p50_seconds": 8.4862,
+        "p95_seconds": 26.0687,
+        "max_seconds": 27.1162
+      },
+      "http_ack": {
+        "count": 100,
+        "p50_seconds": 0.0956,
+        "p95_seconds": 0.1064,
+        "max_seconds": 0.1126
+      },
+      "durable_queue": {
+        "count": 100,
+        "p50_seconds": 0.2561,
+        "p95_seconds": 0.3976,
+        "max_seconds": 0.4434
+      },
+      "modes": {
+        "EXTRACT": 90,
+        "LOCAL_GENERATED": 10
+      },
+      "completed_answers": 100,
+      "terminal_answers": 100,
+      "abstained_answers": 0,
+      "reason_codes": {
+        "LITERAL_NORMATIVE_POLICY": 65,
+        "MECHANICAL_CHECKS_PASSED": 10,
+        "LITERAL_ENUMERATION_SOURCE": 10,
+        "LITERAL_AUDIENCE_SCOPE": 10,
+        "GENERATION_BUDGET_EXCEEDED": 5
+      },
+      "full_generation_observed": true,
+      "generated_only": {
+        "count": 10,
+        "p50_seconds": 23.572,
+        "p95_seconds": 26.2059,
+        "max_seconds": 26.2059
+      },
+      "target_p95_seconds": 30,
+      "latency_target_met": true,
+      "generated_latency_target_met": true
+    },
+    "CORE": {
+      "schema": "korsik-http-durable-latency-v1",
+      "mode": "CORE",
+      "intended_questions": 100,
+      "execution_error": null,
+      "questions": 100,
+      "workload": "100 distinct Russian prompts: 10 document topics ×10 wording prefixes; warmed, one active benchmark turn",
+      "quality_limit": "Timing workload, not 100 independent golden semantic questions or company acceptance",
+      "transport": "Real HTTP session/CSRF/idempotency→PostgreSQL ANSWER job→answer-worker→local pipeline→persisted answer; MAX unbound, no messages sent",
+      "http_end_to_end": {
+        "count": 100,
+        "p50_seconds": 0.9554,
+        "p95_seconds": 1.0161,
+        "max_seconds": 1.0417
+      },
+      "http_ack": {
+        "count": 100,
+        "p50_seconds": 0.095,
+        "p95_seconds": 0.1064,
+        "max_seconds": 0.1217
+      },
+      "durable_queue": {
+        "count": 100,
+        "p50_seconds": 0.3062,
+        "p95_seconds": 0.412,
+        "max_seconds": 0.4646
+      },
+      "modes": {
+        "EXTRACT": 100
+      },
+      "completed_answers": 100,
+      "terminal_answers": 100,
+      "abstained_answers": 0,
+      "reason_codes": {
+        "LITERAL_NORMATIVE_POLICY": 61,
+        "CORE_LIMITED_MODE": 19,
+        "LITERAL_ENUMERATION_SOURCE": 10,
+        "LITERAL_AUDIENCE_SCOPE": 10
+      },
+      "full_generation_observed": false,
+      "generated_only": null,
+      "target_p95_seconds": 30,
+      "latency_target_met": true,
+      "generated_latency_target_met": null
+    }
+  },
+  "guarded_quality": {
+    "cases": 29,
+    "mechanical_source_and_scope_pass": 29,
+    "semantic_faithfulness_pass": 29,
+    "semantic_fail": 0,
+    "modes": {
+      "EXTRACT": 24,
+      "LOCAL_GENERATED": 2,
+      "HANDOFF": 3
+    },
+    "direct_generated_answers": 2,
+    "extracts": 24,
+    "handoffs": 3,
+    "pipeline_seconds_p50": 7.545,
+    "pipeline_seconds_p95_nearest_rank": 16.362,
+    "pipeline_seconds_max": 21.997,
+    "load": "Single active actual local-service QA; not HTTP100 or company acceptance"
+  },
+  "quality_scope": "GUARDED_APPLICATION_EXTENDED_REGRESSION_REVIEW",
+  "deployment_check_count": 24,
+  "cold_restore_checks": 15,
+  "mixed_failure_checks": 11,
+  "scheduler_due_seconds": 3.312471,
+  "offline_bundle_report": "tests/offline-bundle-report.json",
+  "offhost_backup_report": "tests/backup-offhost-report.json",
+  "actual_cuda_fault_report": "tests/cuda-oom-business-report.json",
+  "actual_cuda_fault_status": "PASS",
+  "requirements": 92,
+  "requirements_engineering_status_counts": {
+    "AUTO_TESTED_SCOPE": 60,
+    "CONTENT_CONFIGURATION_REQUIRED": 1,
+    "PARTIAL": 15,
+    "DEPLOYMENT_EVIDENCE_REVIEW": 6,
+    "MEASURED_SYNTHETIC": 1,
+    "MEASURED_SINGLE_SAMPLE": 1,
+    "MEASURED_SINGLE_ACTIVE_HTTP100": 1,
+    "MEASURED_BOUNDED_AI_FAULT_SCOPE": 1,
+    "MEASURED_RESTORE_AND_MANUAL_OFFHOST_COPY": 1,
+    "MEASURED_TARGETED_DEPLOYMENT_SCOPE": 1,
+    "MEASURED_BOUNDED_FAULT_SCOPE": 1,
+    "MEASURED_PREPARED_OFFLINE_RUNTIME": 1,
+    "MEASURED_EXPLICIT_DEGRADED_SCOPE": 1,
+    "PARTIAL_RESOURCE_BOUNDARIES": 1
+  },
+  "company_accepted": false,
+  "human_MAX_end_to_end_completed": false,
+  "limitations": [
+    "Human MAX invitation→HR identityapproval→welcome/question/citation→survey→HR reply acceptance remains pending; real token, subscription, TLS and upload API have been exercised.",
+    "29 sourcequestions are an implementation regression/manual review set, not an independent company golden benchmark; source11 semantic failures and source12 corpus-completeness failures and source14 missing-companion result remain preserved.",
+    "The MAX HTTPS origin uses a temporary demo tunnel and may change when recreated; corporate deployment uses its own trusted443 proxy.",
+    "Food PDF/maps/personalplans/real contacts and corporate working calendars require company HR content/configuration.",
+    "Cold restore uses a separate Compose project on the same VM with prebuilt images and blocked AI egress, not a clean OS install.",
+    "Off-host backup copy is manual; no contractual RPO/RTO or automated off-host replication is asserted."
+  ],
+  "performance_start_images": {
+    "api": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+    "web": "sha256:6209b9d85cc44cff9613bf9fc7196f5877de8b10e650e00f457b4b9b7412df4b",
+    "encoder": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+    "reranker": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+    "generator": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079",
+    "parser": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf",
+    "worker": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+    "answer-worker": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+    "ingest-worker": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+    "scheduler": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8"
+  },
+  "frontend_only_delta": {
+    "status": "PASS",
+    "observed_at": "2026-10-24T03:10:01.468973+00:00",
+    "backend_unchanged": true,
+    "performance_start_web_image": "sha256:6209b9d85cc44cff9613bf9fc7196f5877de8b10e650e00f457b4b9b7412df4b",
+    "final_web_image": "sha256:16438bcef011b1373c6dcd0fe0740c8322546b9796bd366a0b951d76ef505a88",
+    "entry": "index-CVW-IeYL.js",
+    "delta": "WEB17→WEB18: pending MAX account identity review, explicit HR verification and ETag-bound approval; frontend only",
+    "frontend_tests": 23,
+    "HTTPS_smoke_checks": 18,
+    "native_proof": "qa/server-hr-dashboard-native-final.json",
+    "performance_context_preserved": "tests/api-latency-full-context.json",
+    "MAX_bindings_mutated": 0,
+    "model_calls": 0
+  },
+  "offline_bundle_identity": {
+    "manifest_sha256": "a7f9c38cdd38e03ba0cfe4c3e4b72678a867e7f2e648560ddc37081d4b7442d2",
+    "archives": [
+      {
+        "file": "images.tar.gz",
+        "bytes": 5968542233,
+        "sha256": "8e6d24dd98f453ea2d557fe94e3648ec8b51cbb418dcc79606e0a01dd042f08e"
+      },
+      {
+        "file": "models.tar.gz",
+        "bytes": 13554612719,
+        "sha256": "e4dd519ab160baf09a32e4a9125756c597958bd6e96053d89acd28fe3377d491"
+      },
+      {
+        "file": "source.tar.gz",
+        "bytes": 38636646,
+        "sha256": "c90a4ba01f0884cebc5b580c4dcb6a3cd5f0e8fe25029d5b478f7f365213f309"
+      }
+    ],
+    "canonical_image_ids": {
+      "korsik-app:local": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+      "korsik-web:local": "sha256:16438bcef011b1373c6dcd0fe0740c8322546b9796bd366a0b951d76ef505a88",
+      "korsik-tunnel:local": "sha256:dda27e9f3345ea6e9e67a0d5cc792d8c05baaa893712549c1bff321973c7b534",
+      "korsik-models:cpu": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "korsik-generator:local": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079",
+      "korsik-parser:local": "sha256:edbd38b7ef991b1b4cf7610138371a8153499ace353a563571d0a6916ef2be14",
+      "korsik-parser:structure": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf",
+      "postgres:17-alpine": "sha256:ab20e934b27ba3ff927c1b4c9ff8cf6c32f315f743efe68dd3441182a87fb085",
+      "qdrant/qdrant:v1.20.0": "sha256:8a80c5500151ab2b08eb5874698b81b6b8addbc53ef4fb0c47f516680cf413d2"
+    },
+    "runtime_image_bindings": {
+      "api": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+      "web": "sha256:16438bcef011b1373c6dcd0fe0740c8322546b9796bd366a0b951d76ef505a88",
+      "encoder": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "reranker": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+      "generator": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079",
+      "parser": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf"
+    },
+    "selected_quality_report_sha256": "4af930a7267848ead4b9d6797815df459580ad621faba58f5cc5d8b2b64886fb"
+  },
+  "offline_bundle_load_report": "tests/offline-bundle-load-report.json",
+  "offline_bundle_directory": "/opt/korsik/offline-release-source15-web18",
+  "final_runtime_state_report": "tests/runtime-final-state.json",
+  "offline_bundle_manifest": "tests/offline-bundle-manifest.json"
+}

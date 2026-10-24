@@ -1,0 +1,50 @@
+{"text":"Мне очень нравится работа, коллеги помогают и всё понятно","label":"POSITIVE","split":"train"}
+{"text":"Отличная команда, быстро разобрался с задачами","label":"POSITIVE","split":"train"}
+{"text":"Наставник всегда помогает, я доволен адаптацией","label":"POSITIVE","split":"train"}
+{"text":"Всё хорошо, доступы выдали вовремя","label":"POSITIVE","split":"train"}
+{"text":"Замечательный коллектив, работать комфортно","label":"POSITIVE","split":"train"}
+{"text":"Спасибо коллегам за поддержку, приятно работать","label":"POSITIVE","split":"train"}
+{"text":"Я доволен, условия работы хорошие","label":"POSITIVE","split":"train"}
+{"text":"Адаптация проходит отлично, помощь получаю быстро","label":"POSITIVE","split":"train"}
+{"text":"Работаю по графику, задачи выполняю","label":"NEUTRAL","split":"train"}
+{"text":"Получил документы, прохожу обучение","label":"NEUTRAL","split":"train"}
+{"text":"Обычный рабочий день, изменений нет","label":"NEUTRAL","split":"train"}
+{"text":"Сейчас изучаю регламент и знакомлюсь с задачами","label":"NEUTRAL","split":"train"}
+{"text":"Рабочее место находится на втором этаже","label":"NEUTRAL","split":"train"}
+{"text":"Инструктаж состоялся вчера","label":"NEUTRAL","split":"train"}
+{"text":"Встреча назначена на следующий понедельник","label":"NEUTRAL","split":"train"}
+{"text":"Приступил к работе в подразделении","label":"NEUTRAL","split":"train"}
+{"text":"Мне тяжело, никто не помогает, нет доступа к системам","label":"NEGATIVE","split":"train"}
+{"text":"Плохо организовано обучение, ничего не понятно","label":"NEGATIVE","split":"train"}
+{"text":"Не доволен условиями, хочу уволиться","label":"NEGATIVE","split":"train"}
+{"text":"Коллеги игнорируют вопросы, работать сложно","label":"NEGATIVE","split":"train"}
+{"text":"Наставника нет, проблемы никто не решает","label":"NEGATIVE","split":"train"}
+{"text":"Устал от неопределенности, нет нужных документов","label":"NEGATIVE","split":"train"}
+{"text":"Доступы не работают, задачи выполнить невозможно","label":"NEGATIVE","split":"train"}
+{"text":"Условия плохие, очень неприятно работать","label":"NEGATIVE","split":"train"}
+{"text":"Коллеги помогают, но доступы до сих пор не работают","label":"MIXED","split":"train"}
+{"text":"Команда хорошая, однако обучение организовано плохо","label":"MIXED","split":"train"}
+{"text":"Задачи интересные, но график неудобный","label":"MIXED","split":"train"}
+{"text":"Наставник отличный, но документы непонятные","label":"MIXED","split":"train"}
+{"text":"В целом нравится, хотя с доступами есть проблемы","label":"MIXED","split":"train"}
+{"text":"Спасибо коллегам, но условий для работы пока нет","label":"MIXED","split":"train"}
+{"text":"Доволен работой, однако зарплатные вопросы не решены","label":"MIXED","split":"train"}
+{"text":"Коллектив замечательный, но выполнять задачи тяжело","label":"MIXED","split":"train"}
+{"text":"Не знаю что ответить","label":"UNCLEAR","split":"train"}
+{"text":"Пока не могу оценить","label":"UNCLEAR","split":"train"}
+{"text":"Затрудняюсь сказать","label":"UNCLEAR","split":"train"}
+{"text":"Нет ответа","label":"UNCLEAR","split":"train"}
+{"text":"Сложно сказать, слишком рано","label":"UNCLEAR","split":"train"}
+{"text":"Пока недостаточно информации","label":"UNCLEAR","split":"train"}
+{"text":"Еще не определился","label":"UNCLEAR","split":"train"}
+{"text":"Не готов давать оценку","label":"UNCLEAR","split":"train"}
+{"text":"Очень доволен командой, коллеги быстро помогают","label":"POSITIVE","split":"test"}
+{"text":"Отлично проходит адаптация, все понятно","label":"POSITIVE","split":"test"}
+{"text":"Изучаю документы и выполняю задачи по графику","label":"NEUTRAL","split":"test"}
+{"text":"Вчера прошел инструктаж в подразделении","label":"NEUTRAL","split":"test"}
+{"text":"Не помогают, доступов нет и работать невозможно","label":"NEGATIVE","split":"test"}
+{"text":"Плохие условия, хочу уволиться","label":"NEGATIVE","split":"test"}
+{"text":"Работа интересная, но доступы не работают","label":"MIXED","split":"test"}
+{"text":"Команда нравится, однако график неудобный","label":"MIXED","split":"test"}
+{"text":"Затрудняюсь оценить, пока рано","label":"UNCLEAR","split":"test"}
+{"text":"Не знаю, недостаточно информации","label":"UNCLEAR","split":"test"}

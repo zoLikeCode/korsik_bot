@@ -1,0 +1,327 @@
+name: korsik
+x-env: &env
+  KORSIK_DATABASE_HOST: postgres
+  KORSIK_DATABASE_NAME: korsik
+  KORSIK_DATABASE_USER: korsik_api
+  KORSIK_DATABASE_PASSWORD_FILE: /run/secrets/db_api
+  KORSIK_SECRET_KEY_FILE: /run/secrets/session_key
+  KORSIK_INTERNAL_SECRET_FILE: /run/secrets/internal_key
+  KORSIK_ADMIN_PASSWORD_FILE: /run/secrets/admin_password
+  KORSIK_ADMIN_EMAIL: ${ADMIN_EMAIL:-admin}
+  KORSIK_PUBLIC_URL: ${PUBLIC_URL:-http://localhost:8080}
+  KORSIK_MAX_BOT_URL: ${MAX_BOT_URL:-https://max.ru/id9729381390_4_bot}
+  KORSIK_PRODUCT_MODE: ${PRODUCT_MODE:-FULL}
+  KORSIK_AI_MODE: ${PRODUCT_MODE:-FULL}
+  KORSIK_GENERATION_ENABLED: ${GENERATION_ENABLED:-true}
+  KORSIK_GENERATOR_MODEL_SUBDIR: ${GENERATOR_MODEL_SUBDIR:-generator-4b}
+  KORSIK_SECURE_COOKIES: ${SECURE_COOKIES:-true}
+  KORSIK_BLOB_ROOT: /data
+  DATA_DIR: /data
+  KORSIK_MODEL_MANIFEST_DIR: /registered-models
+  INBOUND_DIR: /inbound
+  EMBEDDER_URL: http://encoder:8000
+  RERANKER_URL: http://reranker:8000
+  GENERATOR_URL: http://generator:8000
+  QDRANT_URL: http://qdrant:6333
+  PARSER_URL: http://parser:8000
+  HF_HUB_OFFLINE: '1'
+  TRANSFORMERS_OFFLINE: '1'
+  HF_HUB_DISABLE_TELEMETRY: '1'
+  TZ: UTC
+x-log: &log
+  driver: json-file
+  options: {max-size: 10m, max-file: '3'}
+x-app: &app
+  image: korsik-app:local
+  build: {context: ., dockerfile: backend/Dockerfile}
+  user: '10001:10001'
+  init: true
+  restart: unless-stopped
+  read_only: true
+  tmpfs: ['/tmp:size=256m,mode=1777']
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  environment: *env
+  logging: *log
+  volumes: ['blobs:/data', 'inbound:/inbound:ro', '${MODEL_DIR:-./models}:/registered-models:ro']
+  secrets: [db_api, session_key, internal_key]
+  networks: [backend, models]
+  depends_on:
+    migrate: {condition: service_completed_successfully}
+  stop_grace_period: 45s
+x-model: &model
+  image: korsik-models:cpu
+  build: {context: ., dockerfile: services/model_server/Dockerfile}
+  user: '10001:10001'
+  init: true
+  restart: unless-stopped
+  read_only: true
+  tmpfs: ['/tmp:size=512m,mode=1777']
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  networks: [models]
+  volumes: ['${MODEL_DIR:-./models}:/models:ro']
+  healthcheck:
+    test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/healthz', timeout=3)"]
+    interval: 15s
+    timeout: 5s
+    retries: 12
+    start_period: 120s
+  logging: *log
+services:
+  init-data:
+    image: korsik-app:local
+    build: {context: ., dockerfile: backend/Dockerfile}
+    user: '0:0'
+    command: [python, -c, "import os; [os.chown(p,10001,10001) for p in ('/data','/inbound','/run/tunnel')]"]
+    volumes: ['blobs:/data','inbound:/inbound','tunnel_state:/run/tunnel']
+    network_mode: none
+    cap_drop: [ALL]
+    cap_add: [CHOWN]
+    restart: 'no'
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: korsik
+      POSTGRES_USER: korsik_bootstrap
+      POSTGRES_PASSWORD_FILE: /run/secrets/db_bootstrap
+    secrets: [db_bootstrap]
+    volumes: ['pg_data:/var/lib/postgresql/data']
+    networks: [backend, transport_db]
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U korsik_bootstrap -d korsik']
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    mem_limit: 3g
+    restart: unless-stopped
+    logging: *log
+  qdrant:
+    image: qdrant/qdrant:v1.20.0
+    environment: {QDRANT__TELEMETRY_DISABLED: 'true'}
+    volumes: ['qdrant_data:/qdrant/storage']
+    networks: [backend]
+    mem_limit: 3g
+    restart: unless-stopped
+    logging: *log
+  migrate:
+    <<: *app
+    restart: 'no'
+    command: [python, -m, korsik.manage, bootstrap]
+    environment:
+      <<: *env
+      KORSIK_DATABASE_USER: korsik_bootstrap
+      KORSIK_DATABASE_PASSWORD_FILE: /run/secrets/db_bootstrap
+      KORSIK_PROVISION_ROLES: 'true'
+    secrets: [db_bootstrap, db_api, db_worker, db_scheduler, db_transport, session_key, admin_password]
+    networks: [backend]
+    depends_on:
+      postgres: {condition: service_healthy}
+      init-data: {condition: service_completed_successfully}
+    mem_limit: 1g
+  api:
+    <<: *app
+    # Signature validation only; API remains on internal Docker networks.
+    secrets: [db_api, session_key, internal_key, max_token]
+    networks: [backend, models, frontend, transport_control]
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/readyz', timeout=3)"]
+      interval: 10s
+      timeout: 4s
+      retries: 10
+    mem_limit: 2g
+    cpus: 2
+  worker:
+    <<: *app
+    command: [python, -m, korsik.worker]
+    environment:
+      <<: *env
+      KORSIK_DATABASE_USER: korsik_worker
+      KORSIK_DATABASE_PASSWORD_FILE: /run/secrets/db_worker
+    secrets: [db_worker, session_key, internal_key]
+    networks: [backend, models, parsing]
+    mem_limit: 2g
+    cpus: 2
+    healthcheck:
+      test: [CMD, python, -m, korsik.runtime_health, --max-age, '120']
+      interval: 30s
+      timeout: 4s
+      retries: 3
+      start_period: 60s
+  answer-worker:
+    <<: *app
+    command: [python, -m, korsik.worker]
+    environment:
+      <<: *env
+      KORSIK_DATABASE_USER: korsik_worker
+      KORSIK_DATABASE_PASSWORD_FILE: /run/secrets/db_worker
+      KORSIK_WORKER_KIND: answer
+    secrets: [db_worker, session_key]
+    mem_limit: 2g
+    cpus: 2
+    healthcheck:
+      test: [CMD, python, -m, korsik.runtime_health, --max-age, '210']
+      interval: 30s
+      timeout: 4s
+      retries: 3
+      start_period: 60s
+  ingest-worker:
+    <<: *app
+    command: [python, -m, korsik.worker]
+    environment:
+      <<: *env
+      KORSIK_DATABASE_USER: korsik_worker
+      KORSIK_DATABASE_PASSWORD_FILE: /run/secrets/db_worker
+      KORSIK_WORKER_KIND: ingest
+    secrets: [db_worker, session_key]
+    networks: [backend, models, parsing]
+    mem_limit: 2g
+    cpus: 1
+    healthcheck:
+      test: [CMD, python, -m, korsik.runtime_health, --max-age, '720']
+      interval: 30s
+      timeout: 4s
+      retries: 3
+      start_period: 60s
+  scheduler:
+    <<: *app
+    command: [python, -m, korsik.scheduler]
+    environment:
+      <<: *env
+      KORSIK_DATABASE_USER: korsik_scheduler
+      KORSIK_DATABASE_PASSWORD_FILE: /run/secrets/db_scheduler
+    secrets: [db_scheduler, session_key]
+    networks: [backend, models, parsing]
+    mem_limit: 768m
+    cpus: 1
+    healthcheck:
+      test: [CMD, python, -m, korsik.runtime_health, --max-age, '45']
+      interval: 15s
+      timeout: 4s
+      retries: 3
+      start_period: 45s
+  encoder:
+    <<: *model
+    environment: {MODEL_ROLE: embedder, MODEL_DIR: /models/embedder, OMP_NUM_THREADS: '2', HF_HUB_OFFLINE: '1'}
+    mem_limit: 3g
+    cpus: 2
+  reranker:
+    <<: *model
+    environment: {MODEL_ROLE: reranker, MODEL_DIR: /models/reranker, OMP_NUM_THREADS: '2', HF_HUB_OFFLINE: '1'}
+    mem_limit: 3g
+    cpus: 2
+  generator:
+    <<: *model
+    image: korsik-generator:local
+    build: {context: ., dockerfile: services/model_server/Dockerfile.generation}
+    environment: {MODEL_ROLE: generator, MODEL_DIR: '/models/${GENERATOR_MODEL_SUBDIR:-generator-4b}', HF_HUB_OFFLINE: '1', TRANSFORMERS_OFFLINE: '1', HF_HOME: /tmp/hf, NVIDIA_DRIVER_CAPABILITIES: 'compute,utility', ATEN_CPU_CAPABILITY: default}
+    mem_limit: ${GENERATOR_MEMORY_LIMIT:-12g}
+    cpus: 2
+    deploy:
+      resources:
+        reservations:
+          devices: [{driver: nvidia, device_ids: ['${GENERATOR_GPU_ID:-0}'], capabilities: [gpu]}]
+  parser:
+    <<: *model
+    image: ${PARSER_IMAGE:-korsik-parser:structure}
+    build: {context: ., dockerfile: services/model_server/Dockerfile.parser.structure}
+    networks: [parsing]
+    environment: {PARSER_PROFILE: cpu_structure, DOCLING_ARTIFACTS_PATH: /models/docling, HF_HUB_OFFLINE: '1', TRANSFORMERS_OFFLINE: '1', HF_HOME: /tmp/hf, OMP_NUM_THREADS: '2', OMP_THREAD_LIMIT: '2', ATEN_CPU_CAPABILITY: default}
+    tmpfs: ['/tmp:size=2g,mode=1777']
+    mem_limit: 7g
+    cpus: 3
+    pids_limit: 256
+  web:
+    image: korsik-web:local
+    build: {context: frontend, dockerfile: Dockerfile}
+    user: nginx
+    read_only: true
+    tmpfs: ['/tmp:size=128m,mode=1777']
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    ports: ['${BIND_IP:-127.0.0.1}:${WEB_PORT:-8080}:8080']
+    networks: [frontend, edge]
+    depends_on:
+      api: {condition: service_healthy}
+      max-connector: {condition: service_started}
+    restart: unless-stopped
+    mem_limit: 256m
+    logging: *log
+  max-connector:
+    <<: *app
+    command: [uvicorn, korsik.max_connector:app, --host, 0.0.0.0, --port, '8001', --no-access-log]
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8001/healthz',timeout=3)"]
+      interval: 20s
+      timeout: 4s
+      retries: 3
+      start_period: 45s
+    environment:
+      KORSIK_DATABASE_HOST: postgres
+      KORSIK_DATABASE_NAME: korsik
+      KORSIK_DATABASE_USER: korsik_transport
+      KORSIK_DATABASE_PASSWORD_FILE: /run/secrets/db_transport
+      KORSIK_MAX_MODE: ${MAX_MODE:-webhook}
+      KORSIK_MAX_API_URL: https://platform-api.max.ru
+      KORSIK_MAX_TOKEN_FILE: /run/secrets/max_token
+      KORSIK_MAX_WEBHOOK_SECRET_FILE: /run/secrets/max_webhook_secret
+      KORSIK_INTERNAL_SECRET_FILE: /run/secrets/internal_key
+      CORE_URL: http://api:8000
+      INBOUND_DIR: /inbound
+      TUNNEL_URL_FILE: /run/tunnel/public_url
+      MAX_PUBLIC_URL: ${MAX_PUBLIC_URL:-}
+    secrets: [db_transport, max_token, max_webhook_secret, internal_key]
+    volumes: ['inbound:/inbound', 'tunnel_state:/run/tunnel:ro']
+    networks: [transport_db, transport_control, frontend, max_egress]
+    mem_limit: 768m
+    cpus: 1
+  tunnel:
+    image: korsik-tunnel:local
+    build: {context: ., dockerfile: services/tunnel/Dockerfile}
+    init: true
+    user: '10001:10001'
+    read_only: true
+    tmpfs: ['/tmp:size=64m,mode=1777']
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    environment: {TUNNEL_ORIGIN: 'http://web:8080'}
+    volumes: ['tunnel_state:/run/tunnel']
+    networks: [edge]
+    depends_on:
+      web: {condition: service_started}
+    restart: unless-stopped
+    stop_grace_period: 30s
+    healthcheck:
+      test: [CMD, python, /srv/run.py, --healthcheck]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 150s
+    mem_limit: 192m
+    logging: *log
+networks:
+  backend: {internal: true}
+  models: {internal: true}
+  parsing: {internal: true}
+  frontend: {internal: true}
+  transport_db: {internal: true}
+  transport_control: {internal: true}
+  edge: {}
+  max_egress: {}
+volumes:
+  pg_data: {}
+  qdrant_data: {}
+  blobs: {}
+  inbound: {}
+  tunnel_state: {}
+secrets:
+  db_bootstrap: {file: '${SECRET_DIR:-./secrets}/db_bootstrap'}
+  db_api: {file: '${SECRET_DIR:-./secrets}/db_api'}
+  db_worker: {file: '${SECRET_DIR:-./secrets}/db_worker'}
+  db_scheduler: {file: '${SECRET_DIR:-./secrets}/db_scheduler'}
+  db_transport: {file: '${SECRET_DIR:-./secrets}/db_transport'}
+  session_key: {file: '${SECRET_DIR:-./secrets}/session_key'}
+  admin_password: {file: '${SECRET_DIR:-./secrets}/admin_password'}
+  internal_key: {file: '${SECRET_DIR:-./secrets}/internal_key'}
+  max_token: {file: '${SECRET_DIR:-./secrets}/max_token'}
+  max_webhook_secret: {file: '${SECRET_DIR:-./secrets}/max_webhook_secret'}

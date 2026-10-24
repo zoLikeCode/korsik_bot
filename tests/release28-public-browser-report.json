@@ -1,0 +1,26 @@
+{
+  "schema": "korsik-release28-public-browser-v1",
+  "status": "PASS",
+  "observed_at": "2026-10-24T23:09:54.994279+00:00",
+  "url": "https://app.korsik-demo.ru",
+  "role": "HR_ADMIN",
+  "existing_session_reused": true,
+  "checks": {
+    "hard_reload_current_build": "PASS",
+    "supplied_logo_visible_with_dark_theme": "PASS",
+    "HR_accounts_immediately_after_employees": "PASS",
+    "knowledge_only_documents_and_base_formulations": "PASS",
+    "existing_documents_load_without_mutation": "PASS",
+    "surveys_card_publication_label_and_no_campaign_block": "PASS",
+    "new_survey_save_publish_actions_visible": "PASS",
+    "new_survey_form_closed_without_submit": "PASS"
+  },
+  "screenshot": "qa/release28-knowledge-public.png",
+  "production_mutations": 0,
+  "production_accounts_or_credentials_changed": 0,
+  "MAX_messages_sent": 0,
+  "limits": [
+    "Production UI checks were read-only. Create/publish/copy/recurrence/gallery flows were executed locally on synthetic data.",
+    "No real MAX device launch or message delivery is claimed."
+  ]
+}

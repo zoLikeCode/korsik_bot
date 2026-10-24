@@ -1,0 +1,159 @@
+{
+  "schema": "korsik-packaging-review-v1",
+  "reviewed_at_utc": "2026-10-24T00:31:27.288555+00:00",
+  "status": "SOURCE_AND_INVENTORY_REVIEW_COMPLETE_LICENSE_SIDECARS_VERIFIED",
+  "scope": [
+    "Read-only export-offline-bundle.sh and Docker COPY review",
+    "Current source allow/deny inventory and credential-marker scan without displaying values",
+    "Current VM model manifest/license path inventory only; no weight hashing or runtime load"
+  ],
+  "not_performed": [
+    "No export/archive construction during CPU window",
+    "No archive extraction or Docker load acceptance",
+    "No blanket secret scanning guarantee, legal opinion or OS-license audit"
+  ],
+  "source": {
+    "included_files_at_review": 241,
+    "excluded": [
+      ".env except .env.example",
+      "secrets/.secrets",
+      "data/models",
+      "git/venv/node_modules/dist/cache",
+      "*.db/*.log/*.pyc/build metadata",
+      "source symlinks"
+    ],
+    "private_key_or_long_literal_credential_pattern_matches": 0,
+    "actual_credential_file_found": false,
+    "contains_internal_supplied_examples": true,
+    "contains_source_bearing_quality_reports": true,
+    "distribution_classification": "INTERNAL_USER_SUPPLIED_POLICY_EXAMPLES_AND_SYNTHETIC_QA_NOT_PUBLIC_SANITIZED_ARCHIVE",
+    "future_denylist_limit": "Root follow-up exporter now excludes .sqlite/.sqlite3/.dump/.pem/.key, SQLite sidecars and backups/private/private-backup directories. Final verifier independently scans archive paths, SQLite magic, private-key markers and long literal credential assignments."
+  },
+  "images": {
+    "exported_tags": [
+      "korsik-app:local",
+      "korsik-web:local",
+      "korsik-tunnel:local",
+      "korsik-models:cpu",
+      "korsik-generator:local",
+      "korsik-parser:local",
+      "korsik-parser:structure",
+      "postgres:17-alpine",
+      "qdrant/qdrant:v1.20.0"
+    ],
+    "secret_copy_path_found": false,
+    "inspection_fields": "IDs/tags/digests only; no container env",
+    "frozen_tag_requirement": "Root follow-up exporter captures Docker inspect IDs before save and compares IDs after save; changed tags abort export. Verifier additionally checks nine canonical saved tag→config-contentSHA mappings."
+  },
+  "models": {
+    "qwen4b_license_and_declaration": "PRESENT_IN_PINNED_MANIFEST",
+    "docling_license_and_nested_manifests": "PRESENT",
+    "embedder_license": "PRESENT_VERIFIED_EXTERNAL_SIDECAR",
+    "reranker_license": "PRESENT_VERIFIED_EXTERNAL_SIDECAR",
+    "current_model_symlinks": 0,
+    "safe_repair": "Add model-root external licenses/{embedder,reranker} sidecars with repository, pinned revision, upstream declaration and full license text. Do not rewrite active model manifests or rerun installer over active artifacts.",
+    "safe_repair_completed_at_utc": "2026-10-24T00:33:20.487122+00:00",
+    "sidecars": {
+      "embedder": {
+        "schema": "korsik-model-license-sidecar-v1",
+        "role": "embedder",
+        "repository": "ibm-granite/granite-embedding-97m-multilingual-r2",
+        "revision": "835ad14087e140460703cf0fae09f97d469d65c2",
+        "license": "Apache-2.0",
+        "files": [
+          {
+            "path": "README.upstream.md",
+            "bytes": 20684,
+            "sha256": "a73d22110e7e6d947f55cdd4f1a8b0b622e340fd09a66d302f5fe800899024bd",
+            "source_url": "https://huggingface.co/ibm-granite/granite-embedding-97m-multilingual-r2/resolve/835ad14087e140460703cf0fae09f97d469d65c2/README.md"
+          },
+          {
+            "path": "LICENSE-Apache-2.0.txt",
+            "bytes": 11358,
+            "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+            "source_url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          },
+          {
+            "path": "LICENSE-DECLARATION.json",
+            "bytes": 789,
+            "sha256": "7d48fa401d3bb51b26ea63d1003b68106995d4154a87ad6071dc5f0d07a0809f",
+            "source_url": null
+          }
+        ],
+        "scope": "OPERATOR_PREPARATION_LICENSE_SIDECAR_NOT_A_RUNTIME_MODEL_ARTIFACT",
+        "installed_path": "/opt/korsik/models/licenses/embedder",
+        "active_manifest_sha256_before_and_after": "afc4aa45cd8d95d538404fd463d881c1cd522f3f92bfd42a6b2f6abde0a5b5d8",
+        "remote_files_size_hash_verified": true
+      },
+      "reranker": {
+        "schema": "korsik-model-license-sidecar-v1",
+        "role": "reranker",
+        "repository": "Horizon-Labs/multilingual-reranker-small",
+        "revision": "d35a2781eeb3de1d971ad328165277bdf5712e35",
+        "license": "Apache-2.0",
+        "files": [
+          {
+            "path": "README.upstream.md",
+            "bytes": 11459,
+            "sha256": "9c0a5449dfe468872b59ac2e4afa3191428ec160d0693a92fcd702c2ae9ac696",
+            "source_url": "https://huggingface.co/Horizon-Labs/multilingual-reranker-small/resolve/d35a2781eeb3de1d971ad328165277bdf5712e35/README.md"
+          },
+          {
+            "path": "LICENSE-Apache-2.0.txt",
+            "bytes": 11358,
+            "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+            "source_url": "https://www.apache.org/licenses/LICENSE-2.0.txt"
+          },
+          {
+            "path": "LICENSE-DECLARATION.json",
+            "bytes": 762,
+            "sha256": "bb004b5a967b7bd7bcc275fccade495eb2e4186b5e3edc743a98fabf0b502adf",
+            "source_url": null
+          }
+        ],
+        "scope": "OPERATOR_PREPARATION_LICENSE_SIDECAR_NOT_A_RUNTIME_MODEL_ARTIFACT",
+        "installed_path": "/opt/korsik/models/licenses/reranker",
+        "active_manifest_sha256_before_and_after": "30f61c1e0d16deb1d0f43ddaa49f5457bfbaf69f1b6ee27d0475a2b676f8f8ea",
+        "remote_files_size_hash_verified": true
+      }
+    }
+  },
+  "required_transfer_acceptance_checks": [
+    "Generate into a private directory outside live source; maintain umask077 and frozen source/image tags.",
+    "Verify each archive size and SHA256 against bundle manifest before extraction. An unsigned manifest protects transfer integrity relative to the trusted copy, not independently its origin.",
+    "List archive members first; reject absolute/traversing paths, unexpected links or device files before extracting into empty dedicated directories.",
+    "After docker load, compare all nine tags to recorded image IDs and confirm Linux amd64; use --no-build --pull never.",
+    "Recursively verify each model manifest, including nested Docling directories: relative contained regular paths, sizes and SHA256; include license/declaration sidecars and current source-bound quality report.",
+    "Provision fresh secrets separately; never copy production .env, credentials, volumes or database dumps into the fresh-install source bundle.",
+    "Keep internal supplied examples/QA reports restricted; remove them in a separate intentionally sanitized public distribution.",
+    "Perform isolated no-egress restore/first start and native profile checks with no MAX credential before corporate deployment; MAX network access is independently permitted."
+  ],
+  "native_activation": {
+    "status": "PASS",
+    "profile_id": "9f53ccae-0e30-474d-9efb-aefc37eccebb",
+    "validation_id": "d4698726-a58f-4a77-9b9a-888f0936fa83",
+    "checks_passed": 10,
+    "evidence": "local-ai-activation-report.json"
+  },
+  "source_changes_made": false,
+  "server_runtime_mutations": false,
+  "heavy_operations": false,
+  "operator_prep_mutation": "Only new license sidecars under model root; all active5filemodel directories and manifest fingerprints unchanged before/after",
+  "final_bundle_verifier": {
+    "path": "scripts/verify-offline-bundle.py",
+    "status": "PREPARED_LOCAL_TESTS_ONLY_NOT_YET_RUN_ON_FINAL_DELIVERY",
+    "stdlib_only": true,
+    "unit_tests_passed": 14,
+    "ruff": "PASS_F_E9",
+    "local_source_only_inventory": {
+      "status": "PASS",
+      "files": 256,
+      "bytes": 42081934
+    },
+    "actual_bundle_report_created": false,
+    "runtime_actions": "No extract, Docker load, network, model call or server work",
+    "format_compatibility": "Explicit requested_tag canonical9mapping; inspect-only aliases may be unsaved. Classic configs and OCI sha256 config blobs/compressed layer blobs are covered by synthetic fixtures.",
+    "layer_scope": "Archive integrity, referenced layers and OCI compressed blob digests; not docker load or uncompressed diff_id replay.",
+    "proposed_server_command": "python3 /opt/korsik/app/scripts/verify-offline-bundle.py /opt/korsik/offline-bundle-final --report /opt/korsik/acceptance/offline-bundle-report.json"
+  }
+}

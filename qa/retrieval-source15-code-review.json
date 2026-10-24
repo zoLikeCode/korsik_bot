@@ -1,0 +1,33 @@
+{
+  "schema": "korsik-independent-retrieval-code-review-v1",
+  "release": "source15",
+  "observed_at": "2026-10-24T02:26:19.654222+00:00",
+  "reviewed_source_sha256": "0da5d26824b6c3da6b00fcab116a3b34034c9b54edf5905d1d8a279ac2d6e869",
+  "status": "NO_FURTHER_CONFIRMED_P1_IN_REVIEWED_SOURCE15_SQL_RECALL",
+  "read_only": true,
+  "application_changes_by_reviewer": 0,
+  "model_calls": 0,
+  "production_mutations": 0,
+  "company_accepted": false,
+  "previous_review": "qa/retrieval-source14-code-review.json",
+  "previous_confirmed_p1": "Universal combined body/footer cap and cited-parent numeric/contact checks fixed before source15; previous review preserves counterexamples and limits.",
+  "reviewed_new_function": "expand_section_context",
+  "reviewed_guards": [
+    "Only a substantive normative first candidate anchors expansion. Current permitted corpus membership and exact revision/extraction identity constrain SQL companions.",
+    "Published mode uses immutable PUBLISHED chunks from the same permitted current revision/extraction. Candidate preview uses its frozen changed-revision chunk ID membership, rather than unrestricted current chunks.",
+    "Canonical exact section heading and substantive noun/adjective query subject constrain companions. Added SQL recall candidates carry explicit score 0.0, without an invented vector or reranker score.",
+    "Section companions are added before unrelated pages; more than six required physical pages fails closed with SECTION_CONTEXT_TOO_COMPLEX. Existing full component count and combined body plus citation footer cap remain in force.",
+    "Context components and citation indices retain matching order; reviewed source text is not rewritten. Electronic mail compounds are masked only for subject recall, not in quoted evidence.",
+    "No specific source filename, physical page number, source UUID, or case answer is hardcoded in the new SQL expansion. Current citation reauthorization and transport presend gates remain unchanged."
+  ],
+  "agent_reported_tests_not_reexecuted_by_reviewer": {
+    "targeted_retrieval_passed": 67,
+    "core_augmented_cases_passed": 29,
+    "source": "RAG agent report; full local verification separately records actual full suite"
+  },
+  "limits": [
+    "Narrow read-only code review is not semantic acceptance, an independent penetration test, or proof for arbitrary unseen policies.",
+    "Actual current-image FULL source-case review, strict semantic review import, native validation/activation, HTTP100 and operational cold/fault proofs remain separate evidence.",
+    "Companion recall and query-subject detection are bounded heuristics. Source copying alone does not prove every required condition is complete for every future question."
+  ]
+}

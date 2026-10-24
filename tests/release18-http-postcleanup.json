@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "guarded_gap_rows": 1,
+  "cancelled_gap_rows": 1,
+  "own_open_gaps_remaining": 0,
+  "own_unsent_or_accepted_outboxes": 0,
+  "reason_code": "QA_FIXTURE_COMPLETED",
+  "exact_run_marker_employee_answer_ids_guard": true,
+  "exact_episode_guard": "gap.answer_id -> owned conversation.episode_id == ended owned card.episode_id; optional gap episode also checked",
+  "hard_deletes": 0,
+  "published_KB_or_index_changes": 0
+}

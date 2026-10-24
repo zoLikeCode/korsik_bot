@@ -1,0 +1,230 @@
+{
+  "schema": "korsik-http-durable-latency-v1",
+  "mode": "FULL",
+  "intended_questions": 4,
+  "execution_error": null,
+  "questions": 4,
+  "workload": "4 targeted incident regression prompts (lunch, passwords, parking, mission), one lunch warmup excluded",
+  "quality_limit": "Targeted incident smoke, not a latency benchmark or company acceptance",
+  "transport": "Real HTTP session/CSRF/idempotency→PostgreSQL ANSWER job→answer-worker→local pipeline→persisted answer; MAX unbound, no messages sent",
+  "http_end_to_end": {
+    "count": 4,
+    "p50_seconds": 6.9006,
+    "p95_seconds": 23.1268,
+    "max_seconds": 23.1268
+  },
+  "http_ack": {
+    "count": 4,
+    "p50_seconds": 0.0959,
+    "p95_seconds": 0.1169,
+    "max_seconds": 0.1169
+  },
+  "durable_queue": {
+    "count": 4,
+    "p50_seconds": 0.252,
+    "p95_seconds": 0.3505,
+    "max_seconds": 0.3505
+  },
+  "modes": {
+    "HANDOFF": 2,
+    "EXTRACT": 1,
+    "LOCAL_GENERATED": 1
+  },
+  "completed_answers": 2,
+  "terminal_answers": 4,
+  "abstained_answers": 2,
+  "reason_codes": {
+    "INSUFFICIENT_TOPIC_EVIDENCE": 1,
+    "LITERAL_NORMATIVE_POLICY": 1,
+    "INSUFFICIENT_EVIDENCE": 1,
+    "MECHANICAL_CHECKS_PASSED": 1
+  },
+  "full_generation_observed": true,
+  "generated_only": {
+    "count": 1,
+    "p50_seconds": 23.1268,
+    "p95_seconds": 23.1268,
+    "max_seconds": 23.1268
+  },
+  "stages": {
+    "embedding_seconds": {
+      "count": 4,
+      "p50_seconds": 0.0681,
+      "p95_seconds": 0.0891,
+      "max_seconds": 0.0891
+    },
+    "generation_inference_seconds": {
+      "count": 1,
+      "p50_seconds": 14.652,
+      "p95_seconds": 14.652,
+      "max_seconds": 14.652
+    },
+    "generation_queue_seconds": {
+      "count": 1,
+      "p50_seconds": 0.0,
+      "p95_seconds": 0.0,
+      "max_seconds": 0.0
+    },
+    "generation_request_seconds": {
+      "count": 4,
+      "p50_seconds": 0.0,
+      "p95_seconds": 14.7653,
+      "max_seconds": 14.7653
+    },
+    "generation_runtime_request_seconds": {
+      "count": 1,
+      "p50_seconds": 14.673,
+      "p95_seconds": 14.673,
+      "max_seconds": 14.673
+    },
+    "lexical_seconds": {
+      "count": 4,
+      "p50_seconds": 0.0105,
+      "p95_seconds": 0.0186,
+      "max_seconds": 0.0186
+    },
+    "pipeline_seconds": {
+      "count": 4,
+      "p50_seconds": 6.4223,
+      "p95_seconds": 22.3577,
+      "max_seconds": 22.3577
+    },
+    "rerank_preparation_seconds": {
+      "count": 4,
+      "p50_seconds": 0.3638,
+      "p95_seconds": 0.4365,
+      "max_seconds": 0.4365
+    },
+    "rerank_seconds": {
+      "count": 4,
+      "p50_seconds": 5.8302,
+      "p95_seconds": 7.0386,
+      "max_seconds": 7.0386
+    },
+    "retrieval_seconds": {
+      "count": 4,
+      "p50_seconds": 6.4084,
+      "p95_seconds": 7.8039,
+      "max_seconds": 7.8039
+    },
+    "vector_query_seconds": {
+      "count": 4,
+      "p50_seconds": 0.0508,
+      "p95_seconds": 0.077,
+      "max_seconds": 0.077
+    }
+  },
+  "rows": [
+    {
+      "answer_id": "f47fa24a-13a1-467f-9936-766e0a1857d5",
+      "seconds": 6.394,
+      "ack_seconds": 0.1085,
+      "status": "ABSTAINED",
+      "mode": "HANDOFF",
+      "reason": "INSUFFICIENT_TOPIC_EVIDENCE",
+      "citations": 0,
+      "queue_seconds": 0.320787,
+      "stages": {
+        "embedding_seconds": 0.068128,
+        "vector_query_seconds": 0.032959,
+        "rerank_preparation_seconds": 0.299806,
+        "rerank_seconds": 5.183553,
+        "lexical_seconds": 0.011324,
+        "retrieval_seconds": 5.664626,
+        "generation_request_seconds": 0.0,
+        "generation_queue_seconds": null,
+        "generation_inference_seconds": null,
+        "pipeline_seconds": 5.678921
+      },
+      "id": 1,
+      "current_review_case_id": "missing_1",
+      "text_identical_to_current_semantic_review": true,
+      "text_sha256": "2e616b866fea53fb4b25c07338eb47b273943498290b278ac69daadb34c24e07"
+    },
+    {
+      "answer_id": "bdaabea5-cf55-4de2-97bc-65da8c9da501",
+      "seconds": 8.6271,
+      "ack_seconds": 0.0936,
+      "status": "COMPLETED",
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "citations": 3,
+      "queue_seconds": 0.19343,
+      "stages": {
+        "embedding_seconds": 0.08193,
+        "vector_query_seconds": 0.077048,
+        "rerank_preparation_seconds": 0.436518,
+        "rerank_seconds": 7.03863,
+        "lexical_seconds": 0.008938,
+        "retrieval_seconds": 7.803864,
+        "generation_request_seconds": 0.0,
+        "generation_queue_seconds": null,
+        "generation_inference_seconds": null,
+        "pipeline_seconds": 7.833175
+      },
+      "id": 2,
+      "current_review_case_id": "password",
+      "text_identical_to_current_semantic_review": true,
+      "text_sha256": "0435997eea8e5ca860e9f69cd23846de4cd1d8511cb3edf910f3e580a11623d5"
+    },
+    {
+      "answer_id": "87e65ac4-b445-4570-bd69-78f511497c0c",
+      "seconds": 6.9006,
+      "ack_seconds": 0.1169,
+      "status": "ABSTAINED",
+      "mode": "HANDOFF",
+      "reason": "INSUFFICIENT_EVIDENCE",
+      "citations": 0,
+      "queue_seconds": 0.251996,
+      "stages": {
+        "embedding_seconds": 0.062449,
+        "vector_query_seconds": 0.050768,
+        "rerank_preparation_seconds": 0.363836,
+        "rerank_seconds": 5.830159,
+        "lexical_seconds": 0.018617,
+        "retrieval_seconds": 6.408356,
+        "generation_request_seconds": 0.0,
+        "generation_queue_seconds": null,
+        "generation_inference_seconds": null,
+        "pipeline_seconds": 6.422294
+      },
+      "id": 3,
+      "current_review_case_id": "missing_4",
+      "text_identical_to_current_semantic_review": true,
+      "text_sha256": "bfa375a5f857598520347b13b81e3dfedc2365f8a2279dad593f630298b50e91"
+    },
+    {
+      "answer_id": "b280cbd2-2c8e-43d9-ae3f-84d63011c5b1",
+      "seconds": 23.1268,
+      "ack_seconds": 0.0959,
+      "status": "COMPLETED",
+      "mode": "LOCAL_GENERATED",
+      "reason": "MECHANICAL_CHECKS_PASSED",
+      "citations": 3,
+      "queue_seconds": 0.350502,
+      "stages": {
+        "embedding_seconds": 0.089056,
+        "vector_query_seconds": 0.052054,
+        "rerank_preparation_seconds": 0.421997,
+        "rerank_seconds": 6.891416,
+        "lexical_seconds": 0.010451,
+        "retrieval_seconds": 7.550655,
+        "generation_request_seconds": 14.765331,
+        "generation_queue_seconds": 0.0,
+        "generation_inference_seconds": 14.652,
+        "generation_runtime_request_seconds": 14.673,
+        "pipeline_seconds": 22.357672
+      },
+      "id": 4,
+      "current_review_case_id": "mission",
+      "text_identical_to_current_semantic_review": true,
+      "text_sha256": "2c7c8ce302b0bace8f3f5c72695728afddef35626d921c05fdd72bf56c8ae656"
+    }
+  ],
+  "target_p95_seconds": 30,
+  "status": "PASS",
+  "scope": "TARGETED_DEPLOYED_HTTP_WORKER_SMOKE_NOT_100_REQUEST_BENCHMARK",
+  "semantic_review": "Exact response text hashes match four corresponding independently read current SOURCE17 cases, including the generated mission answer.",
+  "four_request_max_under_30_seconds": true,
+  "semantic_review_sha256": "4a522973f164f0066954048f6b722cc40b3eef5b8c860ea4b79f187ed3c8be91"
+}

@@ -1,0 +1,45 @@
+{
+  "schema": "korsik-release22-browser-verification-v1",
+  "observed_at": "2026-10-24T18:12:19.415660+00:00",
+  "status": "PASS",
+  "local_url": "http://127.0.0.1:5173",
+  "public_url": "https://app.korsik-demo.ru",
+  "local_data": "synthetic only, no MAX/model credentials or calls",
+  "checks": {
+    "nested_direction_department_team_creation": "PASS via actual UI, saved and reopened",
+    "employee_assignment": "PASS UI and real localhost HTTP",
+    "manager_chain": "PASS three levels, clicked immediate manager and saw direct report",
+    "http_stale_etag": "PASS 412",
+    "photo": "PASS actual authorized thumbnail loaded 256x256, header/list use employee image",
+    "chat_light_colors": {
+      "employee": "rgb(230, 240, 253)",
+      "assistant": "rgb(242, 245, 237)"
+    },
+    "chat_dark_colors": {
+      "employee": "rgb(32, 53, 78)",
+      "assistant": "rgb(35, 51, 41)"
+    },
+    "dashboard_roster": {
+      "grid_width": 955,
+      "roster_width": 955
+    },
+    "metric_explanation": {
+      "padding": "20px 24px",
+      "dark_summary": "rgb(183, 214, 143)"
+    },
+    "surveys": "PASS one HR refresh button; selected campaign retained after refresh",
+    "scenario": "PASS flow present, 4 nodes, attribution DOM count zero",
+    "public_login": "PASS normal account login and dashboard load",
+    "public_organization": "PASS existing employees listed, no production tree fixtures created"
+  },
+  "screenshots": [
+    "release22-organization-local.png",
+    "release22-manager-chain-local.png",
+    "release22-chat-local.png",
+    "release22-scenario-local.png"
+  ],
+  "production_business_mutations": false,
+  "MAX_messages_sent": 0,
+  "model_requests": 0,
+  "native_MAX_launch_verified": false
+}

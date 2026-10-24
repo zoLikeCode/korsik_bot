@@ -1,0 +1,39 @@
+{
+  "status": "PASS_LOCAL_SCHEMA_EXPORT",
+  "source": "korsik.main.app.openapi()",
+  "paths": 211,
+  "operations": 252,
+  "unique_operation_ids": 252,
+  "resolved_local_references": 258,
+  "json_yaml_equal": true,
+  "required_new_paths_present": [
+    "/api/v1/auth/max-miniapp",
+    "/api/v1/survey-templates",
+    "/api/v1/survey-template-versions/{version_id}/review",
+    "/api/v1/survey-campaigns/preview",
+    "/api/v1/survey-campaigns/{campaign_id}/analytics",
+    "/api/v1/me/custom-surveys"
+  ],
+  "database_contacted": false,
+  "MAX_calls": 0,
+  "model_calls": 0,
+  "deployed_api_match": "PENDING_DEPLOYMENT_CHECK",
+  "artifacts_sha256": {
+    "openapi.json": "3c51b2c71fedd72aad919008ef39989eba927f032de8c24402d9d892781be2af",
+    "openapi.yaml": "f78646bc0914d547eb9d721bcfa73936492c649c5302a0d1daed17f959ff35e0"
+  },
+  "recorded_at": "2026-10-24T11:33:59.749589+00:00",
+  "company_accepted": false,
+  "local_catalogue_regression": {
+    "passed": 2,
+    "test_path": "tests/test_offline_api_docs.py",
+    "warning": "Upstream Starlette/AnyIO deprecation"
+  },
+  "source_sha256": {
+    "backend/korsik/main.py": "95e567142dd2d5e2c61e7e07fed82baf0fba0c6ddaa89d29535df4ed15b9c7bc",
+    "backend/korsik/max_miniapp.py": "337ba65007a4e9fe71e8c486b5b4a933109445d721c26524767d32dffc989522",
+    "backend/korsik/survey_campaigns.py": "9e727e473931fcb7b5d12bb03783676850a6ffb34f5155d9348f012cc5ded0dc"
+  },
+  "previous_recorded_at": "2026-10-24T10:31:00.089412+00:00",
+  "schema_rechecked_after_current_pointer_patch": true
+}

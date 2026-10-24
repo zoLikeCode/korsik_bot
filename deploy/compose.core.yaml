@@ -1,0 +1,16 @@
+# Explicit technical fallback; FULL acceptance requires the local generator.
+services:
+  generator:
+    profiles: [local-llm]
+  migrate:
+    environment: {KORSIK_PRODUCT_MODE: CORE, KORSIK_AI_MODE: CORE, KORSIK_GENERATION_ENABLED: 'false'}
+  api:
+    environment: {KORSIK_PRODUCT_MODE: CORE, KORSIK_AI_MODE: CORE, KORSIK_GENERATION_ENABLED: 'false'}
+  worker:
+    environment: {KORSIK_PRODUCT_MODE: CORE, KORSIK_AI_MODE: CORE, KORSIK_GENERATION_ENABLED: 'false'}
+  answer-worker:
+    environment: {KORSIK_PRODUCT_MODE: CORE, KORSIK_AI_MODE: CORE, KORSIK_GENERATION_ENABLED: 'false'}
+  ingest-worker:
+    environment: {KORSIK_PRODUCT_MODE: CORE, KORSIK_AI_MODE: CORE, KORSIK_GENERATION_ENABLED: 'false'}
+  scheduler:
+    environment: {KORSIK_PRODUCT_MODE: CORE, KORSIK_AI_MODE: CORE, KORSIK_GENERATION_ENABLED: 'false'}

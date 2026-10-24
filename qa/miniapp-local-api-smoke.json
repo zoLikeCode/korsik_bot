@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "environment": "LOCAL_SQLITE_NO_MAX_NO_MODELS",
+  "checks": {
+    "canvas_transition_and_drag_layout_save_reload": true,
+    "stale_save_rejected": true,
+    "canvas_graph_backend_valid": true,
+    "survey_all_four_types_preview_review_publish": true,
+    "campaign_preview_schedule_reload_cancel": true,
+    "campaign_preview_recipient_count": 4,
+    "employee_business_route_denials": true,
+    "manager_business_route_denials": true,
+    "head_talent_business_route_denials": true
+  },
+  "scenario_id": "1d85e9cb-a330-481b-8a6c-2195b01feac7",
+  "version_id": "28ee7def-bc60-4563-86a5-45ff251a3137",
+  "template_id": "3f88e025-8402-43c5-823a-93c2d1f6fde0",
+  "campaign_id": "640ca726-0d7b-4223-9c7a-d3b97d40c260",
+  "completed_at": "2026-10-24T10:13:20.529005+00:00"
+}

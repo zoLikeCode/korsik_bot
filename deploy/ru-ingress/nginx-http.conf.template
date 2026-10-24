@@ -1,0 +1,18 @@
+# STAGE 1: ACME HTTP bootstrap only. Replace __DOMAIN__; not installed automatically.
+# This file belongs in nginx's http context (Debian/Ubuntu sites-enabled).
+server {
+    listen 80 default_server;
+    server_name _;
+    return 444;
+}
+server {
+    listen 80;
+    server_name __DOMAIN__;
+    server_tokens off;
+    location ^~ /.well-known/acme-challenge/ {
+        root /var/www/korsik-acme;
+        default_type text/plain;
+        try_files $uri =404;
+    }
+    location / { return 503; }
+}

@@ -1,0 +1,39 @@
+{
+  "project": "korsik_offline_1792810563",
+  "mode": "FULL",
+  "isolated_database": "korsik_offline_check",
+  "external_MAX_sends": 0,
+  "proofs": [
+    {
+      "report": "offline-restore-report.json",
+      "status": "PASS"
+    },
+    {
+      "report": "storage-fault-report.json",
+      "status": "PASS"
+    },
+    {
+      "report": "scheduler-due-report.json",
+      "status": "PASS"
+    },
+    {
+      "report": "mixed-ai-failure-report.json",
+      "status": "PASS"
+    },
+    {
+      "report": "cuda-oom-business-report.json",
+      "status": "PASS"
+    }
+  ],
+  "status": "PASS",
+  "release": "source15",
+  "backup": "20261024T025441Z",
+  "app_image": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+  "cleanup": {
+    "check_exit_code": 0,
+    "cleanup_exit_code": 0,
+    "isolated_resources_removed": true
+  },
+  "company_accepted": false,
+  "proof_scope": "Isolated same-host Compose cold restore and bounded injected faults,0MAX; not clean-OS installation, arbitrary peak load or physical VRAM exhaustion."
+}

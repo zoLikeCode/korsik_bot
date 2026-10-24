@@ -1,0 +1,31 @@
+[Unit]
+Description=Korsik private SSH forward to the Vast web gateway
+Wants=network-online.target
+After=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=korsik-tunnel
+Group=korsik-tunnel
+UMask=0077
+ExecStart=/usr/bin/ssh -NT -F /dev/null -p 28902 -l korsik-edge -i /var/lib/korsik-ingress/ssh/id_ed25519 -o BatchMode=yes -o IdentitiesOnly=yes -o IdentityAgent=none -o PasswordAuthentication=no -o KbdInteractiveAuthentication=no -o PubkeyAuthentication=yes -o ForwardAgent=no -o ForwardX11=no -o RequestTTY=no -o UserKnownHostsFile=/etc/korsik-ingress/known_hosts -o GlobalKnownHostsFile=/dev/null -o StrictHostKeyChecking=yes -o UpdateHostKeys=no -o ExitOnForwardFailure=yes -o ServerAliveInterval=15 -o ServerAliveCountMax=3 -o ConnectTimeout=10 -o ConnectionAttempts=1 -L 127.0.0.1:18080:127.0.0.1:8080 103.119.82.252
+Restart=always
+RestartSec=5s
+TimeoutStopSec=15s
+KillMode=control-group
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+CapabilityBoundingSet=
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

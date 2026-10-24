@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "base": {
+    "revision_id": "8a3c4e70-f310-4901-ae6a-f7c347a4e169",
+    "extraction_revision_id": "b978873a-3bd3-466a-a0b3-29aabfae17e9",
+    "filename": "ДЕМО — скан OCR QA.png"
+  },
+  "target": {
+    "revision_id": "71c40431-0142-4360-b8c0-3678f6820309",
+    "extraction_revision_id": "f615a76d-b0ca-4d5c-9cd5-ce282ed5f3e7",
+    "filename": "ДЕМО — новая редакция OCR QA.txt"
+  },
+  "summary": {
+    "physical_pages_available": 1,
+    "pages_compared": 1,
+    "pages_added": 0,
+    "pages_removed": 0,
+    "pages_changed": 1,
+    "text_pages_changed": 1,
+    "tables_added": 0,
+    "tables_removed": 0,
+    "tables_changed": 0,
+    "figures_added": 0,
+    "figures_removed": 0,
+    "figures_changed": 0,
+    "unavailable_pages": 0,
+    "metadata_fields_changed": 4
+  },
+  "truncated": false,
+  "alignment": "PHYSICAL_PAGE_AND_KIND_READING_ORDER_POSITION",
+  "semantic_diff": false,
+  "repeated_exact_pins_identical": true,
+  "numeric_or_negation_warning": true,
+  "before_times": [
+    "12:00",
+    "13:00"
+  ],
+  "after_times": [
+    "12:30",
+    "13:30"
+  ],
+  "owner_present": true,
+  "published": false,
+  "candidate_or_qa_created": false,
+  "native_screenshots": [
+    "server-revision-comparison-web11.png",
+    "server-document-owner-web11.png"
+  ]
+}

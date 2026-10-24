@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "scope": "SINGLE_APP_IMAGE_INCIDENT17_PATCH_NOT_FULL_OFFLINE_BUNDLE_VERIFICATION",
+  "status": "PASS",
+  "created_at": "2026-10-24T08:26:10.673559+00:00",
+  "canonical_tag": "korsik-app:local",
+  "expected_image_id": "sha256:9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e",
+  "image_id_before_export": "sha256:9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e",
+  "archive": {
+    "file": "app-image.tar.gz",
+    "server_path": "/opt/korsik/offline-incident17/app-image.tar.gz",
+    "bytes": 245929667,
+    "sha256": "51ee0678c1baf5a0ef1930d7466ac072d1cffa0d6e2afeb83fa2a94f655f1c38",
+    "compression": "gzip_level_1"
+  },
+  "docker_save": {
+    "manifest_images": 1,
+    "tar_entries": 32,
+    "config_path": "blobs/sha256/9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e",
+    "config_sha256": "9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e",
+    "repo_tags": [
+      "korsik-app:local"
+    ],
+    "os": "linux",
+    "architecture": "amd64"
+  },
+  "docker_load": {
+    "performed": true,
+    "exit_code": 0,
+    "image_id_after_load": "sha256:9cb7f5564a83bfa5c6c782d08331161b2122a71858a1da4dc228ee87c381f66e",
+    "canonical_tag_identity_verified": true
+  },
+  "operation_scope": {
+    "exported_tags": [
+      "korsik-app:local"
+    ],
+    "services_recreated": false,
+    "source_model_compose_mutations_requested": false,
+    "original_offline_bundle_touched": false
+  },
+  "elapsed_seconds": 45.76
+}

@@ -1,0 +1,78 @@
+# STAGE 2: enable only after the real ACME certificate exists.
+# Install instead of the HTTP bootstrap, not alongside it. HTTP context required.
+limit_req_zone $binary_remote_addr zone=korsik_ingress_per_ip:10m rate=60r/s;
+log_format korsik_ingress '$time_iso8601 method=$request_method status=$status '
+                         'bytes=$body_bytes_sent seconds=$request_time '
+                         'upstream=$upstream_status upstream_seconds=$upstream_response_time';
+
+server {
+    listen 80 default_server;
+    server_name _;
+    return 444;
+}
+server {
+    listen 80;
+    server_name __DOMAIN__;
+    location ^~ /.well-known/acme-challenge/ {
+        root /var/www/korsik-acme;
+        default_type text/plain;
+        try_files $uri =404;
+    }
+    location / { return 308 https://__DOMAIN__$request_uri; }
+}
+server {
+    listen 443 ssl default_server;
+    server_name _;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_reject_handshake on;
+    return 444;
+}
+server {
+    listen 443 ssl;
+    server_name __DOMAIN__;
+    server_tokens off;
+    ssl_certificate /etc/letsencrypt/live/__DOMAIN__/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/__DOMAIN__/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_session_cache shared:korsik_ingress_tls:10m;
+    ssl_session_timeout 1d;
+    ssl_session_tickets off;
+    ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305;
+    client_max_body_size 100m;
+    client_body_timeout 90s;
+    send_timeout 90s;
+    keepalive_timeout 65;
+    access_log /var/log/nginx/korsik-ingress-access.log korsik_ingress;
+    error_log /var/log/nginx/korsik-ingress-error.log warn;
+    add_header X-Content-Type-Options nosniff always;
+    add_header Referrer-Policy same-origin always;
+    # No X-Frame-Options: MAX web clients may embed the Mini App.
+    # Preserve the application's existing CSP and its MAX frame-ancestors policy.
+    # HSTS is intentionally absent until real HTTPS verification; see README.
+
+    location ^~ /internal/ { return 404; }
+    location / {
+        limit_req zone=korsik_ingress_per_ip burst=120 nodelay;
+        limit_req_status 429;
+        proxy_pass http://127.0.0.1:18080;
+        proxy_http_version 1.1;
+        proxy_set_header Connection "";
+        proxy_set_header Host $http_host;
+        proxy_set_header X-Forwarded-Host $http_host;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header X-Forwarded-Port 443;
+        # Do not trust a chain supplied by an arbitrary internet client.
+        proxy_set_header X-Forwarded-For $remote_addr;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header Forwarded "";
+        proxy_connect_timeout 10s;
+        proxy_read_timeout 90s;
+        proxy_send_timeout 90s;
+        proxy_buffering off;
+        proxy_cache off;
+        proxy_redirect off;
+        proxy_hide_header X-Content-Type-Options;
+        proxy_hide_header Referrer-Policy;
+        # Set-Cookie, request cookies, URI and query pass through unchanged.
+    }
+}

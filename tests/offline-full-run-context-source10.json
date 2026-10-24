@@ -1,0 +1,19 @@
+{
+  "project": "korsik_offline_1792801966",
+  "mode": "FULL",
+  "started_at": "2026-10-24T00:32:46.744813+00:00",
+  "images": {
+    "app": "sha256:f1e0e1ae0dc3153f4efa7de1641e95705386b3a919166a78c910ad5dec1a1fe4",
+    "encoder_reranker": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+    "generator": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079",
+    "parser": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf"
+  },
+  "prebuilt_images_only": true,
+  "build_or_pull_during_check": false,
+  "production_mutations": false,
+  "external_MAX_sends": 0,
+  "backup_directory": "/opt/korsik/backups/20261024T003121Z",
+  "fresh_sql_qdrant_blob_volumes": true,
+  "prepared_models_read_only": true,
+  "scope": "SAME_HOST_NEW_COMPOSE_PROJECT_NOT_CLEAN_OS_INSTALL"
+}

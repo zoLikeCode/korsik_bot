@@ -1,0 +1,6 @@
+{
+  "app_image": "sha256:13072bcb1297f977beaa88557042af58a6c643c12767b16e4955264507ea76a9",
+  "api_and_answer_worker_same_image": true,
+  "synthetic_OWN_fixture_only": true,
+  "MAX_bindings_or_sends_authorized": false
+}

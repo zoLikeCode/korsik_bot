@@ -1,0 +1,52 @@
+{
+  "schema": "korsik-release24-local-browser-v1",
+  "status": "PASS",
+  "observed_at": "2026-10-24T19:32:00.813979+00:00",
+  "environment": "localhost synthetic SQLite CORE; MAX disabled; external model endpoints disabled",
+  "production_data_mutations": 0,
+  "external_MAX_events_or_messages": 0,
+  "employee": {
+    "page_size": 10,
+    "page_lengths": [
+      10,
+      4
+    ],
+    "total": 14,
+    "create_hidden_fields_absent": true,
+    "timezone_dropdown_RU_iana_entries": 26,
+    "created_timezone": "Asia/Anadyr",
+    "dates_saved": true,
+    "OFF_then_ON_verified": true,
+    "card_sections": [
+      "Оргструктура",
+      "Подключение к MAX"
+    ]
+  },
+  "knowledge": {
+    "one_file_upload": true,
+    "audience_all_disables_units": true,
+    "selected_org_unit_preserved": true,
+    "automatic_private_index_and_QA": true,
+    "explicit_single_button_publish": true,
+    "replacement_selected_new_version": true,
+    "old_active_preserved_until_explicit_publish": true,
+    "replacement_published": true,
+    "old_original_and_version_retained": true,
+    "version_count": 2,
+    "no_fake_per_page_review": true
+  },
+  "screenshots": [
+    "qa/release24-employee-local.png",
+    "qa/release24-employee-create-local.png",
+    "qa/release24-document-upload-local.png",
+    "qa/release24-document-replaced-local.png",
+    "qa/release24-surveys-local.png"
+  ],
+  "limits": [
+    "Synthetic local flow; no native MAX device launch or production document publication performed."
+  ],
+  "surveys": {
+    "top_notice_removed": true,
+    "single_refresh_button": true
+  }
+}

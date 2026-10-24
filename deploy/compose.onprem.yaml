@@ -1,0 +1,9 @@
+# Corporate reverse proxy supplies trusted HTTPS:443; no demonstration tunnel.
+services:
+  tunnel:
+    profiles: [demo-tunnel]
+  max-connector:
+    environment:
+      MAX_PUBLIC_URL: ${MAX_PUBLIC_URL:?Set corporate HTTPS base URL}
+  web:
+    ports: !override ['${BIND_IP:-127.0.0.1}:${WEB_PORT:-8080}:8080']

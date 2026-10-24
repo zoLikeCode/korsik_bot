@@ -1,0 +1,11 @@
+FROM python:3.12-slim
+ENV PYTHONUNBUFFERED=1 HF_HUB_OFFLINE=1 OMP_THREAD_LIMIT=2 OMP_NUM_THREADS=2
+RUN apt-get update && apt-get install -y --no-install-recommends tesseract-ocr tesseract-ocr-rus tesseract-ocr-eng libreoffice-impress fonts-dejavu && rm -rf /var/lib/apt/lists/*
+WORKDIR /srv
+COPY services/model_server/requirements.parser.txt .
+RUN pip install --no-cache-dir -r requirements.parser.txt && useradd -r -u 10001 parser
+COPY backend/korsik/parsing.py .
+COPY services/model_server/parser_app.py .
+USER 10001
+EXPOSE 8000
+CMD ["uvicorn","parser_app:app","--host","0.0.0.0","--port","8000","--workers","1"]

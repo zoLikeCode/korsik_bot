@@ -1,0 +1,128 @@
+{
+  "status": "PASS",
+  "observed_at": "2026-10-24T02:33:37.515115+00:00",
+  "profile_id": "0a2e815c-80ce-46b5-ac97-bb1612f0a859",
+  "validation_id": "c9b5fafc-4f4d-437b-87c8-34e318eb8165",
+  "configuration_fingerprint": "5f1567cb62b0206f010c14733a3b9a9d96530b7ad1d36d9d9547492cd2d8c13d",
+  "activated_at": "2026-10-24T02:32:05.610013+00:00",
+  "completed_at": "2026-10-24T02:32:04.765769+00:00",
+  "pipeline_identities": {
+    "chunker_version": "korsik-physical-parent-chunker-v1",
+    "chunker_fingerprint": "64fcb0516ed01fb9f0a89ed6d2a0d8b6fb387500bc0640b4435c5f6a4cb02b2b",
+    "retrieval_policy_version": "korsik-hybrid-retrieval-guards-v1",
+    "retrieval_policy_fingerprint": "1b35a1c04237038646383f9603e69d6087bd3b5f9a6641d4ba9dccfcd61677b7",
+    "retrieval_module_source_fingerprint": "0da5d26824b6c3da6b00fcab116a3b34034c9b54edf5905d1d8a279ac2d6e869",
+    "generation_request_schema_version": "korsik-local-generation-request-v1",
+    "generation_runtime_source_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+  },
+  "checks": [
+    {
+      "name": "pipeline_code_identity",
+      "status": "PASS",
+      "seconds": 0.164,
+      "detail": {
+        "chunker_version": "korsik-physical-parent-chunker-v1",
+        "chunker_fingerprint": "64fcb0516ed01fb9f0a89ed6d2a0d8b6fb387500bc0640b4435c5f6a4cb02b2b",
+        "retrieval_policy_version": "korsik-hybrid-retrieval-guards-v1",
+        "retrieval_policy_fingerprint": "1b35a1c04237038646383f9603e69d6087bd3b5f9a6641d4ba9dccfcd61677b7",
+        "retrieval_module_source_fingerprint": "0da5d26824b6c3da6b00fcab116a3b34034c9b54edf5905d1d8a279ac2d6e869",
+        "generation_request_schema_version": "korsik-local-generation-request-v1",
+        "generation_runtime_source_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+      }
+    },
+    {
+      "name": "embedder_identity",
+      "status": "PASS",
+      "seconds": 0.057,
+      "detail": {
+        "fingerprint": "afc4aa45cd8d95d538404fd463d881c1cd522f3f92bfd42a6b2f6abde0a5b5d8",
+        "runtime": "onnxruntime-fp32-cpu"
+      }
+    },
+    {
+      "name": "reranker_identity",
+      "status": "PASS",
+      "seconds": 0.017,
+      "detail": {
+        "fingerprint": "30f61c1e0d16deb1d0f43ddaa49f5457bfbaf69f1b6ee27d0475a2b676f8f8ea",
+        "runtime": "onnxruntime-fp32-cpu"
+      }
+    },
+    {
+      "name": "generator_identity",
+      "status": "PASS",
+      "seconds": 0.018,
+      "detail": {
+        "fingerprint": "1fe278d9e50f5fe426c80efe3845911a3bbcc057d1f975c660a8c2f39c6d21d0",
+        "runtime": "torch-bf16-cuda",
+        "renderer_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+      }
+    },
+    {
+      "name": "russian_embedding",
+      "status": "PASS",
+      "seconds": 0.056,
+      "detail": {
+        "dimensions": 384,
+        "norm": 1.000000007651774
+      }
+    },
+    {
+      "name": "russian_reranking",
+      "status": "PASS",
+      "seconds": 0.132,
+      "detail": {
+        "ordering": "relevant_first"
+      }
+    },
+    {
+      "name": "semantic_evaluation_report",
+      "status": "PASS",
+      "seconds": 0.002,
+      "detail": {
+        "status": "PASS",
+        "report_status": "PASS",
+        "pipeline_review_current": true,
+        "cases": 29,
+        "reviewer": "IMPLEMENTATION_REVIEW_WITH_INDEPENDENT_MANUAL_OUTPUT_REVIEW_NOT_COMPANY_HR",
+        "report_sha256": "4af930a7267848ead4b9d6797815df459580ad621faba58f5cc5d8b2b64886fb",
+        "scope": "IMPLEMENTATION_REVIEW_NOT_COMPANY_ACCEPTANCE"
+      }
+    },
+    {
+      "name": "grounded_generation_1",
+      "status": "PASS",
+      "seconds": 4.084,
+      "detail": {
+        "output": "Обед проходит с 12:00 до 13:00 [1].",
+        "output_tokens": 23,
+        "seconds": 3.883
+      }
+    },
+    {
+      "name": "grounded_generation_2",
+      "status": "PASS",
+      "seconds": 2.094,
+      "detail": {
+        "output": "Обратиться в отдел кадров [1].",
+        "output_tokens": 12,
+        "seconds": 2.072
+      }
+    },
+    {
+      "name": "grounded_generation_3",
+      "status": "PASS",
+      "seconds": 3.888,
+      "detail": {
+        "output": "Нужно уведомить HR в течение 2 дней, если изменился номер телефона [1].",
+        "output_tokens": 23,
+        "seconds": 3.863
+      }
+    }
+  ],
+  "scope": "NATIVE_DURABLE_VALIDATION_AND_LIVE_GATED_ACTIVATION_AFTER_SOURCE_BOUND_29_CASE_REVIEW",
+  "activation_command_exit_code": 0,
+  "company_acceptance": false,
+  "human_MAX_acceptance": false,
+  "read_only_record": true
+}

@@ -1,0 +1,37 @@
+{
+  "recorded_at": "2026-10-24T09:54:11.641548+00:00",
+  "status": "LOCAL_BACKEND_VERIFIED",
+  "backend_tests": {
+    "passed": 13,
+    "path": "backend/tests/test_survey_campaigns.py",
+    "command": "PYTHONPATH=backend .venv/bin/pytest -q backend/tests/test_survey_campaigns.py",
+    "warnings": [
+      "Upstream Starlette BlockingPortal deprecation"
+    ]
+  },
+  "coverage": [
+    "draft typed Likert/single/multiple/text with forbidding unknown fields",
+    "review and immutable published version/new-version pins",
+    "explicit HR scope and current employee/creator/episode authorization",
+    "preview hash/CAS/no stale generation or lease side effects",
+    "real scheduler due -> durable job -> existing survey_run and Outbox",
+    "accepted delivery pins reminder time; actual reminder once and decline",
+    "existing typed answers and finish without general feedback/diagnostic analysis",
+    "cancel preserves answers and drafts while releasing active capture",
+    "cross-campaign/onboarding single employee survey lane and durable defer",
+    "manager/head analytics no raw text/individual score; n>=5 and rare-cell suppression",
+    "real HTTP model validation and missing/stale ETag outcomes"
+  ],
+  "privacy": "VOLUNTARY_IDENTIFIED_HR_SCOPED_NO_CLINICAL_SCORING",
+  "frontend_status": "SOURCE_READY_TYPECHECK_AWAITS_UNRELATED_SCENARIOS_A11Y_FIX",
+  "deployment_status": "PENDING_ROOT",
+  "MAX_sends": 0,
+  "model_calls": 0,
+  "VM_mutations": 0,
+  "company_accepted": false,
+  "source_sha256": {
+    "backend/korsik/survey_campaigns.py": "9e727e473931fcb7b5d12bb03783676850a6ffb34f5155d9348f012cc5ded0dc",
+    "backend/tests/test_survey_campaigns.py": "1678e0eb604ba3ef9a681a1a4245b58ca1da6521c223d58b7a09bb2f1f39fbab",
+    "frontend/src/pages/Surveys.tsx": "4b0a439ab731182c9e04211f5bf65198250608bc759baca7e1d0cd24ad4d4993"
+  }
+}

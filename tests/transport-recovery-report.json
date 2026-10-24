@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "observed_at": "2026-10-24T07:41:02.444900+00:00",
+  "public_url": "https://systematic-working-authorities-glenn.trycloudflare.com",
+  "checks": {
+    "trusted_https_branded_HTML": true,
+    "unchanged_WEB18_SHA": true,
+    "public_MAX_hook_rejects_unauthenticated": true,
+    "HR_login": true,
+    "unchanged_ACTIVE_local_AI_profile": true,
+    "three_published_documents_preserved": true
+  },
+  "runtime": {
+    "status": "PASS",
+    "observed_at": "2026-10-24T07:40:59.375328+00:00",
+    "services": {
+      "answer-worker": {
+        "running": true,
+        "health": "NO_HEALTHCHECK",
+        "image": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8"
+      },
+      "api": {
+        "running": true,
+        "health": "healthy",
+        "image": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8"
+      },
+      "encoder": {
+        "running": true,
+        "health": "healthy",
+        "image": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e"
+      },
+      "generator": {
+        "running": true,
+        "health": "healthy",
+        "image": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079"
+      },
+      "ingest-worker": {
+        "running": true,
+        "health": "NO_HEALTHCHECK",
+        "image": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8"
+      },
+      "max-connector": {
+        "running": true,
+        "health": "NO_HEALTHCHECK",
+        "image": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8"
+      },
+      "parser": {
+        "running": true,
+        "health": "healthy",
+        "image": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf"
+      },
+      "postgres": {
+        "running": true,
+        "health": "healthy",
+        "image": "sha256:ab20e934b27ba3ff927c1b4c9ff8cf6c32f315f743efe68dd3441182a87fb085"
+      },
+      "qdrant": {
+        "running": true,
+        "health": "NO_HEALTHCHECK",
+        "image": "sha256:8a80c5500151ab2b08eb5874698b81b6b8addbc53ef4fb0c47f516680cf413d2"
+      },
+      "reranker": {
+        "running": true,
+        "health": "healthy",
+        "image": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e"
+      },
+      "scheduler": {
+        "running": true,
+        "health": "NO_HEALTHCHECK",
+        "image": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8"
+      },
+      "tunnel": {
+        "running": true,
+        "health": "healthy",
+        "image": "sha256:b74b8bf3c660f98df9ed51099c79d1b2eafdb4922b8cf6fd593a3eb87b056723"
+      },
+      "web": {
+        "running": true,
+        "health": "healthy",
+        "image": "sha256:16438bcef011b1373c6dcd0fe0740c8322546b9796bd366a0b951d76ef505a88"
+      },
+      "worker": {
+        "running": true,
+        "health": "NO_HEALTHCHECK",
+        "image": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8"
+      }
+    },
+    "only_tunnel_image_changed": true,
+    "tunnel_health": {
+      "status": "READY",
+      "reason": null,
+      "generation": 1,
+      "url": "https://systematic-working-authorities-glenn.trycloudflare.com",
+      "checked_at": "2026-10-24T07:40:47.340902+00:00",
+      "failure_count": 0
+    },
+    "previous_tunnel_image": "sha256:dda27e9f3345ea6e9e67a0d5cc792d8c05baaa893712549c1bff321973c7b534",
+    "backup_timer": "active"
+  },
+  "MAX_registration": {
+    "status": "PASS",
+    "observed_at": "2026-10-24T07:39:06.520898+00:00",
+    "bot_id": 227218523,
+    "public_url": "https://systematic-working-authorities-glenn.trycloudflare.com",
+    "trusted_TLS": true,
+    "MAX_get_me_status": 200,
+    "subscription_status": 200,
+    "matching_current_webhook": 1,
+    "expected_event_types_present": true,
+    "messages_sent": 0,
+    "scope": "Actual authenticated MAX API registration; human chat invitation-to-HR-reply E2E remains separate"
+  },
+  "model_calls": 0,
+  "binding_mutations": 0,
+  "human_MAX_E2E_completed": false,
+  "limitations": [
+    "Quick Tunnel hostname can change after recreation; watchdog does not repair an offline Vast host",
+    "Original offline bundle and HTTP100 reports remain historical SOURCE15/WEB18 deployment evidence; recovery changes only demo tunnel image and PUBLIC_URL environment"
+  ]
+}

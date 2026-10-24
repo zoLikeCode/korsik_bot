@@ -1,0 +1,252 @@
+{
+  "status": "PARTIAL_EXTERNAL_TLS_PATH_UNSTABLE",
+  "observed_at": "2026-10-24T12:29:14.508168+00:00",
+  "current_deployment": {
+    "application_url": "https://app.korsik-demo.ru",
+    "edge_IPv4": "212.57.127.220",
+    "upstream": "http://127.0.0.1:18080",
+    "nginx_vhost": "/etc/nginx/sites-available/app.korsik-demo.ru",
+    "nginx_config_sha256": "5bd48b618f6b38c4ea8e0f15c4d4cfe6e6d4835e04aec69ea8f9c6c22b2aa924",
+    "TLS_public_CA_and_hostname": "PASS",
+    "TLS_supported": [
+      "TLSv1.2",
+      "TLSv1.3"
+    ],
+    "certificate_expiry": "Jan 22 10:59:29 2027 GMT",
+    "certificate_SAN": [
+      "app.korsik-demo.ru"
+    ],
+    "authoritative_app_DNS_all_four_consistent": true,
+    "Google_public_DoH": {
+      "A": [
+        "212.57.127.220"
+      ],
+      "AAAA": []
+    },
+    "all23origin_assets_SHA_match": true,
+    "HTTP_redirect_status": 308,
+    "HTTP01_probe_status": 200,
+    "unauthenticated_session_status": 401,
+    "renewal_dry_run_exit_code": 0,
+    "certbot_timer": {
+      "enabled": "enabled",
+      "active": "active"
+    },
+    "previous20nginx_files_preserved": true,
+    "apex_TLS_issued": false,
+    "origin_XFP": "Vast /api gateway still overwrites with http; no origin config mutation or end-to-end scheme preservation claim",
+    "application_security_configuration": {
+      "PUBLIC_URL": "https://app.korsik-demo.ru",
+      "SECURE_COOKIES": true,
+      "MAX_PUBLIC_URL": "https://app.korsik-demo.ru"
+    },
+    "application_config_evidence": "../../tests/ru-ingress-cutover-report.json",
+    "network_transient": "Repeated external Mac TLS handshake failures, interleaved with successful root public200, while origin/Vast HTTPS and auth work; unresolved source/path cause. Do not interpret origin23assets PASS as stable external service.",
+    "real_browser_login": "ROOT_QA_SEPARATE",
+    "real_MAX_MiniApp_launch": "NOT_PROVEN_BY_INGRESS_REPORT",
+    "physical_reboot_tested": false
+  },
+  "evidence": {
+    "ru-ingress-tunnel-report.json": {
+      "path": "../../tests/ru-ingress-tunnel-report.json",
+      "sha256": "bfe2c1e6f785fa9ca35a18debbd51a9ea0c76c904073270c0f89fcbd4be3f37e"
+    },
+    "ru-ingress-https-report.json": {
+      "path": "../../tests/ru-ingress-https-report.json",
+      "sha256": "f5c978131aee134b20759464b5c59eeb13a7bdc21b58a1d34503b61411031a0f"
+    },
+    "ru-ingress-renewal-report.json": {
+      "path": "../../tests/ru-ingress-renewal-report.json",
+      "sha256": "41d85c60e4e11dcd75109b978471d12db3ff40dc1ba0ccd093f6cee09b7f58e5"
+    },
+    "ru-ingress-cutover-report.json": {
+      "path": "../../tests/ru-ingress-cutover-report.json",
+      "sha256": "c166de8ad4a5082402190f02ba8ede933a52167330eee636f369ddc5c288ea70"
+    },
+    "ru-ingress-tcp-headers-report.json": {
+      "path": "../../tests/ru-ingress-tcp-headers-report.json",
+      "sha256": "fd1e33a819007899e012079e6ccb01db17db70a31d174cb1eff1a3a1b6eec546"
+    }
+  },
+  "current_files_sha256": {
+    "nginx-http.conf.template": "8a38e5b80b017bf50081276326910445393bfa86a4d3c01fdd5f551c33ecb31b",
+    "korsik-vast-tunnel.service": "aca8403d5b64e924f90de7a93b72c8153c44339d0af5a367a2ecd013c069d86a",
+    "README.md": "e73e140d58f206de744b5e03240d8d34c3f0c3120555849202d295ef68d0424c",
+    "nginx-https.conf.template": "fbdc3856ed4ff8a2c7fd7f628540ce9aa117eafb623b821c8f4c9b3665198b7c"
+  },
+  "current_README_shell_syntax": {
+    "status": "PASS",
+    "blocks": [
+      {
+        "block": 1,
+        "exit_code": 0
+      },
+      {
+        "block": 2,
+        "exit_code": 0
+      },
+      {
+        "block": 3,
+        "exit_code": 0
+      },
+      {
+        "block": 4,
+        "exit_code": 0
+      },
+      {
+        "block": 5,
+        "exit_code": 0
+      },
+      {
+        "block": 6,
+        "exit_code": 0
+      },
+      {
+        "block": 7,
+        "exit_code": 0
+      },
+      {
+        "block": 8,
+        "exit_code": 0
+      },
+      {
+        "block": 9,
+        "exit_code": 0
+      },
+      {
+        "block": 10,
+        "exit_code": 0
+      }
+    ]
+  },
+  "secrets_in_pack": false,
+  "company_accepted": false,
+  "prior_validation_preserved": {
+    "status": "OFFLINE_REVIEWABLE_NOT_INSTALLED",
+    "checked_at": "2026-10-24T11:18:08.715901+00:00",
+    "files_sha256": {
+      "nginx-http.conf.template": "8a38e5b80b017bf50081276326910445393bfa86a4d3c01fdd5f551c33ecb31b",
+      "korsik-vast-tunnel.service": "aca8403d5b64e924f90de7a93b72c8153c44339d0af5a367a2ecd013c069d86a",
+      "README.md": "d0c9ca17a518a1fe89b16fde587b021b6b8b280e75aa64b342a99b03ee70ebc6",
+      "nginx-https.conf.template": "fbdc3856ed4ff8a2c7fd7f628540ce9aa117eafb623b821c8f4c9b3665198b7c"
+    },
+    "shell_blocks_syntax": {
+      "status": "PASS",
+      "blocks": [
+        {
+          "block": 1,
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "block": 2,
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "block": 3,
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "block": 4,
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "block": 5,
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "block": 6,
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "block": 7,
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "block": 8,
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "block": 9,
+          "exit_code": 0,
+          "stderr": ""
+        },
+        {
+          "block": 10,
+          "exit_code": 0,
+          "stderr": ""
+        }
+      ]
+    },
+    "openssh_client_options_offline": {
+      "status": "PASS",
+      "command": "ssh -G with exact systemd ExecStart options except a temporary empty -i file for offline parsing; no connection attempted",
+      "template_identity_file": "/var/lib/korsik-ingress/ssh/id_ed25519",
+      "effective": {
+        "user": "korsik-edge",
+        "hostname": "103.119.82.252",
+        "port": "28902",
+        "batchmode": "yes",
+        "controlmaster": "false",
+        "exitonforwardfailure": "yes",
+        "identitiesonly": "yes",
+        "requesttty": "false",
+        "stricthostkeychecking": "true",
+        "updatehostkeys": "false",
+        "identityagent": "none",
+        "localforward": "[127.0.0.1]:18080 [127.0.0.1]:8080",
+        "identityfile": "TEMPORARY_EMPTY_FILE_FOR_OPTION_PARSE_ONLY",
+        "userknownhostsfile": "/etc/korsik-ingress/known_hosts",
+        "forwardagent": "no"
+      },
+      "identity_validation": "Exactly one identity configured. Empty temporary file was not a key and was deleted; the real dedicated key must be generated only on the future VPS."
+    },
+    "nginx_syntax": {
+      "status": "NOT_RUN_TOOLS_UNAVAILABLE",
+      "native_nginx_found": false,
+      "docker_daemon": "Unavailable (no docker.sock). No install/start/pull attempted.",
+      "required_on_target": [
+        "HTTP stage nginx -t before reload",
+        "Certificate exists before TLS stage nginx -t",
+        "renew deploy hook nginx -t before reload"
+      ]
+    },
+    "systemd_verify": {
+      "status": "NOT_RUN_TOOLS_UNAVAILABLE",
+      "systemd_analyze_found": false,
+      "required_on_target": "systemd-analyze verify /etc/systemd/system/korsik-vast-tunnel.service"
+    },
+    "target_sshd": "NOT_RUN: exact Vast daemon/config must be discovered and sshd -t/-T verified by operator before a targeted reload.",
+    "origin_xfp": "Current gateway overwrite documented; explicit trusted-peer map + narrow operator change is required before end-to-end scheme preservation can pass.",
+    "purchase": false,
+    "installation": false,
+    "dns_connected": false,
+    "secrets_in_pack": false,
+    "independent_review": {
+      "status": "COMPLETE_NO_UNRESOLVED_DESIGN_BLOCKER",
+      "reviewer": "ingress_review",
+      "corrected": [
+        "TLSv1.2/1.3 policy applied also in default TLS server before SNI negotiation",
+        "README names actual Compose .env inputs PUBLIC_URL/SECURE_COOKIES/MAX_PUBLIC_URL",
+        "Key generation uses runuser supplied by util-linux, not optional sudo"
+      ],
+      "target_execution_not_claimed": true
+    },
+    "historical_protocol": true,
+    "subsequent_execution": {
+      "observed_at": "2026-10-24T11:50:00+00:00",
+      "ssh_upstream_status": "DEPLOYED_PASS",
+      "report": "../../tests/ru-ingress-tunnel-report.json",
+      "report_sha256": "bfe2c1e6f785fa9ca35a18debbd51a9ea0c76c904073270c0f89fcbd4be3f37e",
+      "public_tls_dns_cookie_max_status": "SEPARATE_CHECKS_NOT_CONFIRMED_BY_SSH_REPORT"
+    },
+    "current_readme_sha256": "fb4fc85b38a0a55ad87e33be71115eff3d0e214fcd163d58bb6d0fe0189aa8c9"
+  }
+}

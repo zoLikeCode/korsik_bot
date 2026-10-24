@@ -1,0 +1,416 @@
+{
+  "schema": "korsik-release26-public-readonly-v1",
+  "status": "PASS",
+  "observed_at": "2026-10-24T21:09:27.390012+00:00",
+  "origin": "https://app.korsik-demo.ru",
+  "normal_CA_and_hostname_verification": true,
+  "insecure_TLS_options": false,
+  "all_requests_GET": true,
+  "MAX_messages_sent": 0,
+  "business_data_edited": false,
+  "sessions_created_or_revoked": 0,
+  "requests": [
+    {
+      "path": "/THIRD_PARTY_NOTICES.txt",
+      "status": 200,
+      "bytes": 1073,
+      "seconds": 0.78
+    },
+    {
+      "path": "/assets/Chat-CdHMH_sR.js",
+      "status": 200,
+      "bytes": 20795,
+      "seconds": 0.719
+    },
+    {
+      "path": "/assets/Chat-DlzB7zEh.css",
+      "status": 200,
+      "bytes": 2826,
+      "seconds": 0.5
+    },
+    {
+      "path": "/assets/Dashboard-Cn2f2IO3.js",
+      "status": 200,
+      "bytes": 17577,
+      "seconds": 0.523
+    },
+    {
+      "path": "/assets/Dashboard-G9YHeyfA.css",
+      "status": 200,
+      "bytes": 2665,
+      "seconds": 0.486
+    },
+    {
+      "path": "/assets/EmployeeAvatar-DTd1aHtf.js",
+      "status": 200,
+      "bytes": 369,
+      "seconds": 0.509
+    },
+    {
+      "path": "/assets/Employees-778Gfdew.js",
+      "status": 200,
+      "bytes": 22339,
+      "seconds": 0.502
+    },
+    {
+      "path": "/assets/Employees-CSNSHyB7.css",
+      "status": 200,
+      "bytes": 4080,
+      "seconds": 0.479
+    },
+    {
+      "path": "/assets/FeedbackReview-CenZXEMG.js",
+      "status": 200,
+      "bytes": 6264,
+      "seconds": 0.49
+    },
+    {
+      "path": "/assets/Knowledge-BJEZl2wo.js",
+      "status": 200,
+      "bytes": 34379,
+      "seconds": 0.512
+    },
+    {
+      "path": "/assets/Knowledge-C8W9gJne.css",
+      "status": 200,
+      "bytes": 1238,
+      "seconds": 0.507
+    },
+    {
+      "path": "/assets/Organization-DD_X4g1v.css",
+      "status": 200,
+      "bytes": 4717,
+      "seconds": 0.519
+    },
+    {
+      "path": "/assets/Organization-DHUEMQAR.js",
+      "status": 200,
+      "bytes": 15746,
+      "seconds": 0.461
+    },
+    {
+      "path": "/assets/PrincipalBindings-BalDOBc3.js",
+      "status": 200,
+      "bytes": 4846,
+      "seconds": 0.567
+    },
+    {
+      "path": "/assets/Reports-DWiaitFy.js",
+      "status": 200,
+      "bytes": 9183,
+      "seconds": 0.497
+    },
+    {
+      "path": "/assets/Scenarios-BnuhLJ6X.css",
+      "status": 200,
+      "bytes": 15869,
+      "seconds": 0.517
+    },
+    {
+      "path": "/assets/Scenarios-D-Ash5DF.js",
+      "status": 200,
+      "bytes": 243371,
+      "seconds": 0.957
+    },
+    {
+      "path": "/assets/Surveys-Deps0d-N.js",
+      "status": 200,
+      "bytes": 26818,
+      "seconds": 0.464
+    },
+    {
+      "path": "/assets/check-check-CWjvFh22.js",
+      "status": 200,
+      "bytes": 175,
+      "seconds": 0.599
+    },
+    {
+      "path": "/assets/copy-BFzXDRbW.js",
+      "status": 200,
+      "bytes": 228,
+      "seconds": 0.498
+    },
+    {
+      "path": "/assets/download-DB_Sh3Xq.js",
+      "status": 200,
+      "bytes": 259,
+      "seconds": 0.499
+    },
+    {
+      "path": "/assets/index-BHgnhYVC.js",
+      "status": 200,
+      "bytes": 300924,
+      "seconds": 0.94
+    },
+    {
+      "path": "/assets/index-DYaUz4cy.css",
+      "status": 200,
+      "bytes": 91872,
+      "seconds": 0.516
+    },
+    {
+      "path": "/assets/plus-NYIji00b.js",
+      "status": 200,
+      "bytes": 150,
+      "seconds": 0.51
+    },
+    {
+      "path": "/assets/refresh-ccw-kARUZSOS.js",
+      "status": 200,
+      "bytes": 317,
+      "seconds": 0.481
+    },
+    {
+      "path": "/assets/send-DgA6E-af.js",
+      "status": 200,
+      "bytes": 369,
+      "seconds": 0.469
+    },
+    {
+      "path": "/assets/trash-2-DoRj4w29.js",
+      "status": 200,
+      "bytes": 431,
+      "seconds": 0.488
+    },
+    {
+      "path": "/assets/upload-BzNrq9jI.js",
+      "status": 200,
+      "bytes": 254,
+      "seconds": 0.469
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 644,
+      "seconds": 0.495
+    },
+    {
+      "path": "/api/v1/auth/config",
+      "status": 200,
+      "bytes": 113,
+      "seconds": 0.622
+    },
+    {
+      "path": "/api/openapi.json",
+      "status": 200,
+      "bytes": 164772,
+      "seconds": 1.388
+    },
+    {
+      "path": "/api/v1/organization",
+      "status": 401,
+      "bytes": 90,
+      "seconds": 0.454
+    },
+    {
+      "path": "/internal/release26-readonly-probe",
+      "status": 404,
+      "bytes": 146,
+      "seconds": 0.49
+    },
+    {
+      "path": "/organization",
+      "status": 200,
+      "bytes": 644,
+      "seconds": 0.5
+    }
+  ],
+  "native_MAX_launch_tested": false,
+  "expected_native_profile_from_successful_deployment": {
+    "profile_id": "052c5a64-ac05-4286-a4c0-18e3fb1e77dc",
+    "status": "ACTIVE",
+    "configuration_fingerprint": "b922edb3703a1bfab392b1abf6c6e818b67720474daa022462e7796bd8a6d183",
+    "retrieval_module_sha256": "0f3d0ae22e1fa10f18cba7881d3c017a8034af581c3a0789a6dc482e1734d2c6",
+    "canonical_url": "https://app.korsik-demo.ru",
+    "secure_cookies": true,
+    "max_bot_url": "https://max.ru/id7725738542_2_bot"
+  },
+  "installed_quality_report_expected_sha256": "df11daefc64ec6cb71d8876694294a64c2391573acbe3494f07cd63eeee81795",
+  "native_profile_transition_performed": false,
+  "runtime_profile_independently_checked_by_final_runtime_report": false,
+  "auth_config_available": true,
+  "files": [
+    {
+      "path": "/THIRD_PARTY_NOTICES.txt",
+      "sha256": "023119ac20fb1c8c9930abe0bcd196989a1960388529a96fc43cebf96f07c9ff",
+      "bytes": 1073,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Chat-CdHMH_sR.js",
+      "sha256": "eae5bf8d5e6444b9ee9a258722e3b4d7c61bba376d0d197552f5d50627cd8ef4",
+      "bytes": 20795,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Chat-DlzB7zEh.css",
+      "sha256": "2e17514f22dccf025726bd7a62437303c1cf12e6638f0c2d825b3a72120cd63c",
+      "bytes": 2826,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Dashboard-Cn2f2IO3.js",
+      "sha256": "8a6a78c7752d6105b76c1ccec6a1b28a75c9e5dee951e77ecb25a61d84928001",
+      "bytes": 17577,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Dashboard-G9YHeyfA.css",
+      "sha256": "d6887422ff569ee272af8f6d38d8fb203db977d4dbedd0ed1397388b33700ed7",
+      "bytes": 2665,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/EmployeeAvatar-DTd1aHtf.js",
+      "sha256": "65068120522bf2edefeee9b9c142ae3215b15b68a37deece2a33ad3cc75fcb52",
+      "bytes": 369,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Employees-778Gfdew.js",
+      "sha256": "232ed6eff43d3d458a0d22bc0d6c40a3a2ed8c87a957a02675a0d18dfbb414f5",
+      "bytes": 22339,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Employees-CSNSHyB7.css",
+      "sha256": "1cfe8b0b3cab60199d95d7b55d7c53e07e0c2688d114fc359fe18cf057789b8c",
+      "bytes": 4080,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/FeedbackReview-CenZXEMG.js",
+      "sha256": "290ad511b89633178202fbfd833219f64ed4babdf26314cd4b908e56ad038e40",
+      "bytes": 6264,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Knowledge-BJEZl2wo.js",
+      "sha256": "c9af7dc29046bfb2ed67dc5dea49f165d7e3505dedc81b117640539b0729593e",
+      "bytes": 34379,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Knowledge-C8W9gJne.css",
+      "sha256": "4df05d0a518e9e3453d715d014617e832feaf4dfe1bfac4711d4a69a75e10c70",
+      "bytes": 1238,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Organization-DD_X4g1v.css",
+      "sha256": "3a5d6ee5d060e12e0fd65e5b30e465024a1fc9aeffb76d5e23fefafb1289afba",
+      "bytes": 4717,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Organization-DHUEMQAR.js",
+      "sha256": "d89855b1a4176509a585662112355f215baa1a21616e32b3e632a9890756b079",
+      "bytes": 15746,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/PrincipalBindings-BalDOBc3.js",
+      "sha256": "cb2630608c1a5334170f02f6c0754fd476494586ce56ffb44bb00354be410cf6",
+      "bytes": 4846,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Reports-DWiaitFy.js",
+      "sha256": "ab8de64168ffa282ddf6505f296c9a14897f930e9e2a010400093a6ca9e1f831",
+      "bytes": 9183,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Scenarios-BnuhLJ6X.css",
+      "sha256": "1243b61a71923367ce620fb944427c80c9b03e863e18374fcf4f74d6d06f63fc",
+      "bytes": 15869,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Scenarios-D-Ash5DF.js",
+      "sha256": "66a05e2d1e4b3d3108896e128d8cb5f748cb73bd8d066aa8ab36fdf64b454199",
+      "bytes": 243371,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Surveys-Deps0d-N.js",
+      "sha256": "03ccca46305432e41eead8b6cbfbd96bf5d6e7f4a559e1bcac7a41752cf4fba9",
+      "bytes": 26818,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/check-check-CWjvFh22.js",
+      "sha256": "9b3f7cc14e4ae56f4813d986ff7f247705ddf2663b7f98104856b6bc6682551d",
+      "bytes": 175,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/copy-BFzXDRbW.js",
+      "sha256": "9fff6863b679fa2d29ea0362791fcf2ce128551e5928328a7bc54a16495513c8",
+      "bytes": 228,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/download-DB_Sh3Xq.js",
+      "sha256": "115c5b8c98d6b4af9f73cefb0f1811fc9d9d0dae6486d93e8aeddbeca406c975",
+      "bytes": 259,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/index-BHgnhYVC.js",
+      "sha256": "b3a943455162ba3a9f114fdec0e7bfd91875a4e9a0d2fcb9746a3c6700482489",
+      "bytes": 300924,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/index-DYaUz4cy.css",
+      "sha256": "49e455b52f3edb506386554a024b8b8e75e76112e8a67541d98ee7ef9dc899b0",
+      "bytes": 91872,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/plus-NYIji00b.js",
+      "sha256": "f3fbb43915010150cd8ce30b28b2165829c1f9a9c918152984a92e2be6fba037",
+      "bytes": 150,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/refresh-ccw-kARUZSOS.js",
+      "sha256": "34d428436eded97379534d26554a817c210b7c94ceea4878317e196443dc689d",
+      "bytes": 317,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/send-DgA6E-af.js",
+      "sha256": "de300592249d294f3033d43638f590eb9cf0f8c3b0dd8919622d609d57f961cd",
+      "bytes": 369,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/trash-2-DoRj4w29.js",
+      "sha256": "190955feac2acbd92fab865628addcb5ea970b8f19ee1b8657132d21bdc1d912",
+      "bytes": 431,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/upload-BzNrq9jI.js",
+      "sha256": "75fe19dbdcecc1df756aeca50c2a3998f0446317d9ba078d8a5eda7bf066dd65",
+      "bytes": 254,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/index.html",
+      "sha256": "946e9f93fa03f55ac6ebbe7780a12f967cd32c6e22d3b61f5a5426303260bc18",
+      "bytes": 644,
+      "matches_frozen_dist": true
+    }
+  ],
+  "files_count": 29,
+  "third_party_notices_verified": true,
+  "openapi_paths": 225,
+  "openapi_operations": 273,
+  "organization_anonymous_status": 401,
+  "internal_route_status": 404,
+  "MAX_frame_embedding_headers_preserved": true,
+  "entry": "/assets/index-BHgnhYVC.js"
+}

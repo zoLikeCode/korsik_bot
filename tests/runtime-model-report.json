@@ -1,0 +1,722 @@
+{
+  "schema": "korsik-real-model-probe-v1",
+  "tests": {
+    "encoder": {
+      "status": "PASS",
+      "health": {
+        "status": "READY",
+        "role": "embedder",
+        "fingerprint": "afc4aa45cd8d95d538404fd463d881c1cd522f3f92bfd42a6b2f6abde0a5b5d8",
+        "load_seconds": 6.9,
+        "weights_fingerprint": "68e592b160673d30250824c1116bc6ab33f70efb22b97c9e1d7ce1e69c1c9d70",
+        "runtime": "onnxruntime-fp32-cpu",
+        "inputs": [
+          "input_ids",
+          "attention_mask"
+        ],
+        "outputs": [
+          "last_hidden_state"
+        ],
+        "manifest": {
+          "status": "VERIFIED",
+          "repository": "ibm-granite/granite-embedding-97m-multilingual-r2",
+          "revision": "835ad14087e140460703cf0fae09f97d469d65c2",
+          "files": 5
+        }
+      },
+      "batch_size": 3,
+      "dimensions": 384,
+      "norms": [
+        0.9999999849021265,
+        1.0000000113082774,
+        0.9999999533405783
+      ],
+      "semantic_cosines": [
+        0.9181120619228991,
+        0.7102378683802724
+      ],
+      "batch_seconds": 0.649
+    },
+    "reranker": {
+      "status": "PASS",
+      "health": {
+        "status": "READY",
+        "role": "reranker",
+        "fingerprint": "30f61c1e0d16deb1d0f43ddaa49f5457bfbaf69f1b6ee27d0475a2b676f8f8ea",
+        "load_seconds": 9.92,
+        "weights_fingerprint": "dfc9f8faff4f8fdff033a20692d0b20807b1d3dd842106ebe01da315fa127f63",
+        "runtime": "onnxruntime-fp32-cpu",
+        "inputs": [
+          "input_ids",
+          "attention_mask"
+        ],
+        "outputs": [
+          "logits"
+        ],
+        "manifest": {
+          "status": "VERIFIED",
+          "repository": "Horizon-Labs/multilingual-reranker-small",
+          "revision": "d35a2781eeb3de1d971ad328165277bdf5712e35",
+          "files": 5
+        }
+      },
+      "scores": [
+        5.4007887840271,
+        -6.344437122344971
+      ],
+      "pair_count": 2,
+      "batch_seconds": 0.657,
+      "chunker_children": 8
+    },
+    "qdrant": {
+      "status": "PASS",
+      "version": "1.20.0",
+      "dense_points": 1,
+      "sparse_points": 1,
+      "scope_filter_excludes_denied": true,
+      "seconds": 0.261
+    },
+    "parser_basic_supplied_files": {
+      "summary": [
+        {
+          "filename": "pvtr.pdf",
+          "source_sha256": "09a12305473b539273b0944d95bfa35fb274844dfef3265600c3e857ce2b9056",
+          "seconds": 198.961,
+          "expected_physical_pages": 23,
+          "physical_pages": 23,
+          "processed_pages": 23,
+          "failed_pages": 0,
+          "preview_count": 23,
+          "checkpoints": 24,
+          "text_characters": 65765,
+          "text_blocks": 23,
+          "table_blocks": 0,
+          "figure_blocks": 0,
+          "smartart_blocks": 0,
+          "ocr_pages": 23,
+          "reviewed_pages": 0,
+          "structural_pages": 0,
+          "errors": [],
+          "page_errors": [],
+          "completion": {
+            "source_sha256": "09a12305473b539273b0944d95bfa35fb274844dfef3265600c3e857ce2b9056",
+            "parser_version": "korsik-parser-1",
+            "content_fingerprint": "95bca231a98fe2ab769d3cd900f0190af30ec165f3ae70bc7cb88974982887e8",
+            "status": "REVIEW_REQUIRED"
+          },
+          "status": "PASS"
+        },
+        {
+          "filename": "Антикоррупционная политика.pptx",
+          "source_sha256": "727c370a8a8b3dcce218ec873564cc8ea0fb93e9ae9d8ddf50ac536a85ecd034",
+          "seconds": 36.356,
+          "expected_physical_pages": 14,
+          "physical_pages": 14,
+          "processed_pages": 14,
+          "failed_pages": 0,
+          "preview_count": 14,
+          "checkpoints": 15,
+          "text_characters": 9983,
+          "text_blocks": 30,
+          "table_blocks": 0,
+          "figure_blocks": 17,
+          "smartart_blocks": 0,
+          "ocr_pages": 0,
+          "reviewed_pages": 0,
+          "structural_pages": 0,
+          "errors": [],
+          "page_errors": [],
+          "completion": {
+            "source_sha256": "727c370a8a8b3dcce218ec873564cc8ea0fb93e9ae9d8ddf50ac536a85ecd034",
+            "parser_version": "korsik-parser-1",
+            "content_fingerprint": "04a552d7614c4ea66fcff3fbd4a9326316f71c52b6ac3f269356bc52727bedd1",
+            "status": "REVIEW_REQUIRED"
+          },
+          "status": "PASS"
+        },
+        {
+          "filename": "Политика в области качества и экологии.pptx",
+          "source_sha256": "3a61a609bcc15aafa79a9b8d3ac6a69903769b1e97d953855eb4f93ec4161afc",
+          "seconds": 5.742,
+          "expected_physical_pages": 5,
+          "physical_pages": 5,
+          "processed_pages": 5,
+          "failed_pages": 0,
+          "preview_count": 5,
+          "checkpoints": 6,
+          "text_characters": 684,
+          "text_blocks": 7,
+          "table_blocks": 0,
+          "figure_blocks": 5,
+          "smartart_blocks": 3,
+          "ocr_pages": 0,
+          "reviewed_pages": 0,
+          "structural_pages": 0,
+          "errors": [],
+          "page_errors": [],
+          "completion": {
+            "source_sha256": "3a61a609bcc15aafa79a9b8d3ac6a69903769b1e97d953855eb4f93ec4161afc",
+            "parser_version": "korsik-parser-1",
+            "content_fingerprint": "bbca089579726eaeae5316310c13cee13021d4562709d923227e9427b311da48",
+            "status": "REVIEW_REQUIRED"
+          },
+          "status": "PASS"
+        },
+        {
+          "filename": "Положение о коммерческой тайне.pptx",
+          "source_sha256": "a2a16c967e82c868b95d54e7df5f6791cd2ab683b1841956b9b19926ed973923",
+          "seconds": 33.516,
+          "expected_physical_pages": 14,
+          "physical_pages": 14,
+          "processed_pages": 14,
+          "failed_pages": 0,
+          "preview_count": 14,
+          "checkpoints": 15,
+          "text_characters": 8437,
+          "text_blocks": 31,
+          "table_blocks": 0,
+          "figure_blocks": 27,
+          "smartart_blocks": 1,
+          "ocr_pages": 0,
+          "reviewed_pages": 0,
+          "structural_pages": 0,
+          "errors": [],
+          "page_errors": [],
+          "completion": {
+            "source_sha256": "a2a16c967e82c868b95d54e7df5f6791cd2ab683b1841956b9b19926ed973923",
+            "parser_version": "korsik-parser-1",
+            "content_fingerprint": "83e312ebb47c640f3598b5ab671e7f3cf4ecb86886084f9b8b8b16395df446ac",
+            "status": "REVIEW_REQUIRED"
+          },
+          "status": "PASS"
+        }
+      ],
+      "status": "PASS"
+    },
+    "parser_structure_auto": {
+      "summary": [
+        {
+          "filename": "pvtr.pdf",
+          "source_sha256": "09a12305473b539273b0944d95bfa35fb274844dfef3265600c3e857ce2b9056",
+          "seconds": 231.645,
+          "expected_physical_pages": 23,
+          "physical_pages": 23,
+          "processed_pages": 23,
+          "failed_pages": 0,
+          "preview_count": 23,
+          "checkpoints": 24,
+          "text_characters": 65785,
+          "text_blocks": 23,
+          "table_blocks": 1,
+          "figure_blocks": 0,
+          "smartart_blocks": 0,
+          "ocr_pages": 23,
+          "reviewed_pages": 0,
+          "structural_pages": 1,
+          "errors": [],
+          "page_errors": [],
+          "completion": {
+            "source_sha256": "09a12305473b539273b0944d95bfa35fb274844dfef3265600c3e857ce2b9056",
+            "parser_version": "korsik-parser-1",
+            "content_fingerprint": "248a6114bdc4f14bee8ca673a73c73fa5cb387aa8d1b1c023f1b618869676974",
+            "status": "REVIEW_REQUIRED"
+          },
+          "status": "PASS"
+        },
+        {
+          "filename": "table-fixture.pdf",
+          "source_sha256": "71623967a9576ce0015ccbeccca27f1311bc2ac2052d757af2079df3af3c04ea",
+          "seconds": 13.392,
+          "expected_physical_pages": 1,
+          "physical_pages": 1,
+          "processed_pages": 1,
+          "failed_pages": 0,
+          "preview_count": 1,
+          "checkpoints": 2,
+          "text_characters": 89,
+          "text_blocks": 1,
+          "table_blocks": 1,
+          "figure_blocks": 0,
+          "smartart_blocks": 0,
+          "ocr_pages": 1,
+          "reviewed_pages": 0,
+          "structural_pages": 1,
+          "errors": [],
+          "page_errors": [],
+          "completion": {
+            "source_sha256": "71623967a9576ce0015ccbeccca27f1311bc2ac2052d757af2079df3af3c04ea",
+            "parser_version": "korsik-parser-1",
+            "content_fingerprint": "bd72d3007b4ab65f0ea1d5f9e7f32b394205aa2c8145b19527d92b892a9bb7f4",
+            "status": "REVIEW_REQUIRED"
+          },
+          "synthetic_table_grids": [
+            [
+              [
+                "Department",
+                "Room",
+                "Hours"
+              ],
+              [
+                "me",
+                "101",
+                "09:00"
+              ],
+              [
+                "mo",
+                "202",
+                "10:00"
+              ]
+            ]
+          ],
+          "table_structure_detected": true,
+          "status": "PASS"
+        }
+      ],
+      "status": "PASS"
+    },
+    "parser_cold_no_network_table": {
+      "status": "PASS",
+      "network": "none",
+      "health": {
+        "status": "READY",
+        "profile": "cpu_structure",
+        "runtime": "torch-fp32-cpu",
+        "torch_version": "2.9.1+cpu",
+        "docling_version": "2.142.1",
+        "mode": "TableFormer_FAST",
+        "artifacts": [
+          {
+            "repository": "docling-project/docling-layout-heron",
+            "revision": "8f39ad3c0b4c58e9c2d2c84a38465abf757272d8",
+            "files": 6
+          },
+          {
+            "repository": "docling-project/docling-models",
+            "revision": "2199320848bb9a8a519d22e4b528185a4f9a6f64",
+            "files": 6
+          }
+        ],
+        "load_seconds": 5.359,
+        "remote_services": false,
+        "vision_generation": false
+      },
+      "cold_load_seconds": 14.289,
+      "parse_seconds": 13.379,
+      "pages": [
+        {
+          "page_no": 1,
+          "status": "PROCESSED",
+          "review_status": "PENDING",
+          "issues": [
+            "SCANNED_PAGE_REVIEW"
+          ],
+          "render_sha256": "410578a8e682a8daf2f235c2ec142cb108666ed0683e34281ae93982c6d691ec",
+          "width": 3200,
+          "height": 2200,
+          "ocr_confidence": 95.8,
+          "structure_diagnostics": {
+            "status": "ConversionStatus.SUCCESS",
+            "seconds": 8.158,
+            "runtime": {
+              "status": "READY",
+              "profile": "cpu_structure",
+              "runtime": "torch-fp32-cpu",
+              "torch_version": "2.9.1+cpu",
+              "docling_version": "2.142.1",
+              "mode": "TableFormer_FAST",
+              "artifacts": [
+                {
+                  "repository": "docling-project/docling-layout-heron",
+                  "revision": "8f39ad3c0b4c58e9c2d2c84a38465abf757272d8",
+                  "files": 6
+                },
+                {
+                  "repository": "docling-project/docling-models",
+                  "revision": "2199320848bb9a8a519d22e4b528185a4f9a6f64",
+                  "files": 6
+                }
+              ],
+              "load_seconds": 5.359,
+              "remote_services": false,
+              "vision_generation": false
+            },
+            "table_route": "VISIBLE_RULING_TESSERACT"
+          }
+        }
+      ],
+      "table_grids": [
+        [
+          [
+            "Department",
+            "Room",
+            "Hours"
+          ],
+          [
+            "me",
+            "101",
+            "09:00"
+          ],
+          [
+            "mo",
+            "202",
+            "10:00"
+          ]
+        ]
+      ],
+      "table_origins": [
+        "OPENCV_RULING_TESSERACT"
+      ],
+      "human_review_required": true,
+      "ocr_limitations": "Visible 3x3 ruling and numeric cells preserved; short Latin HR/IT cells misread. Human review is mandatory."
+    },
+    "parser_retry_no_network": {
+      "status": "PASS",
+      "network": "none",
+      "physical_pages": 2,
+      "retained_page_numbers": [
+        1
+      ],
+      "processed_page_numbers": [
+        2
+      ],
+      "blocks": 1,
+      "checkpoint_events": 3,
+      "parse_seconds": 2.742,
+      "total_seconds": 2.791,
+      "retained_preview_regenerated": false,
+      "source_kind": "SYNTHETIC_TWO_SLIDE_PPTX"
+    },
+    "parser_targeted_rotation_no_network": {
+      "status": "PASS",
+      "network": "none",
+      "physical_pages": 2,
+      "retained_page_numbers": [
+        2
+      ],
+      "processed_page_numbers": [
+        1
+      ],
+      "rotation_clockwise_degrees": 90,
+      "forced_ocr": true,
+      "time_literals_preserved": [
+        "12:00",
+        "13:00"
+      ],
+      "checkpoint_events": 3,
+      "parse_seconds": 1.619,
+      "source_kind": "SYNTHETIC_TWO_PAGE_SIDEWAYS_RASTER_PDF"
+    },
+    "generator_4b": {
+      "status": "PASS",
+      "model": "Qwen/Qwen3.5-4B",
+      "artifact_fingerprint": "1fe278d9e50f5fe426c80efe3845911a3bbcc057d1f975c660a8c2f39c6d21d0",
+      "loaded_health": {
+        "status": "READY",
+        "role": "generator",
+        "fingerprint": "1fe278d9e50f5fe426c80efe3845911a3bbcc057d1f975c660a8c2f39c6d21d0",
+        "load_seconds": 91.49,
+        "weights_fingerprint": "7ac2c20d3174476acfe31dc167850b18a2ee639e6950d49f03d2d83e686b36eb",
+        "runtime": "torch-bf16-cuda",
+        "inputs": null,
+        "outputs": null,
+        "manifest": {
+          "status": "VERIFIED",
+          "repository": "Qwen/Qwen3.5-4B",
+          "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+          "files": 14
+        }
+      },
+      "quality_report": "model-quality/qwen-4b-release10.json",
+      "quality_scope": "GUARDED_APPLICATION_20_CASE_IMPLEMENTATION_REVIEW",
+      "guarded_measurements": {
+        "cases": 20,
+        "mechanical_source_and_scope_pass": 20,
+        "semantic_faithfulness_pass": 20,
+        "modes": {
+          "LOCAL_GENERATED": 7,
+          "EXTRACT": 11,
+          "HANDOFF": 2
+        },
+        "direct_generated_answers": 7,
+        "extracts": 11,
+        "missing_source_handoffs": 2,
+        "controlled_invalid_generated_citation_fallbacks": 1,
+        "pipeline_seconds_p50": 7.9190000000000005,
+        "pipeline_seconds_p95_nearest_rank": 23.662,
+        "pipeline_seconds_max": 24.093,
+        "load": "single active actual local-service QA; not HTTP100 or company acceptance"
+      },
+      "raw_model_semantic_status": "KNOWN_FAIL_ON_TWO_OF_EIGHT_PRIOR_ACTUAL_CONTEXT_CASES"
+    },
+    "parser_storage_fault": {
+      "status": "PASS",
+      "fault": "REAL_TMPFS_INODE_ENOSPC",
+      "network": "none",
+      "attempt_statuses": [
+        507,
+        507
+      ],
+      "successful_parse_after_freeing_storage": true,
+      "admission_released": true,
+      "event_types": [
+        "checkpoint",
+        "complete"
+      ],
+      "seconds": 0.029,
+      "image_basic": "korsik-parser:local9",
+      "image_structure": "korsik-parser:structure9",
+      "fault_scope": "Actual isolated runtime tmpfs inode exhaustion; direct ASGI handler returns FastAPI507 twice, then successful NDJSON text parse after freeing space. No production mount or model used."
+    }
+  },
+  "measured_at_utc": "2026-10-23T21:28:36Z",
+  "initial_probe_images": {
+    "korsik-probe-encoder": "sha256:aa2a119dacd8dcdbf9caf55ddc91a0423909d99924a033044d78c6ee895e3bcb",
+    "korsik-probe-reranker": "sha256:aa2a119dacd8dcdbf9caf55ddc91a0423909d99924a033044d78c6ee895e3bcb",
+    "korsik-probe-generator": "sha256:16188beadda060cdd18012414a808e3792674d301a3fa1af713959656c913d60",
+    "korsik-probe-parser": "sha256:8bbf28f5b3e30e3d631a50312f899a479bda185a8d8288cb8fa326b9407e0384"
+  },
+  "initial_probe_resource_snapshot": [
+    "{\"BlockIO\":\"0B / 0B\",\"CPUPerc\":\"0.51%\",\"Container\":\"46c8e0f69474\",\"ID\":\"46c8e0f69474\",\"MemPerc\":\"2.87%\",\"MemUsage\":\"58.74MiB / 2GiB\",\"Name\":\"korsik-worker-1\",\"NetIO\":\"8.78kB / 8.9kB\",\"PIDs\":\"2\"}",
+    "{\"BlockIO\":\"0B / 0B\",\"CPUPerc\":\"0.55%\",\"Container\":\"8cb2161cf9da\",\"ID\":\"8cb2161cf9da\",\"MemPerc\":\"2.87%\",\"MemUsage\":\"58.73MiB / 2GiB\",\"Name\":\"korsik-answer-worker-1\",\"NetIO\":\"7.5kB / 7.62kB\",\"PIDs\":\"2\"}",
+    "{\"BlockIO\":\"0B / 0B\",\"CPUPerc\":\"160.99%\",\"Container\":\"d7b7e7aaade8\",\"ID\":\"d7b7e7aaade8\",\"MemPerc\":\"9.00%\",\"MemUsage\":\"184.4MiB / 2GiB\",\"Name\":\"korsik-api-1\",\"NetIO\":\"3.63kB / 504B\",\"PIDs\":\"7\"}",
+    "{\"BlockIO\":\"0B / 0B\",\"CPUPerc\":\"0.00%\",\"Container\":\"302a5f7c8933\",\"ID\":\"302a5f7c8933\",\"MemPerc\":\"9.47%\",\"MemUsage\":\"72.73MiB / 768MiB\",\"Name\":\"korsik-scheduler-1\",\"NetIO\":\"13.1kB / 11.3kB\",\"PIDs\":\"2\"}",
+    "{\"BlockIO\":\"0B / 0B\",\"CPUPerc\":\"0.43%\",\"Container\":\"d965376b840c\",\"ID\":\"d965376b840c\",\"MemPerc\":\"3.00%\",\"MemUsage\":\"61.36MiB / 2GiB\",\"Name\":\"korsik-ingest-worker-1\",\"NetIO\":\"9.07kB / 8.59kB\",\"PIDs\":\"2\"}",
+    "{\"BlockIO\":\"0B / 0B\",\"CPUPerc\":\"1.27%\",\"Container\":\"a42e1296c83a\",\"ID\":\"a42e1296c83a\",\"MemPerc\":\"8.51%\",\"MemUsage\":\"65.37MiB / 768MiB\",\"Name\":\"korsik-max-connector-1\",\"NetIO\":\"21kB / 17.7kB\",\"PIDs\":\"6\"}",
+    "{\"BlockIO\":\"0B / 0B\",\"CPUPerc\":\"100.27%\",\"Container\":\"cf8b8d47511d\",\"ID\":\"cf8b8d47511d\",\"MemPerc\":\"0.49%\",\"MemUsage\":\"35.35MiB / 7GiB\",\"Name\":\"korsik-generator-1\",\"NetIO\":\"936B / 126B\",\"PIDs\":\"2\"}",
+    "{\"BlockIO\":\"0B / 0B\",\"CPUPerc\":\"109.95%\",\"Container\":\"011f884ea499\",\"ID\":\"011f884ea499\",\"MemPerc\":\"6.21%\",\"MemUsage\":\"445MiB / 7GiB\",\"Name\":\"korsik-parser-1\",\"NetIO\":\"1.18kB / 126B\",\"PIDs\":\"6\"}",
+    "{\"BlockIO\":\"0B / 0B\",\"CPUPerc\":\"4.46%\",\"Container\":\"bc534d00d871\",\"ID\":\"bc534d00d871\",\"MemPerc\":\"16.96%\",\"MemUsage\":\"520.9MiB / 3GiB\",\"Name\":\"korsik-encoder-1\",\"NetIO\":\"1.54kB / 126B\",\"PIDs\":\"5\"}",
+    "{\"BlockIO\":\"0B / 0B\",\"CPUPerc\":\"99.80%\",\"Container\":\"7595dcf9093c\",\"ID\":\"7595dcf9093c\",\"MemPerc\":\"24.04%\",\"MemUsage\":\"738.6MiB / 3GiB\",\"Name\":\"korsik-reranker-1\",\"NetIO\":\"1.69kB / 126B\",\"PIDs\":\"5\"}",
+    "{\"BlockIO\":\"0B / 0B\",\"CPUPerc\":\"0.23%\",\"Container\":\"bc54508d8ea9\",\"ID\":\"bc54508d8ea9\",\"MemPerc\":\"24.18%\",\"MemUsage\":\"742.7MiB / 3GiB\",\"Name\":\"korsik-probe-reranker\",\"NetIO\":\"36.9kB / 15.2kB\",\"PIDs\":\"5\"}",
+    "{\"BlockIO\":\"0B / 0B\",\"CPUPerc\":\"0.19%\",\"Container\":\"0a57ec53ddde\",\"ID\":\"0a57ec53ddde\",\"MemPerc\":\"17.20%\",\"MemUsage\":\"528.5MiB / 3GiB\",\"Name\":\"korsik-probe-encoder\",\"NetIO\":\"2.96kB / 26.7kB\",\"PIDs\":\"5\"}",
+    "{\"BlockIO\":\"0B / 0B\",\"CPUPerc\":\"0.00%\",\"Container\":\"d52ce7753baa\",\"ID\":\"d52ce7753baa\",\"MemPerc\":\"23.81%\",\"MemUsage\":\"121.9MiB / 512MiB\",\"Name\":\"korsik-structure-auto-client\",\"NetIO\":\"91.8MB / 24.9MB\",\"PIDs\":\"1\"}",
+    "{\"BlockIO\":\"0B / 0B\",\"CPUPerc\":\"151.94%\",\"Container\":\"43c5c9289c8f\",\"ID\":\"43c5c9289c8f\",\"MemPerc\":\"21.65%\",\"MemUsage\":\"1.299GiB / 6GiB\",\"Name\":\"korsik-probe-structure\",\"NetIO\":\"24.9MB / 91.8MB\",\"PIDs\":\"18\"}",
+    "{\"BlockIO\":\"4.1kB / 36.9kB\",\"CPUPerc\":\"0.37%\",\"Container\":\"c6263d6aba40\",\"ID\":\"c6263d6aba40\",\"MemPerc\":\"16.61%\",\"MemUsage\":\"1.329GiB / 8GiB\",\"Name\":\"korsik-probe-generator-2b\",\"NetIO\":\"12.1kB / 7.31kB\",\"PIDs\":\"8\"}",
+    "{\"BlockIO\":\"0B / 4.1kB\",\"CPUPerc\":\"0.06%\",\"Container\":\"4b87543c1715\",\"ID\":\"4b87543c1715\",\"MemPerc\":\"14.05%\",\"MemUsage\":\"26.98MiB / 192MiB\",\"Name\":\"korsik-tunnel-1\",\"NetIO\":\"69.9MB / 67.4MB\",\"PIDs\":\"17\"}",
+    "{\"BlockIO\":\"0B / 10.3MB\",\"CPUPerc\":\"0.20%\",\"Container\":\"608fbee40282\",\"ID\":\"608fbee40282\",\"MemPerc\":\"1.72%\",\"MemUsage\":\"52.71MiB / 3GiB\",\"Name\":\"korsik-qdrant-1\",\"NetIO\":\"5.38kB / 126B\",\"PIDs\":\"43\"}",
+    "{\"BlockIO\":\"0B / 194MB\",\"CPUPerc\":\"1.30%\",\"Container\":\"0bdf25853214\",\"ID\":\"0bdf25853214\",\"MemPerc\":\"1.86%\",\"MemUsage\":\"57.04MiB / 3GiB\",\"Name\":\"korsik-postgres-1\",\"NetIO\":\"43.2MB / 46.2MB\",\"PIDs\":\"11\"}",
+    "{\"BlockIO\":\"4.1kB / 0B\",\"CPUPerc\":\"0.24%\",\"Container\":\"327034a77976\",\"ID\":\"327034a77976\",\"MemPerc\":\"3.69%\",\"MemUsage\":\"227MiB / 6GiB\",\"Name\":\"korsik-probe-parser\",\"NetIO\":\"60.8MB / 208MB\",\"PIDs\":\"17\"}"
+  ],
+  "initial_probe_gpu_snapshot": "0, 4516 MiB, 0 %\n1, 0 MiB, 3 %",
+  "updated_at_utc": "2026-10-24T00:31:27.358844+00:00",
+  "optional_models": {
+    "qwen35_08b": {
+      "status": "FAIL",
+      "health": {
+        "status": "READY",
+        "role": "generator",
+        "fingerprint": "4031f689e8d58b2624f09a2c44aa6f29c473412ba516e7cf3f3b342492ca2e97",
+        "load_seconds": 25.69,
+        "weights_fingerprint": "503187fddb5c0df9d8dda0c179ce1cad38b9a1ea0dae8ce107830e477ebae52c",
+        "runtime": "torch-bf16-cuda",
+        "inputs": null,
+        "outputs": null,
+        "manifest": {
+          "status": "VERIFIED",
+          "repository": "Qwen/Qwen3.5-0.8B",
+          "revision": "2fc06364715b967f1860aea9cf38778875588b17",
+          "files": 11
+        }
+      },
+      "response": {
+        "text": "В соответствии с проверочным регламентом [1], обеденный перерыв установлен с 12:00 до 13:00.",
+        "artifact_fingerprint": "4031f689e8d58b2624f09a2c44aa6f29c473412ba516e7cf3f3b342492ca2e97",
+        "input_tokens": 144,
+        "output_tokens": 36,
+        "seconds": 5.421,
+        "thinking": false
+      },
+      "request_seconds": 5.756,
+      "reason": "SEMANTIC_REVIEW_FAILED_DESPITE_MECHANICAL_CITATION_PASS",
+      "quality_report": "model-quality/qwen-08b.json"
+    },
+    "qwen35_2b": {
+      "status": "PASS",
+      "health": {
+        "status": "READY",
+        "role": "generator",
+        "fingerprint": "9233a400b9d78cf8d3f231bae9e65708486bf58f41717ea6fbfc5c904fe0f677",
+        "load_seconds": 49.16,
+        "weights_fingerprint": "45162d680fd34d4491feb787cd758d6003663d74d7ce864876a0b2d04f77e2dc",
+        "runtime": "torch-bf16-cuda",
+        "inputs": null,
+        "outputs": null,
+        "manifest": {
+          "status": "VERIFIED",
+          "repository": "Qwen/Qwen3.5-2B",
+          "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+          "files": 12
+        }
+      },
+      "response": {
+        "text": "Обеденный перерыв установлен с 12:00 до 13:00 [1].",
+        "artifact_fingerprint": "9233a400b9d78cf8d3f231bae9e65708486bf58f41717ea6fbfc5c904fe0f677",
+        "input_tokens": 144,
+        "output_tokens": 28,
+        "seconds": 4.578,
+        "thinking": false
+      },
+      "request_seconds": 5.031,
+      "quality_report": "model-quality/qwen-2b.json",
+      "independent_excerpt_cases": {
+        "label": "qwen-2b-final",
+        "status": "PASS",
+        "cases": [
+          {
+            "id": "lunch",
+            "seconds": 3.864,
+            "status": "PASS",
+            "response": {
+              "text": "Обеденный перерыв установлен с 12:00 до 13:00 [1].",
+              "artifact_fingerprint": "9233a400b9d78cf8d3f231bae9e65708486bf58f41717ea6fbfc5c904fe0f677",
+              "input_tokens": 144,
+              "output_tokens": 28,
+              "seconds": 3.548,
+              "thinking": false
+            }
+          },
+          {
+            "id": "password",
+            "seconds": 3.853,
+            "status": "PASS",
+            "response": {
+              "text": "Пароли к конфиденциальной информации должны передаваться иным способом, чем сама конфиденциальная информация. [1]",
+              "artifact_fingerprint": "9233a400b9d78cf8d3f231bae9e65708486bf58f41717ea6fbfc5c904fe0f677",
+              "input_tokens": 146,
+              "output_tokens": 28,
+              "seconds": 3.498,
+              "thinking": false
+            }
+          },
+          {
+            "id": "commitment",
+            "seconds": 3.756,
+            "status": "PASS",
+            "response": {
+              "text": "Каждый работник при заключении трудового договора подписывает обязательство о соблюдении требований антикоррупционной политики [1].",
+              "artifact_fingerprint": "9233a400b9d78cf8d3f231bae9e65708486bf58f41717ea6fbfc5c904fe0f677",
+              "input_tokens": 147,
+              "output_tokens": 28,
+              "seconds": 3.443,
+              "thinking": false
+            }
+          },
+          {
+            "id": "visitor_permission",
+            "seconds": 7.096,
+            "status": "PASS",
+            "response": {
+              "text": "Да, разрешению на фото и видеосъёмку должен быть предоставлен посетителю. Согласно проверочному регламенту, такая съёмка допускается только с разрешения генерального директора или уполномоченного им лица [1].",
+              "artifact_fingerprint": "9233a400b9d78cf8d3f231bae9e65708486bf58f41717ea6fbfc5c904fe0f677",
+              "input_tokens": 160,
+              "output_tokens": 56,
+              "seconds": 6.789,
+              "thinking": false
+            }
+          }
+        ],
+        "evidence": "synthetic short excerpts derived from policies; this is not whole-corpus RAG acceptance",
+        "network": "internal Docker network, runtime has no internet",
+        "human_semantic_review": "PENDING"
+      }
+    }
+  },
+  "policy_quality": {
+    "raw_2b_full_corpus": "FAIL_KNOWN_MONETARY_GIFT_CONTRADICTION",
+    "raw_report": "policies-rag-evaluation-final.json",
+    "guarded_literal_case": "PASS",
+    "guarded_report": "policies-rag-evaluation-guarded-gift.json",
+    "scope": "Implementation tests, not company HR acceptance",
+    "selected_guarded_report": "model-quality/qwen-4b-release10-evaluation.json",
+    "selected_guarded_scope": "7generated/11extracts/2missing-sourcehandoffs; conflict answer only covers found business-gift scenario"
+  },
+  "runtime_audits": {
+    "cpu": {
+      "file": "cpu-runtime-audit.json",
+      "dependencies": 31,
+      "known_vulnerabilities": 0
+    },
+    "generator": {
+      "file": "generator-runtime-audit.json",
+      "dependencies": 139,
+      "known_vulnerabilities": 0
+    },
+    "parser": {
+      "file": "parser-runtime-audit.json",
+      "dependencies": 28,
+      "known_vulnerabilities": 0
+    },
+    "structure": {
+      "file": "structure-runtime-audit.json",
+      "dependencies": 85,
+      "known_vulnerabilities": 0
+    }
+  },
+  "historical_findings": [
+    {
+      "finding": "Original 0.8B prompts failed format or semantic fidelity",
+      "resolution": "0.8B remains optional and blocked by FAIL quality report; 2B later failed actual-corpus semantic review. Selected4B is accepted only with application guards and explicitly scoped implementation review"
+    },
+    {
+      "finding": "TableFormer FAST predicted a 1x1 grid for an explicit 3x3 ruled raster table",
+      "resolution": "Measured OpenCV ruling plus per-cell local Tesseract preserves visible grid; Docling runs and diagnostics retained; human review required"
+    },
+    {
+      "finding": "Running Heron on all23 scanned pages consumed558.782seconds",
+      "resolution": "Auto router processed all23 pages in231.645seconds, structure inference on1suspectpage"
+    },
+    {
+      "finding": "Bundled model base-image libraries had known dependency vulnerabilities",
+      "resolution": "Pinned safe versions; removed unused vulnerable accelerate; all four final full pip inventories have zero known audit findings"
+    }
+  ],
+  "limitations": [
+    "Raw2B whole-corpus generation has a manually confirmed monetary-gift semantic contradiction. The exact full-parent guard passes this case; other questions still require held-out HR review.",
+    "Four supplied-excerpt generation checks are implementation review, not employer HR acceptance or semantic proof on every possible question",
+    "OCR and borderless table extraction require human correction and publication review; no automatic figure semantics",
+    "Synthetic feedback classifier scores do not establish company-domain accuracy; every suggestion awaits HR review",
+    "Python dependency audit covers the installed pip inventory, not an operating-system package vulnerability scan",
+    "Raw4B failed2of8 actual retrieved contexts; guarded20-case set is an implementation regression set, not an untouched benchmark. Conflict response is source-limited to a business-gift scenario."
+  ],
+  "hardware": {
+    "cpu": "Xeon E5-2630 v2, AVX without AVX2",
+    "gpu": "Two RTX3060 12GB; BF16 4B challenger used GPU0; parent deploys production on GPU1",
+    "generator_2b_gpu_memory_measured_mib": 4516,
+    "generator_4b_gpu_memory_observed_sample_mib": 9574,
+    "generator_4b_container_rss_observed_gib": 1.339,
+    "generator_4b_container_memory_limit": "12g"
+  },
+  "selected_runtime_status": "PASS_SCOPED_RUNTIME_PROBES; FINAL_NATIVE_ACCEPTANCE_PENDING",
+  "business_test_result": {
+    "knowledge_retrieval_admin_citation_identity_ownership_tests": 93,
+    "passed": 93,
+    "seconds": 6.96,
+    "network_in_unit_tests": "forbidden or mocked explicitly; runtime tests above use actual models"
+  },
+  "images": {
+    "historical_release8": {
+      "parser_basic_8": "sha256:1ef04ac228deb63104d011a9f414bb789c30261449c46e26a10e68aea222745d",
+      "parser_structure_8": "sha256:5d7d84e20b83720ddd0f846a88e37f11c65ffe5bfd02765feb2afd298f5f18b7",
+      "generator": "sha256:76abcdfc700c1577bf47af5cd88128b49cd28cdefb70dc0947560a0c44798610",
+      "cpu": "sha256:aa2a119dacd8dcdbf9caf55ddc91a0423909d99924a033044d78c6ee895e3bcb"
+    },
+    "parser_basic_9": "sha256:edbd38b7ef991b1b4cf7610138371a8153499ace353a563571d0a6916ef2be14",
+    "parser_structure_9": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf",
+    "api_release10": "sha256:f1e0e1ae0dc3153f4efa7de1641e95705386b3a919166a78c910ad5dec1a1fe4",
+    "generator_release10_verified_short_id": "9c8f20894ee0",
+    "cpu_release10_verified_short_id": "ef4e2d9a7e25"
+  },
+  "release10_quality": {
+    "report": "model-quality/qwen-4b-release10.json",
+    "pipeline_source_sha256": "f6e104349570579c0d6d80804482a7b4b3fae406639903244cf04c18ce804340",
+    "generation_runtime_source_sha256": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b",
+    "strict_report_import": "IMPORTED_ROOT_VERIFIED",
+    "native_profile_activation": {
+      "status": "PASS",
+      "report": "local-ai-activation-report.json",
+      "checks_passed": 10,
+      "profile_id": "9f53ccae-0e30-474d-9efb-aefc37eccebb",
+      "validation_id": "d4698726-a58f-4a77-9b9a-888f0936fa83"
+    },
+    "http100_and_offline_acceptance": "PENDING_SEPARATE_ROOT_GATE"
+  }
+}

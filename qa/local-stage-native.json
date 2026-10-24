@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "observed_at": "2026-10-24T00:57:28.813921+00:00",
+  "scope": "NATIVE_LOCAL_UI_WITH_REAL_HTTP_SQL_AND_BUSINESS_WORKER",
+  "employee_id": "aa7688eb-6501-476d-8297-741b51da3411",
+  "synthetic_fixture": true,
+  "MAX_binding_or_sends": false,
+  "device_timezone": "Europe/Moscow",
+  "employee_timezone": "Asia/Yekaterinburg",
+  "checks": [
+    "native futureACTIVE scheduled with Moscow04:00=Yekaterinburg06:00=UTC01:00",
+    "close/reload/reopen preserved pending operation and currentPREBOARDING",
+    "explicit HR cancellation preserved current stage; history CANCELLED/HR_CANCELLED",
+    "native immediateACTIVE applied",
+    "native futurePREBOARDING preserved ACTIVE before due",
+    "actual business worker after real due applied exactly current operation; UI history Done and current stageBeforeStart"
+  ],
+  "due_operation_id": "00ee2e5b-7247-4424-bfc7-0b1e4650dc0e",
+  "due_effective_at": "2026-10-24T00:55:00+00:00",
+  "due_applied_at": "2026-10-24T00:55:39.742992+00:00",
+  "due_status": "SUCCEEDED",
+  "clock_advanced": false,
+  "worker_schedule": "Manually invoked real businessworker once after due in localQA; not a scheduler latencymeasurement",
+  "screenshots": [
+    "local-stage-scheduled-web13.png",
+    "local-stage-applied-web13.png"
+  ],
+  "limitation": "This uses a local syntheticemployee; actual deployed worker proof is separately in postgres-check-report.json"
+}

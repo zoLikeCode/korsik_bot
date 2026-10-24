@@ -1,0 +1,27 @@
+{
+  "schema": "korsik-release25-public-browser-v1",
+  "status": "PASS",
+  "observed_at": "2026-10-24T20:26:21.767326+00:00",
+  "url": "https://app.korsik-demo.ru",
+  "method": "CUA existing authenticated tab after explicit reload",
+  "checks": {
+    "employee_delete_button_next_to_access": true,
+    "named_confirmation_opens": true,
+    "cancel_keeps_card": true,
+    "duplicate_topbar_removed": true,
+    "one_page_heading_on_scenarios": true,
+    "theme_switch_in_left_menu": true,
+    "theme_changes_and_persists_after_reload": true,
+    "prior_theme_restored_after_check": true
+  },
+  "proofs": [
+    "qa/release25-employee-public.png",
+    "qa/release25-menu-public.png"
+  ],
+  "operator_employee_deletes": 0,
+  "operator_employee_status_or_date_mutations": 0,
+  "operator_MAX_messages_sent": 0,
+  "operator_scenario_or_document_mutations": 0,
+  "functional_delete_test_location": "isolated local browser and exact candidate PostgreSQL clone",
+  "native_MAX_device_launch_tested": false
+}

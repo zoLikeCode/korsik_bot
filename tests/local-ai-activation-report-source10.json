@@ -1,0 +1,114 @@
+{
+  "status": "PASS",
+  "profile_id": "9f53ccae-0e30-474d-9efb-aefc37eccebb",
+  "validation_id": "d4698726-a58f-4a77-9b9a-888f0936fa83",
+  "configuration_fingerprint": "6424ca5cf3e2f935f745c3378902e52c35f294f39e4045c789386e427a7f9121",
+  "completed_at": "2026-10-24T00:27:45.234887+00:00",
+  "checks": [
+    {
+      "name": "pipeline_code_identity",
+      "status": "PASS",
+      "seconds": 0.0,
+      "detail": {
+        "chunker_version": "korsik-physical-parent-chunker-v1",
+        "chunker_fingerprint": "64fcb0516ed01fb9f0a89ed6d2a0d8b6fb387500bc0640b4435c5f6a4cb02b2b",
+        "retrieval_policy_version": "korsik-hybrid-retrieval-guards-v1",
+        "retrieval_policy_fingerprint": "327a9aa29f963a93da963e34d0194865615f5a41a9321eb1408465f88f8a883b",
+        "generation_request_schema_version": "korsik-local-generation-request-v1",
+        "generation_runtime_source_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+      }
+    },
+    {
+      "name": "embedder_identity",
+      "status": "PASS",
+      "seconds": 0.023,
+      "detail": {
+        "fingerprint": "afc4aa45cd8d95d538404fd463d881c1cd522f3f92bfd42a6b2f6abde0a5b5d8",
+        "runtime": "onnxruntime-fp32-cpu"
+      }
+    },
+    {
+      "name": "reranker_identity",
+      "status": "PASS",
+      "seconds": 0.02,
+      "detail": {
+        "fingerprint": "30f61c1e0d16deb1d0f43ddaa49f5457bfbaf69f1b6ee27d0475a2b676f8f8ea",
+        "runtime": "onnxruntime-fp32-cpu"
+      }
+    },
+    {
+      "name": "generator_identity",
+      "status": "PASS",
+      "seconds": 0.024,
+      "detail": {
+        "fingerprint": "1fe278d9e50f5fe426c80efe3845911a3bbcc057d1f975c660a8c2f39c6d21d0",
+        "runtime": "torch-bf16-cuda",
+        "renderer_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+      }
+    },
+    {
+      "name": "russian_embedding",
+      "status": "PASS",
+      "seconds": 0.08,
+      "detail": {
+        "dimensions": 384,
+        "norm": 1.000000007651774
+      }
+    },
+    {
+      "name": "russian_reranking",
+      "status": "PASS",
+      "seconds": 0.178,
+      "detail": {
+        "ordering": "relevant_first"
+      }
+    },
+    {
+      "name": "semantic_evaluation_report",
+      "status": "PASS",
+      "seconds": 0.004,
+      "detail": {
+        "status": "PASS",
+        "report_status": "PASS",
+        "pipeline_review_current": true,
+        "cases": 20,
+        "reviewer": "IMPLEMENTATION_REVIEW_NOT_COMPANY_HR",
+        "report_sha256": "5fd676c717f7dd57eeeeac7624edfc86c8878da41adbda5d2f6f498f09ac4ad8",
+        "scope": "IMPLEMENTATION_REVIEW_NOT_COMPANY_ACCEPTANCE"
+      }
+    },
+    {
+      "name": "grounded_generation_1",
+      "status": "PASS",
+      "seconds": 4.261,
+      "detail": {
+        "output": "Обед проходит с 12:00 до 13:00 [1].",
+        "output_tokens": 23,
+        "seconds": 4.211
+      }
+    },
+    {
+      "name": "grounded_generation_2",
+      "status": "PASS",
+      "seconds": 2.134,
+      "detail": {
+        "output": "Обратиться в отдел кадров [1].",
+        "output_tokens": 12,
+        "seconds": 2.098
+      }
+    },
+    {
+      "name": "grounded_generation_3",
+      "status": "PASS",
+      "seconds": 3.972,
+      "detail": {
+        "output": "Нужно уведомить HR в течение 2 дней, если изменился номер телефона [1].",
+        "output_tokens": 23,
+        "seconds": 3.931
+      }
+    }
+  ],
+  "scope": "NATIVE_DURABLE_VALIDATION_AND_ACTIVATION_AFTER_SOURCE_BOUND_20_CASE_REVIEW",
+  "activation_command_exit_code": 0,
+  "company_acceptance": false
+}

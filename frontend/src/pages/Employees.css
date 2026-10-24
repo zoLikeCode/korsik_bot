@@ -1,0 +1,254 @@
+.employees-page {
+  min-width: 0;
+}
+.employees-toolbar {
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+.employees-toolbar .field {
+  margin: 0;
+  min-width: 180px;
+}
+.employees-toolbar .search {
+  flex: 1 1 260px;
+}
+.employees-toolbar > .muted {
+  padding-bottom: 12px;
+}
+.employee-row-open {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  width: 100%;
+  background: transparent;
+  color: inherit;
+  border: 0;
+  padding: 6px 0;
+  text-align: left;
+}
+.employee-row-open > span:last-child {
+  min-width: 0;
+}
+.employee-row-open strong,
+.employee-row-open small {
+  display: block;
+  overflow-wrap: anywhere;
+}
+.employee-row-open strong {
+  font-size: 16px;
+}
+.employee-row-open small {
+  color: var(--muted);
+  margin-top: 4px;
+}
+.employee-access-badge {
+  display: inline-block;
+  padding: 5px 9px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.employee-access-badge.enabled {
+  background: #e1edda;
+  color: #275b34;
+}
+.employee-access-badge.disabled {
+  background: #f0e8e4;
+  color: #805547;
+}
+.employee-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 18px 0;
+}
+.employee-pagination > span {
+  color: var(--muted);
+  font-size: 14px;
+}
+.employee-pagination > div {
+  display: flex;
+  gap: 8px;
+}
+.employee-create-form fieldset,
+.employee-dates fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  min-width: 0;
+}
+.employee-create-form select,
+.employee-dates input,
+.employee-detail-heading select {
+  min-width: 0;
+  width: 100%;
+  max-width: 100%;
+}
+.employee-detail-compact {
+  min-width: 0;
+}
+.employee-detail-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.employee-detail-person {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+.employee-detail-person > div {
+  min-width: 0;
+}
+.employee-detail-person h3,
+.employee-detail-person p {
+  overflow-wrap: anywhere;
+}
+.employee-detail-person p {
+  color: var(--muted);
+  font-size: 14px;
+}
+.employee-detail-heading > .field {
+  flex: 0 0 145px;
+  margin: 0;
+}
+.employee-access-select.enabled {
+  background: #e1edda;
+  color: #275b34;
+  border-color: #b3cda9;
+}
+.employee-access-select.disabled {
+  background: #f0e8e4;
+  color: #805547;
+  border-color: #d3bab0;
+}
+.employee-dates {
+  margin: 0 0 24px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--line);
+}
+.employee-zone-label {
+  display: block;
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.employee-max-card h3 {
+  margin-bottom: 12px;
+}
+.employee-max-card p {
+  margin-bottom: 14px;
+}
+.employee-invitation {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+.employee-invitation .field {
+  margin: 0;
+}
+.employee-invitation > .button {
+  justify-self: start;
+}
+.employee-invitation input {
+  width: 100%;
+  min-width: 0;
+}
+html[data-theme="dark"] .employee-access-select.enabled,
+html[data-theme="dark"] .employee-access-badge.enabled {
+  background: #2e4934;
+  color: #d5edc0;
+  border-color: #668561;
+}
+html[data-theme="dark"] .employee-access-select.disabled,
+html[data-theme="dark"] .employee-access-badge.disabled {
+  background: #49372f;
+  color: #f1ccba;
+  border-color: #906f5e;
+}
+html[data-theme="dark"] .employee-create-form select option,
+html[data-theme="dark"] .employee-detail-heading select option {
+  background: #17231c;
+  color: #eef5ed;
+}
+@media (max-width: 600px) {
+  .employees-page .page-title {
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .employees-page .page-title .button-row {
+    flex-wrap: wrap;
+  }
+  .employees-toolbar > .field {
+    flex: 1;
+  }
+  .employee-pagination {
+    justify-content: center;
+  }
+  .employee-detail-heading {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .employee-detail-heading > .field {
+    flex-basis: 145px;
+    margin-left: auto;
+  }
+  .employee-detail-person {
+    flex: 1 1 180px;
+  }
+  .employee-dates .form-grid,
+  .employee-create-form .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .employee-invitation .button {
+    white-space: normal;
+  }
+}
+.employee-detail-controls {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  gap: 12px;
+  flex: 0 0 auto;
+}
+.employee-detail-controls > .field {
+  width: 145px;
+  margin: 0;
+}
+.employee-delete-button.icon-button {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+  flex-shrink: 0;
+}
+.employee-delete-confirmation {
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--danger, #a04437);
+  border-radius: 10px;
+  padding: 18px;
+  margin: 0 0 22px;
+}
+.employee-delete-confirmation h3 {
+  margin-bottom: 10px;
+  overflow-wrap: anywhere;
+}
+.employee-delete-confirmation p {
+  line-height: 1.6;
+}
+.employee-delete-confirmation .modal-actions {
+  flex-wrap: wrap;
+}
+@media (max-width: 600px) {
+  .employee-detail-controls {
+    margin-left: auto;
+  }
+}

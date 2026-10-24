@@ -1,0 +1,11 @@
+{
+  "execution_context": "one-off-api-container-current-deployed-image",
+  "app_image": "sha256:f1e0e1ae0dc3153f4efa7de1641e95705386b3a919166a78c910ad5dec1a1fe4",
+  "source_database_read": "schema-only pg_dump; no personnel data copied",
+  "isolated_database": "korsik_integration_check",
+  "check_exit_code": 0,
+  "cleanup_exit_code": 0,
+  "isolated_database_removed": true,
+  "production_business_mutations": false,
+  "external_MAX_sends": 0
+}

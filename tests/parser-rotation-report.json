@@ -1,0 +1,1 @@
+{"status": "PASS", "network": "none", "physical_pages": 2, "retained_page_numbers": [2], "processed_page_numbers": [1], "rotation_clockwise_degrees": 90, "forced_ocr": true, "time_literals_preserved": ["12:00", "13:00"], "checkpoint_events": 3, "parse_seconds": 1.619, "source_kind": "SYNTHETIC_TWO_PAGE_SIDEWAYS_RASTER_PDF"}

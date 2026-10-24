@@ -1,0 +1,16 @@
+{
+  "scope": "TUNNEL_SUPERVISOR_LOCAL_UNIT_ONLY",
+  "tests_passed": 11,
+  "tests_failed": 0,
+  "seconds_including_pytest_startup": 0.793,
+  "black": "PASS",
+  "ruff_F_E9": "PASS",
+  "backend_MAX_RAG_changes": false,
+  "VM_mutations": false,
+  "deployed_runtime_proof": "PASS: tests/transport-recovery-report.json",
+  "limits": "Public probe tested with synthetic DNS failure and real local HTTP200/302/530/unbranded responses; live provider failure/recovery remains separate. Cannot repair an offline Vast host or preserve a recreated Quick Tunnel hostname.",
+  "source_sha256": {
+    "services/tunnel/run.py": "93ce23ba6717c2a36a5124c6ab671bf386a2e1032f4dbf569ec0effcfb5450b2",
+    "tests/test_tunnel_supervisor.py": "0d0d77c8010a42194c8ed5fa6b4d3bf120fbb07ba18faedbedec9eb934738cce"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "probe": "MIXED_AI_FAILURE_BUSINESS_PERSISTENCE",
+  "database": "korsik_offline_check",
+  "synthetic_fixtures_only": true,
+  "restored_company_sources_read_only": true,
+  "external_MAX_sends": 0,
+  "model_calls_mocked": false,
+  "started_at": "2026-10-24T03:01:00.862431+00:00",
+  "checks": [
+    {
+      "name": "survey_answer_committed",
+      "status": "PASS"
+    },
+    {
+      "name": "capture_confirmation_committed",
+      "status": "PASS"
+    },
+    {
+      "name": "next_survey_question_preserved",
+      "status": "PASS"
+    },
+    {
+      "name": "handoff_and_claim_committed",
+      "status": "PASS"
+    },
+    {
+      "name": "human_reply_message_and_outbox_committed",
+      "status": "PASS"
+    },
+    {
+      "name": "manager_dashboard_available",
+      "status": "PASS"
+    },
+    {
+      "name": "no_transport_send_or_delivery_created",
+      "status": "PASS"
+    },
+    {
+      "name": "rag_and_business_intervals_overlap",
+      "status": "PASS"
+    },
+    {
+      "name": "no_generated_output_while_generator_down",
+      "status": "PASS"
+    },
+    {
+      "name": "actual_generator_fault_observed",
+      "status": "PASS"
+    },
+    {
+      "name": "rag_returns_explicit_fallback",
+      "status": "PASS"
+    }
+  ],
+  "generator_available_at_start": false,
+  "applicable_published_revisions": 3,
+  "business_command_seconds": 2.119,
+  "queries": [
+    {
+      "query_index": 1,
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "degraded": false,
+      "citations": 3,
+      "local_generated": false,
+      "seconds": 9.52
+    },
+    {
+      "query_index": 2,
+      "mode": "EXTRACT",
+      "reason": "LOCAL_GENERATOR_UNAVAILABLE",
+      "degraded": true,
+      "citations": 3,
+      "local_generated": false,
+      "seconds": 16.748
+    },
+    {
+      "query_index": 3,
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "degraded": false,
+      "citations": 1,
+      "local_generated": false,
+      "seconds": 24.092
+    }
+  ],
+  "actual_generator_fault_query_count": 1,
+  "queries_not_requiring_generator": 2,
+  "status": "PASS",
+  "finished_at": "2026-10-24T03:01:26.153582+00:00"
+}

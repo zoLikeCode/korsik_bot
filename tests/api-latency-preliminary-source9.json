@@ -1,0 +1,68 @@
+{
+  "answers_including_warmup": 36,
+  "statuses": {
+    "COMPLETED": 35,
+    "RUNNING": 1
+  },
+  "modes": {
+    "LOCAL_GENERATED": 26,
+    "EXTRACT": 9,
+    "null": 1
+  },
+  "pipeline_above_30_seconds": 3,
+  "stages": {
+    "embedding_seconds": {
+      "p95": 0.167,
+      "max": 0.172
+    },
+    "generation_inference_seconds": {
+      "p95": 17.915,
+      "max": 28.572
+    },
+    "generation_queue_seconds": {
+      "p95": 0,
+      "max": 0
+    },
+    "generation_request_seconds": {
+      "p95": 42.087,
+      "max": 42.144
+    },
+    "lexical_seconds": {
+      "p95": 0.012,
+      "max": 0.127
+    },
+    "pipeline_seconds": {
+      "p95": 50.142,
+      "max": 50.6
+    },
+    "rerank_preparation_seconds": {
+      "p95": 0.559,
+      "max": 0.568
+    },
+    "rerank_seconds": {
+      "p95": 8.38,
+      "max": 8.995
+    },
+    "retrieval_seconds": {
+      "p95": 9.111,
+      "max": 9.787
+    },
+    "vector_query_seconds": {
+      "p95": 0.081,
+      "max": 0.085
+    }
+  },
+  "status": "ABORTED_PRELIMINARY_DIAGNOSTIC",
+  "intended_HTTP_questions": 100,
+  "scope": "Persisted server pipeline timings of an interrupted preliminary run, including one warmup. Not a completed 100-turn HTTP latency acceptance report.",
+  "backend_image": "sha256:8b2f663fd8d977b61fe816a682a19e4bcd6011023d0a08913893f3f5156eb35a",
+  "reason": "Representative dialog/history exposed >30s responses; decoder time budget will be repaired and the final 100-turn HTTP run repeated.",
+  "cleanup": {
+    "status": "PASS",
+    "employee_stage": "ENDED",
+    "synthetic_accounts_disabled": true,
+    "unsent_outbox": 0,
+    "MAX_binding_issued": false,
+    "container_exit_code": 130
+  }
+}

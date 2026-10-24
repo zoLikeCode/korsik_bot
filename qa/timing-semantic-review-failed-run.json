@@ -1,0 +1,1332 @@
+{
+  "schema": "korsik-manual-timing-output-review-v1",
+  "status": "FAIL_RELEASE_BLOCKING",
+  "reviewed_at": "2026-10-24T01:14:07.668417+00:00",
+  "snapshot_observed_at": "2026-10-24T01:12:29.172148+00:00",
+  "scope": "Manual semantic review of actually produced LOCAL_GENERATED answers for one synthetic FULL HTTP timing run, against their exact cited full parents and relevant current published provided-document blocks. This supplements the existing20-case implementation regression review; it is not company HR acceptance, a representative independent golden benchmark, or a timing-quality guarantee.",
+  "read_only": true,
+  "application_changes": 0,
+  "model_calls": 0,
+  "queue_or_user_mutations": 0,
+  "company_accepted": false,
+  "observed_counts": {
+    "all_answer_entities_including_warmup": 40,
+    "generated_reviewed_including_warmup": 26,
+    "generated_timed_reviewed_excluding_warmup": 25,
+    "fail": 7,
+    "source_supported_in_this_review": 19,
+    "warmup_source_supported": 1
+  },
+  "findings_by_cause": {
+    "lost_conjunctive_permission_condition": 1,
+    "wrong_intent_mission_instead_of_goals": 2,
+    "unsupported_claim_with_heading_citation_and_wrong_intent": 2,
+    "incomplete_duties_retrieval": 2
+  },
+  "execution_boundary": "The run was stopped after these semantic failures; partial latency measurements must remain labelled partial and must not be reported as semantic PASS. No fixes were made by this review.",
+  "private_evidence": {
+    "artifact": "work/implementation/perf-semantic-latest-private.json",
+    "sha256": "8d45c8d5eb77c10e250da6865a3a5aa6aeb53770394992c33b69a957197e66c6",
+    "contains": "Exact questions, generated answers, cited full parents, provenance, and complete current published source blocks; synthetic fixture only. Kept in work with0600 permissions."
+  },
+  "causal_limits": [
+    "Unsupported claims with heading-only evidence are directly observed. A transfer from earlier conversation history is plausible because the same mission appears earlier, but model internals were not inspected and this causality is not asserted as proven.",
+    "Passing citation/numerical/format checks did not guarantee preservation of logical conjunctions or completeness.",
+    "Several prompts share the same topic with polite prefixes, so review counts do not represent independent subject coverage.",
+    "Source-supported wording on reviewed outputs is a bounded engineering observation, not a promise about arbitrary future questions."
+  ],
+  "relevant_published_reference_blocks": [
+    {
+      "document_title": "Политика в области качества и экологии",
+      "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+      "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+      "block_id": "5dcb2c21-6c98-47bc-ba21-7f4188112809",
+      "page_no": 3,
+      "kind": "FIGURE",
+      "full_text": "Точная текстовая расшифровка подписей схемы на слайде 3:\nПовышение операционной эффективности, улучшения производительности и снижения издержек\nРасширение бизнеса, внедрение современных технологий и инноваций в области производства, продвижения и управления\nОбеспечение экологической безопасности и поддержания безопасных условий труда\nПовышение качества продукции и индекса удовлетворенности клиентов\nПоддержания благоприятного психологического климата в коллективе"
+    },
+    {
+      "document_title": "Положение о коммерческой тайне",
+      "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "block_id": "b82d5a1b-127b-4fb0-80c2-d246fc56dd67",
+      "page_no": 7,
+      "kind": "TEXT",
+      "full_text": "Обществом принимаются меры, направленные на охрану КИ и КТ.\nРаботники, имеющие доступ к КИ и КТ, в обязательном порядке знакомятся с Порядком обращения с информацией каждого типа под подпись.\nДоступ к КТ работников, должность и подразделения которых не соответствуют перечню, указанному в Порядке,  производится на основании аргументированной служебной записки владельца информации и только по приказу генерального директора или уполномоченного лица Общества, путем внесения изменений в данный Порядок. \n\nРаботник, имеющий доступ к информации, составляющей КТ, обязан:\n- не разглашать и не использовать информацию в личных целях в течение всего строка действия режима КТ, в том числе после прекращения действия трудового договора;\n- возместить причиненные Обществу убытки, причиненных ему разглашением информации, составляющих КТ;\n передать при прекращении или расторжении трудового договора носители информации, составляющую КТ."
+    },
+    {
+      "document_title": "Положение о коммерческой тайне",
+      "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+      "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+      "block_id": "ebe63cca-b2d8-4dd3-893c-af7bdc78eebd",
+      "page_no": 8,
+      "kind": "TEXT",
+      "full_text": "В случае посещения объектов Общества представителями сторонних организаций ответственное лицо может знакомить посетителей только с конкретной информацией и объектами, которые определены генеральным директором или уполномоченным лицом Общества.\n\nОзнакомление с информацией, проведение осмотров, фото-, видеосъемок документов, объектов (процессов), отнесенных к КТ, возможно только после получения разрешения генерального директора или уполномоченного лица Общества и подписания «Обязательства о соблюдении КТ посетителями объектов». \nФорма Обязательства размещена в Положении о коммерческой тайне и конфиденциальной информации \n(Приложение № 4)"
+    }
+  ],
+  "answers": [
+    {
+      "answer_id": "a6a71e84-2044-41b3-b822-ca30514e086a",
+      "answer_ordinal_including_warmup": 1,
+      "warmup": true,
+      "question": "Как передавать пароли к конфиденциальной информации?",
+      "verdict": "SOURCE_SUPPORTED_IN_THIS_REVIEW",
+      "review_note": "Password transfer channel remains different from confidential-information transfer channel.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "d6ca5adf-b31a-45b6-9c2f-42eda3f3d992",
+          "page_no": 11,
+          "kind": "TEXT",
+          "evidence_sha256": "57d79ed5484e957beff1d62b2b04ccb76768f550a9c02943eb703944dc1e0374"
+        },
+        {
+          "number": 2,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "7e9ee194-126e-4586-a3ce-4205ed61ad61",
+          "page_no": 10,
+          "kind": "TEXT",
+          "evidence_sha256": "1d47c4f810ee38c9d1caf71fadf35b83586e52358fef591c1ab58017778645b0"
+        },
+        {
+          "number": 3,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "b1daaa32-cae0-4b29-92c0-734ce525100c",
+          "page_no": 9,
+          "kind": "TEXT",
+          "evidence_sha256": "28e3a7c2a443060aac03f1f083a30ec059d42b2e53176a591623123e759b7915"
+        }
+      ],
+      "actual_answer_sha256": "fd53edb122ec919c5bd00ff829d7e86dadfd9d2d30179e9f7a713f9c41e464cf"
+    },
+    {
+      "answer_id": "852439c0-5ef7-4fc4-b8c7-3c472c31080e",
+      "answer_ordinal_including_warmup": 2,
+      "warmup": false,
+      "question": "Как передавать пароли к конфиденциальной информации?",
+      "verdict": "SOURCE_SUPPORTED_IN_THIS_REVIEW",
+      "review_note": "Password transfer channel remains different from confidential-information transfer channel.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "d6ca5adf-b31a-45b6-9c2f-42eda3f3d992",
+          "page_no": 11,
+          "kind": "TEXT",
+          "evidence_sha256": "57d79ed5484e957beff1d62b2b04ccb76768f550a9c02943eb703944dc1e0374"
+        },
+        {
+          "number": 2,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "7e9ee194-126e-4586-a3ce-4205ed61ad61",
+          "page_no": 10,
+          "kind": "TEXT",
+          "evidence_sha256": "1d47c4f810ee38c9d1caf71fadf35b83586e52358fef591c1ab58017778645b0"
+        },
+        {
+          "number": 3,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "b1daaa32-cae0-4b29-92c0-734ce525100c",
+          "page_no": 9,
+          "kind": "TEXT",
+          "evidence_sha256": "28e3a7c2a443060aac03f1f083a30ec059d42b2e53176a591623123e759b7915"
+        }
+      ],
+      "actual_answer_sha256": "fd53edb122ec919c5bd00ff829d7e86dadfd9d2d30179e9f7a713f9c41e464cf"
+    },
+    {
+      "answer_id": "b03add05-efc7-4cb1-9647-ef5bd990d922",
+      "answer_ordinal_including_warmup": 4,
+      "warmup": false,
+      "question": "Кто разрешает посетителю фотографировать конфиденциальные документы?",
+      "verdict": "SOURCE_SUPPORTED_IN_THIS_REVIEW",
+      "review_note": "Director or delegated official remains the authority and the signed visitor undertaking is retained.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "ebe63cca-b2d8-4dd3-893c-af7bdc78eebd",
+          "page_no": 8,
+          "kind": "TEXT",
+          "evidence_sha256": "74d06a53efc317f850e97f4037cac00203396d9fb8476d8514b12d0498973c1b"
+        },
+        {
+          "number": 2,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "b1daaa32-cae0-4b29-92c0-734ce525100c",
+          "page_no": 9,
+          "kind": "TEXT",
+          "evidence_sha256": "28e3a7c2a443060aac03f1f083a30ec059d42b2e53176a591623123e759b7915"
+        },
+        {
+          "number": 3,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "a44d44c6-49b2-4efd-8bd7-2c879446e95d",
+          "page_no": 4,
+          "kind": "TEXT",
+          "evidence_sha256": "085126232ac3c64078a7e704ba37abd5823768a31bf5d938c590a644c15faaad"
+        }
+      ],
+      "actual_answer_sha256": "62e135dfbd36f714883ca692847c7349f134ffa7c25dc3d9a24bb3feb359cb9f",
+      "wording_note": "Answer uses a looser confidential-information label; original source scope is commercial-secret information. Mandatory authority and both conditions remain present."
+    },
+    {
+      "answer_id": "d48d7a72-2389-4303-ae13-9c1297d0ec90",
+      "answer_ordinal_including_warmup": 5,
+      "warmup": false,
+      "question": "Когда сотрудник подписывает антикоррупционное обязательство?",
+      "verdict": "SOURCE_SUPPORTED_IN_THIS_REVIEW",
+      "review_note": "Anticorruption undertaking remains tied to signing the employment contract.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "f90c9547-a2ae-48fc-a030-54f5982fbf32",
+          "page_no": 11,
+          "kind": "TEXT",
+          "evidence_sha256": "3c59a793eb21701fa4bdd05c012b152e19e73d70c40ecb3821d7e7da713b5326"
+        },
+        {
+          "number": 2,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "fbe3b7a1-d950-43ba-9148-114c9bdcdbed",
+          "page_no": 1,
+          "kind": "TEXT",
+          "evidence_sha256": "d553a3a5122469982f33de94e2425c8cdac9abee7c3c872b0b277c1bc61e1945"
+        },
+        {
+          "number": 3,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "25db1ea7-883d-4198-abf0-782d8bf6762b",
+          "page_no": 14,
+          "kind": "TEXT",
+          "evidence_sha256": "b98811d0947f52c9ff164859b15c28da052f56d92e791bf69e60841ff33514fe"
+        }
+      ],
+      "actual_answer_sha256": "5dbbcc3d3aaad1293d8bc25cee3fb511a6e3148eeaea1340c7e1609f7e6160cf"
+    },
+    {
+      "answer_id": "20d50ebe-9985-4e4e-b5cc-5838c8ec974a",
+      "answer_ordinal_including_warmup": 7,
+      "warmup": false,
+      "question": "Какова миссия компании ПОЛИПЛАСТИК?",
+      "verdict": "SOURCE_SUPPORTED_IN_THIS_REVIEW",
+      "review_note": "Mission wording remains supported by the complete mission parent on quality/ecology page2.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "fbe3b7a1-d950-43ba-9148-114c9bdcdbed",
+          "page_no": 1,
+          "kind": "TEXT",
+          "evidence_sha256": "d553a3a5122469982f33de94e2425c8cdac9abee7c3c872b0b277c1bc61e1945"
+        },
+        {
+          "number": 2,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "800147d0-9ba3-46b5-9566-b504e18456d4",
+          "page_no": 2,
+          "kind": "TEXT",
+          "evidence_sha256": "053c8a63f8c973340558999d0f89ab1f662ab6f36993ec018ba9fc0f23e2c0b9"
+        },
+        {
+          "number": 3,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "b1bfac41-553e-4518-a08d-61b30b4fa3f4",
+          "page_no": 2,
+          "kind": "TEXT",
+          "evidence_sha256": "f56544a1dc49de2b2422297624833315be4a4cc51722e05b2fafe0e1abc109e5"
+        }
+      ],
+      "actual_answer_sha256": "8874eb6834c6685c93acb1f85d9c156f81a0d87d4ddb7b808ef868d15bb38d59"
+    },
+    {
+      "answer_id": "2e0d19d0-43cf-40e5-b2b0-dd91fa329555",
+      "answer_ordinal_including_warmup": 9,
+      "warmup": false,
+      "question": "Какие основные цели политики в области качества и экологии?",
+      "verdict": "FAIL",
+      "review_note": "Asked for the main quality/ecology goals; answer restates the mission. The published page3 figure contains five strategic goals, while retrieved page3 evidence is only its title.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "b1177e86-7392-4281-b20e-2f939a9c522c",
+          "page_no": 3,
+          "kind": "TEXT",
+          "evidence_sha256": "a71d162f7c5820ac012109d03722fe76425deb3e31f84f98598fd315af709faa"
+        },
+        {
+          "number": 2,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "f020ed86-4687-495a-a673-b736c800af12",
+          "page_no": 1,
+          "kind": "TEXT",
+          "evidence_sha256": "26694cfa8d8d25e9ece6cf210b76dfc1f2589e86e2f0c4800d4c7ff455a76ac4"
+        },
+        {
+          "number": 3,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "b1bfac41-553e-4518-a08d-61b30b4fa3f4",
+          "page_no": 2,
+          "kind": "TEXT",
+          "evidence_sha256": "f56544a1dc49de2b2422297624833315be4a4cc51722e05b2fafe0e1abc109e5"
+        }
+      ],
+      "cause_class": "WRONG_INTENT_MISSION_INSTEAD_OF_GOALS",
+      "actual_answer": "Основной целью политики в области качества и экологии является повышение качества жизни людей и эффективности экономики путем создания надежной и безопасной коммунальной, промышленной и аграрной инфраструктуры за счет разработки и применения прогрессивных технологий в области трубопроводных систем и решений для очистки сточных вод, а также обеспечение потребностей различных отраслей производства в высококачественных композиционных материалах, соответствующих современным тенденциям мирового рынка термопластов [3].\n\nИсточники: [1] Политика в области качества и экологии, стр. 3; [2] Политика в области качества и экологии, стр. 1; [3] Политика в области качества и экологии, стр. 2",
+      "cited_source_parents": [
+        {
+          "number": 1,
+          "title": "Политика в области качества и экологии",
+          "page_no": 3,
+          "text": "Стратегические цели\u000bв области качества и экологии",
+          "block_id": "b1177e86-7392-4281-b20e-2f939a9c522c"
+        },
+        {
+          "number": 2,
+          "title": "Политика в области качества и экологии",
+          "page_no": 1,
+          "text": "Политика в области качества и экологии\n\n01.03.2024",
+          "block_id": "f020ed86-4687-495a-a673-b736c800af12"
+        },
+        {
+          "number": 3,
+          "title": "Политика в области качества и экологии",
+          "page_no": 2,
+          "text": "Миссия Общества \u000bв области качества и экологии\n\nПовышение качества жизни людей и эффективности экономики путем создания надежной и безопасной коммунальной, промышленной и аграрной инфраструктуры за счет разработки и применения прогрессивных технологий в области трубопроводных систем и решений для очистки сточных вод, а также обеспечение потребностей различных отраслей производства в высококачественных композиционных материалах, соответствующих современным тенденциям мирового рынка термопластов.",
+          "block_id": "b1bfac41-553e-4518-a08d-61b30b4fa3f4"
+        }
+      ]
+    },
+    {
+      "answer_id": "cd25f649-1cf2-4e35-b80d-f821b2b95fdd",
+      "answer_ordinal_including_warmup": 10,
+      "warmup": false,
+      "question": "Какие обязанности сотрудника по сохранению коммерческой тайны?",
+      "verdict": "FAIL",
+      "review_note": "Asked for employee trade-secret duties; answer provides only a generic duty. Published page7 expressly lists non-disclosure/non-personal-use, compensation for caused losses, and returning media when employment ends; none appears in the answer. Retrieved pages5/14/13 miss the direct duty source.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "7df926b4-2286-4cee-a91c-4817173c5783",
+          "page_no": 5,
+          "kind": "TEXT",
+          "evidence_sha256": "b1c25b30e9b46b80edf99d56f3e3d669c199c150a78d8e390fab4563395d0448"
+        },
+        {
+          "number": 2,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "34a23247-53e8-4a6e-b1e9-41bb6cc86273",
+          "page_no": 14,
+          "kind": "TEXT",
+          "evidence_sha256": "a42153aac0f61af8014c3f8c73367e46cf007a383064ffccd717061d05a77f39"
+        },
+        {
+          "number": 3,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "46f43fd1-6eb6-40b9-a145-08f182af37e7",
+          "page_no": 13,
+          "kind": "TEXT",
+          "evidence_sha256": "c0d8b5a0cebc5f0163dadec0274f16212741db97be6fb7f994523b678039a878"
+        }
+      ],
+      "cause_class": "INCOMPLETE_DUTIES_RETRIEVAL",
+      "actual_answer": "Сотрудник обязан принимать меры по охране конфиденциальности информации.\n\n[3]\n\nИсточники: [1] Положение о коммерческой тайне, стр. 5; [2] Положение о коммерческой тайне, стр. 14; [3] Положение о коммерческой тайне, стр. 13",
+      "cited_source_parents": [
+        {
+          "number": 1,
+          "title": "Положение о коммерческой тайне",
+          "page_no": 5,
+          "text": "Коммерческая тайна\n\n- сведения о структуре производства, производственных мощностях, типе и размещении оборудования, запасах сырья, материалов, комплектующих, готовой продукции, финансовых и людских ресурсах;\n- сведения о применяемых оригинальных методах управления Обществом;\n- сведения о подготовке, принятии и исполнении отдельных решений руководства Общества;\n- сведения о предполагаемом создании дочерних и зависимых организаций;\n- сведения о планах расширения или свертывания производства различных видов продукции и их технико-экономических обоснованиях;\nсведения о планах инвестиций, закупок и продаж и т.п.\nС полным Перечнем информации, составляющим КИ, Вы можете ознакомиться в Положении о коммерческой тайне и конфиденциальной информации (Приложение №2)\n\nКоммерческая тайна – далее КТ",
+          "block_id": "7df926b4-2286-4cee-a91c-4817173c5783"
+        },
+        {
+          "number": 2,
+          "title": "Положение о коммерческой тайне",
+          "page_no": 14,
+          "text": "С полным текстом Положения о коммерческой тайне \u000bи конфиденциальной информации можно ознакомиться на корпоративном портале Общества.\n\nИван Иванов",
+          "block_id": "34a23247-53e8-4a6e-b1e9-41bb6cc86273"
+        },
+        {
+          "number": 3,
+          "title": "Положение о коммерческой тайне",
+          "page_no": 13,
+          "text": "Ответственность за нарушение\n\nПомните, что нарушение требований Положения о коммерческой тайне и конфиденциальной информации влечет за собой дисциплинарную, гражданско-правовую, административную или уголовную ответственность в соответствии с законодательством Российской Федерации.\n\nОбращаем внимание, что Общество вправе требовать от работников принимать меры по охране конфиденциальности информации.",
+          "block_id": "46f43fd1-6eb6-40b9-a145-08f182af37e7"
+        }
+      ]
+    },
+    {
+      "answer_id": "10af38b1-56dc-4b1e-97e2-72cf9c65d1e4",
+      "answer_ordinal_including_warmup": 11,
+      "warmup": false,
+      "question": "Кто должен соблюдать антикоррупционную политику компании?",
+      "verdict": "SOURCE_SUPPORTED_IN_THIS_REVIEW",
+      "review_note": "Applicable actors remain company, governing-body members, workers and others acting for the company.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "fbe3b7a1-d950-43ba-9148-114c9bdcdbed",
+          "page_no": 1,
+          "kind": "TEXT",
+          "evidence_sha256": "d553a3a5122469982f33de94e2425c8cdac9abee7c3c872b0b277c1bc61e1945"
+        },
+        {
+          "number": 2,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "9280d7b1-a649-4fc5-90f0-aa4d84bdc6ba",
+          "page_no": 12,
+          "kind": "TEXT",
+          "evidence_sha256": "e7f53d2b28f77f4d41f14de8cc63ea58e3663b9daf49339949ee91369fafb889"
+        },
+        {
+          "number": 3,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "25db1ea7-883d-4198-abf0-782d8bf6762b",
+          "page_no": 14,
+          "kind": "TEXT",
+          "evidence_sha256": "b98811d0947f52c9ff164859b15c28da052f56d92e791bf69e60841ff33514fe"
+        }
+      ],
+      "actual_answer_sha256": "fd3b52871503cd54622ee50c50ee996d6cf142186bf0d4f181c8ef778587e81e"
+    },
+    {
+      "answer_id": "9940c691-45dd-4988-bbe8-aa7e0ef5b5c9",
+      "answer_ordinal_including_warmup": 12,
+      "warmup": false,
+      "question": "Подскажи, пожалуйста: Как передавать пароли к конфиденциальной информации?",
+      "verdict": "SOURCE_SUPPORTED_IN_THIS_REVIEW",
+      "review_note": "Password transfer channel remains different from confidential-information transfer channel.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "d6ca5adf-b31a-45b6-9c2f-42eda3f3d992",
+          "page_no": 11,
+          "kind": "TEXT",
+          "evidence_sha256": "57d79ed5484e957beff1d62b2b04ccb76768f550a9c02943eb703944dc1e0374"
+        },
+        {
+          "number": 2,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "7e9ee194-126e-4586-a3ce-4205ed61ad61",
+          "page_no": 10,
+          "kind": "TEXT",
+          "evidence_sha256": "1d47c4f810ee38c9d1caf71fadf35b83586e52358fef591c1ab58017778645b0"
+        },
+        {
+          "number": 3,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "b1daaa32-cae0-4b29-92c0-734ce525100c",
+          "page_no": 9,
+          "kind": "TEXT",
+          "evidence_sha256": "28e3a7c2a443060aac03f1f083a30ec059d42b2e53176a591623123e759b7915"
+        }
+      ],
+      "actual_answer_sha256": "7ea40e90188236c3e972901a9006451abd365fad12046938b64465f25745af81"
+    },
+    {
+      "answer_id": "4afff528-3003-4cc1-9ab3-42ba02509616",
+      "answer_ordinal_including_warmup": 14,
+      "warmup": false,
+      "question": "Подскажи, пожалуйста: Кто разрешает посетителю фотографировать конфиденциальные документы?",
+      "verdict": "FAIL",
+      "review_note": "Cited page8 permits visitor photography only after permission AND a signed visitor confidentiality undertaking. Answer retains permission but drops the signed undertaking, weakening a mandatory condition.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "ebe63cca-b2d8-4dd3-893c-af7bdc78eebd",
+          "page_no": 8,
+          "kind": "TEXT",
+          "evidence_sha256": "74d06a53efc317f850e97f4037cac00203396d9fb8476d8514b12d0498973c1b"
+        },
+        {
+          "number": 2,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "b1daaa32-cae0-4b29-92c0-734ce525100c",
+          "page_no": 9,
+          "kind": "TEXT",
+          "evidence_sha256": "28e3a7c2a443060aac03f1f083a30ec059d42b2e53176a591623123e759b7915"
+        },
+        {
+          "number": 3,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "a44d44c6-49b2-4efd-8bd7-2c879446e95d",
+          "page_no": 4,
+          "kind": "TEXT",
+          "evidence_sha256": "085126232ac3c64078a7e704ba37abd5823768a31bf5d938c590a644c15faaad"
+        }
+      ],
+      "cause_class": "LOST_CONJUNCTIVE_PERMISSION_CONDITION",
+      "actual_answer": "Фото-, видеосъемку документов, отнесенных к коммерческой тайне (КТ), возможно только после получения разрешения генерального директора или уполномоченного лица Общества [1].\n\nИсточники: [1] Положение о коммерческой тайне, стр. 8; [2] Положение о коммерческой тайне, стр. 9; [3] Положение о коммерческой тайне, стр. 4",
+      "cited_source_parents": [
+        {
+          "number": 1,
+          "title": "Положение о коммерческой тайне",
+          "page_no": 8,
+          "text": "Защита конфиденциальности информации\n\nВ случае посещения объектов Общества представителями сторонних организаций ответственное лицо может знакомить посетителей только с конкретной информацией и объектами, которые определены генеральным директором или уполномоченным лицом Общества.\n\nОзнакомление с информацией, проведение осмотров, фото-, видеосъемок документов, объектов (процессов), отнесенных к КТ, возможно только после получения разрешения генерального директора или уполномоченного лица Общества и подписания «Обязательства о соблюдении КТ посетителями объектов». \nФорма Обязательства размещена в Положении о коммерческой тайне и конфиденциальной информации \n(Приложение № 4)",
+          "block_id": "ebe63cca-b2d8-4dd3-893c-af7bdc78eebd"
+        },
+        {
+          "number": 2,
+          "title": "Положение о коммерческой тайне",
+          "page_no": 9,
+          "text": "Передача конфиденциальной информации\n\nПри участии контрагентов в совместных с Обществом проектах знакомить их представителей с КТ возможно только после подписания Соглашения о конфиденциальности и принятия решения об ее передаче в соответствии с действующими нормативными правовыми актами РФ и документами по защите информации.\nФорма Соглашения размещена в Положении о коммерческой тайне и конфиденциальной информации \n(Приложение №13)\nВ каждом случае передача информации, составляющей КТ, или предоставлении доступа к ней, должны осуществляться по Акту приема-передачи.\nКопии подписанного Соглашения о конфиденциальности и Акта приема-передачи информации, составляющей КТ, направляются на адрес электронной почты «Отдел внутренней безопасности».",
+          "block_id": "b1daaa32-cae0-4b29-92c0-734ce525100c"
+        },
+        {
+          "number": 3,
+          "title": "Положение о коммерческой тайне",
+          "page_no": 4,
+          "text": "Конфиденциальная информация\n\nсведения об экономической, финансовой и бухгалтерской деятельности Общества на внутреннем рынке;\nсведения по вопросам внешнеэкономической деятельности Общества;\nрезультаты обработки КИ (выписки, обобщения, аналитические выписки из нее, результаты исследований, схемы, графики, спецификации, статистические данные, изделия, компоненты, созданные, полученные, спроектированные, произведенные на основе или с использованием КИ) и т.п.\nС полным Перечнем информации, составляющим КИ, Вы можете ознакомиться в Положении о коммерческой тайне и конфиденциальной информации (Приложение №1)\n\nКонфиденциальная информация – далее КИ",
+          "block_id": "a44d44c6-49b2-4efd-8bd7-2c879446e95d"
+        }
+      ]
+    },
+    {
+      "answer_id": "df247a76-1791-4435-aabe-53fbfed81f52",
+      "answer_ordinal_including_warmup": 15,
+      "warmup": false,
+      "question": "Подскажи, пожалуйста: Когда сотрудник подписывает антикоррупционное обязательство?",
+      "verdict": "SOURCE_SUPPORTED_IN_THIS_REVIEW",
+      "review_note": "Anticorruption undertaking remains tied to signing the employment contract.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "f90c9547-a2ae-48fc-a030-54f5982fbf32",
+          "page_no": 11,
+          "kind": "TEXT",
+          "evidence_sha256": "3c59a793eb21701fa4bdd05c012b152e19e73d70c40ecb3821d7e7da713b5326"
+        },
+        {
+          "number": 2,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "fbe3b7a1-d950-43ba-9148-114c9bdcdbed",
+          "page_no": 1,
+          "kind": "TEXT",
+          "evidence_sha256": "d553a3a5122469982f33de94e2425c8cdac9abee7c3c872b0b277c1bc61e1945"
+        },
+        {
+          "number": 3,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "25db1ea7-883d-4198-abf0-782d8bf6762b",
+          "page_no": 14,
+          "kind": "TEXT",
+          "evidence_sha256": "b98811d0947f52c9ff164859b15c28da052f56d92e791bf69e60841ff33514fe"
+        }
+      ],
+      "actual_answer_sha256": "5dbbcc3d3aaad1293d8bc25cee3fb511a6e3148eeaea1340c7e1609f7e6160cf"
+    },
+    {
+      "answer_id": "22942d15-cebb-4792-91a6-e2b1f90449e8",
+      "answer_ordinal_including_warmup": 17,
+      "warmup": false,
+      "question": "Подскажи, пожалуйста: Какова миссия компании ПОЛИПЛАСТИК?",
+      "verdict": "SOURCE_SUPPORTED_IN_THIS_REVIEW",
+      "review_note": "Mission wording remains supported by the complete mission parent on quality/ecology page2.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "fbe3b7a1-d950-43ba-9148-114c9bdcdbed",
+          "page_no": 1,
+          "kind": "TEXT",
+          "evidence_sha256": "d553a3a5122469982f33de94e2425c8cdac9abee7c3c872b0b277c1bc61e1945"
+        },
+        {
+          "number": 2,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "800147d0-9ba3-46b5-9566-b504e18456d4",
+          "page_no": 2,
+          "kind": "TEXT",
+          "evidence_sha256": "053c8a63f8c973340558999d0f89ab1f662ab6f36993ec018ba9fc0f23e2c0b9"
+        },
+        {
+          "number": 3,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "b1bfac41-553e-4518-a08d-61b30b4fa3f4",
+          "page_no": 2,
+          "kind": "TEXT",
+          "evidence_sha256": "f56544a1dc49de2b2422297624833315be4a4cc51722e05b2fafe0e1abc109e5"
+        }
+      ],
+      "actual_answer_sha256": "ae37783ff0a63916632375ec8770151fdd3a4e09848f89ae4231479ac350b7e8"
+    },
+    {
+      "answer_id": "bd10400a-1725-4036-853e-f8c42c6e724a",
+      "answer_ordinal_including_warmup": 19,
+      "warmup": false,
+      "question": "Подскажи, пожалуйста: Какие основные цели политики в области качества и экологии?",
+      "verdict": "FAIL",
+      "review_note": "Asked for the main quality/ecology goals; answer restates the mission instead of the five published strategic goals.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "b1177e86-7392-4281-b20e-2f939a9c522c",
+          "page_no": 3,
+          "kind": "TEXT",
+          "evidence_sha256": "a71d162f7c5820ac012109d03722fe76425deb3e31f84f98598fd315af709faa"
+        },
+        {
+          "number": 2,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "f020ed86-4687-495a-a673-b736c800af12",
+          "page_no": 1,
+          "kind": "TEXT",
+          "evidence_sha256": "26694cfa8d8d25e9ece6cf210b76dfc1f2589e86e2f0c4800d4c7ff455a76ac4"
+        },
+        {
+          "number": 3,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "b1bfac41-553e-4518-a08d-61b30b4fa3f4",
+          "page_no": 2,
+          "kind": "TEXT",
+          "evidence_sha256": "f56544a1dc49de2b2422297624833315be4a4cc51722e05b2fafe0e1abc109e5"
+        }
+      ],
+      "cause_class": "WRONG_INTENT_MISSION_INSTEAD_OF_GOALS",
+      "actual_answer": "Основной целью политики в области качества и экологии является повышение качества жизни людей и эффективности экономики путем создания надежной и безопасной коммунальной, промышленной и аграрной инфраструктуры за счет разработки и применения прогрессивных технологий в области трубопроводных систем и решений для очистки сточных вод, а также обеспечение потребностей различных отраслей производства в высококачественных композиционных материалах, соответствующих современным тенденциям мирового рынка термопластов [3].\n\nИсточники: [1] Политика в области качества и экологии, стр. 3; [2] Политика в области качества и экологии, стр. 1; [3] Политика в области качества и экологии, стр. 2",
+      "cited_source_parents": [
+        {
+          "number": 1,
+          "title": "Политика в области качества и экологии",
+          "page_no": 3,
+          "text": "Стратегические цели\u000bв области качества и экологии",
+          "block_id": "b1177e86-7392-4281-b20e-2f939a9c522c"
+        },
+        {
+          "number": 2,
+          "title": "Политика в области качества и экологии",
+          "page_no": 1,
+          "text": "Политика в области качества и экологии\n\n01.03.2024",
+          "block_id": "f020ed86-4687-495a-a673-b736c800af12"
+        },
+        {
+          "number": 3,
+          "title": "Политика в области качества и экологии",
+          "page_no": 2,
+          "text": "Миссия Общества \u000bв области качества и экологии\n\nПовышение качества жизни людей и эффективности экономики путем создания надежной и безопасной коммунальной, промышленной и аграрной инфраструктуры за счет разработки и применения прогрессивных технологий в области трубопроводных систем и решений для очистки сточных вод, а также обеспечение потребностей различных отраслей производства в высококачественных композиционных материалах, соответствующих современным тенденциям мирового рынка термопластов.",
+          "block_id": "b1bfac41-553e-4518-a08d-61b30b4fa3f4"
+        }
+      ]
+    },
+    {
+      "answer_id": "3f0123ff-f900-4e0a-bff7-08ceaaaacf13",
+      "answer_ordinal_including_warmup": 21,
+      "warmup": false,
+      "question": "Подскажи, пожалуйста: Кто должен соблюдать антикоррупционную политику компании?",
+      "verdict": "SOURCE_SUPPORTED_IN_THIS_REVIEW",
+      "review_note": "Applicable actors remain company, governing-body members, workers and others acting for the company.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "fbe3b7a1-d950-43ba-9148-114c9bdcdbed",
+          "page_no": 1,
+          "kind": "TEXT",
+          "evidence_sha256": "d553a3a5122469982f33de94e2425c8cdac9abee7c3c872b0b277c1bc61e1945"
+        },
+        {
+          "number": 2,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "9280d7b1-a649-4fc5-90f0-aa4d84bdc6ba",
+          "page_no": 12,
+          "kind": "TEXT",
+          "evidence_sha256": "e7f53d2b28f77f4d41f14de8cc63ea58e3663b9daf49339949ee91369fafb889"
+        },
+        {
+          "number": 3,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "25db1ea7-883d-4198-abf0-782d8bf6762b",
+          "page_no": 14,
+          "kind": "TEXT",
+          "evidence_sha256": "b98811d0947f52c9ff164859b15c28da052f56d92e791bf69e60841ff33514fe"
+        }
+      ],
+      "actual_answer_sha256": "88caeb2f40fb3f9fdca55fee730d7a9928525d0c7118c18f0b078508f0571c16"
+    },
+    {
+      "answer_id": "bbb02c67-2a1b-4143-9e47-75daf6a2b1ec",
+      "answer_ordinal_including_warmup": 22,
+      "warmup": false,
+      "question": "Хочу уточнить: Как передавать пароли к конфиденциальной информации?",
+      "verdict": "SOURCE_SUPPORTED_IN_THIS_REVIEW",
+      "review_note": "Password transfer channel remains different from confidential-information transfer channel.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "d6ca5adf-b31a-45b6-9c2f-42eda3f3d992",
+          "page_no": 11,
+          "kind": "TEXT",
+          "evidence_sha256": "57d79ed5484e957beff1d62b2b04ccb76768f550a9c02943eb703944dc1e0374"
+        },
+        {
+          "number": 2,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "7e9ee194-126e-4586-a3ce-4205ed61ad61",
+          "page_no": 10,
+          "kind": "TEXT",
+          "evidence_sha256": "1d47c4f810ee38c9d1caf71fadf35b83586e52358fef591c1ab58017778645b0"
+        },
+        {
+          "number": 3,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "b1daaa32-cae0-4b29-92c0-734ce525100c",
+          "page_no": 9,
+          "kind": "TEXT",
+          "evidence_sha256": "28e3a7c2a443060aac03f1f083a30ec059d42b2e53176a591623123e759b7915"
+        }
+      ],
+      "actual_answer_sha256": "bae0b0381b9ed324d5073ffd208808d5b2f4d4c03176a7c01d9e997cd0176b21"
+    },
+    {
+      "answer_id": "2e9e41ba-3911-4732-9b31-fc95308d52f3",
+      "answer_ordinal_including_warmup": 24,
+      "warmup": false,
+      "question": "Хочу уточнить: Кто разрешает посетителю фотографировать конфиденциальные документы?",
+      "verdict": "SOURCE_SUPPORTED_IN_THIS_REVIEW",
+      "review_note": "Director or delegated official remains the authority and the signed visitor undertaking is retained.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "ebe63cca-b2d8-4dd3-893c-af7bdc78eebd",
+          "page_no": 8,
+          "kind": "TEXT",
+          "evidence_sha256": "74d06a53efc317f850e97f4037cac00203396d9fb8476d8514b12d0498973c1b"
+        },
+        {
+          "number": 2,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "b1daaa32-cae0-4b29-92c0-734ce525100c",
+          "page_no": 9,
+          "kind": "TEXT",
+          "evidence_sha256": "28e3a7c2a443060aac03f1f083a30ec059d42b2e53176a591623123e759b7915"
+        },
+        {
+          "number": 3,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "a44d44c6-49b2-4efd-8bd7-2c879446e95d",
+          "page_no": 4,
+          "kind": "TEXT",
+          "evidence_sha256": "085126232ac3c64078a7e704ba37abd5823768a31bf5d938c590a644c15faaad"
+        }
+      ],
+      "actual_answer_sha256": "54bf4339fddafab4c6756b0a0cb284641e21736e470ebc8f27e50c1e141005bc",
+      "wording_note": "Answer uses a looser confidential-information label; original source scope is commercial-secret information. Mandatory authority and both conditions remain present."
+    },
+    {
+      "answer_id": "9823b129-22c1-4800-b5a2-e63c639cadd0",
+      "answer_ordinal_including_warmup": 25,
+      "warmup": false,
+      "question": "Хочу уточнить: Когда сотрудник подписывает антикоррупционное обязательство?",
+      "verdict": "SOURCE_SUPPORTED_IN_THIS_REVIEW",
+      "review_note": "Anticorruption undertaking remains tied to signing the employment contract.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "f90c9547-a2ae-48fc-a030-54f5982fbf32",
+          "page_no": 11,
+          "kind": "TEXT",
+          "evidence_sha256": "3c59a793eb21701fa4bdd05c012b152e19e73d70c40ecb3821d7e7da713b5326"
+        },
+        {
+          "number": 2,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "fbe3b7a1-d950-43ba-9148-114c9bdcdbed",
+          "page_no": 1,
+          "kind": "TEXT",
+          "evidence_sha256": "d553a3a5122469982f33de94e2425c8cdac9abee7c3c872b0b277c1bc61e1945"
+        },
+        {
+          "number": 3,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "25db1ea7-883d-4198-abf0-782d8bf6762b",
+          "page_no": 14,
+          "kind": "TEXT",
+          "evidence_sha256": "b98811d0947f52c9ff164859b15c28da052f56d92e791bf69e60841ff33514fe"
+        }
+      ],
+      "actual_answer_sha256": "5dbbcc3d3aaad1293d8bc25cee3fb511a6e3148eeaea1340c7e1609f7e6160cf"
+    },
+    {
+      "answer_id": "c2ab5317-c31c-4bcb-85b3-71e07ab534fa",
+      "answer_ordinal_including_warmup": 27,
+      "warmup": false,
+      "question": "Хочу уточнить: Какова миссия компании ПОЛИПЛАСТИК?",
+      "verdict": "SOURCE_SUPPORTED_IN_THIS_REVIEW",
+      "review_note": "Mission wording remains supported by the complete mission parent on quality/ecology page2.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "fbe3b7a1-d950-43ba-9148-114c9bdcdbed",
+          "page_no": 1,
+          "kind": "TEXT",
+          "evidence_sha256": "d553a3a5122469982f33de94e2425c8cdac9abee7c3c872b0b277c1bc61e1945"
+        },
+        {
+          "number": 2,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "800147d0-9ba3-46b5-9566-b504e18456d4",
+          "page_no": 2,
+          "kind": "TEXT",
+          "evidence_sha256": "053c8a63f8c973340558999d0f89ab1f662ab6f36993ec018ba9fc0f23e2c0b9"
+        },
+        {
+          "number": 3,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "b1bfac41-553e-4518-a08d-61b30b4fa3f4",
+          "page_no": 2,
+          "kind": "TEXT",
+          "evidence_sha256": "f56544a1dc49de2b2422297624833315be4a4cc51722e05b2fafe0e1abc109e5"
+        }
+      ],
+      "actual_answer_sha256": "8874eb6834c6685c93acb1f85d9c156f81a0d87d4ddb7b808ef868d15bb38d59"
+    },
+    {
+      "answer_id": "e5a04cc5-9082-4181-8c6b-1d5e2edc1eb9",
+      "answer_ordinal_including_warmup": 29,
+      "warmup": false,
+      "question": "Хочу уточнить: Какие основные цели политики в области качества и экологии?",
+      "verdict": "FAIL",
+      "review_note": "Answer restates the mission, but all three supplied parents are headings/date only (pages3/1/4). Citation[3] is only the page4 tasks heading and cannot support any substantive mission claim. The same mission appeared in earlier dialogue answers; history leakage is a plausible cause, not proven by output inspection alone.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "b1177e86-7392-4281-b20e-2f939a9c522c",
+          "page_no": 3,
+          "kind": "TEXT",
+          "evidence_sha256": "a71d162f7c5820ac012109d03722fe76425deb3e31f84f98598fd315af709faa"
+        },
+        {
+          "number": 2,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "f020ed86-4687-495a-a673-b736c800af12",
+          "page_no": 1,
+          "kind": "TEXT",
+          "evidence_sha256": "26694cfa8d8d25e9ece6cf210b76dfc1f2589e86e2f0c4800d4c7ff455a76ac4"
+        },
+        {
+          "number": 3,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "7186fd9a-7e50-4d6e-b254-f1236636c59c",
+          "page_no": 4,
+          "kind": "TEXT",
+          "evidence_sha256": "6799f81dee3ee547f7a8d1ba6e8d80454853f28705245e05f6fdee0461373b09"
+        }
+      ],
+      "cause_class": "UNSUPPORTED_CLAIM_WITH_HEADING_CITATION",
+      "actual_answer": "Основной целью является повышение качества жизни людей и эффективности экономики путем создания надежной и безопасной коммунальной, промышленной и аграрной инфраструктуры за счет разработки и применения прогрессивных технологий в области трубопроводных систем и решений для очистки сточных вод, а также обеспечение потребностей различных отраслей производства в высококачественных композиционных материалах [3].\n\nИсточники: [1] Политика в области качества и экологии, стр. 3; [2] Политика в области качества и экологии, стр. 1; [3] Политика в области качества и экологии, стр. 4",
+      "cited_source_parents": [
+        {
+          "number": 1,
+          "title": "Политика в области качества и экологии",
+          "page_no": 3,
+          "text": "Стратегические цели\u000bв области качества и экологии",
+          "block_id": "b1177e86-7392-4281-b20e-2f939a9c522c"
+        },
+        {
+          "number": 2,
+          "title": "Политика в области качества и экологии",
+          "page_no": 1,
+          "text": "Политика в области качества и экологии\n\n01.03.2024",
+          "block_id": "f020ed86-4687-495a-a673-b736c800af12"
+        },
+        {
+          "number": 3,
+          "title": "Политика в области качества и экологии",
+          "page_no": 4,
+          "text": "Задачи Общества\u000bв области качества и экологии",
+          "block_id": "7186fd9a-7e50-4d6e-b254-f1236636c59c"
+        }
+      ]
+    },
+    {
+      "answer_id": "388d2a36-f3e9-4a10-bcf4-70084f61c72e",
+      "answer_ordinal_including_warmup": 30,
+      "warmup": false,
+      "question": "Хочу уточнить: Какие обязанности сотрудника по сохранению коммерческой тайны?",
+      "verdict": "FAIL",
+      "review_note": "Same missing duty-list source and incomplete answer as cd25f649; the document contains explicit employee duties on page7, while the answer uses generic page13 wording.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "7df926b4-2286-4cee-a91c-4817173c5783",
+          "page_no": 5,
+          "kind": "TEXT",
+          "evidence_sha256": "b1c25b30e9b46b80edf99d56f3e3d669c199c150a78d8e390fab4563395d0448"
+        },
+        {
+          "number": 2,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "34a23247-53e8-4a6e-b1e9-41bb6cc86273",
+          "page_no": 14,
+          "kind": "TEXT",
+          "evidence_sha256": "a42153aac0f61af8014c3f8c73367e46cf007a383064ffccd717061d05a77f39"
+        },
+        {
+          "number": 3,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "46f43fd1-6eb6-40b9-a145-08f182af37e7",
+          "page_no": 13,
+          "kind": "TEXT",
+          "evidence_sha256": "c0d8b5a0cebc5f0163dadec0274f16212741db97be6fb7f994523b678039a878"
+        }
+      ],
+      "cause_class": "INCOMPLETE_DUTIES_RETRIEVAL",
+      "actual_answer": "Сотрудник обязан принимать меры по охране конфиденциальности информации.\n\n[3]\n\nИсточники: [1] Положение о коммерческой тайне, стр. 5; [2] Положение о коммерческой тайне, стр. 14; [3] Положение о коммерческой тайне, стр. 13",
+      "cited_source_parents": [
+        {
+          "number": 1,
+          "title": "Положение о коммерческой тайне",
+          "page_no": 5,
+          "text": "Коммерческая тайна\n\n- сведения о структуре производства, производственных мощностях, типе и размещении оборудования, запасах сырья, материалов, комплектующих, готовой продукции, финансовых и людских ресурсах;\n- сведения о применяемых оригинальных методах управления Обществом;\n- сведения о подготовке, принятии и исполнении отдельных решений руководства Общества;\n- сведения о предполагаемом создании дочерних и зависимых организаций;\n- сведения о планах расширения или свертывания производства различных видов продукции и их технико-экономических обоснованиях;\nсведения о планах инвестиций, закупок и продаж и т.п.\nС полным Перечнем информации, составляющим КИ, Вы можете ознакомиться в Положении о коммерческой тайне и конфиденциальной информации (Приложение №2)\n\nКоммерческая тайна – далее КТ",
+          "block_id": "7df926b4-2286-4cee-a91c-4817173c5783"
+        },
+        {
+          "number": 2,
+          "title": "Положение о коммерческой тайне",
+          "page_no": 14,
+          "text": "С полным текстом Положения о коммерческой тайне \u000bи конфиденциальной информации можно ознакомиться на корпоративном портале Общества.\n\nИван Иванов",
+          "block_id": "34a23247-53e8-4a6e-b1e9-41bb6cc86273"
+        },
+        {
+          "number": 3,
+          "title": "Положение о коммерческой тайне",
+          "page_no": 13,
+          "text": "Ответственность за нарушение\n\nПомните, что нарушение требований Положения о коммерческой тайне и конфиденциальной информации влечет за собой дисциплинарную, гражданско-правовую, административную или уголовную ответственность в соответствии с законодательством Российской Федерации.\n\nОбращаем внимание, что Общество вправе требовать от работников принимать меры по охране конфиденциальности информации.",
+          "block_id": "46f43fd1-6eb6-40b9-a145-08f182af37e7"
+        }
+      ]
+    },
+    {
+      "answer_id": "92fdead9-0930-4a55-89f8-e077b3e81424",
+      "answer_ordinal_including_warmup": 31,
+      "warmup": false,
+      "question": "Хочу уточнить: Кто должен соблюдать антикоррупционную политику компании?",
+      "verdict": "SOURCE_SUPPORTED_IN_THIS_REVIEW",
+      "review_note": "Applicable actors remain company, governing-body members, workers and others acting for the company.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "fbe3b7a1-d950-43ba-9148-114c9bdcdbed",
+          "page_no": 1,
+          "kind": "TEXT",
+          "evidence_sha256": "d553a3a5122469982f33de94e2425c8cdac9abee7c3c872b0b277c1bc61e1945"
+        },
+        {
+          "number": 2,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "9280d7b1-a649-4fc5-90f0-aa4d84bdc6ba",
+          "page_no": 12,
+          "kind": "TEXT",
+          "evidence_sha256": "e7f53d2b28f77f4d41f14de8cc63ea58e3663b9daf49339949ee91369fafb889"
+        },
+        {
+          "number": 3,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "25db1ea7-883d-4198-abf0-782d8bf6762b",
+          "page_no": 14,
+          "kind": "TEXT",
+          "evidence_sha256": "b98811d0947f52c9ff164859b15c28da052f56d92e791bf69e60841ff33514fe"
+        }
+      ],
+      "actual_answer_sha256": "d7f79ce18eb4a1f58a72bc3ee5b3bde757fe1d50729b02d58cc4896816313430"
+    },
+    {
+      "answer_id": "e7feca32-b126-46be-a871-12c7c1d58927",
+      "answer_ordinal_including_warmup": 32,
+      "warmup": false,
+      "question": "Объясни правило: Как передавать пароли к конфиденциальной информации?",
+      "verdict": "SOURCE_SUPPORTED_IN_THIS_REVIEW",
+      "review_note": "Password transfer channel remains different from confidential-information transfer channel.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "d6ca5adf-b31a-45b6-9c2f-42eda3f3d992",
+          "page_no": 11,
+          "kind": "TEXT",
+          "evidence_sha256": "57d79ed5484e957beff1d62b2b04ccb76768f550a9c02943eb703944dc1e0374"
+        },
+        {
+          "number": 2,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "7e9ee194-126e-4586-a3ce-4205ed61ad61",
+          "page_no": 10,
+          "kind": "TEXT",
+          "evidence_sha256": "1d47c4f810ee38c9d1caf71fadf35b83586e52358fef591c1ab58017778645b0"
+        },
+        {
+          "number": 3,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "b1daaa32-cae0-4b29-92c0-734ce525100c",
+          "page_no": 9,
+          "kind": "TEXT",
+          "evidence_sha256": "28e3a7c2a443060aac03f1f083a30ec059d42b2e53176a591623123e759b7915"
+        }
+      ],
+      "actual_answer_sha256": "bae0b0381b9ed324d5073ffd208808d5b2f4d4c03176a7c01d9e997cd0176b21"
+    },
+    {
+      "answer_id": "50281b9a-ae78-4d49-9200-bbad4229d6db",
+      "answer_ordinal_including_warmup": 34,
+      "warmup": false,
+      "question": "Объясни правило: Кто разрешает посетителю фотографировать конфиденциальные документы?",
+      "verdict": "SOURCE_SUPPORTED_IN_THIS_REVIEW",
+      "review_note": "Director or delegated official remains the authority and the signed visitor undertaking is retained.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "ebe63cca-b2d8-4dd3-893c-af7bdc78eebd",
+          "page_no": 8,
+          "kind": "TEXT",
+          "evidence_sha256": "74d06a53efc317f850e97f4037cac00203396d9fb8476d8514b12d0498973c1b"
+        },
+        {
+          "number": 2,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "8cf2130e-79fe-4e45-8e32-df91f2222308",
+          "page_no": 9,
+          "kind": "TEXT",
+          "evidence_sha256": "28e3a7c2a443060aac03f1f083a30ec059d42b2e53176a591623123e759b7915"
+        },
+        {
+          "number": 3,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "a44d44c6-49b2-4efd-8bd7-2c879446e95d",
+          "page_no": 4,
+          "kind": "TEXT",
+          "evidence_sha256": "085126232ac3c64078a7e704ba37abd5823768a31bf5d938c590a644c15faaad"
+        }
+      ],
+      "actual_answer_sha256": "f95e26feef04c1f52daa928ba500d234bc5c6044faa026f271151f584076a107",
+      "wording_note": "Answer uses a looser confidential-information label; original source scope is commercial-secret information. Mandatory authority and both conditions remain present."
+    },
+    {
+      "answer_id": "8618e76e-b1e9-4c1f-9066-d372b7d548a1",
+      "answer_ordinal_including_warmup": 35,
+      "warmup": false,
+      "question": "Объясни правило: Когда сотрудник подписывает антикоррупционное обязательство?",
+      "verdict": "SOURCE_SUPPORTED_IN_THIS_REVIEW",
+      "review_note": "Anticorruption undertaking remains tied to signing the employment contract.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "f90c9547-a2ae-48fc-a030-54f5982fbf32",
+          "page_no": 11,
+          "kind": "TEXT",
+          "evidence_sha256": "3c59a793eb21701fa4bdd05c012b152e19e73d70c40ecb3821d7e7da713b5326"
+        },
+        {
+          "number": 2,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "fbe3b7a1-d950-43ba-9148-114c9bdcdbed",
+          "page_no": 1,
+          "kind": "TEXT",
+          "evidence_sha256": "d553a3a5122469982f33de94e2425c8cdac9abee7c3c872b0b277c1bc61e1945"
+        },
+        {
+          "number": 3,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "81599f5d-c657-4c45-9c0a-0222e0801d3d",
+          "page_no": 2,
+          "kind": "TEXT",
+          "evidence_sha256": "74c421b015dd0413d0305c1e7bea7399275cd4dbc46650cb03e299c0bce84d91"
+        }
+      ],
+      "actual_answer_sha256": "4293042dc4322156e6a90634f35ea625c3e683af9e9f146d674902d7f54c7a6f"
+    },
+    {
+      "answer_id": "2843ccf2-e8a2-42f0-a548-be4f8dc5c825",
+      "answer_ordinal_including_warmup": 37,
+      "warmup": false,
+      "question": "Объясни правило: Какова миссия компании ПОЛИПЛАСТИК?",
+      "verdict": "SOURCE_SUPPORTED_IN_THIS_REVIEW",
+      "review_note": "Mission wording remains supported by the complete mission parent on quality/ecology page2.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "extraction_revision_id": "ab69b181-da28-4d12-9361-f37a95f3447a",
+          "block_id": "fbe3b7a1-d950-43ba-9148-114c9bdcdbed",
+          "page_no": 1,
+          "kind": "TEXT",
+          "evidence_sha256": "d553a3a5122469982f33de94e2425c8cdac9abee7c3c872b0b277c1bc61e1945"
+        },
+        {
+          "number": 2,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "b1bfac41-553e-4518-a08d-61b30b4fa3f4",
+          "page_no": 2,
+          "kind": "TEXT",
+          "evidence_sha256": "f56544a1dc49de2b2422297624833315be4a4cc51722e05b2fafe0e1abc109e5"
+        },
+        {
+          "number": 3,
+          "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+          "revision_id": "c32d41b9-c41b-4095-a707-7226ea965290",
+          "extraction_revision_id": "42cdad3b-1c8f-4eca-9809-aaddaaaab013",
+          "block_id": "800147d0-9ba3-46b5-9566-b504e18456d4",
+          "page_no": 2,
+          "kind": "TEXT",
+          "evidence_sha256": "053c8a63f8c973340558999d0f89ab1f662ab6f36993ec018ba9fc0f23e2c0b9"
+        }
+      ],
+      "actual_answer_sha256": "cf38b5a5efea709a1a387c159dc854a747c97204998c2c5bf04199cde3ee52a5"
+    },
+    {
+      "answer_id": "7c059874-e090-47d9-bee2-be745f9fa2bc",
+      "answer_ordinal_including_warmup": 39,
+      "warmup": false,
+      "question": "Объясни правило: Какие основные цели политики в области качества и экологии?",
+      "verdict": "FAIL",
+      "review_note": "Answer restates the mission instead of goals and cites[2], which contains only the page1 title/date. The other supplied parents are page3/page4 headings, so the substantive mission claim is unsupported by every supplied parent.",
+      "mechanical_reason_code": "MECHANICAL_CHECKS_PASSED",
+      "citation_pins": [
+        {
+          "number": 1,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "b1177e86-7392-4281-b20e-2f939a9c522c",
+          "page_no": 3,
+          "kind": "TEXT",
+          "evidence_sha256": "a71d162f7c5820ac012109d03722fe76425deb3e31f84f98598fd315af709faa"
+        },
+        {
+          "number": 2,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "f020ed86-4687-495a-a673-b736c800af12",
+          "page_no": 1,
+          "kind": "TEXT",
+          "evidence_sha256": "26694cfa8d8d25e9ece6cf210b76dfc1f2589e86e2f0c4800d4c7ff455a76ac4"
+        },
+        {
+          "number": 3,
+          "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+          "revision_id": "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "extraction_revision_id": "330dd382-5a4d-4864-80f8-b7d1189cc9d9",
+          "block_id": "7186fd9a-7e50-4d6e-b254-f1236636c59c",
+          "page_no": 4,
+          "kind": "TEXT",
+          "evidence_sha256": "6799f81dee3ee547f7a8d1ba6e8d80454853f28705245e05f6fdee0461373b09"
+        }
+      ],
+      "cause_class": "UNSUPPORTED_CLAIM_WITH_HEADING_CITATION",
+      "actual_answer": "Основная цель политики в области качества и экологии заключается в повышении качества жизни людей и эффективности экономики путем создания надежной и безопасной коммунальной, промышленной и аграрной инфраструктуры за счет разработки и применения прогрессивных технологий в области трубопроводных систем и решений для очистки сточных вод, а также обеспечения потребностей различных отраслей производства в высококачественных композиционных материалах, соответствующих современным тенденциям мирового рынка термопластов [2].\n\nИсточники: [1] Политика в области качества и экологии, стр. 3; [2] Политика в области качества и экологии, стр. 1; [3] Политика в области качества и экологии, стр. 4",
+      "cited_source_parents": [
+        {
+          "number": 1,
+          "title": "Политика в области качества и экологии",
+          "page_no": 3,
+          "text": "Стратегические цели\u000bв области качества и экологии",
+          "block_id": "b1177e86-7392-4281-b20e-2f939a9c522c"
+        },
+        {
+          "number": 2,
+          "title": "Политика в области качества и экологии",
+          "page_no": 1,
+          "text": "Политика в области качества и экологии\n\n01.03.2024",
+          "block_id": "f020ed86-4687-495a-a673-b736c800af12"
+        },
+        {
+          "number": 3,
+          "title": "Политика в области качества и экологии",
+          "page_no": 4,
+          "text": "Задачи Общества\u000bв области качества и экологии",
+          "block_id": "7186fd9a-7e50-4d6e-b254-f1236636c59c"
+        }
+      ]
+    }
+  ]
+}

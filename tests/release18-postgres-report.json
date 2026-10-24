@@ -1,0 +1,98 @@
+{
+  "database": "korsik_integration_check",
+  "postgresql_server_version": "PostgreSQL 17.11 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit",
+  "source_data_copied": false,
+  "synthetic_fixtures_only": true,
+  "real_MAX_token_read": false,
+  "external_MAX_sends": 0,
+  "external_model_requests": 0,
+  "production_business_mutations": false,
+  "http_context": "Real deployed FastAPI middleware/routes in an in-process ASGI client; isolated PostgreSQL sessions",
+  "binding_fixture": "Synthetic pre-approved server binding, not a real MAX launch or HR identity verification",
+  "checks": [
+    {
+      "name": "miniapp_real_HTTP_role_cookie_replay_metadata_and_binding_revoke",
+      "status": "PASS",
+      "seconds": 0.32,
+      "actual_HTTP_cookie_session": true,
+      "server_role_ignores_forged_launch_role": true,
+      "postgres_String36_metadata_enforced": true,
+      "same_browser_replay_idempotent": true,
+      "cross_browser_replay_denied": true,
+      "revoked_binding_denies_session": true
+    },
+    {
+      "name": "miniapp_concurrent_HTTP_replay_unique_session",
+      "status": "PASS",
+      "seconds": 0.13,
+      "concurrent_HTTP_statuses": [
+        200,
+        409
+      ],
+      "committed_sessions": 1,
+      "real_PostgreSQL_unique_race": true
+    },
+    {
+      "name": "miniapp_verified_employee_provision_and_episode_invalidation",
+      "status": "PASS",
+      "seconds": 0.763,
+      "trusted_binding_fixture_only": true,
+      "provisioned_role": "EMPLOYEE",
+      "no_card_or_HR_role_from_launch": true,
+      "old_episode_session_denied": true,
+      "current_pointer_with_disabled_history_authenticates": true,
+      "stale_pointer_does_not_provision_around_history": true
+    },
+    {
+      "name": "survey_HTTP_CAS_preview_publish_durable_actual_worker_and_receipt",
+      "status": "PASS",
+      "seconds": 2.875,
+      "actual_HTTP_CAS_statuses": {
+        "missing": 428,
+        "stale": 412,
+        "published_immutable": 409,
+        "changed_preview": 409
+      },
+      "actual_business_worker_claim_handler_commit": true,
+      "worker_job_status": "COMPLETED",
+      "worker_attempts": 1,
+      "survey_runs": 1,
+      "opening_receipt": "SYNTHETIC_TRUSTED_RECEIPT_NO_MAX_SEND",
+      "configured_unique_reminders": 2
+    },
+    {
+      "name": "survey_HTTP_answers_aggregate_scope_and_future_cancel",
+      "status": "PASS",
+      "seconds": 0.809,
+      "actual_HTTP_typed_answers_and_finish": true,
+      "persisted_answer_count": 2,
+      "no_general_feedback_or_sentiment_job": true,
+      "HEAD_group_1_suppressed_and_raw_denied": true,
+      "creator_current_scope_denies_old_raw_access": true,
+      "future_campaign_cancel_preserves_previous_answers": true
+    }
+  ],
+  "passed": 5,
+  "failed": 0,
+  "external_http_attempts_blocked": 0,
+  "status": "PASS",
+  "company_accepted": false,
+  "execution_context": {
+    "execution_context": "One-off helper using exact current deployed application image",
+    "app_image": "sha256:a18b45549e47b9cc7521687940083e3b733f962b824200fd5ca05ec4f966dd4e",
+    "isolated_database": "korsik_integration_check",
+    "check_exit_code": 0,
+    "drop_exit_code": 0,
+    "isolated_database_remaining": 0,
+    "cleanup_status": "PASS",
+    "source_database_read": "schema-only pg_dump, no personnel data copied",
+    "production_business_mutations": false,
+    "production_blobs_or_models_mounted": false,
+    "real_MAX_token_mounted": false,
+    "external_MAX_sends": 0
+  },
+  "verification_script_sha256": "64903899fe13d4f2bfa3045271f4048d6e412cf5a7c4c8e455d7f8037cf3e523",
+  "baseline_report_ref": "release18-postgres-baseline-report.json",
+  "historical_pre_rehire_report_ref": "release18-postgres-report-pre-rehire.json",
+  "prior_historical_reports_preserved": true
+}

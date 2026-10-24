@@ -1,0 +1,21 @@
+{
+  "status": "INCONCLUSIVE_NO_MATCHED_PACKETS",
+  "observed_at": "2026-10-24T12:23:50.246175+00:00",
+  "duration_seconds": 60,
+  "tool": "Ubuntu tcpdump",
+  "snapshot_bytes": 54,
+  "application_payload_bytes_captured": 0,
+  "scope": "IPv4 Ethernet+IP+TCP headers only onens3, current administrator source andTCP443",
+  "endpoint_IPs_redacted": true,
+  "tcpdump_exit_code": 124,
+  "headers": [
+    ""
+  ],
+  "packet_summary": [
+    "0 packets captured",
+    "0 packets received by filter",
+    "0 packets dropped by kernel"
+  ],
+  "capture_status": "OBSERVED",
+  "interpretation": "Zero packets matched the current SSH-source selector. A root public curl succeeded during the reported window; this capture provides no causal evidence for the earlier TLS timeout and does not prove absence of ClientHello."
+}

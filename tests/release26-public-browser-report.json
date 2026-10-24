@@ -1,0 +1,25 @@
+{
+  "schema": "korsik-release26-public-browser-v1",
+  "status": "PASS",
+  "observed_at": "2026-10-24T21:10:34.251357+00:00",
+  "origin": "https://app.korsik-demo.ru",
+  "production_messages_sent": 0,
+  "production_forms_saved": 0,
+  "published_scenarios_modified": 0,
+  "checks": {
+    "authenticated_navigation_loads": true,
+    "dialog_nav_problem_count_visible": true,
+    "survey_removed_fields_absent": true,
+    "survey_Save_visible": true,
+    "survey_boundary_arrows_disabled": true,
+    "survey_form_closed_without_saving": true,
+    "analytics_HR_current_load_stage_bars_and_empty_states_visible": true,
+    "analytics_details_collapsed_and_CSV_available": true,
+    "dark_theme_rendered": true
+  },
+  "screenshots": [
+    "qa/release26-survey-public.png",
+    "qa/release26-analytics-public.png"
+  ],
+  "functional_note": "Targeted HR replies, decrement counts and scenario free-text simulation were exercised only with local synthetic data, separately recorded."
+}

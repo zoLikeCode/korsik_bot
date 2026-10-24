@@ -1,0 +1,23 @@
+{
+  "schema": "korsik-independent-source13-review-v1",
+  "status": "INCOMPLETE_STOPPED_NOT_ACCEPTABLE",
+  "observed_at": "2026-10-24T01:57:22.994126+00:00",
+  "actual_evaluation_sha256": "4632990911caeb35d9226d75cd4f9377e13a6f5c2c2d79bf225800f241b68159",
+  "cases_produced": 6,
+  "cases_required": 29,
+  "source13_run_stopped_by_root": true,
+  "independent_full29_review_completed": false,
+  "old_pass_reused": false,
+  "company_hr_acceptance": false,
+  "reason": "Run stopped after full-corpus audit found additional audience/scope/complementary-source gaps in the unchanged original golds. Source14 requires strengthened golds and a fresh actual run.",
+  "full_corpus_audit": "source-corpus-intent-audit.json",
+  "private_raw": "work/implementation/source13-actual-private.json",
+  "case_ids": [
+    "password",
+    "termination",
+    "visitor",
+    "commitment",
+    "money_gift",
+    "mission"
+  ]
+}

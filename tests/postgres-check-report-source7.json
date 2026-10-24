@@ -1,0 +1,134 @@
+{
+  "database": "korsik_integration_check",
+  "source_data_copied": false,
+  "synthetic_fixtures_only": true,
+  "external_model_requests": 0,
+  "checks": [
+    {
+      "name": "concurrent_episode_conversation_creation",
+      "status": "PASS",
+      "duration_seconds": 0.224,
+      "conversation_count": 1
+    },
+    {
+      "name": "concurrent_duplicate_typed_turn",
+      "status": "PASS",
+      "duration_seconds": 0.266,
+      "turns": 1,
+      "messages": 1
+    },
+    {
+      "name": "concurrent_distinct_turn_message_sequence",
+      "status": "PASS",
+      "duration_seconds": 0.259,
+      "messages": 3,
+      "contiguous_sequence": true
+    },
+    {
+      "name": "concurrent_duplicate_MAX_update",
+      "status": "PASS",
+      "duration_seconds": 0.152,
+      "turns": 1,
+      "messages": 1
+    },
+    {
+      "name": "single_capture_for_employee_across_legacy_conversations",
+      "status": "PASS",
+      "duration_seconds": 0.157,
+      "active_captures": 1,
+      "statuses": [
+        201,
+        409
+      ]
+    },
+    {
+      "name": "stale_capture_callback_after_HUMAN_and_resume",
+      "status": "PASS",
+      "duration_seconds": 0.221,
+      "old_capture_rejected": true
+    },
+    {
+      "name": "two_scheduler_leaders_no_duplicate_outbox",
+      "status": "PASS",
+      "duration_seconds": 0.459,
+      "outbox_count": 10,
+      "unique_keys": 10
+    },
+    {
+      "name": "worker_lease_fencing_rolls_back_stale_side_effect",
+      "status": "PASS",
+      "duration_seconds": 0.042,
+      "stale_side_effects_rolled_back": true,
+      "new_lease_preserved": true
+    },
+    {
+      "name": "UNKNOWN_delivery_is_not_retried",
+      "status": "PASS",
+      "duration_seconds": 0.377,
+      "manual_resolution_required": true
+    },
+    {
+      "name": "concurrent_local_AI_profile_activation",
+      "status": "PASS",
+      "duration_seconds": 0.089,
+      "switches_committed": 2,
+      "active_profiles": 1,
+      "synthetic_quality_rows_only": true
+    },
+    {
+      "name": "concurrent_unique_job_and_outbox_helpers",
+      "status": "PASS",
+      "duration_seconds": 0.036,
+      "logical_jobs": 1,
+      "logical_outboxes": 1,
+      "both_transactions_committed": true
+    },
+    {
+      "name": "worker_process_SIGKILL_and_scheduler_reclaim",
+      "status": "PASS",
+      "duration_seconds": 0.434,
+      "worker_signal": "SIGKILL",
+      "uncommitted_side_effect_rolled_back": true,
+      "scheduler_reclaimed_lease": true,
+      "worker_attempts": 2,
+      "committed_effects": 1,
+      "external_MAX_sends": 0
+    },
+    {
+      "name": "concurrent_operation_cancel_and_checkpoint_lock_order",
+      "status": "PASS",
+      "duration_seconds": 0.203,
+      "initial_cancel_status": 412,
+      "safe_stale_retry": true,
+      "job_lock_precedes_operation": true,
+      "processing_claim_preserved": true
+    },
+    {
+      "name": "administrative_retry_cannot_overwrite_concurrent_worker_claim",
+      "status": "PASS",
+      "duration_seconds": 0.442,
+      "retry_status": 409,
+      "fresh_worker_claim_preserved": true
+    },
+    {
+      "name": "reverse_multi_member_publication_serializes_without_partial_visibility",
+      "status": "PASS",
+      "duration_seconds": 0.757,
+      "publish_statuses": [
+        412,
+        202
+      ],
+      "committed_publications": 1,
+      "member_count": 2,
+      "observer_saw_only_atomic_states": true,
+      "synthetic_CORE_boundary_no_model_HTTP": true
+    }
+  ],
+  "passed": 15,
+  "failed": 0,
+  "status": "PASS",
+  "execution_context": "one-off-container-frozen-complete-backend7-tar-readonly-bindmount",
+  "frozen_backend_tar_sha256": "984282b48e21da34f6d8eb2da4da556cc4adf68b706bcb388b5c62b97d83fbfe",
+  "production_containers_restarted": false,
+  "isolated_database_dropped": true
+}

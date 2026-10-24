@@ -1,0 +1,209 @@
+{
+  "status": "LOCAL_BUILD_UNIT_API_PASS",
+  "completed_at": "2026-10-24T11:09:07.492948+00:00",
+  "frontend_tests": {
+    "files": 8,
+    "passed": 42,
+    "failed": 0
+  },
+  "production_build": "PASS",
+  "typescript": "PASS",
+  "git_diff_check": "PASS",
+  "entry": "/assets/index-DGrQkgKW.js",
+  "entry_bytes": 295702,
+  "entry_sha256": "f4adf5be3b680b9184c37debb3d9d3848c7292b377e560dbed6e86e90c1d7d9f",
+  "frontend_source_manifest_sha256": "6f9355354ddca60336fb9afd7ecf14ca983275e9e645ba0b01ae89aa55af190b",
+  "frontend_source_manifest": {
+    "frontend/Dockerfile": "5c3d8e676d6d065eb59bb27dfea978f3d285fb22bada54d65699e0e7183a6bb0",
+    "frontend/index.html": "7874f2a960127661b9740c98282314d5329288f7f1c03613d721f1bdd828f5d2",
+    "frontend/nginx.conf": "3ac437730f002ec5d0c06fddf0400f017d1871e3958aba7944fb0c0dfad222f5",
+    "frontend/package-lock.json": "198a83868eb714bc485c4c611f33c626d6738baa9560274f2eecf11f5f996b9c",
+    "frontend/package.json": "0bd15a77fc62d61d1cfb4febd490ecf6637c92f5449c48b640f9cf1b95ea1602",
+    "frontend/src/App.test.tsx": "6d61d4c01fc44b9858ab98d7031c521ac5a58d2d98b72dac495cdcbebe57cf22",
+    "frontend/src/App.tsx": "a0ad42b7dcd0e232260f8529f5f56ab1f53ff6c489525af8585043dd5a08b5e2",
+    "frontend/src/TimeZoneField.tsx": "fdbe6f228d2fec95fe49262bbab47bc137a24a9e78d2d9cdab0ff26f5f95a3db",
+    "frontend/src/api.test.ts": "547fdb9692e25a9ae6717c1cea4d21f68fc4a5c4d1315d3d62ff6135247317e7",
+    "frontend/src/api.ts": "c37fd9263b7b843e6f158829ae46cafe8a22e87e0d5a303b7f5d173af5bd003f",
+    "frontend/src/bindingReview.test.tsx": "75d9c588136970ba7f3f7323ed83111f945e862a9b0f5340a6128eda92a0cb52",
+    "frontend/src/bindingReview.ts": "c7f294d7b0c695549684e8579f7f5b2b9c8e1dab3e460ca55abceeaff20f7810",
+    "frontend/src/components/SourceDependencies.test.ts": "99a1817575c56a38ce97388c1681a0a17cffaf008aa1f01a95d18e1522c68ab6",
+    "frontend/src/components/SourceDependencies.tsx": "a4c41419ded45e562c290b6b7f26d195654ac7f5bc005fcebc75dbfb1260a6f2",
+    "frontend/src/employmentTime.test.ts": "a052cbf7cf7b854feacb7fdc721ed16524aee4d2092af6a82e85c437fb7c69ca",
+    "frontend/src/employmentTime.ts": "4ccb816c0e9164ca30df6d3b8abb56839c9feb6be0ed715780418fb75007210e",
+    "frontend/src/main.tsx": "b1ee4348ec2a15489cd985e94b32f6acf1f2360d2cddc9908123134b1938d318",
+    "frontend/src/maxMiniApp.test.ts": "5c5b69d644c472bc0dd68f043a4d693f79f2ac37adff544d526e72d6adb8f080",
+    "frontend/src/maxMiniApp.ts": "edcca1f56872dc7ecbb67b7cfa3fc93377bf1f87c6f871faa15cad61a5d83685",
+    "frontend/src/pages/BatchUpload.tsx": "bb919c8957fa2092d5618dfcedff70fbdca1f6968e1c20889bdc30e6620ee6cd",
+    "frontend/src/pages/CaseActions.tsx": "3968823f0775e8a0d9c413b9c4d65f196adff7fb243650a0ab719bcae087c094",
+    "frontend/src/pages/Cases.tsx": "d51f21665c7f6ce9b0d68b952b8700df269a006006999f8e974dc985221e6c01",
+    "frontend/src/pages/Chat.tsx": "b6b7c93dd120932c41b649117a1fd87c80077e0326268b873674cf902d1d6018",
+    "frontend/src/pages/Dashboard.tsx": "a7ba65f363f88258c64ccae3e5547ba77ffeb081b5e2a0d95fabcfc1df314d84",
+    "frontend/src/pages/EmployeeImport.tsx": "d6850de9f9eab1168722709d9a46c978348313f5c208a063ba03e094e136df16",
+    "frontend/src/pages/EmployeeMaxBinding.tsx": "b743ccf6c9bf36bb411b7f1bff9ce0ee78a2a69ac4e225c76179704cc6c91cee",
+    "frontend/src/pages/Employees.tsx": "3b5f4fe671336413b43e4ef85d5b235d49eff4d26ec9ca97d6133723e2f71299",
+    "frontend/src/pages/EmploymentStage.tsx": "c8565ff50ce4af6a3dd6304fee39a28bfc2f472bfb341cfae9ae3659ceffca67",
+    "frontend/src/pages/FeedbackReview.tsx": "7e102e2c25d0027b0334a28e0aa88031b1dca2ec36e39e799f02eb5470e587c8",
+    "frontend/src/pages/GapInstruction.tsx": "9304a17d83d7af75e8002df65f40dca5b05fbbfbfafad0166ba4525bc26d7f66",
+    "frontend/src/pages/HrContact.tsx": "79ad0badab1165fc004a7623813524d905275af558cae212cead1f864f18c538",
+    "frontend/src/pages/JointKnowledge.tsx": "7596131bf341f7dcf22a65faabfbf80aa5b40dfb506dac65c981d6266140f848",
+    "frontend/src/pages/JourneyAdvanced.tsx": "e9adf295029d8edc7c40ebeec274d7730ecd845496c179f3f4778fba25e51f2f",
+    "frontend/src/pages/Knowledge.tsx": "93227d00f0954b7b578fd8685ebdc70f424d27bd8379a53467ff61a4dd8e26f9",
+    "frontend/src/pages/KnowledgeAuthoring.tsx": "bb86b2c526173a87ff49c5f41f7304b849893e13cb3ad5b80395b9f5a703602a",
+    "frontend/src/pages/KnowledgeChecks.tsx": "ca20afc88e0a1a08e6c4b37d895600b99bddb382fbf6d2ac999506e024b376fc",
+    "frontend/src/pages/KnowledgeMaintenance.tsx": "c36029cef425af1123d5c0577f95ef9101ac506c1c460eca520ca94c2108feac",
+    "frontend/src/pages/KnowledgeRetention.tsx": "b5fbde4b7c35a828cb406b4b7a57846703a8ca8bcdb28145d81612e1b593ac50",
+    "frontend/src/pages/LocalAi.tsx": "f5418841669892cf95c9415d903134886df6b08e097a3a48ea23f23cced3927a",
+    "frontend/src/pages/PrincipalBindings.tsx": "4156237fdd0d3f1f7130d77e84a8fb9ae1d68537ad01801e60dbf595dfb6f609",
+    "frontend/src/pages/ProfilePublication.tsx": "5f5c6c392894247e68ed42b6005dca01f957b6c3701bca1f155f4d185614388f",
+    "frontend/src/pages/Reports.tsx": "0b2bde226e435a5e2f045274e358f7d2882826ad9e2936fc738d0b4b5ab8bb59",
+    "frontend/src/pages/RevisionComparison.tsx": "0d48857fbfdcf23ca1ce313b6dd5fde43098f0ff17266e5b005af7131631b458",
+    "frontend/src/pages/Scenarios.tsx": "78693b56e397c24ac924010a5a5a916e981945b1a003071f4016957702de686e",
+    "frontend/src/pages/Settings.tsx": "ab7246e32777efdf3adb14895a53cda969fa15bb3a81c2c33b9535a58538de57",
+    "frontend/src/pages/SlaPolicy.tsx": "3fc122f9e50afdd0b8de4e75b80d0443e8ef977d075134952db242693ee36865",
+    "frontend/src/pages/Surveys.tsx": "ee5397d7c179ec44d6971efc40bb09339dd65146c2bc14133c8a1b77c0ca5e4d",
+    "frontend/src/scenario.test.ts": "9ffb57eef8c75eb1d555c586021b87aeb9942f23275db8387908d98f9e23c95b",
+    "frontend/src/scenario.ts": "7faa2ad9ca13de3f152ba3bd845768e20bcadf14a365625e0bf300a7470b747e",
+    "frontend/src/simulation.test.tsx": "ff64464c4550c00fdb39081dc8c5f0d5e9c11745cf863f1ec317d0d73a77058b",
+    "frontend/src/styles.css": "c338f8c615357dadc8907abdfb87ec62d140ac34336d1f606d1d50749286a069",
+    "frontend/src/ui.tsx": "954cf517fcc818018774e5954378951afec4e473b05cca8dd18982f0bf263b3e",
+    "frontend/vite.config.ts": "e1c57adbc3c1bc91dc5802d7844ff8e6ac6a54b17e9079cb235df3957683b452"
+  },
+  "role_navigation_labels": {
+    "EMPLOYEE": [
+      "Диалог",
+      "Опросы"
+    ],
+    "MANAGER": [
+      "Обзор",
+      "Опросы"
+    ],
+    "HR_ADMIN": [
+      "Обзор",
+      "Сотрудники",
+      "Схема",
+      "База знаний",
+      "Опросы",
+      "Диалоги",
+      "Аналитика"
+    ],
+    "HR_SPECIALIST": [
+      "Обзор",
+      "Сотрудники",
+      "Схема",
+      "База знаний",
+      "Опросы",
+      "Диалоги",
+      "Аналитика"
+    ],
+    "HEAD_TALENT": [
+      "Обзор",
+      "Опросы",
+      "Аналитика"
+    ],
+    "PLATFORM_ADMIN": []
+  },
+  "head_talent_optional_drilldown": "«Сотрудники» appears only when scope.employee_drilldown is boolean true.",
+  "unknown_or_platform_role": "No business routes; an access notice is shown.",
+  "removed_public_routes": [
+    "/cases",
+    "/settings"
+  ],
+  "authorization": "Role-specific Routes are derived from the authenticated server actor. Backend ACLs remain authoritative. MAX signed initialization is authenticated before any previous cookie session; invalid signed initialization does not expose browser password login in the Mini App.",
+  "canvas": {
+    "view": "Graph only; no linear wizard",
+    "behaviour": [
+      "Node palette drag/drop and touch-friendly click addition",
+      "Node movement updates editor_layout and persists through save/reload",
+      "Connections update executable graph.transitions; arrows are not decorative",
+      "Edge selection edits typed conditions; explicit edge deletion",
+      "Cycle/self/duplicate/invalid-node/END edge rejection; unconditional first-match fallback protection",
+      "Published/read-only nodes and condition controls locked",
+      "Simulation and review/publication source-preservation gates retained"
+    ],
+    "unit_tests": 9,
+    "local_api_contract_smoke": "qa/miniapp-local-api-smoke.json",
+    "parent_native_observation": "Root reported actual QA program selected, welcome node drag -> dirty -> save PASS. Broader device observations are not claimed here."
+  },
+  "max_bridge": {
+    "source": "Official st.max.ru SDK, implemented by build_rag",
+    "viewport": "Documented SDK viewport with bounded fallback to visualViewport/window",
+    "safe_area": "CSS env(safe-area-inset-*) and viewport-fit=cover; no invented SDK safe-area API",
+    "device_launch": "NOT_RUN_USER_DEFERRED_REGISTRATION"
+  },
+  "employee_dialogue": {
+    "self_service_only": true,
+    "no_hr_arrival_controls_or_mode_badges": true,
+    "human_author_label": "Команда поддержки",
+    "automatic_handoff_hr_badge": "Нужен ответ when active_handoff_case_id exists even in BOT mode",
+    "legacy_action_buttons": "Message renders text and scoped citations only; stored transport action arrays are not rendered as web buttons."
+  },
+  "survey_ui": "Shared heading/tab title «Опросы», responsive cards/buttons; typed question workflow and CAS/preview hash unchanged.",
+  "local_api_smoke": {
+    "status": "PASS",
+    "environment": "LOCAL_SQLITE_NO_MAX_NO_MODELS",
+    "checks": {
+      "canvas_transition_and_drag_layout_save_reload": true,
+      "stale_save_rejected": true,
+      "canvas_graph_backend_valid": true,
+      "survey_all_four_types_preview_review_publish": true,
+      "campaign_preview_schedule_reload_cancel": true,
+      "campaign_preview_recipient_count": 4,
+      "employee_business_route_denials": true,
+      "manager_business_route_denials": true,
+      "head_talent_business_route_denials": true
+    },
+    "scenario_id": "1d85e9cb-a330-481b-8a6c-2195b01feac7",
+    "version_id": "28ee7def-bc60-4563-86a5-45ff251a3137",
+    "template_id": "3f88e025-8402-43c5-823a-93c2d1f6fde0",
+    "campaign_id": "640ca726-0d7b-4223-9c7a-d3b97d40c260",
+    "completed_at": "2026-10-24T10:13:20.529005+00:00"
+  },
+  "deployed_by_this_agent": false,
+  "new_native_max_launch_claimed": false,
+  "company_accepted": false,
+  "limits": [
+    "No actual MAX Mini App launch or registration was performed.",
+    "No server deployment or real MAX message/binding operation was performed by this agent.",
+    "Existing SOURCE17 quality and earlier HTTP100 reports are historical; this UI candidate makes no new language-model performance or semantic acceptance claim.",
+    "Employee self-service and manager routes intentionally do not expose the removed Cases/Settings pages; manager task navigation was not reintroduced per root confirmation."
+  ],
+  "final_copy_patch": {
+    "authorized_by": "root",
+    "changes": [
+      "Employee survey banner uses factual status only.",
+      "Expired survey refers to the support team without an explicit HR contact call to action."
+    ],
+    "production_logic_changed": false
+  },
+  "simulation_p1_fix": {
+    "issue": "A validation early return hid the actual simulation timeline. Its removal also required formatting object-shaped trigger reasons so React could render them.",
+    "fix": "Validation/errors/warnings co-render with all actual timeline rows, typed triggers, local dates, waiting states, questions and missing-material counts; invalid simulation has an explicit empty route state.",
+    "regression": "src/simulation.test.tsx (2 SSR cases based on the actual scenario_engine.simulate response contract)",
+    "status": "UNIT_BUILD_PASS_NATIVE_RECHECK_BY_ROOT"
+  },
+  "principal_binding_p1_fix": {
+    "entry": "Sidebar profile footer button «Аккаунт MAX» opens a small personal modal; Settings route/nav remains absent.",
+    "roles": [
+      "HR_ADMIN",
+      "HR_SPECIALIST",
+      "MANAGER",
+      "HEAD_TALENT"
+    ],
+    "excluded_roles": [
+      "EMPLOYEE",
+      "PLATFORM_ADMIN",
+      "UNKNOWN"
+    ],
+    "implementation": "Existing notification-binding workflow extracted from Settings into a separate lazy component. Modal exposes binding only; hidden maintenance can still request its existing dashboard preferences.",
+    "flow": [
+      "Create own invite",
+      "Open link in MAX (not executed by frontend QA)",
+      "Refresh status",
+      "Fetch exact pending account preview",
+      "Explicit self-account checkbox",
+      "Confirm with displayed ETag",
+      "Show current status or server error; revoke with fresh owner-scoped ETag"
+    ],
+    "safety": "No optimistic activation, no binding reassignment and no real MAX message or identity operation performed by frontend QA."
+  }
+}

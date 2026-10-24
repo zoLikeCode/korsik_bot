@@ -1,0 +1,9 @@
+FROM korsik-parser:local
+USER root
+ENV HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 HF_HUB_DISABLE_TELEMETRY=1 DOCLING_SECURITY_REFUSE_UNPINNED_REMOTE_CODE=1 ATEN_CPU_CAPABILITY=default CUDA_VISIBLE_DEVICES="" PARSER_PROFILE=cpu_structure DOCLING_ARTIFACTS_PATH=/models/docling HF_HOME=/tmp/huggingface
+COPY services/model_server/requirements.structure.txt /srv/
+RUN pip install --no-cache-dir torch==2.9.1+cpu torchvision==0.24.1+cpu --index-url https://download.pytorch.org/whl/cpu
+RUN pip install --no-cache-dir -r /srv/requirements.structure.txt
+COPY backend/korsik/parsing.py /srv/parsing.py
+COPY services/model_server/parser_app.py /srv/parser_app.py
+USER 10001

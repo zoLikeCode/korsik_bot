@@ -1,0 +1,27 @@
+{
+  "schema": "korsik-isolated-cleanup-resource-inventory-v1",
+  "observed_at": "2026-10-24T03:07:55.725589+00:00",
+  "status": "PASS",
+  "read_only": true,
+  "projects": [
+    {
+      "project": "korsik_offline_1792810563",
+      "remaining": {
+        "containers": [],
+        "volumes": [],
+        "networks": []
+      },
+      "status": "PASS"
+    },
+    {
+      "project": "korsik_offline_1792810989",
+      "remaining": {
+        "containers": [],
+        "volumes": [],
+        "networks": []
+      },
+      "status": "PASS"
+    }
+  ],
+  "production_mutations": false
+}

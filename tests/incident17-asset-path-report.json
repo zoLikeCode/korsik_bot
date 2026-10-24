@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "status": "SERVER_ASSET_OK_CLIENT_PATH_DEGRADED",
+  "scope": "INCIDENT17_READ_ONLY_STATIC_ASSET_PATH_DIAGNOSTICS_NOT_FULL_UI_ACCEPTANCE",
+  "recorded_at": "2026-10-24T08:39:24.068975+00:00",
+  "evidence_source": "Previously completed read-only probes in this session; no new requests were made to create this report.",
+  "asset_path": "/assets/index-CVW-IeYL.js",
+  "public_base_url": "https://systematic-working-authorities-glenn.trycloudflare.com",
+  "expected_decoded_bytes": 408059,
+  "expected_decoded_sha256": "5a0e166313afaf9c7635d591970615f5c900e7165c5dc11d018dcf611240187d",
+  "measurements": [
+    {
+      "label": "origin_identity",
+      "location": "VM loopback 127.0.0.1:8080",
+      "status_code": 200,
+      "accept_encoding": "identity",
+      "wire_bytes": 408059,
+      "decoded_bytes": 408059,
+      "decoded_sha256": "5a0e166313afaf9c7635d591970615f5c900e7165c5dc11d018dcf611240187d",
+      "complete_body": true,
+      "seconds": 0.042,
+      "headers": {
+        "Content-Type": "application/javascript",
+        "Content-Length": "408059",
+        "ETag": "\"6adc214f-639fb\"",
+        "Cache-Control": "max-age=31536000",
+        "Accept-Ranges": "bytes",
+        "Server": "nginx"
+      }
+    },
+    {
+      "label": "origin_gzip",
+      "location": "VM loopback 127.0.0.1:8080",
+      "status_code": 200,
+      "accept_encoding": "gzip",
+      "wire_bytes": 148587,
+      "decoded_bytes": 408059,
+      "decoded_sha256": "5a0e166313afaf9c7635d591970615f5c900e7165c5dc11d018dcf611240187d",
+      "complete_body": true,
+      "seconds": 0.043,
+      "headers": {
+        "Content-Encoding": "gzip",
+        "Transfer-Encoding": "chunked",
+        "ETag": "W/\"6adc214f-639fb\"",
+        "Server": "nginx"
+      }
+    },
+    {
+      "label": "public_identity_from_vm",
+      "location": "VM public HTTPS client",
+      "edge": "BOM",
+      "cf_ray": "a4f7a5224c8e4805-BOM",
+      "status_code": 200,
+      "accept_encoding": "identity",
+      "wire_bytes": 408059,
+      "decoded_bytes": 408059,
+      "decoded_sha256": "5a0e166313afaf9c7635d591970615f5c900e7165c5dc11d018dcf611240187d",
+      "complete_body": true,
+      "seconds": 0.292,
+      "headers": {
+        "Transfer-Encoding": "chunked",
+        "CF-Cache-Status": "DYNAMIC",
+        "ETag": "W/\"6adc214f-639fb\"",
+        "Vary": "accept-encoding",
+        "Server": "cloudflare"
+      }
+    },
+    {
+      "label": "public_gzip_from_vm",
+      "location": "VM public HTTPS client",
+      "edge": "BOM",
+      "cf_ray": "a4f7a5225902cc8c-BOM",
+      "status_code": 200,
+      "accept_encoding": "gzip",
+      "wire_bytes": 148587,
+      "decoded_bytes": 408059,
+      "decoded_sha256": "5a0e166313afaf9c7635d591970615f5c900e7165c5dc11d018dcf611240187d",
+      "complete_body": true,
+      "seconds": 0.901,
+      "headers": {
+        "Content-Encoding": "gzip",
+        "Transfer-Encoding": "chunked",
+        "CF-Cache-Status": "DYNAMIC",
+        "ETag": "W/\"6adc214f-639fb\"",
+        "Vary": "accept-encoding",
+        "Server": "cloudflare"
+      }
+    },
+    {
+      "label": "public_range_from_vm",
+      "location": "VM public HTTPS client",
+      "edge": "BOM",
+      "cf_ray": "a4f7a5225d6ad8bc-BOM",
+      "status_code": 200,
+      "request_range": "bytes=0-65535",
+      "range_honoured": false,
+      "wire_bytes": 408059,
+      "decoded_bytes": 408059,
+      "decoded_sha256": "5a0e166313afaf9c7635d591970615f5c900e7165c5dc11d018dcf611240187d",
+      "complete_body": true,
+      "seconds": 0.868
+    },
+    {
+      "label": "origin_range",
+      "location": "VM loopback 127.0.0.1:8080",
+      "status_code": 206,
+      "request_range": "bytes=0-65535",
+      "range_honoured": true,
+      "content_range": "bytes 0-65535/408059",
+      "content_length": 65536,
+      "body_bytes": 65536,
+      "body_sha256": "25f9d95a0e29d5324293c8afaae3bf7b1fc48ad69f1f216d8148599b024a6cf6",
+      "complete_requested_range": true,
+      "seconds": 0.005
+    },
+    {
+      "label": "public_gzip_from_local_client",
+      "location": "Operator local machine public HTTPS client",
+      "edge": "ARN",
+      "cf_ray": "a4f7a5d87a8f05f7-ARN",
+      "status_code": 200,
+      "accept_encoding": "gzip",
+      "application_completed_read_bytes": 16384,
+      "read_chunk_bytes": 16384,
+      "complete_body": false,
+      "decoded_sha256": null,
+      "seconds": 22.405,
+      "error_type": "TimeoutError",
+      "headers": {
+        "Content-Type": "application/javascript",
+        "Content-Encoding": "gzip",
+        "Transfer-Encoding": "chunked",
+        "CF-Cache-Status": "DYNAMIC",
+        "ETag": "W/\"6adc214f-639fb\""
+      },
+      "measurement_limit": "16384 counts successfully returned application-read bytes, not an exact packet-level cutoff; the following read timed out."
+    }
+  ],
+  "tunnel_observation": {
+    "container": "korsik-tunnel-1",
+    "status": "running",
+    "restart_count": 0,
+    "log_window": "20m",
+    "maximum_log_lines_requested": 300,
+    "observed_log_lines": 0,
+    "message_bodies_or_user_paths_read_or_recorded": false
+  },
+  "conclusion": {
+    "server_asset_bytes_correct": true,
+    "vm_public_https_full_body_verified": true,
+    "local_public_https_full_body_verified": false,
+    "failure_localised_to": "Client-to-Cloudflare edge/path during this observation",
+    "dpi_proven": false,
+    "dpi_note": "The partial transfer is consistent with a network/edge restriction; these probes do not establish its root cause.",
+    "full_ui_acceptance_claimed": false,
+    "cached_browser_success_is_not_a_fresh_asset_transfer_proof": true
+  },
+  "operation_scope": {
+    "read_only": true,
+    "services_restarted": false,
+    "containers_recreated": false,
+    "url_rotated": false,
+    "nginx_or_cloudflared_configuration_changed": false,
+    "runtime_or_model_code_changed": false,
+    "new_requests_for_report": false,
+    "screenshots_or_personal_names_included": false
+  }
+}

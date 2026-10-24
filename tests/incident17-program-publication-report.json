@@ -1,0 +1,62 @@
+{
+  "status": "PUBLISHED",
+  "previous_version_id": "bd70afea-6ad4-4ac1-a891-bbb382d5d728",
+  "version_id": "2be76a49-75a9-4663-bc03-07b643bc95c3",
+  "changed_fields": [
+    [
+      "xls-r3",
+      "optional_illustration"
+    ],
+    [
+      "xls-r4",
+      "trigger"
+    ],
+    [
+      "xls-r4",
+      "optional_illustration"
+    ],
+    [
+      "xls-r5",
+      "trigger"
+    ],
+    [
+      "xls-r7",
+      "trigger"
+    ]
+  ],
+  "source_changes": [
+    {
+      "step_key": "xls-r3",
+      "change": "CHANGED_MANDATORY_STEP",
+      "fields": [
+        "content"
+      ]
+    },
+    {
+      "step_key": "xls-r4",
+      "change": "CHANGED_MANDATORY_STEP",
+      "fields": [
+        "content",
+        "trigger"
+      ]
+    },
+    {
+      "step_key": "xls-r5",
+      "change": "CHANGED_MANDATORY_STEP",
+      "fields": [
+        "trigger"
+      ]
+    },
+    {
+      "step_key": "xls-r7",
+      "change": "CHANGED_MANDATORY_STEP",
+      "fields": [
+        "trigger"
+      ]
+    }
+  ],
+  "semantic_hash": "2c32fcda9a2ab8afd7454e257c7fdd0cc29ead5b119d915209b5443de3057622",
+  "migration_policy": "NEW_ENROLLMENTS_ONLY",
+  "active_journeys_changed": 0,
+  "company_hr_acceptance": false
+}

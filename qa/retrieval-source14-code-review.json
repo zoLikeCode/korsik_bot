@@ -1,0 +1,58 @@
+{
+  "schema": "korsik-independent-retrieval-code-review-v1",
+  "release": "source14",
+  "observed_at": "2026-10-24T02:06:19.348911+00:00",
+  "reviewed_source_sha256": "619896c0fc1a96e3ad46f49eb2669deb03dee1a58707f8fc4e0880c360f0d94d",
+  "status": "TWO_CONFIRMED_P1_FIXED_NO_FURTHER_CONFIRMED_P1_IN_REVIEWED_PATHS",
+  "read_only": true,
+  "application_changes_by_reviewer": 0,
+  "model_calls": 0,
+  "production_mutations": 0,
+  "company_accepted": false,
+  "method": [
+    "Read-only retrieval/current source, worker, API read, transport presend inspection",
+    "Pure local validate_generated synthetic counterexample and positive control",
+    "Pure local citation_footer bound with6 long titles"
+  ],
+  "findings": [
+    {
+      "id": "RAG14-CODE-01",
+      "priority": "P1",
+      "problem": "LOCAL_GENERATED/APPROVED_CARD cap counted body without source footer; shortened fallback footer was unbounded",
+      "status": "FIXED_BY_RAG_AGENT_BEFORE_BUILD",
+      "fix": "All final modes compare body+bounded display footer; only display titles abbreviated120, footer bounded1000; canonical citation title/evidence preserved and no normative excerpt truncated",
+      "evidence": "tests/test_retrieval.py approved-card combined-cap and six-long-title regressions; reviewer measured footer827chars for six5000char titles"
+    },
+    {
+      "id": "RAG14-CODE-02",
+      "priority": "P1",
+      "problem": "Generated40years[1] was accepted when source1 said25years and only unrelated source2 contained40lines",
+      "status": "FIXED_BY_RAG_AGENT_BEFORE_BUILD",
+      "fix": "Exact numeric/contact tokens checked within each claim cited source(s), in addition to global supported literals; substring40vs140 no longer counts",
+      "reviewer_pure_result_after_fix": {
+        "cross_source_number": [
+          false,
+          "UNSUPPORTED_CITED_NUMBER"
+        ],
+        "correct_source_number": [
+          true,
+          "MECHANICAL_CHECKS_PASSED"
+        ]
+      },
+      "limit": "Lexical/literal checks are not a semantic entailment guarantee"
+    }
+  ],
+  "reviewed_guards": [
+    "published_corpus refreshes persistent employee/documents/revisions; ACTIVE document, current active_revision_id PUBLISHED, effective date and conjunctive site/legal/type/stage/audience/sensitivity restrictions precede retrieval",
+    "SQL permitted chunk IDs bound Qdrant responses; contextual extraction parent matches revision; native spans and HR-authored reviewed FIGURE image hashes supply exact citation evidence components",
+    "Complement selection keeps evidence/citations in same index order; literal output retains full parent text including NOT/conjunction/antecedents; oversize returns explicit HANDOFF rather than clipping rules",
+    "Generation sees retrieved source evidence with empty history; follow-up resolution reads only previous user question, not previous assistant facts",
+    "Before ordinary final result, current published access is checked; HTTP answer/message reads and transport presend independently reauthorize citations and employee/episode/mode/binding",
+    "No document name, specific physical page, source UUID or case answer hardcoded in reviewed retrieval policy; vocabulary/intent patterns are generic and full module SHA pins constants/helpers"
+  ],
+  "limits": [
+    "This is narrow code review and deterministic synthetic validation, not model/corpus semantic acceptance, independent penetration test, or proof of all future documents.",
+    "Source14 actual extended regression review, native activation, HTTP100 and current-image operational proofs remain separate required evidence.",
+    "Substantive-content and complementary-section detection remain bounded heuristics; exact copied source does not itself prove complete coverage of arbitrary unseen policy."
+  ]
+}

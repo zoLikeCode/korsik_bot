@@ -1,0 +1,30 @@
+{
+  "backup_snapshot_utc": "2026-10-24T02:54:41+00:00",
+  "off_host_copy_verified_utc": "2026-10-24T03:07:48.119124+00:00",
+  "files": [
+    {
+      "file": "blobs.tar.gz",
+      "bytes": 63539584,
+      "sha256": "4cfc5cb4b268e7c3c3660332e46048f00bc55eb6479aa9254ed67205ff30fdd4"
+    },
+    {
+      "file": "database.dump",
+      "bytes": 3904874,
+      "sha256": "11ae53142ac7b719bbc30d18759ce322b6ae4182030a198e3b5a75ac0faff605"
+    },
+    {
+      "file": "images.json",
+      "bytes": 3651,
+      "sha256": "4f2945c592391e14fe8de405ec502793ec3f6dca8358833119cdf71eba30be43"
+    }
+  ],
+  "off_host_copy": "PRIVATE_USER_WORKSPACE_OUTSIDE_VAST_VM",
+  "secrets_included": false,
+  "checksums": "PASS",
+  "host_schedule": "systemd korsik-backup.timer every6hours UTC15minutes+<=2minutes randomdelay",
+  "host_schedule_current_state": "ACTIVE",
+  "timer_evidence": "tests/backup-timer-status.json",
+  "automatic_off_host_copy": false,
+  "retention_automatic_deletion": false,
+  "RPO_RTO": "No contractual RPO/RTO asserted; isolated restore context records actual rehearsal"
+}

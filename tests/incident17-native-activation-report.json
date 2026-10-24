@@ -1,0 +1,137 @@
+{
+  "schema": "korsik-incident17-native-activation-v1",
+  "status": "PASS",
+  "validation": {
+    "profile_id": "4953d2c8-52cc-4aed-80b7-66c6d0a941f2",
+    "configuration_fingerprint": "73febd1a0de367354efd8632dd4e3e7c775cec04dd2e7882bcfd5f27349a715a",
+    "checks": [
+      {
+        "name": "pipeline_code_identity",
+        "status": "PASS",
+        "seconds": 0.193,
+        "detail": {
+          "chunker_version": "korsik-physical-parent-chunker-v1",
+          "chunker_fingerprint": "64fcb0516ed01fb9f0a89ed6d2a0d8b6fb387500bc0640b4435c5f6a4cb02b2b",
+          "retrieval_policy_version": "korsik-hybrid-retrieval-guards-v1",
+          "retrieval_policy_fingerprint": "d49ea12797775b712857e149df907e0d5b552f066e1c2ff8b5e459936c298ecf",
+          "retrieval_module_source_fingerprint": "8ecf325b6fa1bd392f4edabe9b3666ae2a9bd84a0b33d32cdaf421570476ca35",
+          "generation_request_schema_version": "korsik-local-generation-request-v1",
+          "generation_runtime_source_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+        }
+      },
+      {
+        "name": "embedder_identity",
+        "status": "PASS",
+        "seconds": 0.066,
+        "detail": {
+          "fingerprint": "afc4aa45cd8d95d538404fd463d881c1cd522f3f92bfd42a6b2f6abde0a5b5d8",
+          "runtime": "onnxruntime-fp32-cpu"
+        }
+      },
+      {
+        "name": "reranker_identity",
+        "status": "PASS",
+        "seconds": 0.021,
+        "detail": {
+          "fingerprint": "30f61c1e0d16deb1d0f43ddaa49f5457bfbaf69f1b6ee27d0475a2b676f8f8ea",
+          "runtime": "onnxruntime-fp32-cpu"
+        }
+      },
+      {
+        "name": "generator_identity",
+        "status": "PASS",
+        "seconds": 0.022,
+        "detail": {
+          "fingerprint": "1fe278d9e50f5fe426c80efe3845911a3bbcc057d1f975c660a8c2f39c6d21d0",
+          "runtime": "torch-bf16-cuda",
+          "renderer_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b"
+        }
+      },
+      {
+        "name": "russian_embedding",
+        "status": "PASS",
+        "seconds": 0.099,
+        "detail": {
+          "dimensions": 384,
+          "norm": 1.000000007651774
+        }
+      },
+      {
+        "name": "russian_reranking",
+        "status": "PASS",
+        "seconds": 0.189,
+        "detail": {
+          "ordering": "relevant_first"
+        }
+      },
+      {
+        "name": "semantic_evaluation_report",
+        "status": "PASS",
+        "seconds": 0.002,
+        "detail": {
+          "status": "PASS",
+          "report_status": "PASS",
+          "pipeline_review_current": true,
+          "cases": 29,
+          "reviewer": "IMPLEMENTATION_REVIEW_WITH_INDEPENDENT_MANUAL_OUTPUT_REVIEW_NOT_COMPANY_HR",
+          "report_sha256": "c17acb211de19e3c150cedb0a41877434dd1891358684320247fa26abb555b51",
+          "scope": "IMPLEMENTATION_REVIEW_NOT_COMPANY_ACCEPTANCE"
+        }
+      },
+      {
+        "name": "grounded_generation_1",
+        "status": "PASS",
+        "seconds": 4.048,
+        "detail": {
+          "output": "Обед проходит с 12:00 до 13:00 [1].",
+          "output_tokens": 23,
+          "seconds": 3.948
+        }
+      },
+      {
+        "name": "grounded_generation_2",
+        "status": "PASS",
+        "seconds": 2.125,
+        "detail": {
+          "output": "Обратиться в отдел кадров [1].",
+          "output_tokens": 12,
+          "seconds": 2.094
+        }
+      },
+      {
+        "name": "grounded_generation_3",
+        "status": "PASS",
+        "seconds": 3.854,
+        "detail": {
+          "output": "Нужно уведомить HR в течение 2 дней, если изменился номер телефона [1].",
+          "output_tokens": 23,
+          "seconds": 3.811
+        }
+      }
+    ],
+    "scope": "RUNTIME_SMOKE_SYNTHETIC_NOT_CORPORATE_ACCEPTANCE",
+    "completed_at": "2026-10-24T08:27:13.420450+00:00",
+    "id": "1785e986-4411-4794-8d5f-be62d18247f8",
+    "status": "PASSED",
+    "version": 2,
+    "row_version": 2,
+    "created_at": "2026-10-24T08:27:01.508870+00:00",
+    "updated_at": "2026-10-24T08:27:13.423585+00:00",
+    "etag": "\"1785e986-4411-4794-8d5f-be62d18247f8:2\""
+  },
+  "context": {
+    "employee_id": "7807189a-9733-4f75-a340-f0ccd605b22f",
+    "conversation_id": "322ce5ee-9f3a-45bd-8663-dcb31bc54188",
+    "episode_id": "debd3af3-9edd-4156-b719-c46962823341",
+    "profile_id": "4953d2c8-52cc-4aed-80b7-66c6d0a941f2",
+    "validation_id": "1785e986-4411-4794-8d5f-be62d18247f8",
+    "data_classification": "SYNTHETIC_EMPLOYEE_FOR_DEMO"
+  },
+  "startup_retry": {
+    "first_attempt": "httpx.ConnectError before API ready",
+    "readyz_before_retry": 200,
+    "data_mutation_by_first_attempt": false
+  },
+  "company_hr_acceptance": false,
+  "messages_sent_by_test_to_actual_max_user": 0
+}

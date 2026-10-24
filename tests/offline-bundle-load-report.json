@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "observed_at": "2026-10-24T04:01:49.376435+00:00",
+  "method": "Actual docker load from delivered gzip archive, then inspect all canonical tags",
+  "manifest_sha256": "a7f9c38cdd38e03ba0cfe4c3e4b72678a867e7f2e648560ddc37081d4b7442d2",
+  "docker_load_exit_code": 0,
+  "docker_load_output_sha256": "6dda22ad311f31cebb4298b7e67a1ff97240489ce3c110d33e60800de4d9aefa",
+  "seconds": 74.566,
+  "canonical_image_ids": {
+    "korsik-app:local": "sha256:38206fd75ddc5b09704d59dbe58734ef9ebf2b629133cdacb0cc44dd0a72c5d8",
+    "korsik-web:local": "sha256:16438bcef011b1373c6dcd0fe0740c8322546b9796bd366a0b951d76ef505a88",
+    "korsik-tunnel:local": "sha256:dda27e9f3345ea6e9e67a0d5cc792d8c05baaa893712549c1bff321973c7b534",
+    "korsik-models:cpu": "sha256:ef4e2d9a7e2581770b2b14fdb6b24cda0314f25324031acee1b7477270a6d88e",
+    "korsik-generator:local": "sha256:9c8f20894ee044e0a3bf1b7d826c1733915674e8b8043bd92442a47ab793c079",
+    "korsik-parser:local": "sha256:edbd38b7ef991b1b4cf7610138371a8153499ace353a563571d0a6916ef2be14",
+    "korsik-parser:structure": "sha256:e5d0b9386798becd49aef250a3f6d18d51daab51621e12612eaae8664404f5cf",
+    "postgres:17-alpine": "sha256:ab20e934b27ba3ff927c1b4c9ff8cf6c32f315f743efe68dd3441182a87fb085",
+    "qdrant/qdrant:v1.20.0": "sha256:8a80c5500151ab2b08eb5874698b81b6b8addbc53ef4fb0c47f516680cf413d2"
+  },
+  "matches_manifest": true,
+  "external_pull": false,
+  "containers_started": 0,
+  "scope": "Archive ingestion on prepared VM; not a clean-OS or physical air-gap transfer test"
+}

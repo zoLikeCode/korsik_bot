@@ -1,0 +1,151 @@
+.dialog-workspace .message-scroll .message.employee-message {
+  align-self: flex-start;
+  background: #e4f4e7;
+  border: 1px solid #94c8a1;
+  border-radius: 4px 16px 16px;
+  color: #173f26;
+}
+.dialog-workspace .message-scroll .message.korsik-message {
+  align-self: flex-end;
+  background: #e3efff;
+  border: 1px solid #9dbce4;
+  border-radius: 16px 4px 16px 16px;
+  color: #173c68;
+}
+.dialog-workspace .message-scroll .message.employee-message .message-text,
+.dialog-workspace .message-scroll .message.employee-message .message-author {
+  color: #173f26;
+}
+.dialog-workspace .message-scroll .message.korsik-message .message-text,
+.dialog-workspace .message-scroll .message.korsik-message .message-author {
+  color: #173c68;
+}
+.dialog-workspace .message-scroll .message .message-author time {
+  color: inherit;
+  opacity: 0.8;
+}
+.dialog-problem-count {
+  flex: none;
+  margin-left: auto;
+  min-width: 26px;
+  padding: 4px 8px;
+  border-radius: 20px;
+  background: #ba253b;
+  color: #fff;
+  font-weight: 750;
+  font-size: 13px;
+  text-align: center;
+}
+.dialog-unanswered-badge {
+  display: inline-flex;
+  margin-top: 12px;
+  padding: 5px 9px;
+  border-radius: 7px;
+  background: #b3293c;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 650;
+}
+.dialog-reply-action {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0 0 auto;
+  padding: 4px 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+.dialog-reply-action:hover,
+.dialog-reply-action:focus-visible {
+  opacity: 1;
+  text-decoration: underline;
+}
+.dialog-message-quote {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  border-left: 3px solid currentColor;
+  background: #ffffff70;
+  padding: 8px 10px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.dialog-message-quote span {
+  font-weight: 700;
+}
+.dialog-compose-quote {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  border-left: 3px solid #417dc5;
+  background: var(--surface, #f4f7fc);
+  padding: 10px 18px;
+  margin: 0 20px;
+  font-size: 13px;
+}
+.dialog-compose-quote p {
+  margin: 4px 0 0;
+  max-height: 60px;
+  overflow: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+html[data-theme="dark"]
+  .dialog-workspace
+  .message-scroll
+  .message.employee-message {
+  background: #183c29;
+  border-color: #4f8b60;
+  color: #ddf5e2;
+}
+html[data-theme="dark"]
+  .dialog-workspace
+  .message-scroll
+  .message.korsik-message {
+  background: #193654;
+  border-color: #537fa9;
+  color: #e0efff;
+}
+html[data-theme="dark"]
+  .dialog-workspace
+  .message-scroll
+  .message.employee-message
+  .message-text,
+html[data-theme="dark"]
+  .dialog-workspace
+  .message-scroll
+  .message.employee-message
+  .message-author {
+  color: #ddf5e2;
+}
+html[data-theme="dark"]
+  .dialog-workspace
+  .message-scroll
+  .message.korsik-message
+  .message-text,
+html[data-theme="dark"]
+  .dialog-workspace
+  .message-scroll
+  .message.korsik-message
+  .message-author {
+  color: #e0efff;
+}
+html[data-theme="dark"] .dialog-message-quote {
+  background: #ffffff0c;
+}
+@media (max-width: 600px) {
+  .dialog-workspace .message-scroll .message {
+    max-width: 95%;
+  }
+  .dialog-compose-quote {
+    margin: 0 10px;
+  }
+}

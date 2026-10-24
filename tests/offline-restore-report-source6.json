@@ -1,0 +1,104 @@
+{
+  "schema": "korsik-offline-restore-v1",
+  "checks": [
+    {
+      "name": "egress_dns_huggingface.co",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "egress_dns_api.openai.com",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "name": "encoder_cold_start",
+      "status": "PASS",
+      "detail": {
+        "status": "READY",
+        "artifact_fingerprint": null,
+        "runtime": "onnxruntime-fp32-cpu",
+        "profile": null
+      }
+    },
+    {
+      "name": "reranker_cold_start",
+      "status": "PASS",
+      "detail": {
+        "status": "READY",
+        "artifact_fingerprint": null,
+        "runtime": "onnxruntime-fp32-cpu",
+        "profile": null
+      }
+    },
+    {
+      "name": "generator_cold_start",
+      "status": "PASS",
+      "detail": {
+        "status": "READY",
+        "artifact_fingerprint": null,
+        "runtime": "torch-bf16-cuda",
+        "profile": null
+      }
+    },
+    {
+      "name": "parser_cold_start",
+      "status": "PASS",
+      "detail": {
+        "status": "READY",
+        "artifact_fingerprint": null,
+        "runtime": null,
+        "profile": "cpu_structure"
+      }
+    },
+    {
+      "name": "offline_russian_image_only_pdf_ocr",
+      "status": "PASS",
+      "detail": {
+        "seconds": 7.97,
+        "errors": 0,
+        "fixture": "SYNTHETIC_NOT_COMPANY_OCR_ACCEPTANCE"
+      }
+    },
+    {
+      "name": "restore_vector_projection_from_sql",
+      "status": "PASS",
+      "detail": {
+        "status": "OK",
+        "snapshot_id": "d85136e1-6aae-4dc6-889f-8f673451d2d0",
+        "revisions": 3,
+        "mode": "DENSE_SPARSE",
+        "indexed": 81,
+        "encoder_fingerprint": "afc4aa45cd8d95d538404fd463d881c1cd522f3f92bfd42a6b2f6abde0a5b5d8",
+        "collection": "korsik_granite97_r2_v1"
+      }
+    },
+    {
+      "name": "offline_full_answer_from_restored_corpus",
+      "status": "PASS",
+      "detail": {
+        "mode": "LOCAL_GENERATED",
+        "citations": 3,
+        "reason": "MECHANICAL_CHECKS_PASSED"
+      }
+    },
+    {
+      "name": "offline_feedback_analysis",
+      "status": "PASS",
+      "detail": {
+        "status": "PENDING_HR_REVIEW",
+        "training_data_kind": null,
+        "quality": "Synthetic baseline; HR decision required"
+      }
+    },
+    {
+      "name": "offline_dashboard_from_restored_sql",
+      "status": "PASS",
+      "detail": {
+        "computed": true
+      }
+    }
+  ],
+  "max_transport": "NOT_STARTED_NO_OUTGOING_MESSAGES",
+  "status": "PASS"
+}

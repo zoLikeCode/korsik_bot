@@ -1,0 +1,64 @@
+{
+  "status": "COMPLETED",
+  "mode": "LOCAL_GENERATED",
+  "reason": "MECHANICAL_CHECKS_PASSED",
+  "answer_id": "edd591d3-7854-47a6-9433-62e4fe6e5c69",
+  "employee_id": "7807189a-9733-4f75-a340-f0ccd605b22f",
+  "citation_count": 3,
+  "no_max_binding_created": true,
+  "browser_evidence": "server-employee-local-answer-current.png",
+  "active_profile_id": "9f53ccae-0e30-474d-9efb-aefc37eccebb",
+  "active_configuration_fingerprint": "6424ca5cf3e2f935f745c3378902e52c35f294f39e4045c789386e427a7f9121",
+  "profile_activated_at": "2026-10-24T00:27:46.591096+00:00",
+  "answer_created_at": "2026-10-24T00:29:47.730250+00:00",
+  "generator_repository": "Qwen/Qwen3.5-4B",
+  "generator_bundle": "generator-4b",
+  "generator_fingerprint": "1fe278d9e50f5fe426c80efe3845911a3bbcc057d1f975c660a8c2f39c6d21d0",
+  "generator_matches_active_bundle": true,
+  "pipeline_matches_active_profile": true,
+  "renderer_matches_deployed_source": true,
+  "request_payload_matches_runtime": true,
+  "created_after_profile_activation": true,
+  "generation_attempted": true,
+  "generation_guard": null,
+  "timings": {
+    "embedding_seconds": 0.141884,
+    "vector_query_seconds": 0.053442,
+    "rerank_preparation_seconds": 0.255248,
+    "rerank_seconds": 6.537903,
+    "lexical_seconds": 0.11604,
+    "retrieval_seconds": 7.62161,
+    "generation_request_seconds": 11.449132,
+    "generation_queue_seconds": 0.0,
+    "generation_inference_seconds": 11.372,
+    "generation_runtime_request_seconds": 11.4129,
+    "pipeline_seconds": 19.102412
+  },
+  "request_trace": {
+    "generation_request_schema_version": "korsik-local-generation-request-v1",
+    "generation_request_payload_fingerprint": "1653473c7c083a44149ea83bbb5c700e95662f8196126a166319fa0c8f3d05ed",
+    "runtime_request_payload_fingerprint": "1653473c7c083a44149ea83bbb5c700e95662f8196126a166319fa0c8f3d05ed",
+    "renderer_version": "korsik-qwen-cited-russian-v1",
+    "renderer_fingerprint": "89b51bcfb61493c9b2d9cd176ca8aad36dcae9d0fa4f21374beaa4074f6aef1b",
+    "rendered_prompt_fingerprint": "65f92625f15c9dc234333a33eefc4e5ee7a2322eff3f13bd55cceff09466a825",
+    "input_tokens": 1155,
+    "output_tokens": 64
+  },
+  "source_links": [
+    {
+      "path": "/api/v1/citations/1124dfa6-0d6f-4c06-9d40-81ae347c1e4d/source",
+      "http_status": 200
+    },
+    {
+      "path": "/api/v1/citations/798425bb-9056-4b98-bfbf-3d4c5971e1ab/source",
+      "http_status": 200
+    },
+    {
+      "path": "/api/v1/citations/6e0dabfd-e5df-4029-92be-63f29e493043/source",
+      "http_status": 200
+    }
+  ],
+  "source_links_checked": 3,
+  "acceptance_status": "PASS",
+  "generation_outcome": "LOCAL_GENERATED_WITH_CURRENT_REQUEST_TRACE"
+}

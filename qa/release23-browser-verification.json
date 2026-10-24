@@ -1,0 +1,31 @@
+{
+  "schema": "korsik-release23-browser-verification-v1",
+  "observed_at": "2026-10-24T18:46:32.458326+00:00",
+  "status": "PASS",
+  "local_url": "http://127.0.0.1:5173/scenarios",
+  "public_url": "https://app.korsik-demo.ru/scenarios",
+  "checks": {
+    "labels": "PASS constructor/nav/window/newscenario",
+    "card_publication_status": "PASS published parent remains published with newer draft; no draft badge on cards",
+    "ellipsis_menu": "PASS rename/delete separate from card opening; public menu verified",
+    "scenario_rename": "PASS local real UI card updated",
+    "scenario_delete": "PASS local disposable card hidden after confirmation",
+    "version_rename_and_autosave": "PASS rename together with graph count2 retains both",
+    "draft_delete": "PASS local last DRAFT removed, program empty state shown",
+    "repeat_settings": "PASS ON_BOT_START default3, custom2, START_DATE retained2",
+    "user_repeat_semantics_confirmed": "unfinished-step reminders; counter resets on next step",
+    "legacy_draft_edit": "PASS real UI autosave and reopen; entire graph compared, only selected text changed, calendar-v1/source fields preserved",
+    "published_version": "PASS disabled metadata and launch/count fields, no delete button, publish disabled, simulation enabled",
+    "public_constructor": "PASS authenticated mainHTTPS new title/button/card Published/menu loaded"
+  },
+  "screenshots": [
+    "release23-cards-local.png",
+    "release23-version-settings-local.png",
+    "release23-legacy-edit-local.png",
+    "release23-constructor-public.png"
+  ],
+  "production_business_mutations": false,
+  "MAX_messages_sent": 0,
+  "model_requests": 0,
+  "native_MAX_launch_verified": false
+}

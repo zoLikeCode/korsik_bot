@@ -1,0 +1,16 @@
+{
+  "observed_at": "2026-10-23T23:49:54.461032+00:00",
+  "backend_image": "sha256:8b2f663fd8d977b61fe816a682a19e4bcd6011023d0a08913893f3f5156eb35a",
+  "generator_model": "Qwen/Qwen3.5-4B",
+  "generator_fingerprint": "1fe278d9e50f5fe426c80efe3845911a3bbcc057d1f975c660a8c2f39c6d21d0",
+  "source_sha256": {
+    "backend/korsik/retrieval.py": "c158cfeb0349e1199a250681eb021a4a5823a5d19029c9769286e1fab010713d",
+    "backend/korsik/worker.py": "e71b3f7a0b13f0bfb8d63a2af1dd979d500533120b9cc5f828771ff0c51b7302",
+    "backend/korsik/chat.py": "5c51f29fcfce73e57a9bebdd61a62a795caea58c14b23b5ad65f28b5a1892995",
+    "backend/korsik/auth.py": "5086440b46178ce40a3114071d49b32d7da6acfb7eadf83f3fdd0e9864f4e6f7",
+    "backend/korsik/settings.py": "0bc2254de93fad6795489a210566e16b3b10b1a6d2dcdef7baaf21b7e7ba394a",
+    "services/model_server/app.py": "afb1c4e9c57ef70f1ca206da75218386e63ad890c99241a229f48c1ed68ef487"
+  },
+  "workload": "One active synthetic unbound employee turn, 100 prompts; actual HTTP and durable worker; not 100 independent semantic acceptance questions",
+  "MAX_sends": 0
+}

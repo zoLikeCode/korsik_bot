@@ -1,0 +1,35 @@
+{
+  "schema": "korsik-release27-local-browser-v1",
+  "status": "PASS",
+  "observed_at": "2026-10-24T21:46:59.431554+00:00",
+  "environment": "127.0.0.1:5173 with local SQLite API, CORE and MAX disabled",
+  "synthetic_records_only": true,
+  "production_messages_sent": 0,
+  "production_business_mutations": false,
+  "checks": {
+    "employee_default_profile_identity_photo_email_unit_manager_photo_dates": true,
+    "manager_default_profile_identity_photo_email_unit": true,
+    "manager_team_two_photos_only_one_current_adaptation_badge": true,
+    "responsive_profile_390px": true,
+    "employee_and_manager_no_HR_admin_navigation": true,
+    "HEAD_has_HR_workspace_and_HR_accounts": true,
+    "HEAD_creates_org_unit_within_scope": true,
+    "HEAD_creates_one_use_HR_invitation": true,
+    "invitation_scope_caption_and_url_shown_once": true,
+    "analytics_details_disclosure_tables_actions_absent": true,
+    "HEAD_frequent_problems_small_groups_honestly_suppressed": true,
+    "broadcast_explicit_employee_plus_unit_deduplicated_to_three": true,
+    "broadcast_native_mention_inserted_and_counted": true,
+    "broadcast_calendar_time_and_timezone_preserved": true,
+    "broadcast_saves_three_recipients_WAITING_with_zero_accepted": true
+  },
+  "screenshots": [
+    "qa/release27-employee-profile-local.png",
+    "qa/release27-manager-team-local.png",
+    "qa/release27-manager-mobile-local.png",
+    "qa/release27-hr-invitation-local.png",
+    "qa/release27-broadcast-form-local.png",
+    "qa/release27-broadcast-waiting-local.png"
+  ],
+  "limits": "390px iframe exercises responsive browser layout, not a native MAX device launch. Signed MAX authentication/redemption and transport ACK/UNKNOWN semantics are verified by automated contracts; no real messages sent."
+}

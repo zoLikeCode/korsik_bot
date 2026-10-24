@@ -1,0 +1,368 @@
+{
+  "schema": "korsik-ru-ingress-https-v1",
+  "status": "PARTIAL_EXTERNAL_TLS_PATH_UNSTABLE",
+  "observed_at": "2026-10-24T12:24:29.801146+00:00",
+  "domain": "app.korsik-demo.ru",
+  "IPv4": "212.57.127.220",
+  "upstream": "http://127.0.0.1:18080",
+  "TLS_connection": "Public IPv4 with exact domain SNI and normal OS CA+hostname validation; no insecure option",
+  "authoritative_DNS": [
+    {
+      "server": "ns1.timeweb.ru",
+      "type": "A",
+      "authoritative": true,
+      "rcode": "NOERROR",
+      "answers": [
+        "212.57.127.220"
+      ]
+    },
+    {
+      "server": "ns1.timeweb.ru",
+      "type": "AAAA",
+      "authoritative": true,
+      "rcode": "NOERROR",
+      "answers": []
+    },
+    {
+      "server": "ns2.timeweb.ru",
+      "type": "A",
+      "authoritative": true,
+      "rcode": "NOERROR",
+      "answers": [
+        "212.57.127.220"
+      ]
+    },
+    {
+      "server": "ns2.timeweb.ru",
+      "type": "AAAA",
+      "authoritative": true,
+      "rcode": "NOERROR",
+      "answers": []
+    },
+    {
+      "server": "ns3.timeweb.org",
+      "type": "A",
+      "authoritative": true,
+      "rcode": "NOERROR",
+      "answers": [
+        "212.57.127.220"
+      ]
+    },
+    {
+      "server": "ns3.timeweb.org",
+      "type": "AAAA",
+      "authoritative": true,
+      "rcode": "NOERROR",
+      "answers": []
+    },
+    {
+      "server": "ns4.timeweb.org",
+      "type": "A",
+      "authoritative": true,
+      "rcode": "NOERROR",
+      "answers": [
+        "212.57.127.220"
+      ]
+    },
+    {
+      "server": "ns4.timeweb.org",
+      "type": "AAAA",
+      "authoritative": true,
+      "rcode": "NOERROR",
+      "answers": []
+    }
+  ],
+  "google_public_DoH": {
+    "A": [
+      "212.57.127.220"
+    ],
+    "AAAA": []
+  },
+  "TLS": {
+    "protocol": "TLSv1.3",
+    "cipher": "TLS_AES_256_GCM_SHA384",
+    "certificate_sha256": "91c38abf05d1fe416d918eca1061b94457c965f4b171b3a0ac724dcaa4fbef98",
+    "issuer": {
+      "countryName": "US",
+      "organizationName": "Let's Encrypt",
+      "commonName": "YE1"
+    },
+    "not_before": "Oct 24 10:59:30 2026 GMT",
+    "not_after": "Jan 22 10:59:29 2027 GMT",
+    "subject_alt_names": [
+      "app.korsik-demo.ru"
+    ],
+    "public_CA_validation": true,
+    "hostname_validation": true
+  },
+  "supported_modern_TLS_tested": [
+    "TLSv1.2",
+    "TLSv1.3"
+  ],
+  "authoritative_DNS_all_four_consistent": true,
+  "DNS_pending_checks": [],
+  "nginx_config_sha256": "5bd48b618f6b38c4ea8e0f15c4d4cfe6e6d4835e04aec69ea8f9c6c22b2aa924",
+  "preexisting_nginx_files_unchanged": 20,
+  "unknown_ISP_sites_modified": false,
+  "files": [
+    {
+      "path": "/assets/Chat-C8FsKlyi.js",
+      "status": 200,
+      "bytes": 18711,
+      "sha256": "aacf9cdc190ce6f93bb9d281773b650d87a0b9f69a1f31543e35d100b94107e6",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/assets/Dashboard-ngxkKejO.js",
+      "status": 200,
+      "bytes": 10821,
+      "sha256": "f0520cd04b02cb95fad714595806c82042e06af9de944342c9f065899e9d2816",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/assets/Employees-BjBvLicj.js",
+      "status": 200,
+      "bytes": 50681,
+      "sha256": "d892408d51239ff15ee272120f12de2cb646d320a7250dffa02c43918f6b5192",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/assets/FeedbackReview-CVB7CPm5.js",
+      "status": 200,
+      "bytes": 6264,
+      "sha256": "f58cacca4f54f8c21e29757346fd4e21467269e27c6c03a0497756cedc33c9ea",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/assets/Knowledge-DYzDogOg.js",
+      "status": 200,
+      "bytes": 91771,
+      "sha256": "b0635fd84c6761a74c5796f4b3e479f8f684554989e107308626fdfcd167df76",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/assets/PrincipalBindings-Duk0ruQK.js",
+      "status": 200,
+      "bytes": 4846,
+      "sha256": "536c60c761847f7edee006d84464c68c050520664e5090efbf4e60e8885c463f",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/assets/Reports-CWRDhHgS.js",
+      "status": 200,
+      "bytes": 9182,
+      "sha256": "f2ae912d2567d4b4ef147075680c11482ce8a213029b4149c8e050ea864a56fe",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/assets/Scenarios-BnuhLJ6X.css",
+      "status": 200,
+      "bytes": 15869,
+      "sha256": "1243b61a71923367ce620fb944427c80c9b03e863e18374fcf4f74d6d06f63fc",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/assets/Scenarios-DNUVeA-L.js",
+      "status": 200,
+      "bytes": 224964,
+      "sha256": "2825d90e2856c07be3dc49ecd353ec81394e2d9d16a76a58bbaaeca2905eeb40",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/assets/Surveys-BXvtv4kP.js",
+      "status": 200,
+      "bytes": 24313,
+      "sha256": "7b726a94502be9ad24b8dab0689e9961fd26e4bab34dea561fa5ad931c1e17e0",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/assets/check-check-BLQ3YbZH.js",
+      "status": 200,
+      "bytes": 175,
+      "sha256": "0eb61c3f2506ac96831b8d08a7c834a7fe2db648b2ded525eab462de626865f3",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/assets/copy-CRYYf4DW.js",
+      "status": 200,
+      "bytes": 228,
+      "sha256": "ff2bfac392064599aad26130b6be96faa6247ca2e95b82e37d981de494c6c21e",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/assets/download-B5JI6BFY.js",
+      "status": 200,
+      "bytes": 259,
+      "sha256": "c00f08a3314213d51f80cec256dbefeecd0e00b784f45a75753c2f9744a73f71",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/assets/employmentTime-CW1iF-fK.js",
+      "status": 200,
+      "bytes": 1284,
+      "sha256": "9d54b1a08027d9979977f0aa39277ac916cf631c89eeef805666b7f84b1c517e",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/assets/index-BbU4aPXi.css",
+      "status": 200,
+      "bytes": 68950,
+      "sha256": "847bd7c91b31cfcaff8a004dbf20e45683f833753131481d3d32f68f2dee2e79",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/assets/index-DGrQkgKW.js",
+      "status": 200,
+      "bytes": 295702,
+      "sha256": "f4adf5be3b680b9184c37debb3d9d3848c7292b377e560dbed6e86e90c1d7d9f",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/assets/plus-FMWIgbmL.js",
+      "status": 200,
+      "bytes": 150,
+      "sha256": "469b223c139bfc30b74ff9c0edaa7c6e8e3cb0a2cd625205024ffa6101469c8f",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/assets/refresh-ccw-CEUVpf63.js",
+      "status": 200,
+      "bytes": 317,
+      "sha256": "55d614c2700053f65b181b5ba1deacb5122127728adbba23d6efc4e6e800f9ee",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/assets/scenario-DZpNvHKL.js",
+      "status": 200,
+      "bytes": 6405,
+      "sha256": "8d0ebf34cbb501b3786528da14c542e406fc784dec054ba4de2f21c100288d03",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/assets/send-CPrJFQxW.js",
+      "status": 200,
+      "bytes": 369,
+      "sha256": "3f40cb63f0858b4d684ecd6841ba0695b0857511b59262af85a521fab7935f96",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/assets/trash-2-DTux7RFT.js",
+      "status": 200,
+      "bytes": 354,
+      "sha256": "3b168d53fce45888195a3569541666953c303090db5ea19044ba781c914c7718",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/assets/upload-j8p32iPK.js",
+      "status": 200,
+      "bytes": 254,
+      "sha256": "c88864a7af22cd2cfa3710ba74c473515a95803c05f330cdde3bee043d564250",
+      "matches_local_dist": true
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 644,
+      "sha256": "894847a87d234eb9ddaa31ece9455727b7850fbb9102ae061bdba01a53b12f8c",
+      "matches_local_dist": true
+    }
+  ],
+  "files_count": 23,
+  "CSP_MAX_preserved": true,
+  "no_X_Frame_Options_block": true,
+  "HSTS": "max-age=86400",
+  "http_application_status": 308,
+  "http_app_content_served": false,
+  "HTTP01_route_status": 200,
+  "HTTP01_probe_removed": true,
+  "wrong_Host_status": 421,
+  "unauthenticated_session_status": 401,
+  "user_login_performed": false,
+  "credentials_used_for_HTTP": false,
+  "MAX_API_calls_or_messages": 0,
+  "application_or_Vast_runtime_changes": false,
+  "certbot_timer": {
+    "enabled": "enabled",
+    "active": "active"
+  },
+  "renewal_hook_installed": true,
+  "access_log": "off",
+  "nginx_error_log_level": "crit",
+  "apex_TLS_issued": false,
+  "apex_AAAA_parking_issue_not_fixed_by_this_task": true,
+  "physical_reboot_tested": false,
+  "company_accepted": false,
+  "scope": "Authoritative DNS, public CA/domainSNI TLS, origin23assets, HTTPredirect/ACME, preserved CSP, nginx state; real browserlogin is a separate root proof.",
+  "earlier_external_client_probe": {
+    "status": "INCONCLUSIVE_NETWORK_TIMEOUT",
+    "observed_at": "2026-10-24T12:06:07.233431+00:00",
+    "execution": "Outside VPS, direct publicIPv4 with exact domainSNI and ordinary CA+hostname verification, one keepalive connection",
+    "forced_IP_resolution": true,
+    "insecure_TLS_options": false,
+    "files_checked": 0,
+    "all_local_dist_files_SHA256_match": false,
+    "error_type": "TimeoutError",
+    "credentials_or_MAX_calls": 0,
+    "earlier_distinct_connection_attempt": "TLS handshake timeout; not counted as a passed all-files check",
+    "first_external_root_GET": "Previously observed200 with CA+hostname validated and correctDGrentry"
+  },
+  "root_confirmed_public_curl": {
+    "status": "PASS",
+    "source": "Root actual curl result during bounded headers-only capture",
+    "approximately_UTC": "2026-10-24T12:23:30Z",
+    "HTTP_status": 200,
+    "ssl_verify_result": 0,
+    "seconds": 0.364,
+    "configuration_changes_to_resolve_transient": false,
+    "cause": "NOT_DETERMINED"
+  },
+  "renewal_dry_run": {
+    "status": "PASS",
+    "certbot_renew_dry_run_exit_code": 0,
+    "domain": "app.korsik-demo.ru",
+    "staging_ACME_test": true,
+    "run_deploy_hooks": true,
+    "actual_production_certificate_replaced": false,
+    "recorded_at": "2026-10-24T12:09:32.796236+00:00"
+  },
+  "network_diagnostics": {
+    "observed_UTC": "2026-10-24T12:10:01Z",
+    "load_average_1m": 0.0,
+    "available_RAM_MiB": 439,
+    "disk_used_percent": 21,
+    "OOM_kernel_entries": 0,
+    "nginx_and_tunnel": "active",
+    "local_upstream_unauthenticated_session": {
+      "status": 401,
+      "seconds": 0.335
+    },
+    "local_verified_TLS_unauthenticated_session": {
+      "status": 401,
+      "seconds": 0.439
+    },
+    "fail2ban": {
+      "jails": [
+        "sshd"
+      ],
+      "banned_count": 0,
+      "current_administrator_source_banned": false
+    },
+    "TCP_ListenOverflows": 0,
+    "TCP_ListenDrops": 0,
+    "cumulative_TCPTimeouts": 425,
+    "cumulative_TCPSynRetrans": 98,
+    "cumulative_RetransSegs": 487,
+    "cumulative_counters_are_not_attributed_to_this_incident": true,
+    "dedicated_nginx_error_log_bytes": 0
+  },
+  "browser_login_verified_by_this_report": false,
+  "server_TLS_DNS_assets_status": "PASS",
+  "latest_root_external_observation": {
+    "observed_from": "Root actual browser/curl and frontend Mac probe",
+    "status": "TLS_HANDSHAKE_FLAPPING_BEFORE_HTTP",
+    "normal_auth_from_Vast": "PASS_REPORTED_BY_FRONTEND",
+    "cause": "NOT_DETERMINED",
+    "nginx_or_certificate_changes_to_work_around": false,
+    "recorded_at": "2026-10-24T12:38:26.080994+00:00"
+  }
+}

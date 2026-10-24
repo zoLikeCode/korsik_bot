@@ -1,0 +1,500 @@
+{
+  "schema": "korsik-release28-public-readonly-v1",
+  "status": "PASS",
+  "observed_at": "2026-10-24T23:07:49.287497+00:00",
+  "origin": "https://app.korsik-demo.ru",
+  "normal_CA_and_hostname_verification": true,
+  "insecure_TLS_options": false,
+  "all_requests_GET": true,
+  "MAX_messages_sent": 0,
+  "business_data_edited": false,
+  "sessions_created_or_revoked": 0,
+  "requests": [
+    {
+      "path": "/THIRD_PARTY_NOTICES.txt",
+      "status": 200,
+      "bytes": 1073,
+      "seconds": 0.395
+    },
+    {
+      "path": "/assets/Broadcasts-CAmiDYiV.css",
+      "status": 200,
+      "bytes": 3667,
+      "seconds": 0.382
+    },
+    {
+      "path": "/assets/Broadcasts-CI9riYeV.js",
+      "status": 200,
+      "bytes": 10897,
+      "seconds": 0.384
+    },
+    {
+      "path": "/assets/Chat-C7P8NGek.js",
+      "status": 200,
+      "bytes": 20795,
+      "seconds": 0.4
+    },
+    {
+      "path": "/assets/Chat-DlzB7zEh.css",
+      "status": 200,
+      "bytes": 2826,
+      "seconds": 0.375
+    },
+    {
+      "path": "/assets/Dashboard-BrdkyB6H.js",
+      "status": 200,
+      "bytes": 12066,
+      "seconds": 0.383
+    },
+    {
+      "path": "/assets/Dashboard-CkoI2IAe.css",
+      "status": 200,
+      "bytes": 3100,
+      "seconds": 0.383
+    },
+    {
+      "path": "/assets/EmployeeAvatar-SPuVf-c4.js",
+      "status": 200,
+      "bytes": 369,
+      "seconds": 0.46
+    },
+    {
+      "path": "/assets/Employees-CSNSHyB7.css",
+      "status": 200,
+      "bytes": 4080,
+      "seconds": 0.382
+    },
+    {
+      "path": "/assets/Employees-Dk0OqJmg.js",
+      "status": 200,
+      "bytes": 20305,
+      "seconds": 0.376
+    },
+    {
+      "path": "/assets/HrAccounts-TE5pjoay.css",
+      "status": 200,
+      "bytes": 591,
+      "seconds": 0.39
+    },
+    {
+      "path": "/assets/HrAccounts-z9GgQUwe.js",
+      "status": 200,
+      "bytes": 6935,
+      "seconds": 0.384
+    },
+    {
+      "path": "/assets/Knowledge-BeZqp0px.js",
+      "status": 200,
+      "bytes": 24941,
+      "seconds": 0.4
+    },
+    {
+      "path": "/assets/Knowledge-C8W9gJne.css",
+      "status": 200,
+      "bytes": 1238,
+      "seconds": 0.394
+    },
+    {
+      "path": "/assets/Organization-DD_X4g1v.css",
+      "status": 200,
+      "bytes": 4717,
+      "seconds": 0.389
+    },
+    {
+      "path": "/assets/Organization-DzSAz5HJ.js",
+      "status": 200,
+      "bytes": 17392,
+      "seconds": 0.534
+    },
+    {
+      "path": "/assets/PrincipalBindings-76N8urWy.js",
+      "status": 200,
+      "bytes": 4675,
+      "seconds": 0.385
+    },
+    {
+      "path": "/assets/Profile-C0t9GyZm.css",
+      "status": 200,
+      "bytes": 1462,
+      "seconds": 0.531
+    },
+    {
+      "path": "/assets/Profile-Vxi83ucH.js",
+      "status": 200,
+      "bytes": 3463,
+      "seconds": 0.511
+    },
+    {
+      "path": "/assets/RussiaTimeZoneField-BwKD8p1Q.js",
+      "status": 200,
+      "bytes": 2217,
+      "seconds": 0.515
+    },
+    {
+      "path": "/assets/Scenarios-DSRS4haV.js",
+      "status": 200,
+      "bytes": 246217,
+      "seconds": 0.715
+    },
+    {
+      "path": "/assets/Scenarios-DsMAbV4o.css",
+      "status": 200,
+      "bytes": 16605,
+      "seconds": 0.402
+    },
+    {
+      "path": "/assets/Surveys-D8EPEjx2.css",
+      "status": 200,
+      "bytes": 1032,
+      "seconds": 0.375
+    },
+    {
+      "path": "/assets/Surveys-DknKpCZ1.js",
+      "status": 200,
+      "bytes": 28431,
+      "seconds": 0.407
+    },
+    {
+      "path": "/assets/chevron-left-COWzayqV.js",
+      "status": 200,
+      "bytes": 126,
+      "seconds": 0.386
+    },
+    {
+      "path": "/assets/copy-BMx43wvK.js",
+      "status": 200,
+      "bytes": 233,
+      "seconds": 0.382
+    },
+    {
+      "path": "/assets/download-CKE_CZk3.js",
+      "status": 200,
+      "bytes": 259,
+      "seconds": 0.505
+    },
+    {
+      "path": "/assets/index-DNK7eQur.js",
+      "status": 200,
+      "bytes": 304926,
+      "seconds": 0.555
+    },
+    {
+      "path": "/assets/index-DT9gNZXZ.css",
+      "status": 200,
+      "bytes": 92320,
+      "seconds": 1.493
+    },
+    {
+      "path": "/assets/play-D5fKFRiu.js",
+      "status": 200,
+      "bytes": 131,
+      "seconds": 0.514
+    },
+    {
+      "path": "/assets/plus-Bx-SxxGO.js",
+      "status": 200,
+      "bytes": 150,
+      "seconds": 0.384
+    },
+    {
+      "path": "/assets/refresh-cw-ipQfYUkM.js",
+      "status": 200,
+      "bytes": 317,
+      "seconds": 0.382
+    },
+    {
+      "path": "/assets/trash-2-BF9pJIeD.js",
+      "status": 200,
+      "bytes": 354,
+      "seconds": 0.385
+    },
+    {
+      "path": "/assets/upload-pq3x-9gF.js",
+      "status": 200,
+      "bytes": 254,
+      "seconds": 0.485
+    },
+    {
+      "path": "/brand/korsik.png",
+      "status": 200,
+      "bytes": 858477,
+      "seconds": 0.855
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "bytes": 644,
+      "seconds": 8.258
+    },
+    {
+      "path": "/api/v1/auth/config",
+      "status": 200,
+      "bytes": 113,
+      "seconds": 0.617
+    },
+    {
+      "path": "/api/openapi.json",
+      "status": 200,
+      "bytes": 173576,
+      "seconds": 1.373
+    },
+    {
+      "path": "/api/v1/organization",
+      "status": 401,
+      "bytes": 90,
+      "seconds": 0.383
+    },
+    {
+      "path": "/internal/release28-readonly-probe",
+      "status": 404,
+      "bytes": 146,
+      "seconds": 0.396
+    },
+    {
+      "path": "/organization",
+      "status": 200,
+      "bytes": 644,
+      "seconds": 0.376
+    }
+  ],
+  "native_MAX_launch_tested": false,
+  "expected_native_profile_from_successful_deployment": {
+    "profile_id": "052c5a64-ac05-4286-a4c0-18e3fb1e77dc",
+    "status": "ACTIVE",
+    "configuration_fingerprint": "b922edb3703a1bfab392b1abf6c6e818b67720474daa022462e7796bd8a6d183",
+    "retrieval_module_sha256": "0f3d0ae22e1fa10f18cba7881d3c017a8034af581c3a0789a6dc482e1734d2c6",
+    "canonical_url": "https://app.korsik-demo.ru",
+    "secure_cookies": true,
+    "max_bot_url": "https://max.ru/id7725738542_2_bot"
+  },
+  "installed_quality_report_expected_sha256": "df11daefc64ec6cb71d8876694294a64c2391573acbe3494f07cd63eeee81795",
+  "native_profile_transition_performed": false,
+  "runtime_profile_independently_checked_by_final_runtime_report": false,
+  "auth_config_available": true,
+  "files": [
+    {
+      "path": "/THIRD_PARTY_NOTICES.txt",
+      "sha256": "023119ac20fb1c8c9930abe0bcd196989a1960388529a96fc43cebf96f07c9ff",
+      "bytes": 1073,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Broadcasts-CAmiDYiV.css",
+      "sha256": "484fea4c50877d2ce962e4cc1775dba21e82e526510f410a2daba2ccc6abada8",
+      "bytes": 3667,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Broadcasts-CI9riYeV.js",
+      "sha256": "0c2ef9895328b7a5a6b7b838949c99a58b645da2ca82f029d5af528acaae704d",
+      "bytes": 10897,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Chat-C7P8NGek.js",
+      "sha256": "c66856f1141c18c22a5c1b046968d35506bdb1d9bf6205f584ab7a91b0c4d5e2",
+      "bytes": 20795,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Chat-DlzB7zEh.css",
+      "sha256": "2e17514f22dccf025726bd7a62437303c1cf12e6638f0c2d825b3a72120cd63c",
+      "bytes": 2826,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Dashboard-BrdkyB6H.js",
+      "sha256": "c62443b84edb985631c9c649e0e26827f02403da6baf282fb8a74c04b4356958",
+      "bytes": 12066,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Dashboard-CkoI2IAe.css",
+      "sha256": "a287667d9e4566fa1544cd55fa0e59f9e863f5f2faedb829c9537abc00afc79e",
+      "bytes": 3100,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/EmployeeAvatar-SPuVf-c4.js",
+      "sha256": "df60ed1ca051ca02035746e231e56f3d7312a51a10252e993cd8d4a15c02cd7b",
+      "bytes": 369,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Employees-CSNSHyB7.css",
+      "sha256": "1cfe8b0b3cab60199d95d7b55d7c53e07e0c2688d114fc359fe18cf057789b8c",
+      "bytes": 4080,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Employees-Dk0OqJmg.js",
+      "sha256": "1d0dbbc3318b15465ea6fceba2657ddf63f9a1673d8b179c6d5049a3d1bdc95b",
+      "bytes": 20305,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/HrAccounts-TE5pjoay.css",
+      "sha256": "dc3de0822cf1f6bbd957a9847fb1c9ad924c6e38525ce7793cab13d28ccc421c",
+      "bytes": 591,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/HrAccounts-z9GgQUwe.js",
+      "sha256": "5d9a00e17abf27b717532a4c85551f3e41b2865635b33d6a5e083386455ca98b",
+      "bytes": 6935,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Knowledge-BeZqp0px.js",
+      "sha256": "7a37f5af699f71631cb53887ab1da47d1e228c4531d5b7fde7f495d931e06212",
+      "bytes": 24941,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Knowledge-C8W9gJne.css",
+      "sha256": "4df05d0a518e9e3453d715d014617e832feaf4dfe1bfac4711d4a69a75e10c70",
+      "bytes": 1238,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Organization-DD_X4g1v.css",
+      "sha256": "3a5d6ee5d060e12e0fd65e5b30e465024a1fc9aeffb76d5e23fefafb1289afba",
+      "bytes": 4717,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Organization-DzSAz5HJ.js",
+      "sha256": "8c130a335c456a8747e82bb8c5805edf3c7d412481713cd8681a0d16ec7b5e5f",
+      "bytes": 17392,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/PrincipalBindings-76N8urWy.js",
+      "sha256": "58fd0eac006a77f2cd3685585bccad5f89e56c4c1896b759a34dc575ed0e121f",
+      "bytes": 4675,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Profile-C0t9GyZm.css",
+      "sha256": "7c565ac1d8f8572645ca8618c4ba2f481e0aa327a96816af55d4ef7867eb5f27",
+      "bytes": 1462,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Profile-Vxi83ucH.js",
+      "sha256": "2e59684dcc07b14a2d7a521c7cd65cdcd31b8989e95dee5fce81693a34507edb",
+      "bytes": 3463,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/RussiaTimeZoneField-BwKD8p1Q.js",
+      "sha256": "54030c0ed917e176e846381c8c12334b80cd10e3060e49cdfe3d98f0a817e193",
+      "bytes": 2217,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Scenarios-DSRS4haV.js",
+      "sha256": "bb1118b1418b593e13242dcc036c25e6ee949d429c962f2c5ee76ea8c585e560",
+      "bytes": 246217,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Scenarios-DsMAbV4o.css",
+      "sha256": "b4e2ce9c6a09eab3370e321c80124a0278b618cd26b5e3ca68b3aae2a28ec891",
+      "bytes": 16605,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Surveys-D8EPEjx2.css",
+      "sha256": "56902cd21c5ec270707b85d4a720ec31e5a7497b1ff899f9ba30ebd31d663836",
+      "bytes": 1032,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/Surveys-DknKpCZ1.js",
+      "sha256": "cceb160f7cf0e8c28858d7b63d04b97054683e55f52484300874f06e91d45dcc",
+      "bytes": 28431,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/chevron-left-COWzayqV.js",
+      "sha256": "32baf8d5bba27f72f29d388c927356226d837e9c049a00b43d236572d85e3657",
+      "bytes": 126,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/copy-BMx43wvK.js",
+      "sha256": "71f144a4e91d8ddf9c5e8a330e5f2fbf0c3194f5c944f7134386bbe68b0b8831",
+      "bytes": 233,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/download-CKE_CZk3.js",
+      "sha256": "2a8c9c7907aabc22388f71b28f54dc8b666fc8fef8712bf1ffdbc7f2a1082e06",
+      "bytes": 259,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/index-DNK7eQur.js",
+      "sha256": "3446568170bcfa2a8f05e7c9f1217b86db58de8592438bef053672651cf97eae",
+      "bytes": 304926,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/index-DT9gNZXZ.css",
+      "sha256": "48a225100636337707faf66c19278f34c93db5a53dcd5db55a6aa28f28d20a95",
+      "bytes": 92320,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/play-D5fKFRiu.js",
+      "sha256": "53a6d01ae016339d00b0b2d1c2a44f9e1077e7372b4b371834ddf67df1432513",
+      "bytes": 131,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/plus-Bx-SxxGO.js",
+      "sha256": "e3e0c0f08237fea41fd97a52e05a55b128fd1336ca1ef7c373d0eb005295542b",
+      "bytes": 150,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/refresh-cw-ipQfYUkM.js",
+      "sha256": "c80dcf602be7e2b5fa8860413e182d1186d306e12e967639545a49de469798ac",
+      "bytes": 317,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/trash-2-BF9pJIeD.js",
+      "sha256": "f8d19a2bc8a82a13d7d5f8dc6085ac5029999eb6a57fb721fb0c0034cfbf86b0",
+      "bytes": 354,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/assets/upload-pq3x-9gF.js",
+      "sha256": "726c41884e5c51f2dacb2d4ff4d3df354a0d309b6eedcd4665be4e59633f22b0",
+      "bytes": 254,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/brand/korsik.png",
+      "sha256": "68ed4c70531a890ba4bcd6c5456c0c89a04e213d27a7c7b1a9fe7f1fd58a7d15",
+      "bytes": 858477,
+      "matches_frozen_dist": true
+    },
+    {
+      "path": "/index.html",
+      "sha256": "ff100464f1b9fddcf212c64f736686060e460894c6acab7711c7add9194068d9",
+      "bytes": 644,
+      "matches_frozen_dist": true
+    }
+  ],
+  "files_count": 36,
+  "third_party_notices_verified": true,
+  "openapi_paths": 238,
+  "openapi_operations": 289,
+  "organization_anonymous_status": 401,
+  "internal_route_status": 404,
+  "MAX_frame_embedding_headers_preserved": true,
+  "entry": "/assets/index-DNK7eQur.js"
+}

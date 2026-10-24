@@ -1,0 +1,67 @@
+{
+  "base_url": "https://joan-charger-platform-wrapping.trycloudflare.com",
+  "documents": [
+    {
+      "document_id": "1e99ddcb-3b2b-42ea-9de0-62d6717581f2",
+      "title": "Положение о коммерческой тайне",
+      "revision_status": "PUBLISHED",
+      "pages": 14,
+      "source_status": 200,
+      "source_mime": "application/octet-stream",
+      "source_sha256": "a2a16c967e82c868b95d54e7df5f6791cd2ab683b1841956b9b19926ed973923"
+    },
+    {
+      "document_id": "857df0b3-488c-4860-87dc-7422a96c9812",
+      "title": "Политика в области качества и экологии",
+      "revision_status": "PUBLISHED",
+      "pages": 5,
+      "source_status": 200,
+      "source_mime": "application/octet-stream",
+      "source_sha256": "3a61a609bcc15aafa79a9b8d3ac6a69903769b1e97d953855eb4f93ec4161afc"
+    },
+    {
+      "document_id": "4222133c-a1d3-4d78-990e-9561197d1d63",
+      "title": "Антикоррупционная политика",
+      "revision_status": "PUBLISHED",
+      "pages": 14,
+      "source_status": 200,
+      "source_mime": "application/octet-stream",
+      "source_sha256": "727c370a8a8b3dcce218ec873564cc8ea0fb93e9ae9d8ddf50ac536a85ecd034"
+    }
+  ],
+  "failures": [],
+  "login_status": 200,
+  "secure_cookies": true,
+  "role": "HR_ADMIN",
+  "frontend_assets": [
+    {
+      "path": "/assets/index-DIKkX9MJ.js",
+      "bytes": 454503,
+      "sha256": "5cdf004f54c2450b8222bf66c03608b50c4396628b380350c3d94474628b6075"
+    },
+    {
+      "path": "/assets/index-BumjRVme.css",
+      "bytes": 60168,
+      "sha256": "b49de89ee8ff747a9e5165e5fd3b0f5d12d9137fad5d199656765281dd7ccacd"
+    }
+  ],
+  "local_ai": {
+    "deployment_mode": "FULL",
+    "configuration_state": "ACTIVE",
+    "generation_policy": "LOCAL_GENERATION",
+    "installed_artifacts": 4
+  },
+  "retention_policy": {
+    "status": "UNCONFIGURED",
+    "etag_available": true,
+    "automatic_business_deletion": false
+  },
+  "maintenance_operations_route": 200,
+  "rendered_pages_verified": 33,
+  "render_dimensions_min": [
+    2401,
+    1350
+  ],
+  "anonymous_knowledge_status": 401,
+  "status": "PASSED"
+}

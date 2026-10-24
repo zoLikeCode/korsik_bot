@@ -1,0 +1,16 @@
+{
+  "test": "MAX_WEBHOOK_NFR01",
+  "run_id": "921a81bd-a19d-4887-9dcf-3e5750fff957",
+  "started_at": "2026-10-23T21:17:03.028394+00:00",
+  "events": 3000,
+  "target_events_per_second": 10,
+  "elapsed_seconds": 300.287,
+  "http200": 3000,
+  "persisted_events": 3000,
+  "processed_at_end": 2958,
+  "p95_seconds": 0.0251,
+  "max_seconds": 0.9082,
+  "negative_secret_status": 403,
+  "synthetic_bot_sender_no_external_sends": true,
+  "status": "PASS"
+}

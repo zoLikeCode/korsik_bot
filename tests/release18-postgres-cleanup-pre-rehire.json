@@ -1,0 +1,14 @@
+{
+  "execution_context": "One-off helper using exact current deployed application image",
+  "app_image": "sha256:13072bcb1297f977beaa88557042af58a6c643c12767b16e4955264507ea76a9",
+  "isolated_database": "korsik_integration_check",
+  "check_exit_code": 0,
+  "drop_exit_code": 0,
+  "isolated_database_remaining": 0,
+  "cleanup_status": "PASS",
+  "source_database_read": "schema-only pg_dump, no personnel data copied",
+  "production_business_mutations": false,
+  "production_blobs_or_models_mounted": false,
+  "real_MAX_token_mounted": false,
+  "external_MAX_sends": 0
+}

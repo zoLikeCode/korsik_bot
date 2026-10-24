@@ -1,0 +1,52 @@
+{
+  "schema": "korsik-release28-local-browser-v1",
+  "status": "PASS",
+  "observed_at": "2026-10-24T22:56:40.112415+00:00",
+  "environment": "local synthetic SQLite and production frontend preview",
+  "checks": {
+    "supplied_logo_login_and_sidebar": "PASS",
+    "HR_menu_after_employees": "PASS",
+    "knowledge_only_two_tabs": "PASS",
+    "MAX_buttons_same_size_and_gap": "PASS",
+    "plain_preferred_name_inserted_no_MAX_link": "PASS",
+    "mention_department_subtree_filter_and_labels": "PASS",
+    "broadcast_bottom_text_removed": "PASS",
+    "survey_save_unpublished_card": "PASS",
+    "survey_publish_published_card": "PASS",
+    "draft_from_published_version2_immutable_version1": "PASS",
+    "scenario_selects_published_version1_with_version2_draft_present": "PASS",
+    "recurring3days0900Moscow_saved_with_title": "PASS",
+    "settings_delete_left_save_right": "PASS",
+    "material_input_multiple_attribute": "PASS",
+    "gallery_supplied_image_selected_imported_and_attached": "PASS",
+    "HEAD_HR_delete_button_dialog_and_cancel": "PASS",
+    "hidden_setup_absent_from_directory": "PASS",
+    "org_make_manager_dialog_and_cancel": "PASS",
+    "setup_initial_login_requires_credential_change_before_workspace": "PASS"
+  },
+  "backend_api": "127.0.0.1:8000",
+  "frontend": "127.0.0.1:5173",
+  "entry": "/assets/index-DNK7eQur.js",
+  "screenshots": [
+    "qa/release28-broadcast-address-local.png",
+    "qa/release28-hr-management-local.png",
+    "qa/release28-initial-setup-local.png",
+    "qa/release28-knowledge-logo-local.png",
+    "qa/release28-manager-role-local.png",
+    "qa/release28-max-buttons-local.png",
+    "qa/release28-scenario-actions-local.png",
+    "qa/release28-scenario-gallery-local.png",
+    "qa/release28-scenario-recurrence-local.png",
+    "qa/release28-scenario-survey-local.png",
+    "qa/release28-survey-versions-local.png"
+  ],
+  "MAX_messages_sent": 0,
+  "model_requests": 0,
+  "production_mutations": 0,
+  "notes": [
+    "Survey save/publish/draft-copy and scenario title/recurrence/gallery/published-survey selection executed against local API.",
+    "HR delete and manager role dialogs were opened and cancelled; actual authorization/revocation/role transitions covered by backend and PostgreSQL contracts.",
+    "Initial setup form was verified in browser; password/login changes covered by synthetic backend HTTP tests, no real credentials changed.",
+    "Multi-file chooser multiple attribute and delayed upload/step-switch contract verified; no live MAX device delivery claimed."
+  ]
+}

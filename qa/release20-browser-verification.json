@@ -1,0 +1,76 @@
+{
+  "schema": "korsik-release20-browser-v1",
+  "observed_at": "2026-10-24T16:28:08.986Z",
+  "status": "PASS",
+  "local": {
+    "synthetic_only": true,
+    "large_graph_nodes": 53,
+    "node_width": 260,
+    "node_height_range": [
+      154,
+      164
+    ],
+    "existing_row_spacing": 170,
+    "theme_checks": [
+      "light",
+      "dark"
+    ],
+    "minimap_count": 0,
+    "background": "dots",
+    "overlay": {
+      "canvas_width_open": 953,
+      "canvas_width_closed": 953,
+      "viewport_unchanged": true,
+      "escape_returns_focus": true
+    },
+    "draft_checks": [
+      "sequential typing",
+      "long text and height change",
+      "saved text survives reopening program",
+      "restored original test text"
+    ],
+    "simulation": {
+      "server_valid": true,
+      "route_steps": 2,
+      "MAX_messages_sent": 0
+    }
+  },
+  "public": {
+    "url": "https://systematic-working-authorities-glenn.trycloudflare.com/scenarios",
+    "entry": "/assets/index-ZyEUQvVQ.js",
+    "graph_status": "PUBLISHED",
+    "nodes": 52,
+    "all_nodes_visible": true,
+    "max_node_height": 164,
+    "minimap_count": 0,
+    "background": "SVG circle dots",
+    "canvas": {
+      "width": 953,
+      "height": 620
+    },
+    "overlay": {
+      "width": 370,
+      "canvas_width_open": 953,
+      "canvas_width_closed": 953,
+      "viewport_unchanged": true,
+      "escape_returns_focus": true
+    },
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "graph_edits": 0,
+    "simulation_or_publication_calls": 0
+  },
+  "screenshots": [
+    "release20-scenario-public-light.png",
+    "release20-scenario-public-dark.png",
+    "release20-scenario-public-overlay.png"
+  ],
+  "limits": [
+    "Native MAX webview was not launched in this UI-only verification.",
+    "Browser observations complement regression tests and do not measure every animation frame.",
+    "Network configuration and availability incident are outside this deployment."
+  ],
+  "company_accepted": false
+}

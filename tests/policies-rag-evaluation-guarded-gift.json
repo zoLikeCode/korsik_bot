@@ -1,0 +1,73 @@
+{
+  "schema": "korsik-actual-policy-rag-evaluation-v1",
+  "status": "PASS",
+  "reviewer": "IMPLEMENTATION_REVIEW_NOT_COMPANY_HR",
+  "scope": "Actual published policies with live CPU encoder/reranker/Qdrant and selected local generator; no external inference and no outgoing MAX messages",
+  "published_revision_ids": [
+    "5c5d7f53-7389-446b-ab26-abc11f42851b",
+    "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+    "c32d41b9-c41b-4095-a707-7226ea965290"
+  ],
+  "cases": [
+    {
+      "id": "money_gift",
+      "question": "Можно ли дарить деловому партнёру денежный подарок?",
+      "seconds": 10.276,
+      "status": "PASS",
+      "checks": {
+        "answers_with_evidence": true,
+        "gold_source_page": true,
+        "expected_words": true,
+        "published_current_citations": true,
+        "literal_complete_canonical_parent_exact": true
+      },
+      "mode": "EXTRACT",
+      "reason": "LITERAL_NORMATIVE_POLICY",
+      "text": "Точная формулировка действующего документа:\n\n[1] ПОДАРКИ И ПРЕДСТАВИТЕЛЬСКИЕ РАСХОДЫ\n\nНе допускаются подарки от имени Общества, его работников и представителей третьим лицам в виде денежных средств в любой валюте, наличных или безналичных, ценных бумаг и драгоценных металлов.\nПри получении делового подарка работник обязан принять меры по недопущению возможности возникновения конфликта интересов.\nВ случае возникновения конфликта интересов или возможности его возникновения при получении делового подарка, работник в установленном порядке должен уведомить об этом Общество и сдать полученный деловой подарок ответственному за  профилактику коррупционных правонарушений (за исключением  канцелярских принадлежностей).\nРаботнику категорически запрещается просить, требовать, вынуждать третьих лиц дарить ему либо лицам, с которыми он состоит в близком родстве или свойстве, деловые подарки и (или) оказывать в их пользу знаки делового гостеприимства, а также принимать подарки в форме наличных, безналичных денежных средств, ценных бумаг, драгоценных металлов.\n\nИсточники: [1] Антикоррупционная политика, стр. 9",
+      "citations": [
+        {
+          "document_title": "Антикоррупционная политика",
+          "revision_id": "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "page_no": 9,
+          "block_id": "bf5a1942-c69c-460c-9e05-8349208c7350"
+        }
+      ],
+      "provenance": {
+        "mode": "FULL",
+        "retrieval": "DENSE_BM25_RRF_RERANK",
+        "kb_revision_ids": [
+          "5c5d7f53-7389-446b-ab26-abc11f42851b",
+          "5c8e2fc0-a55f-4a9a-baaf-6f6d75fd62bc",
+          "c32d41b9-c41b-4095-a707-7226ea965290"
+        ],
+        "query_equivalents": [],
+        "encoder_fingerprint": "afc4aa45cd8d95d538404fd463d881c1cd522f3f92bfd42a6b2f6abde0a5b5d8",
+        "reranker_fingerprint": "30f61c1e0d16deb1d0f43ddaa49f5457bfbaf69f1b6ee27d0475a2b676f8f8ea",
+        "reranking_pairs": 19,
+        "structural_context": "CANONICAL_PAGE_PARENT",
+        "final_rank_fusion": "INITIAL_RRF_RERANK_LEXICAL_RRF",
+        "history_messages": 0,
+        "query_resolution": "CURRENT_QUESTION",
+        "generation_guard": "LITERAL_PERMISSION_PROHIBITION_OBLIGATION",
+        "selected_parent_rank": 1,
+        "publication": "PUBLISHED",
+        "candidate_snapshot_id": null
+      },
+      "human_semantic_review": "PASS_LITERAL_COMPLETE_CANONICAL_PARENT",
+      "expected_allowed_modes": [
+        "EXTRACT"
+      ],
+      "semantic_status": "PASS",
+      "canonical_parent_sha256": "5c13c5946f57e5b6817ec81821ebaaa54c34154d1c51fd4c07a6c7d829af67ab",
+      "source_sha256": "727c370a8a8b3dcce218ec873564cc8ea0fb93e9ae9d8ddf50ac536a85ecd034"
+    },
+    {
+      "id": "scope_denial",
+      "status": "PASS",
+      "mode": "HANDOFF",
+      "citations": []
+    }
+  ],
+  "semantic_quality": "PASS_GUARDED_LITERAL_EXTRACT_FOR_THIS_CASE",
+  "known_raw_model_failure": "The raw2B monetary-gift contradiction remains FAIL in policies-rag-evaluation-final.json; this separate run demonstrates the mandatory extractive guard, not a new generation PASS."
+}

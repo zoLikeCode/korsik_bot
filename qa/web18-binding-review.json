@@ -1,0 +1,41 @@
+{
+  "release": "WEB18",
+  "status": "LOCAL_FROZEN_TESTS_BUILD_PASS",
+  "observed_at": "2026-10-24T03:04:33.303708+00:00",
+  "frontend_only_delta_from_measured_web17": true,
+  "backend_retrieval_unchanged": "SOURCE15 0da5d26824b6c3da6b00fcab116a3b34034c9b54edf5905d1d8a279ac2d6e869",
+  "tests": {
+    "total": 23,
+    "files": 5,
+    "new_identity_review_tests": 7,
+    "environment": "Vitest unit tests, React SSR identity display, real API transport with mocked HTTP responses; no real MAX user or binding"
+  },
+  "cases": [
+    "Actual returned name and ID rendered safely as text",
+    "Unchecked identity or empty reason sends no mutation",
+    "Changed account/version invalidates previous confirmation",
+    "Approval uses reviewed ETag, CSRF, credentials and explicit reason",
+    "HTTP412 stays failed",
+    "HTTP500 stays failed",
+    "HTTP200 for another binding rejected rather than claiming success"
+  ],
+  "build": {
+    "tsc": "PASS",
+    "vite": "PASS",
+    "entry": "index-CVW-IeYL.js",
+    "entry_bytes": 408059,
+    "entry_sha256": "5a0e166313afaf9c7635d591970615f5c900e7165c5dc11d018dcf611240187d"
+  },
+  "source_sha256": {
+    "frontend/src/bindingReview.ts": "c7f294d7b0c695549684e8579f7f5b2b9c8e1dab3e460ca55abceeaff20f7810",
+    "frontend/src/bindingReview.test.tsx": "75d9c588136970ba7f3f7323ed83111f945e862a9b0f5340a6128eda92a0cb52",
+    "frontend/src/pages/EmployeeMaxBinding.tsx": "b743ccf6c9bf36bb411b7f1bff9ce0ee78a2a69ac4e225c76179704cc6c91cee",
+    "frontend/src/pages/Employees.tsx": "48df0c9893d227d279cccddc94edbd8865ef2bbc027a920facb6d821208aafdd",
+    "DEMO.md": "94d11043ed29bfff898c680131b55a63da8d002b8e24d66e49b35c9e041ca844"
+  },
+  "pending": [
+    "Root deploys WEB18 after CORE100; read-only HTTPS smoke asserts exact entry and actual ACTIVE SOURCE15 profile pins.",
+    "No real MAX invitation redemption, identity verification or approval was performed by this QA."
+  ],
+  "benchmark_context_preserved": "Actual HTTP100 measured WEB17+SOURCE15; start context and semantic snapshot remain unchanged."
+}
