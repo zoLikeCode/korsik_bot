@@ -478,3 +478,7 @@ app.include_router(knowledge_warnings_router, prefix="/api/v1")
 from .scenario_media import router as scenario_media_router
 
 app.include_router(scenario_media_router, prefix="/api/v1")
+
+from .analytics_insights import router as analytics_insights_router
+
+app.include_router(analytics_insights_router, prefix="/api/v1")

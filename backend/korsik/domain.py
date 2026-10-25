@@ -5521,6 +5521,7 @@ def dashboard_current(
     period_to: str | None = None,
     timezone: str = "Europe/Moscow",
     site_id: str | None = None,
+    org_unit_id: str | None = None,
 ):
     require_role(actor, *READ_HR, "MANAGER")
     data = dashboard_data(
@@ -5531,6 +5532,7 @@ def dashboard_current(
             "period_to": period_to,
             "timezone": timezone,
             "site_ids": [site_id] if site_id else [],
+            "org_unit_id": org_unit_id,
         },
     )
     snapshots = [s for s in entities(db, "dashboard_snapshot", actor.id)]
@@ -5560,8 +5562,9 @@ def analytics(
     period_to: str | None = None,
     timezone: str = "Europe/Moscow",
     site_id: str | None = None,
+    org_unit_id: str | None = None,
 ):
-    require_role(actor, *READ_HR)
+    require_role(actor, *READ_HR, "MANAGER")
     return dashboard_data(
         db,
         actor,
@@ -5570,6 +5573,7 @@ def analytics(
             "period_to": period_to,
             "timezone": timezone,
             "site_ids": [site_id] if site_id else [],
+            "org_unit_id": org_unit_id,
         },
     )
 
@@ -5582,6 +5586,7 @@ def analytics_export(
     period_to: str | None = None,
     timezone: str = "Europe/Moscow",
     site_id: str | None = None,
+    org_unit_id: str | None = None,
 ):
     require_role(actor, *READ_HR)
     data = dashboard_data(
@@ -5592,6 +5597,7 @@ def analytics_export(
             "period_to": period_to,
             "timezone": timezone,
             "site_ids": [site_id] if site_id else [],
+            "org_unit_id": org_unit_id,
         },
     )
     out = io.StringIO()
@@ -7796,6 +7802,10 @@ def filtered_employees(db, actor, filters=None):
         ):
             continue
         selected.append(employee)
+    if filters.get("org_unit_id"):
+        from .analytics_insights import department_memberships
+        _, memberships = department_memberships(db, selected)
+        selected = [e for e in selected if filters["org_unit_id"] in memberships[e.id]]
     return selected
 
 

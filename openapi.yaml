@@ -3819,6 +3819,14 @@ paths:
           - type: string
           - type: 'null'
           title: Site Id
+      - name: org_unit_id
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Org Unit Id
       responses:
         '200':
           description: Successful Response
@@ -3890,6 +3898,14 @@ paths:
           - type: string
           - type: 'null'
           title: Site Id
+      - name: org_unit_id
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Org Unit Id
       responses:
         '200':
           description: Successful Response
@@ -3938,6 +3954,14 @@ paths:
           - type: string
           - type: 'null'
           title: Site Id
+      - name: org_unit_id
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Org Unit Id
       responses:
         '200':
           description: Successful Response
@@ -6969,6 +6993,118 @@ paths:
         required: true
       responses:
         '201':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/analytics/insights:
+    get:
+      summary: Insights
+      operationId: insights_api_v1_analytics_insights_get
+      parameters:
+      - name: period_from
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Period From
+      - name: period_to
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Period To
+      - name: timezone
+        in: query
+        required: false
+        schema:
+          type: string
+          default: Europe/Moscow
+          title: Timezone
+      - name: site_id
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Site Id
+      - name: org_unit_id
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Org Unit Id
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema: {}
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+  /api/v1/analytics/insights/export:
+    get:
+      summary: Export Insights
+      operationId: export_insights_api_v1_analytics_insights_export_get
+      parameters:
+      - name: period_from
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Period From
+      - name: period_to
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Period To
+      - name: timezone
+        in: query
+        required: false
+        schema:
+          type: string
+          default: Europe/Moscow
+          title: Timezone
+      - name: site_id
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Site Id
+      - name: org_unit_id
+        in: query
+        required: false
+        schema:
+          anyOf:
+          - type: string
+          - type: 'null'
+          title: Org Unit Id
+      responses:
+        '200':
           description: Successful Response
           content:
             application/json:

@@ -25,7 +25,13 @@ vi.mock("./ui", async () => {
         : path === "/sites"
           ? { items: [] }
           : {
-              metrics: { employees: 8, preboarding: 3, active_employees: 5 },
+              summary: { employees: 8, adapting: 5, completed: 3 },
+              problems: {
+                items: [
+                  { topic: "Пропуска", employee_count: 5, suppressed: false },
+                ],
+                minimum_group_size: 5,
+              },
               employees: [{ name: "Do not render detailed roster" }],
             };
       return { data, loading: false, error: "", reload: () => {}, etag: null };
@@ -53,10 +59,14 @@ describe("compact dashboard request scope", () => {
       expect(html).not.toContain(text);
     expect(html).toContain("Работа HR");
     expect(html).toContain("Скачать CSV");
-    expect(html).toContain("/api/v1/analytics/export?timezone=Europe%2FMoscow");
+    expect(html).toContain(
+      "/api/v1/analytics/insights/export?timezone=Europe%2FMoscow",
+    );
     expect(state.paths.filter(Boolean)).toEqual([
       "/sites",
-      "/analytics?timezone=Europe%2FMoscow",
+      expect.stringMatching(
+        /^\/analytics\/insights\?timezone=Europe%2FMoscow&period_from=\d{4}-\d{2}-\d{2}$/,
+      ),
     ]);
   });
   it("loads only visible scoped risk topics for HEAD_TALENT with the same filters", () => {
@@ -65,8 +75,9 @@ describe("compact dashboard request scope", () => {
     expect(html).toContain("Пропуска");
     expect(state.paths.filter(Boolean)).toEqual([
       "/sites",
-      "/analytics?timezone=Europe%2FMoscow",
-      "/reports/risk-topics?timezone=Europe%2FMoscow",
+      expect.stringMatching(
+        /^\/analytics\/insights\?timezone=Europe%2FMoscow&period_from=\d{4}-\d{2}-\d{2}$/,
+      ),
     ]);
     expect(
       state.paths.some(
@@ -82,7 +93,9 @@ describe("compact dashboard request scope", () => {
     expect(html).not.toContain("Подробные данные");
     expect(state.paths.filter(Boolean)).toEqual([
       "/sites",
-      "/analytics?timezone=Europe%2FMoscow",
+      expect.stringMatching(
+        /^\/analytics\/insights\?timezone=Europe%2FMoscow&period_from=\d{4}-\d{2}-\d{2}$/,
+      ),
     ]);
   });
 });
