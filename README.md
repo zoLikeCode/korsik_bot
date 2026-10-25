@@ -37,6 +37,14 @@ flowchart LR
 
 PostgreSQL и файлы документов — основные данные. Qdrant можно перестроить. Модель не управляет кадровыми решениями и сценариями. Поиск учитывает права сотрудника и использует опубликованные документы; ответ сопровождается источниками. Если подтверждения нет, вопрос передаётся HR.
 
+## Презентация и тизер
+
+[Редактируемый слайд в Figma](https://www.figma.com/design/UiMCTf0P5rYNUOea0baxAe?node-id=1-2). Схема соответствует рабочей версии release28.
+
+![Архитектура Корсика](docs/presentation/architecture.png)
+
+[Схема в SVG](docs/presentation/architecture.svg) · [Тизер для жюри](docs/presentation/teaser.txt)
+
 ## Запуск на сервере
 
 Нужны Linux x86-64, Docker Engine с Compose 2.24.4+, Python 3.12+, NVIDIA GPU с 12 ГБ VRAM и NVIDIA Container Toolkit. Рекомендуется 32–48 ГБ RAM. Для загрузки моделей и сборки образов нужен интернет; веса занимают несколько гигабайт и в Git не хранятся.
